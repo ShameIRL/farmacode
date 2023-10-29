@@ -3,7 +3,7 @@ Gruppo:
 <div style="display: flex; align-items: center;padding-bottom: 20px"> 
 <div style="width: 25px; height: 25px; overflow: hidden; border-radius: 
 50%;">
-<img src="logo.jpeg" alt="Logo" style="width: 100%; height: 100%; 
+<img src="./assets/logo.jpeg" alt="Logo" style="width: 100%; height: 100%; 
 object-fit: cover;">
 </div>
 <h2 style="padding: 0; border: 0; margin: 0; margin-left: 
