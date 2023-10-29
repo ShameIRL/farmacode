@@ -11,7 +11,7 @@ object-fit: cover;">
 </div>
 Contatti: farmacode.swe.unipd@gmail.com
 
-Componenti: 
+**Componenti:** 
 | Cognome | Nome | Matricola |
 | -------- | -------- | -------- |
 | Baggio | Matteo | 1216749 |
