@@ -177,7 +177,7 @@ Il sistema dispone di due attori,...
 - Admin.
 - Users.
 *Precondizioni:*
-- L'utente è già loggato nel sistema ed è l'admin che possiede i requisiti necessari.
+- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
 - L'utente è nella sezione profilo della piattaforma.
 *Postcondizioni:*
 - L'utente ha aggiunto correttamente il nuovo utente con i privilegi base (User)
@@ -225,7 +225,23 @@ Il sistema dispone di due attori,...
 - Sistema:
     - prosegue con la creazione dell'utente utilizzando la password inserita.
 
-== UC4 - Vista Cliente per prodotti
+== UC4 - Eliminazione utente
+*Attori*
+- Admin.
+*Precondizioni*
+- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
+- L'utente è nella sezione profilo della piattaforma.
+*Postcondizioni*
+- L'utente ha eliminato correttamente l'utente con i privilegi base.
+*Scenario principale*
+- Admin
+    - Accede nella sezione del profilo utente.
+    - Se l'utente è correttamente l'admin, visualizza gli utenti base
+    - Clicca suk bottone "Elimina" a lato del utente che vuole eliminare
+- Sistema
+    - Elimina dal sistema il profilo dell'utente.
+
+== UC5 - Vista Cliente per prodotti
 *Attori:*
 - Admin.
 - Users.
@@ -237,13 +253,13 @@ Il sistema dispone di due attori,...
 *Scenario principale:*
 - Admin/Users:
     - Seleziona il campo "Cliente per prodotti" nella schermata principale.
-    - Seleziona il "Cliente" dal menù a tendina (UC4.1).
+    - Seleziona il "Cliente" dal menù a tendina (UC5.1).
 - Sistema:
     - crea correttamente la vista con i prodotti suggeriti associati al cliente.
 *Generalizzazioni:*
-- UC4.1 - Selezione Cliente.
+- UC5.1 - Selezione Cliente.
 
-=== UC4.1 - Selezione Cliente
+=== UC5.1 - Selezione Cliente
 *Attori:*
 - Admin
 - Users
@@ -259,7 +275,7 @@ Il sistema dispone di due attori,...
 - Sistema:
     - Prosegue per la visualizzazione della lista dei prodotti in base alla scelta del cliente.
 
-== UC5 - Vista prodotti per Cliente
+== UC6 - Vista prodotti per Cliente
 *Attori:*
 - Admin.
 - Users.
@@ -271,13 +287,13 @@ Il sistema dispone di due attori,...
 *Scenario principale:*
 - Admin/Users:
     - Seleziona il campo "Prodotto per Clienti" nella schermata principale.
-    - Seleziona il "Prodotto" dal menù a tendina (UC5.1).
+    - Seleziona il "Prodotto" dal menù a tendina (UC6.1).
 - Sistema:
     - crea correttamente la vista con i Clienti suggeriti associati al cliente.
 *Generalizzazioni:*
-- UC4.1 - Selezione Prodotto.
+- UC5.1 - Selezione Prodotto.
 
-=== UC5.1 - Selezione Prodotto
+=== UC6.1 - Selezione Prodotto
 *Attori:*
 - Admin
 - Users
@@ -293,7 +309,7 @@ Il sistema dispone di due attori,...
 - Sistema:
     - Prosegue per la visualizzazione della lista dei Clienti in base alla scelta del prodotto.
 
-== UC6 - Feedback raccomandazione
+== UC7 - Feedback raccomandazione
 *Attori:*
 - Admin
 - Users
