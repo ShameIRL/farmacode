@@ -15,7 +15,6 @@
 
 #let project(
   title: none,
-  managers: none,
   recipients: none,
   group_is_recipient: true,
   changelog: none,
@@ -59,24 +58,7 @@
     recipients += ([Gruppo _#(g.name)_],)
   }
 
-  pagebreak()
-
-  set page(
-    footer: gridx(
-      columns: (1fr, 1fr),
-      align: (left, right),
-      hlinex(stroke: 0.05em),
-      box(
-      image(g.group-logo, width:  1.5em), baseline: 0.4em) + 
-      g.name,
-      text("pagina: ") +
-      counter(page).display(
-      "1", 
-    )
-    ),
-  )
-
-  set align(start + top)
+  set align(bottom)
 
   if version != none and changelog.len() > 2 {
     changelog = changelog_header + changelog;
@@ -102,6 +84,25 @@
     )
     pagebreak()
   }
+
+  set align(top + start)
+
+  set page(
+    footer: gridx(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      hlinex(stroke: 0.05em),
+      box(
+      image(g.group-logo, width:  1.5em), baseline: 0.4em) + 
+      g.name,
+      text("pagina: ") +
+      counter(page).display(
+      "1", 
+    )
+    ),
+  )
+
+
 
   if show_outline == true {
     outline(depth: outline_depth, indent: true)

@@ -10,6 +10,12 @@
 )
 
 #let p = (
+  baggio: "Baggio Matteo",
+  bomben: "Bomben Filippo",
+  carraro: "Carraro Alessandro",
+  favaron: "Favaron Riccardo",
+  pandolfo: "Pandolfo Mattia",
+  passarella: "Passarella Alessandro",
   rosson: "Rosson Lorenzo",
   vardanega: "Prof. Tullio Vardanega",
   cardin: "Prof. Riccardo Cardin",
