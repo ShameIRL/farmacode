@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.0.6", "2023-11-20", p.bomben, "", "Stesura UC4, UC5 e UC6",
+    "0.0.6", "2023-11-20", p.bomben, "", "Stesura da UC4 a UC7",
     "0.0.5", "2023-11-18", p.favaron, "", "Stesura sezione descrizione",
     "0.0.4", "2023-11-17", p.bomben, "", "Stesura UC3",
     "0.0.3", "2023-11-16", p.bomben, "", "Stesura UC1 e UC2",
