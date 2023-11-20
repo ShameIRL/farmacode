@@ -1,4 +1,4 @@
-#import "//template/verbals.typ": *
+#import "/template/verbals.typ": *
 
 #show: project.with(
   title: "Verbale interno del meeting in data 07/11/2023",
