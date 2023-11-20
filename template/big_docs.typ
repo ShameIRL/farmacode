@@ -76,6 +76,7 @@
     ),
   )
 
+  
   set align(start + top)
 
   if version != none and changelog.len() > 2 {

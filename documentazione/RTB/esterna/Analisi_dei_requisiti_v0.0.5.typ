@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.0.6", "2023-11-20", p.bomben, "", "Stesura UC4, UC5 e UC6",
     "0.0.5", "2023-11-18", p.favaron, "", "Stesura sezione descrizione",
     "0.0.4", "2023-11-17", p.bomben, "", "Stesura UC3",
     "0.0.3", "2023-11-16", p.bomben, "", "Stesura UC1 e UC2",
@@ -32,9 +33,9 @@ I casi d'uso descritti in questo documento hanno una precisa struttura logica de
 - Descrizione: Titolo del caso d'uso con annessa breve descrizione;
 - Attori coinvolti: Il soggetto che esegue una determinata azione;
 - Attori coinvolti: Il soggetto che esegue una determinata azione;
-- Precondizioni: Lo stato del sistema prima del caso d'uso;
-- Postcondizioni: Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
-- Scenario principale: Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati.
+- *Precondizioni:* Lo stato del sistema prima del caso d'uso;
+- *Postcondizioni:* Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
+- *Scenario principale:* Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati.
 
 == Scopo del prodotto
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
@@ -94,16 +95,16 @@ Il sistema dispone di due attori,...
 - Users.
 
 == UC1 - Login
-Attori:
+*Attori:*
 - Admin;
 - Users.
-Precondizioni:
+*Precondizioni:*
 - L'utente possiede un account valido;
 - L'utente non ha già eseguito l'accesso;
 - L'utente ha una connessione stabile.
-Postcondizioni:
+*Postcondizioni:*
 - L'utente ha effettuato correttamente l'accesso ed è stato riconosciuto dal sistema.
-Scenario principale:
+*Scenario principale:*
 - Admin/Users:
     - inserisce la propria email nel campo [email] del modulo di accesso (UC1.1).
     - inserisce la propria password nel campo [password] del modulo di accesso (UC1.2).
@@ -111,23 +112,23 @@ Scenario principale:
     - Il sistema di autenticazione verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema.
     - Se le credenziali sono corrette, l'utente viene autenticato con successo e reindirizzato alla pagina principale.
     - Se le credenziali sono errate, il sistema di autenticazione visualizza un messaggio di errore per informare l'utente della fallita autenticazione (UC2).
-Generalizzazioni:
+*Generalizzazioni:*
     - UC1.1 - Inserimento email.
     - UC1.2 - Inserimento password.
-Estensioni:
+*Estensioni:*
 - UC2 - Visualizzazione errore di login
 
 === UC1.1 - Inserimento email
-Attori:
+*Attori:*
 - Admin.
 - Users.
-Precondizioni:
+*Precondizioni:*
 - L'utente possiede un account valido per l'accesso alla piattaforma.
 - L'utente non ha ancora eseguito l'accesso.
 - L'utente sta facendo il Login (UC1).
-Postcondizioni:
+*Postcondizioni:*
 - L'utente inserisce correttamente la propria email, precedentemente memorizzata nel sistema, per l'autenticazione.
-Scenario principale:
+*Scenario principale:*
 - Admin/Users:
     - inserisce la propria email nel campo email.
 - Sistema:
@@ -136,16 +137,16 @@ Scenario principale:
     - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
 
 === UC1.2 - Inserimento password
-Attori:
+*Attori:*
 - Admin.
 - Users.
-Precondizioni:
+*Precondizioni:*
 - L'utente possiede un account valido per l'accesso alla piattaforma.
 - L'utente non ha ancora eseguito l'accesso.
 - L'utente sta facendo il Login (UC1).
-Postcondizioni:
+*Postcondizioni:*
 - L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
-Scenario principale:
+*Scenario principale:*
 - Admin/Users:
     - inserisce la propria password nel campo email.
 - Sistema:
@@ -153,16 +154,16 @@ Scenario principale:
     - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
 
 == UC2 - Visualizzazione errore di login
-Attori:
+*Attori:*
 - Admin.
 - Users.
-Precondizioni:
+*Precondizioni:*
 - L'utente ha inserito una combinazione di email e/o password errate o ha lasciato vuoto qualche campo durante il processo di login.
 - Il sistema ha verificato che le credenziali inserite negli appositi campi non siano corrette.
-Postcondizioni:
+*Postcondizioni:*
 - L'utente vede un messaggio esplicativo relativo all'autenticazione fallita.
 - L'utente consapevole dell'errore di login può correggere le credenziali e provare ad effettuare nuovamente il login.
-Scenario principale:
+*Scenario principale:*
 - Admin/Users:
     - Accede alla pagina di login della piattaforma.
     - Visualizza il messaggio di errore dopo aver inserito le credenziali sbagliate.
@@ -172,35 +173,37 @@ Scenario principale:
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
 
 == UC3 - Aggiunta nuovo utente
-Attori:
+*Attori:*
 - Admin.
 - Users.
-Precondizioni:
+*Precondizioni:*
 - L'utente è già loggato nel sistema ed è l'admin che possiede i requisiti necessari.
 - L'utente è nella sezione profilo della piattaforma.
-Postcondizioni:
+*Postcondizioni:*
 - L'utente ha aggiunto correttamente il nuovo utente con i privilegi base (User)
-Scenario principale:
+*Scenario principale:*
 - Admin:
     - Accede nella sezione del profilo utente.
     - Se l'utente è correttamente l'admin, visualizza i campi email e password.
+    - Inserisce la email del nuovo utente nel campo [email] (UC3.1)
+    - Inserisce la password del nuovo utente nel campo [password] (UC3.2)
 - Sistema:
     - Verifica che i campi non siano vuoti (email, password).
     - Se i campi sono riempiti correttamente, salva nel sistema le credenziali dei nuovi utenti.
-Generalizzazioni:
+*Generalizzazioni:*
 - UC3.1 - Inserimento email.
 - UC3.2 - Inserimento password.
 
 === UC3.1 - Inserimento email
-Attori:
+*Attori:*
 - Admin.
-Precondizioni:
+*Precondizioni:*
 - L'utente è nella sezione profilo personale.
 - L'utente dispone dei privilegi per aggiungere un nuovo utente.
-- L'utente aggiungendo un nuovo utente (UC3).
-Postcondizioni:
+- L'utente sta aggiungendo un nuovo utente (UC3).
+*Postcondizioni:*
 - L'utente inserisce correttamente la email dell'utente che vuole aggiungere.
-Scenario principale:
+*Scenario principale:*
 - Admin:
     - inserisce la email nel campo email.
 - Sistema:
@@ -208,20 +211,102 @@ Scenario principale:
     - prosegue con la creazione dell'utente utilizzando l'email inserita.
 
 === UC3.2 - Inserimento password
-Attori:
+*Attori:*
 - Admin.
-Precondizioni:
+*Precondizioni:*
 - L'utente è nella sezione profilo personale.
 - L'utente dispone dei privilegi per aggiungere un nuovo utente.
-- L'utente aggiungendo un nuovo utente (UC3).
-Postcondizioni:
+- L'utente sta aggiungendo un nuovo utente (UC3).
+*Postcondizioni:*
 - L'utente inserisce correttamente la password dell'utente che vuole aggiungere.
-Scenario principale:
+*Scenario principale:*
 - Admin:
     - inserisce la password nel campo password.
 - Sistema:
     - prosegue con la creazione dell'utente utilizzando la password inserita.
 
+== UC4 - Vista Cliente per prodotti
+*Attori:*
+- Admin.
+- Users.
+*Precondizioni:*
+- L'utente ha eseguito l'accesso correttamente.
+- L'utente è nella pagina principale della piattaforma.
+*Postcondizioni:*
+- L'utente visualizza correttamente la lista dei prodotti consigliati per il determinato cliente.
+*Scenario principale:*
+- Admin/Users:
+    - Seleziona il campo "Cliente per prodotti" nella schermata principale.
+    - Seleziona il "Cliente" dal menù a tendina (UC4.1).
+- Sistema:
+    - crea correttamente la vista con i prodotti suggeriti associati al cliente.
+*Generalizzazioni:*
+- UC4.1 - Selezione Cliente.
+
+=== UC4.1 - Selezione Cliente
+*Attori:*
+- Admin
+- Users
+*Precondizioni:*
+- L'utente ha eseguito l'accesso correttamente.
+- L'utente è nella pagina principale della piattaforma.
+- L'utente ha selezionato "Cliente per prodotti".
+*Postcondizioni:*
+- L'utente ha selezionato correttamente il Cliente desiderato
+*Scenario principale:*
+- Admin/Users:
+    - Seleziona dal menù a tendina il cliente per cui vuole vedere i prodotti consigliati.
+- Sistema:
+    - Prosegue per la visualizzazione della lista dei prodotti in base alla scelta del cliente.
+
+== UC5 - Vista prodotti per Cliente
+*Attori:*
+- Admin.
+- Users.
+*Precondizioni:*
+- L'utente ha eseguito l'accesso correttamente.
+- L'utente è nella pagina principale della piattaforma.
+*Postcondizioni:*
+- L'utente visualizza correttamente la lista dei Clienti consigliati per il determinato prodotto.
+*Scenario principale:*
+- Admin/Users:
+    - Seleziona il campo "Prodotto per Clienti" nella schermata principale.
+    - Seleziona il "Prodotto" dal menù a tendina (UC5.1).
+- Sistema:
+    - crea correttamente la vista con i Clienti suggeriti associati al cliente.
+*Generalizzazioni:*
+- UC4.1 - Selezione Prodotto.
+
+=== UC5.1 - Selezione Prodotto
+*Attori:*
+- Admin
+- Users
+*Precondizioni:*
+- L'utente ha eseguito l'accesso correttamente.
+- L'utente è nella pagina principale della piattaforma.
+- L'utente ha selezionato "Prodotto per Clienti".
+*Postcondizioni:*
+- L'utente ha selezionato correttamente il Cliente desiderato
+*Scenario principale:*
+- Admin/Users:
+    - Seleziona dal menù a tendina il prodotto per cui vuole vedere i prodotti consigliati.
+- Sistema:
+    - Prosegue per la visualizzazione della lista dei Clienti in base alla scelta del prodotto.
+
+== UC6 - Feedback raccomandazione
+*Attori:*
+- Admin
+- Users
+*Precondizioni:*
+- L'utente ha eseguito l'accesso correttamente.
+- L'utente ha visualizzato la lista "Cliente per prodotti" o "Prodotto per Clienti".
+*Postcondizioni:*
+- L'utente ha correttamente lasciato un feedback per la lista mostrata.
+*Scenario principale:*
+- Admin/Users:
+    - Seleziona un valore in un range da 1 a 5.
+- Sistema:
+    - Registra correttamente la valutazione dell'utente all'interno del sistema.
 = Requisiti
 
 == Requisiti funzionali
