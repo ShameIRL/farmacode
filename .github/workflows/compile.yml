@@ -28,7 +28,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
       
           # Add and commit PDF files to the sources branch
-          git add documentazione/RTB/**/*.pdf
+          git add .
           git commit -m "Update PDF files [skip ci]"
           git status
           git fetch
