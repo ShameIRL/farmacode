@@ -33,9 +33,9 @@ I casi d'uso descritti in questo documento hanno una precisa struttura logica de
 - Descrizione: Titolo del caso d'uso con annessa breve descrizione;
 - Attori coinvolti: Il soggetto che esegue una determinata azione;
 - Attori coinvolti: Il soggetto che esegue una determinata azione;
-- *Precondizioni:* Lo stato del sistema prima del caso d'uso;
-- *Postcondizioni:* Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
-- *Scenario principale:* Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati.
+- Precondizioni: Lo stato del sistema prima del caso d'uso;
+- Postcondizioni: Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
+- Scenario principale: Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati.
 
 == Scopo del prodotto
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
