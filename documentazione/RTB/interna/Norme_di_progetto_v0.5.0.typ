@@ -106,6 +106,8 @@ documentando tutti i processi e attività presenti andando a facilitare anche la
 
     - UML: per la creazione di diagrammi UML il team ha deciso di utilizzare StarUML.
 
+/** aggiungere in caso si utilizzino altri strumenti */
+
 === Grafiche
     - Template: le nostre grafiche per i documenti sono state realizzate con photoshop;
 
@@ -114,9 +116,11 @@ documentando tutti i processi e attività presenti andando a facilitare anche la
 === Norme tipografiche
     - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, lettera iniziale è sempre maiuscola e il resto tutto minuscolo, le parole sono separate da degli underscore. La data viene scritta in formato AAAA-MM-GG;
 
-    - Stile del testo: divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento; /** da ampliare il caso di aggiunte */
+    - Stile del testo: divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
 
     - Glossario: /** vedi glossario (da decidere) */
+
+/** da ampliare il caso di aggiunte */
 
 === Struttura
 I documenti ufficiali hanno una struttura precisa e comune che deve essere rigorosamente rispettata per i motivi citati nella descrizione.
