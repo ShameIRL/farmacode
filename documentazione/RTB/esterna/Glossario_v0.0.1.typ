@@ -6,7 +6,8 @@
     
   ),
   changelog: (
-    "0.0.1", "02-11-2023", p.bomben, "", "Struttura file",
+    "0.1.1", "02-11-2023", p.rosson, "", "Corretto registro delle modifiche",
+    "0.1.0", "02-11-2023", p.bomben, "", "Struttura file",
   ),
 )
 
