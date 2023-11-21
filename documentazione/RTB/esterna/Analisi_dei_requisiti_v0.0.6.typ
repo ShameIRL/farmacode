@@ -8,12 +8,12 @@
     p.cardin,
   ),
   changelog: (
-    "0.0.6", "2023-11-20", p.bomben, m.pandolfo, "Stesura da UC4 a UC7",
-    "0.0.5", "2023-11-18", p.favaron, m.pandolfo, "Stesura sezione descrizione",
-    "0.0.4", "2023-11-17", p.bomben, m.pandolfo, "Stesura UC3",
-    "0.0.3", "2023-11-16", p.bomben, m.pandolfo, "Stesura UC1 e UC2",
-    "0.0.2", "2023-11-15", p.favaron, m.pandolfo, "Stesura sezione introduzione",
-    "0.0.1", "2023-11-14", p.favaron, m.pandolfo, "Struttura iniziale del documento",
+    "0.0.6", "2023-11-20", p.bomben, p.pandolfo, "Stesura da UC4 a UC7",
+    "0.0.5", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
+    "0.0.4", "2023-11-17", p.bomben, p.pandolfo, "Stesura UC3",
+    "0.0.3", "2023-11-16", p.bomben, p.pandolfo, "Stesura UC1 e UC2",
+    "0.0.2", "2023-11-15", p.favaron, p.pandolfo, "Stesura sezione introduzione",
+    "0.0.1", "2023-11-14", p.favaron, p.pandolfo, "Struttura iniziale del documento",
   ),
 )
 
