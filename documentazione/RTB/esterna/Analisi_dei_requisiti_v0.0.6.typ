@@ -8,12 +8,12 @@
     p.cardin,
   ),
   changelog: (
-    "0.0.6", "2023-11-20", p.bomben, "", "Stesura da UC4 a UC7",
-    "0.0.5", "2023-11-18", p.favaron, "", "Stesura sezione descrizione",
-    "0.0.4", "2023-11-17", p.bomben, "", "Stesura UC3",
-    "0.0.3", "2023-11-16", p.bomben, "", "Stesura UC1 e UC2",
-    "0.0.2", "2023-11-15", p.favaron, "", "Stesura sezione introduzione",
-    "0.0.1", "2023-11-14", p.favaron, "", "Struttura iniziale del documento",
+    "0.0.6", "2023-11-20", p.bomben, "m.pandolfo", "Stesura da UC4 a UC7",
+    "0.0.5", "2023-11-18", p.favaron, "m.pandolfo", "Stesura sezione descrizione",
+    "0.0.4", "2023-11-17", p.bomben, "m.pandolfo", "Stesura UC3",
+    "0.0.3", "2023-11-16", p.bomben, "m.pandolfo", "Stesura UC1 e UC2",
+    "0.0.2", "2023-11-15", p.favaron, "m.pandolfo", "Stesura sezione introduzione",
+    "0.0.1", "2023-11-14", p.favaron, "m.pandolfo", "Struttura iniziale del documento",
   ),
 )
 
@@ -31,7 +31,6 @@ Il documento seguente deve essere il più completo e specifico possibile così d
 === Struttura logica casi d’uso
 I casi d'uso descritti in questo documento hanno una precisa struttura logica descritta dal seguente modello:
 - Descrizione: Titolo del caso d'uso con annessa breve descrizione;
-- Attori coinvolti: Il soggetto che esegue una determinata azione;
 - Attori coinvolti: Il soggetto che esegue una determinata azione;
 - Precondizioni: Lo stato del sistema prima del caso d'uso;
 - Postcondizioni: Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
@@ -70,8 +69,8 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 Lo scopo finale del progetto è la realizzazione di un sistema di raccomandazione con relativa interfaccia web, la quale ha obiettivo di guidare le attività dell'azienda, utilizzatrice del sistema software, suggerendo a quali acquirenti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzarle.
 
 == Funzionalità del prodotto
-Il prodotto interagisce con gli utenti utilizzatrici suggerendo loro i migliori prodotti destinati ad un singolo cliente dell'azienda che fa uso del software, oppure la situazione contraria, ovvero dato un acquirente abituale, quali sono i top n articoli che potrebbero interessarli.\
-Le funzionalità chiavi del prodotto sono:\
+Il prodotto interagisce con gli utenti utilizzatori suggerendo loro i migliori prodotti destinati ad un singolo cliente dell'azienda che fa uso del software, oppure la situazione contraria, ovvero dato un acquirente abituale, quali sono i top n articoli che potrebbero interessargli.\
+Le funzionalità chiave del prodotto sono:\
 - accesso alla web app con un account;
 - creazione di nuovi account operatore da parte dell'utente amministratore;
 - visualizzazione dei prodotti acquistati da un cliente con relativi suggerimenti generati dal sistema di raccomandazione;
@@ -175,7 +174,6 @@ Il sistema dispone di due attori,...
 == UC3 - Aggiunta nuovo utente
 *Attori:*
 - Admin.
-- Users.
 *Precondizioni:*
 - L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
 - L'utente è nella sezione profilo della piattaforma.
@@ -302,7 +300,7 @@ Il sistema dispone di due attori,...
 - L'utente è nella pagina principale della piattaforma.
 - L'utente ha selezionato "Prodotto per Clienti".
 *Postcondizioni:*
-- L'utente ha selezionato correttamente il Cliente desiderato
+- L'utente ha selezionato correttamente il Prodotto desiderato
 *Scenario principale:*
 - Admin/Users:
     - Seleziona dal menù a tendina il prodotto per cui vuole vedere i prodotti consigliati.
