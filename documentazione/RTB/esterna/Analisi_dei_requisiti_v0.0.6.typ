@@ -89,7 +89,7 @@ L'utente amministratore ha la possibilità di creare ulteriori account utente pe
 Questa sezione è dedicata all'identificazione e alla dettagliata descrizione di tutti i casi d'uso emersi dall'analisi condotta dal nostro gruppo in relazione al capitolato d'appalto proposto. Il nostro obiettivo è individuare chiaramente gli attori coinvolti, seguendo la gerarchia precedentemente definita, e le possibili funzionalità che potrebbero emergere da questa analisi. Il processo di identificazione degli attori seguirà una struttura gerarchica predefinita, mentre le potenziali funzionalità saranno categorizzate e descritte in modo da fornire una panoramica esaustiva del contesto operativo del progetto.
 
 == Attori
-Il sistema dispone di due attori,...
+Il sistema dispone di due attori:
 - Admin;
 - Users.
 
