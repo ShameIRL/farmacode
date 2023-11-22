@@ -10,9 +10,9 @@
   ),
   changelog: (
     "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
-    "0.4.0", "20-11-2023", p.passarella, " ", "Completamento stesura sezione 3.1",
-    "0.3.0", "18-11-2023", p.baggio, " ", "Completamento stesura sezione 1",
-    "0.2.0", "15-11-2023", p.baggio + "\n" + p.passarella, " ", "Stesura indice",
+    "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 3.1",
+    "0.3.0", "18-11-2023", p.baggio, p.carraro, "Completamento stesura sezione 1",
+    "0.2.0", "15-11-2023", p.baggio + "\n" + p.passarella, p.carraro, "Stesura indice",
     "0.1.0", "12-11-2023", p.bomben + "\n" + p.rosson, p.baggio, "Stesura iniziale del documento",
   ),
 )
