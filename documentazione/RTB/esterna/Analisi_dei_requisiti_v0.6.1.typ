@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.6.1", "2023-11-20", p.rosson, p.rosson, "Corretto registro delle modifiche",
+    "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
     "0.6.0", "2023-11-20", p.bomben, p.pandolfo, "Stesura da UC4 a UC7",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
     "0.4.0", "2023-11-17", p.bomben, p.pandolfo, "Stesura UC3",

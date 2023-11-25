@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.6.0", "21-11-2023", p.rosson, "", "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
     "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
     "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 3.1",
     "0.3.0", "18-11-2023", p.baggio, p.carraro, "Completamento stesura sezione 1",
@@ -127,7 +128,23 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
 
     - Prima pagina: sempre composta dal template esclusivo del team, il logo dell'università, l'anno accademico in cui viene svolto il progetto, il nome del documento, il nome del team con la mail e i componenti;
 
-    - Registri modifiche (changelog): composti da versionamento, data della modifica effettuata, descrizione della modifica, ruolo dei componenti che hanno effettuato la modifica e i loro nomi;
+    - Registri modifiche (changelog): composti da versionamento, data della modifica effettuata, descrizione della modifica, ruolo dei componenti che hanno effettuato la modifica e i loro nomi.
+    
+// ha senso metterlo? secondo me si, perchè le norme dovrebbero descrivere come si fanno le cose e anche aiutare a farle
+Per quanto riguarda la modalità con la quale è possibile aggiornare la versione di un documento, basterà andare ad aggiungere nella sezione changelog del rispettivo file sorgente un nuovo record. Qui sotto un esempio:
+
+    ```
+changelog: (
+
+    "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst 
+     del documento",
+    "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 
+     3.1",
+)
+
+```
+
+Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutti i dati necessari. Si noti che p è una variabile d'ambiente in questo caso rappresentante le persone, contente tutti i nominativi utili e ripetuti nel corso del progetto.
 
     - Indice: ogni documento presenta un indice nella pagina seguente al registro delle modifiche, la strutture è divisa in sezioni X.X.X con il numero della pagina in cui inizia la sezione. La divisione X.X.X presenta i macro-argomenti suddivisi nei loro vari paragrafi a loro volta suddivisi in sezioni più specifiche;
 
@@ -158,10 +175,61 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
 == Gestione della configurazione
 
 === Descrizione /** descrizione di questa sezione */
+  
+Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essenziali per gestire lo stato di un prodotto software e di tutti i suoi componenti, compresi sorgenti e documentazione. Questo insieme di norme e procedure non solo fornisce informazioni sullo stato di avanzamento del progetto, ma offre anche un resoconto dettagliato dell'evoluzione nel tempo del prodotto, garantendo nel contempo che il sistema operi secondo le attese. Un'efficace gestione della configurazione è cruciale per preservare l'integrità e le prestazioni del prodotto software durante il suo avanzamento. Inoltre, dovrebbe facilitare la risoluzione di problematiche e conflitti, assicurando una gestione fluida e efficiente del ciclo di vita del software.
 
 === Versionamento /** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
+  
+Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni artefatto //da metter in glossario?
+(documento o sorgente che sia) permette il rispristino di quest'ultimo ad una sua fase precedente. Ciò rende molto più semplice la gestione di errori. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, inoltre comunica a chiunque sia il suo lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte, e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
+Ogni documento oltre a essere dotato di un changelog è identificato da un numero di versione così composto:
+
+#align(center, "vX.Y.Z")
+
+dove :
+
+- X rappesenta fasi del documento che suddividono e raccolgono i cambiamenti più significativi apportati all'aretfatto anche detti "major".
+- Y rappresenta modifiche minori come ad esempio la realizzazione di una sezione o feature le quali si pensa non siano sufficienti a stabilire una nuova "fase" del documento. Verrano anche identificati con l'appellativo "minor".
+- Z rappresenta piccoli aggiustamenti (fixes) o migliorie generali.
+
+Si noti che ogni versione rappresenta non solo un aggiunta di tipo prettamente produttivo, ma anche al sua revisione.
+
+ 
+//parte sulla possibile integrazione di un versionamento automatico
 
 === Repository /** spiegazione dello strumento usato per la repo (github) e descrizione della struttura (immagine) */
+
+Per la gestione della configurazione e versionamento il progetto si poggia sul uso di un repository Github.
+Qui sotto un link alla documentazione ufficiale:
+
+#link("https://docs.github.com/en")[
+    Github Docs.
+]
+
+==== Struttura
+L'attuale struttura del repository è suddivisa in 3 branch:
+
+- main;
+- approval;
+- sources.
+
+main:\
+E' definibile come il branch di presentazione, nel quale sono presenti solo artefatti revisionati e approvati dal responsabile di progetto corrente. Su esso è applicata una "branch protection rule" //glossario? 
+che non ne permette i push diretti e protegge il ramo.
+
+approval:\
+Come intuibile dal nome, è il branch che rappresenta il main durante lo sviluppo e che garantisce che ciò che entra nel ramo principale sia completamente revisionato e approvato. I suoi contenuti verrano uniti a quelli del main tramite un processo di merge una volta che il responsabile di progetto lo ritenga possibile. Le pull request da qualsiasi ramo verso quello di presentazione verranno infatti reinderizzate a quest'ultimo, che ne andrà a valutare la qualità, accettando il lavoro svolto o rimandandolo al mittente con direttive sul come migliorarlo.
+
+sources:\
+E' il branch relativo alla produzione della documentazione, perciò contiene solo file di tipo .typ e non è pensato per una sua supervisione esterna. I file sorgenti verranno compilati e resi disponibili automaticamente nel ramo approval.
+
+Nel branch main è disponibile un README.md che ne descrive la struttura di cartelle.
+Qui sotto un link al repository:
+
+#link("https://github.com/farmacodeunipd/farmacode")[
+    Repository di progetto.
+]
+
 
 == Accertamento della qualità 
 
