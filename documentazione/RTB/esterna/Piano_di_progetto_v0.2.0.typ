@@ -31,8 +31,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 == Riferimenti
 
 === Riferimenti informativi
-- T7 - Qualità del software (slide del corso di Ingegneria del Software);
-- T8 - Qualità di processo (slide del corso di Ingegneria del Software).
+- T4 - Gestione di progetto (slide del corso di Ingegneria del Software);
 
 = Pianificazione 
 
