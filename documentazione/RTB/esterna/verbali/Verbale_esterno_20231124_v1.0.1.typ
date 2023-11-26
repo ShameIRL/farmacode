@@ -6,8 +6,8 @@
     
   ),
   changelog: (
-    "1.0.1", "12-11-2023", p.rosson , "", "Apportate alcune modifiche e miglioramenti",
-    "1.0.0", "12-11-2023", p.favaron , p.bomben, "Stesura e revisione del verbale",
+    "1.0.1", "25-11-2023", p.rosson , "", "Apportate alcune modifiche e miglioramenti",
+    "1.0.0", "24-11-2023", p.favaron , p.bomben, "Stesura e revisione del verbale",
   ),
 )
 

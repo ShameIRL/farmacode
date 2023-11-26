@@ -6,13 +6,13 @@
     
   ),
   changelog: (
-    "0.1.1", "02-11-2023", p.rosson, p.carraro, "Corretto registro delle modifiche",
-    "0.1.0", "02-11-2023", p.bomben, p.carraro, "Struttura file",
+    "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
+    "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
   ),
 )
 
 = Introduzione e struttura
-l presente documento si pone lo scopo di individuare le terminologie del progetto e facilitare la comprensione
+Il presente documento si pone lo scopo di individuare le terminologie del progetto e facilitare la comprensione
 all’esterno e agli stessi membri del gruppo di tutti i termini specifici del caso, facilitando e migliorando la comunicazione con il proponente stesso. In particolare, si propone una struttura alfabetica, tale da monitorare
 facilmente terminologie.
 

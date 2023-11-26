@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.6.0", "21-11-2023", p.rosson, "", "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
+    "0.6.0", "25-11-2023", p.rosson, "", "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
     "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
     "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 3.1",
     "0.3.0", "18-11-2023", p.baggio, p.carraro, "Completamento stesura sezione 1",
