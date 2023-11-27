@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.7.0", "2023-11-27", p.pandolfo, "", "Stesura di un nuovo UC3 e conseguente modifica deglu UC successivi",
     "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
     "0.6.0", "2023-11-20", p.bomben, p.pandolfo, "Stesura da UC4 a UC7",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
@@ -172,34 +173,48 @@ Il sistema dispone di due attori:
     - Verifica le credenziali immesse dall'utente nei relativi campi (email, password).
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
 
-== UC3 - Aggiunta nuovo utente
+== UC3 - Visualizzazione utenti
+*Attori:*
+- Admin.
+*Precondizioni:*
+- L’utente ha già effettuato l’accesso alla piattaforma come admin(UC1)
+*Postcondizioni:*
+- Viene mostrata una lista degli utenti registrati.
+*Scenario principale:*
+- Admin:
+   - Clicca sul tasto “Profilo” presente nella pagina principale.
+   - Vede una lista degli utenti registrati.
+- Sistema:
+   - Visualizza una lista di tutti gli utenti registrati.
+
+== UC4 - Aggiunta nuovo utente
 *Attori:*
 - Admin.
 *Precondizioni:*
 - L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- L'utente è nella sezione profilo della piattaforma.
+- L'utente è nella sezione profilo della piattaforma e sta visualizzando gli utenti registrati (UC3)
 *Postcondizioni:*
 - L'utente ha aggiunto correttamente il nuovo utente con i privilegi base (User)
 *Scenario principale:*
 - Admin:
-    - Accede nella sezione del profilo utente.
-    - Se l'utente è correttamente l'admin, visualizza i campi email e password.
-    - Inserisce la email del nuovo utente nel campo [email] (UC3.1)
-    - Inserisce la password del nuovo utente nel campo [password] (UC3.2)
+    - Si trova nella sezione "Profilo" e sta visualizzando gli utenti registrati (UC3).
+    - Seleziona l'opzione di creazione di un nuovo utente.
+    - Inserisce la email del nuovo utente nel campo [email] (UC4.1).
+    - Inserisce la password del nuovo utente nel campo [password] (UC4.2).
 - Sistema:
     - Verifica che i campi non siano vuoti (email, password).
     - Se i campi sono riempiti correttamente, salva nel sistema le credenziali dei nuovi utenti.
 *Generalizzazioni:*
-- UC3.1 - Inserimento email.
-- UC3.2 - Inserimento password.
+- UC4.1 - Inserimento email.
+- UC4.2 - Inserimento password.
 
-=== UC3.1 - Inserimento email
+=== UC4.1 - Inserimento email
 *Attori:*
 - Admin.
 *Precondizioni:*
 - L'utente è nella sezione profilo personale.
 - L'utente dispone dei privilegi per aggiungere un nuovo utente.
-- L'utente sta aggiungendo un nuovo utente (UC3).
+- L'utente sta aggiungendo un nuovo utente (UC4).
 *Postcondizioni:*
 - L'utente inserisce correttamente la email dell'utente che vuole aggiungere.
 *Scenario principale:*
@@ -209,13 +224,13 @@ Il sistema dispone di due attori:
     - il sistema verifica che l'email inserita sia nel formato corretto.
     - prosegue con la creazione dell'utente utilizzando l'email inserita.
 
-=== UC3.2 - Inserimento password
+=== UC4.2 - Inserimento password
 *Attori:*
 - Admin.
 *Precondizioni:*
 - L'utente è nella sezione profilo personale.
 - L'utente dispone dei privilegi per aggiungere un nuovo utente.
-- L'utente sta aggiungendo un nuovo utente (UC3).
+- L'utente sta aggiungendo un nuovo utente (UC4).
 *Postcondizioni:*
 - L'utente inserisce correttamente la password dell'utente che vuole aggiungere.
 *Scenario principale:*
@@ -224,23 +239,22 @@ Il sistema dispone di due attori:
 - Sistema:
     - prosegue con la creazione dell'utente utilizzando la password inserita.
 
-== UC4 - Eliminazione utente
+== UC5 - Eliminazione utente
 *Attori*
 - Admin.
 *Precondizioni*
 - L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- L'utente è nella sezione profilo della piattaforma.
+- L'utente sta visualizzando la lista degli utenti registrati (UC3).
 *Postcondizioni*
 - L'utente ha eliminato correttamente l'utente con i privilegi base.
 *Scenario principale*
 - Admin
-    - Accede nella sezione del profilo utente.
-    - Se l'utente è correttamente l'admin, visualizza gli utenti base
+    - Si trova nella sezione "Profilo" e sta visualizzando gli utenti registrati (UC3).
     - Clicca suk bottone "Elimina" a lato del utente che vuole eliminare
 - Sistema
     - Elimina dal sistema il profilo dell'utente.
 
-== UC5 - Vista Cliente per prodotti
+== UC6 - Vista Cliente per prodotti
 *Attori:*
 - Admin.
 - Users.
@@ -252,13 +266,13 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 - Admin/Users:
     - Seleziona il campo "Cliente per prodotti" nella schermata principale.
-    - Seleziona il "Cliente" dal menù a tendina (UC5.1).
+    - Seleziona il "Cliente" dal menù a tendina (UC6.1).
 - Sistema:
     - crea correttamente la vista con i prodotti suggeriti associati al cliente.
 *Generalizzazioni:*
-- UC5.1 - Selezione Cliente.
+- UC6.1 - Selezione Cliente.
 
-=== UC5.1 - Selezione Cliente
+=== UC6.1 - Selezione Cliente
 *Attori:*
 - Admin
 - Users
@@ -274,7 +288,7 @@ Il sistema dispone di due attori:
 - Sistema:
     - Prosegue per la visualizzazione della lista dei prodotti in base alla scelta del cliente.
 
-== UC6 - Vista prodotti per Cliente
+== UC7 - Vista prodotti per Cliente
 *Attori:*
 - Admin.
 - Users.
@@ -286,13 +300,13 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 - Admin/Users:
     - Seleziona il campo "Prodotto per Clienti" nella schermata principale.
-    - Seleziona il "Prodotto" dal menù a tendina (UC6.1).
+    - Seleziona il "Prodotto" dal menù a tendina (UC7.1).
 - Sistema:
     - crea correttamente la vista con i Clienti suggeriti associati al cliente.
 *Generalizzazioni:*
-- UC5.1 - Selezione Prodotto.
+- UC7.1 - Selezione Prodotto.
 
-=== UC6.1 - Selezione Prodotto
+=== UC7.1 - Selezione Prodotto
 *Attori:*
 - Admin
 - Users
@@ -308,7 +322,7 @@ Il sistema dispone di due attori:
 - Sistema:
     - Prosegue per la visualizzazione della lista dei Clienti in base alla scelta del prodotto.
 
-== UC7 - Feedback raccomandazione
+== UC8 - Feedback raccomandazione
 *Attori:*
 - Admin
 - Users
