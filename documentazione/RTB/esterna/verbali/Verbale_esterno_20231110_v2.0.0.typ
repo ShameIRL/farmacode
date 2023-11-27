@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+        "2.0.0", "22-11-2023", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
     "1.0.0", "10-11-2023", p.baggio + ",\n" + p.rosson, p.pandolfo, "Stesura e revisione del verbale",
   ),
 )
@@ -67,19 +68,7 @@ Inoltre si è concordato l'utilizzo di Python e della libreria Surprise per la c
 Infine si è richiesto un nuovo meeting di tipo formativo e di consultazione sull'attività di analisi dei requisiti fissato in data 15/10/2023.
 
 #v(13cm)
-Con la seguente firma il proponente esterno conferma e valida il documento:
-#v(0.5cm)
 
-#set line(length: 40%)
-#stack(
-    spacing: 0.2em,
-    [Firma:],
-    line(stroke: 1pt + black)
-)
-#v(0.3cm)
-#set line(length: 35%)
-#stack(
-    spacing: 0.2em,
-    [Data:],
-    line(stroke: (paint: black, thickness: 1pt, dash: "dashed"))
+#align(left,
+  image("/imgs/firme/22-11-2023.png", width: 75%, height: 12%),
 )

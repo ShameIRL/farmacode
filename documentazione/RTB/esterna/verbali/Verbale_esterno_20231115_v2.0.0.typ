@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+            "2.0.0", "22-11-2023", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
     "1.0.0", "15-11-2023", p.bomben + ",\n" + p.rosson, p.pandolfo, "Stesura e revisione del verbale",
   ),
 )
@@ -61,19 +62,6 @@ Per quanto riguarda requisiti inerenti alla sicurezza del sistema, sono stati in
 In conclusione si è discusso in modo molto generale sul POC e sul suo design.
 
 #v(10cm)
-Con la seguente firma il proponente esterno conferma e valida il documento:
-#v(0.5cm)
-
-#set line(length: 40%)
-#stack(
-    spacing: 0.2em,
-    [Firma:],
-    line(stroke: 1pt + black)
-)
-#v(0.3cm)
-#set line(length: 35%)
-#stack(
-    spacing: 0.2em,
-    [Data:],
-    line(stroke: (paint: black, thickness: 1pt, dash: "dashed"))
+#align(left,
+  image("/imgs/firme/22-11-2023.png", width: 75%, height: 12%),
 )
