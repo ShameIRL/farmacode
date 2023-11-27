@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.3.0", "2023-11-27", p.carraro, "", "Stesura sezione qualità di architettura",
     "0.2.0", "2023-11-24", p.carraro, "", "Stesura sezione introduzione",
     "0.1.0", "2023-11-24", p.carraro, "", "Struttura iniziale del documento",
   ),
@@ -32,10 +33,74 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 == Riferimenti
 
 === Riferimenti informativi
+- T6 - Progettazione software (slide del corso di Ingegneria del Software);
 - T7 - Qualità del software (slide del corso di Ingegneria del Software);
 - T8 - Qualità di processo (slide del corso di Ingegneria del Software).
 
 = Piano di qualifica
+
+== Qualità dell'architettura
+La qualità di una buona architettura è definita da questi aspetti: \
+#table(
+  columns: (auto, auto),
+  stroke: (none),
+  align: horizon,
+  [*Aspetti auto-esplicativi o \
+  non qualificabili*], [*Aspetti considerati per\ qualificazione architettura*],
+  [- Sufficienza;],[- Modularità;],
+  [- Robustezza;],[- Disponibilità;],
+  [- Flessibilità;], [- Semplicità;],
+  [- Riusabilità;], [- Incapsulazione;],
+  [- Efficienza;], [- Coesione;],
+  [- Affidabilità;], [- Basso accoppiamento;],
+  [- Sicurezza rispetto a malfunzionamenti;], [],
+  [- Sicurezza rispetto a intrusioni.], [],
+)
+
+=== Modularità
+Si intende la suddivisione dell'architettura in parti chiare e ben distinte.\
+I passaggi di qualità sono due:
+- Determinare le parti che compongono l'interfaccia utente e quelle che compongono l'implementazione;
+- Particolare attenzione va posto nell'evitare l'effetto domino, ovvero quando la modifica interna di una parte comporta modifiche anche al suo esterno.
+Questi aspetti andranno verificati in fase di design e conseguentemente documentati. La stragegia scelta per modularizzare è ricercando information hiding.
+
+=== Disponibilità
+Anche detta availability, indica il grado di indisponibilità causata dalla manutenzione.\
+Questo aspetto andrà verificato in fase di design e conseguentemente documentato.
+
+=== Semplicità
+Questo aspetto andrà verificato in fase di design e conseguentemente documentato.\
+In particolare andranno verificati:
+- la presenza di elementi strettamente necessari;
+- ogni elemento sarà il più semplice possibile, senza renderlo banale.
+
+=== Incapsulazione
+Questo aspetto andrà verificato in fase di design e conseguentemente documentato.\
+In particolare andranno verificati:
+- Rendere invisibile all'esterno le componenti architetturali;
+- Esporre solo l'interfaccia, nascondendo algoritmi e strutture dati usate per realizzarla;
+- La manutenzione all'interfaccia non andrà a danneggiare l'implementazione.
+
+=== Coesione
+Questo aspetto andrà verificato in fase di design e conseguentemente documentato.\
+In particolare andranno verificati:
+- Funzionalità vicine stanno nella stessa componente;
+- Minore interdipendenza fra componenti;
+- Architettura più comprensibile;
+- Giusto equilibrio fra modularità e coesione stessa.
+La stragegia scelta per modularizzare è ricercando information hiding.
+
+=== Accoppiamento
+Questo aspetto andrà verificato in fase di design e conseguentemente documentato.
+In particolare andranno verificati:
+- Dipendenze fra parti, esempio parti interne ed esterne;
+- Accoppiamento sia minimizzato:
+  - il grado U di utilizzo reciproco di M componenti.
+- Metriche fan-in e fan-out:
+  - SFIN, indice di utilità;
+  - SFOUT, indice di dipendenza;
+  - Una buona progettazione ha componenti con SFIN elevato.
+
 
 == Qualità del software
 
