@@ -8,41 +8,78 @@ on:
 jobs:
   build_typst:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: sources
+          fetch-depth: 0
 
       - name: Debug Directory Contents
         run: |
           ls -R
 
-      - name: Build Typst documents
+      - name: Get all changed typst files
+        id: changed-typst-files
+        uses: tj-actions/changed-files@v40
+        with:
+          files: |
+             documentazione/**/*.typ
+
+      - name: End action if no changes
+        if: steps.changed-typst-files.outputs.all_changed_files == ''
+        run: echo "No changed or new files found, ending the job."
+
+
+      - name: List all changed files typst files
+        if: steps.changed-typst-files.outputs.all_changed_files != ''
         run: |
-          docker run -e "XDG_CACHE_HOME=/root" --user $(id -u):$(id -g) -v ${{ github.workspace }}:/root --rm ghcr.io/typst/typst:latest find documentazione -type f -name "*\.typ" -exec sh -c 'typst compile --root . "$1" && rm -rf typst/packages/preview/' _ {} \;
+          for file in ${{ steps.changed-typst-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+      
+      - name: Build Typst documents
+        if: steps.changed-typst-files.outputs.all_changed_files != ''
+        run: |
+          for file in ${{ steps.changed-typst-files.outputs.all_changed_files }}; do
+            docker run -e "XDG_CACHE_HOME=/root" --user $(id -u):$(id -g) -v ${{ github.workspace }}:/root --rm ghcr.io/typst/typst:latest find "$(dirname $file)" -type f -name "$(basename $file)" -exec sh -c 'typst compile --root . "$1" && rm -rf typst/packages/preview/' _ {} \;
+          done
 
       - name: Commit and push PDF files to approval branch
+        if: steps.changed-typst-files.outputs.all_changed_files != ''
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      
-          # Add and commit PDF files to the sources branch
+          
           git add .
           git commit -m "Update PDF files [skip ci]"
-          git status
           git fetch
-          git status
-          # Create and switch to the approval branch
+
           git checkout approval
+          # Remove only the modified PDF files from the approval branch
+          check=false
+          for file in ${{ steps.changed-typst-files.outputs.all_changed_files }}; do
+            # Extract the base name without the extension
+            base_name=$(basename "$file" .typ)
+            # Concatenate "pdf" to the base name and clear the version
+            pdf_file=$(echo "$base_name" | awk -F '_v' '{print $1}')
+            
+            if (( $(git ls-files -- "**/$pdf_file*.pdf" | wc -l) > 0 )); then
+              git rm -- **/"$pdf_file"*.pdf
+              check=true
+            fi
+          done
           
-          git rm -r documentazione/RTB/
-          git commit -m "Delete old existing documents [skip ci]"
-          git push origin approval
+          if $check; then
+            git add .
+            git commit -m "Delete existing documents [skip ci]"
+            git push origin approval
+          fi
 
           # Check out PDF files from the sources branch
-          git checkout sources -- documentazione/RTB/**/*.pdf
-      
+          git checkout sources -- *.pdf
+
           # Add, commit, and push changes to the documents branch
           git add .
           git commit -m "Update PDF files [skip ci]"
