@@ -173,7 +173,7 @@ Il sistema dispone di due attori:
     - Verifica le credenziali immesse dall'utente nei relativi campi (email, password).
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
 
-== UC3 - Visualizzazione utenti
+== UC3 - Visualizzazione lista utenti
 *Attori:*
 - Admin.
 *Precondizioni:*
