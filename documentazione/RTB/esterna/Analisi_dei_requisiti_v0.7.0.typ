@@ -378,6 +378,64 @@ Il sistema dispone di due attori:
 
 == Requisiti funzionali
 
+I requisiti funzionali descrivono le funzionalità del sistema, le azioni
+che il sistema può compiere e le informazioni che questo può fornire.\
+
+Il numerolo di ciascuno rispecchia ove previsto gli UC presenti, mentre le sigle sotto
+riportate indicano:
+- ROF: Requisito Obbligatorio Funzionale;
+- RDF: Requisito Desiderabile Funzionale.
+
+#table(
+  columns: (auto, auto, auto),
+  inset: 10pt,
+  align: center,
+  [*Codice*], [*Descrizione*], [*Fonti*],
+  [ROF 1],
+  [L’utente deve poter accedere all’applicazione],
+  [UC1, UC1.1, UC1.2],
+  [RDF 2],
+  [Il sistema deve visualizzare un messaggio di errore esplicativo],
+  [UC2],
+  [ROF 3],
+  [L’admin deve poter visualizzare la lista degli utenti],
+  [UC3],
+  [ROF 4],
+  [L’admin deve poter aggiungere un nuovo utente],
+  [UC4, UC4.1, UC4.2],
+  [ROF 5],
+  [L’admin deve poter eliminare un determinato utente],
+  [UC5],
+  [ROF 6],
+  [L’utente deve poter vedere la lista dei prodotti consigliati per un determinato cliente],
+  [UC6, Capitolato],
+  [ROF 7],
+  [L’utente deve poter vedere la lista dei clienti consigliati per un determinato prodotto],
+  [UC7, Capitolato],
+  [ROF 8],
+  [L’utente deve poter lasciare un feedback per valutare il risultato della ricerca],
+  [UC8, Capitolato],
+  [ROF 9],
+  [L’utente deve poter effettuare il logout],
+  [UC9],
+  [RDF 10],
+  [L’utente(Admin?) deve poter caricare un dataset],
+  [Verbale Interno],
+  [RDF 11],
+  [L’utente(Admin?) deve poter avviare il training di un determinato dataset],
+  [Verbale Interno],
+  [RDF 12],
+  [L’utente deve poter visualizzare la lista dei suoi clienti (non si può già fare da clienti per prod.?)],
+  [Verbale Interno],
+  [RDF 13],
+  [L’utente deve poter visualizzare la lista dei suoi prodotti (non si può già fare da prod. per clien.?)],
+  [Verbale Interno],
+)
+
+
+
+
+
 == Requisiti di qualità
 
 I requisiti di qualità descrivono come un sistema deve essere, o
