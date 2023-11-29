@@ -131,6 +131,8 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
     - Registri modifiche (changelog): composti da versionamento, data della modifica effettuata, descrizione della modifica, ruolo dei componenti che hanno effettuato la modifica e i loro nomi.
     
 // ha senso metterlo? secondo me si, perchè le norme dovrebbero descrivere come si fanno le cose e anche aiutare a farle
+/* da spostare
+
 Per quanto riguarda la modalità con la quale è possibile aggiornare la versione di un documento, basterà andare ad aggiungere nella sezione changelog del rispettivo file sorgente un nuovo record. Qui sotto un esempio:
 
     ```
@@ -144,7 +146,9 @@ changelog: (
 
 ```
 
-Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutti i dati necessari. Si noti che p è una variabile d'ambiente in questo caso rappresentante le persone, contente tutti i nominativi utili e ripetuti nel corso del progetto.
+Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutti i dati necessari. Si noti che p è una variabile d'ambiente in questo caso rappresentante le persone, contente tutti i nominativi utili e ripetuti nel corso del progetto. 
+
+*/
 
     - Indice: ogni documento presenta un indice nella pagina seguente al registro delle modifiche, la strutture è divisa in sezioni X.X.X con il numero della pagina in cui inizia la sezione. La divisione X.X.X presenta i macro-argomenti suddivisi nei loro vari paragrafi a loro volta suddivisi in sezioni più specifiche;
 
