@@ -101,7 +101,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC1.jpg"),
   caption: [
-    Immagine 1 - Login
+    Login
   ],
 )
 
@@ -131,7 +131,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC1 generalizzazione.jpg"),
   caption: [
-    Immagine 2 - Inserimento email e password
+    Inserimento email e password
   ],
 )
 
@@ -194,7 +194,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC3.jpg"),
   caption: [
-    Immagine 3 - Visualizzazione lista utenti
+    Visualizzazione lista utenti
   ],
 )
 
@@ -216,7 +216,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC4.jpg"),
   caption: [
-    Immagine 4 - Aggiunta nuovo utente
+    Aggiunta nuovo utente
   ],
 )
 
@@ -243,7 +243,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC4 Generalizzazione.jpg"),
   caption: [
-    Immagine 5 - Inserimento email e password
+    Inserimento email e password
   ],
 )
 
@@ -283,7 +283,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC5.jpg"),
   caption: [
-    Immagine 6 - Eliminazione utente
+    - Eliminazione utente
   ],
 )
 
@@ -306,7 +306,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC6.jpg"),
   caption: [
-    Immagine 7 - Vista cliente per prodotti
+    Vista cliente per prodotti
   ],
 )
 
@@ -332,7 +332,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC7.jpg"),
   caption: [
-    Immagine 8 - Vista prodotti per cliente
+    Vista prodotti per cliente
   ],
 )
 
@@ -357,7 +357,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC8.jpg"),
   caption: [
-    Immagine 9 - Feedback raccomandazione
+    Feedback raccomandazione
   ],
 )
 
