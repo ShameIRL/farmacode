@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.7.0", "2023-11-27", p.pandolfo, "", "Stesura di un nuovo UC3 e conseguente modifica deglu UC successivi",
+    "0.8.0", "2023-11-27", p.passarella, "", "Stesura requisiti di qualità e di vincolo",
+    "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e conseguente modifica deglu UC successivi",
     "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
     "0.6.0", "2023-11-20", p.bomben, p.pandolfo, "Stesura da UC4 a UC7",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
@@ -342,7 +343,69 @@ Il sistema dispone di due attori:
 
 == Requisiti di qualità
 
+I requisiti di qualità descrivono come un sistema deve essere, o
+come il sistema deve esibirsi, per soddisfare le esigenze dell'utente.\
+
+Le sigle sotto riportate possono essere così classificate:
+- RDQ: Requisito Desiderabile di Qualità;
+- ROQ: Requisito Obbligatorio di Qualità.
+
+#table(
+  columns: (auto, auto, auto),
+  inset: 10pt,
+  align: center,
+  [*Codice*], [*Descrizione*], [*Fonti*],
+  [ROQ 1],
+  [Progettazione architetturale e tecnologie utilizzate],
+  [Capitolato],
+  [ROQ 2],
+  [Schema di progettazione della base di dati],
+  [Capitolato],
+  [ROQ 3],
+  [Codice prodotto in formato sorgente reso disponibile tramite repo pubblici],
+  [Capitolato],
+  [ROQ 4],
+  [Documentazione descrittiva del sistema di raccomandazione implementato],
+  [Capitolato],
+)
+
+
 == Requisiti di vincolo
+
+I requisiti di vincolo descrivono i limiti e le restrizioni che un sistema
+deve rispettare per soddisfare le esigenze dell'utente.\
+
+Le sigle sotto riportate possono essere così classificate:
+- RDV: Requisito Desiderabile di Vincolo;
+- ROV: Requisito Obbligatorio di Vincolo.
+
+#table(
+  columns: (auto, auto, auto),
+  inset: 10pt,
+  align: center,
+  [*Codice*], [*Descrizione*], [*Fonti*],
+  [ROV 1],
+  [Database relazionale sviluppato con MySQL],
+  [Capitolato],
+  [ROV 2],
+  [Sistema di raccomandazione sviluppato con Surprise (libreria in python)],
+  [Capitolato],
+  [ROV 3],
+  [Visualizzazione e gestione dei feedback UI tramite piattaforma web-based sviluppata con...],
+  [Capitolato],
+  [RDV 4],
+  [Strategie di raccomandazione con algoritmi Matrix Factorization o K-Nearest Neighbors],
+  [Capitolato],
+  [ROV 5],
+  [Sistema di feedback],
+  [Capitolato],
+  [ROV 6],
+  [Modalità di implementazione del sistema collaborative filtering e content-based filtering],
+  [Capitolato],
+  [ROV 7],
+  [Misurazione prestazioni del modello utilizzando i dati presenti nel test set e delle metriche (precision e recall)],
+  [Capitolato]
+)
 
 === Requisiti d'ambiente
 
