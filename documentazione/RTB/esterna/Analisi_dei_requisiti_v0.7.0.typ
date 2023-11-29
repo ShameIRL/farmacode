@@ -129,7 +129,7 @@ Il sistema dispone di due attori:
 - UC2 - Visualizzazione errore di login
 
 #figure(
-  image("/imgs/Uml/UC1 generalizzazione.jpg"),
+  image("/imgs/Uml/UC1 generalizzazione.jpg", width: 80%),
   caption: [
     Inserimento email e password
   ],
@@ -192,7 +192,7 @@ Il sistema dispone di due attori:
 == UC3 - Visualizzazione lista utenti
 
 #figure(
-  image("/imgs/Uml/UC3.jpg"),
+  image("/imgs/Uml/UC3.jpg", width: 80%),
   caption: [
     Visualizzazione lista utenti
   ],
@@ -214,7 +214,7 @@ Il sistema dispone di due attori:
 == UC4 - Aggiunta nuovo utente
 
 #figure(
-  image("/imgs/Uml/UC4.jpg"),
+  image("/imgs/Uml/UC4.jpg", width: 80%),
   caption: [
     Aggiunta nuovo utente
   ],
@@ -241,7 +241,7 @@ Il sistema dispone di due attori:
 - UC4.2 - Inserimento password.
 
 #figure(
-  image("/imgs/Uml/UC4 Generalizzazione.jpg"),
+  image("/imgs/Uml/UC4 Generalizzazione.jpg", width: 80%),
   caption: [
     Inserimento email e password
   ],
@@ -281,7 +281,7 @@ Il sistema dispone di due attori:
 == UC5 - Eliminazione utente
 
 #figure(
-  image("/imgs/Uml/UC5.jpg"),
+  image("/imgs/Uml/UC5.jpg", width: 80%),
   caption: [
     - Eliminazione utente
   ],
@@ -304,7 +304,7 @@ Il sistema dispone di due attori:
 == UC6 - Vista Cliente per prodotti
 
 #figure(
-  image("/imgs/Uml/UC6.jpg"),
+  image("/imgs/Uml/UC6.jpg", width: 80%),
   caption: [
     Vista cliente per prodotti
   ],
@@ -330,7 +330,7 @@ Il sistema dispone di due attori:
 == UC7 - Vista prodotti per cliente
 
 #figure(
-  image("/imgs/Uml/UC7.jpg"),
+  image("/imgs/Uml/UC7.jpg", width: 80%),
   caption: [
     Vista prodotti per cliente
   ],
@@ -355,7 +355,7 @@ Il sistema dispone di due attori:
 == UC8 - Feedback raccomandazione
 
 #figure(
-  image("/imgs/Uml/UC8.jpg"),
+  image("/imgs/Uml/UC8.jpg", width: 80%),
   caption: [
     Feedback raccomandazione
   ],
