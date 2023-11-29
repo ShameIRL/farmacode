@@ -8,8 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.8.0", "2023-11-27", p.passarella, "", "Stesura requisiti di qualità e di vincolo",
-    "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e conseguente modifica deglu UC successivi",
+    "0.8.0", "2023-11-27", p.passarella, p.pandolfo, "Stesura requisiti di qualità e di vincolo",
+    "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e modifica deglu UC successivi",
     "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
     "0.6.0", "2023-11-20", p.bomben, p.pandolfo, "Stesura da UC4 a UC7",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
@@ -266,28 +266,12 @@ Il sistema dispone di due attori:
 - L'utente visualizza correttamente la lista dei prodotti consigliati per il determinato cliente.
 *Scenario principale:*
 - Admin/Users:
-    - Seleziona il campo "Cliente per prodotti" nella schermata principale.
-    - Seleziona il "Cliente" dal menù a tendina (UC6.1).
+    - Clicca il tasto "filtri" presente nella schermata principale.
+    - Seleziona il campo "Cliente per prodotti".
+    - Seleziona il Cliente desiderato dal menù a tendina.
 - Sistema:
     - crea correttamente la vista con i prodotti suggeriti associati al cliente.
-*Generalizzazioni:*
-- UC6.1 - Selezione Cliente.
 
-=== UC6.1 - Selezione Cliente
-*Attori:*
-- Admin
-- Users
-*Precondizioni:*
-- L'utente ha eseguito l'accesso correttamente.
-- L'utente è nella pagina principale della piattaforma.
-- L'utente ha selezionato "Cliente per prodotti".
-*Postcondizioni:*
-- L'utente ha selezionato correttamente il Cliente desiderato
-*Scenario principale:*
-- Admin/Users:
-    - Seleziona dal menù a tendina il cliente per cui vuole vedere i prodotti consigliati.
-- Sistema:
-    - Prosegue per la visualizzazione della lista dei prodotti in base alla scelta del cliente.
 
 == UC7 - Vista prodotti per Cliente
 *Attori:*
@@ -300,28 +284,11 @@ Il sistema dispone di due attori:
 - L'utente visualizza correttamente la lista dei Clienti consigliati per il determinato prodotto.
 *Scenario principale:*
 - Admin/Users:
-    - Seleziona il campo "Prodotto per Clienti" nella schermata principale.
-    - Seleziona il "Prodotto" dal menù a tendina (UC7.1).
+    -Clicca il tasto "filtri" presente nella schermata principale.
+    - Seleziona il campo "Prodotto per Clienti".
+    - Seleziona il "Prodotto" desiderato dal menù a tendina.
 - Sistema:
-    - crea correttamente la vista con i Clienti suggeriti associati al cliente.
-*Generalizzazioni:*
-- UC7.1 - Selezione Prodotto.
-
-=== UC7.1 - Selezione Prodotto
-*Attori:*
-- Admin
-- Users
-*Precondizioni:*
-- L'utente ha eseguito l'accesso correttamente.
-- L'utente è nella pagina principale della piattaforma.
-- L'utente ha selezionato "Prodotto per Clienti".
-*Postcondizioni:*
-- L'utente ha selezionato correttamente il Prodotto desiderato
-*Scenario principale:*
-- Admin/Users:
-    - Seleziona dal menù a tendina il prodotto per cui vuole vedere i prodotti consigliati.
-- Sistema:
-    - Prosegue per la visualizzazione della lista dei Clienti in base alla scelta del prodotto.
+    - crea correttamente la vista con i clienti suggeriti associati al prodotto.
 
 == UC8 - Feedback raccomandazione
 *Attori:*
