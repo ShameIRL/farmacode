@@ -391,7 +391,6 @@ riportate indicano:
   columns: (auto, auto, auto),
   inset: 10pt,
   align: center,
- fill: (_, row) => if row==0 { brown } else calc.odd(col) { luma(240) } else { white },
   [*Codice*], [*Descrizione*], [*Fonti*],
   [ROF 1],
   [L’utente deve poter accedere all’applicazione],
