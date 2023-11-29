@@ -383,8 +383,9 @@ che il sistema può compiere e le informazioni che questo può fornire.\
 
 Il numerolo di ciascuno rispecchia ove previsto gli UC presenti, mentre le sigle sotto
 riportate indicano:
-- ROF: Requisito Obbligatorio Funzionale;
-- RDF: Requisito Desiderabile Funzionale.
+- RDF: Requisito Desiderabile Funzionale;
+- ROF: Requisito Obbligatorio Funzionale.
+
 
 #table(
   columns: (auto, auto, auto),
