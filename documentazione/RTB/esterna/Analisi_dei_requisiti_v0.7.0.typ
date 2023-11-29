@@ -99,7 +99,7 @@ Il sistema dispone di due attori:
 == UC1 - Login
 
 #figure(
-  image("/imgs/Uml/UC1.jpg"),
+  image("/imgs/Uml/UC1.jpg", width: 80%),
   caption: [
     Login
   ],
