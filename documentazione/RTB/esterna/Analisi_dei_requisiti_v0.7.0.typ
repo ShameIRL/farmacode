@@ -97,6 +97,12 @@ Il sistema dispone di due attori:
 - Users.
 
 == UC1 - Login
+#figure(
+  image("/imgs/Uml/UC3.jpg"),
+  caption: [
+    Immagine 1 - Login
+  ],
+)
 *Attori:*
 - Admin;
 - Users.
