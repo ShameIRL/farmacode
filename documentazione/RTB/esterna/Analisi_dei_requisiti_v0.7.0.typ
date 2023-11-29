@@ -97,12 +97,14 @@ Il sistema dispone di due attori:
 - Users.
 
 == UC1 - Login
+
 #figure(
   image("/imgs/Uml/UC1.jpg"),
   caption: [
     Immagine 1 - Login
   ],
 )
+
 *Attori:*
 - Admin;
 - Users.
@@ -125,6 +127,13 @@ Il sistema dispone di due attori:
     - UC1.2 - Inserimento password.
 *Estensioni:*
 - UC2 - Visualizzazione errore di login
+
+#figure(
+  image("/imgs/Uml/UC1 generalizzazione.jpg"),
+  caption: [
+    Immagine 2 - Inserimento email e password
+  ],
+)
 
 === UC1.1 - Inserimento email
 *Attori:*
@@ -181,6 +190,14 @@ Il sistema dispone di due attori:
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
 
 == UC3 - Visualizzazione lista utenti
+
+#figure(
+  image("/imgs/Uml/UC3.jpg"),
+  caption: [
+    Immagine 3 - Visualizzazione lista utenti
+  ],
+)
+
 *Attori:*
 - Admin.
 *Precondizioni:*
@@ -195,6 +212,14 @@ Il sistema dispone di due attori:
    - Visualizza una lista di tutti gli utenti registrati.
 
 == UC4 - Aggiunta nuovo utente
+
+#figure(
+  image("/imgs/Uml/UC4.jpg"),
+  caption: [
+    Immagine 4 - Aggiunta nuovo utente
+  ],
+)
+
 *Attori:*
 - Admin.
 *Precondizioni:*
@@ -214,6 +239,13 @@ Il sistema dispone di due attori:
 *Generalizzazioni:*
 - UC4.1 - Inserimento email.
 - UC4.2 - Inserimento password.
+
+#figure(
+  image("/imgs/Uml/UC4 Generalizzazione.jpg"),
+  caption: [
+    Immagine 5 - Inserimento email e password
+  ],
+)
 
 === UC4.1 - Inserimento email
 *Attori:*
@@ -247,6 +279,14 @@ Il sistema dispone di due attori:
     - prosegue con la creazione dell'utente utilizzando la password inserita.
 
 == UC5 - Eliminazione utente
+
+#figure(
+  image("/imgs/Uml/UC5.jpg"),
+  caption: [
+    Immagine 6 - Eliminazione utente
+  ],
+)
+
 *Attori*
 - Admin.
 *Precondizioni*
@@ -262,6 +302,14 @@ Il sistema dispone di due attori:
     - Elimina dal sistema il profilo dell'utente.
 
 == UC6 - Vista Cliente per prodotti
+
+#figure(
+  image("/imgs/Uml/UC6.jpg"),
+  caption: [
+    Immagine 7 - Vista cliente per prodotti
+  ],
+)
+
 *Attori:*
 - Admin.
 - Users.
@@ -279,7 +327,15 @@ Il sistema dispone di due attori:
     - crea correttamente la vista con i prodotti suggeriti associati al cliente.
 
 
-== UC7 - Vista prodotti per Cliente
+== UC7 - Vista prodotti per cliente
+
+#figure(
+  image("/imgs/Uml/UC7.jpg"),
+  caption: [
+    Immagine 8 - Vista prodotti per cliente
+  ],
+)
+
 *Attori:*
 - Admin.
 - Users.
@@ -297,6 +353,14 @@ Il sistema dispone di due attori:
     - crea correttamente la vista con i clienti suggeriti associati al prodotto.
 
 == UC8 - Feedback raccomandazione
+
+#figure(
+  image("/imgs/Uml/UC8.jpg"),
+  caption: [
+    Immagine 9 - Feedback raccomandazione
+  ],
+)
+
 *Attori:*
 - Admin
 - Users
