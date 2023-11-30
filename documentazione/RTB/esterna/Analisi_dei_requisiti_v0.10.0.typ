@@ -8,6 +8,8 @@
     p.cardin,
   ),
   changelog: (
+    "0.10.0", "2023-11-27", p.pandolfo, "", "Stesura UC9",
+    "0.9.0", "2023-11-27", p.pandolfo, "", "Stesura introduzione requisiti e requisiti funzionali",
     "0.8.0", "2023-11-27", p.passarella, p.pandolfo, "Stesura requisiti di qualità e di vincolo",
     "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e modifica deglu UC successivi",
     "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
@@ -398,6 +400,16 @@ Il sistema dispone di due attori:
 
 
 = Requisiti
+In questa sezione esponiamo i requisiti individuati durante l'attività di analisi a partire dai casi
+d'uso, dall’analisi del capitolato d’appalto e dagli incontri interni e con il proponente. Ogni
+requisito è identificato da un codice univoco, secondo un formalismo individuato
+all’interno del documento Norme di Progetto.
+
+Possiamo in particolare evidenziare tre categorie principali di requisiti:
+- funzionali, dal punto di vista dell'usabilità del prodotto finale;
+- di qualità, cioè quali strumenti/documentazione fornire;
+- di vincolo, cioè dal punto di vista di quali tecnologie presentare.
+
 
 == Requisiti funzionali
 
