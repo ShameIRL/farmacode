@@ -8,8 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.10.0", "2023-11-27", p.pandolfo, "", "Stesura UC9",
-    "0.9.0", "2023-11-27", p.pandolfo, "", "Stesura introduzione requisiti e requisiti funzionali",
+    "0.10.0", "2023-11-30", p.pandolfo, "", "Stesura UC9",
+    "0.9.0", "2023-11-29", p.pandolfo, "", "Stesura introduzione requisiti e requisiti funzionali",
     "0.8.0", "2023-11-27", p.passarella, p.pandolfo, "Stesura requisiti di qualità e di vincolo",
     "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e modifica deglu UC successivi",
     "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
