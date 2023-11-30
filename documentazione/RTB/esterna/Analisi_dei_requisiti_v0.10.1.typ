@@ -8,8 +8,9 @@
     p.cardin,
   ),
   changelog: (
-    "0.10.0", "2023-11-30", p.pandolfo, "", "Stesura UC9",
-    "0.9.0", "2023-11-29", p.pandolfo, "", "Stesura introduzione requisiti e requisiti funzionali",
+    "0.10.1", "2023-11-30", p.passarella, "", "aggiunta e conseguente modifica requisiti di vincolo",
+    "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
+    "0.9.0", "2023-11-29", p.pandolfo, p.passarella, "Stesura introduzione requisiti e requisiti funzionali",
     "0.8.0", "2023-11-27", p.passarella, p.pandolfo, "Stesura requisiti di qualità e di vincolo",
     "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e modifica deglu UC successivi",
     "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
@@ -498,6 +499,9 @@ Le sigle sotto riportate possono essere così classificate:
   [ROQ 4],
   [Documentazione descrittiva del sistema di raccomandazione implementato],
   [Capitolato],
+  [ROQ 4],
+  [],
+  [Capitolato],
 )
 
 
@@ -511,7 +515,7 @@ Le sigle sotto riportate possono essere così classificate:
 - ROV: Requisito Obbligatorio di Vincolo.
 
 #table(
-  columns: (auto, auto, auto),
+  columns: (22mm, auto, 35mm),
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
@@ -522,7 +526,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Sistema di raccomandazione sviluppato con Surprise (libreria in python)],
   [Capitolato],
   [ROV 3],
-  [Visualizzazione e gestione dei feedback UI tramite piattaforma web-based sviluppata con...],
+  [Visualizzazione e gestione dei feedback UI tramite piattaforma web-based],
   [Capitolato],
   [RDV 4],
   [Strategie di raccomandazione con algoritmi Matrix Factorization o K-Nearest Neighbors],
@@ -535,7 +539,19 @@ Le sigle sotto riportate possono essere così classificate:
   [Capitolato],
   [ROV 7],
   [Misurazione prestazioni del modello utilizzando i dati presenti nel test set e delle metriche (precision e recall)],
-  [Capitolato]
+  [Capitolato],
+  [RDV 8],
+  [Utilizzo del framework React per il front-end dell'applicazione],
+  [Verbale interno],
+  [RDV 9],
+  [Utilizzo di Node.js per il back-end dell'applicazione],
+  [Verbale interno],
+  [RDV 10],
+  [Utilizzo della piattaforma Anaconda per la gestione dell'ambiente di sviluppo],
+  [Verbale interno],
+  [ROV 11],
+  [],
+  [Verbale interna],
 )
 
 === Requisiti d'ambiente
