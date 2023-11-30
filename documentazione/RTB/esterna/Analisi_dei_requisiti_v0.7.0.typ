@@ -374,6 +374,29 @@ Il sistema dispone di due attori:
     - Seleziona un valore in un range da 1 a 5.
 - Sistema:
     - Registra correttamente la valutazione dell'utente all'interno del sistema.
+
+== UC9 - Logout
+#figure(
+  image("/imgs/Uml/UC9.jpg", width: 80%),
+  caption: [
+    Logout
+  ],
+)
+*Attori:*
+- Admin
+- Users
+*Precondizioni:*
+- L'utente ha eseguito l'accesso correttamente (UC1).
+*Postcondizioni:*
+- L'utente ha effettuato correttamente il logout, uscendo dalla propria sessione.
+*Scenario principale:*
+- Admin/Users:
+    - Seleziona l'opzione di logout presente nella pagina in cui si trova
+- Sistema:
+    - Chiede conferma all'utente sul voler uscire dalla sessione corrente;
+    - Termina la sessione dell'utente, reindirizzandolo alla pagina di login.
+
+
 = Requisiti
 
 == Requisiti funzionali
