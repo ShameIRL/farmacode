@@ -40,6 +40,6 @@ Nella seconda parte del meeting ci siamo riorganizzati per il secondo sprint. I 
 = Obiettivi fissati
 Organizzare meeting con l’azienda Ergon Informatica in base alle disponibilità da loro offerte;\
 Pensare ad eventuali ulteriori domande da porre;\
-Continuare la stesura dei vari documenti di progetto come definito all'inizio del secondo sprint.\
+Continuare la stesura dei vari documenti di progetto come definito all'inizio del secondo sprint.
 
 
