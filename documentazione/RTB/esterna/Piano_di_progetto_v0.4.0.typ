@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.4.0", "2023-12-01", p.rosson, "", "Prima stesura sezione 2, Analisi dei rischi",
+    "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
     "0.3.1", "2023-11-27", p.rosson, "", "Apportate alcune modifiche alla struttura del documento",
     "0.3.0", "2023-11-26", p.rosson, "", "Prima stesura sezione 3, Pianificazione",
     "0.2.0", "2023-11-26", p.rosson, "", "Stesura sezione introduzione",
@@ -19,7 +19,7 @@
 = Introduzione
 Il documento riguardante il piano di progetto comprende tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.\
 Oltre a dare modo ad esterni di capire e partecipare all'evoluzione del progetto fornisce dati precisi su costi e ripartizioni orarie.\
-Il documento sara' utile a chi si occupa della creazione del prodotto dando modo al team di fare retrospettiva più agilmente, e a chi lo valutera'.
+Il documento sara' utile a chi si occupa della creazione del prodotto, dando modo al team di fare retrospettiva più agilmente, e a chi lo valutera'.
 
 == Scopo del documento
 Lo scopo è quindi quello di fornire una descrizione dettagliata e il piu' precisa possibile sulle metodolgie e applicazioni delle stesse riguardanti la pianificazione, e quindi la suddivisione oraria e dei costi.
@@ -255,7 +255,7 @@ Questa sezione comprende tutte le pratiche adottate dal team per fare fronte all
   Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto.
 
 - Task:
-  Rappresentano le attività più specifiche individuate a ridosso di un nuov sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
+  Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
 
 
 == Suddivisione temporale
