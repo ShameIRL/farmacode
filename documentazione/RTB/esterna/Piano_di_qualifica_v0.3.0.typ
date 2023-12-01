@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.4.0", "2023-12-01", p.carraro, "", "Prima stesura qualità di prodotto",
     "0.3.0", "2023-11-27", p.carraro, "", "Stesura sezione qualità di architettura",
     "0.2.0", "2023-11-24", p.carraro, "", "Stesura sezione introduzione",
     "0.1.0", "2023-11-24", p.carraro, "", "Struttura iniziale del documento",
@@ -37,7 +38,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - T7 - Qualità del software (slide del corso di Ingegneria del Software);
 - T8 - Qualità di processo (slide del corso di Ingegneria del Software).
 
-= Piano di qualifica
+= Piano di qualità
 
 == Qualità dell'architettura
 La qualità di una buona architettura è definita da questi aspetti: \
@@ -101,12 +102,16 @@ In particolare andranno verificati:
   - SFOUT, indice di dipendenza;
   - Una buona progettazione ha componenti con SFIN elevato.
 
-
+//lasciate stare questa parte, da definire in seguito
 == Qualità del software
+La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
+Chi sviluppa il prodotto avrà una visione intrinseca della qualità, ovvero conforme ai requisiti o idonea all'uso, chi usa il prodotto avrà una visione relativa della qualità, ovvero la soddisfazione del cliente ed infine terze parti che confrontano il prodotto avranno una visione quantitativa della qualità, ovvero una misurazione oggettiva o, appunto, per confronto.\
+Nel controllo di qualità bisogna assicurare conformità passo-passo invece che solo a fine corsa
+=== I Principi
+I Sette Principi di gestione della Qualità:
+- Customer Focus: Incontra e supera le aspettavive del cliente;
 
-=== Visione orizzontale
-
-=== Visione verticale
+//lasciate stare questa parte, da definire in seguito
 
 == Qualità di processo
 
