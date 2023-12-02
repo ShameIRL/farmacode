@@ -9,10 +9,10 @@
   ),
   changelog: (
     "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
-    "0.3.1", "2023-11-27", p.rosson, "", "Apportate alcune modifiche alla struttura del documento",
-    "0.3.0", "2023-11-26", p.rosson, "", "Prima stesura sezione 3, Pianificazione",
-    "0.2.0", "2023-11-26", p.rosson, "", "Stesura sezione introduzione",
-    "0.1.0", "2023-11-26", p.rosson, "", "Struttura iniziale del documento",
+    "0.3.1", "2023-11-27", p.rosson, p.carraro, "Apportate alcune modifiche alla struttura del documento",
+    "0.3.0", "2023-11-26", p.rosson, p.carraro, "Prima stesura sezione 3, Pianificazione",
+    "0.2.0", "2023-11-26", p.rosson, p.carraro, "Stesura sezione introduzione",
+    "0.1.0", "2023-11-26", p.rosson, p.carraro, "Struttura iniziale del documento",
   ),
 )
 
@@ -35,6 +35,8 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 
 === Riferimenti informativi
 - T4 - Gestione di progetto (slide del corso di Ingegneria del Software);
+
+- Regolamento progetto didattico (slide del corso di Ingegneria del Software);
 
 
 = Analisi dei rischi
@@ -243,8 +245,19 @@ La filosofia che caratterizza le strategie di tipo agile è quella di, adottando
 - garantire trasparenza a proponente, favorendo maggiori e migliori feedback, e committente facilitandone l'analisi.
 
 //...?
+== Gestione delle comunicazioni
+=== "Scheduled Meeting" e "Daily Call"
 
-== Suddivisione quantitativa 
+Per una migliore gestione degli imprevisti e in generale della pianificazione e organizzazione delle attività, il gruppo ha deciso di adottare 2 tipologie differenti di incontri interni: "Scheduled Meeting", e "Daily Call".
+
+- *"Scheduled meeting"*
+Sono i meeting interni che solitamente prevedono la messa a verbale. Vengono fissati con cadenza settimanale con data variabile a seconda delle disponibilità dei membri del team, quest'ultima viene regolarmente concordata alla fine del incontro precedente.
+La loro durata è variabile, e tutte le componenti sono tenute a presenziarvi. Come mezzo tramite è stato scelto discord.
+
+- *"Daily Call"* //nome da concordare, lol
+Sono incontri di durata mediamente minore, che avvengono giornalmente quando e se ne sorge la necessità. Possono essere richiesti da qualsiasi membro del gruppo, e la partecipazione è richiesta solamente ai sottoinsiemi coinvolti. Solitamente non prevedono la stesura di relativo verbale, ma ciò dipende dagli argomenti discussi e dalla presenza o meno di decisioni importanti.
+
+== Suddivisione delle attività 
 Questa sezione comprende tutte le pratiche adottate dal team per fare fronte alla gestione delle scadenze e necessità organizzative. Concendrandosi sull'aspetto quantitativo della pianificazione, andando a descrivere in che modo sono state suddivise le attività di progetto.
 
 === Milestone, Macro Issues e Task
@@ -261,18 +274,6 @@ Questa sezione comprende tutte le pratiche adottate dal team per fare fronte all
 == Suddivisione temporale
 
 Questa sezione comprende tutte le pratiche adottate dal team per fare fronte alla gestione delle scadenze e necessità organizzative. Concendrandosi sull'aspetto temporale della pianificazione.
-/*
-=== "Scheduled Meeting" e "Daily Call"
-
-Per una migliore gestione degli imprevisti e in generale della pianificazione e organizzazione delle attività, il gruppo ha deciso di adottare 2 tipologie differenti di incontri interni: "Scheduled Meeting", e "Daily Call".
-
-- *"Scheduled meeting"*
-Sono i meeting interni che solitamente prevedono la messa a verbale. Vengono fissati con cadenza settimanale con data variabile a seconda delle disponibilità dei membri del team, quest'ultima viene regolarmente concordata alla fine del incontro precedente.
-La loro durata è variabile, e tutte le componenti sono tenute a presenziarvi. Come mezzo tramite è stato scelto discord.
-
-- *"Daily Call"* //nome da concordare, lol
-Sono incontri di durata mediamente minore, che avvengono giornalmente quando e se ne sorge la necessità. Possono essere richiesti da qualsiasi membro del gruppo, e la partecipazione è richiesta solamente ai sottoinsiemi coinvolti. Solitamente non prevedono la stesura di relativo verbale, ma ciò dipende dagli argomenti discussi e dalla presenza o meno di decisioni importanti.
-*/
 
 === Milestones e Sprint
 Il gruppo ha deciso di provare a dare fin da subito una suddivisone in macro attività, e relativa collocazione temporale, del periodo di progetto.
@@ -308,5 +309,22 @@ figure(
 
 
 = Distribuzione ruolistica
+La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto didattico. Se ne riporta qui sotto un riepilogo:
+
+#table(
+  columns: (auto, auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  [*Ruolo*],[*Costo orario*],[*Responsabilità*],
+  [Responsabile],[30],[- Coordina l’elaborazione di piani e scadenze 
+  - Approva il rilascio di prodotti parziali o finali (SW, documenti) 
+  - Coordina le attività del gruppo],
+  [Amministratore],[20],[- Assicura l’efficienza di procedure, strumentie tecnologie a supporto del way of working],
+  [Analista],[25],[- Svolge le attività di analisi dei requisiti],
+  [Progettista],[25],[- Svolge le attività di progettazione (design)],
+  [Programmatore],[15],[- Svolge le attività di codifica],
+  [Verificatore],[15],[- Svolge le attività di verifica],
+)
+
+Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità.  // da mettere?
 
 = Preventivo e prospetti
