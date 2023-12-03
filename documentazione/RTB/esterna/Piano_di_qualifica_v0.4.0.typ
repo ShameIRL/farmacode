@@ -8,16 +8,17 @@
     p.cardin,
   ),
   changelog: (
-    "0.4.0", "2023-12-01", p.carraro, "", "Prima stesura qualità di prodotto",
-    "0.3.0", "2023-11-27", p.carraro, "", "Stesura sezione qualità di architettura",
-    "0.2.0", "2023-11-24", p.carraro, "", "Stesura sezione introduzione",
-    "0.1.0", "2023-11-24", p.carraro, "", "Struttura iniziale del documento",
+    "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
+    "0.3.0", "2023-11-27", p.carraro, p.rosson, "Stesura sezione qualità di architettura",
+    "0.2.0", "2023-11-24", p.carraro, p.rosson, "Stesura sezione introduzione",
+    "0.1.0", "2023-11-24", p.carraro, p.rosson, "Struttura iniziale del documento",
   ),
 )
 
 = Introduzione
-Il documento riguardante il piano di qualifica, un elemento di fondamentale importanza per i progetti di sviluppo software che vogliono rispettare i massimi standard di qualità definiti dall'insegnamento dell'ingegneria del software.\
-La qualita' e la valutazione del prodotto sono due concetti fondamentali per fare confronti o determinare il grado di conformita' alle attese.\
+
+Il documento relativo al piano di qualità rappresenta un elemento di fondamentale importanza per i progetti di sviluppo software che mirano a conformarsi agli elevati standard di qualità definiti nei principi dell'ingegneria del software.\
+La qualita' e la valutazione del prodotto sono due concetti indispensabili per fare confronti o determinare il grado di aderenza alle attese.\
 Il documento sara' utile a chi si occupa della creazione del prodotto, a chi usera' il prodotto e a chi lo valutera'.
 
 == Scopo del documento
@@ -106,7 +107,7 @@ In particolare andranno verificati:
 == Qualità del software
 La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
 Chi sviluppa il prodotto avrà una visione intrinseca della qualità, ovvero conforme ai requisiti o idonea all'uso, chi usa il prodotto avrà una visione relativa della qualità, ovvero la soddisfazione del cliente ed infine terze parti che confrontano il prodotto avranno una visione quantitativa della qualità, ovvero una misurazione oggettiva o, appunto, per confronto.\
-Nel controllo di qualità bisogna assicurare conformità passo-passo invece che solo a fine corsa
+Nel controllo di qualità bisogna assicurare conformità passo-passo invece che solo a fine corsa.
 === I Principi
 I Sette Principi di gestione della Qualità:
 - Customer Focus: Incontra e supera le aspettavive del cliente;
