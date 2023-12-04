@@ -18,6 +18,8 @@ facilmente terminologie.
 
 = A
 
+== Artefatto
+
 = B
 
 = C
