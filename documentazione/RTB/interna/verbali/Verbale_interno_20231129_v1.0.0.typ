@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "0.1.0", "29-11-2023", p.carraro, p.favaron, "Stesura del verbale",
+    "1.0.0", "29-11-2023", p.carraro, p.favaron, "Stesura del verbale",
   ),
 )
 
