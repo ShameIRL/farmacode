@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.10.1", "2023-11-30", p.passarella, "", "aggiunta e conseguente modifica requisiti di vincolo",
+    "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
     "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
     "0.9.0", "2023-11-29", p.pandolfo, p.passarella, "Stesura introduzione requisiti e requisiti funzionali",
     "0.8.0", "2023-11-27", p.passarella, p.pandolfo, "Stesura requisiti di qualità e di vincolo",
@@ -499,9 +499,6 @@ Le sigle sotto riportate possono essere così classificate:
   [ROQ 4],
   [Documentazione descrittiva del sistema di raccomandazione implementato],
   [Capitolato],
-  [ROQ 4],
-  [],
-  [Capitolato],
 )
 
 
@@ -549,9 +546,6 @@ Le sigle sotto riportate possono essere così classificate:
   [RDV 10],
   [Utilizzo della piattaforma Anaconda per la gestione dell'ambiente di sviluppo],
   [Verbale interno],
-  [ROV 11],
-  [],
-  [Verbale interna],
 )
 
 === Requisiti d'ambiente
