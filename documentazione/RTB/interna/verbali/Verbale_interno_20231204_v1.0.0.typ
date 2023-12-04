@@ -32,8 +32,8 @@
 - Mezzo tramite: Discord (online)
 
 = Sintesi
-Il meeting è iniziato facendo una sintesi del lavoro svolto da parte del gruppo, dove ognuno esponeva il lavoro svolto nel secondo sprint, relativo al suo compito.\
-Successivamente abbiamo concluso definitivamente lo sprint per iniziare con il terzo, abbiamo quindi assegnato ai componenti del gruppo i ruoli per la nuova settimana e mezza. \
+Il meeting è iniziato facendo una sintesi del lavoro svolto da parte del gruppo, dove ognuno esponeva il lavoro svolto nel secondo sprint relativo al suo compito.\
+Successivamente abbiamo concluso definitivamente lo sprint per iniziare con il terzo, sono stati quindi assegnato ai componenti del gruppo i ruoli per la nuova settimana e mezza. \
 E' stato deciso di incrementare il numero di programmatori in maniera da velocizzare la parte relativa per il POC.\
 I componenti del gruppo addetti al ruolo di "Programmatore" nello sprint precedente hanno mostrato il lavoro svolto da loro, in maniera da aggiornare il gruppo
 e discutere meglio in che direzione proseguire fino allo sprint successivo. \
