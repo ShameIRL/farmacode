@@ -9,8 +9,8 @@
 
   ),
   changelog: (
-    "0.7.0", "2-12-2023", p.rosson, "", "Realizzata prima stesura sezione 4",
-    "0.6.0", "25-11-2023", p.rosson, "", "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
+    "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
+    "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
     "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
     "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 3.1",
     "0.3.0", "18-11-2023", p.baggio, p.carraro, "Completamento stesura sezione 1",
@@ -165,37 +165,36 @@ Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essen
 
 === Versionamento /** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
   
-Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni artefatto //da metter in glossario?
-(documento o sorgente che sia) permette il rispristino di quest'ultimo ad una sua fase precedente. Ciò rende molto più semplice la gestione di errori. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, inoltre comunica a chiunque sia il suo lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte, e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
+Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni #glossario("artefatto"),
+documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte, e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
 Ogni documento oltre a essere dotato di un changelog è identificato da un numero di versione così composto:
 
 #align(center, "vX.Y.Z")
 
 dove :
 
-- X rappesenta fasi del documento che suddividono e raccolgono i cambiamenti più significativi apportati all'aretfatto anche detti "major".
-- Y rappresenta modifiche minori come ad esempio la realizzazione di una sezione o feature le quali si pensa non siano sufficienti a stabilire una nuova "fase" del documento. Verrano anche identificati con l'appellativo "minor".
+- X rappesenta fasi del documento che suddividono e raccolgono i cambiamenti più significativi apportati all'artefatto anche detti "major".
+- Y rappresenta modifiche minori come ad esempio la realizzazione di una sezione o feature le quali si pensa non siano sufficienti a stabilire una nuova "fase" del documento. Sono anche identificati con l'appellativo "minor".
 - Z rappresenta piccoli aggiustamenti (fixes) o migliorie generali.
 
-Si noti che ogni versione rappresenta non solo un aggiunta di tipo prettamente produttivo, ma anche al sua revisione.
+Si noti che ogni versione rappresenta non solo un'aggiunta di tipo prettamente produttivo, ma anche al sua revisione.
 
 /* ha senso metterlo qui? o in una sezione "automazioni" */
 
 ==== Lato documentazione
- Per quanto riguarda la modalità con la quale è possibile aggiornare la versione di un documento, basterà andare ad aggiungere nella sezione changelog del rispettivo file sorgente un nuovo record. Qui sotto un esempio:
+Nella documentazione è possibile aggiornare la versione andando semplicemente ad aggiungere un nuovo record nella sezione di changelog del rispettivo file sorgente. Qui sotto un esempio:
 
     ```
 changelog: (
 
-    "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst 
-     del documento",
-    "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 
-     3.1",
+    "0.5.0", "21-11-2023", p.baggio, p.carraro, "Stesura sezione 3.2",
+    "0.4.0", "20-11-2023", p.passarella, p.carraro, "Stesura sezione 3.1",
+    
 )
 
 ```
 
-Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutti i dati necessari. Si noti che p è una variabile d'ambiente in questo caso rappresentante le persone, contente tutti i nominativi utili e ripetuti nel corso del progetto. 
+Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutte le informazioni specificate e richieste. Si noti che _p_ è una variabile d'ambiente contenente tutti i nominativi dei componenti del gruppo di lavoro e di ulteriori nominativi utili e ripetuti molteplici volte nel corso del progetto.
 
 ==== Lato software
 //parte sulla possibile integrazione di un versionamento automatico
@@ -273,11 +272,11 @@ L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del 
 === Descrizione /** descrizione di questa sezione */
 In questa sezione vengono trattate tutte le normative utili alla stesura e redazione del documneto "Piano di progetto", gli argomenti che ne fanno parte sono:
 - Ruoli e relativa organizzazione: 
-    con consegunete descrizione ed esposizione della strategia utilizzata per la rotazione degli stessi.
+    con conseguente descrizione ed esposizione della strategia utilizzata per la rotazione degli stessi.
 - Gestione degli incontri e delle comunicazioni:
-    comprendente loro suddivisone in tipologia,
+    comprendente loro suddivisone in tipologia.
 - Gestione dell'organizzazione: 
-    fornente informazioni relative alle pratiche per la suddivisone in attività, e loro collocazione temporale, del corso del progetto.
+    informazioni relative alle pratiche per la suddivisone in attività, e loro collocazione temporale, del corso del progetto.
     
 
 === Ruoli e relativa organizzazione /** descrizione di tutti e sei i ruoli, con spiegazione finale di come vengono assegnati e ruotati */
@@ -291,7 +290,7 @@ La suddivisione in ruoli segue le norme definite nel "Regolamento progetto didat
   [Responsabile],[30],[- Coordina l’elaborazione di piani e scadenze 
   - Approva il rilascio di prodotti parziali o finali (SW, documenti) 
   - Coordina le attività del gruppo],
-  [Amministratore],[20],[- Assicura l’efficienza di procedure, strumentie tecnologie a supporto del way of working],
+  [Amministratore],[20],[- Assicura l’efficienza di procedure, strumenti e tecnologie a supporto del way of working],
   [Analista],[25],[- Svolge le attività di analisi dei requisiti],
   [Progettista],[25],[- Svolge le attività di progettazione (design)],
   [Programmatore],[15],[- Svolge le attività di codifica],
@@ -302,7 +301,7 @@ Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro resp
 
 La loro assegnazione viene gestita dal Responsabile di progetto corrente, il quale confrontandosi con gli altri componenti del gruppo, va a stabilire una rotazione conforme al regolamento. Ogni membro del team dovrà infatti ricoprire ogni carica almeno una volta.
 
-Segue una descrizione più dettagliata di ogni ruole e rispettive mansioni:
+Segue una descrizione più dettagliata di ogni ruolo e rispettive mansioni:
 
 - Responsabile di progetto
 //desc
@@ -317,7 +316,7 @@ Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle s
 
 - Documentazione dettaglita:
     
-    Ogni membro è tenuto a documentare ogni azione ritenuta non banale e avente valenza e dipendenze future. Prima in documenti informali, questo per non rallentare troppo i tempi, da integrare successivamente nella documentazione ufficiale.
+    Ogni membro è tenuto a documentare ogni azione ritenuta non banale e avente valenza e dipendenze future. Prima in documenti informali, questo per non rallentare troppo i tempi, successivamente da integrare nella documentazione ufficiale.
 
 - Formazione e Condivisione delle Conoscenze:
 
@@ -334,7 +333,7 @@ Ogni membro del gruppo si impegna ad essere reperibile per riunioni sincrone dur
 
 Durante il corso di uno sprint ogni mebro è libero di gestire le proprie attività di progetto in modo asincrono, a meno che esse non richiedano la collaborazione di più componenti. Ogni membro si assume responsabilmente la gestione di impegni accademici e personali, rispettando le scadenze imposte dal relativo sprint.
 
-Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni componente, il team ha a disposizione un file "google Fogli" dove sono visualizzabili le proprie disponibilità giornaliere (inserite al inizio del progetto), e dove nel eventualità è possibile segnare altri impegni inderogabili e sorti in un secondo momento.
+Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni componente, il team ha a disposizione un file "Google Fogli" dove sono visualizzabili le proprie disponibilità giornaliere (inserite al inizio del progetto), e dove nel eventualità è possibile segnare altri impegni inderogabili e sorti in un secondo momento.
 
 ==== Comunicazioni
 
@@ -352,10 +351,10 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     - Link-brainstorming: racchiude tutti i link a fonti di tipo informativo (ad esempio: link alla documentazione della libreria di python surprise);
     - Domande: è utilizzato per contenere le domande dei vari componenti del team, sia rivolte verso il team stesso, si verso l'esterno (proponente/committenti);
     - Todo-reminder: contiene delle annotazioni su cose da fare nel breve periodo.
-
+    Sono inoltre presenti molteplici canali vocali per permettere di lavorare in piccoli sottogruppi.
 - *Esterne* 
 
-    Le comunicazioni esterne avvengono tramite mezzi quali:
+    Le comunicazioni esterne avvengono tramite i seguenti mezzi:
     
     -- E-mail: 
     Usate per le comunicazioni con proponente e commitenti. Principalmente hanno la funzione di concordare meeting, o di esporre quesiti e dubbi.
@@ -399,7 +398,7 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 
     -- Proponente:
         
-        Questi incontri prevedono sempre la stesura di relativo verbale necessitante validazione ed approvazione dal partecipante esterno. Solitamente vengono richiesti dal team. Data e orario, sono concordati a priori durante il meeting precedente, o tramite E-mail, tenendo conto delle disponibilità del proponente e del gruppo. Gli argomenti trattati sono di vario tipo e seguono gli sviluppi del progetto, per facilitarne la discussione vengono esplicitati al proponente tramite mail alcuni giorni prima del incontro.
+        Questi incontri prevedono sempre la stesura di relativo verbale necessitante validazione ed approvazione dal partecipante esterno attraverso la sua firma. Solitamente vengono richiesti dal team. Data e orario, sono concordati a priori durante il meeting precedente, o tramite E-mail, tenendo conto delle disponibilità del proponente e del gruppo. Gli argomenti trattati sono di vario tipo e seguono gli sviluppi del progetto, per facilitarne la discussione vengono esplicitati al proponente tramite mail alcuni giorni prima del incontro.
 
     -- Committenti:
 
@@ -416,32 +415,32 @@ Questa scelta mira a fornire diversi vantaggi e valori aggiunti:
 
 - Favorire il Lavoro di Gruppo:
 
-Promuove la collaborazione e la comunicazione all'interno del team, incoraggiando la condivisione delle idee e delle competenze.
+    Promuove la collaborazione e la comunicazione all'interno del team, incoraggiando la condivisione delle idee e delle competenze.
 
 - Sviluppo Individuale:
 
-Favorirsce la crescita individuale a livello di conoscenze e competenze, consentendo a ciascun membro di contribuire al massimo delle proprie capacità indipendentemente dal ruolo corrente.
+    Favorirsce la crescita individuale a livello di conoscenze e competenze, consentendo a ciascun membro di contribuire al massimo delle proprie capacità indipendentemente dal ruolo corrente.
 
 - Miglioramento Continuo:
 
-Promuove il miglioramento continuo attraverso pratiche di retrospezione, identificando e risolvendo le problematiche in modo tempestivo e continuo.
+    Promuove il miglioramento continuo attraverso pratiche di retrospezione, identificando e risolvendo le problematiche in modo tempestivo e continuo.
 
 - Organizzazione Efficace:
 
-Migliora e facilita l'organizzazione tra i membri del team, assicurando una distribuzione efficace delle responsabilità e delle attività.
+    Migliora e facilita l'organizzazione tra i membri del team, assicurando una distribuzione efficace delle responsabilità e delle attività.
 
 - Trasparenza per Proponenti e Committenti:
 
-Garantisce trasparenza al proponente, consentendo un costante flusso di feedback e una maggiore comprensione del processo di sviluppo. Facilita anche l'analisi da parte del committente per una migliore valutazione del progresso.
+    Garantisce trasparenza al proponente, consentendo un costante flusso di feedback e una maggiore comprensione del processo di sviluppo. Facilita anche l'analisi da parte del committente per una migliore valutazione del progresso.
 
 \
 L'adozione di pratiche CI/CD si inserisce in questo contesto, contribuendo a garantire una integrazione continua del codice e una distribuzione continua delle nuove funzionalità, riducendo al minimo rischi e migliorando la qualità del software. Questo approccio agile mira a fornire al team una struttura dinamica e flessibile per affrontare le sfide e rispondere alle esigenze del progetto in modo efficiente e tempestivo.
  
 
-==== Milestones e Sprint
-Le tempistiche del periodo di progetto sono scandite da milestones e sprint. Il team, sempre rifacendosi ad un approccio di tipo agile, ha definito conseguentemente queste ultime.
+==== Milestone e Sprint
+Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il team, sempre rifacendosi ad un approccio di tipo agile, ha definito conseguentemente queste ultime.
 
-- Milestones: 
+- Milestone: 
     
     Rappresentano le revisioni di progetto, e gli sprint necessari al loro compimento. Ragionevolmente, ogni sprint verrà a posteriori suddiviso in macro attività pianificandone le fasi, la cui granularità e specificità verranno esplorate durante un periodo più a ridosso dello stesso, avendo un istantanea migliore dello stato del progetto. 
 
@@ -452,26 +451,26 @@ Le tempistiche del periodo di progetto sono scandite da milestones e sprint. Il 
 
 La loro definizione e collocazione temporale è definita nel documento "Piano di progetto", redatto dal responsabile di progetto.
 
-==== Gestione di attività e Issues
+==== Gestione di attività e Issue
 Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di Issues Tracking System (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
 Creazione: L'attività viene definita come un compito da svolgere e viene registrata come una issue su GitHub.
-Le issues devono essere collegate alla/e board di progetto, ed al rispettivo sprint utilizzando la milestone allegata. Inoltre devono essere contrassegnate da labes identificative consone. Ne segue la lista che ne norma l'uso:
+Le issue devono essere collegate alla/e board di progetto, ed al rispettivo sprint utilizzando la milestone allegata. Inoltre devono essere contrassegnate da label identificative consone. Ne segue la lista che ne norma l'uso:
 
-- approval: da utilizzare solo per issues che identificano attività di approvazione, da svolgere dal Responsabile corrente. Solitamente una finale per sprint.
+- approval: da utilizzare solo per issue che identificano attività di approvazione, da svolgere dal Responsabile corrente. Solitamente una finale per sprint.
 - bug-fix: denota una issue la cui rispettiva attività mira alla correzione di un bug, o altre problematiche.
 - code: rappresentano una nuova feature o integrazione nel codice.
-- documentation: rappresentano issues legate alla stesura di documentazione.
-- revision: da utilizzare solo per issues legate alle attività di revisone.
-- RTB: deve essere usata solo per issues rappresentanti sprint legati al periodo di RTB.
-- PB: deve essere usata solo per issues rappresentanti sprint legati al periodo di PB.
+- documentation: rappresentano issue legate alla stesura di documentazione.
+- revision: da utilizzare solo per issue legate alle attività di revisone.
+- RTB: deve essere usata solo per issue rappresentanti sprint legati al periodo di RTB.
+- PB: deve essere usata solo per issue rappresentanti sprint legati al periodo di PB.
 
-Infine le issues devono avere un nome significativo e possedere una descrizione definita come segue: 
+Infine le issue devono avere un nome significativo e possedere una descrizione definita come segue: 
 
 (h3 in markdown) desc:  (plain text) testo della descrizione.
 
 
-Assegnazione: Le issues vengono assegnate in modo da rispettare la configurazione ruolistica corrente.
+Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente.
 
 Completamento: L'attività viene completata dalla persona incaricata, per poi essere spostata nello stato "ReadyToReview" nella rispettiva board di progetto, in modo da notificarne la revisione.
 Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura dell'issue in GitHub da chi ne svolge la revisone.
