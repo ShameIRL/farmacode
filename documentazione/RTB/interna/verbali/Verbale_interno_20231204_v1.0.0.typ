@@ -33,7 +33,7 @@
 
 = Sintesi
 Il meeting è iniziato facendo una sintesi del lavoro svolto da parte del gruppo, dove ognuno esponeva il lavoro svolto nel secondo sprint relativo al suo compito.\
-Successivamente abbiamo concluso definitivamente lo sprint per iniziare con il terzo, sono stati quindi assegnato ai componenti del gruppo i ruoli per la nuova settimana e mezza. \
+Successivamente abbiamo concluso definitivamente lo sprint per iniziare con il terzo, sono stati quindi assegnato ai componenti del gruppo i ruoli per la nuova settimana. \
 E' stato deciso di incrementare il numero di programmatori in maniera da velocizzare la parte relativa per il POC.\
 I componenti del gruppo addetti al ruolo di "Programmatore" nello sprint precedente hanno mostrato il lavoro svolto da loro, in maniera da aggiornare il gruppo
 e discutere meglio in che direzione proseguire fino allo sprint successivo. \
@@ -41,4 +41,4 @@ Si è inoltre deciso di fissare un meeting con l'azienda, in modo da discutere d
 sulla Web App.
 
 = Obiettivi fissati
-Gli obiettivi fissati, oltre all'assegnazione dei nuovi ruoli per i componenti del gruppo, sono stati quelli di riuscire a finire l'algoritmo di raccomandazione per il POC senza implementarlo e fissare un meeting con l'azienda.
+Gli obiettivi fissati, oltre all'assegnazione dei nuovi ruoli per i componenti del gruppo, sono quelli di riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo, e fissare un meeting con l'azienda.
