@@ -28,6 +28,10 @@ facilmente terminologie.
 Documento privato tra chi commissiona il lavoro e il gruppo (ditta) che lo esegue, in cui viene esposto un problema che il proponente necessita di risolvere e specifica le norme e vari vincoli da rispettare per lo sviluppo
 del specifico prodotto software.
 
+== Continuous Integration
+
+== Continuous Deployment
+
 = D
 
 = E
@@ -39,6 +43,8 @@ del specifico prodotto software.
 = H
 
 = I
+
+== Issues Tracking System
 
 = J
 

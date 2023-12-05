@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.7.1", "5-12-2023", p.rosson, "Completata sezione 4 con alcuni miglioramenti",
+    "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
     "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
     "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
@@ -366,6 +366,7 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     - Domande: è utilizzato per contenere le domande dei vari componenti del team, sia rivolte verso il team stesso, si verso l'esterno (proponente/committenti);
     - Todo-reminder: contiene delle annotazioni su cose da fare nel breve periodo.
     Sono inoltre presenti molteplici canali vocali per permettere di lavorare in piccoli sottogruppi.
+    
 - *Esterne* 
 
     Le comunicazioni esterne avvengono tramite i seguenti mezzi:
@@ -412,7 +413,7 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 
     -- Proponente:
         
-        Questi incontri prevedono sempre la stesura di relativo verbale necessitante validazione ed approvazione dal partecipante esterno attraverso la sua firma. Solitamente vengono richiesti dal team. Data e orario, sono concordati a priori durante il meeting precedente, o tramite E-mail, tenendo conto delle disponibilità del proponente e del gruppo. Gli argomenti trattati sono di vario tipo e seguono gli sviluppi del progetto, per facilitarne la discussione vengono esplicitati al proponente tramite mail alcuni giorni prima del incontro. Il mezzo tramite varia a seconda delle necessità del proponente, solitamente vengono utilizzate piattaforme come Zoom e Google Meet.
+        Questi incontri prevedono sempre la stesura di relativo verbale necessitante validazione ed approvazione dal partecipante esterno attraverso la sua firma. Solitamente vengono richiesti dal team. Data e orario, sono concordati a priori durante il meeting precedente, o tramite E-mail, tenendo conto delle disponibilità del proponente e del gruppo. Gli argomenti trattati sono di vario tipo e seguono gli sviluppi del progetto, per facilitarne la discussione vengono esplicitati al proponente tramite mail alcuni giorni prima del incontro. Il mezzo varia a seconda delle necessità del proponente, solitamente vengono utilizzate piattaforme come Zoom e Google Meet.
 
     -- Committenti:
 
@@ -423,7 +424,7 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 ==== Metodologia e pratiche
 In modo da migliorare la collaborazione e una migliore gestione del ritmo di avanzamento dei lavori, il team ha preso la decisione di adottare un approccio agile nello sviluppo del progetto, ispirandosi a framework e metodologie ben consolidati come Scrum e XP, ampiamente utilizzati in contesti lavorativi reali.
 
-La filosofia che sottende le strategie di tipo agile è incentrata sull'adozione di pratiche di Continuous Integration/Continuous Deployment (CI/CD).
+La filosofia che sottende le strategie di tipo agile è incentrata sull'adozione di pratiche di #glossario("Continuous Integration/Continuous Deployment") (CI/CD).
 
 Questa scelta mira a fornire diversi vantaggi e valori aggiunti:
 
@@ -474,7 +475,7 @@ Per una migliore gestione delle attività di progetto vengono suddivise in due c
 - Task:
   Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
   
-Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di Issues Tracking System (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
+Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di #glossario("Issues Tracking System") (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
 Creazione: L'attività viene definita come un compito da svolgere e viene registrata come una issue su GitHub.
 Le issue devono essere collegate alla/e board di progetto, ed al rispettivo sprint utilizzando la milestone allegata. Inoltre devono essere contrassegnate da label identificative consone. Ne segue la lista che ne norma l'uso:
