@@ -293,7 +293,7 @@ Il team ha deciso di suddividere il corso e le attività di progetto in più spr
   -- Completare sezione 1 del documento "Norme di progetto".\
 
 - Sintesi:
-Questo primo sprint rientra a far parte di un primo periodo di "assestamento" durante il quale il team si è adoperato oltre che alla pianificazione stessa, ad adottare dei metodi che potessero attuarla in modo professionale, efficace ed efficiente. Il gruppo si è concentrato sulla stesura della documentazione in particolare sui dile di "Norme di progetto" e "Analisi dei requisiti". Inoltre si sono attuate migliorie al repository lato automazione, e si sono stabiliti e affermati i contatti con il proponente svolgendo già alcuni meeting di consultazione.
+Questo primo sprint rientra a far parte di un primo periodo di "assestamento" durante il quale il team si è adoperato oltre che alla pianificazione stessa, ad adottare dei metodi che potessero attuarla in modo professionale, efficace ed efficiente. Il gruppo si è concentrato sulla stesura della documentazione in particolare sui file di "Norme di progetto" e "Analisi dei requisiti". Inoltre si sono attuate migliorie al repository lato automazione, e si sono stabiliti e affermati i contatti con il proponente svolgendo già alcuni meeting di consultazione.
 
 - Gantt view:
 #align(left,

@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.7.1", "5-12-2023", p.rosson, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
     "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
     "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
@@ -301,15 +302,28 @@ Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro resp
 
 La loro assegnazione viene gestita dal Responsabile di progetto corrente, il quale confrontandosi con gli altri componenti del gruppo, va a stabilire una rotazione conforme al regolamento. Ogni membro del team dovrà infatti ricoprire ogni carica almeno una volta.
 
-Segue una descrizione più dettagliata di ogni ruolo e rispettive mansioni:
+Segue una descrizione più dettagliata per alcuni ruoli, perchè ritenuti più complessi, e rispettive mansioni:
 
-- Responsabile di progetto
-//desc
-- Amministratore
-- Analista
-- Progettista
-- Programmatore
-- Verificatore
+- Responsabile di progetto:
+    
+    Il Responsabile si occupa oltre alle attività già sopra elencate, di:
+    + Gestire il repository;
+    + Gestire le risorse umane;
+    + Comunicare con l'esterno, proponente e committenti;
+    + Gestire le comunicazioni e incontri interni;
+    + Gestire imprevisti;
+    + Gestire il bilancio del progetto.
+
+- Amministratore:
+
+    L'Amministratore si occupa oltre alle attività già sopra elencate, di:
+    + Redigere e attuare i piani e le procedure per la gestione della qualità.
+
+- Verificatore:
+
+    Il verificatore si occupa oltre alle attività già sopra elencate, di:
+    + Dare feedback completi e chiari a chi ha prodotto il lavoro successivamente revisionato.
+    + Assicurare che la qualità di quanto prodotto sia conforme agli standard imposti.
 
 ==== Gestione dei "cold start"
 Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle situazioni di "cold start", il team si impegna ad adottare le seguenti pratiche:
@@ -398,7 +412,7 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 
     -- Proponente:
         
-        Questi incontri prevedono sempre la stesura di relativo verbale necessitante validazione ed approvazione dal partecipante esterno attraverso la sua firma. Solitamente vengono richiesti dal team. Data e orario, sono concordati a priori durante il meeting precedente, o tramite E-mail, tenendo conto delle disponibilità del proponente e del gruppo. Gli argomenti trattati sono di vario tipo e seguono gli sviluppi del progetto, per facilitarne la discussione vengono esplicitati al proponente tramite mail alcuni giorni prima del incontro.
+        Questi incontri prevedono sempre la stesura di relativo verbale necessitante validazione ed approvazione dal partecipante esterno attraverso la sua firma. Solitamente vengono richiesti dal team. Data e orario, sono concordati a priori durante il meeting precedente, o tramite E-mail, tenendo conto delle disponibilità del proponente e del gruppo. Gli argomenti trattati sono di vario tipo e seguono gli sviluppi del progetto, per facilitarne la discussione vengono esplicitati al proponente tramite mail alcuni giorni prima del incontro. Il mezzo tramite varia a seconda delle necessità del proponente, solitamente vengono utilizzate piattaforme come Zoom e Google Meet.
 
     -- Committenti:
 
@@ -446,12 +460,20 @@ Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il t
 
 - Sprint: 
 
-    Definiscono finestre di tempo durante le quali il team lavora per portare a termine relative attività, rispettandone le scadenze. La durata degli sprint deve essere tassativamente fissata, in modo che ogni componente percepisca l'incobenza delle scadenze e quindi si adegui di conseguenza, evitando così "pigrizie". Questo senza andare a discapito della salute mentale di ogni componente, la quale andrebbe ad incidere sulla qualità di quanto prodotto. Solo in casi eccezionali, come durante gli albori del periodo relativo al RTB, considerato, di "assestamento", sono ammesse delle variazioni, perlopiù per facilitare l'adeguamento di ogni membro al respettivo ruolo corrente.
+    Definiscono finestre di tempo durante le quali il team lavora per portare a termine relative attività, rispettandone le scadenze. La durata degli sprint deve essere tassativamente fissata, in modo che ogni componente percepisca l'incobenza delle scadenze e quindi si adegui di conseguenza, evitando così "pigrizie". Questo senza andare a discapito della salute mentale di ogni componente, la quale andrebbe ad incidere sulla qualità di quanto prodotto. Solo in casi eccezionali, come durante gli inizi del periodo relativo al RTB, considerato, di "assestamento", sono ammesse delle variazioni, perlopiù per facilitare l'adeguamento di ogni membro al respettivo ruolo corrente.
     In modo da mantenere un workflow scorrevole, si è concordata la durata di 1 settimana per sprint. Così facendo ogni membro ha la possibilità di esplorare più ruoli, e di gestire il proprio tempo in modo più produttivo.
 
 La loro definizione e collocazione temporale è definita nel documento "Piano di progetto", redatto dal responsabile di progetto.
 
 ==== Gestione di attività e Issue
+Per una migliore gestione delle attività di progetto vengono suddivise in due categorie differenti:
+
+- Macro Issues:
+  Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto.
+
+- Task:
+  Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
+  
 Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di Issues Tracking System (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
 Creazione: L'attività viene definita come un compito da svolgere e viene registrata come una issue su GitHub.
@@ -470,30 +492,90 @@ Infine le issue devono avere un nome significativo e possedere una descrizione d
 (h3 in markdown) desc:  (plain text) testo della descrizione.
 
 
-Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente.
+Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint.
 
 Completamento: L'attività viene completata dalla persona incaricata, per poi essere spostata nello stato "ReadyToReview" nella rispettiva board di progetto, in modo da notificarne la revisione.
-Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura dell'issue in GitHub da chi ne svolge la revisone.
+Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone.
 
-Verifica: Chi ne è incaricato procede a verificare quanto svolto utilizzando strumenti automatici o meno, a seconda di quanto prodotto (Documentazione, codice, ...). Nel caso in cui il verificatore non sia soddisfatto del lavoro svolto, informerà l'autore e il Responsabile. L'autore dovrà quindi ritornare su quanto fatto e apportare le modifiche suggerite dal verificatore. Una volta finito con esito positivo il processo di verifica il verificatore procederà chiduendo la issue relativa sia all'attività corrisponendete, sia la issue relativa alla verifica di tale attività.
+Verifica: Chi ne è incaricato procede a verificare quanto svolto utilizzando strumenti automatici o meno, a seconda di quanto prodotto (Documentazione, codice, ...). Nel caso in cui il verificatore non sia soddisfatto del lavoro svolto, informerà l'autore e il Responsabile. L'autore dovrà quindi ritornare su quanto fatto e apportare le modifiche suggerite dal verificatore. Una volta finito con esito positivo il processo di verifica il verificatore procederà chiduendo sia la issue relativa all'attività corrisponendete, che la issue relativa alla verifica di tale attività.
 
-Si noti che è stato scelto di avere una issue specifica per la verifica per rendere ai verificatori più facile organizzare e pianificare il proprio lavoro, al inizio di ogni sprint.
+Si noti che è stato scelto di avere una issue specifica per la verifica, per rendere ai verificatori più facile organizzare e pianificare il proprio lavoro al inizio di ogni sprint.
 
-Accettazione: Dopo la conferma positiva da parte del Verificatore, a ridosso della fine di ogni sprint, il Responsabile effettua un controllo aggiuntivo, procedendo quindi in caso a chiudere l'issue di approvazione corrispondente, e a eseguire il merge nel branch principale di presentazione.
+Accettazione: Dopo la conferma positiva da parte del Verificatore, a ridosso della fine di ogni sprint, il Responsabile effettua un controllo aggiuntivo, procedendo quindi a chiudere l'issue di approvazione corrispondente, e a eseguire il merge nel branch principale di presentazione.
 
 Le singole attività vengono valutate in base alla loro dimensione e alla pianificazione definita, considerando sia il carico di lavoro che le responsabilità associate.
 
 \
 Una più dettagliata descrizione della gestione delle board di progetto è visionabile nel prossimo sotto-paragrafo.
 
+==== Gestione delle dashboard / Github views.
+Per una migliore gestione e visualizzazione delle attività di progetto, le issue devono, al momento della loro creazione, essere "linkate" al rispettivo Github Project (RTB, PB). Per ogni Project sono state predisposte due view differenti:
+
+- Kanban:
+    
+    Rappresenta una dashboard, suddivisa in 4 colonne differenti:
+    + Todo: qui si trovano le issue ancora non iniziate;
+    + In progress: in questa sezione vi sono tutte le issue il cui svolgimento sta avanzando;
+    + ReadyToReview: questa colonna è adibita alle attività necessitanti una revisione;
+    + Done: qui si trovano tutte le issue completate.
+
+    Al fine di un utilizzo utile della board ogni membro del gruppo è tenuto a gestire le proprie attività di progetto e a tenere sotto controllo la Project view in modo da avere sempre una visione dello stato si avanzamento dello sprint.
+
+- Gantt:
+
+    A differenza di quella precedente, mira a fornire una rappresentazione calendarizzata delle attività di progetto. Ogni issue viene collocata temporalmente in base alla sua data di "presa a carico" (ovvero nel momento in cui il suo stato cambia da todo, a in progress) come inizio e alla sua data di completamento (inclusa la revisione) come fine. Questo approccio consente una visione più chiara e strutturata delle tempistiche di ciascuna attività.
+
+    Per una comprensione ancora più approfondita dell'insieme, la board viene suddivisa in milestone, consentendo la visualizzazione singola di ciascuna di esse. Questa suddivisione facilita il monitoraggio e la gestione specifica di ciascun obiettivo intermedio, migliorando ulteriormente la chiarezza e la gestione del progetto nel suo complesso.
+
+
 == Infrastrutture /** descrizione infrastrutture */
 
+L'infrastruttura organizzativa costituisce l'insieme degli strumenti impiegati per facilitare e ottimizzare i processi organizzativi, consentendo uno svolgimento pratico ed efficiente delle attività lavorative. Questa struttura svolge un ruolo cruciale nel fornire il supporto necessario per garantire che le operazioni quotidiane come i processi più complessi vengano gestiti con successo.
+
+Questa infrastruttura può comprendere una vasta gamma di elementi, tra cui software specializzato, piattaforme tecnologiche, e strumenti di comunicazione.
+
 === Strumenti di supporto ai processi /** lista strumenti usati (github, discord, etc.) */
- 
+ - GitHub:
+    
+    E' un servizio di hosting per progetti software, implementazione dello strumento di controllo versione distribuito Git. Viene utilizzato per gestire tutti gli artefatti del progetto.
+
+ - Telegram
+
+    Telegram è un servizio di messaggistica istantanea e broadcasting basato su cloud. Viene utilizzato per le comunicazioni interne fra membri del team.
+
+ - Discord
+    
+    E' una piattaforma di VoIP, messaggistica istantanea e distribuzione digitale. Viene utilizzata per incontri interni fra membri del team
+
+ - Google Drive, e suo ecosistema: Fogli e Documenti.
+
+    Google Drive è un servizio web, in ambiente cloud computing, di memorizzazione e sincronizzazione online. Viene utilizzato per la gestione di file informali, che variano tra note e appunti realizzate utilizzando Documenti, e tabelle di vario tipo e uso, realizzate con Fogli.
+
+ - Google Meet e Zoom
+
+    Sono applicazioni di teleconferenza. Vengono utilizzate principalmente per incontri esterni.
+
+ - Gmail
+
+    E' un servizio di posta elettronica, utilizzato per le comunicazioni con esterni.
+    
 == Miglioramento /** descrizione di come si svolge il miglioramento */
 
-==== Manutenzione migliorativa dei processi /** descrizione di come si sistema il miglioramento */
+Durante lo svolgimento delle attività e la successiva elaborazione della documentazione, ci poniamo come obiettivo quello di cercare di seguire costantemente il principio di miglioramento continuo. L'obiettivo principale è quello di identificare in modo proattivo le attività, i ruoli e le opportunità di miglioramento, cercando nuove o alternative soluzioni per affrontare sfide emergenti, o passate. Questo approccio contraddistinguerà ogni fase del processo, dalla pianificazione, all'esecuzione e alla documentazione.
+
+In sintesi, la manutenzione migliorativa dei processi è un ciclo iterativo che ci consente di adattarci dinamicamente alle esigenze mutevoli del progetto, garantendo una crescita continua e una maggiore efficienza nelle nostre attività.
 
 == Formazione /** descrizione di come ci formiamo */
+Per promuovere un miglioramento continuo nelle attività svolte e garantirne il corretto mantenimento, è essenziale che ogni membro del team attraversi un periodo di formazione in autonomia, che si protragga durante tutto il corso del progetto in modo asincrono. Questo periodo di formazione mira a fornire a ciascun membro le competenze necessarie per comprendere e utilizzare in modo efficace le tecnologie e le metodologie operative coinvolte nel progetto.
 
 === Complementi all'auto-formazione /** lista con link usati per formarci (varie documentazioni) */
+
+- GitHub:
+    #link("https://docs.github.com/en")
+- Git:
+    #link("https://git-scm.com/doc")
+- Framework Scrum:
+    #link("https://www.atlassian.com/it/agile/scrum")  
+- Approccio XP:
+    
+    #link("https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/extreme-programming")  
