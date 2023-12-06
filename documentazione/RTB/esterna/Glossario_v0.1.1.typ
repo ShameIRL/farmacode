@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+    "0.2.1", "2023-12-06", p.bomben, "", "Stesura 4.2, 4.3, 10.1",
     "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
     "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
   ),
@@ -28,9 +29,12 @@ facilmente terminologie.
 Documento privato tra chi commissiona il lavoro e il gruppo (ditta) che lo esegue, in cui viene esposto un problema che il proponente necessita di risolvere e specifica le norme e vari vincoli da rispettare per lo sviluppo
 del specifico prodotto software.
 
-== Continuous Integration
-
 == Continuous Deployment
+La Continuous Deployment (CD) è una pratica di sviluppo del software che estende il concetto di Continuous Integration (CI). 
+La Continuous Deployment va oltre, automatizzando anche il processo di distribuzione del software in ambienti di produzione.
+
+== Continuous Integration
+La Continuous Integration (CI) è una pratica di sviluppo del software che mira a migliorare la qualità del codice sorgente attraverso l'integrazione frequente dei cambiamenti nel repository principale.
 
 = D
 
@@ -45,6 +49,7 @@ del specifico prodotto software.
 = I
 
 == Issues Tracking System
+Un Issues Tracking System è uno strumento progettato per gestire e monitorare le problematiche riscontrate durante lo sviluppo del progetto, non solo in ambito software. Il sistema fornisce un modo sistematico per segnalare, monitorare e risolvere i problemi rilevati durante il ciclo di vita del prodotto.
 
 = J
 
