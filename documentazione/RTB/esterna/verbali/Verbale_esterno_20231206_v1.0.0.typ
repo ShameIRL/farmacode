@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "24-11-2023", p.bomben , "", "Stesura e revisione del verbale",
+    "1.0.0", "06-12-2023", p.bomben , "", "Stesura e revisione del verbale",
   ),
 )
 
