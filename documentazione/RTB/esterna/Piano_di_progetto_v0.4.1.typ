@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.4.1", "2023-12-06", p.bomben, "", "Stesura sprint.2",
     "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
     "0.3.1", "2023-11-27", p.rosson, p.carraro, "Apportate alcune modifiche alla struttura del documento",
     "0.3.0", "2023-11-26", p.rosson, p.carraro, "Prima stesura sezione 3, Pianificazione",
@@ -305,8 +306,33 @@ figure(
 )
 
 ==== sprint.2
+- Periodo: 24/11/2023-4/12/2023 (1 settimana e 3 giorni)
+- Macro-issues:
 
+  -- Approvate quanto prodotto nello sprint.2;\
+  -- Revisionare quanto prodotto nello sprint.2;\
+  -- Stesura qualità architettura piano di qualifica;\
+  -- Realizzazione pagina github.io;\
+  -- Prima stesura sezione 3 "Piano di progetto;"\
+  -- Prima stesura del file "Piano di progetto";\
+  -- POC - Design e primo approccio;\
+  -- Prima stesura del file "Piano di qualifica";\
+  -- Seconda stesura del file "analisi dei requisiti";\
+  -- Prima stesura sezione 4 file "Norme di progetto";\
 
+- Sintesi:
+In questo secondo sprint si è iniziato a ragionare anche sul Design e una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di scrittore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
+
+- Gnatt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#2.png", height: 60%),
+  caption: [sprint.2]
+  )
+  
+)
+
+==== sprint.3
 
 = Distribuzione ruolistica
 La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto didattico. Se ne riporta qui sotto un riepilogo:
