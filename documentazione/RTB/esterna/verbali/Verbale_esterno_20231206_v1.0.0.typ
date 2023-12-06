@@ -1,7 +1,7 @@
 #import "/template/verbals.typ": *
 
 #show: project.with(
-  title: "Verbale esterno del meeting in data 24/11/2023",
+  title: "Verbale esterno del meeting in data 06/12/2023",
   recipients: (
     
   ),
