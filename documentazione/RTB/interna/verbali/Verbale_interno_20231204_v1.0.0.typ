@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "29-11-2023", p.bomben, "qualcuno", "Stesura del verbale",
+    "1.0.0", "29-11-2023", p.bomben, p.rosson, "Stesura del verbale",
   ),
 )
 
@@ -32,9 +32,9 @@
 - Mezzo tramite: Discord (online)
 
 = Sintesi
-Il meeting è iniziato facendo una sintesi del lavoro svolto da parte del gruppo, dove ognuno esponeva il lavoro svolto nel secondo sprint relativo al suo compito.\
-Successivamente abbiamo concluso definitivamente lo sprint per iniziare con il terzo, sono stati quindi assegnato ai componenti del gruppo i ruoli per la nuova settimana. \
-E' stato deciso di incrementare il numero di programmatori in maniera da velocizzare la parte relativa per il POC.\
+Il meeting ha preso avvio con una panoramica del progresso compiuto dal gruppo, durante la quale ciascun partecipante ha presentato le attività portate a termine nel corso del secondo sprint, focalizzandosi sul proprio ruolo assegnato.\
+Successivamente abbiamo concluso definitivamente lo sprint per iniziare con la pianificazione del successivo, sono stati quindi assegnati ai componenti del gruppo i ruoli per la nuova settimana. \
+E' stato deciso di incrementare il numero di programmatori in maniera da velocizzare lo sviluppo di una prima versione del POC.\
 I componenti del gruppo addetti al ruolo di "Programmatore" nello sprint precedente hanno mostrato il lavoro svolto da loro, in maniera da aggiornare il gruppo
 e discutere meglio in che direzione proseguire fino allo sprint successivo. \
 Si è inoltre deciso di fissare un meeting con l'azienda, in modo da discutere di alcune difficolà incontrate che riguardano sopratutto le tecnologie per lo sviluppo in locale e l'implementazione del sistema di raccomandazione
