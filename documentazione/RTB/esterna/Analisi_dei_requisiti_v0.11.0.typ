@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.11.0", "2023-11-30", p.rosson, "", "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
+    "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
     "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
     "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
     "0.9.0", "2023-11-29", p.pandolfo, p.passarella, "Stesura introduzione requisiti e requisiti funzionali",
@@ -418,7 +418,7 @@ Possiamo in particolare evidenziare tre categorie principali di requisiti:
 I requisiti funzionali descrivono le funzionalità del sistema, le azioni
 che il sistema può compiere e le informazioni che questo può fornire.\
 
-Il numerolo di ciascuno rispecchia ove previsto gli UC presenti, mentre le sigle sotto
+Il numerolo di ciascuno rispecchia, ove previsto, gli UC presenti, mentre le sigle sotto
 riportate indicano:
 - RDF: Requisito Desiderabile Funzionale;
 - ROF: Requisito Obbligatorio Funzionale.
@@ -471,10 +471,10 @@ riportate indicano:
   // si possono anche mettere opzionali
   [RDF 14],
   [L’utente deve poter visualizzare una cronologia delle interrogazioni più recenti],
-  [Verbale Enterno],
+  [Verbale Esterno],
   [RDF 15],
   [L’utente deve poter visualizzare una vista con statistiche mensili sull'efficienza delle raccomandazioni],
-  [Verbale Enterno],
+  [Verbale Esterno],
 )
 
 
@@ -549,7 +549,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Utilizzo del framework React per il front-end dell'applicazione],
   [Verbale interno],
   [RDV 9],
-  [Utilizzo di Node.js per il back-end dell'applicazione],
+  [Utilizzo di Node.js per il front-end dell'applicazione],
   [Verbale interno],
   //forse va scritto meglio?
   [RDV 10],
@@ -584,17 +584,18 @@ Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica
   In questo ambiente i requisiti prestazionali possono essere
   influenzati da diverse variabili esterne indipendenti dalla qualità del prodotto.
 // forse da definire meglio una volta che avremo l'hosting, possibili domande da fare a gianluca.
-  Il sistema, in accordo con il proponente, si poggerà sulla rete aziendale dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.  
+  Il sistema, in accordo con il proponente, si poggerà sulla rete dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.  
 
 === Requisiti di sicurezza
 
 Analogamente a quanto riportato qui sopra, molti aspetti legati alla sicurezza del sistema dipenderanno, e saranno in parte risolti dai sistemi implementati nella rete aziendale su cui si poggia il prodotto.
 
 Internamente, i requisiti di sicurezza trovati e definiti sono:
-// da specificare che tipo di crittografia magari. es:RSA
+// da specificare che tipo di crittografia magari. es:RSA :RE (aspetterei di implementare)
 + Crittografia dei dati degli utenti in ingresso, quali password e identificativo.
-// ha senso ritenerlo di sicurezza?
+// ha senso ritenerlo di sicurezza? :RE (secondo me si)
 + Presenza di allert informativo sulle normative dei coockie utilizzati dalla web-app.
+// si può aggiungere il banner per la manutenzione del sito qui?
 
 == Tracciamento
 Il tracciamento consente di mantenere una connessione tra i requisiti e le diverse fasi del ciclo di vita del software. Permettendo di reperire i requisiti con facilità aiuta a garantire che ogni elemento del sistema software, come le funzionalità o le caratteristiche, sia allineato e coerente con i requisiti specificati durante l'analisi.
