@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.4.1", "2023-12-06", p.bomben, "", "Stesura sprint.2",
+    "0.4.1", "2023-12-06", p.bomben, p.rosson, "Stesura sprint.2",
     "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
     "0.3.1", "2023-11-27", p.rosson, p.carraro, "Apportate alcune modifiche alla struttura del documento",
     "0.3.0", "2023-11-26", p.rosson, p.carraro, "Prima stesura sezione 3, Pianificazione",
@@ -60,7 +60,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
         fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Mancanza di competenze tecniche specifiche.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-        fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+        fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Mancanza di alcuni membri del gruppo o dell'interezza dello stesso di esperienze professionali nella gestione e realizzazione di un progetto software. Mancanza di conoscenze delle tecnologie necessarie allo sviluppo del prodotto.],
   [*Grado di rischio*], [5],
   [*Pericolosità*], [Alta],
@@ -75,7 +75,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Non conformità agli impegni dichiarati.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Irregolarità nell'impegno di uno o più componenti del team rispetto a quanto patuito.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
@@ -90,7 +90,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Problemi di comunicazione e collaborazione.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Intesi a livello personale, si intendono tutte le possibili divergenze tra le componenti del team.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
@@ -105,7 +105,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Malattia o indisponibilità.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Malattia di uno o più membri del team, o problematiche di altro genere.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
@@ -125,7 +125,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Comunicativi e organizzativi.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Problematiche nell'organizzare le parti del team, e nel avere comunicazioni interne.],
   [*Grado di rischio*], [4],
   [*Pericolosità*], [Alta],
@@ -140,7 +140,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Scarsa definizione dei ruoli e delle responsabilità all'interno del team.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Metodologia erronea o poco efficace nel definire ruoli e spartire attività.],
   [*Grado di rischio*], [4],
   [*Pericolosità*], [Alta],
@@ -155,7 +155,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Risorse limitate o budget insufficiente per sostenere lo sviluppo del progetto.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Situazione instabile e non conforme a quanto dichiarato nel preventivo di candidatura.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
@@ -172,7 +172,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Difficoltà comunicative*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Problematiche di tipo comunicativo con esterni, quali proponente e committente/ti.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
@@ -187,7 +187,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Fornitura.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Ritardi nella fornitura di risorse esterne o dipendenza da terze parti. Mancato accesso a strumenti o risorse software necessari per lo sviluppo],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
@@ -204,7 +204,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Incompatibilità tra diverse tecnologie o componenti software.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Situazione presentante difficoltà nell'integrare le diverse tecnologie coinvolte.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
@@ -219,7 +219,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
           fill: (_, row) => if calc.odd(row) { white } else { rgb("#b01c1d") },
   [*Aggiornamenti o modifiche agli strumenti e tecnologie in uso.*], 
   table(columns: (auto, 1fr), inset: (5pt),
-  fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Descrizione*], [Situazione nella quale alcune tecnologie individuate risultino indisponibili o aventi modifiche sostanziali potenzialmente invalidanti il lavoro svolto fino a quel punto.],
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
@@ -311,9 +311,7 @@ figure(
 
   -- Approvate quanto prodotto nello sprint.2;\
   -- Revisionare quanto prodotto nello sprint.2;\
-  -- Stesura qualità architettura piano di qualifica;\
   -- Realizzazione pagina github.io;\
-  -- Prima stesura sezione 3 "Piano di progetto;"\
   -- Prima stesura del file "Piano di progetto";\
   -- POC - Design e primo approccio;\
   -- Prima stesura del file "Piano di qualifica";\
@@ -321,12 +319,12 @@ figure(
   -- Prima stesura sezione 4 file "Norme di progetto";\
 
 - Sintesi:
-In questo secondo sprint si è iniziato a ragionare anche sul Design e una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di scrittore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
+In questo secondo sprint si è iniziato a ragionare anche sul Design e ad una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di amministratore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
 
 - Gnatt view:
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#2.png", height: 60%),
+  image("/imgs/gantt_views/sprint#2.png", height: auto, width: auto),
   caption: [sprint.2]
   )
   
@@ -339,7 +337,7 @@ La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto
 
 #table(
   columns: (auto, auto, auto),
-    fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Ruolo*],[*Costo orario*],[*Responsabilità*],
   [Responsabile],[30],[- Coordina l’elaborazione di piani e scadenze 
   - Approva il rilascio di prodotti parziali o finali (SW, documenti) 

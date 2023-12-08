@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.11.0", "2023-11-30", p.rosson, "", "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
     "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
     "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
     "0.9.0", "2023-11-29", p.pandolfo, p.passarella, "Stesura introduzione requisiti e requisiti funzionali",
@@ -467,6 +468,13 @@ riportate indicano:
   [RDF 13],
   [L’utente deve poter visualizzare la lista dei suoi prodotti],
   [Verbale Interno],
+  // si possono anche mettere opzionali
+  [RDF 14],
+  [L’utente deve poter visualizzare una cronologia delle interrogazioni più recenti],
+  [Verbale Enterno],
+  [RDF 15],
+  [L’utente deve poter visualizzare una vista con statistiche mensili sull'efficienza delle raccomandazioni],
+  [Verbale Enterno],
 )
 
 
@@ -519,7 +527,7 @@ Le sigle sotto riportate possono essere così classificate:
   [ROV 1],
   [Database relazionale sviluppato con MySQL],
   [Capitolato],
-  [ROV 2],
+  [RDV 2],
   [Sistema di raccomandazione sviluppato con Surprise (libreria in python)],
   [Capitolato],
   [ROV 3],
@@ -543,22 +551,122 @@ Le sigle sotto riportate possono essere così classificate:
   [RDV 9],
   [Utilizzo di Node.js per il back-end dell'applicazione],
   [Verbale interno],
+  //forse va scritto meglio?
   [RDV 10],
+  [Utilizzo e creazione di API per l'interazione fra app web-based e algoritmo di raccomandazione],
+  [Verbale interno],
+  [RDV 11],
   [Utilizzo della piattaforma Anaconda per la gestione dell'ambiente di sviluppo],
   [Verbale interno],
+  //va bene messo qui?
+  [RDV 12],
+  [Possibile approccio multi-thread o multi-modello per la gestione dell'attesa in caso di interrogazione durante l'addestramento del modello],
+  [Verbale Esterno],
 )
 
 === Requisiti d'ambiente
 
+Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica che per la fruizione del servizio, non siano necessari particolari requisiti d'ambiente. 
+// questa parte va definita meglio una volta che sapremo effettivamente come gestiamo l'hosting.
+
 === Requisiti di performance
+
+- Algoritmo di raccomandazione:
+
+  Per quanto riguarda l'algoritmo utilizzato per la predizione delle raccomandazioni e la sua gestione, in seguito ad un attenta analisi e discussione congiunta con il proponente, sono sorti i seguenti requisiti:
+  
+  + Le misurazioni di prestazioni del modello utilizzando i dati presenti nel test set e delle metriche precision e recall devono essere ritenibili dal proponente congrui e soddisfacenti.
+  + Come requisito opzionale: possibili misurazioni di performance in multithreading, se utilizzato come approccio.
+
+- Interfaccia utente:
+
+  Come già sopra citato, l'utente utilizzatore del servizio interagirà con l'applicativo attraverso il browser.
+  In questo ambiente i requisiti prestazionali possono essere
+  influenzati da diverse variabili esterne indipendenti dalla qualità del prodotto.
+// forse da definire meglio una volta che avremo l'hosting, possibili domande da fare a gianluca.
+  Il sistema, in accordo con il proponente, si poggerà sulla rete aziendale dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.  
 
 === Requisiti di sicurezza
 
+Analogamente a quanto riportato qui sopra, molti aspetti legati alla sicurezza del sistema dipenderanno, e saranno in parte risolti dai sistemi implementati nella rete aziendale su cui si poggia il prodotto.
+
+Internamente, i requisiti di sicurezza trovati e definiti sono:
+// da specificare che tipo di crittografia magari. es:RSA
++ Crittografia dei dati degli utenti in ingresso, quali password e identificativo.
+// ha senso ritenerlo di sicurezza?
++ Presenza di allert informativo sulle normative dei coockie utilizzati dalla web-app.
+
 == Tracciamento
+Il tracciamento consente di mantenere una connessione tra i requisiti e le diverse fasi del ciclo di vita del software. Permettendo di reperire i requisiti con facilità aiuta a garantire che ogni elemento del sistema software, come le funzionalità o le caratteristiche, sia allineato e coerente con i requisiti specificati durante l'analisi.
 
 === Fonte - Requisiti
+#table(
+  columns: (1fr, 1fr),
+  [*Fonte*],[*Requisito*]
+)
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Funzionali*],[],
+  [UC1, UC1.1, UC1.2],[ROF 1],
+  [UC2],[ROF 2],
+  [UC3],[ROF 3],
+  [UC4, UC4.1, UC4.2],[ROF 4],
+  [UC5],[ROF 5],
+  [UC6, Capitolato],[ROF 6],
+  [UC7, Capitolato],[ROF 7],
+  [UC8, Capitolato],[ROF 8],
+  [UC9],[ROF 9],
+  [Verbale Interno],[RDF 10],
+  [Verbale Interno],[RDF 11],
+  [Verbale Interno],[RDF 12],
+  [Verbale Interno],[RDF 13],
+  [Verbale Esterno],[RDF 14],
+  [Verbale Esterno],[RDF 15],
+)
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*di Qualità*],[],
+  [Capitolato],[ROQ 1],
+  [Capitolato],[ROQ 2],
+  [Capitolato],[ROQ 3],
+  [Capitolato],[ROQ 4],
+)
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*di Vincolo*],[],
+  [Capitolato],[ROV 1],
+  [Capitolato],[ROV 2],
+  [Capitolato],[ROV 3],
+  [Capitolato],[ROV 4],
+  [Capitolato],[ROV 5],
+  [Capitolato],[ROV 6],
+  [Capitolato],[ROV 7],
+  [Verbale Interno],[RDV 8],
+  [Verbale Interno],[RDV 9],
+  [Verbale Interno],[RDV 10],
+  [Verbale Interno],[RDV 11],
+  [Verbale Esterno],[RDV 12],           
+)
 
 == Riepilogo
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Tipologia*],[*Obbligatorio*], [*Desiderabile*],[*Complessivo*],
+  [Funzionale],[9],[6],[15],
+  [di Qualità],[4],[/],[4],
+  [di Vincolo],[7],[5],[12],
+  
+)
+#table(
+  columns: (1fr, auto,),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Totale*],[*31*],
+)
 
 = Elenco delle immagini
 
