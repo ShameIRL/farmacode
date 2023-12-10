@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.8.0", "10-12-2023", p.rosson, "", "Completat prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
     "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
@@ -40,43 +41,232 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 
 = Processi primari
 
-== Acquisizione
-
-=== Obbiettivo /** descrizione obbiettivo */
-
-=== Descrizione /** descrizione di questa sezione */
-
-=== Valutazione dei capitolati /** avvenimento della valutazione dei capitolati */
-
-=== Valutazione delle aziende selezionate /** valutazione aziende scelte (i meeting fatti praticamente) */
-
 == Fornitura
 
-=== Gara di appalto /** processo di aggiudicazione con la nostra presentazione etc. */
+=== Descrizione e Scopo /** descrizione di questa sezione */
 
-=== Aggiudicazione del capitolato /** avvenimento aggiudicazione */
+In questa sezione sono elencate tutte le norme che il gruppo è tenuto ad osservare e rispettare per garantire il mantenimento di un rapporto utile e il più trasparente possibile con il proponente e i committenti per l'intera durata del progetto.
 
-=== Rilascio del prodotto /** spiegazione di come avviene il rilascio di prodotto collaudato che rispetta le analisi req */
+Il processo di fornitura definisce l'insieme di attività, compiti e risorse necessari al fornitore per portare a termine con successo il progetto. Il suo obiettivo principale è tracciare e descrivere le attività svolte dai membri del team di sviluppo. Questo tracciamento consente di valutare il lavoro completato, quantificare ciò che ancora deve essere realizzato e confrontare gli avanzamenti con le richieste del proponente, fornendo così una "istantanea" costante dello stato dei lavori e del bilancio di progetto.
 
-=== Gestione dei rapporti con il cliente /** descrizione rapporti col cliente */
+Durante questa fase, il gruppo è tenuto a stabilire i contatti con il proponente e a definire i requisiti per l'#glossario("MVP") (Minimum Viable Product) da concordare con quest'ultimo, basandosi su tempistiche, costi e importanza (intesa come incidenza sulla qualità del prodotto).
+
+=== Rapporti con il proponente
+Il team si impegna a mantenere contatti costanti con il proponente per l'intera durata del progetto. Questo impegno non solo assicura in parte il corretto sviluppo dei lavori, ma facilita anche lo scambio di informazioni e feedback tra le parti, contribuendo a garantire il rispetto degli accordi stabiliti. Nella sezione #link(<comunicazioni>)[comunicazioni]
+e nella sezione #link(<incontri>)[incontri] è possibile consultare le norme e modalità con le quali avvengono questi contatti.
+
+=== Documentazione fornita
+In questa sezione viene presentanto un elenco contenente tutta la documentazione che deve venire fornita a proponente e/o commitente, per obblighi accademici o per volontà del team.
+
+- Piano di progetto;
+    
+    Documento contenente la pianificazione delle attività di progetto, la gestione dell'organizzazione ruolistica
+    ed il bilancio del progetto.
+
+- Piano di qualifica;
+
+    Documento contenente le normative e metriche riguardanti i processi di qualifica in adozione dal gruppo.
+
+- Analisi dei requisiti;
+
+    Documento contenente lo studio dei requisiti del prodotto software, loro classificazione, scenario e gestione.
+
+- Glossario;
+
+    Documento utile per favorire una corretta consultazione della documentazione di progetto. Viene accompagnato da una sua versione online disponibile nel sito vetrina del gruppo. // al link ...
+
+- Lettera di presentazione relativa.
+    Documento accompagnante ogni revisione di progetto, che ne illustra brevemente il contenuto.
+
+=== Strumenti
+Segue un elenco degli strumenti da utilizzare dal team per il processo di fornitura:
+
+- Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
+- Google Meet e Zoom per gli incontri verso l'esterno;
+- GitHub per l'hosting e versionamento del prodotto software (documentazione inclusa)
+- KeyNote per la realizzazione dei diari di bordo.
 
 == Sviluppo
 
-=== Descrizione /** descrizione di questa sezione */
+=== Descrizione e Scopo/** descrizione di questa sezione */
+In questa sezione del documento, vengono definite le linee guida e le norme essenziali atte a dirigere le attività di sviluppo in modo accurato e uniforme. L'obiettivo principale è garantire una coerenza completa nei metodi utilizzati, mirando al contempo a promuovere il raggiungimento di una qualità superiore nel prodotto finale. Questa sezione svolge un ruolo cruciale nel plasmare il processo di sviluppo, fornendo una struttura chiara e definita per le operazioni, che permette di mantenere standard solidi in tutte le fasi del ciclo di vita del progetto. La sua importanza sta nel contribuire alla creazione di un ambiente di lavoro orientato al raggiungimento di un risultato finale che soddisfi le aspettative e rispetti gli standard predefiniti.
+
+Il processo di sviluppo di un prodotto software è suddivisibile come segue:
+- Analisi dei requisiti;
+- Design architetturale;
+- Design del software;
+- Programmazione e verifica;
+- Integrazione.
 
 === Analisi dei requisiti /** descrizione analisi requisiti di sistema e di software */
 
-=== Design architetturale /** descrizione delle architetture di sistema e di software */
+Il processo di analisi dei requisiti si colloca come prima fase dello sviluppo software, un momento cruciale in cui è imperativo delineare con precisione e robustezza gli scenari dei casi d'uso e le relative necessità o requisiti del sistema. Questa fase è di fondamentale importanza, perché implica la comprensione approfondita delle richieste degli utenti e degli stakeholder, offrendo una base solida per il progresso del ciclo di sviluppo.
 
-=== Design del software /** descrizione design software */
+Nel corso dell'analisi dei requisiti, il focus è posto sull'identificazione, la documentazione e la comprensione esaustiva delle funzionalità necessarie che il sistema dovrà incorporare.
+
+Inoltre, durante l'analisi dei requisiti, è essenziale stabilire una comunicazione efficace con il proponente, al fine di garantire che tutte le prospettive e le esigenze rilevanti siano adeguatamente considerate.
+
+==== Casi d'uso
+
+I #glossario("Casi d'uso") rappresentano azioni o sequenze di azioni collocabili in specifici scenari, caratterizzate da una richiesta e da una risposta. La loro definizione e realizzazione deve seguire gli standard imposti dal linguaggio UML, ed alcune regole interne al progetto.
+
+Ogni caso d'uso deve essere così composto:
+- identificazione e nomenclatura:
+    il formato concordato è il seguente:
+#align("UC.x.y - Nome", center)
+    dove: x, rappresenta il numero identificativo del caso d'uso generico; y, rappresenta l'id del sotto caso relativo. E "Nome" rappresenta il nome del caso d'uso da attribuire in modo chiaro e consono;
+- figura;
+- attori: utente o componente che può svolgere quella determinata azione o chiedere quel servizio;
+- precondizioni: condizioni di utente e/o sistema, necessarie affinchè si verifichi quel caso d'uso/scenario;
+- postcondizioni: rappresentano lo stato del sistema e/o utente, dopo che il caso d'uso è stato eseguito;
+- scenario principale: in questa sezione si elencano le fasi che caratterizzano il caso d'uso;
+- generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso;
+- estensioni (se presenti): in questa sezione vanno elencate eventuali estensioni.
+
+Per una migliore comprensione si riporta qui sotto un esempio nella forma standard da adottare per tutti i casi d'uso:
+
+*UC1 - Login*
+
+#figure(
+  image("/imgs/Uml/UC1.jpg", width: 80%),
+  caption: [
+    Login
+  ],
+)
+
+*Attori:*
+- Admin;
+- Users.
+*Precondizioni:*
+- L'utente possiede un account valido;
+- L'utente non ha già eseguito l'accesso;
+- L'utente ha una connessione stabile.
+*Postcondizioni:*
+- L'utente ha effettuato correttamente l'accesso ed è stato riconosciuto dal sistema.
+*Scenario principale:*
+- Admin/Users:
+    - inserisce la propria email nel campo [email] del modulo di accesso (UC1.1).
+    - inserisce la propria password nel campo [password] del modulo di accesso (UC1.2).
+- Sistema:
+    - Il sistema di autenticazione verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema.
+    - Se le credenziali sono corrette, l'utente viene autenticato con successo e reindirizzato alla pagina principale.
+    - Se le credenziali sono errate, il sistema di autenticazione visualizza un messaggio di errore per informare l'utente della fallita autenticazione (UC2).
+*Generalizzazioni:*
+    - UC1.1 - Inserimento email.
+    - UC1.2 - Inserimento password.
+*Estensioni:*
+- UC2 - Visualizzazione errore di login
+
+==== Requisiti
+I requisiti devono possedere un identificativo, composto come segue:
+#align("R[Importanza][Tipologia] X", center)
+Dove:
+-  Importanza: Indica il grado di importanza del requisito ed indirettamente la sua incidenza sul progetto. Un requisito può essere: 
+    + O --> "Obbligatorio";
+        
+        Un requisito deve venire defenito ed identificato come obbligatorio se ritenuto tale dal proponente, o se considerato tale e soddisfabile, dopo una cauta ed approfondita analisi, dal team di sviluppo.
+
+    + D --> "Desiderabile";
+
+        Un requisito deve venire defenito ed identificato come desiderabile, se ritenuto tale dal gruppo, in accordo con il proponente. Un requisito di questa categoria, è da considerarsi soddisfabile in un secondo momento a seconda di tempistche e costi.
+
+    + OPT --> "Opzionale".
+
+        Un requisito deve venire defenito ed identificato come opzionale, se ritenuto tale dal gruppo, in accordo con il proponente. Un requisito di questa categoria, è da considerarsi di valore aggiunto per il prodotto, anche se secondario, ma insoddisfabile date tempistiche e costi.
+
+- Tipologia: Indica il tipo di requisito in esame. Un requisito può essere:
+    
+    + F --> "Funzionale";
+
+        I requisiti funzionali descrivono le funzionalità del sistema, le azioni che il sistema può compiere e le informazioni che questo può fornire.
+
+    + Q --> "di Qualità";
+
+        I requisiti di qualità descrivono come un sistema deve essere, o
+        come il sistema deve esibirsi, per soddisfare le esigenze dell'utente.  
+
+    + V --> "di Vincolo";
+
+        I requisiti di vincolo descrivono i limiti e le restrizioni che un sistema
+        deve rispettare per soddisfare le esigenze dell'utente.
+    
+    Sono state successivamente concordate altre tre tipologie ritenute dal team in seguito ad un'attenta analisi, di secondaria importanza data la natura del capitolato.
+    Questi ultimi requisiti non saranno accompagnati da un identificativo, ma verranno posti nelle sezioni apposite in modo da non perderne la tracciabilità.
+
+    + "d'Ambiente"; 
+
+    I requisiti d'ambiente si riferiscono alle condizioni e alle risorse necessarie per sviluppare, testare e implementare il software in un ambiente operativo specifico. Questi requisiti forniscono le specifiche riguardanti l'infrastruttura tecnologica e le configurazioni d'ambiente.
+
+    + "di Performance";
+
+    I requisiti di performance definiscono le prestazioni e le caratteristiche di rendimento che il sistema deve raggiungere per soddisfare le aspettative degli utenti e del proponente.
+
+    + "di Sicurezza".
+
+    I requisiti di sicurezza delineano le misure di sicurezza e i comportamenti attesi per proteggere il sistema da minacce esterne o interne.
+
+=== Progettazine
+L'attività di progettazione segue ed utilizza la fase di analisi dei requisiti per definire ancor più struttura, vincoli e specifiche tecniche del prodotto software in oggetto. La fase di progettazione mira inoltre a facilitare definizione, suddivisione e quindi pianificazione delle attività di codifica del prodotto, beneficiando, se eseguita in modo corretto e vantaggioso, il ciclo di vita del software.
+La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare, e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti analizzati nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto. Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
+
+==== RTB
+===== Bozza di Architettura:
+    
+Le scelte concordate per la realizzazione del PoC sono le seguenti:
+il prodotto è suddivisibile in 5 Layer principali:
+
+- Livello Dati: comprendente il Database relazionale, contente parte del dataset fornitoci dal proponente.
+- Livello di Elaborazione: comprendente gli script Python adibiti alla gestione e applicazione, del algoritmo di raccomandazioni.
+- Livello di Logica: è formato dalle API che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP.
+- Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
+
+==== Algoritmo di raccomandazione:
+// qui vanno descritte le scelte sul alg
+===== Tecnologie scelte:
+// vanno elencate le tecnologie scelte
+
+==== PB
+In questa sezione verrano in futuro definite le norme da seguire durante lo sviluppo relative alle scelte architetturali e di design prese nella fase di progettazione del MVP.
 
 === Programmazione e verifica del software /** descrizione processo di coding e test software */
+In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato inizia a dare forma e vita al vero e proprio prodotto che l'utente finale andrà ad utilizzare.
+
+- Linguaggi e ambiente:
+Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a seconda di esigenze e vincoli, imposti sia dal capitolato che dal proponente. Se ne riporta qui sotto un elenco per una più facile consultazione:
+
++ Python, per l'agortimo di raccomandazione, e uso di sue svariate librerie come surprise, panda e numpy;
++ Mysql per la realizzazione del database relazionale;
++ Php e Node.js per il backend della webapp;
++ React per il frontend dell'interfaccia web.
+
+Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente con Anaconda, durante lo sviluppo. Anaconda permette di creare configurazioni di Python per semplificare la gestione e la distribuzione di librerie e pacchetti.
+
+- Stile di codifica:
+Al fine di poter lavorare in un ambiente omogeneo ed ordinato il team ha deciso di predisporre delle automazioni che migliorino la qualità del codice ed organizzino la sua formattazione.
+// da finire
++ Python:
+    Si è deciso di appoggiarsi a ruff, un sistema automatico di formattazione e analisi statica del codice. Esso è integrato nella repository tramite una GitHub action.
+
+- Lunghezza e complessità:
+Le funzioni e i metodi integrati nel codice del prodotto devono aderire rigorosamente agli standard di qualità stabiliti nel contesto del progetto. La filosofia che ogni membro del team si impegna ad adottare, si concentra sull'incoraggiare il riuso del codice, sulla facilità del suo mantenimento e sull'ottimizzazione delle prestazioni.
+Segue un elenco dei principali principi guida:
+
++ Riuso del Codice: Ogni componente del gruppo è incoraggiato a sviluppare funzioni e metodi modulari che possano essere riutilizzati in diverse parti del progetto, sfavorendo la duplicazione del codice, e facilitando la manutenzione e la gestione delle funzionalità comuni.
+
+// + Mantenimento del Codice: Le funzioni devono essere scritte in modo chiaro e documentate adeguatamente per facilitare il mantenimento del codice nel tempo. Commenti significativi e una documentazione chiara aiutano i membri del team a comprendere rapidamente le funzionalità e apportare modifiche quando necessario.
+
++ Efficienza del Codice: Si presta particolare attenzione all'efficienza del codice. Le funzioni dovrebbero essere progettate in modo ottimale per garantire un'esecuzione efficiente. L'attenzione è rivolta alla complessità algoritmica, all'utilizzo appropriato delle risorse e alla minimizzazione di operazioni computazionalmente costose.
+
++ Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio TDD (Test Driven Development), quando e quanto più possibile.
 
 === Integrazione /** descrizione processo di integrazione di sistema e software */
+La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. // non so cosa scrivere
 
 == Gestione operativa
+=== Descrizione e Scopo /** descrizione di questa sezione */
+Questa sezione fornirà dettagli sull'installazione del software come i requisiti di sistema e le procedure necessari per eseguire correttamente il prodotto. Inoltre illustrerà una guida all'utilizzo esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.
 
-=== Descrizione /** descrizione di questa sezione */
+Per quanto riguarda il PoC si rimanda al relativo README.md disponibile nel repository.
 
 === Utilizzo operativo /** descrizione di installazione, erogazione e utilizzo del prodotto */
 
@@ -84,7 +274,7 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 
 == Manutenzione
 
-=== Descrizione /** descrizione di questa sezione */
+=== Descrizione e Scopo /** descrizione di questa sezione */
 
 === Correzione /** descrizione di come avviene la correzione */
 
@@ -96,7 +286,7 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 
 == Documentazione
 
-=== Descrizione
+=== Descrizione e Scopo
 La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato e implementato e come lo si utilizza. Nel contesto del team di sviluppo è necessaria per facilitare il lavoro dei componenti, tenendo traccia e
 documentando tutti i processi e attività presenti andando a facilitare anche la manutenzione migliorando la qualità del risultato finale.
 
@@ -105,25 +295,33 @@ documentando tutti i processi e attività presenti andando a facilitare anche la
 === Strumenti 
     - Typst: scelto per la definitiva formattazione dei documenti per via della comodità con cui effettuare il versionamento dei documenti stessi;
 
-    - Overleaf (LaTeX): utilizzato nelle prime fasi del progetto per la realizzazione dei documenti necessari, successivamente cambiato con typst;
+    - Overleaf (LaTeX): utilizzato nelle prime fasi del progetto per la realizzazione dei documenti necessari, successivamente sostituito con typst;
 
     - UML: per la creazione di diagrammi UML il team ha deciso di utilizzare StarUML.
 
 /** aggiungere in caso si utilizzino altri strumenti */
 
 === Grafiche
-    - Template: le nostre grafiche per i documenti sono state realizzate con photoshop;
+    - Template: i documenti di progetto sono realizzati e caratterizzati da un preciso template, che differisce da quelli utilizzati per verbali e lettere di presentazione. Rispettivamente i file da includere per applicare il relativo template sono: 
+        + big_docs.typ, per la documentazione ufficiale di progetto;
+        + verbals.typ, per i verbali, sia esterni che interni;
+        + p_letters.typ, per le lettere di presentazione.
 
-    - Tabelle: le tabelle presentano una classica intestazione dei contenuto, i nomi delle colonne in grassetto e nessun altra particolarità, si è scelto di utilizzare una filosofia minimale per non appesantire i documenti.
+    - Tabelle: le tabelle presentano una classica intestazione del contenuto, i nomi delle colonne in grassetto e nessun altra particolarità, si è scelto di utilizzare una filosofia minimale per non appesantire i documenti. Si applicano colori alternati tra righe adiacenti in modo da facilitarne la lettura, rispettivamente "white" per le dispari, e "luma(230)"" per le pari. In alcune occasioni, è possibile se concordato, applicare il colore "c33435" alla riga di intestazione, per motivi puramente estetici.
+
+    - Figure: le immagini devono rigorosamente essere accompagnate da relativa didascalia, ed essere ridimensionate in modo ragionevole, senza eccessiva perdità di qualità e contenuto e senza andare ad occupare spazi esagerati.
 
 === Norme tipografiche
+//da mettere apposto e rendere tutto conforme !!!!!
     - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, lettera iniziale è sempre maiuscola e il resto tutto minuscolo, le parole sono separate da degli underscore. La data viene scritta in formato AAAA-MM-GG;
 
-    - Stile del testo: divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
+    - Sezionamento: divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
 
     - Glossario: /** vedi glossario (da decidere) */
 
-/** da ampliare il caso di aggiunte */
+    - Stile del testo: // va messo perchè una parola va messa in corsivo, bold, o altro
+
+/** da ampliare in caso di aggiunte */
 
 === Struttura
 I documenti ufficiali hanno una struttura precisa e comune che deve essere rigorosamente rispettata per i motivi citati nella descrizione.
@@ -136,7 +334,18 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
 
     - Contenuto: esposto con la maggiore chiarezza e semplicità, rigorosamente diviso in sezioni secondo i principi di indicizzazione;
 
-    - Pié pagina: solamente il numero della pagina in questione.
+    - Pié pagina: solamente il numero della pagina in questione ed il logo del gruppo separati dal contenuto da un' interlinea.
+
+==== Verbali
+I verbali differiscono in quanto a struttura rispetto ai documenti di progetto. Vanno rispettate le seguenti sezioni: \
+Per i verbali esterni:
+- Durata e partecipanti, sezione nella quale si elencano i partecipanti all'incontro, e si espone la durata del meeting;
+- Oggeto, rappresenta gli argomenti discussi;
+- Sintesi, riassume in breve il contenuto delle discussioni.
+Per i verbali interni:
+- Durata e partecipanti;
+- Sintesi;
+- Obiettivi fissati, elenco contenente gli obiettivi fissati per il prossimo periodo.
 
 === Caratterizzazione
     - Formali: Sono i documenti che andranno a formare la documentazione software del prodotto. In quanto tali sono sottoposti a versionamento e a processi di verifica e approvazione. Essi comprendono documenti interni, utili quindi ai membri del team di sviluppo, ed esterni, destinati a proponente e committente. 
@@ -160,7 +369,7 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
 
 == Gestione della configurazione
 
-=== Descrizione /** descrizione di questa sezione */
+=== Descrizione e Scopo /** descrizione di questa sezione */
   
 Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essenziali per gestire lo stato di un prodotto software e di tutti i suoi componenti, compresi sorgenti e documentazione. Questo insieme di norme e procedure non solo fornisce informazioni sullo stato di avanzamento del progetto, ma offre anche un resoconto dettagliato dell'evoluzione nel tempo del prodotto, garantendo nel contempo che il sistema operi secondo le attese. Un'efficace gestione della configurazione è cruciale per preservare l'integrità e le prestazioni del prodotto software durante il suo avanzamento. Inoltre, dovrebbe facilitare la risoluzione di problematiche e conflitti, assicurando una gestione fluida e efficiente del ciclo di vita del software.
 
@@ -235,7 +444,7 @@ Qui sotto un link al repository:
 
 == Accertamento della qualità 
 
-=== Descrizione /** descrizione di come avviene l'accertamento della qualità */
+=== Descrizione e Scopo /** descrizione di come avviene l'accertamento della qualità */
 
 == Qualifica
 
@@ -245,7 +454,7 @@ Qui sotto un link al repository:
 
 == Revisioni congiunte con il cliente
 
-=== Descrizione /** descrizione delle revisioni e di come avvengono, principalmente son revisioni esterne di documentazione */
+=== Descrizione e Scopo /** descrizione delle revisioni e di come avvengono, principalmente son revisioni esterne di documentazione */
 
 == Verifiche interne
 
@@ -253,7 +462,7 @@ Qui sotto un link al repository:
 
 == Risoluzione dei problemi
 
-=== Descrizione /** descrizione della sezione */
+=== Descrizione e Scopo /** descrizione della sezione */
 
 === Gestione dei problemi /** descrizione di come si risolvono problemi internamente */
 
@@ -267,9 +476,6 @@ Qui sotto un link al repository:
 
 == Gestione dei processi
 
-=== Obiettivo /** obbiettivo processo */
-L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del documento denominato "Piano di progetto" nella sua forma il più completa possibile, andando a definire ruoli, attività e loro collocazione nel tempo. Il documento, oltre ad essere utile al team per gestire l'organizzazione e la gestione dei ruoli di ogni componente, fa da bacheca al commitente di quanto appena citato. Il piano di progetto punta a comprendere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.
-
 === Descrizione /** descrizione di questa sezione */
 In questa sezione vengono trattate tutte le normative utili alla stesura e redazione del documneto "Piano di progetto", gli argomenti che ne fanno parte sono:
 - Ruoli e relativa organizzazione: 
@@ -278,6 +484,8 @@ In questa sezione vengono trattate tutte le normative utili alla stesura e redaz
     comprendente loro suddivisone in tipologia.
 - Gestione dell'organizzazione: 
     informazioni relative alle pratiche per la suddivisone in attività, e loro collocazione temporale, del corso del progetto.
+
+L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del documento denominato "Piano di progetto" nella sua forma il più completa possibile, andando a definire ruoli, attività e loro collocazione nel tempo. Il documento, oltre ad essere utile al team per gestire l'organizzazione e la gestione dei ruoli di ogni componente, fa da bacheca al commitente di quanto appena citato. Il piano di progetto punta a comprendere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.
     
 
 === Ruoli e relativa organizzazione /** descrizione di tutti e sei i ruoli, con spiegazione finale di come vengono assegnati e ruotati */
@@ -349,7 +557,7 @@ Durante il corso di uno sprint ogni mebro è libero di gestire le proprie attivi
 
 Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni componente, il team ha a disposizione un file "Google Fogli" dove sono visualizzabili le proprie disponibilità giornaliere (inserite al inizio del progetto), e dove nel eventualità è possibile segnare altri impegni inderogabili e sorti in un secondo momento.
 
-==== Comunicazioni
+==== Comunicazioni <comunicazioni>
 
 - *Interne* 
 
@@ -374,7 +582,7 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     -- E-mail: 
     Usate per le comunicazioni con proponente e commitenti. Principalmente hanno la funzione di concordare meeting, o di esporre quesiti e dubbi.
 
-==== Incontri o Meetings: 
+==== Incontri o Meetings: <incontri>
 
 - *Interni*
 
