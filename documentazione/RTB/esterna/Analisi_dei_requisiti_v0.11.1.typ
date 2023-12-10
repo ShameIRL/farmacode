@@ -136,7 +136,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC1 generalizzazione.jpg", width: 80%),
   caption: [
-    Inserimento email e password
+    Inserimento email e password per accesso
   ],
 )
 
@@ -248,7 +248,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC4 Generalizzazione.jpg", width: 80%),
   caption: [
-    Inserimento email e password
+    Inserimento email e password per nuovo utente
   ],
 )
 
