@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "0.2.1", "2023-12-06", p.bomben, "", "Stesura 4.2, 4.3, 10.1",
+    "0.2.1", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
     "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
     "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
   ),

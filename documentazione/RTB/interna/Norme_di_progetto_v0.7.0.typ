@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.8.0", "10-12-2023", p.rosson, "", "Completat prima stesura della sezione 2, e modificate alcune parti della sezione 3",
+    "0.8.0", "10-12-2023", p.rosson, p.passarella, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
     "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
