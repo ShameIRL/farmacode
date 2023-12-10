@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.11.1", "2023-12-10", p.passarella, "", "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
+    "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
     "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
     "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
