@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.11.1", "2023-12-10", p.passarella, "", "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
     "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
     "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
@@ -287,7 +288,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC5.jpg", width: 80%),
   caption: [
-    - Eliminazione utente
+    Eliminazione utente
   ],
 )
 
@@ -475,6 +476,7 @@ riportate indicano:
   [RDF 15],
   [L’utente deve poter visualizzare una vista con statistiche mensili sull'efficienza delle raccomandazioni],
   [Verbale Esterno],
+  
 )
 
 
@@ -671,4 +673,21 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 
 = Elenco delle immagini
 
+- Immagine 1: Login
+- Immagine 2: Inserimento email e password per accesso
+- Immagine 3: Visualizzazione lista utenti
+- Immagine 4: Aggiunta nuovo utente 
+- Immagine 5: Inserimento email e password per nuovo utente
+- Immagine 6: Eliminazione utente
+- Immagine 7: Vista cliente per prodotti
+- Immagine 8: Vista prodotti per cliente
+- Immagine 9: Feedback raccomandazione
+- Immagine 10: Logout
+
 = Elenco delle tabelle
+
+- Tabella 1: Requisiti funzionali
+- Tabella 2: Requisiti di qualità
+- Tabella 3: Requisiti di vincolo
+- Tabella 4: Tracciamento fonte-requisito
+- Tabella 5: Riepilogo
