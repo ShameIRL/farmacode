@@ -348,6 +348,9 @@ Per i verbali interni:
 - Sintesi;
 - Obiettivi fissati, elenco contenente gli obiettivi fissati per il prossimo periodo.
 
+
+Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno possedere una sezione "Nuova distribuzione ruolistica" contenente una tabella (Ruolo, Nome e cognome) riportante i ruoli per il prossimo periodo.
+
 === Caratterizzazione
     - Formali: Sono i documenti che andranno a formare la documentazione software del prodotto. In quanto tali sono sottoposti a versionamento e a processi di verifica e approvazione. Essi comprendono documenti interni, utili quindi ai membri del team di sviluppo, ed esterni, destinati a proponente e committente. 
  

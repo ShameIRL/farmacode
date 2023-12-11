@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+    "1.0.1", "11-12-2023", p.rosson, "", "Riadattata struttura alle nuove norme di progetto",
     "1.0.0", "07-11-2023", p.baggio + ",\n" + p.rosson, p.bomben, "Stesura e revisione del verbale",
   ),
 )
@@ -47,6 +48,20 @@ Le domande ed i dubbi sorti sono:
 3. Serve creare un nuovo database per contenere le raccomandazioni?
 
 = Obiettivi fissati
-Organizzare meeting con l’azienda Ergon Informatica in base alle disponibilità da loro offerte;
+Organizzare meeting con l’azienda Ergon Informatica in base alle disponibilità da loro offerte;\
 Pensare ad eventuali ulteriori domande da porre.
 
+= Nuova distribuzione ruolisitca
+#align(
+table(
+  columns: (auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Ruolo*],[*Nome e cognome*],
+  [Responsabile],[#p.rosson],
+  [Amministratore],[#p.passarella],
+  [],[#p.baggio],
+  [Analista],[#p.favaron],
+  [],[#p.bomben],
+  [Verificatore],[#p.carraro],
+  [], [#p.pandolfo]
+),center)

@@ -6,7 +6,8 @@
     
   ),
   changelog: (
-    "1.0.0", "20-11-2023", p.favaron, p.rosson, "Stesura e revisione del verbale",
+        "1.0.1", "11-12-2023", p.rosson, "", "Riadattata struttura alle nuove norme di progetto",
+    "1.0.0", "23-11-2023", p.favaron, p.rosson, "Stesura e revisione del verbale",
   ),
 )
 
@@ -42,4 +43,17 @@ Organizzare meeting con lâ€™azienda Ergon Informatica in base alle disponibilitÃ
 Pensare ad eventuali ulteriori domande da porre;\
 Continuare la stesura dei vari documenti di progetto come definito all'inizio del secondo sprint.
 
-
+= Nuova distribuzione ruolisitca
+#align(
+table(
+  columns: (auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Ruolo*],[*Nome e cognome*],
+  [Responsabile],[#p.favaron],
+  [Amministratore],[#p.carraro],
+  [Analista],[#p.passarella],
+  [],[#p.pandolfo],
+  [Programmatore],[#p.baggio],
+  [],[#p.bomben],
+  [Verificatore],[#p.rosson],
+),center)

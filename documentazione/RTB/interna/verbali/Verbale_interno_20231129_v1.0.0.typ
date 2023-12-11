@@ -45,5 +45,5 @@ Nella terza e ultima parte del meeting Favaron, in ruolo di Responasbile, ha con
 Infine Favaron ha esposto al resto del gruppo che ha iniziato una ricerca con lo scopo di trovare una possibile soluzione per automatizzare le operazioni di analisi statica del codice che verrà prodotto nelle settimane a venire. Tali operazioni si focalizzano sul limitare gli errori e la loro inividuazione rapida ai fini di limitare i costi di progetto e ad una maggiore qualità del codice prodotto.
 
 = Obiettivi fissati
-Il meeting si è concluso con gli obiettivi di proseguire quanto stabilito nello sprint.\
+Il meeting si è concluso con gli obiettivi di proseguire quanto stabilito nello sprint;\
 Sviluppo di una pagina web github.io.

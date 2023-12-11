@@ -284,7 +284,7 @@ Il team ha deciso di suddividere il corso e le attività di progetto in più spr
 
 === RTB
 ==== sprint.1
-- Periodo: 14/11/2023-23/11/2023 (1 settimana e 2 giorni)
+- Periodo: 7/11 --> 14/11/2023-23/11/2023 (1 settimana e 2 giorni)
 - Macro-issues:
   
   -- Approvare quanto prodotto nello sprint.1;\
@@ -294,7 +294,7 @@ Il team ha deciso di suddividere il corso e le attività di progetto in più spr
   -- Completare sezione 1 del documento "Norme di progetto".\
 
 - Sintesi:
-Questo primo sprint rientra a far parte di un primo periodo di "assestamento" durante il quale il team si è adoperato oltre che alla pianificazione stessa, ad adottare dei metodi che potessero attuarla in modo professionale, efficace ed efficiente. Il gruppo si è concentrato sulla stesura della documentazione in particolare sui file di "Norme di progetto" e "Analisi dei requisiti". Inoltre si sono attuate migliorie al repository lato automazione, e si sono stabiliti e affermati i contatti con il proponente svolgendo già alcuni meeting di consultazione.
+Questo primo sprint rientra a far parte di un primo periodo di "assestamento" durante il quale il team si è adoperato oltre che alla pianificazione stessa, ad adottare dei metodi che potessero attuarla in modo professionale, efficace ed efficiente. Il gruppo si è concentrato sulla stesura della documentazione in particolare sui file di "Norme di progetto" e "Analisi dei requisiti". Inoltre si sono attuate migliorie al repository lato automazione, e si sono stabiliti e affermati i contatti con il proponente svolgendo già alcuni meeting di consultazione ed esplorazione. In questo periodo il team ha deciso di cambiare il modo in cui scrivere la documentazione di progetto, passando da Latex a Typst, questo procedimento che inizialmente ha rallentato di molto i lavori, si è rivelato molto vantaggioso.
 
 - Gantt view:
 #align(left,

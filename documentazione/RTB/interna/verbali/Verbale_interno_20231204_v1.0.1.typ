@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+        "1.0.1", "11-12-2023", p.rosson, "", "Riadattata struttura alle nuove norme di progetto",
     "1.0.0", "29-11-2023", p.bomben, p.rosson, "Stesura del verbale",
   ),
 )
@@ -41,4 +42,21 @@ Si è inoltre deciso di fissare un meeting con l'azienda, in modo da discutere d
 sulla Web App.
 
 = Obiettivi fissati
-Gli obiettivi fissati, oltre all'assegnazione dei nuovi ruoli per i componenti del gruppo, sono quelli di riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo, e fissare un meeting con l'azienda.
+Gli obiettivi fissati sono quelli di:\
+Riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo;  
+Fissare un meeting con l'azienda per esporre e discutere quanto svolto.
+
+= Nuova distribuzione ruolisitca
+#align(
+table(
+  columns: (auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Ruolo*],[*Nome e cognome*],
+  [Responsabile],[#p.passarella],
+  [Analista],[#p.rosson],
+  [Programmatore],[#p.baggio],
+  [],[#p.favaron],
+  [],[#p.carraro],
+  [],[#p.pandolfo],
+  [Verificatore],[#p.bomben],
+),center)
