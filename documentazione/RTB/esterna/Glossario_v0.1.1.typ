@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+    "0.3.0", "2023-12-12", p.bomben, "", "Stesura nuove definizioni",
     "0.2.1", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
     "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
     "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
@@ -28,6 +29,9 @@ facilmente terminologie.
 == Capitolato
 Documento privato tra chi commissiona il lavoro e il gruppo (ditta) che lo esegue, in cui viene esposto un problema che il proponente necessita di risolvere e specifica le norme e vari vincoli da rispettare per lo sviluppo
 del specifico prodotto software.
+
+== Casi d'uso
+Un caso d'uso è una descrizione dettagliata di come un utente (attore) interagisce con l'applicazione per il compimento di un attività specifica. E' uno strumento utilizzato nel contesto dello sviluppo software per individuare i requisiti funzionali del prodotto e per fornire una visuale chiara delle interazioni che possono avvenire all'interno dell'applicazione.
 
 == Continuous Deployment
 La Continuous Deployment (CD) è una pratica di sviluppo del software che estende il concetto di Continuous Integration (CI). 
@@ -59,11 +63,17 @@ Un Issues Tracking System è uno strumento progettato per gestire e monitorare l
 
 = M
 
+== Minimum Viable Product
+Il Minimum Viable Product (MVP) è una versione ridotta del prodotto, la quale incorpora solo funzioni essenziali per soddisfare le esigenze base. Viene utilizzato per rilasciare un prodotto come test e ricevere feedback dall'utenza per migliorare poi il prodotto finito con tutte le funzionalità.
+
 = N
 
 = O
 
 = P
+
+== Product Baseline
+Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
 = Q
 
@@ -76,6 +86,9 @@ Un sistema di raccomandazione o motore di raccomandazione è un software di filt
 crea delle raccomandazioni personalizzate specifiche per l’utente così da aiutarlo nelle sue scelte. Viene utilizzato per diversi prodotti, come libri, musica, film, video, notizie e social media.
 
 = T
+
+== Test Driven Development
+Il Test Driven Development (TDD) è un modello per lo sviluppo software che prevede la stesura di test automatici prima dell'implementazione del codice che poi deve essere sottoposta ai test. In questo modello lo sviluppo del software è orientato esclusivamente all'obiettivo di passare i test precedentemente predisposti.
 
 = U
 

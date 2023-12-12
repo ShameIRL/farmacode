@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completat prima stesura della sezione 2, e modificate alcune parti della sezione 3",
+    "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
     "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
@@ -450,13 +450,33 @@ Qui sotto un link al repository:
 
 === Descrizione e Scopo /** descrizione di come avviene l'accertamento della qualità */
 
+La qualità di progetto è l'iniseme delle attività e di accorgimenti eseguiti durante il suo sviluppo per garantire che le performance del progetto siano congruenti con gli obiettivi e i requisiti stabiliti. Questo implica l'attuazione di misure e controlli volti a garantire che gli output del progetto soddisfino gli standard di qualità prefissati e rispettino le aspettative stabilite nel contesto del progetto stesso. La gestione della qualità è un elemento chiave per assicurare il successo complessivo del progetto e la soddisfazione delle parti interessate.\
+Le attività messe in atto per garantirne la qualità sono:
+- Rispettare e comprendere le necessità del proponente, sia in termini di quantità che di qualità, in modo da rilasciare un prodotto il più possibile fedele all'idea del cliente.
+- Seguire il piano di qualifica per il sviluppo del progetto, in modo da rientrare nei termini pattuiti, di tempo e di costo.
+
 == Qualifica
 
 === Verifica /** descrizione di come avviene la verifica ed i vari tipi di analisi */
+La verifica del software è definita come il processo di valutazione del prodotto software, mirato a garantire l'accuratezza dell'esecuzione della fase di sviluppo per costruire il prodotto software desiderato. Questa attività si svolge durante la fase in corso di sviluppo per rilevare difetti e guasti nella fase iniziale del ciclo di vita dello sviluppo, assicurando al contempo che il prodotto soddisfi i requisiti del cliente. La verifica quindi, è un elemento cruciale per garantire la qualità e la conformità del software alle specifiche stabilite.
+
+==== Analisi statica
+
+La verifica statica, così chiamata poichè non richiede l'esecuzione del prodotto, consiste nell'individuazione e correzione di eventuali problematiche che riguardano convenzioni o metriche stabilite. L'analisi statica riguarda sia il codice del software che la stesura dei documenti e può essere effettuata sia in maniera manuale o grazie all'utilizzo di strumenti per l'automazione.\
+Esistono inoltre due tipi per la verifica tramite l'analisi statica:
+- Walkthrought: viene utilizzato nel momento in cui non si sappia dove viene riscontrata la problematica e consiste in una lettura più ampia scorrendo nella sua interezza il documento/codice per trovare l'errore. Questo metodo è sicuramente molto efficace ma anche molto dispendioso in termini di risorse.
+- Inspection: A differenza del Walkthrought, questo metodo viene utilizzato quando si è a conoscenza di dove potrebbe essere la problematica. E' quindi un approccio più mirato per l'eliminazione dell'errore e molto meno dispendioso.
+
+==== Analisi dinamica
+
+L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento.\
+//bisogna scrivere dei test automatici, noi effettivamente li implementeremo(?)
 
 === Validazione /** descrizione di come avviene la validazione */
 
 == Revisioni congiunte con il cliente
+
+
 
 === Descrizione e Scopo /** descrizione delle revisioni e di come avvengono, principalmente son revisioni esterne di documentazione */
 
