@@ -20,9 +20,17 @@ facilmente terminologie.
 
 = A
 
+== API
+Un'Application Programming Interface (API), rappresenta un insieme di regole e definizioni che consente a un software di interagire con altri software. Le API sono quindi un collegamento tra un applicazione che invia una richiesta e l'applicazione che invia la risposta.
+
 == Artefatto
 
+Nel contesto dello sviluppo software, il termine artefatto si riferisce a un risultato intermedio generato durante il processo di sviluppo del software. Gli artefatti sono documenti, codice sorgente o altri elementi che fungono da risultati intermedi di varie attività nel ciclo di vita del software. 
+
 = B
+
+== Best practices
+Le "best practices" nello sviluppo software sono metodologie che, attraverso l'esperienza e la sperimentazione, sono stati identificati come modi efficaci e raccomandati di affrontare determinati problemi o compiti nel processo di sviluppo del software. Queste pratiche sono considerate migliori (best) perché hanno dimostrato di portare a risultati di alta qualità, facilitando la manutenzione del codice e promuovendo una migliore collaborazione nel team di sviluppo.
 
 = C
 
@@ -72,6 +80,9 @@ Il Minimum Viable Product (MVP) è una versione ridotta del prodotto, la quale i
 
 = P
 
+== Pair programming
+Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
+
 == Product Baseline
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
@@ -95,6 +106,9 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 = V
 
 = W
+
+== Web app
+Una web application (web app) è un'applicazione software progettata per essere utilizzata attraverso un browser web su un dispositivo Internet. A differenza delle applicazioni desktop tradizionali, le web app non richiedono un download o un'installazione separata, poiché vengono eseguite direttamente all'interno di un browser.
 
 = X
 
