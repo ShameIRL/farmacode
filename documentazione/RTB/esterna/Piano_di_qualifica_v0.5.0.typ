@@ -241,6 +241,56 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [100%],
 )
 
+==== Processi di supporto
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  //DOCUMENTAZIONE
+  [MPC ...],
+  [Indice Gulpease (IG)]
+  [40-100],
+  [60-100],
+  [MPC ...],
+  [Correttezza Ortografica (CO)]
+  [40-100],
+  [60-100],
+  [MPC ...], 
+  //ACCERTAMENTO DELLA QUALITA
+  [Quality Metrics Satisfied (QMS)], 
+  [≥ 90%],
+  [100%],
+  //QUALIFICA
+  [MPC...], 
+  [Code Coverage (CC)], 
+  [≥ 80%],
+  [100%],
+  [MPC ...], 
+  [Passed Tests (PT)], 
+  [≥ 80%],
+  [100%],
+)
+
+==== Processi organizzativi
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  //GESTIONE DEI PROCESSI
+  [MPC ...],
+  [Non-calculated Risk (NCR)]
+  [≤ 5],
+  [0],
+)
+
 = Controllo di qualità
 
 == Test
