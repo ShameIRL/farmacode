@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.9.0", "14-12-2023", p.bomben, "", "Stesura documento da sezione 3.3 a 3.7",
     "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
@@ -377,7 +378,7 @@ Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno posse
   
 Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essenziali per gestire lo stato di un prodotto software e di tutti i suoi componenti, compresi sorgenti e documentazione. Questo insieme di norme e procedure non solo fornisce informazioni sullo stato di avanzamento del progetto, ma offre anche un resoconto dettagliato dell'evoluzione nel tempo del prodotto, garantendo nel contempo che il sistema operi secondo le attese. Un'efficace gestione della configurazione è cruciale per preservare l'integrità e le prestazioni del prodotto software durante il suo avanzamento. Inoltre, dovrebbe facilitare la risoluzione di problematiche e conflitti, assicurando una gestione fluida e efficiente del ciclo di vita del software.
 
-=== Versionamento /** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
+=== Versionamento <versionamento>/** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
   
 Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni #glossario("artefatto"),
 documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte, e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
@@ -475,7 +476,7 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
 === Validazione /** descrizione di come avviene la validazione */
 
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
-Perchè un file venga validato, c'è la necessità che passi i testi preposti in base al suo tipo.
+Perchè un file venga validato, c'è la necessità che passi i testi preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
 
 ==== Validazione statica
 Per la documentazione è stato implementato un GitHub Actions che verifica la correttezza semantica e sintattica del codice Typst per poi andare a costruire il file in formato pdf da esso.\
@@ -486,7 +487,10 @@ Per quanto riguarda i file di codice, sempre tramite Actions, è stato implement
 == Revisioni congiunte con il cliente
 
 === Descrizione e Scopo /** descrizione delle revisioni e di come avvengono, principalmente son revisioni esterne di documentazione */
-Le revisioni svolte con il cliente hanno il compito di 
+Le revisioni congiunte con il cliente rappresentano un importante aspetto del processo di sviluppo del software, permettendo un coinvolgimento diretto e trasparente con il cliente nell'avanzamento del progetto.\
+Durante queste sessioni collaborative, gli sviluppatori presentano al cliente gli aggiornamenti, le nuove funzionalità o le modifiche apportate al software. 
+Questo processo consente al proponente di esaminare il prodotto in modo attivo, fornendo feedback tempestivi e suggerimenti oltre ai possibili chiarimenti di natura tecnica o strutturale.
+Le revisioni congiunte offrono un'opportunità cruciale per allineare le aspettative del cliente con la realizzazione pratica del software, identificare eventuali incongruenze e garantire che il prodotto finale soddisfi appieno le esigenze e le aspettative del cliente.  
 
 == Verifiche interne
 
@@ -495,15 +499,50 @@ Le revisioni svolte con il cliente hanno il compito di
 == Risoluzione dei problemi
 
 === Descrizione e Scopo /** descrizione della sezione */
+Durante il progetto il nostro team ha sempre cercato di operare seguendo un modello di miglioramento continuo, in modo da applicare alle best practices, le soluzioni incontrate fino ad ora alle problematiche più riccorrenti.\
+La risoluzione dei problemi gioca quindi un ruolo fondamentale per l'avanzamento del progetto didattico in quanto permette di monitorare e risolvere i problemi che possono sorgere durante lo sviluppo o il testing. 
+
 
 === Gestione dei problemi /** descrizione di come si risolvono problemi internamente */
+Il nostro gruppo per risolvere problematiche verificate durante lo sviluppo del progetto ha deciso di adottare una strategia sviluppata in quattro punti:
+- Registrazione del problema.
+- Valutazione del problema.
+- Risoluzione del problema.
+- Comunicazione e aggiornamento documentazione.
+
+==== Registrazione del problema
+Ogni problema identificato deve essere accuratamente registrato nel sistema di tracciamento dei problemi (ITS). 
+Questo sistema consente di inserire informazioni dettagliate, tra cui:
+- Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto.
+- Stato: indica a che punto si trova la risoluzione del problema: aperto, in lavorazione, pronto per una revisione o chiuso.
+- Assegnatario: persona a cui è stata assegnata la risoluzione del problema.
+- Data: indica la data in cui è stata aperta la issue.
+- Label: indica di cosa si deve occupare la persona preposta, quindi se il problema coinvolge la documentazione o codice.
+
+==== Valutazione del problema
+La valutazione del problema è una fase che precede la risoluzione e prevede un attenta valutazione da parte del gruppo. 
+Questa fase rigurda prettamente problematiche riguardanti il codice la cui discussione avviene attraverso meeting interni. 
+Durante gli incontri si toccano tre temi principali: la causa, l'impatto e il rischio.
+
+==== Risoluzione del problema
+Una volta valutato il problema, sarà la persona incaricata a risolverlo, comunicando tramite il ITS lo stato di avanzamento della risoluzione al problema e sfruttando la strategia valutata precedentemente.
+
+==== Comunicazione e aggiornamento documentazione
+Durante il processo di gestione del problema, è fondamentale mantenere una comunicazione trasparente con il proponente. 
+Questo include la creazione di report periodici sullo stato dei problemi e meeting di aggiornamento.\
+Deve inoltre, se necessario, essere aggiornata la documentazione in maniera da mantenere una coerenza tra software e documenti.
 
 === Gestione dei cambiamenti /** descrizione di come si reagisce a richieste di cambiamenti */
+La gestione dei cambiamenti è un processo cruciale all'interno dello sviluppo del software, poiché consente di gestire in modo efficace e controllato le modifiche apportate al progetto.
+Il tener traccia dei cambiamenti è fondamentale in ogni parte del ciclo di vita di un prodotto.\
+La documentazione dettagliata di ciascun cambiamento, insieme alla sua motivazione contribuisce a costruire una base solida per la 
+manutenzione futura. La gestione dei cambiamenti viene controllata attraverso il changelog presente in ogni documento, e inoltre riportato nel nome del file la sua versione corrente come spiegato nella sezione del #link(<versionamento>)[versionamento]
 
+/** Ha senso mettere sta roba?
 === Utilizzabilità /** descrizione di come si reputa utilizzabile il prodotto */
 
 === Valutazione del prodotto /** descrizione di come viene valutato il prodotto */
-
+*/
 = Processi organizzativi
 
 == Gestione dei processi
