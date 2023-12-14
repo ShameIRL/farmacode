@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-        "1.0.1", "11-12-2023", p.rosson, "", "Riadattata struttura alle nuove norme di progetto",
+    "1.0.1", "11-12-2023", p.rosson, p.baggio, "Riadattata struttura alle nuove norme di progetto",
     "1.0.0", "29-11-2023", p.bomben, p.rosson, "Stesura del verbale",
   ),
 )
@@ -43,7 +43,7 @@ sulla Web App.
 
 = Obiettivi fissati
 Gli obiettivi fissati sono quelli di:\
-Riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo;  
+Riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo;\
 Fissare un meeting con l'azienda per esporre e discutere quanto svolto.
 
 = Nuova distribuzione ruolisitca
