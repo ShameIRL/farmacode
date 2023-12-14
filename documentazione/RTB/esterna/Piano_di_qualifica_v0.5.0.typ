@@ -122,47 +122,47 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 === Processi primari
 #table(
-  columns: (22mm, auto, 35mm),
+  columns: (35mm, auto, 20mm),
   inset: 10pt,
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
   [Fornitura],
   [Processo che consiste nell’ individuare procedure e risorse adatte a soddisfare le necessità del cliente, secondo i termini e le condizioni stabiliti.],
-  [MPC.......],
+  [MPC....],
   [Sviluppo],
   [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
-  [MPC.......],
+  [MPC....],
   [Gestione operativa],
   [Processo che ha lo scopo di fornire dettagli sull’installazione del software come requisiti di sistema e procedure necessarie ad eseguire correttamente il prodotto.],
-  [MPC.......],
+  [MPC....],
   [Manutenzione],
   [],
-  [MPC.......],
+  [MPC....],
 )
 
 === Processi di supporto
 #table(
-  columns: (22mm, auto, 35mm),
+  columns: (35mm, auto, 20mm),
   inset: 10pt,
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
   [Documentazione],
   [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
-  [MPC.......],
+  [MPC....],
   [Gestione della configurazione],
   [Processo con lo scopo di eseguire tutte le pratiche essenziali volte a tracciare lo stato di avanzamento del  prodotto],
-  [MPC.......],
+  [MPC....],
   [Accertamento della qualità],
   [Processo con lo scopo di assicurare che il prodotto e i servizi offerti siano conformi agli standard definiti, rispettando gli obiettivi di qualità.],
-  [MPC.......],
+  [MPC....],
   [Qualifica],
   [Processo che ha lo scopo di confermare che ciascun servizio realizzato soddisfi i requisiti specificati dal  cliente.],
-  [MPC.......],
+  [MPC....],
 )
 
 === Processi organizzativi
 #table(
-  columns: (30mm, auto, 20mm),
+  columns: (35mm, auto, 20mm),
   inset: 10pt,
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
