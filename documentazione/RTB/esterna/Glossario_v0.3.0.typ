@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "0.3.0", "2023-12-12", p.bomben, "", "Stesura nuove definizioni",
+    "0.3.0", "2023-12-12", p.bomben, p.baggio, "Stesura nuove definizioni",
     "0.2.1", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
     "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
     "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
@@ -21,7 +21,7 @@ facilmente terminologie.
 = A
 
 == API
-Un'Application Programming Interface (API), rappresenta un insieme di regole e definizioni che consente a un software di interagire con altri software. Le API sono quindi un collegamento tra un applicazione che invia una richiesta e l'applicazione che invia la risposta.
+Un'Application Programming Interface (API), rappresenta un insieme di regole e definizioni che consente a un software di interagire con altri software. Le API sono quindi un collegamento tra un'applicazione che invia una richiesta e l'applicazione che invia la risposta.
 
 == Artefatto
 
