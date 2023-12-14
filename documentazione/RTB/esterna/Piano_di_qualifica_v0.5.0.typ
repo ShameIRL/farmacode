@@ -123,7 +123,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 === Processi primari
 #table(
   columns: (35mm, auto, 30mm),
-  inset: 10pt,
+  inset: 5pt,
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
   [Fornitura],
