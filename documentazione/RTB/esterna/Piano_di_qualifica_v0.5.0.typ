@@ -116,8 +116,10 @@ I Sette Principi di gestione della Qualità:
 //lasciate stare questa parte, da definire in seguito
 
 == Qualità di processo
-Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati. La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
- In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.
+Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
+La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
+ In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.\
+
 === Processi primari
 #table(
   columns: (22mm, auto, 35mm),
@@ -160,7 +162,7 @@ Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che p
 
 === Processi organizzativi
 #table(
-  columns: (22mm, auto, 35mm),
+  columns: (30mm, auto, 20mm),
   inset: 10pt,
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
