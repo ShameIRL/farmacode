@@ -134,7 +134,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [MPC1, MPC2, \ MPC3, MPC4, \ MPC5, MPC6, \ MPC7, MPC8],
   [Sviluppo],
   [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
-  [MPC....],
+  [MPC9, MPC10],
   [Gestione operativa],
   [Processo che ha lo scopo di fornire dettagli sull’installazione del software come requisiti di sistema e procedure necessarie ad eseguire correttamente il prodotto.],
   [MPC....],
@@ -231,6 +231,14 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Cost Performance Index (CPI)],
   [± 10%],
   [0%],
+  [MPC9], 
+  [Requirements Stability Index (RSI)],
+  [≥ 80%],
+  [100%],
+  [MPC10], 
+  [Satisfied Obligatory Requirements (SOR)],
+  [100%],
+  [100%],
 )
 
 = Controllo di qualità
