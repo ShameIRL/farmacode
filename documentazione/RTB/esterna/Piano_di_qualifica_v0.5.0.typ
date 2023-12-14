@@ -252,11 +252,11 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
   //DOCUMENTAZIONE
   [MPC ...],
-  [Indice Gulpease (IG)]
+  [Indice Gulpease (IG)],
   [40-100],
   [60-100],
   [MPC ...],
-  [Correttezza Ortografica (CO)]
+  [Correttezza Ortografica (CO)],
   [40-100],
   [60-100],
   [MPC ...], 
@@ -286,7 +286,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
   //GESTIONE DEI PROCESSI
   [MPC ...],
-  [Non-calculated Risk (NCR)]
+  [Non-calculated Risk (NCR)],
   [≤ 5],
   [0],
 )
