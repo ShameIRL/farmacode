@@ -190,6 +190,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 )
 
 === Metriche utilizzate
+==== Processi primari
 #table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
@@ -198,10 +199,38 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   ),
   align: center,
   [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
-  [MPC],
-  [EAC: Estimated at completion],
+  [MPC1],
+  [Estimated at Completion (EAC)],
   [± 5% rispetto al preventivo],
   [Uguale al \ preventivo],
+  [MPC2],
+  [Estimate to Complete (ETC)],
+  [≥ 0],
+  [≤ EAC],
+  [MPC3],
+  [Earned Value (EV)],
+  [≥ 0],
+  [≤ EAC],
+  [MPC4],
+  [Actual Cost (AC)],
+  [≥ 0],
+  [≤ EAC],
+  [MPC5],
+  [Cost Variance (CV)],
+  [≥ -10%],
+  [≥ 0%],
+  [MPC6],
+  [Planned Value (PV)],
+  [≥ 0],
+  [≤ Budget at \ Completion],
+  [MPC7],
+  [Schedule Variance (SV)],
+  [≥ −10%],
+  [≥ 0%],
+  [MPC8],
+  [Cost Performance Index (CPI)],
+  [± 10%],
+  [0%],
 )
 
 = Controllo di qualità
