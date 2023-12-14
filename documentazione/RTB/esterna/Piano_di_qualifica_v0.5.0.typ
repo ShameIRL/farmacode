@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.0", "2023-12-14", p.pandolfo, "", "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
     "0.3.0", "2023-11-27", p.carraro, p.rosson, "Stesura sezione qualità di architettura",
     "0.2.0", "2023-11-24", p.carraro, p.rosson, "Stesura sezione introduzione",
@@ -115,6 +116,67 @@ I Sette Principi di gestione della Qualità:
 //lasciate stare questa parte, da definire in seguito
 
 == Qualità di processo
+Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati. La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
+ In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.
+=== Processi primari
+#table(
+  columns: (22mm, auto, 35mm),
+  inset: 10pt,
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Fornitura],
+  [Processo che consiste nell’ individuare procedure e risorse adatte a soddisfare le necessità del cliente, secondo i termini e le condizioni stabiliti.],
+  [MPC.......],
+  [Sviluppo],
+  [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
+  [MPC.......],
+  [Gestione operativa],
+  [Processo che ha lo scopo di fornire dettagli sull’installazione del software come requisiti di sistema e procedure necessarie ad eseguire correttamente il prodotto.],
+  [MPC.......],
+  [Manutenzione],
+  [],
+  [MPC.......],
+)
+
+=== Processi di supporto
+#table(
+  columns: (22mm, auto, 35mm),
+  inset: 10pt,
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Documentazione],
+  [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
+  [MPC.......],
+  [Gestione della configurazione],
+  [Processo con lo scopo di eseguire tutte le pratiche essenziali volte a tracciare lo stato di avanzamento del  prodotto],
+  [MPC.......],
+  [Accertamento della qualità],
+  [Processo con lo scopo di assicurare che il prodotto e i servizi offerti siano conformi agli standard definiti, rispettando gli obiettivi di qualità.],
+  [MPC.......],
+  [Qualifica],
+  [Processo che ha lo scopo di confermare che ciascun servizio realizzato soddisfi i requisiti specificati dal  cliente.],
+  [MPC.......],
+)
+
+=== Processi organizzativi
+#table(
+  columns: (22mm, auto, 35mm),
+  inset: 10pt,
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Gestione dei processi],
+  [],
+  [MPC.......],
+  [Infrastrutture],
+  [],
+  [MPC.......],
+  [Miglioramenti],
+  [],
+  [MPC.......],
+  [Formazione],
+  [],
+  [MPC.......],
+)
 
 = Controllo di qualità
 
