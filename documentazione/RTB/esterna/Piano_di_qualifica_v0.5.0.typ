@@ -197,7 +197,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
     y: 10pt,
   ),
   align: center,
-  [*Codice*], [*Nome metrica*], [*Valore accettabile*], [*Valore ottimale*]
+  [*Codice*], [*Nome metrica*], [*Valore accettabile*], [*Valore ottimale*],
   [MPC],
   [EAC: Estimated at completion],
   [± 5% rispetto al preventivo],
