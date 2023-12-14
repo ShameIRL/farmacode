@@ -475,12 +475,17 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
 === Validazione /** descrizione di come avviene la validazione */
 
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
-//anche qui, non abbiamo nessun test di verifica per la validazione
+Perchè un file venga validato, c'è la necessità che passi i testi preposti in base al suo tipo.
+
+==== Validazione statica
+Per la documentazione è stato implementato un GitHub Actions che verifica la correttezza semantica e sintattica del codice Typst per poi andare a costruire il file in formato pdf da esso.\
+Per quanto riguarda i file di codice, sempre tramite Actions, è stato implementato grazie a ruff, un sistema automatico per la formattazione del codice.
+
+==== Validazione dinamica
 
 == Revisioni congiunte con il cliente
 
 === Descrizione e Scopo /** descrizione delle revisioni e di come avvengono, principalmente son revisioni esterne di documentazione */
-
 Le revisioni svolte con il cliente hanno il compito di 
 
 == Verifiche interne
