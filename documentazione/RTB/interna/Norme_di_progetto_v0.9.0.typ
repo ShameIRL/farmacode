@@ -476,11 +476,11 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
 === Validazione /** descrizione di come avviene la validazione */
 
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
-Perchè un file venga validato, c'è la necessità che passi i testi preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
+Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
 
 ==== Validazione statica
 Per la documentazione è stato implementato un GitHub Actions che verifica la correttezza semantica e sintattica del codice Typst per poi andare a costruire il file in formato pdf da esso.\
-Per quanto riguarda i file di codice, sempre tramite Actions, è stato implementato grazie a ruff, un sistema automatico per la formattazione del codice.
+Per quanto riguarda i file di codice, sempre tramite Actions, sono stati implementati, grazie a ruff, sistemi automatici legati al codice del file per la formattazione del codice.
 
 ==== Validazione dinamica
 
@@ -505,18 +505,18 @@ La risoluzione dei problemi gioca quindi un ruolo fondamentale per l'avanzamento
 
 === Gestione dei problemi /** descrizione di come si risolvono problemi internamente */
 Il nostro gruppo per risolvere problematiche verificate durante lo sviluppo del progetto ha deciso di adottare una strategia sviluppata in quattro punti:
-- Registrazione del problema.
-- Valutazione del problema.
-- Risoluzione del problema.
+- Registrazione del problema;
+- Valutazione del problema;
+- Risoluzione del problema;
 - Comunicazione e aggiornamento documentazione.
 
 ==== Registrazione del problema
 Ogni problema identificato deve essere accuratamente registrato nel sistema di tracciamento dei problemi (ITS). 
 Questo sistema consente di inserire informazioni dettagliate, tra cui:
-- Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto.
-- Stato: indica a che punto si trova la risoluzione del problema: aperto, in lavorazione, pronto per una revisione o chiuso.
+- Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto;
+- Stato: indica a che punto si trova la risoluzione del problema: aperto, in lavorazione, pronto per una revisione o chiuso;
 - Assegnatario: persona a cui è stata assegnata la risoluzione del problema.
-- Data: indica la data in cui è stata aperta la issue.
+- Data: indica la data in cui è stata aperta la issue;
 - Label: indica di cosa si deve occupare la persona preposta, quindi se il problema coinvolge la documentazione o codice.
 
 ==== Valutazione del problema
