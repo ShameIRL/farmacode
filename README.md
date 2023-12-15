@@ -25,16 +25,13 @@ Contatti: farmacode.swe.unipd@gmail.com
 │   └── logo
 └── documentazione/
     ├── RTB/
-    │   └── verbali/
-    │       └── verbali_interni/ ...
-    ├── candidatura_capitolato/
-    │   ├── verbali/
-    │   │   ├── verbali_interni/ ...
-    │   │   └── esterni/ ...
-    │   ├── valutazione_capitolati
-    │   ├── lettera_di_presentazione
-    │   ├── preventivo_costi_e_gestione_ore  
-    │   └── organizzazione_compiti_candidatura
-    └── diari_di_bordo/
-        └── 30/10/2023
+    │   │
+    │   ├── interna/
+    │   │   ├── norme_di_progetto
+    │   │   └── verbali(interni)/ ...
+    │   └── esterna/
+    │       ├── analisi_dei_requisiti
+    │       ├── glossario
+    │       └── verbali(esterni)/ ...
+    └── candidatura_capitolato/ ...
 ```
