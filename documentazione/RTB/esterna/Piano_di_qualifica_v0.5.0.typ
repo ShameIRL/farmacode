@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
     "0.3.0", "2023-11-27", p.carraro, p.rosson, "Stesura sezione qualità di architettura",
     "0.2.0", "2023-11-24", p.carraro, p.rosson, "Stesura sezione introduzione",
@@ -115,6 +116,180 @@ I Sette Principi di gestione della Qualità:
 //lasciate stare questa parte, da definire in seguito
 
 == Qualità di processo
+Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
+La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
+ In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.\
+
+=== Processi primari
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Fornitura],
+  [Processo che consiste nell’ individuare procedure e risorse adatte a soddisfare le necessità del cliente, secondo i termini e le condizioni stabiliti.],
+  [MPC1, MPC2, \ MPC3, MPC4, \ MPC5, MPC6, \ MPC7, MPC8],
+  [Sviluppo],
+  [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
+  [MPC9, MPC10],
+  [Gestione operativa],
+  [Processo che ha lo scopo di fornire dettagli sull’installazione del software come requisiti di sistema e procedure necessarie ad eseguire correttamente il prodotto.],
+  [MPC....],
+  [Manutenzione],
+  [],
+  [MPC....],
+)
+
+=== Processi di supporto
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Documentazione],
+  [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
+  [MPC....],
+  [Gestione della configurazione],
+  [Processo con lo scopo di eseguire tutte le pratiche essenziali volte a tracciare lo stato di avanzamento del  prodotto],
+  [MPC....],
+  [Accertamento della qualità],
+  [Processo con lo scopo di assicurare che il prodotto e i servizi offerti siano conformi agli standard definiti, rispettando gli obiettivi di qualità.],
+  [MPC....],
+  [Qualifica],
+  [Processo che ha lo scopo di confermare che ciascun servizio realizzato soddisfi i requisiti specificati dal  cliente.],
+  [MPC....],
+)
+
+=== Processi organizzativi
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Gestione dei processi],
+  [],
+  [MPC.......],
+  [Infrastrutture],
+  [],
+  [MPC.......],
+  [Miglioramenti],
+  [],
+  [MPC.......],
+  [Formazione],
+  [],
+  [MPC.......],
+)
+
+=== Metriche utilizzate
+==== Processi primari
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  [MPC1],
+  [Estimated at Completion (EAC)],
+  [± 5% rispetto al preventivo],
+  [Uguale al \ preventivo],
+  [MPC2],
+  [Estimate to Complete (ETC)],
+  [≥ 0],
+  [≤ EAC],
+  [MPC3],
+  [Earned Value (EV)],
+  [≥ 0],
+  [≤ EAC],
+  [MPC4],
+  [Actual Cost (AC)],
+  [≥ 0],
+  [≤ EAC],
+  [MPC5],
+  [Cost Variance (CV)],
+  [≥ -10%],
+  [≥ 0%],
+  [MPC6],
+  [Planned Value (PV)],
+  [≥ 0],
+  [≤ Budget at \ Completion],
+  [MPC7],
+  [Schedule Variance (SV)],
+  [≥ −10%],
+  [≥ 0%],
+  [MPC8],
+  [Cost Performance Index (CPI)],
+  [± 10%],
+  [0%],
+  [MPC9], 
+  [Requirements Stability Index (RSI)],
+  [≥ 80%],
+  [100%],
+  [MPC10], 
+  [Satisfied Obligatory Requirements (SOR)],
+  [100%],
+  [100%],
+)
+
+==== Processi di supporto
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  //DOCUMENTAZIONE
+  [MPC ...],
+  [Indice Gulpease (IG)],
+  [40-100],
+  [60-100],
+  [MPC ...],
+  [Correttezza Ortografica (CO)],
+  [40-100],
+  [60-100],
+  [MPC ...], 
+  //ACCERTAMENTO DELLA QUALITA
+  [Quality Metrics Satisfied (QMS)], 
+  [≥ 90%],
+  [100%],
+  //QUALIFICA
+  [MPC...], 
+  [Code Coverage (CC)], 
+  [≥ 80%],
+  [100%],
+  [MPC ...], 
+  [Passed Tests (PT)], 
+  [≥ 80%],
+  [100%],
+)
+
+==== Processi organizzativi
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  //GESTIONE DEI PROCESSI
+  [MPC ...],
+  [Non-calculated Risk (NCR)],
+  [≤ 5],
+  [0],
+)
 
 = Controllo di qualità
 

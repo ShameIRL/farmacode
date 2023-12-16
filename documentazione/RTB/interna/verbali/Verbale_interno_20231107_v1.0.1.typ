@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.1", "11-12-2023", p.rosson, "", "Riadattata struttura alle nuove norme di progetto",
+    "1.0.1", "11-12-2023", p.rosson, p.baggio, "Riadattata struttura alle nuove norme di progetto",
     "1.0.0", "07-11-2023", p.baggio + ",\n" + p.rosson, p.bomben, "Stesura e revisione del verbale",
   ),
 )

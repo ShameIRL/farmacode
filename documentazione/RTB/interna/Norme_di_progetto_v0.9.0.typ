@@ -9,7 +9,8 @@
 
   ),
   changelog: (
-    "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completat prima stesura della sezione 2, e modificate alcune parti della sezione 3",
+    "0.9.0", "14-12-2023", p.bomben, "", "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
+    "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
     "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
@@ -22,14 +23,14 @@
 )
 
 = Introduzione al documento
-Questo documento è stato creato per identificare le best practices di progetto e per stabilire una metodologia di lavoro chiara nel corso dell'attività produttiva. L'obiettivo è garantire una gestione omogenea e coesa del lavoro. Per facilitare il monitoraggio del progresso e consentire un approccio incrementale, vengono registrate le diverse versioni del documento.
+Questo documento è stato creato per identificare le #glossario("best practices") di progetto e per stabilire una metodologia di lavoro chiara nel corso dell'attività produttiva. L'obiettivo è garantire una gestione omogenea e coesa del lavoro. Per facilitare il monitoraggio del progresso e consentire un approccio incrementale, vengono registrate le diverse versioni del documento.
 
 == Scopo del prodotto
 Lo scopo del prodotto è creare un'applicazione dove sia possibile verificare i possibili interessi di un cliente nei confronti di un prodotto. Al giorno d'oggi l'ambito degli e-commerce si sta sempre più espandendo ed evolvendo. La presenza di negozi virtuali permette di accedere a molti dati legati agli acquisti, alle preferenze ed al comportamento degli utenti. Questi dati se analizzati propriamente permettono di prevedere preferenze e comportamenti futuri degli utenti, dando spazio ad operazioni di marketing mirate.
 
 Il prodotto sarà dunque un'applicazione attraverso la quale l'amministrazione di un e-commerce sarà in grado di accedere ai risultati dell'analisi dei dati relativi all'utilizzo della suddetta attività. Il lavoro principale di questa applicazione non sarà dunque svolto dal lato dell'utente, il quale avrà solo accesso ad un'analisi dei dati e potrà garantire feedback sulla loro correttezza, ma sarà svolto da un algoritmo non visibile né accessibile all'utente. Questo algoritmo utilizzerà la tecnologia dell'intelligenza artificiale per analizzare i dati forniti dall'azienda con lo scopo di trovare e definire le correlazioni tra i vari prodotti, tra i vari utenti e tra utenti e prodotti. Queste correlazioni trovate su più livelli di profondità permetteranno di creare un altro set di dati, dal quale l'utente dell'applicazione potrà accedere ai dati che necessita, principalmente questi dati saranno gli N prodotti che potrebbero interessare ad un X utente e gli N utenti che potrebbero essere interessati ad un X prodotto.
 
-Questa applicazione inoltre per comodità d'uso sarà sviluppata sotto la forma di una webapp che potrà essere accessibile utilizzando diversi dispositivi, sistemi e browser.
+Questa applicazione inoltre per comodità d'uso sarà sviluppata sotto la forma di una #glossario("webapp") che potrà essere accessibile utilizzando diversi dispositivi, sistemi e browser.
 
 == Glossario
 Si fa inoltre notare la presenza di un Glossario nel quale sono riportati i termini utilizzati nei documenti. Con questo principio le best practices per la creazione del prodotto riusciranno facilmente ad essere rispettate garantendo il più possibile l'omogeneità del prodotto.
@@ -218,7 +219,7 @@ il prodotto è suddivisibile in 5 Layer principali:
 
 - Livello Dati: comprendente il Database relazionale, contente parte del dataset fornitoci dal proponente.
 - Livello di Elaborazione: comprendente gli script Python adibiti alla gestione e applicazione, del algoritmo di raccomandazioni.
-- Livello di Logica: è formato dalle API che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP.
+- Livello di Logica: è formato dalle #glossario("API") che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP.
 - Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
 
 ==== Algoritmo di raccomandazione:
@@ -258,7 +259,7 @@ Segue un elenco dei principali principi guida:
 
 + Efficienza del Codice: Si presta particolare attenzione all'efficienza del codice. Le funzioni dovrebbero essere progettate in modo ottimale per garantire un'esecuzione efficiente. L'attenzione è rivolta alla complessità algoritmica, all'utilizzo appropriato delle risorse e alla minimizzazione di operazioni computazionalmente costose.
 
-+ Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio TDD (Test Driven Development), quando e quanto più possibile.
++ Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
 
 === Integrazione /** descrizione processo di integrazione di sistema e software */
 La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. // non so cosa scrivere
@@ -377,7 +378,7 @@ Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno posse
   
 Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essenziali per gestire lo stato di un prodotto software e di tutti i suoi componenti, compresi sorgenti e documentazione. Questo insieme di norme e procedure non solo fornisce informazioni sullo stato di avanzamento del progetto, ma offre anche un resoconto dettagliato dell'evoluzione nel tempo del prodotto, garantendo nel contempo che il sistema operi secondo le attese. Un'efficace gestione della configurazione è cruciale per preservare l'integrità e le prestazioni del prodotto software durante il suo avanzamento. Inoltre, dovrebbe facilitare la risoluzione di problematiche e conflitti, assicurando una gestione fluida e efficiente del ciclo di vita del software.
 
-=== Versionamento /** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
+=== Versionamento <versionamento>/** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
   
 Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni #glossario("artefatto"),
 documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte, e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
@@ -450,15 +451,46 @@ Qui sotto un link al repository:
 
 === Descrizione e Scopo /** descrizione di come avviene l'accertamento della qualità */
 
+La qualità di progetto è l'iniseme delle attività e di accorgimenti eseguiti durante il suo sviluppo per garantire che le performance del progetto siano congruenti con gli obiettivi e i requisiti stabiliti. Questo implica l'attuazione di misure e controlli volti a garantire che gli output del progetto soddisfino gli standard di qualità prefissati e rispettino le aspettative stabilite nel contesto del progetto stesso. La gestione della qualità è un elemento chiave per assicurare il successo complessivo del progetto e la soddisfazione delle parti interessate.\
+Le attività messe in atto per garantirne la qualità sono:
+- Rispettare e comprendere le necessità del proponente, sia in termini di quantità che di qualità, in modo da rilasciare un prodotto il più possibile fedele all'idea del cliente.
+- Seguire il piano di qualifica per il sviluppo del progetto, in modo da rientrare nei termini pattuiti, di tempo e di costo.
+
 == Qualifica
 
 === Verifica /** descrizione di come avviene la verifica ed i vari tipi di analisi */
+La verifica del software è definita come il processo di valutazione del prodotto software, mirato a garantire l'accuratezza dell'esecuzione della fase di sviluppo per costruire il prodotto software desiderato. Questa attività si svolge durante la fase in corso di sviluppo per rilevare difetti e guasti nella fase iniziale del ciclo di vita dello sviluppo, assicurando al contempo che il prodotto soddisfi i requisiti del cliente. La verifica quindi, è un elemento cruciale per garantire la qualità e la conformità del software alle specifiche stabilite.
+
+==== Analisi statica
+
+La verifica statica, così chiamata poichè non richiede l'esecuzione del prodotto, consiste nell'individuazione e correzione di eventuali problematiche che riguardano convenzioni o metriche stabilite. L'analisi statica riguarda sia il codice del software che la stesura dei documenti e può essere effettuata sia in maniera manuale o grazie all'utilizzo di strumenti per l'automazione.\
+Esistono inoltre due tipi per la verifica tramite l'analisi statica:
+- Walkthrought: viene utilizzato nel momento in cui non si sappia dove viene riscontrata la problematica e consiste in una lettura più ampia scorrendo nella sua interezza il documento/codice per trovare l'errore. Questo metodo è sicuramente molto efficace ma anche molto dispendioso in termini di risorse.
+- Inspection: A differenza del Walkthrought, questo metodo viene utilizzato quando si è a conoscenza di dove potrebbe essere la problematica. E' quindi un approccio più mirato per l'eliminazione dell'errore e molto meno dispendioso.
+
+==== Analisi dinamica
+
+L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento.\
+//bisogna scrivere dei test automatici, noi effettivamente li implementeremo(?)
 
 === Validazione /** descrizione di come avviene la validazione */
+
+Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
+Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
+
+==== Validazione statica
+Per la documentazione è stato implementato un GitHub Actions che verifica la correttezza semantica e sintattica del codice Typst per poi andare a costruire il file in formato pdf da esso.\
+Per quanto riguarda i file di codice, sempre tramite Actions, sono stati implementati, grazie a ruff, sistemi automatici legati al codice del file per la formattazione del codice.
+
+==== Validazione dinamica
 
 == Revisioni congiunte con il cliente
 
 === Descrizione e Scopo /** descrizione delle revisioni e di come avvengono, principalmente son revisioni esterne di documentazione */
+Le revisioni congiunte con il cliente rappresentano un importante aspetto del processo di sviluppo del software, permettendo un coinvolgimento diretto e trasparente con il cliente nell'avanzamento del progetto.\
+Durante queste sessioni collaborative, gli sviluppatori presentano al cliente gli aggiornamenti, le nuove funzionalità o le modifiche apportate al software. 
+Questo processo consente al proponente di esaminare il prodotto in modo attivo, fornendo feedback tempestivi e suggerimenti oltre ai possibili chiarimenti di natura tecnica o strutturale.
+Le revisioni congiunte offrono un'opportunità cruciale per allineare le aspettative del cliente con la realizzazione pratica del software, identificare eventuali incongruenze e garantire che il prodotto finale soddisfi appieno le esigenze e le aspettative del cliente.  
 
 == Verifiche interne
 
@@ -467,15 +499,50 @@ Qui sotto un link al repository:
 == Risoluzione dei problemi
 
 === Descrizione e Scopo /** descrizione della sezione */
+Durante il progetto il nostro team ha sempre cercato di operare seguendo un modello di miglioramento continuo, in modo da applicare alle best practices, le soluzioni incontrate fino ad ora alle problematiche più riccorrenti.\
+La risoluzione dei problemi gioca quindi un ruolo fondamentale per l'avanzamento del progetto didattico in quanto permette di monitorare e risolvere i problemi che possono sorgere durante lo sviluppo o il testing. 
+
 
 === Gestione dei problemi /** descrizione di come si risolvono problemi internamente */
+Il nostro gruppo per risolvere problematiche verificate durante lo sviluppo del progetto ha deciso di adottare una strategia sviluppata in quattro punti:
+- Registrazione del problema;
+- Valutazione del problema;
+- Risoluzione del problema;
+- Comunicazione e aggiornamento documentazione.
+
+==== Registrazione del problema
+Ogni problema identificato deve essere accuratamente registrato nel sistema di tracciamento dei problemi (ITS). 
+Questo sistema consente di inserire informazioni dettagliate, tra cui:
+- Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto;
+- Stato: indica a che punto si trova la risoluzione del problema: aperto, in lavorazione, pronto per una revisione o chiuso;
+- Assegnatario: persona a cui è stata assegnata la risoluzione del problema.
+- Data: indica la data in cui è stata aperta la issue;
+- Label: indica di cosa si deve occupare la persona preposta, quindi se il problema coinvolge la documentazione o codice.
+
+==== Valutazione del problema
+La valutazione del problema è una fase che precede la risoluzione e prevede un attenta valutazione da parte del gruppo. 
+Questa fase rigurda prettamente problematiche riguardanti il codice la cui discussione avviene attraverso meeting interni. 
+Durante gli incontri si toccano tre temi principali: la causa, l'impatto e il rischio.
+
+==== Risoluzione del problema
+Una volta valutato il problema, sarà la persona incaricata a risolverlo, comunicando tramite il ITS lo stato di avanzamento della risoluzione al problema e sfruttando la strategia valutata precedentemente.
+
+==== Comunicazione e aggiornamento documentazione
+Durante il processo di gestione del problema, è fondamentale mantenere una comunicazione trasparente con il proponente. 
+Questo include la creazione di report periodici sullo stato dei problemi e meeting di aggiornamento.\
+Deve inoltre, se necessario, essere aggiornata la documentazione in maniera da mantenere una coerenza tra software e documenti.
 
 === Gestione dei cambiamenti /** descrizione di come si reagisce a richieste di cambiamenti */
+La gestione dei cambiamenti è un processo cruciale all'interno dello sviluppo del software, poiché consente di gestire in modo efficace e controllato le modifiche apportate al progetto.
+Il tener traccia dei cambiamenti è fondamentale in ogni parte del ciclo di vita di un prodotto.\
+La documentazione dettagliata di ciascun cambiamento, insieme alla sua motivazione contribuisce a costruire una base solida per la 
+manutenzione futura. La gestione dei cambiamenti viene controllata attraverso il changelog presente in ogni documento, e inoltre riportato nel nome del file la sua versione corrente come spiegato nella sezione del #link(<versionamento>)[versionamento]
 
+/** Ha senso mettere sta roba?
 === Utilizzabilità /** descrizione di come si reputa utilizzabile il prodotto */
 
 === Valutazione del prodotto /** descrizione di come viene valutato il prodotto */
-
+*/
 = Processi organizzativi
 
 == Gestione dei processi
@@ -550,7 +617,7 @@ Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle s
 
 - Rotazione Graduale:
 
-    Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del "pair programming".
+    Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del "#glossario("pair programming").
 
 === Gestione degli incontri e delle comunicazioni/** descrizione della gestione di incontri interni ed esterni */
 

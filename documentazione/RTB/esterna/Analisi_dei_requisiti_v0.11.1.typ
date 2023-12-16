@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.12.0", "", p.bomben, "", "",
     "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
     "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
@@ -194,32 +195,166 @@ Il sistema dispone di due attori:
     - Verifica le credenziali immesse dall'utente nei relativi campi (email, password).
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
 
-== UC3 - Visualizzazione lista utenti
+== UC3 - Visualizzazione pagina profilo personale
 
 #figure(
   image("/imgs/Uml/UC3.jpg", width: 80%),
   caption: [
-    Visualizzazione lista utenti
+    Visualizzazione pagina profilo personale
   ],
 )
 
 *Attori:*
 - Admin.
 *Precondizioni:*
-- L’utente ha già effettuato l’accesso alla piattaforma come admin(UC1)
+- L’utente ha già effettuato l’accesso alla piattaforma come admin (UC1).
 *Postcondizioni:*
-- Viene mostrata una lista degli utenti registrati.
+- Viene visualizzata la pagina del profilo.
 *Scenario principale:*
 - Admin:
    - Clicca sul tasto “Profilo” presente nella pagina principale.
-   - Vede una lista degli utenti registrati.
 - Sistema:
-   - Visualizza una lista di tutti gli utenti registrati.
+   - Stampa correttamente a schermo la pagina del profilo.
+*Generalizzazioni:*
+- UC3.1 - Visualizzazione dati personali.
+- UC3.2 - Visualizzazione lista utenti.
+- UC3.3 - Aggiunta nuovo utente.
 
-== UC4 - Aggiunta nuovo utente
+=== UC3.1 - Visualizzazione dati personali
 
 #figure(
-  image("/imgs/Uml/UC4.jpg", width: 80%),
+  image("/imgs/Uml/UC3.1.jpg", width: 80%),
+  caption: [
+    Visualizzazione dati personali
+  ],
+)
+
+*Attori:*
+- Admin
+*Precondizioni:*
+- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
+- il sistema ha stampato correttamente la pagina del profilo (UC3).
+- il sistema ha correttamente caricato i dati dell'admin.
+*Postcondizioni:*
+- Vengono visualizzate correttamente le informazioni personali.
+*Scenario principale:*
+- Admin:
+  - Ha correttamente cliccato sulla pagina "Profilo".
+  - Visualizza le sue informazioni perosnali.
+- Sistema:
+  - Stampa corretamente a schermo le informazioni personali.
+*Generalizzazioni:*
+- UC3.1.1 Visualizzazione email personale.
+- UC3.1.2 Visualizzazione nome admin.
+- UC3.1.3 Visualizzazione cognome admin.
+
+==== UC3.1.1 - Visualizzazione email personale
+*Attori:*
+- Admin
+*Precondizioni:*
+- il sistema ha caricato correttamente la sezione dei dati personali (UC3.1)
+*Postcondizioni:*
+- Viene visualizzata correttamente l'email.
+*Scenario principale:*
+- Admin:
+  - Si trova correttamente nella sezione profilo.
+  - Visualizza la propria email personale.
+
+==== UC3.1.2 - Visualizzazione nome admin
+*Attori:*
+- Admin
+*Precondizioni:*
+- il sistema ha caricato correttamente la sezione dei dati personali (UC3.1)
+*Postcondizioni:*
+- Viene visualizzata correttamente il nome dell'utente.
+*Scenario principale:*
+- Admin:
+  - Si trova correttamente nella sezione profilo personale.
+  - Visualizza il proprio nome.
+
+==== UC.3.1.3 - Visualizzazione cognome admin
+*Attori:*
+- Admin
+*Precondizioni:*
+- il sistema ha caricato correttamente la sezione dei dati personali (UC3.1)
+*Postcondizioni:*
+- Viene visualizzata correttamente il cognome dell'utente.
+*Scenario principale:*
+- Admin:
+  - Si trova correttamente nella sezione profilo personale.
+  - Visualizza il proprio cognome.
+
+=== UC3.2 - Visualizzazione lista utenti
+
+#figure(
+  image("/imgs/Uml/UC3.2.jpg", width: 80%),
+  caption: [
+    Visualizzazione lista utenti
+  ],
+)
+
+*Attori:*
+- Admin
+*Precondizioni:*
+- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
+- il sistema ha stampato correttamente la pagina del profilo (UC3).
+- il sistema ha correttamente caricato la lista degli utenti.
+*Postcondizioni:*
+- Viene visualizzata correttamente la lista degli utenti.
+*Scenario principale:*
+- Admin:
+  - Ha correttamente cliccato sulla pagina "Profilo".
+  - Visualizza la lista degli utenti.
+- Sistema:
+  - Stampa correttamente a schermo la lista.
+*Generalizzazioni:*
+- UC3.2.1 Visualizzazione email utente.
+- UC3.2.2 Visualizzazione password utente.
+- UC3.2.3 Eliminazione utente.
+
+==== UC3.2.1 - Visualizzazione email utente
+*Attori:*
+- Admin
+*Precondizioni:*
+- Il sistema ha caricato correttamente la lista degli utenti (UC3.2).
+*Postcondizioni:*
+- Viene visualizzata l'email di un utente della lista.
+*Scenario principale:*
+- Admin:
+  - Si trova correttamente nella sezione della lista degli utenti.
+  - Visualizza l'email dell'utente che desidera.
+
+==== UC3.2.2 - Visualizzazione password utente
+*Attori:*
+- Admin
+*Precondizioni:*
+- Il sistema ha caricato correttamente la lista degli utenti (UC3.2).
+*Postcondizioni:*
+- Viene visualizzata la password di un utente della lista.
+*Scenario principale:*
+- Admin:
+  - Si trova correttamente nella sezione della lista degli utenti.
+  - Visualizza la password dell'utente che desidera.
+
+==== UC3.2.3 - Eliminazione utente.
+*Attori:*
+- Admin.
+*Precondizioni:*
+- Il sistema ha caricato correttamente la lista degli utenti (UC3.2)
+*Postcondizioni:*
+- L'utente ha eliminato correttamente l'utente con i privilegi base.
+*Scenario principale:*
+- Admin:
+    - Si trova correttamente nella sezione della lista degli utenti.
+    - Clicca sul bottone "Elimina" a lato dell'utente che vuole eliminare.
+- Sistema:
+    - Elimina dal sistema il profilo dell'utente.
+
+
+=== UC3.3 - Aggiunta nuovo utente
+
+#figure(
+  image("/imgs/Uml/UC3.3.jpg", width: 80%),
   caption: [
     Aggiunta nuovo utente
   ],
@@ -229,21 +364,22 @@ Il sistema dispone di due attori:
 - Admin.
 *Precondizioni:*
 - L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- L'utente è nella sezione profilo della piattaforma e sta visualizzando gli utenti registrati (UC3)
+- Il sistema ha stampato correttamente la pagina del profilo (UC3).
+- Il ha correttamente caricato il form per l'aggiunta di un nuovo utente.
 *Postcondizioni:*
-- L'utente ha aggiunto correttamente il nuovo utente con i privilegi base (User)
+- L'admin ha aggiunto correttamente il nuovo utente con i privilegi base (User).
 *Scenario principale:*
 - Admin:
-    - Si trova nella sezione "Profilo" e sta visualizzando gli utenti registrati (UC3).
-    - Seleziona l'opzione di creazione di un nuovo utente.
-    - Inserisce la email del nuovo utente nel campo [email] (UC4.1).
-    - Inserisce la password del nuovo utente nel campo [password] (UC4.2).
+    - Ha correttamente cliccato sulla pagina "Profilo".
+    - Visualizza il form per l'aggiunta di un nuovo utente.
+    - Inserisce la email del nuovo utente nel campo [email] (UC3.3.1).
+    - Inserisce la password del nuovo utente nel campo [password] (UC3.3.2).
 - Sistema:
     - Verifica che i campi non siano vuoti (email, password).
     - Se i campi sono riempiti correttamente, salva nel sistema le credenziali dei nuovi utenti.
 *Generalizzazioni:*
-- UC4.1 - Inserimento email.
-- UC4.2 - Inserimento password.
+- UC3.3.1 - Inserimento email.
+- UC3.3.2 - Inserimento password.
 
 #figure(
   image("/imgs/Uml/UC4 Generalizzazione.jpg", width: 80%),
@@ -252,13 +388,11 @@ Il sistema dispone di due attori:
   ],
 )
 
-=== UC4.1 - Inserimento email
+==== UC3.3.1 - Inserimento email
 *Attori:*
 - Admin.
 *Precondizioni:*
-- L'utente è nella sezione profilo personale.
-- L'utente dispone dei privilegi per aggiungere un nuovo utente.
-- L'utente sta aggiungendo un nuovo utente (UC4).
+- Il sistema ha caricato correttamente il campo email all'interno del form.
 *Postcondizioni:*
 - L'utente inserisce correttamente la email dell'utente che vuole aggiungere.
 *Scenario principale:*
@@ -268,13 +402,11 @@ Il sistema dispone di due attori:
     - il sistema verifica che l'email inserita sia nel formato corretto.
     - prosegue con la creazione dell'utente utilizzando l'email inserita.
 
-=== UC4.2 - Inserimento password
+==== UC3.3.2 - Inserimento password
 *Attori:*
 - Admin.
 *Precondizioni:*
-- L'utente è nella sezione profilo personale.
-- L'utente dispone dei privilegi per aggiungere un nuovo utente.
-- L'utente sta aggiungendo un nuovo utente (UC4).
+- Il sistema ha caricato correttamente il campo password all'interno del form.
 *Postcondizioni:*
 - L'utente inserisce correttamente la password dell'utente che vuole aggiungere.
 *Scenario principale:*
@@ -282,29 +414,6 @@ Il sistema dispone di due attori:
     - inserisce la password nel campo password.
 - Sistema:
     - prosegue con la creazione dell'utente utilizzando la password inserita.
-
-== UC5 - Eliminazione utente
-
-#figure(
-  image("/imgs/Uml/UC5.jpg", width: 80%),
-  caption: [
-    Eliminazione utente
-  ],
-)
-
-*Attori*
-- Admin.
-*Precondizioni*
-- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- L'utente sta visualizzando la lista degli utenti registrati (UC3).
-*Postcondizioni*
-- L'utente ha eliminato correttamente l'utente con i privilegi base.
-*Scenario principale*
-- Admin
-    - Si trova nella sezione "Profilo" e sta visualizzando gli utenti registrati (UC3).
-    - Clicca suk bottone "Elimina" a lato del utente che vuole eliminare
-- Sistema
-    - Elimina dal sistema il profilo dell'utente.
 
 == UC6 - Vista Cliente per prodotti
 
