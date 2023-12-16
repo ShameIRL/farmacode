@@ -679,13 +679,16 @@ Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il t
 La loro definizione e collocazione temporale è definita nel documento "Piano di progetto", redatto dal responsabile di progetto.
 
 ==== Gestione di attività e Issue
-Per una migliore gestione delle attività di progetto vengono suddivise in due categorie differenti:
+Per una migliore gestione delle attività di progetto vengono suddivise in tre categorie differenti:
 
 - Macro Issues:
   Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto.
 
-- Task:
+- Issues:
   Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
+
+- Task: 
+  Sono micro attività individuate durante lo sviluppo stesso della relativa issue.
   
 Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di #glossario("Issues Tracking System") (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
@@ -695,6 +698,7 @@ Le issue devono essere collegate alla/e board di progetto, ed al rispettivo spri
 - approval: da utilizzare solo per issue che identificano attività di approvazione, da svolgere dal Responsabile corrente. Solitamente una finale per sprint.
 - bug-fix: denota una issue la cui rispettiva attività mira alla correzione di un bug, o altre problematiche.
 - code: rappresentano una nuova feature o integrazione nel codice.
+- enhancement: issue riferite ad attività portanti migliorie nel repository.
 - documentation: rappresentano issue legate alla stesura di documentazione.
 - revision: da utilizzare solo per issue legate alle attività di revisone.
 - RTB: deve essere usata solo per issue rappresentanti sprint legati al periodo di RTB.
@@ -705,7 +709,7 @@ Infine le issue devono avere un nome significativo e possedere una descrizione d
 (h3 in markdown) desc:  (plain text) testo della descrizione.
 
 
-Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint.
+Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint per quanto riguarda le Issues. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso.
 
 Completamento: L'attività viene completata dalla persona incaricata, per poi essere spostata nello stato "ReadyToReview" nella rispettiva board di progetto, in modo da notificarne la revisione.
 Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone.
