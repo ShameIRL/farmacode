@@ -495,6 +495,10 @@ Le revisioni congiunte offrono un'opportunità cruciale per allineare le aspetta
 == Verifiche interne
 
 === Descrizione /** descrizione di come avvengono le verifiche interne */
+Le verifiche interne rappresentano un elemento fondamentale all'interno del processo di sviluppo del prodotto, consentendo una stretta collaborazione e trasparenza durante le fasi di avanzamento del progetto.\
+In queste sessioni collaborative, i componenti del gruppo presentano internamente gli aggiornamenti, le nuove funzionalità o le modifiche apportate al progetto.\
+Questo approccio consente al team di esaminare attivamente il prodotto, fornendo feedback tempestivi, suggerimenti e affrontando eventuali chiarimenti di natura tecnica o strutturale.
+Le verifiche interne offrono un'opportunità cruciale per allineare le aspettative del team di sviluppo con la realizzazione pratica del software, identificare eventuali incongruenze e garantire che il prodotto finale soddisfi appieno le esigenze e le aspettative interne precedentemente accordate con il proponente.
 
 == Risoluzione dei problemi
 
