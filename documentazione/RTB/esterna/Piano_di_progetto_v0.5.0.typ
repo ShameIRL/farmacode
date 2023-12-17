@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.5.0", "2023-12-16", p.rosson, "", "Prima stesura sezione 4, con aggiunta di grafici e tabelle",
+    "0.5.0", "2023-12-16", p.rosson, p.baggio, "Prima stesura sezione 4, con aggiunta di grafici e tabelle",
     "0.4.1", "2023-12-06", p.bomben, p.rosson, "Stesura sprint.2",
     "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
     "0.3.1", "2023-11-27", p.rosson, p.carraro, "Apportate alcune modifiche alla struttura del documento",
