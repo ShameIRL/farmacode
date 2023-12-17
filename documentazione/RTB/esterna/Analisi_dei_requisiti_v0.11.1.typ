@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.12.0", "", p.bomben, "", "",
+    "0.12.0", "2023-12-15", p.bomben, p.baggio, "Sistemazione UC3",
     "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
     "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
