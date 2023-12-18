@@ -1,10 +1,12 @@
 ---
 name: Documentazione
-about: Describe this issue template's purpose here.
-title: Continuazione stesura del file
+about: Template per la stesura della documentazione
+title: Continuazione stesura del file ""
 labels: documentation
 assignees: ''
 
 ---
 
+**Descrizione:**
 
+**Data apertura:**
