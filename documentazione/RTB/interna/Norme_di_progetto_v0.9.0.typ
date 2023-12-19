@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.9.0", "14-12-2023", p.bomben, "", "Stesura documento da sezione 3.3 a 3.7",
+    "0.9.0", "14-12-2023", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
     "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
     "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
@@ -476,11 +476,11 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
 === Validazione /** descrizione di come avviene la validazione */
 
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
-Perchè un file venga validato, c'è la necessità che passi i testi preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
+Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
 
 ==== Validazione statica
 Per la documentazione è stato implementato un GitHub Actions che verifica la correttezza semantica e sintattica del codice Typst per poi andare a costruire il file in formato pdf da esso.\
-Per quanto riguarda i file di codice, sempre tramite Actions, è stato implementato grazie a ruff, un sistema automatico per la formattazione del codice.
+Per quanto riguarda i file di codice, sempre tramite Actions, sono stati implementati, grazie a ruff, sistemi automatici legati al codice del file per la formattazione del codice.
 
 ==== Validazione dinamica
 
@@ -495,6 +495,10 @@ Le revisioni congiunte offrono un'opportunità cruciale per allineare le aspetta
 == Verifiche interne
 
 === Descrizione /** descrizione di come avvengono le verifiche interne */
+Le verifiche interne rappresentano un elemento fondamentale all'interno del processo di sviluppo del prodotto, consentendo una stretta collaborazione e trasparenza durante le fasi di avanzamento del progetto.\
+In queste sessioni collaborative, i componenti del gruppo presentano internamente gli aggiornamenti, le nuove funzionalità o le modifiche apportate al progetto.\
+Questo approccio consente al team di esaminare attivamente il prodotto, fornendo feedback tempestivi, suggerimenti e affrontando eventuali chiarimenti di natura tecnica o strutturale.
+Le verifiche interne offrono un'opportunità cruciale per allineare le aspettative del team di sviluppo con la realizzazione pratica del software, identificare eventuali incongruenze e garantire che il prodotto finale soddisfi appieno le esigenze e le aspettative interne precedentemente accordate con il proponente.
 
 == Risoluzione dei problemi
 
@@ -505,18 +509,18 @@ La risoluzione dei problemi gioca quindi un ruolo fondamentale per l'avanzamento
 
 === Gestione dei problemi /** descrizione di come si risolvono problemi internamente */
 Il nostro gruppo per risolvere problematiche verificate durante lo sviluppo del progetto ha deciso di adottare una strategia sviluppata in quattro punti:
-- Registrazione del problema.
-- Valutazione del problema.
-- Risoluzione del problema.
+- Registrazione del problema;
+- Valutazione del problema;
+- Risoluzione del problema;
 - Comunicazione e aggiornamento documentazione.
 
 ==== Registrazione del problema
 Ogni problema identificato deve essere accuratamente registrato nel sistema di tracciamento dei problemi (ITS). 
 Questo sistema consente di inserire informazioni dettagliate, tra cui:
-- Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto.
-- Stato: indica a che punto si trova la risoluzione del problema: aperto, in lavorazione, pronto per una revisione o chiuso.
+- Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto;
+- Stato: indica a che punto si trova la risoluzione del problema: aperto, in lavorazione, pronto per una revisione o chiuso;
 - Assegnatario: persona a cui è stata assegnata la risoluzione del problema.
-- Data: indica la data in cui è stata aperta la issue.
+- Data: indica la data in cui è stata aperta la issue;
 - Label: indica di cosa si deve occupare la persona preposta, quindi se il problema coinvolge la documentazione o codice.
 
 ==== Valutazione del problema
@@ -746,13 +750,16 @@ Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il t
 La loro definizione e collocazione temporale è definita nel documento "Piano di progetto", redatto dal responsabile di progetto.
 
 ==== Gestione di attività e Issue
-Per una migliore gestione delle attività di progetto vengono suddivise in due categorie differenti:
+Per una migliore gestione delle attività di progetto vengono suddivise in tre categorie differenti:
 
 - Macro Issues:
   Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto.
 
-- Task:
+- Issues:
   Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
+
+- Task: 
+  Sono micro attività individuate durante lo sviluppo stesso della relativa issue.
   
 Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di #glossario("Issues Tracking System") (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
@@ -762,6 +769,7 @@ Le issue devono essere collegate alla/e board di progetto, ed al rispettivo spri
 - approval: da utilizzare solo per issue che identificano attività di approvazione, da svolgere dal Responsabile corrente. Solitamente una finale per sprint.
 - bug-fix: denota una issue la cui rispettiva attività mira alla correzione di un bug, o altre problematiche.
 - code: rappresentano una nuova feature o integrazione nel codice.
+- enhancement: issue riferite ad attività portanti migliorie nel repository.
 - documentation: rappresentano issue legate alla stesura di documentazione.
 - revision: da utilizzare solo per issue legate alle attività di revisone.
 - RTB: deve essere usata solo per issue rappresentanti sprint legati al periodo di RTB.
@@ -772,7 +780,7 @@ Infine le issue devono avere un nome significativo e possedere una descrizione d
 (h3 in markdown) desc:  (plain text) testo della descrizione.
 
 
-Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint.
+Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint per quanto riguarda le Issues. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso.
 
 Completamento: L'attività viene completata dalla persona incaricata, per poi essere spostata nello stato "ReadyToReview" nella rispettiva board di progetto, in modo da notificarne la revisione.
 Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone.
