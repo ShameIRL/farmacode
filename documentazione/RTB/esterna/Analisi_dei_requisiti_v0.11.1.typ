@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.12.1", "2023-12-15", p.rosson, "", "Correzione UC1 e sotto casi",
     "0.12.0", "2023-12-15", p.bomben, p.baggio, "Sistemazione UC3",
     "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
@@ -100,12 +101,12 @@ Questa sezione è dedicata all'identificazione e alla dettagliata descrizione di
 == Attori
 Il sistema dispone di due attori:
 - Admin;
-- Users.
-
-== UC1 - Login
+- User.
+== Login
+=== UC1 - Login
 
 #figure(
-  image("/imgs/Uml/UC1.jpg", width: 80%),
+  image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
     Login
   ],
@@ -113,7 +114,7 @@ Il sistema dispone di due attori:
 
 *Attori:*
 - Admin;
-- Users.
+- User.
 *Precondizioni:*
 - L'utente possiede un account valido;
 - L'utente non ha già eseguito l'accesso;
@@ -121,65 +122,88 @@ Il sistema dispone di due attori:
 *Postcondizioni:*
 - L'utente ha effettuato correttamente l'accesso ed è stato riconosciuto dal sistema.
 *Scenario principale:*
-- Admin/Users:
+- Admin/User:
     - inserisce la propria email nel campo [email] del modulo di accesso (UC1.1).
     - inserisce la propria password nel campo [password] del modulo di accesso (UC1.2).
 - Sistema:
     - Il sistema di autenticazione verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema.
     - Se le credenziali sono corrette, l'utente viene autenticato con successo e reindirizzato alla pagina principale.
     - Se le credenziali sono errate, il sistema di autenticazione visualizza un messaggio di errore per informare l'utente della fallita autenticazione (UC2).
-*Generalizzazioni:*
-    - UC1.1 - Inserimento email.
-    - UC1.2 - Inserimento password.
+
+
 *Estensioni:*
-- UC2 - Visualizzazione errore di login
+- UC2 - Visualizzazione alert di manutenzione
+- UC3 - Visualizzazione errore di login
+
+*Generalizzazioni:*
+- *Attori*:
+  + Admin --> User.
+- *Use Case*:
+    + UC1.1 - Inserimento email;
+    + UC1.2 - Inserimento password.
 
 #figure(
-  image("/imgs/Uml/UC1 generalizzazione.jpg", width: 80%),
+  image("/imgs/Uml/UC1_gen.png", width: 55%),
   caption: [
     Inserimento email e password per accesso
   ],
 )
 
-=== UC1.1 - Inserimento email
-*Attori:*
-- Admin.
-- Users.
-*Precondizioni:*
-- L'utente possiede un account valido per l'accesso alla piattaforma.
-- L'utente non ha ancora eseguito l'accesso.
-- L'utente sta facendo il Login (UC1).
-*Postcondizioni:*
-- L'utente inserisce correttamente la propria email, precedentemente memorizzata nel sistema, per l'autenticazione.
-*Scenario principale:*
-- Admin/Users:
-    - inserisce la propria email nel campo email.
-- Sistema:
-    - il sistema verifica che l'email inserita sia nel formato corretto.
-    - il sistema verifica la correttezza della email.
-    - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
++ *UC1.1 - Inserimento email*
+  *Attori:*
+  - Admin.
+  - User.
+  *Precondizioni:*
+  - L'utente possiede un account valido per l'accesso alla piattaforma.
+  - L'utente non ha ancora eseguito l'accesso.
+  - L'utente sta facendo il Login (UC1).
+  *Postcondizioni:*
+  - L'utente inserisce correttamente la propria email, precedentemente memorizzata nel sistema, per l'autenticazione.
+  *Scenario principale:*
+  - Admin/User:
+      - inserisce la propria email nel campo email.
+  - Sistema:
+      - il sistema verifica che l'email inserita sia nel formato corretto.
+      - il sistema verifica la correttezza della email.
+      - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
 
-=== UC1.2 - Inserimento password
-*Attori:*
-- Admin.
-- Users.
-*Precondizioni:*
-- L'utente possiede un account valido per l'accesso alla piattaforma.
-- L'utente non ha ancora eseguito l'accesso.
-- L'utente sta facendo il Login (UC1).
-*Postcondizioni:*
-- L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
-*Scenario principale:*
-- Admin/Users:
-    - inserisce la propria password nel campo email.
-- Sistema:
-    - il sistema verifica la correttezza della password.
-    - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
++ *UC1.2 - Inserimento password*
+  *Attori:*
+  - Admin.
+  - User.
+  *Precondizioni:*
+  - L'utente possiede un account valido per l'accesso alla piattaforma.
+  - L'utente non ha ancora eseguito l'accesso.
+  - L'utente sta facendo il Login (UC1).
+  *Postcondizioni:*
+  - L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
+  *Scenario principale:*
+  - Admin/User:
+      - inserisce la propria password nel campo email.
+  - Sistema:
+      - il sistema verifica la correttezza della password.
+      - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
 
-== UC2 - Visualizzazione errore di login
+=== UC2 - Visualizzazione alert di manutenzione
 *Attori:*
 - Admin.
-- Users.
+- User.
+*Precondizioni:*
+- Il sistema è in mautenzione o in uno stato che non rende disponibile l'uso del servizio.
+*Postcondizioni:*
+- L'utente vede un messaggio esplicativo relativo lo stato del sistema.
+*Scenario principale:*
+- Admin/User:
+    - Accede alla pagina di login della piattaforma;
+    - Visualizza l'alert di manutenzione.
+- Sistema:
+    - Verifica lo stato dei servizi;
+    - Mostra l'alert informativo.
+
+=== UC3 - Visualizzazione errore di login
+*Attori:*
+- Admin.
+- User.
 *Precondizioni:*
 - L'utente ha inserito una combinazione di email e/o password errate o ha lasciato vuoto qualche campo durante il processo di login.
 - Il sistema ha verificato che le credenziali inserite negli appositi campi non siano corrette.
@@ -187,14 +211,14 @@ Il sistema dispone di due attori:
 - L'utente vede un messaggio esplicativo relativo all'autenticazione fallita.
 - L'utente consapevole dell'errore di login può correggere le credenziali e provare ad effettuare nuovamente il login.
 *Scenario principale:*
-- Admin/Users:
+- Admin/User:
     - Accede alla pagina di login della piattaforma.
     - Visualizza il messaggio di errore dopo aver inserito le credenziali sbagliate.
     - L'utente può decidere se correggere le credenziali e provare ad effettuare nuovamente il login.
 - Sistema:
     - Verifica le credenziali immesse dall'utente nei relativi campi (email, password).
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
-
+/*
 == UC3 - Visualizzazione pagina profilo personale
 
 #figure(
@@ -510,7 +534,7 @@ Il sistema dispone di due attori:
     - Chiede conferma all'utente sul voler uscire dalla sessione corrente;
     - Termina la sessione dell'utente, reindirizzandolo alla pagina di login.
 
-
+*/
 = Requisiti
 In questa sezione esponiamo i requisiti individuati durante l'attività di analisi a partire dai casi
 d'uso, dall’analisi del capitolato d’appalto e dagli incontri interni e con il proponente. Ogni
