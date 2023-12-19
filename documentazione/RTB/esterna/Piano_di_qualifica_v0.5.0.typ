@@ -166,7 +166,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   ),
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
-  [Gestione organizzativa],
+  [Gestione \ organizzativa],
   [Processo che si occupa di regolare le modalità di coordinamento del gruppo.],
   [MPC.......],
 )
@@ -231,7 +231,21 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
     y: 10pt,
   ),
   align: center,
-  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
+  //VERIFICA
+  [MPC11],
+  [Code Coverage (CC)], 
+  [≥ 80%],
+  [100%],
+  [MPC12], 
+  [Passed Tests (PT)], 
+  [≥ 80%],
+  [100%],
+  //ACCERTAMENTO DELLA QUALITA
+  [MPC13],
+  [Quality Metrics Satisfied (QMS)], 
+  [≥ 90%],
+  [100%],
   //DOCUMENTAZIONE
   [MPC ...],
   [Indice Gulpease (IG)],
@@ -241,20 +255,6 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Correttezza Ortografica (CO)],
   [40-100],
   [60-100],
-  [MPC ...], 
-  //ACCERTAMENTO DELLA QUALITA
-  [Quality Metrics Satisfied (QMS)], 
-  [≥ 90%],
-  [100%],
-  //QUALIFICA
-  [MPC...], 
-  [Code Coverage (CC)], 
-  [≥ 80%],
-  [100%],
-  [MPC ...], 
-  [Passed Tests (PT)], 
-  [≥ 80%],
-  [100%],
 )
 
 ==== Processi organizzativi
