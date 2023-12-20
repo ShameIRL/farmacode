@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.2", "2023-12-20", p.favaron, "", "Modifica al fomato delle date delle varie sprint",
     "0.5.1", "2023-12-20", p.favaron, "", "Stesura sprint.4",
     "0.5.0", "2023-12-16", p.rosson, p.baggio, "Prima stesura sezione 4, con aggiunta di grafici e tabelle",
     "0.4.1", "2023-12-06", p.bomben, p.rosson, "Stesura sprint.2",
@@ -308,7 +309,10 @@ Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro respo
 
 === RTB
 ==== sprint.1
-- Periodo: 7/11 (1 settimana)--> 14/11/2023-23/11/2023 (1 settimana e 2 giorni)
+- Periodo: 2023/11/07-2023/11/23 (2 settimane e 2 giorni)
+La prima settimana che va dal 2023/11/07 al 2023/11/14 è stata di "assestamento".\
+La seconda settimana che va dal 2023/11/14 al 2023/11/23 (1 settimana e 2 giorni).
+
 - Macro-issues:
   
   -- Approvare quanto prodotto nello sprint.1;\
@@ -335,7 +339,7 @@ figure(
   Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actions. Riadattamento della vecchia documentazione.
 
 ==== sprint.2
-- Periodo: 24/11/2023-4/12/2023 (1 settimana e 3 giorni)
+- Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
 - Macro-issues:
 
   -- Approvate quanto prodotto nello sprint.2;\
@@ -372,7 +376,7 @@ figure(
 Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente. 
 
 ==== sprint.3
-- Periodo: 4/12/2023-11/12/2023 (1 settimana)
+- Periodo: 2023/12/04-2023/12/11 (1 settimana)
 - Macro-issues:
 
   -- Approvate quanto prodotto nello sprint.3;\
@@ -385,8 +389,8 @@ Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente.
 
 - Issue e task:
   + Completamento prima stesura sezione 4 file "Analisi dei requisiti";
-  + Stesura verbale interno 04/12/2023;
-  + Stesura Verbale esterno 06/12/23;
+  + Stesura verbale interno 2023/12/04;
+  + Stesura Verbale esterno 2023/12/06;
   + Prima stesura sezione 2 file "Norme di progetto";
   + Continuazione sezione 4 file "Analisi dei requisiti".
 
@@ -406,7 +410,7 @@ figure(
 nd.\
 
 ==== sprint.4
-- Periodo: 11/12/2023-18/12-2023 (1 settimana)
+- Periodo: 2023/12/11-2023/12-18 (1 settimana)
 - Macro-issues:
 
   -- Approvare quanto prodotto nello sprint.4;\
@@ -420,10 +424,10 @@ nd.\
   -- Continuazione stesura del documento "Glossario";\
   -- Continuazione stesura del documento "Piano di Progetto";\
   -- Riadattamento verbali interni a nuova struttura;\
-  -- Stesura verbale interno del 11/12/2023.\
+  -- Stesura verbale interno del 2023/12/11.\
 
 - Sintesi:
-Durante la quarta sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
+Durante la quarta sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin in data 2023/12/15 relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
 È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prioma versione stabile.
 
 - Gantt view:
