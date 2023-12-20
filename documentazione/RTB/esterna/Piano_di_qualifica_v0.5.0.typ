@@ -259,7 +259,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 ==== Processi organizzativi
 #table(
-  columns: (25mm, auto, 35mm, 35mm),
+  columns: (25mm, 60mm, 35mm, 35mm),
    inset: (
     x: 5pt,
     y: 10pt,
