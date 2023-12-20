@@ -106,12 +106,101 @@ In particolare andranno verificati:
 
 //lasciate stare questa parte, da definire in seguito
 == Qualità del software
-La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
+DA RISCRIVERE La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
 Chi sviluppa il prodotto avrà una visione intrinseca della qualità, ovvero conforme ai requisiti o idonea all'uso, chi usa il prodotto avrà una visione relativa della qualità, ovvero la soddisfazione del cliente ed infine terze parti che confrontano il prodotto avranno una visione quantitativa della qualità, ovvero una misurazione oggettiva o, appunto, per confronto.\
 Nel controllo di qualità bisogna assicurare conformità passo-passo invece che solo a fine corsa.
-=== I Principi
-I Sette Principi di gestione della Qualità:
-- Customer Focus: Incontra e supera le aspettavive del cliente;
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Funzionalità],
+  [Capacità del prodotto di offrire tutte le funzioni individuate nell’Analisi dei requisiti, soddisfando tutti i requisiti.],
+  [MPD3, MPD4 \ MPD5],
+  [Usabilità],
+  [Capacità di essere comprensibile e di facile utilizzo per l’utente, in modo da renderne piacevole l'esperienza.],
+  [MPD6, MPD7],
+  [Portabilità],
+  [Capacità di poter funzionare in diversi ambienti di esecuzione.],
+  [MPD8],
+  [Efficienza],
+  [Capacità di svolgere un compito nel minor tempo possibile e utilizzando la minor quantità possibile di risorse.],
+  [MPD9],
+  [Affidabilità],
+  [Capacità di svolgere i compiti anche in caso di problemi ed errori],
+  [MPD10],
+  [Copertura dei test],
+  [Capacità del prodotto di superare tutti  i test a cui viene sottoposto, al fine di garantire una corretta implementazione dei requisiti individuati],
+  [MPD11, MPD12, \ MPD13, MPD14],
+)
+
+===Metriche utilizzate
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
+ //FUNZIONALITA'
+  [MPD3],
+  [Copertura dei requisiti obbligatori], 
+  [100%],
+  [100%],
+  [MPD4],
+  [Copertura  dei requisiti desiderabili], 
+  [≥ 85%],
+  [100%],
+  [MPD5],
+  [Copertura  dei requisiti opzionali], 
+  [≥ 70%],
+  [100%],
+//USABILITA'
+  [MPD6],
+  [Facilità di utilizzo], 
+  [≤ 7 click],
+  [≤ 5 click],
+  [MPD7],
+  [Tempo per l'apprendimento], 
+  [≤ 8 minuti],
+  [≤ 5 minuti],
+//PORTABILITA'
+  [MPD8],
+  [Versioni browser supportate], 
+  [≥ 80%],
+  [100%],
+//EFFICIENZA
+  [MPD9],
+  [Tempo medio di risposta al comando di ricerca], 
+  [5 secondi],
+  [3 secondi],
+//AFFIDABILITA'
+  [MPD10],
+  [Gestione errori], 
+  [≥ 50%],
+  [100%],
+//COPERTURA TEST
+  [MPD11],
+  [Branch Coverage], 
+  [≥ 80%],
+  [100%],
+  [MPD12],
+  [Statement Coverage], 
+  [≥ 80%],
+  [100%],
+  [MPD13],
+  [Function Coverage], 
+  [≥ 80%],
+  [100%],
+  [MPD14],
+  [Line Coverage], 
+  [≥ 80%],
+  [100%],
+)
 
 //lasciate stare questa parte, da definire in seguito
 
