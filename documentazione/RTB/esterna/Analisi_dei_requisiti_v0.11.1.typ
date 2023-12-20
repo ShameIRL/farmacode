@@ -142,6 +142,8 @@ Il sistema dispone di due attori:
     + UC1.1 - Inserimento email;
     + UC1.2 - Inserimento password.
 
+=== UC1 - Login (Generalizzazioni)
+
 #figure(
   image("/imgs/Uml/UC1_gen.png", width: 55%),
   caption: [

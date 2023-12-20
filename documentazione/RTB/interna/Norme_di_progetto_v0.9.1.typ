@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.9.1", "20-12-2023", p.rosson, "", "Correzione sezione use case",
     "0.9.0", "14-12-2023", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
     "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
@@ -122,15 +123,16 @@ Ogni caso d'uso deve essere così composto:
 - precondizioni: condizioni di utente e/o sistema, necessarie affinchè si verifichi quel caso d'uso/scenario;
 - postcondizioni: rappresentano lo stato del sistema e/o utente, dopo che il caso d'uso è stato eseguito;
 - scenario principale: in questa sezione si elencano le fasi che caratterizzano il caso d'uso;
-- generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso;
 - estensioni (se presenti): in questa sezione vanno elencate eventuali estensioni, nel caso ci possano essere degli scenari alternativi.
+- generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso, e la presenza o meno di una generalizzazione tra gli attori coinvolti;
+
 
 Per una migliore comprensione si riporta qui sotto un esempio nella forma standard da adottare per tutti i casi d'uso:
 
 *UC1 - Login*
 
 #figure(
-  image("/imgs/Uml/UC1.jpg", width: 80%),
+  image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
     Login
   ],
@@ -138,7 +140,7 @@ Per una migliore comprensione si riporta qui sotto un esempio nella forma standa
 
 *Attori:*
 - Admin;
-- Users.
+- User.
 *Precondizioni:*
 - L'utente possiede un account valido;
 - L'utente non ha già eseguito l'accesso;
@@ -146,18 +148,25 @@ Per una migliore comprensione si riporta qui sotto un esempio nella forma standa
 *Postcondizioni:*
 - L'utente ha effettuato correttamente l'accesso ed è stato riconosciuto dal sistema.
 *Scenario principale:*
-- Admin/Users:
+- Admin/User:
     - inserisce la propria email nel campo [email] del modulo di accesso (UC1.1).
     - inserisce la propria password nel campo [password] del modulo di accesso (UC1.2).
 - Sistema:
     - Il sistema di autenticazione verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema.
     - Se le credenziali sono corrette, l'utente viene autenticato con successo e reindirizzato alla pagina principale.
     - Se le credenziali sono errate, il sistema di autenticazione visualizza un messaggio di errore per informare l'utente della fallita autenticazione (UC2).
-*Generalizzazioni:*
-    - UC1.1 - Inserimento email.
-    - UC1.2 - Inserimento password.
+
+
 *Estensioni:*
-- UC2 - Visualizzazione errore di login
+- UC2 - Visualizzazione alert di manutenzione
+- UC3 - Visualizzazione errore di login
+
+*Generalizzazioni:*
+- *Attori*:
+  + Admin --> User.
+- *Use Case*:
+    + UC1.1 - Inserimento email;
+    + UC1.2 - Inserimento password.
 
 ==== Requisiti
 I requisiti devono possedere un identificativo, composto come segue:
