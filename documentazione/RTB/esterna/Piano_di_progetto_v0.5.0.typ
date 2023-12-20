@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.3", "2023-12-20", p.favaron, "", "Creata un'unica leggenda per i grafici nella sezione preventivi e consultivi",
     "0.5.2", "2023-12-20", p.favaron, "", "Modifica al fomato delle date delle varie sprint",
     "0.5.1", "2023-12-20", p.favaron, "", "Stesura sprint.4",
     "0.5.0", "2023-12-16", p.rosson, p.baggio, "Prima stesura sezione 4, con aggiunta di grafici e tabelle",
@@ -452,6 +453,15 @@ Durante la seguente sprint si è incontrato un problema che riguardava il datase
 - Premessa:
 La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo.
 
+- Legenda: 
+  + S --> Scarto in ore;
+  + Totale (1) --> Totale ore per ruolo;
+  + C. o. --> Costo per ora;
+  + Costo --> Costo totale per ruolo;
+  + Totale (2) --> Costo totale sprint;
+  + Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
+  + Bilancio --> Bilancio relativo alla fine dello sprint.
+
 == RTB
 
 === sprint.1
@@ -487,15 +497,6 @@ figure(
 #figure(
   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#1.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.1]
 )
-
-Legenda: 
-+ S --> Scarto in ore;
-+ Totale (1) --> Totale ore per ruolo;
-+ C. o. --> Costo per ora;
-+ Costo --> Costo totale per ruolo;
-+ Totale (2) --> Costo totale sprint;
-+ Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-+ Bilancio --> Bilancio relativo alla fine dello sprint.
 
 #figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#1.png", height: 30%, width: auto),
@@ -538,15 +539,6 @@ figure(
   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#2.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.2]
 )
 
-Legenda: 
-+ S --> Scarto in ore;
-+ Totale (1) --> Totale ore per ruolo;
-+ C. o. --> Costo per ora;
-+ Costo --> Costo totale per ruolo;
-+ Totale (2) --> Costo totale sprint;
-+ Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-+ Bilancio --> Bilancio relativo alla fine dello sprint.
-
 #figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 30%, width: auto),
   caption: [consuntivi/bilanci/sprint.2]
@@ -586,15 +578,6 @@ figure(
 #figure(
   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#3.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.3]
 )
-
-Legenda: 
-+ S --> Scarto in ore;
-+ Totale (1) --> Totale ore per ruolo;
-+ C. o. --> Costo per ora;
-+ Costo --> Costo totale per ruolo;
-+ Totale (2) --> Costo totale sprint;
-+ Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-+ Bilancio --> Bilancio relativo alla fine dello sprint.
 
 #figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#3.png", height: 30%, width: auto),
