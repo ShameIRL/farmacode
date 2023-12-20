@@ -220,6 +220,32 @@ Il sistema dispone di due attori:
 - Sistema:
     - Verifica le credenziali immesse dall'utente nei relativi campi (email, password).
     - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
+
+=== UC4 - Visualizzazione informativa sui Cookies
+
+== Webapp
+
+=== UC5 - Menù delle funzionalità
+
+=== UC6 - Accesso profilo utente
+
+=== UC7 - Logout
+
+=== UC8 - Funzionalità di ricerca preferenze
+
+=== UC9 - Funzionalità di visione e ricerca clienti
+
+=== UC10 - Funzionalità di visione e ricerca prodotti
+
+=== UC11 - Funzionalità di visione statistiche di vendita
+
+=== UC12 - Funzionalità di gestione utenti
+
+=== UC13 - Funzionalità di gestione della cronologia
+
+=== UC14 - Funzionalità di gestione dei feedback
+
+=== UC15 - Footer
 /*
 == UC3 - Visualizzazione pagina profilo personale
 
