@@ -137,7 +137,7 @@ Nel controllo di qualità bisogna assicurare conformità passo-passo invece che 
   [MPD11, MPD12, \ MPD13, MPD14],
 )
 
-===Metriche utilizzate
+=== Metriche utilizzate
 #table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
