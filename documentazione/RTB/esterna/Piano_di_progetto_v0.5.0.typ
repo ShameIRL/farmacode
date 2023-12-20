@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.1", "2023-12-20", p.favaron, "", "Stesura sprint.4",
     "0.5.0", "2023-12-16", p.rosson, p.baggio, "Prima stesura sezione 4, con aggiunta di grafici e tabelle",
     "0.4.1", "2023-12-06", p.bomben, p.rosson, "Stesura sprint.2",
     "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
@@ -357,7 +358,7 @@ figure(
 - Sintesi:
 In questo secondo sprint si è iniziato a ragionare anche sul Design e ad una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di amministratore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
 
-- Gnatt view:
+- Gantt view:
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#2.png", height: auto, width: auto),
@@ -392,7 +393,7 @@ Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente.
 - Sintesi:
 Durante questo terzo sprint, il team ha deciso di focalizzare più risorse verso lo sviluppo del PoC senza però tralasciare la documentazione di progetto. In particolare si sono fatti grandi progessi lato implementazione del prodotto. Progressi che sono stati condivisi con il proponente riscontrando approvazione generale. Per quanto riguarda la documentazione, sono state apportate migliorie generali ponendo più attenzione verso le "Norme di progetto".
 
-- Gnatt view:
+- Gantt view:
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#3.png", height: auto, width: auto),
@@ -402,10 +403,41 @@ figure(
 )
 
 - Imprevisti incotrati e loro risoluzione:
-nd.
-==== sprint.4
+nd.\
 
-// imprevisti: problema con dataset e creazione del relativo db, dati alcuni errori di formattazione
+==== sprint.4
+- Periodo: 11/12/2023-18/12-2023 (1 settimana)
+- Macro-issues:
+
+  -- Approvare quanto prodotto nello sprint.4;\
+  -- Revisionare quanto prodotto nello sprint.4;\
+  -- Documentazione;\
+  -- POC - completamento prima versione.\
+
+- Issue e task:
+  -- Continuazione stesura del documento "Norme di Progetto";\
+  -- Continuazione stesura del documento "Analisi dei Requisiti";\
+  -- Continuazione stesura del documento "Glossario";\
+  -- Continuazione stesura del documento "Piano di Progetto";\
+  -- Riadattamento verbali interni a nuova struttura;\
+  -- Stesura verbale interno del 11/12/2023.\
+
+- Sintesi:
+Durante la quarta sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
+È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prioma versione stabile.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#4.png", height: auto, width: auto),
+  caption: [sprint.4]
+  )
+  
+)
+
+- imprevisti: 
+Durante la seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
+
 === PB
 === CA
 
