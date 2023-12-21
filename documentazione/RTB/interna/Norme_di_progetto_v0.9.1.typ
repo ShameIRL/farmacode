@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.10.0", "21-12-2023", p.carraro, "", "Completata sezione Norme di tipografia",
     "0.9.1", "20-12-2023", p.rosson, "", "Correzione sezione use case",
     "0.9.0", "14-12-2023", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
     "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
@@ -326,11 +327,13 @@ documentando tutti i processi e attività presenti andando a facilitare anche la
 //da mettere apposto e rendere tutto conforme !!!!!
     - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, la lettera iniziale è sempre maiuscola e il resto tutto minuscolo. Le parole sono separate da degli underscore e la data viene scritta in formato AAAA-MM-GG;
 
-    - Sezionamento: divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
+    - Sezionamento: Divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
 
-    - Glossario: /** vedi glossario (da decidere) */
+    - Glossario: Il documento glossario è strutturato simile ad un dizionario, le sezioni primarie suddividono il documento in ordine alfabetico, la sottosezione contiene la parola, all'interno della sottosezione viene descritta la parola, la sua definizione o l'uso che ne si fa nel progetto;
 
-    - Stile del testo: // va messo perchè una parola va messa in corsivo, bold, o altro
+    - Stile del testo: Ai documenti vengono applicati stili di testo per facilita la lettura e per segnalare la funzione di certe parole. \ Parole in blu segnalano parole inserite all'interno del glossario, #glossario("esempio"). \ Parole in grassetto segnalano parole tecniche, *esempio*. \ Gli acronimi e le parole in termini tecnici vanno racchiuse fra parentesi tonde, (Esempio);
+    
+    - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" spaziato dal nome dell'elemento. La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".
 
 /** da ampliare in caso di aggiunte */
 
@@ -380,6 +383,14 @@ Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno posse
             - Verbali interni e esterni, attestanti di quanto discusso.
 
     - Informali: Sono i documenti interni non destinati alla divulgazione con esterni e fini a loro stessi. Perciò non necessitano di versionamento. Spesso sono bozze in preparazione a documenti formali, o note e appunti generiche.
+
+=== Struttura file di progetto
+
+==== Analisi dei Requisiti
+==== Glossario
+==== Piano di Progetto
+==== Piano di Qualifica
+==== Norme di Progetto 
 
 == Gestione della configurazione
 
