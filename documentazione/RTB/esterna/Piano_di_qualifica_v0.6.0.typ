@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.6.0", "2023-12-21", p.pandolfo, '', "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
     "0.3.0", "2023-11-27", p.carraro, p.rosson, "Stesura sezione qualità di architettura",
@@ -40,7 +41,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - T7 - Qualità del software (slide del corso di Ingegneria del Software);
 - T8 - Qualità di processo (slide del corso di Ingegneria del Software).
 
-= Piano di qualità
+= Qualità di prodotto
 
 == Qualità dell'architettura
 La qualità di una buona architettura è definita da questi aspetti: \
@@ -104,7 +105,43 @@ In particolare andranno verificati:
   - SFOUT, indice di dipendenza;
   - Una buona progettazione ha componenti con SFIN elevato.
 
-//lasciate stare questa parte, da definire in seguito
+== Qualità della documentazione
+INTRO DA SCRIVERE 
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Correttezza \ linguistica],
+  [I documenti non devono avere errori grammaticali.],
+  [MPD1],
+  [Leggibilità],
+  [Il contenuto dei documenti deve essere comprensibile all'utente.],
+  [MPD2],
+)
+
+=== Metriche utilizzate
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
+  [MPD1],
+  [Errori Ortografici], 
+  [0%],
+  [0%],
+  [MPD2],
+  [Indice di Gulpease], 
+  [≥ 60],
+  [100],
+)
+
 == Qualità del software
 DA RISCRIVERE La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
 Chi sviluppa il prodotto avrà una visione intrinseca della qualità, ovvero conforme ai requisiti o idonea all'uso, chi usa il prodotto avrà una visione relativa della qualità, ovvero la soddisfazione del cliente ed infine terze parti che confrontano il prodotto avranno una visione quantitativa della qualità, ovvero una misurazione oggettiva o, appunto, per confronto.\
@@ -202,14 +239,13 @@ Nel controllo di qualità bisogna assicurare conformità passo-passo invece che 
   [100%],
 )
 
-//lasciate stare questa parte, da definire in seguito
 
-== Qualità di processo
+= Qualità di processo
 Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
 La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
  In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.\
 
-=== Processi primari
+== Processi primari
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -226,7 +262,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [MPC9, MPC10],
 )
 
-=== Processi di supporto
+== Processi di supporto
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -246,7 +282,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [MPC....], */
 )
 
-=== Processi organizzativi
+== Processi organizzativi
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -260,8 +296,8 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [MPC14],
 )
 
-=== Metriche utilizzate
-==== Processi primari
+== Metriche utilizzate
+=== Processi primari
 #table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
@@ -312,7 +348,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [100%],
 )
 
-==== Processi di supporto
+=== Processi di supporto
 #table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
@@ -346,7 +382,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [60-100], */
 )
 
-==== Processi organizzativi
+=== Processi organizzativi
 #table(
   columns: (25mm, 60mm, 35mm, 35mm),
    inset: (
