@@ -297,7 +297,7 @@ Il sistema dispone di due attori:
 - L'utente decide se selezionare o meno una delle opzioni disponibili.
 *Scenario principale:*
 - Admin/User:
-    - seleziona il menù per visualizzarne il contenuto;
+    - seleziona il bottone del menù nell'header per visualizzarne il contenuto;
     - visualizza i bottoni interni al menù legati alle funzionalità del sito;
     - decide se visualizzare o meno una delle funzionalità disponibili (Admin/User: UC8, UC9, UC10, UC11; Admin: UC12, UC13, UC14).
 - Sistema:
@@ -363,9 +363,13 @@ Il sistema dispone di due attori:
 - L'utente visualizza nella vista principale della pagina il suo profilo.
 *Scenario principale:*
 - Admin/User:
-  -
+  - seleziona il bottone del profilo utente nell'header per visualizzarne il contenuto;
+  - visualizza i dati utente (UC6.1);
+  - decide se modificare i dati modificabili, ovvero email e password (UC6.2).
 - Sistema:
-  - 
+  - verifica che utente sta richiedendo di visualizzare il proprio profilo tramite cookies di sessione;
+  - mostra all'utente i suoi dati, permettendogli di visualizzare le sue informazioni (UC6.1);
+  - fornisce all'utente la possibilità di modificare alcuni dati non strettamente legati ad esso, ovvero password ed email (UC6.2).
 *Generalizzazioni:*
 - *Attori*:
 - Admin --> User.
@@ -374,18 +378,165 @@ Il sistema dispone di due attori:
 - UC6.2 - Modifica dati utente
 
 ==== UC6.1 - Visualizzazione dati utente
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza i propri dati utente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza i dati utente in chiaro, ovvero anagrafica, email e username (UC6.1.1, UC6.1.2, UC6.1.3);
+  - decide se visualizzare i dati nascosti, ovvero la password (UC6.1.4).
+- Sistema:
+  - mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC6.1.1, UC6.1.2, UC6.1.3);
+  - se richiesto mostra all'utente i dati nascosti, ovvero la password (UC6.1.4).
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- UC6.1.1 - Visualizzazione anagrafica
+- UC6.1.2 - Visualizzazione email
+- UC6.1.3 - Visualizzazione username
+- UC6.1.4 - Visualizzazione password
 
-===== UC6.1.1 - Visualizzazione username
+===== UC6.1.1 - Visualizzazione anagrafica
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
+*Scenario principale:*
+- Admin/User:
+  - visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
+- Sistema:
+  - mostra all'utente i suoi dati anagrafici in chiaro, ovvero nome, cognome e data di nascita.
 
-===== UC6.1.2 - Visualizzazione password
+===== UC6.1.2 - Visualizzazione email
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza la propria email.
+*Scenario principale:*
+- Admin/User:
+  - visualizza la propria email.
+- Sistema:
+  - mostra all'utente la sua email in chiaro.
 
-===== UC6.1.3 - Visualizzazione anagrafica
+===== UC6.1.3 - Visualizzazione username
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza il proprio username.
+*Scenario principale:*
+- Admin/User:
+  - visualizza il proprio username.
+- Sistema:
+  - mostra all'utente il suo username in chiaro.
+
+===== UC6.1.4 - Visualizzazione password
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente visualizza la propria password nascosta;
+- L'utente decide di visualizzare la propria password in chiaro.
+*Postcondizioni:*
+- L'utente visualizza la propria password in chiaro.
+*Scenario principale:*
+- Admin/User:
+  - visualizza la propria password nascosta;
+  - decide di visualizzare la propria password in chiaro;
+  - visualizza la propria password in chiaro.
+- Sistema:
+  - mostra all'utente la sua password nascosta;
+  - prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
+  - mostra all'utente la sua password in chiaro.
 
 ==== UC6.2 - Modifica dati utente
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente decide di modificare i propri dati modificabili.
+*Postcondizioni:*
+- L'utente modifica i propri dati modificabili;
+- I nuovi dati venngono sostituiti ai precedenti e salvati.
+*Scenario principale:*
+- Admin/User:
+  - decide di modificare i propri dati modificabili, ovvero email (UC6.2.1) e password (UC6.2.2);
+  - inserisce i nuovi dati che vuole sostituire ai precedenti;
+  - conferma i nuovi dati che vuole sostituire ai precedenti;
+  - conferma la sua scelta confermando il salvataggio dei nuovi dati nel sistema;
+  - nega la sua scelta tramite il processo di annullamento dell'operazione.
+- Sistema:
+  - prende a conoscenza l'intenzione dell'utente di modificare i propri dati modificabili, ovvero email (UC6.2.1) e password (UC6.2.2);
+  - modifica l'interfaccia per permettere all'utente di inserire i nuovi dati ed aggiungendo l'opzione di conferma della modifica dei dati;
+  - se i nuovi dati vengono confermati, sostituisce i vecchi dati con i nuovi dati all'interno del sistema e li salva;
+  - se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente.
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- UC6.2.1 - Modifica email
+- UC6.2.2 - Modifica password
 
-===== UC6.2.1 - Modifica password
+===== UC6.2.1 - Modifica email
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente decide di modificare la propria email.
+*Postcondizioni:*
+- L'utente modifica la propria email;
+- La nuova email viene sostituita alla precedente e salvata.
+*Scenario principale:*
+- Admin/User:
+  - decide di modificare la propria email;
+  - inserisce la nuova email;
+  - conferma la nuova email;
+  - conferma la sua scelta confermando il salvataggio della nuova email nel sistema;
+  - nega la sua scelta tramite il processo di annullamento dell'operazione.
+- Sistema:
+  - prende a conoscenza l'intenzione dell'utente di modificare la propria email;
+  - modifica l'interfaccia per permettere all'utente di inserire la nuova email ed aggiungendo l'opzione di conferma della modifica dell'email;
+  - se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
+  - se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
 
-===== UC6.2.2 - Modifica email
+===== UC6.2.2 - Modifica password
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente decide di modificare la propria password.
+*Postcondizioni:*
+- L'utente modifica la propria password;
+- La nuova password viene sostituita alla precedente e salvata.
+*Scenario principale:*
+- Admin/User:
+  - decide di modificare la propria password;
+  - inserisce la nuova password;
+  - conferma la nuova password;
+  - conferma la sua scelta confermando il salvataggio della nuova password nel sistema;
+  - nega la sua scelta tramite il processo di annullamento dell'operazione.
+- Sistema:
+  - prende a conoscenza l'intenzione dell'utente di modificare la propria password;
+  - modifica l'interfaccia per permettere all'utente di inserire la nuova password ed aggiungendo l'opzione di conferma della modifica dell'password;
+  - se la nuova password viene confermata, sostituisce la vecchia password con la nuova password all'interno del sistema e la salva;
+  - se la nuova password non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
 
 === UC7 - Logout
 #figure(
@@ -395,14 +546,24 @@ Il sistema dispone di due attori:
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema.
 *Postcondizioni:*
-
+- Il cookie di sessione viene rimosso;
+- L'utente viene reindirizzato alla pagina di login.
 *Scenario principale:*
-
+- Admin/User:
+  - decide di uscire dalla piattaforma tramite l'opzione di logout.
+- Sistema:
+  - prende a conoscenza la decisione dell'utente di voler uscire dalla piattaforma;
+  - rimuove i cookie di sessione relativi all'utente;
+  - reindirizza l'utente alla pagina di login della piattaforma.
 *Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
 
 === UC8 - Visualizzazione "Ricerca"
 #figure(
