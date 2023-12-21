@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.6.0", "2023-12-21", p.pandolfo, '', "Modifica qualità di prodotto",
+    "0.6.0", "2023-12-21", p.pandolfo, "", "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
     "0.3.0", "2023-11-27", p.carraro, p.rosson, "Stesura sezione qualità di architettura",
