@@ -279,7 +279,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [MPC13],
   /* [Documentazione],
   [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
-  [MPC....], */
+  [MPC....],   */
 )
 
 == Processi organizzativi
