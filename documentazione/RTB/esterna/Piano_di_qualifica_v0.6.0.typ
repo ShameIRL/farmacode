@@ -106,7 +106,6 @@ In particolare andranno verificati:
   - Una buona progettazione ha componenti con SFIN elevato.
 
 == Qualità della documentazione
-INTRO DA SCRIVERE 
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
