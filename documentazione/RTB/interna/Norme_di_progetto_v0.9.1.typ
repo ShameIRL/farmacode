@@ -9,11 +9,8 @@
 
   ),
   changelog: (
-<<<<<<< HEAD:documentazione/RTB/interna/Norme_di_progetto_v0.9.0.typ
     "0.10.0", "21-12-2023", p.carraro, "", "Completata sezione Norme di tipografia",
-=======
     "0.9.1", "20-12-2023", p.rosson, "", "Correzione sezione use case",
->>>>>>> c16e357cae70ffa5e57376d9f7993a10e7f3ed65:documentazione/RTB/interna/Norme_di_progetto_v0.9.1.typ
     "0.9.0", "14-12-2023", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
     "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
     "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
