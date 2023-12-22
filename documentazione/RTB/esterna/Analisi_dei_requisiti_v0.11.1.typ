@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.13.0", "2023-12-22", p.baggio + "\n" + p.rosson, "", "Nuova stesura definitiva casi d'uso",
     "0.12.1", "2023-12-15", p.rosson, "", "Correzione UC1 e sotto casi",
     "0.12.0", "2023-12-15", p.bomben, p.baggio, "Sistemazione UC3",
     "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
@@ -133,44 +134,44 @@ Il sistema dispone di due attori:
 - UC2 - Visualizzazione alert di manutenzione;
 - UC3 - Visualizzazione errore di login.
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
-- *Use Case*:
+- *Use Case:*
 - Admin/User:
   - UC1.1 - Inserimento email;
   - UC1.2 - Inserimento password.
 
 ==== UC1.1 - Inserimento username
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta facendo il Login (UC1).
-  *Postcondizioni:*
-  - L'utente inserisce correttamente il proprio username, precedentemente memorizzato nel sistema, per l'autenticazione.
-  *Scenario principale:*
-  - Admin/User:
-      - inserisce il proprio username nel campo [username].
-  - Sistema:
-      - verifica che lo username inserito sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
-      - verifica la correttezza dell'username;
-      - prosegue con l'autenticazione dell'utente utilizzando lo username inserito.
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta facendo il Login (UC1).
+*Postcondizioni:*
+- L'utente inserisce correttamente il proprio username, precedentemente memorizzato nel sistema, per l'autenticazione.
+*Scenario principale:*
+- Admin/User:
+    - inserisce il proprio username nel campo [username].
+- Sistema:
+    - verifica che lo username inserito sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
+    - verifica la correttezza dell'username;
+    - prosegue con l'autenticazione dell'utente utilizzando lo username inserito.  
 
 ==== UC1.2 - Inserimento password
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta facendo il Login (UC1).
-  *Postcondizioni:*
-  - L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
-  *Scenario principale:*
-  - Admin/User:
-      - inserisce la propria password nel campo [password].
-  - Sistema:
-      - verifica che la password inserita sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
-      - verifica la correttezza della password;
-      - prosegue con l'autenticazione dell'utente utilizzando la password inserita.
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta facendo il Login (UC1).
+*Postcondizioni:*
+- L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
+*Scenario principale:*
+- Admin/User:
+    - inserisce la propria password nel campo [password].
+- Sistema:
+    - verifica che la password inserita sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
+    - verifica la correttezza della password;
+    - prosegue con l'autenticazione dell'utente utilizzando la password inserita.
 
 === UC2 - Visualizzazione alert di manutenzione
 #figure(
@@ -193,6 +194,9 @@ Il sistema dispone di due attori:
 - Sistema:
     - verifica lo stato dei servizi;
     - mostra l'alert informativo.
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
 
 === UC3 - Visualizzazione errore di login
 #figure(
@@ -218,6 +222,9 @@ Il sistema dispone di due attori:
 - Sistema:
     - verifica le credenziali immesse dall'utente nei relativi campi (username, password);
     - se il sistema rileva le credenziali come non corrette, mostra il messaggio di errore di login.
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
 
 === UC4 - Avviso normativa sui Cookies
 #figure(
@@ -245,9 +252,9 @@ Il sistema dispone di due attori:
   - prende a conoscenza che l'utente ha accettato la normativa e l'utilizzo di cookies (UC4.2);
   - fa sparire l'avviso una volta presa conoscenza dell'accettazione della normativa sui cookies.
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
-- *Use Case*:
+- *Use Case:*
 - Admin/User:
   - UC4.1 - Visualizzazione normativa sui cookies;
   - UC4.2 - Accettazione normativa sui cookies.
@@ -299,14 +306,14 @@ Il sistema dispone di due attori:
 - Admin/User:
     - seleziona il bottone del menù nell'header per visualizzarne il contenuto;
     - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-    - decide se visualizzare o meno una delle funzionalità disponibili (Admin/User: UC8, UC9, UC10, UC11; Admin: UC12, UC13, UC14).
+    - decide se visualizzare o meno una delle funzionalità disponibili (Admin/User: UC8, UC10, UC12, UC13; Admin: UC14, UC16, UC17).
 - Sistema:
     - mostra all'utente i bottoni relativi alle funzionalità della sua categoria;
     - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
-- *Use Case*:
+- *Use Case:*
 - Admin/User:
   - UC5.1 - Visualizzazione funzionalità Admin/User.
 - Admin:
@@ -324,7 +331,7 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 - Admin/User:
   - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-  - decide se visualizzare o meno una delle funzionalità disponibili (UC8, UC9, UC10, UC11).
+  - decide se visualizzare o meno una delle funzionalità disponibili (UC8, UC10, UC12, UC13).
 - Sistema:
   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
@@ -341,7 +348,7 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 - Admin:
   - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-  - decide se visualizzare o meno una delle funzionalità disponibili (UC12, UC13, UC14).
+  - decide se visualizzare o meno una delle funzionalità disponibili (UC14, UC16, UC17).
 - Sistema:
   - mostra all'utente i bottoni relativi alle funzionalità della categoria Admin;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
@@ -371,9 +378,9 @@ Il sistema dispone di due attori:
   - mostra all'utente i suoi dati, permettendogli di visualizzare le sue informazioni (UC6.1);
   - fornisce all'utente la possibilità di modificare alcuni dati non strettamente legati ad esso, ovvero password ed email (UC6.2).
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
-- *Use Case*:
+- *Use Case:*
 - UC6.1 - Visualizzazione dati utente
 - UC6.2 - Modifica dati utente
 
@@ -382,7 +389,7 @@ Il sistema dispone di due attori:
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
 *Postcondizioni:*
 - L'utente visualizza i propri dati utente.
 *Scenario principale:*
@@ -393,9 +400,9 @@ Il sistema dispone di due attori:
   - mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC6.1.1, UC6.1.2, UC6.1.3);
   - se richiesto mostra all'utente i dati nascosti, ovvero la password (UC6.1.4).
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
-- *Use Case*:
+- *Use Case:*
 - UC6.1.1 - Visualizzazione anagrafica
 - UC6.1.2 - Visualizzazione email
 - UC6.1.3 - Visualizzazione username
@@ -406,7 +413,7 @@ Il sistema dispone di due attori:
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
 *Postcondizioni:*
 - L'utente visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
 *Scenario principale:*
@@ -420,7 +427,7 @@ Il sistema dispone di due attori:
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
 *Postcondizioni:*
 - L'utente visualizza la propria email.
 *Scenario principale:*
@@ -434,7 +441,7 @@ Il sistema dispone di due attori:
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
 *Postcondizioni:*
 - L'utente visualizza il proprio username.
 *Scenario principale:*
@@ -448,9 +455,9 @@ Il sistema dispone di due attori:
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
-- L'utente visualizza la propria password nascosta;
-- L'utente decide di visualizzare la propria password in chiaro.
+- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale;
+- L'utente decide di visualizzare la propria password in chiaro;
+- L'utente visualizza la propria password nascosta.
 *Postcondizioni:*
 - L'utente visualizza la propria password in chiaro.
 *Scenario principale:*
@@ -472,7 +479,7 @@ Il sistema dispone di due attori:
 - L'utente decide di modificare i propri dati modificabili.
 *Postcondizioni:*
 - L'utente modifica i propri dati modificabili;
-- I nuovi dati venngono sostituiti ai precedenti e salvati.
+- I nuovi dati vengono sostituiti ai precedenti e salvati.
 *Scenario principale:*
 - Admin/User:
   - decide di modificare i propri dati modificabili, ovvero email (UC6.2.1) e password (UC6.2.2);
@@ -486,9 +493,9 @@ Il sistema dispone di due attori:
   - se i nuovi dati vengono confermati, sostituisce i vecchi dati con i nuovi dati all'interno del sistema e li salva;
   - se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente.
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
-- *Use Case*:
+- *Use Case:*
 - UC6.2.1 - Modifica email
 - UC6.2.2 - Modifica password
 
@@ -562,7 +569,7 @@ Il sistema dispone di due attori:
   - rimuove i cookie di sessione relativi all'utente;
   - reindirizza l'utente alla pagina di login della piattaforma.
 *Generalizzazioni:*
-- *Attori*:
+- *Attori:*
 - Admin --> User.
 
 === UC8 - Visualizzazione "Ricerca"
@@ -581,8 +588,289 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 
 *Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC8.1 - Barra di ricerca
+- UC8.2 - Visualizzazione risultati di ricerca
 
-=== UC9 - Visualizzazione "Catalogo Prodotti"
+==== UC8.1 - Barra di ricerca per "Ricerca"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Barra di ricerca per "Ricerca"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC8.1.1 - Scelta input "Topic";
+- UC8.1.2 - Completamento input "Nome Topic";
+- UC8.1.3 - Scelta input "Top N";
+- UC8.1.4 - Selezione input "Cronologia";
+- UC8.1.5 - Avvio ricerca "Ricerca".
+
+===== UC8.1.1 - Scelta input "Topic"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Scelta input "Topic"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC8.1.2 - Completamento input "Nome Topic"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Completamento input "Nome Topic"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC8.1.3 - Scelta input "Top N"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Scelta input "Top N"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC8.1.4 - Selezione input "Cronologia"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Selezione input "Cronologia"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC8.1.5 - Avvio ricerca
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Avvio ricerca
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC8.2 - Visualizzazione risultati di ricerca per "Ricerca"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione risultati di ricerca per "Ricerca"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Estensioni:*
+- UC18 - Errore di ricerca.
+
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC8.2.1 - Visualizzazione dettagli singolo "Risultato".
+
+===== UC8.2.1 - Visualizzazione dettagli singolo "Risultato"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione dettagli singolo "Risultato"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC8.2.1.1 - Visualizzazione "ID" risultato;
+- UC8.2.1.2 - Visualizzazione "Nome" risultato;
+- UC8.2.1.3 - Visualizzazione "Score" risultato;
+- UC8.2.1.4 - Bottone "Inserimento Feedback".
+
+====== UC8.2.1.1 - Visualizzazione "ID" risultato
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "ID" risultato
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+====== UC8.2.1.2 - Visualizzazione "Nome" risultato
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Nome" risultato
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+====== UC8.2.1.3 - Visualizzazione "Score" risultato
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Score" risultato
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+====== UC8.2.1.4 - Bottone "Inserimento Feedback"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Bottone "Inserimento Feedback"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+=== UC9 - Inserimento "Feedback"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Inserimento "Feedback"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC9.1 - Visualizzazione dati ricerca;
+- UC9.2 - Completamento input "Valutazione";
+- UC9.3 - Completamento input "Commento".
+
+==== UC9.1 - Visualizzazione dati ricerca
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione dati ricerca
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC9.2 - Completamento input "Valutazione"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Completamento input "Valutazione"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC9.3 - Completamento input "Commento"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Completamento input "Commento"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+=== UC10 - Visualizzazione "Catalogo Prodotti"
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
@@ -598,12 +886,17 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 
 *Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC10.1 - Barra di ricerca per "Catalogo Prodotti";
+- UC10.2 - Visualizzazione risultati di ricerca per "Catalogo Prodotti".
 
-=== UC10 - Visualizzazione "Lista Clienti"
+==== UC10.1 - Barra di ricerca per "Catalogo Prodotti"
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Visualizzazione "Lista Clienti"
+    Barra di ricerca per "Catalogo Prodotti"
   ],
 )
 *Attori:*
@@ -615,12 +908,151 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 
 *Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC10.1.1 - Completamento input "Codice Prodotto";
+- UC10.1.2 - Completamento input "Nome Prodotto";
+- UC10.1.3 - Selezione input "Linea Commerciale";
+- UC10.1.4 - Completamento input "Settore Commerciale";
+- UC10.1.5 - Completamento input "Marca Prodotto";
+- UC10.1.6 - Selezione input "Provenienza Prodotto";
+- UC10.1.7 - Avvio ricerca dentro "Catalogo Prodotti";
 
-=== UC11 - Visualizzazione "Statistiche Mensili"
+===== UC10.1.1 - Completamento input "Codice Prodotto"
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Visualizzazione "Statistiche Mensili"
+    Completamento input "Codice Prodotto"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC10.1.2 - Completamento input "Nome Prodotto"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Completamento input "Nome Prodotto"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC10.1.3 - Selezione input "Linea Commerciale"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Selezione input "Linea Commerciale"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC10.1.4 - Completamento input "Settore Commerciale"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Completamento input "Settore Commerciale"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC10.1.5 - Completamento input "Marca Prodotto"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Completamento input "Marca Prodotto"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC10.1.6 - Selezione input "Provenienza Prodotto"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Selezione input "Provenienza Prodotto"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+===== UC10.1.7 - Avvio ricerca dentro "Catalogo Prodotti"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Avvio ricerca dentro "Catalogo Prodotti"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC10.2 - Visualizzazione risultati di ricerca per "Catalogo Prodotti"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione risultati di ricerca per "Catalogo Prodotti"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Estensioni:*
+- UC18 - Errore di ricerca.
+
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC10.2.1 - Visualizzazione dettagli singolo "Prodotto".
+
+===== UC10.2.1 - Visualizzazione dettagli singolo "Prodotto"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione dettagli singolo "Prodotto"
   ],
 )
 *Attori:*
@@ -632,12 +1064,79 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 
 *Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC10.2.1.1 - Visualizzazione "Immagine" prodotto;
+- UC10.2.1.2 - Visualizzazione "ID" prodotto;
+- UC10.2.1.3 - Visualizzazione "Nome" prodotto;
+- UC10.2.1.4 - Estensione dettagli prodotto;
 
-=== UC12 - Visualizzazione "Gestione Utenti"
+====== UC10.2.1.1 - Visualizzazione "Immagine" prodotto
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Visualizzazione "Gestione Utenti"
+    Visualizzazione "Immagine" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+====== UC10.2.1.2 - Visualizzazione "ID" prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "ID" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+====== UC10.2.1.3 - Visualizzazione "Nome" prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Nome" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+====== UC10.2.1.4 - Estensione dettagli prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Estensione dettagli prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+=== UC11 - Visualizzazione dettaglio "Prodotto"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Estensione dettagli prodotto
   ],
 )
 *Attori:*
@@ -649,12 +1148,22 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 
 *Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC11.1 - Visualizzazione "Immagine" prodotto;
+- UC11.2 - Visualizzazione "ID" prodotto;
+- UC11.3 - Visualizzazione "Nome" prodotto;
+- UC11.4 - Visualizzazione "Linea Commerciale" prodotto;
+- UC11.5 - Visualizzazione "Settore Commerciale" prodotto;
+- UC11.6 - Visualizzazione "Marca" prodotto;
+- UC11.7 - Visualizzazione "Provenienza" prodotto;
 
-=== UC13 - Visualizzazione "Cronologia Ricerche"
+==== UC11.1 - Visualizzazione "Immagine" prodotto
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Visualizzazione "Cronologia Ricerche"
+    Visualizzazione "Immagine" prodotto
   ],
 )
 *Attori:*
@@ -665,13 +1174,11 @@ Il sistema dispone di due attori:
 
 *Scenario principale:*
 
-*Generalizzazioni:*
-
-=== UC14 - Visualizzazione "Cronologia Feedback"
+==== UC11.2 - Visualizzazione "ID" prodotto
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Visualizzazione "Cronologia Feedback"
+    Visualizzazione "ID" prodotto
   ],
 )
 *Attori:*
@@ -682,13 +1189,11 @@ Il sistema dispone di due attori:
 
 *Scenario principale:*
 
-*Generalizzazioni:*
-
-=== UC15 - Footer
+==== UC11.3 - Visualizzazione "Nome" prodotto
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Footer
+    Visualizzazione "Nome" prodotto
   ],
 )
 *Attori:*
@@ -699,7 +1204,81 @@ Il sistema dispone di due attori:
 
 *Scenario principale:*
 
-*Generalizzazioni:*
+==== UC11.4 - Visualizzazione "Linea Commerciale" prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Linea Commerciale" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC11.5 - Visualizzazione "Settore Commerciale" prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Settore Commerciale" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC11.6 - Visualizzazione "Marca" prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Marca" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+==== UC11.7 - Visualizzazione "Provenienza" prodotto
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Provenienza" prodotto
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+=== UC12 - Visualizzazione "Lista Clienti"
+
+=== UC13 - Visualizzazione "Statistiche Mensili"
+
+=== UC14 - Visualizzazione "Gestione Utenti"
+
+=== UC15 - Visualizzazione dettaglio "Utente"
+
+=== UC16 - Visualizzazione "Cronologia Ricerche"
+
+=== UC17 - Visualizzazione "Cronologia Feedback"
+
+=== UC18 - Errore di ricerca
+
+=== UC19 - Footer
 
 /*
 == UC3 - Visualizzazione pagina profilo personale
