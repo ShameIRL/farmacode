@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.11.0", "21-12-2023", p.carraro, "", "Inizio sezione Struttura file di progetto",
     "0.10.0", "21-12-2023", p.carraro, "", "Completata sezione Norme di tipografia",
     "0.9.1", "20-12-2023", p.rosson, "", "Correzione sezione use case",
     "0.9.0", "14-12-2023", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
@@ -385,8 +386,17 @@ Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno posse
     - Informali: Sono i documenti interni non destinati alla divulgazione con esterni e fini a loro stessi. Perciò non necessitano di versionamento. Spesso sono bozze in preparazione a documenti formali, o note e appunti generiche.
 
 === Struttura file di progetto
+In questa sezione viene descritta la struttura dei vari file di progetto.\ Verrà in seguito descritta la parte di introduzione, comune fra i vari documenti, e successivamente una descrione più accurata per ogni documento.
+==== Introduzione
+Ogni documento ha come prima sezione quella di introduzione, tale sezione serve per introdurre il documento al lettore e sarà composta dalle seguenti sotto sezioni:
+    - Scopo del documento;
+    - Scopo del prodotto: questa parte spiega lo scopo del nostro prodotto software;
+    - Glossario;
+    - Maturità e miglioramti;
+    - Riferimenti.
 
 ==== Analisi dei Requisiti
+
 ==== Glossario
 ==== Piano di Progetto
 ==== Piano di Qualifica
