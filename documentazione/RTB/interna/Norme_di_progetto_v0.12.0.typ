@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.12.0", "22-12-2023", p.passarella, "", "sezione 1.4",
     "0.11.1", "22-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
     "0.11.0", "21-12-2023", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
     "0.10.0", "21-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.4 Norme tipografiche",
@@ -43,6 +44,34 @@ Si fa inoltre notare la presenza di un Glossario nel quale sono riportati i term
 Questo documento è stato creato seguendo un approccio incrementale, il che implica la sua natura adattabile e suscettibile di modifiche nel tempo. Queste modifiche saranno apportate in risposta alle esigenze concordate tra i membri del gruppo e il proponente. Pertanto, questa versione del documento non deve essere considerata come una versione definitiva o completa, ma piuttosto come un punto di partenza che sarà ulteriormente sviluppato e aggiornato per meglio rispondere alle mutevoli esigenze del progetto.
 
 == Riferimenti /** elenco con link dei file a cui si fa riferimento (capitolato, slide del prof, altri file nostri) */
+
+=== Riferimenti normativi
+- Capitolato C2 - Sistema di raccomandazione
+https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf
+
+=== Riferimenti informativi
+
+==== Slide corso di ingegneria del software
+- T2 - Processi di ciclo di vita
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf
+
+- T6 - Progettazione software
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf
+
+- T7 - Qualità del software
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf
+
+- T9 - Verifica e validazione: introduzione
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf
+
+- T10 - Verifica e validazione: analisi statica
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf
+
+- T11 - Verifica e validazione: analisi dinamica
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf
+
+- P2 - Diagrammi dei casi d'uso
+https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf
 
 = Processi primari
 
