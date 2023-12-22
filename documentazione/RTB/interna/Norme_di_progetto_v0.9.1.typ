@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.11.1", "22-12-2023", p.carraro, "", "Completata sezione Struttura file di progetto",
     "0.11.0", "21-12-2023", p.carraro, "", "Inizio sezione Struttura file di progetto",
     "0.10.0", "21-12-2023", p.carraro, "", "Completata sezione Norme di tipografia",
     "0.9.1", "20-12-2023", p.rosson, "", "Correzione sezione use case",
@@ -396,11 +397,34 @@ Ogni documento ha come prima sezione quella di introduzione, tale sezione serve 
     - Riferimenti.
 
 ==== Analisi dei Requisiti
+Il documento Analisi dei Requisiti va strutturato nel seguente modo:
+    - Descrizione: sezione che descrive brevemente il prodotto software, il suo obiettivo, le funzionalita' e gli utenti;
+    - Casi d'uso: sezione che descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le post condizioni, lo scenario principale e le generalizzazioni;
+    - Requisiti: sezione che descrive in maniera approfondita i requisiti del prodotto. \ Vanno segnati i requisiti funzionali, di qualita' e requisiti di vincolo, oltre al tracciamento dei requisiti stessi;
+    - Elenchi: questa sezione deve comprendere gli elenchi delle immagini e delle tabelle utilizzate all'interno del file.
 
 ==== Glossario
+Il documento Glossario va strutturato nel seguento modo:\
+Le sezione suddividono il documento in ordine alfabelico, le sottosezioni avranno come titolo la parola e come descrizione la definizione della parola.
+
 ==== Piano di Progetto
+Il documento Piano di Progetto va strutturato nel seguento modo:
+    - Analisi dei rischi: In questa sezione vanno definiti i rischi possibili del progetto. \ I rischi vanno divisi in rischi personali, rischi organizzativi e rischi tecnologici/software; 
+    - Pianificazione: In questa sezione vanno descritte le modalita' di pianificazione durante il progetto. \ In particolare vanno inseriti i Metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attivita' e distibusione dei ruoli;
+    - Preventivi e Consumi: In questa sezione vanno descritti i preventi e consumi durante il progetto, per semplicita' di lettura si utilizzeranno tabelle e grafici a torta.
+
 ==== Piano di Qualifica
-==== Norme di Progetto 
+Il documento Piano di Qualifica va strutturato nel seguente modo:
+    - Qualita' del prodotto: In questa sezione va strutturata la modilita' e le metriche di valutazione del prodotto software, in particolare l'architettura, la documentazione e la qualita' del software;
+    - Qualita' di processo: In questa sezione va strutturata la modalita' e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
+    - Controllo di qualita': In questa sezione vanno spiegati i test di controllo con relativi grafici e tabelle;
+    - Miglioramenti: In questa sezione vanno indicati i miglioramenti possibili del prodotto e del processe.
+
+==== Norme di Progetto
+Il documento Norme di Progetto va strutturato nel seguento modo:
+    - Processi Primari: In questa sezione vanno descritti i processi primari: Fornitura, Sviluppo, Gestione Operativa e Manutenzione;
+    - Processi di supporto: In questa sezione vanno descritti i processi di supporto: Documentazione, Gestione, Qualifica, Revisione e Verifica e Risoluzione dei problemi;
+    - Processi organizzativi: In questa sezione vanno descritti i processi organizzativi: la gestione, in particolare gestione ruoli e comunicazioni, le infrastrutture, i miglioramenti e soprattutto la formazione.
 
 == Gestione della configurazione
 
