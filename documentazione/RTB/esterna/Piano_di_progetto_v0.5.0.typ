@@ -8,6 +8,9 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.3", "2023-12-20", p.favaron, "", "Creata un'unica leggenda per i grafici nella sezione preventivi e consultivi",
+    "0.5.2", "2023-12-20", p.favaron, "", "Modifica al fomato delle date delle varie sprint",
+    "0.5.1", "2023-12-20", p.favaron, "", "Stesura sprint.4",
     "0.5.0", "2023-12-16", p.rosson, p.baggio, "Prima stesura sezione 4, con aggiunta di grafici e tabelle",
     "0.4.1", "2023-12-06", p.bomben, p.rosson, "Stesura sprint.2",
     "0.4.0", "2023-12-01", p.rosson, p.carraro, "Prima stesura sezione 2, Analisi dei rischi",
@@ -307,7 +310,10 @@ Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro respo
 
 === RTB
 ==== sprint.1
-- Periodo: 7/11 (1 settimana)--> 14/11/2023-23/11/2023 (1 settimana e 2 giorni)
+- Periodo: 2023/11/07-2023/11/23 (2 settimane e 2 giorni)
+La prima settimana che va dal 2023/11/07 al 2023/11/14 è stata di "assestamento".\
+La seconda settimana che va dal 2023/11/14 al 2023/11/23 (1 settimana e 2 giorni).
+
 - Macro-issues:
   
   -- Approvare quanto prodotto nello sprint.1;\
@@ -334,7 +340,7 @@ figure(
   Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actions. Riadattamento della vecchia documentazione.
 
 ==== sprint.2
-- Periodo: 24/11/2023-4/12/2023 (1 settimana e 3 giorni)
+- Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
 - Macro-issues:
 
   -- Approvate quanto prodotto nello sprint.2;\
@@ -357,7 +363,7 @@ figure(
 - Sintesi:
 In questo secondo sprint si è iniziato a ragionare anche sul Design e ad una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di amministratore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
 
-- Gnatt view:
+- Gantt view:
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#2.png", height: auto, width: auto),
@@ -371,7 +377,7 @@ figure(
 Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente. 
 
 ==== sprint.3
-- Periodo: 4/12/2023-11/12/2023 (1 settimana)
+- Periodo: 2023/12/04-2023/12/11 (1 settimana)
 - Macro-issues:
 
   -- Approvate quanto prodotto nello sprint.3;\
@@ -384,15 +390,15 @@ Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente.
 
 - Issue e task:
   + Completamento prima stesura sezione 4 file "Analisi dei requisiti";
-  + Stesura verbale interno 04/12/2023;
-  + Stesura Verbale esterno 06/12/23;
+  + Stesura verbale interno 2023/12/04;
+  + Stesura Verbale esterno 2023/12/06;
   + Prima stesura sezione 2 file "Norme di progetto";
   + Continuazione sezione 4 file "Analisi dei requisiti".
 
 - Sintesi:
 Durante questo terzo sprint, il team ha deciso di focalizzare più risorse verso lo sviluppo del PoC senza però tralasciare la documentazione di progetto. In particolare si sono fatti grandi progessi lato implementazione del prodotto. Progressi che sono stati condivisi con il proponente riscontrando approvazione generale. Per quanto riguarda la documentazione, sono state apportate migliorie generali ponendo più attenzione verso le "Norme di progetto".
 
-- Gnatt view:
+- Gantt view:
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#3.png", height: auto, width: auto),
@@ -402,10 +408,41 @@ figure(
 )
 
 - Imprevisti incotrati e loro risoluzione:
-nd.
-==== sprint.4
+nd.\
 
-// imprevisti: problema con dataset e creazione del relativo db, dati alcuni errori di formattazione
+==== sprint.4
+- Periodo: 2023/12/11-2023/12-18 (1 settimana)
+- Macro-issues:
+
+  -- Approvare quanto prodotto nello sprint.4;\
+  -- Revisionare quanto prodotto nello sprint.4;\
+  -- Documentazione;\
+  -- POC - completamento prima versione.\
+
+- Issue e task:
+  -- Continuazione stesura del documento "Norme di Progetto";\
+  -- Continuazione stesura del documento "Analisi dei Requisiti";\
+  -- Continuazione stesura del documento "Glossario";\
+  -- Continuazione stesura del documento "Piano di Progetto";\
+  -- Riadattamento verbali interni a nuova struttura;\
+  -- Stesura verbale interno del 2023/12/11.\
+
+- Sintesi:
+Durante la quarta sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin in data 2023/12/15 relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
+È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prioma versione stabile.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#4.png", height: auto, width: auto),
+  caption: [sprint.4]
+  )
+  
+)
+
+- imprevisti: 
+Durante la seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
+
 === PB
 === CA
 
@@ -415,6 +452,15 @@ nd.
 
 - Premessa:
 La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo.
+
+- Legenda: 
+  + S --> Scarto in ore;
+  + Totale (1) --> Totale ore per ruolo;
+  + C. o. --> Costo per ora;
+  + Costo --> Costo totale per ruolo;
+  + Totale (2) --> Costo totale sprint;
+  + Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
+  + Bilancio --> Bilancio relativo alla fine dello sprint.
 
 == RTB
 
@@ -451,15 +497,6 @@ figure(
 #figure(
   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#1.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.1]
 )
-
-Legenda: 
-+ S --> Scarto in ore;
-+ Totale (1) --> Totale ore per ruolo;
-+ C. o. --> Costo per ora;
-+ Costo --> Costo totale per ruolo;
-+ Totale (2) --> Costo totale sprint;
-+ Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-+ Bilancio --> Bilancio relativo alla fine dello sprint.
 
 #figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#1.png", height: 30%, width: auto),
@@ -502,15 +539,6 @@ figure(
   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#2.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.2]
 )
 
-Legenda: 
-+ S --> Scarto in ore;
-+ Totale (1) --> Totale ore per ruolo;
-+ C. o. --> Costo per ora;
-+ Costo --> Costo totale per ruolo;
-+ Totale (2) --> Costo totale sprint;
-+ Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-+ Bilancio --> Bilancio relativo alla fine dello sprint.
-
 #figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 30%, width: auto),
   caption: [consuntivi/bilanci/sprint.2]
@@ -550,15 +578,6 @@ figure(
 #figure(
   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#3.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.3]
 )
-
-Legenda: 
-+ S --> Scarto in ore;
-+ Totale (1) --> Totale ore per ruolo;
-+ C. o. --> Costo per ora;
-+ Costo --> Costo totale per ruolo;
-+ Totale (2) --> Costo totale sprint;
-+ Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-+ Bilancio --> Bilancio relativo alla fine dello sprint.
 
 #figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#3.png", height: 30%, width: auto),

@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.6.0", "2023-12-21", p.pandolfo, "", "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
     "0.3.0", "2023-11-27", p.carraro, p.rosson, "Stesura sezione qualità di architettura",
@@ -40,7 +41,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - T7 - Qualità del software (slide del corso di Ingegneria del Software);
 - T8 - Qualità di processo (slide del corso di Ingegneria del Software).
 
-= Piano di qualità
+= Qualità di prodotto
 
 == Qualità dell'architettura
 La qualità di una buona architettura è definita da questi aspetti: \
@@ -104,23 +105,146 @@ In particolare andranno verificati:
   - SFOUT, indice di dipendenza;
   - Una buona progettazione ha componenti con SFIN elevato.
 
-//lasciate stare questa parte, da definire in seguito
+== Qualità della documentazione
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Correttezza \ linguistica],
+  [I documenti non devono avere errori grammaticali.],
+  [MPD1],
+  [Leggibilità],
+  [Il contenuto dei documenti deve essere comprensibile all'utente.],
+  [MPD2],
+)
+
+=== Metriche utilizzate
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
+  [MPD1],
+  [Errori Ortografici], 
+  [0%],
+  [0%],
+  [MPD2],
+  [Indice di Gulpease], 
+  [≥ 60],
+  [100],
+)
+
 == Qualità del software
-La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
+DA RISCRIVERE La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
 Chi sviluppa il prodotto avrà una visione intrinseca della qualità, ovvero conforme ai requisiti o idonea all'uso, chi usa il prodotto avrà una visione relativa della qualità, ovvero la soddisfazione del cliente ed infine terze parti che confrontano il prodotto avranno una visione quantitativa della qualità, ovvero una misurazione oggettiva o, appunto, per confronto.\
 Nel controllo di qualità bisogna assicurare conformità passo-passo invece che solo a fine corsa.
-=== I Principi
-I Sette Principi di gestione della Qualità:
-- Customer Focus: Incontra e supera le aspettavive del cliente;
+#table(
+  columns: (35mm, auto, 30mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Obiettivo*], [*Descrizione*], [*Metriche*],
+  [Funzionalità],
+  [Capacità del prodotto di offrire tutte le funzioni individuate nell’Analisi dei requisiti, soddisfando tutti i requisiti.],
+  [MPD3, MPD4 \ MPD5],
+  [Usabilità],
+  [Capacità di essere comprensibile e di facile utilizzo per l’utente, in modo da renderne piacevole l'esperienza.],
+  [MPD6, MPD7],
+  [Portabilità],
+  [Capacità di poter funzionare in diversi ambienti di esecuzione.],
+  [MPD8],
+  [Efficienza],
+  [Capacità di svolgere un compito nel minor tempo possibile e utilizzando la minor quantità possibile di risorse.],
+  [MPD9],
+  [Affidabilità],
+  [Capacità di svolgere i compiti anche in caso di problemi ed errori],
+  [MPD10],
+  [Copertura dei test],
+  [Capacità del prodotto di superare tutti  i test a cui viene sottoposto, al fine di garantire una corretta implementazione dei requisiti individuati],
+  [MPD11, MPD12, \ MPD13, MPD14],
+)
 
-//lasciate stare questa parte, da definire in seguito
+=== Metriche utilizzate
+#table(
+  columns: (25mm, auto, 35mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
+ //FUNZIONALITA'
+  [MPD3],
+  [Copertura dei requisiti obbligatori], 
+  [100%],
+  [100%],
+  [MPD4],
+  [Copertura  dei requisiti desiderabili], 
+  [≥ 85%],
+  [100%],
+  [MPD5],
+  [Copertura  dei requisiti opzionali], 
+  [≥ 70%],
+  [100%],
+//USABILITA'
+  [MPD6],
+  [Facilità di utilizzo], 
+  [≤ 7 click],
+  [≤ 5 click],
+  [MPD7],
+  [Tempo per l'apprendimento], 
+  [≤ 8 minuti],
+  [≤ 5 minuti],
+//PORTABILITA'
+  [MPD8],
+  [Versioni browser supportate], 
+  [≥ 80%],
+  [100%],
+//EFFICIENZA
+  [MPD9],
+  [Tempo medio di risposta al comando di ricerca], 
+  [5 secondi],
+  [3 secondi],
+//AFFIDABILITA'
+  [MPD10],
+  [Gestione errori], 
+  [≥ 50%],
+  [100%],
+//COPERTURA TEST
+  [MPD11],
+  [Branch Coverage], 
+  [≥ 80%],
+  [100%],
+  [MPD12],
+  [Statement Coverage], 
+  [≥ 80%],
+  [100%],
+  [MPD13],
+  [Function Coverage], 
+  [≥ 80%],
+  [100%],
+  [MPD14],
+  [Line Coverage], 
+  [≥ 80%],
+  [100%],
+)
 
-== Qualità di processo
+
+= Qualità di processo
 Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
 La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
  In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.\
 
-=== Processi primari
+== Processi primari
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -135,15 +259,9 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Sviluppo],
   [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
   [MPC9, MPC10],
-  [Gestione operativa],
-  [Processo che ha lo scopo di fornire dettagli sull’installazione del software come requisiti di sistema e procedure necessarie ad eseguire correttamente il prodotto.],
-  [MPC....],
-  [Manutenzione],
-  [],
-  [MPC....],
 )
 
-=== Processi di supporto
+== Processi di supporto
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -152,21 +270,18 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   ),
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
-  [Documentazione],
-  [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
-  [MPC....],
-  [Gestione della configurazione],
-  [Processo con lo scopo di eseguire tutte le pratiche essenziali volte a tracciare lo stato di avanzamento del  prodotto],
-  [MPC....],
+  [Verifica],
+  [Processo che ha lo scopo di confermare che ciascun servizio realizzato soddisfi i requisiti specificati dal  cliente.],
+  [MPC11, MPC12],
   [Accertamento della qualità],
   [Processo con lo scopo di assicurare che il prodotto e i servizi offerti siano conformi agli standard definiti, rispettando gli obiettivi di qualità.],
-  [MPC....],
-  [Qualifica],
-  [Processo che ha lo scopo di confermare che ciascun servizio realizzato soddisfi i requisiti specificati dal  cliente.],
-  [MPC....],
+  [MPC13],
+  /* [Documentazione],
+  [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
+  [MPC....],   */
 )
 
-=== Processi organizzativi
+== Processi organizzativi
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -175,22 +290,13 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   ),
   align: center,
   [*Obiettivo*], [*Descrizione*], [*Metriche*],
-  [Gestione dei processi],
-  [],
-  [MPC.......],
-  [Infrastrutture],
-  [],
-  [MPC.......],
-  [Miglioramenti],
-  [],
-  [MPC.......],
-  [Formazione],
-  [],
-  [MPC.......],
+  [Gestione \ organizzativa],
+  [Processo che si occupa di regolare le modalità di coordinamento del gruppo.],
+  [MPC14],
 )
 
-=== Metriche utilizzate
-==== Processi primari
+== Metriche utilizzate
+=== Processi primari
 #table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
@@ -241,7 +347,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [100%],
 )
 
-==== Processi di supporto
+=== Processi di supporto
 #table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
@@ -249,35 +355,35 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
     y: 10pt,
   ),
   align: center,
-  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
+  [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
+  //VERIFICA
+  [MPC11],
+  [Code Coverage (CC)], 
+  [≥ 80%],
+  [100%],
+  [MPC12], 
+  [Passed Tests (PT)], 
+  [≥ 80%],
+  [100%],
+  //ACCERTAMENTO DELLA QUALITA
+  [MPC13],
+  [Quality Metrics Satisfied (QMS)], 
+  [≥ 90%],
+  [100%],
   //DOCUMENTAZIONE
-  [MPC ...],
+  /* [MPC ...],
   [Indice Gulpease (IG)],
   [40-100],
   [60-100],
   [MPC ...],
   [Correttezza Ortografica (CO)],
   [40-100],
-  [60-100],
-  [MPC ...], 
-  //ACCERTAMENTO DELLA QUALITA
-  [Quality Metrics Satisfied (QMS)], 
-  [≥ 90%],
-  [100%],
-  //QUALIFICA
-  [MPC...], 
-  [Code Coverage (CC)], 
-  [≥ 80%],
-  [100%],
-  [MPC ...], 
-  [Passed Tests (PT)], 
-  [≥ 80%],
-  [100%],
+  [60-100], */
 )
 
-==== Processi organizzativi
+=== Processi organizzativi
 #table(
-  columns: (25mm, auto, 35mm, 35mm),
+  columns: (25mm, 60mm, 35mm, 35mm),
    inset: (
     x: 5pt,
     y: 10pt,
@@ -285,7 +391,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   align: center,
   [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*],
   //GESTIONE DEI PROCESSI
-  [MPC ...],
+  [MPC14],
   [Non-calculated Risk (NCR)],
   [≤ 5],
   [0],

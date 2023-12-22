@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.12.1", "2023-12-15", p.rosson, "", "Correzione UC1 e sotto casi",
     "0.12.0", "2023-12-15", p.bomben, p.baggio, "Sistemazione UC3",
     "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
@@ -100,101 +101,607 @@ Questa sezione è dedicata all'identificazione e alla dettagliata descrizione di
 == Attori
 Il sistema dispone di due attori:
 - Admin;
-- Users.
+- User.
 
-== UC1 - Login
+== Definizione casi d'uso
 
+=== UC1 - Login
 #figure(
-  image("/imgs/Uml/UC1.jpg", width: 80%),
+  image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
     Login
   ],
 )
-
 *Attori:*
 - Admin;
-- Users.
+- User.
 *Precondizioni:*
-- L'utente possiede un account valido;
+- L'utente possiede un account valido consegnatoli dall'amministrazione;
 - L'utente non ha già eseguito l'accesso;
 - L'utente ha una connessione stabile.
 *Postcondizioni:*
 - L'utente ha effettuato correttamente l'accesso ed è stato riconosciuto dal sistema.
 *Scenario principale:*
-- Admin/Users:
-    - inserisce la propria email nel campo [email] del modulo di accesso (UC1.1).
+- Admin/User:
+    - inserisce il proprio username nel campo [username] del modulo di accesso (UC1.1);
     - inserisce la propria password nel campo [password] del modulo di accesso (UC1.2).
 - Sistema:
-    - Il sistema di autenticazione verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema.
-    - Se le credenziali sono corrette, l'utente viene autenticato con successo e reindirizzato alla pagina principale.
-    - Se le credenziali sono errate, il sistema di autenticazione visualizza un messaggio di errore per informare l'utente della fallita autenticazione (UC2).
-*Generalizzazioni:*
-    - UC1.1 - Inserimento email.
-    - UC1.2 - Inserimento password.
+    - verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema;
+    - se le credenziali sono corrette, autentica l'utente con successo, tramite la creazione di cookies di sessione e reindirizzato alla pagina principale;
+    - se le credenziali sono errate, mostra un messaggio di errore per informare l'utente della fallita autenticazione (UC3).
 *Estensioni:*
-- UC2 - Visualizzazione errore di login
+- UC2 - Visualizzazione alert di manutenzione;
+- UC3 - Visualizzazione errore di login.
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- Admin/User:
+  - UC1.1 - Inserimento email;
+  - UC1.2 - Inserimento password.
 
+==== UC1.1 - Inserimento username
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta facendo il Login (UC1).
+  *Postcondizioni:*
+  - L'utente inserisce correttamente il proprio username, precedentemente memorizzato nel sistema, per l'autenticazione.
+  *Scenario principale:*
+  - Admin/User:
+      - inserisce il proprio username nel campo [username].
+  - Sistema:
+      - verifica che lo username inserito sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
+      - verifica la correttezza dell'username;
+      - prosegue con l'autenticazione dell'utente utilizzando lo username inserito.
+
+==== UC1.2 - Inserimento password
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta facendo il Login (UC1).
+  *Postcondizioni:*
+  - L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
+  *Scenario principale:*
+  - Admin/User:
+      - inserisce la propria password nel campo [password].
+  - Sistema:
+      - verifica che la password inserita sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
+      - verifica la correttezza della password;
+      - prosegue con l'autenticazione dell'utente utilizzando la password inserita.
+
+=== UC2 - Visualizzazione alert di manutenzione
 #figure(
-  image("/imgs/Uml/UC1 generalizzazione.jpg", width: 80%),
+  image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
-    Inserimento email e password per accesso
+    Visualizzazione alert di manutenzione
   ],
 )
-
-=== UC1.1 - Inserimento email
 *Attori:*
-- Admin.
-- Users.
+- Admin;
+- User.
 *Precondizioni:*
-- L'utente possiede un account valido per l'accesso alla piattaforma.
-- L'utente non ha ancora eseguito l'accesso.
-- L'utente sta facendo il Login (UC1).
+- Il sistema è in mautenzione o in uno stato che non rende disponibile l'uso del servizio.
 *Postcondizioni:*
-- L'utente inserisce correttamente la propria email, precedentemente memorizzata nel sistema, per l'autenticazione.
+- L'utente vede un messaggio esplicativo relativo lo stato del sistema.
 *Scenario principale:*
-- Admin/Users:
-    - inserisce la propria email nel campo email.
+- Admin/User:
+    - accede alla pagina di login della piattaforma;
+    - visualizza l'alert di manutenzione.
 - Sistema:
-    - il sistema verifica che l'email inserita sia nel formato corretto.
-    - il sistema verifica la correttezza della email.
-    - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
+    - verifica lo stato dei servizi;
+    - mostra l'alert informativo.
 
-=== UC1.2 - Inserimento password
+=== UC3 - Visualizzazione errore di login
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione errore di login
+  ],
+)
 *Attori:*
 - Admin.
-- Users.
+- User.
 *Precondizioni:*
-- L'utente possiede un account valido per l'accesso alla piattaforma.
-- L'utente non ha ancora eseguito l'accesso.
-- L'utente sta facendo il Login (UC1).
-*Postcondizioni:*
-- L'utente inserisce correttamente la propria password, precedentemente memorizzata nel sistema, per l'autenticazione.
-*Scenario principale:*
-- Admin/Users:
-    - inserisce la propria password nel campo email.
-- Sistema:
-    - il sistema verifica la correttezza della password.
-    - prosegue con l'autenticazione dell'utente utilizzando l'email inserita.
-
-== UC2 - Visualizzazione errore di login
-*Attori:*
-- Admin.
-- Users.
-*Precondizioni:*
-- L'utente ha inserito una combinazione di email e/o password errate o ha lasciato vuoto qualche campo durante il processo di login.
+- L'utente ha inserito una combinazione di username e/o password errate, ha inserito username e/o password in un formato sbagliato o ha lasciato vuoto qualche campo durante il processo di login;
 - Il sistema ha verificato che le credenziali inserite negli appositi campi non siano corrette.
 *Postcondizioni:*
-- L'utente vede un messaggio esplicativo relativo all'autenticazione fallita.
-- L'utente consapevole dell'errore di login può correggere le credenziali e provare ad effettuare nuovamente il login.
+- L'utente vede un messaggio esplicativo relativo all'errore riscontrato;
+- L'utente consapevole dell'errore può correggere le credenziali e provare ad effettuare nuovamente il login.
 *Scenario principale:*
-- Admin/Users:
-    - Accede alla pagina di login della piattaforma.
-    - Visualizza il messaggio di errore dopo aver inserito le credenziali sbagliate.
-    - L'utente può decidere se correggere le credenziali e provare ad effettuare nuovamente il login.
+- Admin/User:
+    - accede alla pagina di login della piattaforma;
+    - visualizza il messaggio di errore dopo aver inserito credenziali sbagliate;
+    - decide se correggere le credenziali e provare ad effettuare nuovamente il login.
 - Sistema:
-    - Verifica le credenziali immesse dall'utente nei relativi campi (email, password).
-    - Se il sistema rileva le credenziali come non corrette, mostra all'utente il messaggio di errore di login.
+    - verifica le credenziali immesse dall'utente nei relativi campi (username, password);
+    - se il sistema rileva le credenziali come non corrette, mostra il messaggio di errore di login.
 
+=== UC4 - Avviso normativa sui Cookies
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Avviso normativa sui Cookies
+  ],
+)
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente si trova nella pagina di login della piattaforma;
+*Postcondizioni:*
+- L'utente è a conoscenza di come vengono utilizzati i cookie all'interno del sito;
+- L'utente accetta la normativa sui cookies.
+*Scenario principale:*
+- Admin/User:
+  - accede alla pagina di login della piattaforma;
+  - visualizza il messaggio relativo alla normativa sui cookies;
+  - decide se informarsi meglio espandendo la pagina che espone in maniera dettagliata l'argomento all'utente (UC4.1);
+  - accetta la normativa sui cookies (UC4.2).
+- Sistema:
+  - se l'utente vuole, lo reindirizza alla pagina che espone in maniera dettagliata l'argomento (UC4.1);
+  - prende a conoscenza che l'utente ha accettato la normativa e l'utilizzo di cookies (UC4.2);
+  - fa sparire l'avviso una volta presa conoscenza dell'accettazione della normativa sui cookies.
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- Admin/User:
+  - UC4.1 - Visualizzazione normativa sui cookies;
+  - UC4.2 - Accettazione normativa sui cookies.
+
+==== UC4.1 - Visualizzazione normativa sui cookies
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente è stato reindirizzato correttamente dal sistema.
+*Postcondizioni:*
+- All'utente viene mostrata una pagina informativa relativa alla normativa sui cookies.
+*Scenario principale:*
+- Admin/User:
+  - legge la normativa sui cookies.
+
+==== UC4.2 - Accettazione normativa sui cookies
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente ha visualizzato il messaggio relativo alla normativa sui cookies;
+*Postcondizioni:*
+- L'utente accetta la normativa sui cookies.
+*Scenario principale:*
+- Admin/User:
+  - visualizza il messaggio relativo alla normativa sui cookies;
+  - accetta la normativa sui cookies;
+- Sistema:
+  - prende a conoscenza che l'utente ha accettato la normativa e l'utilizzo di cookies;
+
+=== UC5 - Visualizzazione "Menù" delle funzionalità
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Menù" delle funzionalità
+  ],
+)
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema.
+*Postcondizioni:*
+- L'utente visualizza le opzioni del menù relative alla sua categoria;
+- L'utente decide se selezionare o meno una delle opzioni disponibili.
+*Scenario principale:*
+- Admin/User:
+    - seleziona il bottone del menù nell'header per visualizzarne il contenuto;
+    - visualizza i bottoni interni al menù legati alle funzionalità del sito;
+    - decide se visualizzare o meno una delle funzionalità disponibili (Admin/User: UC8, UC9, UC10, UC11; Admin: UC12, UC13, UC14).
+- Sistema:
+    - mostra all'utente i bottoni relativi alle funzionalità della sua categoria;
+    - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- Admin/User:
+  - UC5.1 - Visualizzazione funzionalità Admin/User.
+- Admin:
+  - UC5.2 - Visualizzazione funzionalità Admin.
+
+==== UC5.1 - Visualizzazione funzionalità Admin/User
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù.
+*Postcondizioni:*
+- L'utente visualizza le opzioni del menù condivise dalle categorie Admin e User;
+- L'utente decide se selezionare o meno una delle opzioni disponibili.
+*Scenario principale:*
+- Admin/User:
+  - visualizza i bottoni interni al menù legati alle funzionalità del sito;
+  - decide se visualizzare o meno una delle funzionalità disponibili (UC8, UC9, UC10, UC11).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+
+==== UC5.2 - Visualizzazione funzionalità Admin
+*Attori:*
+- Admin.
+- *Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù;
+- L'utente fa parte della categoria Admin.
+*Postcondizioni:*
+- L'utente visualizza le opzioni del menù della categoria Admin;
+- L'utente decide se selezionare o meno una delle opzioni disponibili.
+*Scenario principale:*
+- Admin:
+  - visualizza i bottoni interni al menù legati alle funzionalità del sito;
+  - decide se visualizzare o meno una delle funzionalità disponibili (UC12, UC13, UC14).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità della categoria Admin;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+
+=== UC6 - Visualizzazione "Profilo Utente"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Profilo Utente"
+  ],
+)
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema.
+*Postcondizioni:*
+- L'utente visualizza nella vista principale della pagina il suo profilo.
+*Scenario principale:*
+- Admin/User:
+  - seleziona il bottone del profilo utente nell'header per visualizzarne il contenuto;
+  - visualizza i dati utente (UC6.1);
+  - decide se modificare i dati modificabili, ovvero email e password (UC6.2).
+- Sistema:
+  - verifica che utente sta richiedendo di visualizzare il proprio profilo tramite cookies di sessione;
+  - mostra all'utente i suoi dati, permettendogli di visualizzare le sue informazioni (UC6.1);
+  - fornisce all'utente la possibilità di modificare alcuni dati non strettamente legati ad esso, ovvero password ed email (UC6.2).
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- UC6.1 - Visualizzazione dati utente
+- UC6.2 - Modifica dati utente
+
+==== UC6.1 - Visualizzazione dati utente
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza i propri dati utente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza i dati utente in chiaro, ovvero anagrafica, email e username (UC6.1.1, UC6.1.2, UC6.1.3);
+  - decide se visualizzare i dati nascosti, ovvero la password (UC6.1.4).
+- Sistema:
+  - mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC6.1.1, UC6.1.2, UC6.1.3);
+  - se richiesto mostra all'utente i dati nascosti, ovvero la password (UC6.1.4).
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- UC6.1.1 - Visualizzazione anagrafica
+- UC6.1.2 - Visualizzazione email
+- UC6.1.3 - Visualizzazione username
+- UC6.1.4 - Visualizzazione password
+
+===== UC6.1.1 - Visualizzazione anagrafica
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
+*Scenario principale:*
+- Admin/User:
+  - visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
+- Sistema:
+  - mostra all'utente i suoi dati anagrafici in chiaro, ovvero nome, cognome e data di nascita.
+
+===== UC6.1.2 - Visualizzazione email
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza la propria email.
+*Scenario principale:*
+- Admin/User:
+  - visualizza la propria email.
+- Sistema:
+  - mostra all'utente la sua email in chiaro.
+
+===== UC6.1.3 - Visualizzazione username
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente".
+*Postcondizioni:*
+- L'utente visualizza il proprio username.
+*Scenario principale:*
+- Admin/User:
+  - visualizza il proprio username.
+- Sistema:
+  - mostra all'utente il suo username in chiaro.
+
+===== UC6.1.4 - Visualizzazione password
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente visualizza la propria password nascosta;
+- L'utente decide di visualizzare la propria password in chiaro.
+*Postcondizioni:*
+- L'utente visualizza la propria password in chiaro.
+*Scenario principale:*
+- Admin/User:
+  - visualizza la propria password nascosta;
+  - decide di visualizzare la propria password in chiaro;
+  - visualizza la propria password in chiaro.
+- Sistema:
+  - mostra all'utente la sua password nascosta;
+  - prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
+  - mostra all'utente la sua password in chiaro.
+
+==== UC6.2 - Modifica dati utente
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente decide di modificare i propri dati modificabili.
+*Postcondizioni:*
+- L'utente modifica i propri dati modificabili;
+- I nuovi dati venngono sostituiti ai precedenti e salvati.
+*Scenario principale:*
+- Admin/User:
+  - decide di modificare i propri dati modificabili, ovvero email (UC6.2.1) e password (UC6.2.2);
+  - inserisce i nuovi dati che vuole sostituire ai precedenti;
+  - conferma i nuovi dati che vuole sostituire ai precedenti;
+  - conferma la sua scelta confermando il salvataggio dei nuovi dati nel sistema;
+  - nega la sua scelta tramite il processo di annullamento dell'operazione.
+- Sistema:
+  - prende a conoscenza l'intenzione dell'utente di modificare i propri dati modificabili, ovvero email (UC6.2.1) e password (UC6.2.2);
+  - modifica l'interfaccia per permettere all'utente di inserire i nuovi dati ed aggiungendo l'opzione di conferma della modifica dei dati;
+  - se i nuovi dati vengono confermati, sostituisce i vecchi dati con i nuovi dati all'interno del sistema e li salva;
+  - se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente.
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+- *Use Case*:
+- UC6.2.1 - Modifica email
+- UC6.2.2 - Modifica password
+
+===== UC6.2.1 - Modifica email
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente decide di modificare la propria email.
+*Postcondizioni:*
+- L'utente modifica la propria email;
+- La nuova email viene sostituita alla precedente e salvata.
+*Scenario principale:*
+- Admin/User:
+  - decide di modificare la propria email;
+  - inserisce la nuova email;
+  - conferma la nuova email;
+  - conferma la sua scelta confermando il salvataggio della nuova email nel sistema;
+  - nega la sua scelta tramite il processo di annullamento dell'operazione.
+- Sistema:
+  - prende a conoscenza l'intenzione dell'utente di modificare la propria email;
+  - modifica l'interfaccia per permettere all'utente di inserire la nuova email ed aggiungendo l'opzione di conferma della modifica dell'email;
+  - se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
+  - se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+
+===== UC6.2.2 - Modifica password
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+- L'utente decide di modificare la propria password.
+*Postcondizioni:*
+- L'utente modifica la propria password;
+- La nuova password viene sostituita alla precedente e salvata.
+*Scenario principale:*
+- Admin/User:
+  - decide di modificare la propria password;
+  - inserisce la nuova password;
+  - conferma la nuova password;
+  - conferma la sua scelta confermando il salvataggio della nuova password nel sistema;
+  - nega la sua scelta tramite il processo di annullamento dell'operazione.
+- Sistema:
+  - prende a conoscenza l'intenzione dell'utente di modificare la propria password;
+  - modifica l'interfaccia per permettere all'utente di inserire la nuova password ed aggiungendo l'opzione di conferma della modifica dell'password;
+  - se la nuova password viene confermata, sostituisce la vecchia password con la nuova password all'interno del sistema e la salva;
+  - se la nuova password non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+
+=== UC7 - Logout
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Logout
+  ],
+)
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema.
+*Postcondizioni:*
+- Il cookie di sessione viene rimosso;
+- L'utente viene reindirizzato alla pagina di login.
+*Scenario principale:*
+- Admin/User:
+  - decide di uscire dalla piattaforma tramite l'opzione di logout.
+- Sistema:
+  - prende a conoscenza la decisione dell'utente di voler uscire dalla piattaforma;
+  - rimuove i cookie di sessione relativi all'utente;
+  - reindirizza l'utente alla pagina di login della piattaforma.
+*Generalizzazioni:*
+- *Attori*:
+- Admin --> User.
+
+=== UC8 - Visualizzazione "Ricerca"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Ricerca"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC9 - Visualizzazione "Catalogo Prodotti"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Catalogo Prodotti"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC10 - Visualizzazione "Lista Clienti"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Lista Clienti"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC11 - Visualizzazione "Statistiche Mensili"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Statistiche Mensili"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC12 - Visualizzazione "Gestione Utenti"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Gestione Utenti"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC13 - Visualizzazione "Cronologia Ricerche"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Cronologia Ricerche"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC14 - Visualizzazione "Cronologia Feedback"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Cronologia Feedback"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+=== UC15 - Footer
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Footer
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+
+/*
 == UC3 - Visualizzazione pagina profilo personale
 
 #figure(
@@ -510,7 +1017,7 @@ Il sistema dispone di due attori:
     - Chiede conferma all'utente sul voler uscire dalla sessione corrente;
     - Termina la sessione dell'utente, reindirizzandolo alla pagina di login.
 
-
+*/
 = Requisiti
 In questa sezione esponiamo i requisiti individuati durante l'attività di analisi a partire dai casi
 d'uso, dall’analisi del capitolato d’appalto e dagli incontri interni e con il proponente. Ogni
