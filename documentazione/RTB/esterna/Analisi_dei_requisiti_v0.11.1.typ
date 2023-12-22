@@ -1265,6 +1265,26 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 
 === UC12 - Visualizzazione "Lista Clienti"
+#figure(
+  image("/imgs/Uml/UC1.png", width: 80%),
+  caption: [
+    Visualizzazione "Lista Clienti"
+  ],
+)
+*Attori:*
+
+*Precondizioni:*
+
+*Postcondizioni:*
+
+*Scenario principale:*
+
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC12.1 - Barra di ricerca per "Lista Clienti";
+- UC12.2 - Visualizzazione risultati di ricerca per "Lista Clienti".
 
 === UC13 - Visualizzazione "Statistiche Mensili"
 
