@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.6.0", "2023-12-22", p.favaron, "", "Seconda stesura sezione introduzione",
     "0.5.3", "2023-12-20", p.favaron, "", "Creata un'unica leggenda per i grafici nella sezione preventivi e consultivi",
     "0.5.2", "2023-12-20", p.favaron, "", "Modifica al fomato delle date delle varie sprint",
     "0.5.1", "2023-12-20", p.favaron, "", "Stesura sprint.4",
@@ -22,12 +23,25 @@
 )
 
 = Introduzione
-Il documento riguardante il piano di progetto comprende tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.\
-Oltre a dare modo ad esterni di capire e partecipare all'evoluzione del progetto fornisce dati precisi su costi e ripartizioni orarie.\
-Il documento sara' utile a chi si occupa della creazione del prodotto, dando modo al team di fare retrospettiva più agilmente, e a chi lo valutera'.
 
 == Scopo del documento
-Lo scopo è quindi quello di fornire una descrizione dettagliata e il piu' precisa possibile sulle metodolgie e applicazioni delle stesse riguardanti la pianificazione, e quindi la suddivisione oraria e dei costi.
+Il documento riguardante il piano di progetto è un elemento di fondamentale importanza per i progetti di sviluppo software che voglio rispettare i massimi standard di qualità definiti dall'insegnamento dell'ingegneria del software. \
+Il seguente documento ha lo scopo di descrivere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, specificandone l'applicazione.\
+Oltre a dare modo ad esterni di capire e partecipare all'evoluzione del progetto fornisce dati precisi su costi e ripartizioni orarie.\
+Il documento sara' utile a chi si occupa della creazione del prodotto, dando modo al team di fare retrospettiva più agilmente, e a chi lo valuterà.\
+Lo scopo è quindi quello di fornire una descrizione dettagliata e il piu' precisa possibile sulle metodolgie e applicazioni delle stesse riguardanti la pianificazione, e quindi la suddivisione oraria e dei costi.\
+Nel dettaglio, il Piano di Progetto affronta i seguenti temi:
+- Analisi dei rischi di progetto;
+- Suddivisione delle attività nei singoli periodi;
+- Suddivisione dei ruoli tra i membri del gruppo;
+- Relative difficoltà incontrate e strategie di risoluzione;
+- Stima dei costi e risorse nei singoli periodi con annesse variazioni.
+
+== Scopo del prodotto
+Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
+Dall'interfaccia utente del sistema software sarà possibile selezionare uno specifico cliente e visualizzare i prodotti da lui acquistati e quelli che il sistema ha individuato come raccomandati. Inoltre selezionato un articolo o un insieme di articoli il sistema suggerisce a quali clienti proporli, selezionandoli in base a quanto probabile siano interessati per i prodotti analizzati. I vari prodotti possono essere filtrati per categoria così da facilitare ricerche e restringere il campo di soluzione.\
+Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'algoritmo che ha fornito l'esito della suggerimento.\
+L'utente amministratore ha la possibilità di creare ulteriori account per eventuali operatori che necessitano di utilizzare l'applicativo.\
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
@@ -38,11 +52,30 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 
 == Riferimenti
 
+=== Riferimenti normativi
+- Norme di Progetto v.1.0.0;
+- Capitolato C2: Sistemi di raccomandazione\ 
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+- Regolamento progetto ditattico\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 === Riferimenti informativi
-- T4 - Gestione di progetto (slide del corso di Ingegneria del Software);
+- T3 - Ciclo di vita del software (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T3.pdf;
+- T4 - Gestione di progetto (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T4.pdf;
+- P2 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
 
-- Regolamento progetto didattico (slide del corso di Ingegneria del Software);
-
+== Scadenze
+La pianificazione descritta, in seguito, all'interno questo documento si basa su delle scadenze che il gruppo Farmacode si impegna a rispettare per lo sviluppo del progetto. Queste possono essere riassunte in una tabella:
+#table(
+  columns: (auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Revisione*],[*Data*],
+  [Prima revisione: Requirements and Technology Baseline [RTB]],[2023-01-05],
+  [Seconda revisione: Product Baseline [PB]],[2023-03-25],
+  [Terza Revisione: Customer Acceptance [CA]],[2023-04-10],
+)
 
 = Analisi dei rischi
 
