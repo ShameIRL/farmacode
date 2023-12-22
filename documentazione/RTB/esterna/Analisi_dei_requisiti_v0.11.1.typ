@@ -174,12 +174,13 @@ Il sistema dispone di due attori:
     - prosegue con l'autenticazione dell'utente utilizzando la password inserita.
 
 === UC2 - Visualizzazione alert di manutenzione
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione alert di manutenzione
-  ],
-)
+// #figure(
+//   image("/imgs/Uml/UC1.png", width: 80%),
+//   caption: [
+//     Visualizzazione alert di manutenzione
+//   ],
+// )
+//magari la mettiamo, anche se è molto banale?
 *Attori:*
 - Admin;
 - User.
@@ -199,12 +200,13 @@ Il sistema dispone di due attori:
 - Admin --> User.
 
 === UC3 - Visualizzazione errore di login
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione errore di login
-  ],
-)
+// #figure(
+//   image("/imgs/Uml/UC1.png", width: 80%),
+//   caption: [
+//     Visualizzazione errore di login
+//   ],
+// )
+// stessa cosa di UC2
 *Attori:*
 - Admin.
 - User.
@@ -228,7 +230,7 @@ Il sistema dispone di due attori:
 
 === UC4 - Avviso normativa sui Cookies
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC4.png", width: 80%),
   caption: [
     Avviso normativa sui Cookies
   ],
@@ -288,7 +290,7 @@ Il sistema dispone di due attori:
 
 === UC5 - Visualizzazione "Menù" delle funzionalità
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC5.png", width: 80%),
   caption: [
     Visualizzazione "Menù" delle funzionalità
   ],
@@ -320,6 +322,12 @@ Il sistema dispone di due attori:
   - UC5.2 - Visualizzazione funzionalità Admin.
 
 ==== UC5.1 - Visualizzazione funzionalità Admin/User
+#figure(
+  image("/imgs/Uml/UC5.1.png", width: 80%),
+  caption: [
+    Visualizzazione funzionalità Admin/User
+  ],
+)
 *Attori:*
 - Admin;
 - User.
@@ -337,6 +345,12 @@ Il sistema dispone di due attori:
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 
 ==== UC5.2 - Visualizzazione funzionalità Admin
+#figure(
+  image("/imgs/Uml/UC5.2.png", width: 80%),
+  caption: [
+    Visualizzazione funzionalità Admin
+  ],
+)
 *Attori:*
 - Admin.
 - *Precondizioni:*
@@ -355,7 +369,7 @@ Il sistema dispone di due attori:
 
 === UC6 - Visualizzazione "Profilo Utente"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC6.png", width: 80%),
   caption: [
     Visualizzazione "Profilo Utente"
   ],
@@ -385,6 +399,12 @@ Il sistema dispone di due attori:
 - UC6.2 - Modifica dati utente
 
 ==== UC6.1 - Visualizzazione dati utente
+#figure(
+  image("/imgs/Uml/UC6.1.png", width: 80%),
+  caption: [
+    Visualizzazione dati utente
+  ],
+)
 *Attori:*
 - Admin;
 - User.
@@ -471,6 +491,12 @@ Il sistema dispone di due attori:
   - mostra all'utente la sua password in chiaro.
 
 ==== UC6.2 - Modifica dati utente
+#figure(
+  image("/imgs/Uml/UC6.2.png", width: 80%),
+  caption: [
+    Modifica dati utente
+  ],
+)
 *Attori:*
 - Admin;
 - User.
@@ -496,10 +522,10 @@ Il sistema dispone di due attori:
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC6.2.1 - Modifica email
-- UC6.2.2 - Modifica password
+- UC6.2.1 - Inserimento nuova email
+- UC6.2.2 - Inserimento nuova password
 
-===== UC6.2.1 - Modifica email
+===== UC6.2.1 - Inserimento nuova email
 *Attori:*
 - Admin;
 - User.
@@ -522,7 +548,7 @@ Il sistema dispone di due attori:
   - se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
   - se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
 
-===== UC6.2.2 - Modifica password
+===== UC6.2.2 - Inserimento nuova password
 *Attori:*
 - Admin;
 - User.
@@ -547,7 +573,7 @@ Il sistema dispone di due attori:
 
 === UC7 - Logout
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC7.png", width: 80%),
   caption: [
     Logout
   ],
@@ -574,19 +600,24 @@ Il sistema dispone di due attori:
 
 === UC8 - Visualizzazione "Ricerca"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC8.png", width: 80%),
   caption: [
     Visualizzazione "Ricerca"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente è stato reindirizzato correttamente dal sistema.
 *Postcondizioni:*
-
+- L'utente visualizza la vista "Ricerca" nella pagina principale
 *Scenario principale:*
-
+- Admin/User:
+  - decide di visitare e visualizzare la vista "Ricerca"
+- Sistema:
+  - prende a conoscenza la decisione dell'utente di voler cambiare vista;
+  - reindirizza l'utente alla vista scelta.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
@@ -602,13 +633,23 @@ Il sistema dispone di due attori:
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente si trova nella vista "Ricerca" della pagina principale;
+- L'utente decide di fare una ricerca e compilare quindi i campi necessari.
 *Postcondizioni:*
-
+- L'utente visualizza i risultati della ricerca:
+  + in caso la ricerca sia andata a buon fine, l'utente visualizza la lista di risultati (UC8.2);
+  + in caso la ricerca non sia andata a buon fine l'utente visualizza un messaggio informativo (UC18).
 *Scenario principale:*
-
+- Admin/User:
+  - decide di fare una ricerca e compilare quindi i campi necessari.
+  - compila correttamente i campi;
+  - visualizza i risultati della ricerca (UC8.2/UC18).
+- Sistema:
+  - elabora la richiesta dell'utente;
+  - mostra a schermo i risultati dell'elaborazione.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
@@ -620,79 +661,86 @@ Il sistema dispone di due attori:
 - UC8.1.5 - Avvio ricerca "Ricerca".
 
 ===== UC8.1.1 - Scelta input "Topic"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Scelta input "Topic"
-  ],
-)
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di fare una ricerca e sta quindi compilando i campi necessari;
+- L'utente sta scegliendo un opzione per l'input "Topic".
 *Postcondizioni:*
-
+- L'utente ha compilato il campo "Topic".
 *Scenario principale:*
+- Admin/User:
+  - visualizza correttamente le opzioni dell'input "Topic";
+  - sceglie una delle opzioni dell'input "Topic".
+- Sistema:
+  - mostra all'utente le opzioni per l'input "Topic".
 
 ===== UC8.1.2 - Completamento input "Nome Topic"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Completamento input "Nome Topic"
-  ],
-)
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di fare una ricerca e sta quindi compilando i campi necessari;
+- L'utente sta completando l'input "Nome Topic".
 *Postcondizioni:*
-
+- L'utente ha compilato il campo "Nome Topic".
 *Scenario principale:*
+- Admin/User:
+  - inizia a completare l'input "Nome Topic";
+  - visualizza suggerimenti di autocompletamento dell'input "Nome Topic";
+  - conclude il completamento dell'input;
+- Sistema:
+  - mostra all'utente i suggerimenti per l'autocompletamento per l'inupt relativo.
 
 ===== UC8.1.3 - Scelta input "Top N"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Scelta input "Top N"
-  ],
-)
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di fare una ricerca e sta quindi compilando i campi necessari;
+- L'utente sta scegliendo un opzione per l'input "Top N".
 *Postcondizioni:*
-
+- L'utente ha compilato il campo "Top N".
 *Scenario principale:*
+- Admin/User:
+  - visualizza correttamente le opzioni dell'input "Top N";
+  - sceglie una delle opzioni dell'input "Top N".
+- Sistema:
+  - mostra all'utente le opzioni per l'input "Top N".
 
 ===== UC8.1.4 - Selezione input "Cronologia"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Selezione input "Cronologia"
-  ],
-)
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di effettura una ricerca utlizzando l'autocompletamento tramite cronologia.
+- L'utente sta scegliendo un opzione per l'input "Cronologia".
 *Postcondizioni:*
-
+- L'utente ha compilato il campo "Cronologia".
 *Scenario principale:*
+- Admin/User:
+  - visualizza correttamente le opzioni dell'input "Cronologia";
+  - sceglie una delle opzioni dell'input "Cronologia".
+- Sistema:
+  - mostra all'utente le opzioni per l'input "Cronologia";
+  - autocompila gli altri campi in base alle impostazioni dell'opzione di "Cronologia" selezionata.
 
 ===== UC8.1.5 - Avvio ricerca
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Avvio ricerca
-  ],
-)
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di effettura una ricerca utlizzando l'autocompletamento tramite cronologia;
+- L'utente ha finito di compilare i campi per la ricerca.
 *Postcondizioni:*
-
+- Il sistema inizia l'elaborazione della richiesta dell'utente.
 *Scenario principale:*
+- Admin/User:
+  - interagisce con il pulsante di avvio ricerca.
+- Sistema:
+  - estrapola i dati dalla barra di ricerca;
+  - inizia l'elaborazione della richiesta ell'utente.
 
 ==== UC8.2 - Visualizzazione risultati di ricerca per "Ricerca"
 #figure(
