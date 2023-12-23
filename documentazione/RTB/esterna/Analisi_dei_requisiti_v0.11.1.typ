@@ -142,6 +142,12 @@ Il sistema dispone di due attori:
   - UC1.2 - Inserimento password.
 
 ==== UC1.1 - Inserimento username
+#figure(
+  image("/imgs/Uml/UC1.1.png", width: 55%),
+  caption: [
+    Inserimento email
+  ],
+)
 *Attori:*
 - Admin;
 - User.
@@ -158,6 +164,12 @@ Il sistema dispone di due attori:
     - prosegue con l'autenticazione dell'utente utilizzando lo username inserito.  
 
 ==== UC1.2 - Inserimento password
+#figure(
+  image("/imgs/Uml/UC1.2.png", width: 55%),
+  caption: [
+    Inserimento password
+  ],
+)
 *Attori:*
 - Admin;
 - User.
@@ -174,13 +186,6 @@ Il sistema dispone di due attori:
     - prosegue con l'autenticazione dell'utente utilizzando la password inserita.
 
 === UC2 - Visualizzazione alert di manutenzione
-// #figure(
-//   image("/imgs/Uml/UC1.png", width: 80%),
-//   caption: [
-//     Visualizzazione alert di manutenzione
-//   ],
-// )
-//magari la mettiamo, anche se è molto banale?
 *Attori:*
 - Admin;
 - User.
@@ -200,13 +205,6 @@ Il sistema dispone di due attori:
 - Admin --> User.
 
 === UC3 - Visualizzazione errore di login
-// #figure(
-//   image("/imgs/Uml/UC1.png", width: 80%),
-//   caption: [
-//     Visualizzazione errore di login
-//   ],
-// )
-// stessa cosa di UC2
 *Attori:*
 - Admin.
 - User.
@@ -227,7 +225,7 @@ Il sistema dispone di due attori:
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
-
+// forse a sto punto mi viene da pensare sia più un requisto non funzionale. e quindi non serve il caso d'uso.
 === UC4 - Avviso normativa sui Cookies
 #figure(
   image("/imgs/Uml/UC4.png", width: 80%),
@@ -290,7 +288,7 @@ Il sistema dispone di due attori:
 
 === UC5 - Visualizzazione "Menù" delle funzionalità
 #figure(
-  image("/imgs/Uml/UC5.png", width: 80%),
+  image("/imgs/Uml/UC5.png", width: 55%),
   caption: [
     Visualizzazione "Menù" delle funzionalità
   ],
@@ -398,9 +396,11 @@ Il sistema dispone di due attori:
 - UC6.1 - Visualizzazione dati utente;
 - UC6.2 - Modifica dati utente.
 
+// da cambiare il diagramma, vanno divisi i sotto UC
+
 ==== UC6.1 - Visualizzazione dati utente
 #figure(
-  image("/imgs/Uml/UC6.1.png", width: 80%),
+  image("/imgs/Uml/UC6.1.png", width: 55%),
   caption: [
     Visualizzazione dati utente
   ],
@@ -428,67 +428,78 @@ Il sistema dispone di due attori:
 - UC6.1.3 - Visualizzazione username;
 - UC6.1.4 - Visualizzazione password.
 
-===== UC6.1.1 - Visualizzazione anagrafica
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
-*Postcondizioni:*
-- L'utente visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
-*Scenario principale:*
-- Admin/User:
-  - visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
-- Sistema:
-  - mostra all'utente i suoi dati anagrafici in chiaro, ovvero nome, cognome e data di nascita.
+===== Sotto-UC UC6.1 
+#figure(
+  image("/imgs/Uml/UC6.1_gen.png", width: 55%),
+  caption: [
+    Sotto-UC UC6.1
+  ],
+)
++ UC6.1.1 - Visualizzazione anagrafica
 
-===== UC6.1.2 - Visualizzazione email
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
-*Postcondizioni:*
-- L'utente visualizza la propria email.
-*Scenario principale:*
-- Admin/User:
-  - visualizza la propria email.
-- Sistema:
-  - mostra all'utente la sua email in chiaro.
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
+  *Postcondizioni:*
+  - L'utente visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
+  - Sistema:
+    - mostra all'utente i suoi dati anagrafici in chiaro, ovvero nome, cognome e data di nascita.
 
-===== UC6.1.3 - Visualizzazione username
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
-*Postcondizioni:*
-- L'utente visualizza il proprio username.
-*Scenario principale:*
-- Admin/User:
-  - visualizza il proprio username.
-- Sistema:
-  - mostra all'utente il suo username in chiaro.
++ UC6.1.2 - Visualizzazione email
 
-===== UC6.1.4 - Visualizzazione password
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale;
-- L'utente decide di visualizzare la propria password in chiaro;
-- L'utente visualizza la propria password nascosta.
-*Postcondizioni:*
-- L'utente visualizza la propria password in chiaro.
-*Scenario principale:*
-- Admin/User:
-  - visualizza la propria password nascosta;
-  - decide di visualizzare la propria password in chiaro;
-  - visualizza la propria password in chiaro.
-- Sistema:
-  - mostra all'utente la sua password nascosta;
-  - prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
-  - mostra all'utente la sua password in chiaro.
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
+  *Postcondizioni:*
+  - L'utente visualizza la propria email.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la propria email.
+  - Sistema:
+    - mostra all'utente la sua email in chiaro.
+
++ UC6.1.3 - Visualizzazione username
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale.
+  *Postcondizioni:*
+  - L'utente visualizza il proprio username.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il proprio username.
+  - Sistema:
+    - mostra all'utente il suo username in chiaro.
+
++ UC6.1.4 - Visualizzazione password
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale;
+  - L'utente decide di visualizzare la propria password in chiaro;
+  - L'utente visualizza la propria password nascosta.
+  *Postcondizioni:*
+  - L'utente visualizza la propria password in chiaro.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la propria password nascosta;
+    - decide di visualizzare la propria password in chiaro;
+    - visualizza la propria password in chiaro.
+  - Sistema:
+    - mostra all'utente la sua password nascosta;
+    - prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
+    - mostra all'utente la sua password in chiaro.
 
 ==== UC6.2 - Modifica dati utente
 #figure(
