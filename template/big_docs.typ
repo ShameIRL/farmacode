@@ -126,3 +126,13 @@
   set text(fill: rgb("#1212db"), style: "italic") 
   a
 }
+
+#let red(a)= {
+  set text(fill: rgb("#ff4136"), weight: "bold") 
+  a
+}
+
+#let green(a)= {
+  set text(fill: rgb("#2ecc40"), weight: "bold") 
+  a
+}
