@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.12.0", "22-12-2023", p.passarella, "", "sezione 1.4",
+    "0.12.0", "22-12-2023", p.passarella, p.carraro, "sezione 1.4",
     "0.11.1", "22-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
     "0.11.0", "21-12-2023", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
     "0.10.0", "21-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.4 Norme tipografiche",
