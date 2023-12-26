@@ -435,7 +435,7 @@ Il sistema dispone di due attori:
     Sotto-UC UC6.1
   ],
 )
-+ UC6.1.1 - Visualizzazione anagrafica
++ *UC6.1.1 - Visualizzazione anagrafica*
 
   *Attori:*
   - Admin;
@@ -450,7 +450,7 @@ Il sistema dispone di due attori:
   - Sistema:
     - mostra all'utente i suoi dati anagrafici in chiaro, ovvero nome, cognome e data di nascita.
 
-+ UC6.1.2 - Visualizzazione email
++ *UC6.1.2 - Visualizzazione email*
 
   *Attori:*
   - Admin;
@@ -465,7 +465,7 @@ Il sistema dispone di due attori:
   - Sistema:
     - mostra all'utente la sua email in chiaro.
 
-+ UC6.1.3 - Visualizzazione username
++ *UC6.1.3 - Visualizzazione username*
 
   *Attori:*
   - Admin;
@@ -480,7 +480,7 @@ Il sistema dispone di due attori:
   - Sistema:
     - mostra all'utente il suo username in chiaro.
 
-+ UC6.1.4 - Visualizzazione password
++ *UC6.1.4 - Visualizzazione password*
 
   *Attori:*
   - Admin;
@@ -609,7 +609,7 @@ Il sistema dispone di due attori:
 - *Attori:*
 - Admin --> User.
 
-=== UC8 - Visualizzazione "Ricerca"
+=== UC8 - Visualizzazione vista "Ricerca"
 #figure(
   image("/imgs/Uml/UC8.png", width: 80%),
   caption: [
@@ -641,11 +641,11 @@ Il sistema dispone di due attori:
 - UC8.1 - Barra di ricerca;
 - UC8.2 - Visualizzazione risultati di ricerca.
 
-==== UC8.1 - Barra di ricerca per "Ricerca"
+==== UC8.1 - Ricerca per vista "Ricerca"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC8.1.png", width: 80%),
   caption: [
-    Barra di ricerca per "Ricerca"
+    Ricerca per vista "Ricerca"
   ],
 )
 *Attori:*
@@ -660,12 +660,12 @@ Il sistema dispone di due attori:
 - L'utente visualizza un messaggio informativo (UC18) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  - compila i campi presenti nella barra di ricerca (UC8.1.1, UC8.1.2, UC8.1.3), o sceglie una ricerca precedentemente fatta dalla cronologia presente nella barra di ricerca (UC8.1.4);
-  - avvia la ricerca (UC8.1..5);
+  - compila i campi presenti nella barra di ricerca (UC8.1.1), o sceglie una ricerca precedentemente fatta dalla cronologia presente nella barra di ricerca (UC8.1.1.4);
+  - avvia la ricerca (UC8.1.2);
   - visualizza i risultati della ricerca (UC8.2/UC18).
 - Sistema:
-  - se l'utente seleziona una ricerca dalla cronologia (UC8.1.4), modifica i campi della ricerca in modo pertinente;
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC8.1.1, UC8.1.2, UC8.1.3);
+  - se l'utente seleziona una ricerca dalla cronologia (UC8.1.1.4), modifica i campi della ricerca in modo pertinente;
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC8.1.1);
   - contatta tramite API il software che fornisce i risultati della ricerca;
   - riceve tramite API una risposta dal software;
   - mostra a schermo i risultati della ricerca.
@@ -673,115 +673,156 @@ Il sistema dispone di due attori:
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC8.1.1 - Scelta input "Topic";
-- UC8.1.2 - Completamento input "Nome Topic";
-- UC8.1.3 - Scelta input "Top N";
-- UC8.1.4 - Selezione input "Cronologia";
-- UC8.1.5 - Avvio ricerca "Ricerca".
+- UC8.1.1 - Compilazione campi ricerca.
+- UC8.1.2 - Avvio ricerca.
 
-===== UC8.1.1 - Scelta input "Topic"
+===== UC8.1.1 - Compilazione campi ricerca
+
 *Attori:*
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente sta scegliendo un'opzione per l'input topic.
+- L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+- L'utente avvia la ricerca.
 *Postcondizioni:*
-- Il campo topic mostra l'opzione scelta dall'utente.
+- L'utente visualizza i risultati della ricerca (UC8.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC18) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  - visualizza un'opzione di default per l'input topic;
-  - seleziona l'opzione di default per modificarla;
-  - visualizza le opzioni possibili per l'input topic;
-  - sceglie una delle opzioni possibili per l'input topic.
+  - compila i campi presenti nella barra di ricerca (UC8.1.1), o sceglie una ricerca precedentemente fatta dalla cronologia presente nella barra di ricerca (UC8.1.1.4);
+  - avvia la ricerca (UC8.1.2);
+  - visualizza i risultati della ricerca (UC8.2/UC18).
 - Sistema:
-  - mostra all'utente un'opzione di default per l'input topic;
-  - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input topic;
-  - mostra all'utente le opzioni possibili per l'input topic;
-  - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-  - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  - se l'utente seleziona una ricerca dalla cronologia (UC8.1.1.4), modifica i campi della ricerca in modo pertinente;
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC8.1.1);
+  - contatta tramite API il software che fornisce i risultati della ricerca;
+  - riceve tramite API una risposta dal software;
+  - mostra a schermo i risultati della ricerca.
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC8.1.1.1 - Scelta input "Topic";
+- UC8.1.1.2 - Completamento input "Nome Topic";
+- UC8.1.1.3 - Scelta input "Top N";
+- UC8.1.1.4 - Selezione input "Cronologia";
 
-===== UC8.1.2 - Completamento input "Nome Topic"
+===== Sotto-UC UC8.1.1 
+#figure(
+  image("/imgs/Uml/UC8.1.1_gen.png", width: 80%),
+  caption: [
+    Sotto-UC UC8.1.1 
+  ],
+)
++ *UC8.1.1.1 - Scelta input "Topic"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input topic.
+  *Postcondizioni:*
+  - Il campo topic mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input topic;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input topic;
+    - sceglie una delle opzioni possibili per l'input topic.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input topic;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input topic;
+    - mostra all'utente le opzioni possibili per l'input topic;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC8.1.1.2 - Completamento input "Nome Topic"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input nome topic.
+  *Postcondizioni:*
+  - Il campo nome topic mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input topic;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input topic;
+    - visualizza suggerimenti di autocompletamento per l'input nome topic;
+    - sceglie una delle opzioni possibili per l'input topic.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input topic;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input topic;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input nome topic;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC8.1.1.3 - Scelta input "Top N"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input top n.
+  *Postcondizioni:*
+  - Il campo top n mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input top n;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input top n;
+    - sceglie una delle opzioni possibili per l'input top n.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input top n;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input top n;
+    - mostra all'utente le opzioni possibili per l'input top n;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC8.1.1.4 - Selezione input "Cronologia"* 
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input cronologia.
+  *Postcondizioni:*
+  - Il campo cronologia mostra l'opzione scelta dall'utente;
+  - I campi topic (UC8.1.1.1), nome topic (UC8.1.1.2) e top n (UC8.1.1.3) mostrano le opzioni contenute nella cronologia.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input cronologia;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input cronologia;
+    - sceglie una delle opzioni possibili per l'input cronologia.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input cronologia;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input cronologia;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input cronologia;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente, modificando anche i campi topic (UC8.1.1.1), nome topic (UC8.1.1.2) e top n (UC8.1.1.3);
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
+===== UC8.1.2 - Avvio ricerca
+
 *Attori:*
 - Admin;
 - User.
 *Precondizioni:*
 - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente sta scegliendo un'opzione per l'input nome topic.
-*Postcondizioni:*
-- Il campo nome topic mostra l'opzione scelta dall'utente.
-*Scenario principale:*
-- Admin/User:
-  - visualizza un'opzione di default per l'input topic;
-  - seleziona l'opzione di default per modificarla;
-  - inizia a compilare il campo con l'opzione che vuole selezionare;
-  - visualizza le opzioni possibili per l'input topic;
-  - visualizza suggerimenti di autocompletamento per l'input nome topic;
-  - sceglie una delle opzioni possibili per l'input topic.
-- Sistema:
-  - mostra all'utente un'opzione di default per l'input topic;
-  - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input topic;
-  - prende a conoscenza i caratteri inseriti dall'utente;
-  - contatta tramite API il software che fornisce le opzioni possibili;
-  - riceve tramite API una risposta con le opzioni possibili dal software;
-  - mostra all'utente le opzioni possibili per l'input nome topic;
-  - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-  - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-===== UC8.1.3 - Scelta input "Top N"
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente sta scegliendo un'opzione per l'input top n.
-*Postcondizioni:*
-- Il campo top n mostra l'opzione scelta dall'utente.
-*Scenario principale:*
-- Admin/User:
-  - visualizza un'opzione di default per l'input top n;
-  - seleziona l'opzione di default per modificarla;
-  - visualizza le opzioni possibili per l'input top n;
-  - sceglie una delle opzioni possibili per l'input top n.
-- Sistema:
-  - mostra all'utente un'opzione di default per l'input top n;
-  - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input top n;
-  - mostra all'utente le opzioni possibili per l'input top n;
-  - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-  - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-===== UC8.1.4 - Selezione input "Cronologia"
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente sta scegliendo un'opzione per l'input cronologia.
-*Postcondizioni:*
-- Il campo cronologia mostra l'opzione scelta dall'utente;
-- I campi topic (UC8.1.1), nome topic (UC8.1.2) e top n (UC8.1.3) mostrano le opzioni contenute nella cronologia.
-*Scenario principale:*
-- Admin/User:
-  - visualizza un'opzione di default per l'input cronologia;
-  - seleziona l'opzione di default per modificarla;
-  - visualizza le opzioni possibili per l'input cronologia;
-  - sceglie una delle opzioni possibili per l'input cronologia.
-- Sistema:
-  - mostra all'utente un'opzione di default per l'input cronologia;
-  - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input cronologia;
-  - contatta tramite API il software che fornisce le opzioni possibili;
-  - riceve tramite API una risposta con le opzioni possibili dal software;
-  - mostra all'utente le opzioni possibili per l'input cronologia;
-  - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente, modificando anche i campi topic (UC8.1.1), nome topic (UC8.1.2) e top n (UC8.1.3);
-  - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-===== UC8.1.5 - Avvio ricerca
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente ha compilato i campi della barra di ricerca (UC8.1.1, UC8.1.2, UC8.1.3).
+- L'utente ha compilato i campi della barra di ricerca (UC8.1.1.1, UC8.1.1.2, UC8.1.1.3).
 *Postcondizioni:*
 - Il sistema estrapola i dati dalla barra di ricerca;
 - Il sistema contatta il software dedicato con i dati estrapolati tramite API.
