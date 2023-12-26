@@ -836,12 +836,7 @@ Il sistema dispone di due attori:
   - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC8.2).
 
 ==== UC8.2 - Visualizzazione risultati di ricerca per "Ricerca"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione risultati di ricerca per "Ricerca"
-  ],
-)
+
 *Attori:*
 - Admin;
 - User.
@@ -867,7 +862,7 @@ Il sistema dispone di due attori:
 
 ===== UC8.2.1 - Visualizzazione dettagli singolo "Risultato"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC8.2.1.png", width: 65%),
   caption: [
     Visualizzazione dettagli singolo "Risultato"
   ],
@@ -891,82 +886,69 @@ Il sistema dispone di due attori:
 - UC8.2.1.3 - Visualizzazione "Score" risultato;
 - UC8.2.1.4 - Bottone "Inserimento Feedback".
 
-====== UC8.2.1.1 - Visualizzazione "ID" risultato
+====== Sotto-UC UC8.2.1 
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC8.2.1_gen.png", width: 70%),
   caption: [
-    Visualizzazione "ID" risultato
+    Visualizzazione dettagli singolo "Risultato"
   ],
 )
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente osserva un risultato singolo della sua ricerca.
-*Postcondizioni:*
-- L'utente visualizza l'ID del risultato che sta osservando.
-*Scenario principale:*
-- Admin/User:
-  - visualizza l'ID del risultato che sta osservando.
++ *UC8.2.1.1 - Visualizzazione "ID" risultato*
 
-====== UC8.2.1.2 - Visualizzazione "Nome" risultato
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Nome" risultato
-  ],
-)
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente osserva un risultato singolo della sua ricerca.
-*Postcondizioni:*
-- L'utente visualizza il nome del risultato che sta osservando.
-*Scenario principale:*
-- Admin/User:
-  - visualizza il nome del risultato che sta osservando.
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza l'ID del risultato che sta osservando.
 
-====== UC8.2.1.3 - Visualizzazione "Score" risultato
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Score" risultato
-  ],
-)
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente osserva un risultato singolo della sua ricerca.
-*Postcondizioni:*
-- L'utente visualizza lo score del risultato che sta osservando.
-*Scenario principale:*
-- Admin/User:
-  - visualizza lo score del risultato che sta osservando.
++ *UC8.2.1.2 - Visualizzazione "Nome" risultato*
 
-====== UC8.2.1.4 - Bottone "Inserimento Feedback"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Bottone "Inserimento Feedback"
-  ],
-)
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente osserva un risultato singolo della sua ricerca;
-- L'utente interagisce con il bottone di inserimento feedback per rilasciare un feedback relativo al risultato che sta osservando.
-*Postcondizioni:*
-- Il sistema reindirizza l'utente alla funzionalità di feedback (UC9), tenendo conto della ricerca da lui effettuata.
-*Scenario principale:*
-- Admin/User:
-  - interagisce con il bottone di inserimento feedback per rilasciare un feedback relativo al risultato che sta osservando.
-- Sistema:
-  - prende a conoscenza l'intenzione dell'utente di rilasciare un feedback;
-  - memorizza la ricerca per la quale vuole rilasciare un feedback ed il soggetto selezionato;
-  - reindirizza l'utente alla funzionalità di inserimento feedback (UC9) comunicando alla funzionalità la ricerca ed il soggetto coinvolti nel feedback.
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il nome del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il nome del risultato che sta osservando.
+
++ *UC8.2.1.3 - Visualizzazione "Score" risultato*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza lo score del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza lo score del risultato che sta osservando.
+
++ *UC8.2.1.4 - Visualizzazione bottone "Inserimento Feedback"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca;
+  - L'utente interagisce con il bottone di inserimento feedback per rilasciare un feedback relativo al risultato che sta osservando.
+  *Postcondizioni:*
+  - Il sistema reindirizza l'utente alla funzionalità di feedback (UC9), tenendo conto della ricerca da lui effettuata.
+  *Scenario principale:*
+  - Admin/User:
+    - interagisce con il bottone di inserimento feedback per rilasciare un feedback relativo al risultato che sta osservando.
+  - Sistema:
+    - prende a conoscenza l'intenzione dell'utente di rilasciare un feedback;
+    - memorizza la ricerca per la quale vuole rilasciare un feedback ed il soggetto selezionato;
+    - reindirizza l'utente alla funzionalità di inserimento feedback (UC9) comunicando alla funzionalità la ricerca ed il soggetto coinvolti nel feedback.
 
 === UC9 - Inserimento "Feedback"
 #figure(
