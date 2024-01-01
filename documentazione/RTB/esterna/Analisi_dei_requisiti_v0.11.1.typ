@@ -41,11 +41,14 @@ Il documento seguente deve essere il più completo e specifico possibile così d
 
 === Struttura logica casi d’uso
 I casi d'uso descritti in questo documento hanno una precisa struttura logica descritta dal seguente modello:
-- Descrizione: Titolo del caso d'uso con annessa breve descrizione;
+- Titolo: Titolo del caso d'uso;
+- Figura;
 - Attori coinvolti: Il soggetto che esegue una determinata azione;
 - Precondizioni: Lo stato del sistema prima del caso d'uso;
 - Postcondizioni: Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
-- Scenario principale: Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati.
+- Scenario principale: Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati;
+- Estensioni (se presenti): Possibili estensioni derivanti dal caso d'uso;
+- Generalizzazioni (se presenti): Generalizzazioni di attori e casi d'uso.
 
 == Scopo del prodotto
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
@@ -138,7 +141,7 @@ Il sistema dispone di due attori:
 - Admin --> User.
 - *Use Case:*
 - Admin/User:
-  - UC1.1 - Inserimento email;
+  - UC1.1 - Inserimento username;
   - UC1.2 - Inserimento password.
 
 ==== UC1.1 - Inserimento username
@@ -225,7 +228,7 @@ Il sistema dispone di due attori:
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
-// forse a sto punto mi viene da pensare sia più un requisto non funzionale. e quindi non serve il caso d'uso.
+
 === UC4 - Avviso normativa sui Cookies
 #figure(
   image("/imgs/Uml/UC4.png", width: 80%),
@@ -306,7 +309,7 @@ Il sistema dispone di due attori:
 - Admin/User:
     - seleziona il bottone del menù nell'header per visualizzarne il contenuto;
     - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-    - decide se visualizzare o meno una delle funzionalità disponibili (Admin/User: UC8, UC10, UC12, UC13; Admin: UC14, UC16, UC17).
+    - decide se selezionare o meno una delle funzionalità disponibili (Admin/User: UC8, UC10, UC12, UC13; Admin: UC14, UC15).
 - Sistema:
     - mostra all'utente i bottoni relativi alle funzionalità della sua categoria;
     - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
@@ -337,7 +340,83 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 - Admin/User:
   - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-  - decide se visualizzare o meno una delle funzionalità disponibili (UC8, UC10, UC12, UC13).
+  - decide se selezionare o meno una delle funzionalità disponibili (UC8, UC10, UC12, UC13).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC5.1.1 - Selezione opzione "Ricerca"
+- UC5.1.2 - Selezione opzione "Catalogo Prodotti"
+- UC5.1.3 - Selezione opzione "Lista Clienti"
+- UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
+
+===== UC5.1.1 - Selezione opzione "Ricerca"
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
+*Postcondizioni:*
+- L'utente viene reindirizzato correttamente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza le opzioni del menù condivise dalle categorie Admin e User;
+  - seleziona l'opzione "Ricerca";
+  - viene reindirizzato correttamente (UC8).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+
+===== UC5.1.2 - Selezione opzione "Catalogo Prodotti"
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
+*Postcondizioni:*
+- L'utente viene reindirizzato correttamente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza le opzioni del menù condivise dalle categorie Admin e User;
+  - seleziona l'opzione "Catalogo Prodotti";
+  - viene reindirizzato correttamente (UC10).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+
+===== UC5.1.3 - Selezione opzione "Lista Clienti"
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
+*Postcondizioni:*
+- L'utente viene reindirizzato correttamente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza le opzioni del menù condivise dalle categorie Admin e User;
+  - seleziona l'opzione "Lista Clienti";
+  - viene reindirizzato correttamente (UC12).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+
+===== UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
+*Postcondizioni:*
+- L'utente viene reindirizzato correttamente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza le opzioni del menù condivise dalle categorie Admin e User;
+  - seleziona l'opzione "Vista Statistiche mensili";
+  - viene reindirizzato correttamente (UC13).
 - Sistema:
   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
@@ -360,9 +439,47 @@ Il sistema dispone di due attori:
 *Scenario principale:*
 - Admin:
   - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-  - decide se visualizzare o meno una delle funzionalità disponibili (UC14, UC16, UC17).
+  - decide se selezionare o meno una delle funzionalità disponibili (UC14, UC15).
 - Sistema:
   - mostra all'utente i bottoni relativi alle funzionalità della categoria Admin;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+*Generalizzazioni:*
+- *Use Case:*
+- UC5.2.1 - Selezione opzione "Cronologia Ricerce"
+- UC5.2.2 - Selezione opzione "Cronologia Feedback"
+
+===== UC5.2.1 - Selezione opzione "Cronologia Ricerce"
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
+*Postcondizioni:*
+- L'utente viene reindirizzato correttamente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza le opzioni del menù condivise dalle categorie Admin e User;
+  - seleziona l'opzione "Cronologia Ricerche";
+  - viene reindirizzato correttamente (UC14).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
+  - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
+
+===== UC5.2.2 - Selezione opzione "Cronologia Feedback"
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
+*Postcondizioni:*
+- L'utente viene reindirizzato correttamente.
+*Scenario principale:*
+- Admin/User:
+  - visualizza le opzioni del menù condivise dalle categorie Admin e User;
+  - seleziona l'opzione "Cronologia Feedback";
+  - viene reindirizzato correttamente (UC15).
+- Sistema:
+  - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 
 === UC6 - Visualizzazione "Profilo Utente"
@@ -382,7 +499,7 @@ Il sistema dispone di due attori:
 - L'utente visualizza nella vista principale della pagina il suo profilo.
 *Scenario principale:*
 - Admin/User:
-  - seleziona il bottone del profilo utente nell'header per visualizzarne il contenuto;
+  - seleziona il bottone del profilo utente nella pagina principale per visualizzarne il contenuto;
   - visualizza i dati utente (UC6.1);
   - decide se modificare i dati modificabili, ovvero email e password (UC6.2).
 - Sistema:
@@ -584,7 +701,7 @@ Il sistema dispone di due attori:
 
 === UC7 - Logout
 #figure(
-  image("/imgs/Uml/UC7.png", width: 80%),
+  image("/imgs/Uml/UC7.png", width: 65%),
   caption: [
     Logout
   ],
@@ -613,7 +730,7 @@ Il sistema dispone di due attori:
 #figure(
   image("/imgs/Uml/UC8.png", width: 80%),
   caption: [
-    Visualizzazione "Ricerca"
+    Visualizzazione vista "Ricerca"
   ],
 )
 *Attori:*
@@ -638,8 +755,8 @@ Il sistema dispone di due attori:
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC8.1 - Barra di ricerca;
-- UC8.2 - Visualizzazione risultati di ricerca.
+- UC8.1 - Ricerca per vista "Ricerca";
+- UC8.2 - Visualizzazione lista risultati.
 
 ==== UC8.1 - Ricerca per vista "Ricerca"
 #figure(
@@ -657,12 +774,12 @@ Il sistema dispone di due attori:
 - L'utente avvia la ricerca.
 *Postcondizioni:*
 - L'utente visualizza i risultati della ricerca (UC8.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC18) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
   - compila i campi presenti nella barra di ricerca (UC8.1.1), o sceglie una ricerca precedentemente fatta dalla cronologia presente nella barra di ricerca (UC8.1.1.4);
   - avvia la ricerca (UC8.1.2);
-  - visualizza i risultati della ricerca (UC8.2/UC18).
+  - visualizza i risultati della ricerca (UC8.2/UC16).
 - Sistema:
   - se l'utente seleziona una ricerca dalla cronologia (UC8.1.1.4), modifica i campi della ricerca in modo pertinente;
   - memorizza i dati inseriti nei campi della barra di ricerca (UC8.1.1);
@@ -684,21 +801,14 @@ Il sistema dispone di due attori:
 *Precondizioni:*
 - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
 - L'utente decide di fare una ricerca e compila i campi necessari;
-- L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC8.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC18) in caso la ricerca non sia andata a buon fine.
+- L'utente ha compilato correttamente i campi di ricerca;
 *Scenario principale:*
 - Admin/User:
   - compila i campi presenti nella barra di ricerca (UC8.1.1), o sceglie una ricerca precedentemente fatta dalla cronologia presente nella barra di ricerca (UC8.1.1.4);
-  - avvia la ricerca (UC8.1.2);
-  - visualizza i risultati della ricerca (UC8.2/UC18).
 - Sistema:
   - se l'utente seleziona una ricerca dalla cronologia (UC8.1.1.4), modifica i campi della ricerca in modo pertinente;
   - memorizza i dati inseriti nei campi della barra di ricerca (UC8.1.1);
-  - contatta tramite API il software che fornisce i risultati della ricerca;
-  - riceve tramite API una risposta dal software;
-  - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
@@ -835,8 +945,13 @@ Il sistema dispone di due attori:
   - riceve una risposta tramite API dal software dedicato;
   - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC8.2).
 
-==== UC8.2 - Visualizzazione risultati di ricerca per "Ricerca"
-
+==== UC8.2 - Visualizzazione lista risultati
+#figure(
+  image("/imgs/Uml/UC8.2.png", width: 80%),
+  caption: [
+    Visualizzazione lista risultati
+  ],
+)
 *Attori:*
 - Admin;
 - User.
@@ -852,7 +967,7 @@ Il sistema dispone di due attori:
   - mostra i risultati della ricerca effettuata dall'utente all'utente stesso;
   - se l'utente decide di lasciare un feedback (UC8.2.1.4), prende a conoscenza la decisione e lo reindirizza correttamente alla funzionalità di feedback (UC9).
 *Estensioni:*
-- UC18 - Errore di ricerca.
+- UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
 - *Attori:*
@@ -884,13 +999,13 @@ Il sistema dispone di due attori:
 - UC8.2.1.1 - Visualizzazione "ID" risultato;
 - UC8.2.1.2 - Visualizzazione "Nome" risultato;
 - UC8.2.1.3 - Visualizzazione "Score" risultato;
-- UC8.2.1.4 - Bottone "Inserimento Feedback".
+- UC8.2.1.4 - Visualizzazione bottone "Inserimento Feedback".
 
 ====== Sotto-UC UC8.2.1 
 #figure(
   image("/imgs/Uml/UC8.2.1_gen.png", width: 70%),
   caption: [
-    Visualizzazione dettagli singolo "Risultato"
+    Sotto-UC UC8.2.1 
   ],
 )
 + *UC8.2.1.1 - Visualizzazione "ID" risultato*
@@ -939,20 +1054,15 @@ Il sistema dispone di due attori:
   - User.
   *Precondizioni:*
   - L'utente osserva un risultato singolo della sua ricerca;
-  - L'utente interagisce con il bottone di inserimento feedback per rilasciare un feedback relativo al risultato che sta osservando.
   *Postcondizioni:*
-  - Il sistema reindirizza l'utente alla funzionalità di feedback (UC9), tenendo conto della ricerca da lui effettuata.
+  - L'utente visualizza il bottone di inserimento feedback del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - interagisce con il bottone di inserimento feedback per rilasciare un feedback relativo al risultato che sta osservando.
-  - Sistema:
-    - prende a conoscenza l'intenzione dell'utente di rilasciare un feedback;
-    - memorizza la ricerca per la quale vuole rilasciare un feedback ed il soggetto selezionato;
-    - reindirizza l'utente alla funzionalità di inserimento feedback (UC9) comunicando alla funzionalità la ricerca ed il soggetto coinvolti nel feedback.
+    - visualizza il bottone di inserimento feedback del prodotto che sta osservando.
 
 === UC9 - Inserimento "Feedback"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC9.png", width: 80%),
   caption: [
     Inserimento "Feedback"
   ],
@@ -970,7 +1080,6 @@ Il sistema dispone di due attori:
   - completa gli input necessari all'inserimento di un feedback (UC9.2, UC9.3);
   - interagisce con il pulsante di conferma inserimento feedback.
 - Sistema: 
-  - mostra all'utente i soggetti interessati dal feedback che vuole inserire;
   - memorizza i dati inseriti negli input necessari all'inserimento di un feedback (UC9.2, UC9.3);
   - se l'utente conferma l'intenzione di inserire il feedback, salva i dati inseriti nel database;
   - se l'utente non conferma l'intenzione di inserire il feedback, termina la visualizzazione della funzionalità di feedback.
@@ -978,99 +1087,94 @@ Il sistema dispone di due attori:
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC9.1 - Visualizzazione dati ricerca;
-- UC9.2 - Completamento input "Valutazione";
-- UC9.3 - Completamento input "Commento";
-- UC9.4 - Conferma inserimento del feedback.
+- UC9.1 - Completamento input;
+- UC9.2 - Conferma inserimento feedback.
 
-==== UC9.1 - Visualizzazione dati ricerca
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione dati ricerca
-  ],
-)
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la funzionalità di inserimento feedback.
-*Postcondizioni:*
-- L'utente visualizza i soggetti interessati dal feedback.
-*Scenario principale:*
-- Admin/User:
-  - l'utente visualizza i soggetti interessati dal feedback.
-- Sistema: 
-  - riceve dalla funzionalità di ricerca le informazioni relative ai soggetti interessati dal feedback;
-  - mostra i soggetti interessati dal feedback all'utente.
-
-==== UC9.2 - Completamento input "Valutazione"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Completamento input "Valutazione"
-  ],
-)
+==== UC9.1 - Completamento input
 *Attori:*
 - Admin;
 - User.
 *Precondizioni:*
 - L'utente sta visualizzando la funzionalità di inserimento feedback;
-- L'utente sta completando il campo valutazione.
+- L'utente sta completando i campo.
 *Postcondizioni:*
-- Il campo valutazione mostra il completamento effettuato dall'utente.
+- I campi mostrano i completamenti effettuato dall'utente.
 *Scenario principale:*
 - Admin/User:
-  - visualizza un dato di default per il campo valutazione;
-  - seleziona il dato di default per modificarlo;
-  - compila il campo con il dato che vuole inserire.
+  - visualizza un dato di default per i campi;
+  - seleziona i dati di default per modificarli;
+  - compila i campi con i dati che vuole inserire.
 - Sistema: 
-  - mostra all'utente un dato di default;
-  - prende a conoscenza l'intenzione dell'utente di voler campiare il dato per il campo valutazione;
-  - permette all'utente di compilare il campo con un nuovo dato;
-  - se l'utente compila il campo con un nuovo dato, verifica che sia nel formato corretto e memorizza il nuovo dato inserito e lo mostra all'utente;
-  - se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
+  - mostra all'utente dei dati di default;
+  - prende a conoscenza l'intenzione dell'utente di voler campiare i dati dei campi;
+  - permette all'utente di compilare i campi con nuovi dati;
+  - se l'utente compila uno dei campi con un nuovo dato, verifica che sia nel formato corretto e memorizza il nuovo dato inserito e lo mostra all'utente;
+  - se l'utente non compila i campi con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC9.1.1 - Completamento input "Valutazione";
+- UC9.1.2 - Completamento input "Commento".
 
-==== UC9.3 - Completamento input "Commento"
+===== Sotto-UC UC9.1
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC9.1_gen.png", width: 65%),
   caption: [
-    Completamento input "Commento"
+    Inserimento "Feedback"
   ],
 )
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la funzionalità di inserimento feedback;
-- L'utente sta completando il campo commento.
-*Postcondizioni:*
-- Il campo commento mostra il completamento effettuato dall'utente.
-*Scenario principale:*
-- Admin/User:
-  - visualizza un dato di default per il campo commento;
-  - seleziona il dato di default per modificarlo;
-  - compila il campo con il dato che vuole inserire.
-- Sistema: 
-  - mostra all'utente un dato di default;
-  - prende a conoscenza l'intenzione dell'utente di voler campiare il dato per il campo commento;
-  - permette all'utente di compilare il campo con un nuovo dato;
-  - se l'utente compila il campo con un nuovo dato,  memorizza il nuovo dato inserito e lo mostra all'utente;
-  - se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
++ *UC9.1.1 - Completamento input "Valutazione"*
 
-==== UC9.4 - Conferma inserimento del feedback
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Conferma inserimento del feedback
-  ],
-)
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la funzionalità di inserimento feedback;
+  - L'utente sta completando il campo valutazione.
+  *Postcondizioni:*
+  - Il campo valutazione mostra il completamento effettuato dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un dato di default per il campo valutazione;
+    - seleziona il dato di default per modificarlo;
+    - compila il campo con il dato che vuole inserire.
+  - Sistema: 
+    - mostra all'utente un dato di default;
+    - prende a conoscenza l'intenzione dell'utente di voler campiare il dato per il campo valutazione;
+    - permette all'utente di compilare il campo con un nuovo dato;
+    - se l'utente compila il campo con un nuovo dato, verifica che sia nel formato corretto e memorizza il nuovo dato inserito e lo mostra all'utente;
+    - se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
+
++ *UC9.1.2 - Completamento input "Commento"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la funzionalità di inserimento feedback;
+  - L'utente sta completando il campo commento.
+  *Postcondizioni:*
+  - Il campo commento mostra il completamento effettuato dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un dato di default per il campo commento;
+    - seleziona il dato di default per modificarlo;
+    - compila il campo con il dato che vuole inserire.
+  - Sistema: 
+    - mostra all'utente un dato di default;
+    - prende a conoscenza l'intenzione dell'utente di voler campiare il dato per il campo commento;
+    - permette all'utente di compilare il campo con un nuovo dato;
+    - se l'utente compila il campo con un nuovo dato,  memorizza il nuovo dato inserito e lo mostra all'utente;
+    - se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
+
+==== UC9.2 - Conferma inserimento feedback
 *Attori:*
  Admin;
 - User.
 *Precondizioni:*
 - L'utente sta visualizzando la funzionalità di inserimento feedback;
-- L'utente ha compilato i campi necessari all'inserimento di un feedback (UC9.2, UC9.3).
+- L'utente ha compilato i campi necessari all'inserimento di un feedback (UC9.1.1, UC9.1.2).
 *Postcondizioni:*
 - Il sistema salva il feedback e lo comunica ai software dedicati.
 *Scenario principale:*
@@ -1082,177 +1186,262 @@ Il sistema dispone di due attori:
   - salva i dati necessari comunicandoli ai software dedicati tramite API;
   - chiude la funzionalità di inserimento feedback.
 
-=== UC10 - Visualizzazione "Catalogo Prodotti"
+
+// DA QUI CONTROLLARE E AGGIUNGERE SCHEMI
+
+=== UC10 - Visualizzazione vista "Catalogo Prodotti"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC10.png", width: 80%),
   caption: [
-    Visualizzazione "Catalogo Prodotti"
+    Visualizzazione vista "Catalogo Prodotti"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema;
+- L'utente ha aperto il menù contenente le varie funzionalità del sito;
+- L'utente ha selezionato la funzionalità di catalogo prodotti dal menù.
 *Postcondizioni:*
-
+- L'utente visualizza nella vista principale della pagina la funzionalità di catalgo prodotti.
 *Scenario principale:*
-
+- Admin/User:
+  - seleziona il bottone relativo alla funzionalità di catalogo prodotti nel menù (UC5);
+  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC10.1);
+  - visualizza la lista dei prodotti (UC10.2).
+- Sistema:
+  - mostra all'utente la funzionalità di catalogo prodotti;
+  - fornisce all'utente la possibilità di effettuare una ricerca (UC10.1) e di visualizzarne i risultati;
+  - mostra all'utente la lista dei prodotti(UC10.2).
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC10.1 - Barra di ricerca per "Catalogo Prodotti";
-- UC10.2 - Visualizzazione risultati di ricerca per "Catalogo Prodotti".
+- UC10.1 - Ricerca per vista "Catalogo Prodotti";
+- UC10.2 - Visualizzazione lista prodotti.
 
-==== UC10.1 - Barra di ricerca per "Catalogo Prodotti"
+==== UC10.1 - Ricerca per vista "Catalogo Prodotti"
+
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC10.1.png", width: 80%),
   caption: [
-    Barra di ricerca per "Catalogo Prodotti"
+    Ricerca per vista "Catalogo Prodotti"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente sta visualizzando la vista "Catalogo Prodotti" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+- L'utente avvia la ricerca.
 *Postcondizioni:*
-
+- L'utente visualizza i risultati della ricerca (UC10.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
-
+- Admin/User:
+  - compila i campi presenti nella barra di ricerca (UC10.1.1);
+  - avvia la ricerca (UC10.1.2);
+  - visualizza i risultati della ricerca (UC10.2/UC16).
+- Sistema:
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC10.1.1);
+  - contatta tramite API il software che fornisce i risultati della ricerca;
+  - riceve tramite API una risposta dal software;
+  - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC10.1.1 - Completamento input "Codice Prodotto";
-- UC10.1.2 - Completamento input "Nome Prodotto";
-- UC10.1.3 - Selezione input "Linea Commerciale";
-- UC10.1.4 - Completamento input "Settore Commerciale";
-- UC10.1.5 - Completamento input "Marca Prodotto";
-- UC10.1.6 - Selezione input "Provenienza Prodotto";
-- UC10.1.7 - Avvio ricerca dentro "Catalogo Prodotti";
+- UC10.1.1 - Compilazione campi ricerca.
+- UC10.1.2 - Avvio ricerca.
 
-===== UC10.1.1 - Completamento input "Codice Prodotto"
+===== UC10.1.1 - Compilazione campi ricerca
+
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando la vista "Catalogo Prodotti" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+*Postcondizioni:*
+- L'utente ha compilato correttamente i campi di ricerca;
+*Scenario principale:*
+- Admin/User:
+  - compila i campi presenti nella barra di ricerca (UC10.1.1)
+- Sistema:
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC10.1.1);
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC10.1.1.1 - Completamento input "Codice Prodotto";
+- UC10.1.1.2 - Selezione input "Linea Commerciale";
+- UC10.1.1.3 - Completamento input "Settore Commerciale";
+- UC10.1.1.4 - Completamento input "Marca Prodotto";
+// - UC10.1.1.5 - Selezione input "Provenienza Prodotto";
+
+===== Sotto-UC UC10.1.1
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC10.1.1_gen.png", width: 80%),
   caption: [
-    Completamento input "Codice Prodotto"
+    Sotto-UC UC10.1.1
   ],
 )
++ *UC10.1.1.1 - Completamento input "Codice Prodotto"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input codice prodotto.
+  *Postcondizioni:*
+  - Il campo codice prodotto mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input codice prodotto;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC10.1.1.2 - Selezione input "Linea Commerciale"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input linea commerciale.
+  *Postcondizioni:*
+  - Il campo linea commerciale mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input;
+    - sceglie una delle opzioni possibili per l'input.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    - mostra all'utente le opzioni possibili;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC10.1.1.3 - Completamento input "Settore Commerciale"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input settore commerciale.
+  *Postcondizioni:*
+  - Il campo settore commerciale mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC10.1.1.4 - Completamento input "Marca Prodotto"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input marca prodotto.
+  *Postcondizioni:*
+  - Il campo marca prodotto mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
+===== UC10.1.2 - Avvio ricerca
+
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+- L'utente ha compilato i campi della barra di ricerca (UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4).
 *Postcondizioni:*
-
+- Il sistema estrapola i dati dalla barra di ricerca;
+- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
 *Scenario principale:*
+- Admin/User:
+  - interagisce con il pulsante di avvio ricerca.
+- Sistema:
+  - estrapola i dati dalla barra di ricerca;
+  - contatta il software dedicato con i dati estrapolati tramite API;
+  - riceve una risposta tramite API dal software dedicato;
+  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC10.2).
 
-===== UC10.1.2 - Completamento input "Nome Prodotto"
+==== UC10.2 - Visualizzazione lista prodotti
+
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC10.2.png", width: 80%),
   caption: [
-    Completamento input "Nome Prodotto"
+    Visualizzazione lista prodotti
   ],
 )
+
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente visualizza correttamente la vista "Catalogo prodotti".
 *Postcondizioni:*
-
+- L'utente visualizza la lista dei prodotti;
+- Nel caso l'utente abbia effettuato una ricerca (UC10.1), ne visualizza i risultati.
 *Scenario principale:*
-
-===== UC10.1.3 - Selezione input "Linea Commerciale"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Selezione input "Linea Commerciale"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC10.1.4 - Completamento input "Settore Commerciale"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Completamento input "Settore Commerciale"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC10.1.5 - Completamento input "Marca Prodotto"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Completamento input "Marca Prodotto"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC10.1.6 - Selezione input "Provenienza Prodotto"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Selezione input "Provenienza Prodotto"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC10.1.7 - Avvio ricerca dentro "Catalogo Prodotti"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Avvio ricerca dentro "Catalogo Prodotti"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-==== UC10.2 - Visualizzazione risultati di ricerca per "Catalogo Prodotti"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione risultati di ricerca per "Catalogo Prodotti"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
+- Admin/User:
+  - visualizza la lista dei prodotti.
+  - visualizza i risultati della ricerca effettuata;
+- Sistema:
+  - mostra la lista dei prodotti;
+  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC18 - Errore di ricerca.
+- UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
 - *Attori:*
@@ -1260,21 +1449,24 @@ Il sistema dispone di due attori:
 - *Use Case:*
 - UC10.2.1 - Visualizzazione dettagli singolo "Prodotto".
 
-===== UC10.2.1 - Visualizzazione dettagli singolo "Prodotto"
+===== UC10.2.1 - Visualizzazione informazioni singolo "Prodotto"
+
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC10.2.1.png", width: 65%),
   caption: [
-    Visualizzazione dettagli singolo "Prodotto"
+    Visualizzazione informazioni singolo "Prodotto"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente sta visualizzando la lista dei prodotti.
 *Postcondizioni:*
-
+- L'utente osserva un singolo elemento della lista.
 *Scenario principale:*
-
+- Admin/User:
+  - osserva un prodotto della lista tra i vari mostrati.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
@@ -1282,83 +1474,88 @@ Il sistema dispone di due attori:
 - UC10.2.1.1 - Visualizzazione "Immagine" prodotto;
 - UC10.2.1.2 - Visualizzazione "ID" prodotto;
 - UC10.2.1.3 - Visualizzazione "Nome" prodotto;
-- UC10.2.1.4 - Estensione dettagli prodotto;
+- UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
 
-====== UC10.2.1.1 - Visualizzazione "Immagine" prodotto
+====== Sotto-UC UC10.2.1 
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC10.2.1_gen.png", width: 70%),
   caption: [
-    Visualizzazione "Immagine" prodotto
+    Sotto-UC UC10.2.1 
   ],
 )
-*Attori:*
++ *UC10.2.1.1 - Visualizzazione "Immagine" prodotto*
 
-*Precondizioni:*
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un prodotto singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza l'immagine del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza l'immagine del prodotto che sta osservando.
 
-*Postcondizioni:*
++ *UC10.2.1.2 - Visualizzazione "ID" prodotto*
 
-*Scenario principale:*
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un prodotto singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza l'ID del prodotto che sta osservando.
 
-====== UC10.2.1.2 - Visualizzazione "ID" prodotto
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "ID" prodotto
-  ],
-)
-*Attori:*
++ *UC10.2.1.3 - Visualizzazione "Nome" prodotto*
 
-*Precondizioni:*
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un prodotto singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il nome del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il nome del prodotto che sta osservando.
 
-*Postcondizioni:*
++ *UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto"*
 
-*Scenario principale:*
-
-====== UC10.2.1.3 - Visualizzazione "Nome" prodotto
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Nome" prodotto
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-====== UC10.2.1.4 - Estensione dettagli prodotto
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Estensione dettagli prodotto
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un prodotto singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+  - Admin/User:
+    - visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
 
 === UC11 - Visualizzazione dettaglio "Prodotto"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC11.png", width: 80%),
   caption: [
-    Estensione dettagli prodotto
+    Visualizzazione dettaglio "Prodotto"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha interagito con il bottone di dettagli prodotto (UC10.2.1.4) di uno dei prodotti disponibili nella vista di catalogo prodotti (UC10);
+- L'utente sta visualizzando i dettagli del prodotto.
 *Postcondizioni:*
-
+- Il sistema mostra i dettagli del corrispondente prodotto all'utente.
 *Scenario principale:*
-
+- Admin/User:
+  - visualizza i dettagli del prodotto.
+- Sistema: 
+  - mostra i dettagli del corrispondente prodotto all'utente.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
@@ -1371,692 +1568,1032 @@ Il sistema dispone di due attori:
 - UC11.6 - Visualizzazione "Marca" prodotto;
 - UC11.7 - Visualizzazione "Provenienza" prodotto;
 
-==== UC11.1 - Visualizzazione "Immagine" prodotto
+==== Sotto-UC UC11
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC11_gen.png", width: 80%),
   caption: [
-    Visualizzazione "Immagine" prodotto
+    Sotto-UC UC11
+  ],
+)
++ *UC11.1 - Visualizzazione "Immagine" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza l'immagine del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza l'immagine del prodotto che sta osservando.
+
++ *UC11.2 - Visualizzazione "ID" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza l'ID del prodotto che sta osservando.
+
++ *UC11.3 - Visualizzazione "Nome" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza il nome del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il nome del prodotto che sta osservando.
+
++ *UC11.4 - Visualizzazione "Linea Commerciale" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza la linea commerciale del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la linea commerciale del prodotto che sta osservando.
+
++ *UC11.5 - Visualizzazione "Settore Commerciale" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza il settore commerciale del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il settore commerciale del prodotto che sta osservando.
+
++ *UC11.6 - Visualizzazione "Marca" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza la marca del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la marca del prodotto che sta osservando.
+
++ *UC11.7 - Visualizzazione "Provenienza" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva i dettagli di un prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza la provenienza del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la provenienza del prodotto che sta osservando.
+
+=== UC12 - Visualizzazione vista "Lista Clienti"
+
+#figure(
+  image("/imgs/Uml/UC12.png", width: 80%),
+  caption: [
+    Visualizzazione vista "Lista Clienti"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema;
+- L'utente ha aperto il menù contenente le varie funzionalità del sito;
+- L'utente ha selezionato la funzionalità di lista clienti dal menù.
 *Postcondizioni:*
-
+- L'utente visualizza nella vista principale della pagina la funzionalità di lista clienti.
 *Scenario principale:*
+- Admin/User:
+  - seleziona il bottone relativo alla funzionalità di lista clienti nel menù (UC5);
+  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC12.1);
+  - visualizza la lista dei clienti (UC12.2).
+- Sistema:
+  - mostra all'utente la funzionalità di lista clienti;
+  - fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
+  - mostra all'utente la lista dei clienti (UC12.1).
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC12.1 - Ricerca per vista "Lista Clienti";
+- UC12.2 - Visualizzazione lista clienti.
 
-==== UC11.2 - Visualizzazione "ID" prodotto
+==== UC12.1 - Ricerca per vista "Lista Clienti";
+
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC12.1.png", width: 80%),
   caption: [
-    Visualizzazione "ID" prodotto
+    Ricerca per vista "Lista Clienti"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente sta visualizzando la vista "Lista Clienti" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+- L'utente avvia la ricerca.
 *Postcondizioni:*
-
+- L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
+- Admin/User:
+  - compila i campi presenti nella barra di ricerca (UC12.1.1);
+  - avvia la ricerca (UC12.1.2);
+  - visualizza i risultati della ricerca (UC12.2/UC16).
+- Sistema:
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
+  - contatta tramite API il software che fornisce i risultati della ricerca;
+  - riceve tramite API una risposta dal software;
+  - mostra a schermo i risultati della ricerca.
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC12.1.1 - Compilazione campi ricerca.
+- UC12.1.2 - Avvio ricerca.
 
-==== UC11.3 - Visualizzazione "Nome" prodotto
+===== UC12.1.1 - Compilazione campi ricerca
+
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando la vista "Lista Clienti" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+*Postcondizioni:*
+- L'utente ha compilato correttamente i campi di ricerca;
+*Scenario principale:*
+- Admin/User:
+  - compila i campi presenti nella barra di ricerca (UC12.1.1)
+- Sistema:
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
+*Generalizzazioni:*
+- *Attori:*
+- Admin --> User.
+- *Use Case:*
+- UC12.1.1.1 - Completamento input "Nome";
+- UC12.1.1.2 - Completamento input "Cognome";
+- UC12.1.1.3 - Selezione input "Provincia";
+
+===== Sotto-UC UC12.1.1 
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC12.1.1_gen.png", width: 80%),
   caption: [
-    Visualizzazione "Nome" prodotto
+    Sotto-UC UC12.1.1 
   ],
 )
++ *UC12.1.1.1 - Completamento input "Nome"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input nome cliente.
+  *Postcondizioni:*
+  - Il campo nome cliente mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC12.1.1.2 - Completamento input "Cognome"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input cognome cliente.
+  *Postcondizioni:*
+  - Il campo cognome cliente mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC12.1.1.3 - Selezione input "Provincia"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input provincia cliente.
+  *Postcondizioni:*
+  - Il campo provincia cliente mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input;
+    - sceglie una delle opzioni possibili per l'input.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    - mostra all'utente le opzioni possibili;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
+===== UC12.1.2- Avvio ricerca
+
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+- L'utente ha compilato i campi della barra di ricerca (UC12.1.1.1, UC12.1.1.2, UC12.1.1.3).
 *Postcondizioni:*
-
+- Il sistema estrapola i dati dalla barra di ricerca;
+- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
 *Scenario principale:*
+- Admin/User:
+  - interagisce con il pulsante di avvio ricerca.
+- Sistema:
+  - estrapola i dati dalla barra di ricerca;
+  - contatta il software dedicato con i dati estrapolati tramite API;
+  - riceve una risposta tramite API dal software dedicato;
+  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC12.2).
 
-==== UC11.4 - Visualizzazione "Linea Commerciale" prodotto
+==== UC12.2 - Visualizzazione lista clienti
+
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC12.2.png", width: 65%),
   caption: [
-    Visualizzazione "Linea Commerciale" prodotto
+    Visualizzazione lista clienti
   ],
 )
+
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente visualizza correttamente la vista "Lista clienti".
 *Postcondizioni:*
-
+- L'utente visualizza la lista dei clienti;
+- Nel caso l'utente abbia effettuato una ricerca (UC12.1), ne visualizza i risultati.
 *Scenario principale:*
-
-==== UC11.5 - Visualizzazione "Settore Commerciale" prodotto
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Settore Commerciale" prodotto
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-==== UC11.6 - Visualizzazione "Marca" prodotto
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Marca" prodotto
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-==== UC11.7 - Visualizzazione "Provenienza" prodotto
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Provenienza" prodotto
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-=== UC12 - Visualizzazione "Lista Clienti"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Lista Clienti"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
+- Admin/User:
+  - visualizza la lista dei clienti;
+  - visualizza i risultati della ricerca effettuata.
+- Sistema:
+  - mostra la lista dei clienti;
+  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+*Estensioni:*
+- UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC12.1 - Barra di ricerca per "Lista Clienti";
-- UC12.2 - Visualizzazione risultati di ricerca per "Lista Clienti".
+- UC12.2.1 - Visualizzazione dettagli singolo "Cliente".
 
-==== UC12.1 - Barra di ricerca per "Lista Clienti"
+===== UC12.2.1 - Visualizzazione dettagli singolo "Cliente"
+
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC12.2.1.png", width: 65%),
   caption: [
-    Barra di ricerca per "Lista Clienti"
+    Visualizzazione dettagli singolo "Cliente"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente sta visualizzando la lista dei clienti.
 *Postcondizioni:*
-
+- L'utente osserva singolo elemento della lista.
 *Scenario principale:*
-
+- Admin/User:
+  - osserva un cliente della lista tra i vari mostrati.
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
 - *Use Case:*
-- UC12.1.1 - Completamento input "Nome Cliente";
-- UC12.1.2 - Completamento input "Cognome Cliente";
-- UC12.1.3 - Selezione input "Provincia Cliente";
-- UC12.1.4 - Avvio ricerca dentro "Lista Clienti".
+- UC12.2.1.1 - Visualizzazione "ID" cliente;
+- UC12.2.1.2 - Visualizzazione "Nome" cliente;
+- UC12.2.1.1 - Visualizzazione "Cognome" cliente;
+- UC12.2.1.4 - Visualizzazione "Provincia" cliente;
 
-===== UC12.1.1 - Completamento input "Nome Cliente"
+====== Sotto-UC UC12.2.1 
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC12.2.1_gen.png", width: 70%),
   caption: [
-    Completamento input "Nome Cliente"
+    Sotto-UC UC12.2.1 
+  ],
+)
++ *UC12.2.1.1 - Visualizzazione "ID" cliente*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un cliente singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del cliente che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza l'ID del cliente che sta osservando.
+
++ *UC12.2.1.2 - Visualizzazione "Nome" cliente*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un cliente singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il nome del cliente che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il nome del cliente che sta osservando.
+
++ *UC12.2.1.3 - Visualizzazione "Cognome" cliente*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un cliente singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il cognome del cliente che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il cognome del cliente che sta osservando.
+
++ *UC12.2.1.4 - Visualizzazione "Provincia" cliente*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un cliente singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza la provincia del cliente che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza la provincia del cliente che sta osservando.
+
+// questo caso d'uso (il 13) andrà definito meglio più avanti ma così può andare penso
+
+=== UC13 - Visualizzazione vista "Statistiche Mensili"
+
+#figure(
+  image("/imgs/Uml/UC13.png", width: 65%),
+  caption: [
+    Visualizzazione vista "Statistiche Mensili"
   ],
 )
 *Attori:*
-
+- Admin;
+- User.
 *Precondizioni:*
-
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema;
+- L'utente ha aperto il menù contenente le varie funzionalità del sito;
+- L'utente ha selezionato la funzionalità di vista statistiche mensili.
 *Postcondizioni:*
-
+- L'utente visualizza nella vista principale della pagina la funzionalità di vista statistiche mensili.
 *Scenario principale:*
-
-===== UC12.1.2 - Completamento input "Cognome Cliente"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Completamento input "Cognome Cliente"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC12.1.3 - Selezione input "Provincia Cliente"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Selezione input "Provincia Cliente"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC12.1.4 - Avvio ricerca dentro "Lista Clienti"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Avvio ricerca dentro "Lista Clienti"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-==== UC12.2 - Visualizzazione risultati di ricerca per "Lista Clienti"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione risultati di ricerca per "Lista Clienti"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
+- Admin/User:
+  - seleziona il bottone relativo alla funzionalità di vista statistiche mensili nel menù (UC5);
+  - visualizza il contenuto delle vista di statistiche mensili (UC13.1/UC13.2).
+- Sistema:
+  - mostra all'utente la funzionalità di vista statistiche mensili;
 *Generalizzazioni:*
 - *Attori:*
 - Admin --> User.
+- *Use CAse:*
+- UC13.1 - Visualizzazione "Grafico"
+- UC13.2 - Visualizzazione "Raccomandazioni utili"
+
+==== Sotto-UC UC13
+#figure(
+  image("/imgs/Uml/UC13_gen.png", width: 60%),
+  caption: [
+    Sotto-UC UC13
+  ],
+)
+
++ *UC13.1 - Visualizzazione "Grafico"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista statistiche mensili (UC13).
+  *Postcondizioni:*
+  - L'utente visualizza il grafico corrente della vista.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il grafico del mese corrente;
+    - visualizza gli assi del grafico, "giorni" (tempo) per le x, "raccomandazioni utili" (ovvero le raccomandazioni che si sono rivelate corrette) per le y;
+    - visualizza la rappresentazione dei dati nel grafico come "grafico combinato".
+  - Sistema:
+    - renderizza e mostra il grafico all'utente.
+
++ *UC13.2 - Visualizzazione "Raccomandazioni utili"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista statistiche mensili (UC13).
+  *Postcondizioni:*
+  - L'utente visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
+  *Scenario principale:*
+  - Admin/User:
+    - visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
+  - Sistema:
+    - renderizza e mostra il grafico all'utente.
+
+// stavo pensando che forse possiamo evitare di metterla e ipotizzare che il sistema degli utenti sia gestito internamente dalla rete aziendale, che forse ha anche più senso. Mi spiego: i dipendendti dell'azienda avranno sicuramente già degli account, e quindi un gestore di questi ultimi. Si può pensare di aggiungere più avanti.
+// === UC14 - Visualizzazione "Gestione Utenti"
+// ==== UC14.1 - Ricerca per vista "Gestione Utenti"
+// ===== UC14.1.1 - Compilazione campi ricerca
+// ===== Sotto-UC UC14.1.1
+// ===== UC14.1.2 - Avvio ricerca
+// ==== UC14.2 - Visualizzazione "Lista utenti"
+// ===== UC14.2.1 - Visualizzazione dettagli singolo "Utente"
+// ===== Sotto-UC UC14.2.1
+
+// === UC15 Creazione nuovo utente
+// === UC16 Eliminazione "Utente"
+
+
+=== UC14 - Visualizzazione vista "Cronologia Ricerche"
+#figure(
+  image("/imgs/Uml/UC14.png", width: 80%),
+  caption: [
+    Visualizzazione vista "Cronologia Ricerche"
+  ],
+)
+*Attori:*
+- Admin;
+*Precondizioni:*
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema;
+- L'utente ha aperto il menù contenente le varie funzionalità del sito;
+- L'utente ha selezionato la funzionalità di cronologia ricerche dal menù.
+*Postcondizioni:*
+- L'utente visualizza nella vista principale della pagina la funzionalità di cronologia ricerche.
+*Scenario principale:*
+- Admin:
+  - seleziona il bottone relativo alla funzionalità di cronologia ricerche nel menù (UC5);
+  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC14.1);
+  - visualizza la lista delle ricerche (UC14.2).
+- Sistema:
+  - mostra all'utente la funzionalità di cronologia ricerche;
+  - fornisce all'utente la possibilità di effettuare una ricerca (UC14.1) e di visualizzarne i risultati;
+  - mostra all'utente la lista delle ricerche (UC14.2).
+*Generalizzazioni:*
 - *Use Case:*
-- UC12.2.1 - Visualizzazione "ID" cliente;
-- UC12.2.2 - Visualizzazione "Nome" cliente;
-- UC12.2.1 - Visualizzazione "Cognome" cliente;
-- UC12.2.4 - Visualizzazione "Provincia" cliente;
+- UC14.1 - Ricerca per vista "Cronologia Ricerche";
+- UC14.2 - Visualizzazione lista ricerche.
 
-===== UC12.2.1 - Visualizzazione "ID" cliente
+==== UC14.1 - Ricerca per vista "Cronologia Ricerche"
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/UC14.1.png", width: 80%),
   caption: [
-    Visualizzazione "ID" cliente
+    Ricerca per vista "Cronologia Ricerche"
   ],
 )
 *Attori:*
-
+- Admin;
 *Precondizioni:*
-
+- L'utente sta visualizzando la vista "Cronologia Ricerche" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+- L'utente avvia la ricerca.
 *Postcondizioni:*
-
+- L'utente visualizza i risultati della ricerca (UC14.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
-
-===== UC12.2.2 - Visualizzazione "Nome" cliente
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Nome" cliente
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC12.2.1 - Visualizzazione "Cognome" cliente
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Cognome" cliente
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-===== UC12.2.4 - Visualizzazione "Provincia" cliente
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Provincia" cliente
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-=== UC13 - Visualizzazione "Statistiche Mensili"
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione "Statistiche Mensili"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-=== UC14 - Visualizzazione "Gestione Utenti"
-
-=== UC15 - Visualizzazione dettaglio "Utente"
-
-=== UC16 - Visualizzazione "Cronologia Ricerche"
-
-=== UC17 - Visualizzazione "Cronologia Feedback"
-
-=== UC18 - Errore di ricerca
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Errore di ricerca
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
-=== UC19 - Footer
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione risultati di ricerca per "Lista Clienti"
-  ],
-)
-*Attori:*
-
-*Precondizioni:*
-
-*Postcondizioni:*
-
-*Scenario principale:*
-
+- Admin:
+  - compila i campi presenti nella barra di ricerca (UC14.1.1);
+  - avvia la ricerca (UC14.1.2);
+  - visualizza i risultati della ricerca (UC14.2/UC16).
+- Sistema:
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC14.1.1);
+  - contatta tramite API il software che fornisce i risultati della ricerca;
+  - riceve tramite API una risposta dal software;
+  - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
 - *Use Case:*
-- UC19.1 - Visualizzazione informazioni azienda.
+- UC14.1.1 - Compilazione campi ricerca.
+- UC14.1.2 - Avvio ricerca.
 
-==== UC19.1 - Visualizzazione informazioni azienda
-#figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
-  caption: [
-    Visualizzazione risultati di ricerca per "Lista Clienti"
-  ],
-)
+===== UC14.1.1 - Compilazione campi ricerca
 *Attori:*
-
+- Admin;
 *Precondizioni:*
-
+- L'utente sta visualizzando la vista "Cronologia Ricerche" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
 *Postcondizioni:*
-
-*Scenario principale:*
-
-/*
-== UC3 - Visualizzazione pagina profilo personale
-
-#figure(
-  image("/imgs/Uml/UC3.jpg", width: 80%),
-  caption: [
-    Visualizzazione pagina profilo personale
-  ],
-)
-
-*Attori:*
-- Admin.
-*Precondizioni:*
-- L’utente ha già effettuato l’accesso alla piattaforma come admin (UC1).
-*Postcondizioni:*
-- Viene visualizzata la pagina del profilo.
+- L'utente ha compilato correttamente i campi di ricerca;
 *Scenario principale:*
 - Admin:
-   - Clicca sul tasto “Profilo” presente nella pagina principale.
+  - compila i campi presenti nella barra di ricerca (UC14.1.1).
 - Sistema:
-   - Stampa correttamente a schermo la pagina del profilo.
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC14.1.1).
 *Generalizzazioni:*
-- UC3.1 - Visualizzazione dati personali.
-- UC3.2 - Visualizzazione lista utenti.
-- UC3.3 - Aggiunta nuovo utente.
+- *Use Case:*
+- UC14.1.1.1 - Scelta input "Data";
+- UC14.1.1.2 - Completamento input "Username";
 
-=== UC3.1 - Visualizzazione dati personali
-
+===== Sotto-UC UC14.1.1
 #figure(
-  image("/imgs/Uml/UC3.1.jpg", width: 80%),
+  image("/imgs/Uml/UC14.1.1_gen.png", width: 80%),
   caption: [
-    Visualizzazione dati personali
+    Sotto-UC UC14.1.1 
   ],
 )
++ *UC14.1.1.1 - Scelta input "Data"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input data.
+  *Postcondizioni:*
+  - Il campo data mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input;
+    - sceglie una delle opzioni possibili per l'input.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC14.1.1.2 - Completamento input "Username"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input username.
+  *Postcondizioni:*
+  - Il campo username mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili per l'input.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
+===== UC14.1.2 - Avvio ricerca
 
 *Attori:*
-- Admin
+- Admin;
 *Precondizioni:*
-- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- il sistema ha stampato correttamente la pagina del profilo (UC3).
-- il sistema ha correttamente caricato i dati dell'admin.
+- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+- L'utente ha compilato i campi della barra di ricerca (UC14.1.1.1, UC14.1.1.2).
 *Postcondizioni:*
-- Vengono visualizzate correttamente le informazioni personali.
+- Il sistema estrapola i dati dalla barra di ricerca;
+- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
 *Scenario principale:*
 - Admin:
-  - Ha correttamente cliccato sulla pagina "Profilo".
-  - Visualizza le sue informazioni perosnali.
+  - interagisce con il pulsante di avvio ricerca.
 - Sistema:
-  - Stampa corretamente a schermo le informazioni personali.
+  - estrapola i dati dalla barra di ricerca;
+  - contatta il software dedicato con i dati estrapolati tramite API;
+  - riceve una risposta tramite API dal software dedicato;
+  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC14.2).
+
+==== UC14.2 - Visualizzazione lista ricerche
+#figure(
+  image("/imgs/Uml/UC14.2.png", width: 65%),
+  caption: [
+    Visualizzazione lista ricerche
+  ],
+)
+*Attori:*
+- Admin;
+*Precondizioni:*
+- L'utente visualizza correttamente la vista "Cronologia Ricerche".
+*Postcondizioni:*
+- L'utente visualizza la lista delle ricerche;
+- Nel caso l'utente abbia effettuato una ricerca (UC14.1), ne visualizza i risultati.
+*Scenario principale:*
+- Admin:
+  - visualizza la lista delle ricerche;
+  - visualizza i risultati della ricerca effettuata.
+- Sistema:
+  - mostra la lista delle ricerche;
+  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+*Estensioni:*
+- UC16 - Errore di ricerca.
 *Generalizzazioni:*
-- UC3.1.1 Visualizzazione email personale.
-- UC3.1.2 Visualizzazione nome admin.
-- UC3.1.3 Visualizzazione cognome admin.
+- *Use Case:*
+- UC14.2.1 - Visualizzazione dettagli singola "Ricerca".
 
-==== UC3.1.1 - Visualizzazione email personale
-*Attori:*
-- Admin
-*Precondizioni:*
-- il sistema ha caricato correttamente la sezione dei dati personali (UC3.1)
-*Postcondizioni:*
-- Viene visualizzata correttamente l'email.
-*Scenario principale:*
-- Admin:
-  - Si trova correttamente nella sezione profilo.
-  - Visualizza la propria email personale.
-
-==== UC3.1.2 - Visualizzazione nome admin
-*Attori:*
-- Admin
-*Precondizioni:*
-- il sistema ha caricato correttamente la sezione dei dati personali (UC3.1)
-*Postcondizioni:*
-- Viene visualizzata correttamente il nome dell'utente.
-*Scenario principale:*
-- Admin:
-  - Si trova correttamente nella sezione profilo personale.
-  - Visualizza il proprio nome.
-
-==== UC.3.1.3 - Visualizzazione cognome admin
-*Attori:*
-- Admin
-*Precondizioni:*
-- il sistema ha caricato correttamente la sezione dei dati personali (UC3.1)
-*Postcondizioni:*
-- Viene visualizzata correttamente il cognome dell'utente.
-*Scenario principale:*
-- Admin:
-  - Si trova correttamente nella sezione profilo personale.
-  - Visualizza il proprio cognome.
-
-=== UC3.2 - Visualizzazione lista utenti
-
+===== UC14.2.1 - Visualizzazione dettagli singola "Ricerca"
 #figure(
-  image("/imgs/Uml/UC3.2.jpg", width: 80%),
+  image("/imgs/Uml/UC14.2.1.png", width: 65%),
   caption: [
-    Visualizzazione lista utenti
+    Visualizzazione dettagli singola "Ricerca"
   ],
 )
-
 *Attori:*
-- Admin
+- Admin;
 *Precondizioni:*
-- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- il sistema ha stampato correttamente la pagina del profilo (UC3).
-- il sistema ha correttamente caricato la lista degli utenti.
+- L'utente sta visualizzando la lista di ricerche.
 *Postcondizioni:*
-- Viene visualizzata correttamente la lista degli utenti.
+- L'utente osserva un singolo elemento della lista.
 *Scenario principale:*
 - Admin:
-  - Ha correttamente cliccato sulla pagina "Profilo".
-  - Visualizza la lista degli utenti.
-- Sistema:
-  - Stampa correttamente a schermo la lista.
+  - osserva una ricerca della lista tra i vari mostrati.
 *Generalizzazioni:*
-- UC3.2.1 Visualizzazione email utente.
-- UC3.2.2 Visualizzazione password utente.
-- UC3.2.3 Eliminazione utente.
+- *Use Case:*
+- UC14.2.1.1 - Visualizzazione "Data" ricerca;
+- UC14.2.1.2 - Visualizzazione "Username" utente ricerca;
+- UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca.
 
-==== UC3.2.1 - Visualizzazione email utente
-*Attori:*
-- Admin
-*Precondizioni:*
-- Il sistema ha caricato correttamente la lista degli utenti (UC3.2).
-*Postcondizioni:*
-- Viene visualizzata l'email di un utente della lista.
-*Scenario principale:*
-- Admin:
-  - Si trova correttamente nella sezione della lista degli utenti.
-  - Visualizza l'email dell'utente che desidera.
-
-==== UC3.2.2 - Visualizzazione password utente
-*Attori:*
-- Admin
-*Precondizioni:*
-- Il sistema ha caricato correttamente la lista degli utenti (UC3.2).
-*Postcondizioni:*
-- Viene visualizzata la password di un utente della lista.
-*Scenario principale:*
-- Admin:
-  - Si trova correttamente nella sezione della lista degli utenti.
-  - Visualizza la password dell'utente che desidera.
-
-==== UC3.2.3 - Eliminazione utente.
-*Attori:*
-- Admin.
-*Precondizioni:*
-- Il sistema ha caricato correttamente la lista degli utenti (UC3.2)
-*Postcondizioni:*
-- L'utente ha eliminato correttamente l'utente con i privilegi base.
-*Scenario principale:*
-- Admin:
-    - Si trova correttamente nella sezione della lista degli utenti.
-    - Clicca sul bottone "Elimina" a lato dell'utente che vuole eliminare.
-- Sistema:
-    - Elimina dal sistema il profilo dell'utente.
-
-
-=== UC3.3 - Aggiunta nuovo utente
-
+===== Sotto-UC UC14.2.1
 #figure(
-  image("/imgs/Uml/UC3.3.jpg", width: 80%),
+  image("/imgs/Uml/UC14.2.1_gen.png", width: 70%),
   caption: [
-    Aggiunta nuovo utente
+    Sotto-UC UC14.2.1 
   ],
 )
++ *UC14.2.1.1 - Visualizzazione "Data" ricerca*
 
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza la data del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    - visualizza la data del risultato che sta osservando.
+
++ *UC14.2.1.2 - Visualizzazione "Username" utente ricerca*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza lo username utente del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    - visualizza lo username utente del risultato che sta osservando.
+
++ *UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza lo score del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    - visualizza i criteri di ricerca (Sotto-UC UC8.1.1) del risultato che sta osservando.
+
+=== UC15 - Visualizzazione vista "Cronologia Feedback"
+#figure(
+  image("/imgs/Uml/UC15.png", width: 80%),
+  caption: [
+    Visualizzazione vista "Cronologia Feedback"
+  ],
+)
 *Attori:*
-- Admin.
+- Admin;
 *Precondizioni:*
-- L'utente ha già fatto l'accesso nella piattaforma ed è l'admin che possiede i requisiti necessari.
-- Il sistema ha stampato correttamente la pagina del profilo (UC3).
-- Il ha correttamente caricato il form per l'aggiunta di un nuovo utente.
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema;
+- L'utente ha aperto il menù contenente le varie funzionalità del sito;
+- L'utente ha selezionato la funzionalità di cronologia feedback dal menù.
 *Postcondizioni:*
-- L'admin ha aggiunto correttamente il nuovo utente con i privilegi base (User).
+- L'utente visualizza nella vista principale della pagina la funzionalità di cronologia feedback.
 *Scenario principale:*
 - Admin:
-    - Ha correttamente cliccato sulla pagina "Profilo".
-    - Visualizza il form per l'aggiunta di un nuovo utente.
-    - Inserisce la email del nuovo utente nel campo [email] (UC3.3.1).
-    - Inserisce la password del nuovo utente nel campo [password] (UC3.3.2).
+  - seleziona il bottone relativo alla funzionalità di cronologia feedback nel menù (UC5);
+  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC15.1);
+  - visualizza la lista dei feedback (UC15.2).
 - Sistema:
-    - Verifica che i campi non siano vuoti (email, password).
-    - Se i campi sono riempiti correttamente, salva nel sistema le credenziali dei nuovi utenti.
+  - mostra all'utente la funzionalità di cronologia feedback;
+  - fornisce all'utente la possibilità di effettuare una ricerca (UC15.1) e di visualizzarne i risultati;
+  - mostra all'utente la lista dei feedback (UC15.2).
 *Generalizzazioni:*
-- UC3.3.1 - Inserimento email.
-- UC3.3.2 - Inserimento password.
+- *Use Case:*
+- UC15.1 - Ricerca per vista "Cronologia Feedback";
+- UC15.2 - Visualizzazione lista feedback.
 
+==== UC15.1 - Ricerca per vista "Cronologia Feedback"
 #figure(
-  image("/imgs/Uml/UC4 Generalizzazione.jpg", width: 80%),
+  image("/imgs/Uml/UC15.1.png", width: 80%),
   caption: [
-    Inserimento email e password per nuovo utente
+    Ricerca per vista "Cronologia Feedback"
   ],
 )
-
-==== UC3.3.1 - Inserimento email
 *Attori:*
-- Admin.
+- Admin;
 *Precondizioni:*
-- Il sistema ha caricato correttamente il campo email all'interno del form.
+- L'utente sta visualizzando la vista "Cronologia Feedback" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
+- L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente inserisce correttamente la email dell'utente che vuole aggiungere.
+- L'utente visualizza i risultati della ricerca (UC15.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin:
-    - inserisce la email nel campo email.
+  - compila i campi presenti nella barra di ricerca (UC15.1.1);
+  - avvia la ricerca (UC15.1.2);
+  - visualizza i risultati della ricerca (UC15.2/UC16).
 - Sistema:
-    - il sistema verifica che l'email inserita sia nel formato corretto.
-    - prosegue con la creazione dell'utente utilizzando l'email inserita.
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC15.1.1);
+  - contatta tramite API il software che fornisce i risultati della ricerca;
+  - riceve tramite API una risposta dal software;
+  - mostra a schermo i risultati della ricerca.
+*Generalizzazioni:*
+- *Use Case:*
+- UC15.1.1 - Compilazione campi ricerca.
+- UC15.1.2 - Avvio ricerca.
 
-==== UC3.3.2 - Inserimento password
+===== UC15.1.1 - Compilazione campi ricerca
 *Attori:*
-- Admin.
+- Admin;
 *Precondizioni:*
-- Il sistema ha caricato correttamente il campo password all'interno del form.
+- L'utente sta visualizzando la vista "Cronologia Feedback" nella pagina principale;
+- L'utente decide di fare una ricerca e compila i campi necessari;
 *Postcondizioni:*
-- L'utente inserisce correttamente la password dell'utente che vuole aggiungere.
+- L'utente ha compilato correttamente i campi di ricerca;
 *Scenario principale:*
 - Admin:
-    - inserisce la password nel campo password.
+  - compila i campi presenti nella barra di ricerca (UC15.1.1).
 - Sistema:
-    - prosegue con la creazione dell'utente utilizzando la password inserita.
+  - memorizza i dati inseriti nei campi della barra di ricerca (UC15.1.1).
+*Generalizzazioni:*
+- *Use Case:*
+- UC15.1.1.1 - Scelta input "Data";
+- UC15.1.1.2 - Completamento input "Username utente";
 
-== UC6 - Vista Cliente per prodotti
-
+===== Sotto-UC UC15.1.1
 #figure(
-  image("/imgs/Uml/UC6.jpg", width: 80%),
+  image("/imgs/Uml/UC15.1.1_gen.png", width: 80%),
   caption: [
-    Vista cliente per prodotti
+    Sotto-UC UC15.1.1 
   ],
 )
++ *UC15.1.1.1 - Scelta input "Data"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input data.
+  *Postcondizioni:*
+  - Il campo data mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - visualizza le opzioni possibili per l'input;
+    - sceglie una delle opzioni possibili per l'input.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
++ *UC15.1.1.2 - Completamento input "Username"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input username.
+  *Postcondizioni:*
+  - Il campo username mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin:
+    - visualizza un'opzione di default per l'input;
+    - seleziona l'opzione di default per modificarla;
+    - inizia a compilare il campo con l'opzione che vuole selezionare;
+    - visualizza le opzioni possibili per l'input;
+    - visualizza suggerimenti di autocompletamento per l'input;
+    - sceglie una delle opzioni possibili per l'input.
+  - Sistema:
+    - mostra all'utente un'opzione di default per l'input;
+    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    - prende a conoscenza i caratteri inseriti dall'utente;
+    - contatta tramite API il software che fornisce le opzioni possibili;
+    - riceve tramite API una risposta con le opzioni possibili dal software;
+    - mostra all'utente le opzioni possibili per l'input;
+    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+
+===== UC15.1.2 - Avvio ricerca
 
 *Attori:*
-- Admin.
-- Users.
+- Admin;
 *Precondizioni:*
-- L'utente ha eseguito l'accesso correttamente.
-- L'utente è nella pagina principale della piattaforma.
+- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+- L'utente ha compilato i campi della barra di ricerca (UC15.1.1.1, UC15.1.1.2).
 *Postcondizioni:*
-- L'utente visualizza correttamente la lista dei prodotti consigliati per il determinato cliente.
+- Il sistema estrapola i dati dalla barra di ricerca;
+- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
 *Scenario principale:*
-- Admin/Users:
-    - Clicca il tasto "filtri" presente nella schermata principale.
-    - Seleziona il campo "Cliente per prodotti".
-    - Seleziona il Cliente desiderato dal menù a tendina.
+- Admin:
+  - interagisce con il pulsante di avvio ricerca.
 - Sistema:
-    - crea correttamente la vista con i prodotti suggeriti associati al cliente.
+  - estrapola i dati dalla barra di ricerca;
+  - contatta il software dedicato con i dati estrapolati tramite API;
+  - riceve una risposta tramite API dal software dedicato;
+  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC15.2).
 
-
-== UC7 - Vista prodotti per cliente
-
+==== UC15.2 - Visualizzazione lista feedback
 #figure(
-  image("/imgs/Uml/UC7.jpg", width: 80%),
+  image("/imgs/Uml/UC15.2.png", width: 65%),
   caption: [
-    Vista prodotti per cliente
+    Visualizzazione dettagli singolo item
   ],
 )
-
 *Attori:*
-- Admin.
-- Users.
+- Admin;
 *Precondizioni:*
-- L'utente ha eseguito l'accesso correttamente.
-- L'utente è nella pagina principale della piattaforma.
+- L'utente visualizza correttamente la vista "Cronologia Feedbak".
 *Postcondizioni:*
-- L'utente visualizza correttamente la lista dei Clienti consigliati per il determinato prodotto.
+- L'utente visualizza la lista dei feedback;
+- Nel caso l'utente abbia effettuato una ricerca (UC15.1), ne visualizza i risultati.
 *Scenario principale:*
-- Admin/Users:
-    -Clicca il tasto "filtri" presente nella schermata principale.
-    - Seleziona il campo "Prodotto per Clienti".
-    - Seleziona il "Prodotto" desiderato dal menù a tendina.
+- Admin:
+  - visualizza la lista dei feedback;
+  - visualizza i risultati della ricerca effettuata.
 - Sistema:
-    - crea correttamente la vista con i clienti suggeriti associati al prodotto.
+  - mostra la lista dei feedback;
+  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+*Estensioni:*
+- UC16 - Errore di ricerca.
+*Generalizzazioni:*
+- *Use Case:*
+- UC15.2.1 - Visualizzazione dettagli singolo "Feedback".
 
-== UC8 - Feedback raccomandazione
-
+===== UC15.2.1 - Visualizzazione dettagli singolo "Feedback"
 #figure(
-  image("/imgs/Uml/UC8.jpg", width: 80%),
+  image("/imgs/Uml/UC15.2.1.png", width: 65%),
   caption: [
-    Feedback raccomandazione
-  ],
-)
-
-*Attori:*
-- Admin
-- Users
-*Precondizioni:*
-- L'utente ha eseguito l'accesso correttamente.
-- L'utente ha visualizzato la lista "Cliente per prodotti" o "Prodotto per Clienti".
-*Postcondizioni:*
-- L'utente ha correttamente lasciato un feedback per la lista mostrata.
-*Scenario principale:*
-- Admin/Users:
-    - Seleziona un valore in un range da 1 a 5.
-- Sistema:
-    - Registra correttamente la valutazione dell'utente all'interno del sistema.
-
-== UC9 - Logout
-#figure(
-  image("/imgs/Uml/UC9.jpg", width: 80%),
-  caption: [
-    Logout
+    Visualizzazione dettagli singolo "Feedback"
   ],
 )
 *Attori:*
-- Admin
-- Users
+- Admin;
 *Precondizioni:*
-- L'utente ha eseguito l'accesso correttamente (UC1).
+- L'utente sta visualizzando la lista dei feeback.
 *Postcondizioni:*
-- L'utente ha effettuato correttamente il logout, uscendo dalla propria sessione.
+- L'utente osserva un singolo elemento della lista.
 *Scenario principale:*
-- Admin/Users:
-    - Seleziona l'opzione di logout presente nella pagina in cui si trova
-- Sistema:
-    - Chiede conferma all'utente sul voler uscire dalla sessione corrente;
-    - Termina la sessione dell'utente, reindirizzandolo alla pagina di login.
+- Admin:
+  - osserva un feedback della lista tra i vari mostrati.
+*Generalizzazioni:*
+- *Use Case:*
+- UC15.2.1.1 - Visualizzazione "Data" feedback;
+- UC15.2.1.2 - Visualizzazione "Username" utente feedback;
+- UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback.
 
-*/
+===== Sotto-UC UC15.2.1
+#figure(
+  image("/imgs/Uml/UC15.2.1_gen.png", width: 70%),
+  caption: [
+    Sotto-UC UC15.2.1 
+  ],
+)
++ *UC15.2.1.1 - Visualizzazione "Data" feedback*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza la data del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    - visualizza la data del risultato che sta osservando.
+
++ *UC15.2.1.2 - Visualizzazione "Username" utente feedback*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza lo username utente del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    - visualizza lo username utente del risultato che sta osservando.
+
++ *UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza lo score del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    - visualizza il contenuto del feedback (Sotto-UC UC9.1) del risultato che sta osservando.
+
+=== UC16 - Errore di ricerca
+
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente ha effettutato una ricerca (UC8.1, UC10.1, UC12.1, UC14.1, UC15.1) non andata a buon fine;
+- Nella lista che andrà visualizzata non è presente alcun risultato.
+*Postcondizioni:*
+- L'utente visualizza un messaggio informativo.
+*Scenario principale:*
+- Admin/User:
+  - visualizza un messaggio informativo.
+- Sistema:
+  - controlla la presenza di risultati;
+  - decide di mostrare il messaggio informativo.
+
+//E' da esprimere come funzionalità? Non è "solo contorno" ?
+// === UC17 - Visualizzazione informazioni azienda
+
+// *Attori:*
+
+// *Precondizioni:*
+
+// *Postcondizioni:*
+
+// *Scenario principale:*
+
+// ==== UC17.1 - Visualizzazione "Nome" azienda
+// ==== UC17.2 - Visualizzazione "Contatto" azienda
+// ==== UC17.3 - Visualizzazione "Logo" azienda
+
 = Requisiti
 In questa sezione esponiamo i requisiti individuati durante l'attività di analisi a partire dai casi
 d'uso, dall’analisi del capitolato d’appalto e dagli incontri interni e con il proponente. Ogni
