@@ -8,8 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.13.0", "2023-12-22", p.baggio + "\n" + p.rosson, "", "Nuova stesura definitiva casi d'uso",
-    "0.12.1", "2023-12-15", p.rosson, "", "Correzione UC1 e sotto casi",
+    "0.13.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
+    "0.12.1", "2023-12-15", p.rosson, p.bomben, "Correzione UC1 e sotto casi",
     "0.12.0", "2023-12-15", p.bomben, p.baggio, "Sistemazione UC3",
     "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
     "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
@@ -117,7 +117,7 @@ Il sistema dispone di due attori:
   ],
 )
 *Attori:*
-- Admin;
+- Admin; // Qua sarebbe da mettere utente non autenticato mi sa
 - User.
 *Precondizioni:*
 - L'utente possiede un account valido consegnatoli dall'amministrazione;

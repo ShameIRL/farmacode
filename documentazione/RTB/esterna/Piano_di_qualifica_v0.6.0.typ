@@ -142,9 +142,15 @@ In particolare andranno verificati:
 )
 
 == Qualità del software
-DA RISCRIVERE La Qualità è un aspetto fondamentale per la valutazione del prodotto, valutiamo per determinare il grado di conformità alle attese e ci si aspetta una valutazione da chi fa, da chi usa e da terze parti.\
-Chi sviluppa il prodotto avrà una visione intrinseca della qualità, ovvero conforme ai requisiti o idonea all'uso, chi usa il prodotto avrà una visione relativa della qualità, ovvero la soddisfazione del cliente ed infine terze parti che confrontano il prodotto avranno una visione quantitativa della qualità, ovvero una misurazione oggettiva o, appunto, per confronto.\
-Nel controllo di qualità bisogna assicurare conformità passo-passo invece che solo a fine corsa.
+La qualità del software è una misura della conformità del prodotto rispetto ai requisiti specificati e delle sue caratteristiche intrinseche, come la manutenibilità, l'affidabilità, l'efficienza e l'usabilità. La qualità non è solo un aspetto tecnico, ma coinvolge anche la soddisfazione del cliente e l'adattamento alle esigenze del mercato.\
+La qualità del software si mostra attraverso diverse dimensioni quali:
+- Funzionalità;
+- Usabilità;
+- Portabilità;
+- Efficienza;
+- Affidabilità;
+- Manutenibilità.
+
 #table(
   columns: (35mm, auto, 30mm),
    inset: (
@@ -189,11 +195,11 @@ Nel controllo di qualità bisogna assicurare conformità passo-passo invece che 
   [100%],
   [MPD4],
   [Copertura  dei requisiti desiderabili], 
-  [≥ 85%],
+  [≥ 75%],
   [100%],
   [MPD5],
   [Copertura  dei requisiti opzionali], 
-  [≥ 70%],
+  [≥ 50%],
   [100%],
 //USABILITA'
   [MPD6],
@@ -212,8 +218,8 @@ Nel controllo di qualità bisogna assicurare conformità passo-passo invece che 
 //EFFICIENZA
   [MPD9],
   [Tempo medio di risposta al comando di ricerca], 
+  [8 secondi],
   [5 secondi],
-  [3 secondi],
 //AFFIDABILITA'
   [MPD10],
   [Gestione errori], 
