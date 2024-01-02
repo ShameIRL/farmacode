@@ -6,8 +6,9 @@
     
   ),
   changelog: (
+    "0.4.0", "2024-01-02", p.favaron, "", "Stesura nuova definizioni",
     "0.3.0", "2023-12-12", p.bomben, p.baggio, "Stesura nuove definizioni",
-    "0.2.1", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
+    "0.2.0", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
     "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
     "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
   ),
@@ -24,7 +25,6 @@ facilmente terminologie.
 Un'Application Programming Interface (API), rappresenta un insieme di regole e definizioni che consente a un software di interagire con altri software. Le API sono quindi un collegamento tra un'applicazione che invia una richiesta e l'applicazione che invia la risposta.
 
 == Artefatto
-
 Nel contesto dello sviluppo software, il termine artefatto si riferisce a un risultato intermedio generato durante il processo di sviluppo del software. Gli artefatti sono documenti, codice sorgente o altri elementi che fungono da risultati intermedi di varie attività nel ciclo di vita del software. 
 
 = B
@@ -41,12 +41,19 @@ del specifico prodotto software.
 == Casi d'uso
 Un caso d'uso è una descrizione dettagliata di come un utente (attore) interagisce con l'applicazione per il compimento di un attività specifica. E' uno strumento utilizzato nel contesto dello sviluppo software per individuare i requisiti funzionali del prodotto e per fornire una visuale chiara delle interazioni che possono avvenire all'interno dell'applicazione.
 
+== Context switch
+Nel contesto di un team di sviluppo software, il termine "context switch" si riferisce al cambiamento focus di un membro di progetto da un compito o una responsabilità ad un'altra.
+
+
 == Continuous Deployment
 La Continuous Deployment (CD) è una pratica di sviluppo del software che estende il concetto di Continuous Integration (CI). 
 La Continuous Deployment va oltre, automatizzando anche il processo di distribuzione del software in ambienti di produzione.
 
 == Continuous Integration
 La Continuous Integration (CI) è una pratica di sviluppo del software che mira a migliorare la qualità del codice sorgente attraverso l'integrazione frequente dei cambiamenti nel repository principale.
+
+== Cruscotto
+Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce una panoramica sintetica ed immediata riguardanti lo stato delle attività di progetto. Evolve in modo dinamico all'avanzare del progetto e permette a chi lo consulta di avere una visione chiara e intuitiva permettendo di prendere decisioni in modo tempestivo.  
 
 = D
 
@@ -109,6 +116,9 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 
 == Web app
 Una web application (web app) è un'applicazione software progettata per essere utilizzata attraverso un browser web su un dispositivo Internet. A differenza delle applicazioni desktop tradizionali, le web app non richiedono un download o un'installazione separata, poiché vengono eseguite direttamente all'interno di un browser.
+
+== Workshop
+Un workshop interno costituisce un evento appositamente organizzato per agevolare la condivisione e il trasferimento di conoscenze e competenze tra i membri del gruppo. Durante questa sessione, i partecipanti più esperti svolgono il ruolo di formatori, condividendo le proprie competenze, esperienze e conoscenze con coloro che necessitano acquisirle.
 
 = X
 
