@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.8.0", "2024-01-02", p.favaron, "", "Seconda stesura sezione analisi dei rischi",
+    "0.8.0", "2024-01-02", p.favaron, p.rosson, "Seconda stesura sezione analisi dei rischi",
     "0.7.0", "2023-12-23", p.favaron, p.rosson, "Conversione immagini preventivi e consultivi in tabelle",
     "0.6.0", "2023-12-22", p.favaron, p.rosson, "Seconda stesura sezione introduzione",
     "0.5.3", "2023-12-20", p.favaron, p.rosson, "Creata un'unica leggenda per i grafici nella sezione preventivi e consultivi",
