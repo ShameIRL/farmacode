@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.7.0", "2024-01-05", p.bomben, "", "",
     "0.6.0", "2023-12-21", p.pandolfo, p.bomben, "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
@@ -37,9 +38,13 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 == Riferimenti
 
 === Riferimenti informativi
-- T6 - Progettazione software (slide del corso di Ingegneria del Software);
-- T7 - Qualità del software (slide del corso di Ingegneria del Software);
-- T8 - Qualità di processo (slide del corso di Ingegneria del Software).
+- T6 - Progettazione software (slide del corso di Ingegneria del Software);\
+  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf")
+- T7 - Qualità del software (slide del corso di Ingegneria del Software);\
+  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T07.pdf")
+- T8 - Qualità di processo (slide del corso di Ingegneria del Software).\
+  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T08.pdf")
+#pagebreak()
 
 = Qualità di prodotto
 
@@ -140,6 +145,7 @@ In particolare andranno verificati:
   [≥ 60],
   [100],
 )
+#pagebreak()
 
 == Qualità del software
 La qualità del software è una misura della conformità del prodotto rispetto ai requisiti specificati e delle sue caratteristiche intrinseche, come la manutenibilità, l'affidabilità, l'efficienza e l'usabilità. La qualità non è solo un aspetto tecnico, ma coinvolge anche la soddisfazione del cliente e l'adattamento alle esigenze del mercato.\
@@ -266,6 +272,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
   [MPC9, MPC10],
 )
+#pagebreak()
 
 == Processi di supporto
 #table(
@@ -406,9 +413,54 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 = Controllo di qualità
 
 == Test
+Questa sezione del documento è dedicata al testing, parte fondamentale per la correttezza e il rilascio del prodotto finale. La strategia adottata dal nostro gruppo per la fase di testing prevede quattro specifiche tipologie:
+- Test di unita: prevede la verifica delle singole unità del sistema, andando a verificare il corretto funzionamento dell'unità indipendente;
+- Test di integrazione: prevede la verifica di più unita che cooperano tra di loro per lo svolgimento di una specifica richiesta, questa tipologia di test viene svolta dopo i test di unità.
+- Test di sistema: prevede le verifica dell'interno sistema, andando a verificare che tutte le componenti funzionino correttamente tra di loro.
+- Test di accettazione: prevede la verifica del software con il committente. Devono essere quindi soddisfatti tutti i requisiti, di vincolo, obbligatori, di qualità e di prestazione concordati e accettati con il proponente. Il superamento di questo test permette il rilascio del prodotto finale.
+
+=== Test di accettazione
+I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode in presenza del proponente. In quella occasione si è quindi mostrata l'efficienza e la completezza del prodotto, /* qua boh, nel senso si può specificare che era il POC? */in modo da poter avviare l'attività di validazione.
+
+#table(
+  columns: (35mm, 75mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice Test*], [*Descrizione*], [*Stato test*],
+  [TA01], [Verificare la possibilità di selezionare la ricerca per prodotto], [Passato],
+  [TA02], [Verificare la possibilità di selezionare la ricerca per cliente], [Passato],
+  [TA03], [Verificare la possibilità di eseguire la ricerca per 5 o 10 risultati], [Passato],
+  [TA04], [Verificare la corretta visualizzazione dei risultati], [Passato],
+  [TA04.1], [Verificare la corretta visualizzazione delle righe dei risultati], [Passato],
+  [TA05], [Verificare la performance del tempo di risposta], [Passato],
+  [TA07], [], [Passato],
+  [TA08], [], [Passato],
+
+)
+
+==== Tracciamento test di accettazione
+#table(
+  columns: (40mm, 40mm),
+  inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice Test*], [*Codice caso d'uso*],
+  [TA01],[UC8.1.1.1, UC8.1.1.2],
+  [TA02],[UC8.1.1.1, UC8.1.1.2],
+  [TA03],[UC8.1.1.3],
+  [TA04],[UC8.1.2, UC8.2],
+  [TA04.1],[UC8.2.1 e generalizzazioni],
+  [],[],
+  [],[],
+  [],[],
+)
 
 == Grafici
 
-== Tabelle
 
 = Miglioramenti
