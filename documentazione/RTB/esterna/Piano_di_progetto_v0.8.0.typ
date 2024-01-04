@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.8.1", "2024-01-02", p.favaron, "", "Stesura consultivo sprint.4",
     "0.8.0", "2024-01-02", p.favaron, p.rosson, "Seconda stesura sezione analisi dei rischi",
     "0.7.0", "2023-12-23", p.favaron, p.rosson, "Conversione immagini preventivi e consultivi in tabelle",
     "0.6.0", "2023-12-22", p.favaron, p.rosson, "Seconda stesura sezione introduzione",
@@ -833,6 +834,49 @@ figure(
 Il preventivo per questo sprint ridistribuisce il focus del team in modo più equo. Dopo due sprint incentrati sui lavori del PoC si stima infatti di essere arrivati ad un suo prossimo completamento.
 
 - Consuntivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [4], [],
+  [Bomben F.], [], [], [], [3 #red("(+1)")], [], [],
+  [Carraro A.], [4], [], [2], [], [], [],
+  [Favaron R.], [], [], [4 #red("(+1)")], [], [1], [],
+  [Pandolfo M.], [], [2], [], [2], [], [],
+  [Passarella A.], [], [], [3], [], [2], [],
+  [Rosson L.], [], [1], [], [3], [], [],
+)
+])
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [4], [3], [#red("10")], [#red("9")], [7], [0],
+  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
+  [Costo], [€120,00], [€75,00], [#red("€250,00")], [#red("€180,00")], [€105,00], [€0,00],
+  [Totale], [], [], [], [], [], [#red("€730,00")], 
+  [Bilancio], [], [], [], [], [], [€10.315,00],
+)
+])
+
+#figure(
+  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#4.png", height: 15%, width: auto),    
+  caption: [consuntivi/scarti/sprint.4]
+)
+
+#figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#4.png", height: 30%, width: auto),
+  caption: [consuntivi/bilanci/sprint.4]
+)
 
 === sprint.5
 - Preventivo:
