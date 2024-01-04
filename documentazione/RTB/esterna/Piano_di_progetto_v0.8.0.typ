@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.9.0", "2024-01-02", p.favaron, "", "Stesura sprint.5 e relativo consultivo e grafici",
     "0.8.1", "2024-01-02", p.favaron, "", "Stesura consultivo sprint.4",
     "0.8.0", "2024-01-02", p.favaron, p.rosson, "Seconda stesura sezione analisi dei rischi",
     "0.7.0", "2023-12-23", p.favaron, p.rosson, "Conversione immagini preventivi e consultivi in tabelle",
@@ -459,7 +460,7 @@ figure(
 nd.\
 
 ==== sprint.4
-- Periodo: 2023/12/11-2023/12-18 (1 settimana)
+- Periodo: 2023/12/11-2023/12/18 (1 settimana)
 - Macro-issues:
 
   -- Approvare quanto prodotto nello sprint.4;\
@@ -488,8 +489,43 @@ figure(
   
 )
 
-- imprevisti: 
+- Imprevisti incotrati e loro risoluzione: 
 Durante il seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
+
+==== sprint.5
+- Periodo: 2023/12/18-2023/12/31 (1 settimana e 5 giorni)
+- Macro-issues:
+
+  -- Approvare quanto prodotto nello sprint.5;\
+  -- Revisionare quanto prodotto nello sprint.5;\
+  -- Documentazione;\
+
+- Issue e task:
+  -- Continuazione stesura del documento "Norme di Progetto";\
+  -- Continuazione stesura del documento "Analisi dei Requisiti";\
+  -- Continuazione stesura del documento "Glossario";\
+  -- Continuazione stesura del documento "Piano di Progetto";\
+  -- Continuazione stesura del documento "Piano di Qualifica";\
+  -- Stesura verbale interno del 2023/12/18.\
+  -- Revisione verbale interno del 2023/12/18.\
+  -- Stesura verbale esterno del 2023/12/19.\
+
+- Sintesi:
+Durante il quarto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto", del "Piano di Qualifica" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". \ 
+Lo sprint è iniziato, come siamo sempre stati abituati a fare, con un meeting interno per discutere quanto di buono o non buono è stato fatto durante lo scorso sprint e si è discusso su come procedere per il periodo attuale. Il focus dello sprint numero cinque è stato l'avanzamento di tutti i documento per riuscire ad arrivare ad il loro completamento, come da preventivo riguardanete il seguente periodo. Grande attenzione è stata posta sull'Analisi dei Requisiti, in quanto, a termine della scorsa sprint di progetto, il gruppo aveva partecipato ad un meeting esterno con il  Professor Cardin, il quale aveva sottolineato l'importanza di arricchire il documento e cercare di andare più nel dettaglio riguardo la descrizione dei vari casi d'uso. E inoltre continuata la stesura incrementale degli altri documenti di progetto. \
+In data 2023/12/19 l'intero gruppo ha partecipato ad un meeting con l'azienda proponente, nel quale abbiamo esposto quanto svolto per il POC attraverso un breve showcase delle funzionalita e usi. Il nostro mentore è rimasto soddisfatto del lavoro svolto e ci ha dato consigli relativi a migliorie in vista poi del continuo sviluppo dopo questa prima fase (RTB).
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#5.png", height: auto, width: auto),
+  caption: [sprint.5]
+  )
+  
+)
+
+- Imprevisti incotrati e loro risoluzione: 
+Durante il seguente sprint ci siamo accorati che date le numerose festività e sfortunate influenze stagionali l'avanzamento degli obiettivi definiti ad inizio di questo periodo non è stato così importante e sicuramente molto indietro rispetto al preventivo fatto in fase di pianifiacazione. Quindi si è deciso di "allungare" la durata della sprint, da un consueto periodo di circa una settimana a circa due, fino la fine dell'anno, così da favorire un avanzamento più sostanzioso.
 
 === PB
 === CA
@@ -544,7 +580,6 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
   [Costo], [€120,00], [€200,00], [€75,00], [€140,00], [€120,00], [€0,00],
   [Totale], [], [], [], [], [], [*€655,00*], 
-
 )
 ])
 
@@ -925,6 +960,49 @@ figure(
 Questo sprint si pianifica essere l'ultimo della fase di RTB. Le risorse del team verranno impiegate per lo più sulla documentazione per arrivare a suo completamento e verifica. In particolare si stimano delle ore utili all'attività di analisi dei requisiti, in seguito al colloquio con il #p.cardin.
 
 - Consuntivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [2 #green("(-1)")], [2], [], [],
+  [Bomben F.], [4 #green("(-1)")], [1], [], [], [], [],
+  [Carraro A.], [], [], [], [2 #green("(-1)")], [2], [],
+  [Favaron R.], [], [1 #green("(-1)")], [], [3], [], [],
+  [Pandolfo M.], [], [], [], [3 #green("(-1)")], [], [],
+  [Passarella A.], [], [], [], [], [3 #green("(-1)")], [],
+  [Rosson L.], [], [2], [], [], [4 #green("(-1)")], [],
+)
+])
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [#green("3")], [#green("3")], [#green("1")], [#green("8")], [#green("3")], [0],
+  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
+  [Costo], [#green("€90,00")], [#green("€75,00")], [#green("€25,00")], [#green("€160,00")], [#green("€105,00")], [€0,00],
+  [Totale], [], [], [], [], [], [#green("€455,00")], 
+  [Bilancio], [], [], [], [], [], [€9.860,00],
+)
+])
+
+#figure(
+  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#5.png", height: 15%, width: auto),    
+  caption: [consuntivi/scarti/sprint.5]
+)
+
+#figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#5.png", height: 30%, width: auto),
+  caption: [consuntivi/bilanci/sprint.5]
+)
 
 == PB
 
