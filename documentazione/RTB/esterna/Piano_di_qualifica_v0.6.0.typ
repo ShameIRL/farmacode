@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.7.0", "2024-01-05", p.bomben, "", "",
+    "0.7.0", "2024-01-05", p.bomben, "", "Stesura sezione 5, 6 e 7",
     "0.6.0", "2023-12-21", p.pandolfo, p.bomben, "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
     "0.4.0", "2023-12-01", p.carraro, p.rosson, "Prima stesura qualità di prodotto",
@@ -17,6 +17,25 @@
     "0.1.0", "2023-11-24", p.carraro, p.rosson, "Struttura iniziale del documento",
   ),
 )
+= Elenco tabelle
+Qualità della documentazione\
+Metriche qualità della documentazione\
+Qualità del software\
+Metriche qualità del software\
+Processi primari\
+Processi di supporto\
+Processi organizzativi\
+Metriche processi primari\
+Metriche processi di supporto\
+Metriche processi organizzativi\
+Test di accettazione\
+Tracciamento test di accettazione\
+Test e tracciamento di sistema\
+Valutazione tecnologica\
+Valutazione organizzativa e personale\
+Indice di Gulpease dei documenti\
+
+#pagebreak(),
 
 = Introduzione
 
@@ -41,9 +60,9 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - T6 - Progettazione software (slide del corso di Ingegneria del Software);\
   #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf")
 - T7 - Qualità del software (slide del corso di Ingegneria del Software);\
-  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T07.pdf")
+  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf")
 - T8 - Qualità di processo (slide del corso di Ingegneria del Software).\
-  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T08.pdf")
+  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf")
 #pagebreak()
 
 = Qualità di prodotto
@@ -126,6 +145,7 @@ In particolare andranno verificati:
   [Il contenuto dei documenti deve essere comprensibile all'utente.],
   [MPD2],
 )
+#align(center)[Tabella 1: Qualità della documentazione]
 
 === Metriche utilizzate
 #table(
@@ -142,9 +162,10 @@ In particolare andranno verificati:
   [0%],
   [MPD2],
   [Indice di Gulpease], 
-  [≥ 60],
-  [100],
+  [≥ 40],
+  [60],
 )
+#align(center)[Tabella 2: Metriche qualità della documentazione]
 #pagebreak()
 
 == Qualità del software
@@ -184,6 +205,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
   [Capacità del prodotto di superare tutti  i test a cui viene sottoposto, al fine di garantire una corretta implementazione dei requisiti individuati],
   [MPD11, MPD12, \ MPD13, MPD14],
 )
+#align(center)[Tabella 3: Qualità del software]
 
 === Metriche utilizzate
 #table(
@@ -249,6 +271,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
   [≥ 80%],
   [100%],
 )
+#align(center)[Tabella 4: Metriche qualità del software]
 
 
 = Qualità di processo
@@ -272,6 +295,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Processo che ha lo scopo di determinare attività e compiti necessari alla realizzazione di un prodotto software che rispetti le esigenze del cliente.],
   [MPC9, MPC10],
 )
+#align(center)[Tabella 5: Processi primari]
 #pagebreak()
 
 == Processi di supporto
@@ -293,6 +317,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Processo con lo scopo di creare una documentazione che descriva in maniera esaustiva il prodotto.],
   [MPC....],   */
 )
+#align(center)[Tabella 6: Processi di supporto]
 
 == Processi organizzativi
 #table(
@@ -307,6 +332,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [Processo che si occupa di regolare le modalità di coordinamento del gruppo.],
   [MPC14],
 )
+#align(center)[Tabella 7: Processi organizzativi]
 
 == Metriche utilizzate
 === Processi primari
@@ -359,6 +385,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [100%],
   [100%],
 )
+#align(center)[Tabella 8: Metriche processi primari]
 
 === Processi di supporto
 #table(
@@ -381,7 +408,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   //ACCERTAMENTO DELLA QUALITA
   [MPC13],
   [Quality Metrics Satisfied (QMS)], 
-  [≥ 90%],
+  [≥ 75%],
   [100%],
   //DOCUMENTAZIONE
   /* [MPC ...],
@@ -393,6 +420,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [40-100],
   [60-100], */
 )
+#align(center)[Tabella 9: Metriche processi di supporto]
 
 === Processi organizzativi
 #table(
@@ -409,6 +437,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [≤ 5],
   [0],
 )
+#align(center)[Tabella 10: Metriche processi organizzativi]
 
 = Controllo di qualità
 
@@ -418,6 +447,7 @@ Questa sezione del documento è dedicata al testing, parte fondamentale per la c
 - Test di integrazione: prevede la verifica di più unita che cooperano tra di loro per lo svolgimento di una specifica richiesta, questa tipologia di test viene svolta dopo i test di unità.
 - Test di sistema: prevede le verifica dell'interno sistema, andando a verificare che tutte le componenti funzionino correttamente tra di loro.
 - Test di accettazione: prevede la verifica del software con il committente. Devono essere quindi soddisfatti tutti i requisiti, di vincolo, obbligatori, di qualità e di prestazione concordati e accettati con il proponente. Il superamento di questo test permette il rilascio del prodotto finale.
+#pagebreak()
 
 === Test di accettazione
 I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode in presenza del proponente. In quella occasione si è quindi mostrata l'efficienza e la completezza del prodotto, /* qua boh, nel senso si può specificare che era il POC? */in modo da poter avviare l'attività di validazione.
@@ -430,18 +460,36 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
   ),
   align: center,
   [*Codice Test*], [*Descrizione*], [*Stato test*],
-  [TA01], [Verificare la possibilità di selezionare la ricerca per prodotto], [Passato],
-  [TA02], [Verificare la possibilità di selezionare la ricerca per cliente], [Passato],
-  [TA03], [Verificare la possibilità di eseguire la ricerca per 5 o 10 risultati], [Passato],
-  [TA04], [Verificare la corretta visualizzazione dei risultati], [Passato],
-  [TA04.1], [Verificare la corretta visualizzazione delle righe dei risultati], [Passato],
-  [TA05], [Verificare la performance del tempo di risposta], [Passato],
-  [TA07], [], [Passato],
-  [TA08], [], [Passato],
-
+  [TA01], [Verificare la corretta visualizzazione della pagina principale], [Passato],
+  [TA02], [Verificare la possibilità di selezionare la ricerca per prodotto], [Passato],
+  [TA03], [Verificare la possibilità di selezionare la ricerca per cliente], [Passato],
+  [TA04], [Verificare la possibilità di eseguire la ricerca per 5 o 10 risultati], [Passato],
+  [TA05], [Verificare la corretta visualizzazione dei risultati], [Passato],
+  [TA05.1], [Verificare la corretta visualizzazione delle righe dei risultati], [Passato],
+  [TA06], [Verificare la performance del tempo di risposta], [Passato],
+  [TA07], [Verificare la corretta visualizzazione della pagina di Login], [Non implementato],
+  [TA07.1], [Verificare la corretta visualizzazione della normativa cookies], [Non implementato],
+  [TA07.2], [Verificare la corretta visualizzazione dell'alert di manutenzione], [Non implementato],
+  [TA07.3], [Verificare la corretta visualizzazione dell'alert errore di login], [Non implementato],
+  [TA08], [Verificare la corretta visualizzazione del Menù delle funzionalità], [Non implementato],
+  [TA08.1], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin/User], [Non implementato],
+  [TA08.2], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin], [Non implementato],
+  [TA09], [Verificare la corretta visualizzazione della sezione Profilo Utente], [Non implementato],
+  [TA09.1], [Verificiare la corretta visualizzazione e funzione delle funzionalità del Profilo Utente], [Non implementato],
+  [TA10], [Verificare la possibilità di eseguire il Logout], [Non implementato],
+  [TA11], [Verificare la possibilità di inserire un Feedback], [Non implementato],
+  [TA12], [Verificare la possibilità di visualizzare il catalogo prodotti], [Non implementato],
+  //fare un TA12.1... inteso anche per i TA successivi ?
+  [TA13], [Verificare la possibilità di visualizzare la lista clienti], [Non implementato],
+  [TA14], [Verificare la possibilità di visualizzare le statistiche mensili], [Non implementato],
+  [TA15], [Verificare la possibilità di visualizzare la cronologia di ricerche], [Non implementato],
+  [TA16], [Verificare la possibilità di visualizzare la cronologia dei feedback], [Non implementato],
+  [TA17], [Verificare la corretta visualizzazione di "Errore di ricerca"], [Non implementato],
 )
+#align(center)[Tabella 11: Test di accettazione]
 
 ==== Tracciamento test di accettazione
+#align(center)[
 #table(
   columns: (40mm, 40mm),
   inset: (
@@ -450,17 +498,137 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
   ),
   align: center,
   [*Codice Test*], [*Codice caso d'uso*],
-  [TA01],[UC8.1.1.1, UC8.1.1.2],
+  [TA01],[UC8],
   [TA02],[UC8.1.1.1, UC8.1.1.2],
-  [TA03],[UC8.1.1.3],
-  [TA04],[UC8.1.2, UC8.2],
-  [TA04.1],[UC8.2.1 e generalizzazioni],
-  [],[],
-  [],[],
-  [],[],
+  [TA03],[UC8.1.1.1, UC8.1.1.2],
+  [TA04],[UC8.1.1.3],
+  [TA05],[UC8.1.2, UC8.2],
+  [TA05.1],[UC8.2.1 e generalizzazioni],
+  [TA07],[UC1, UC1.1, UC1.2],
+  [TA07.1],[UC4, UC4.1, UC4.2],
+  [TA07.2],[UC2],
+  [TA07.3],[UC3],
+  [TA08],[UC5],
+  [TA08.1],[UC5.1, UC5.1.1, UC5.1.2, UC5.1.3, UC5.1.4],
+  [TA08.2],[UC5.2, UC5.2.1, UC5.2.2],
+  [TA09],[UC6],
+  [TA09.1],[UC6.1, UC6.2, UC6.2.1, UC6.2.2],
+  [TA10],[UC7],
+  [TA11],[UC9, UC9.1, UC9.2],
+  [TA12],[UC10 e generalizzazioni, UC11 e generalizzazioni],
+  [TA13],[UC12 e generalizzazioni],
+  [TA14],[UC13],
+  [TA15],[UC14, UC14.1, UC14.1.1, UC14.1.2, UC14.2.1],
+  [TA16],[UC15, UC15.1, UC15.1.1, UC15.1.2, UC15.2.1],
+  [TA17],[UC16],
 )
+]
+#align(center)[Tabella 12: Tracciamento test di accettazione]
 
-== Grafici
+=== Test e tracciamento di sistema
+I test di sistema hanno il compito di verificare la completezza del progetto, vengono quindi testati i requisiti precedentemente accordati e scritti nel documento Analisi dei Requisiti. Questo tipo di test è stato fatto dai componenti del gruppo nella maniera più metodica possibile.
+Di seguito una tabella con il codice del test, la descrizione, il risultato e il codice requisito.
 
+#table(
+  columns: (25mm, 65mm, 35mm, 25mm),
+  inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice\ Test*], [*Descrizione*], [*Risultato Test*], [*Codice\ Requisito*],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+  [], [], [], [],
+)
+#align(center)[Tabella 13: Test e tracciamento di sistema]
 
 = Miglioramenti
+== Descrizione
+Al fine di assicurare il costante miglioramento nel corso dell'intero progetto, è fondamentale condurre valutazioni periodiche. L'obiettivo di tali valutazioni è individuare i problemi emergenti e le relative soluzioni adottate per affrontare le criticità riscontrate. Questa pratica consente di acquisire una consapevolezza più approfondita, utile a prevenire la ripetizione degli stessi errori in futuro.\
+Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Progetto].
+
+== Valutazione tecnologica
+#table(
+  columns: (70mm, 30mm, 55mm),
+  inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  [*Problema*], [*Rischio\ associato*], [*Soluzione*],
+  [Difficoltà nell'automazione per la scrittura, modifica e verifica utilizzando Overleaf.], [RT1, RT2], [Passaggio a Typst per la scrittura della documentazione.],
+  [Mancanza di conoscenze delle tecnologie necessarie allo sviluppo da parte del gruppo], [RP1], [Implementazione di workshop da parte dei membri del gruppo più esperti e studio personale della tecnologia], 
+
+)
+#align(center)[Tabella 14: Valutazione tecnologica]
+
+== Valutazione organizzativa e personale
+#table(
+  columns: (70mm, 40mm, 50mm),
+  inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  [*Problema*], [*Rischio associato*], [*Soluzione*],
+  [Periodi di malattia all'interno del team che ha portato a dei leggeri cali di performance durante alcuni sprint.], [RP4], [Ridistribuzione del carico di lavoro e maggiore disponibilità nel periodo successivo.],
+  [A causa del periodo natalizio e dell'imminente sessione, la performance del team è calata molto con un conseguente calo delle attività di progetto.], [RP4], [Recupero post vacanze aumentando la disponibilità oraria.],
+  [Leggero ritardo nella consegna del dataset da parte dell'azienda.], [ROE2], [Abbiamo dedicato ad uno sprint nella sua quasi interezza la programmazione.],
+  //lasciamo o è da infami?
+)
+#align(center)[Tabella 15: Valutazione organizzativa e personale]
+
+= Controllo delle metriche
+== QMS - Quality Metrics Satisfied
+Sotto riportata una formula per calcolare la percentuale delle metriche soddisfatte:
+#align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
+Dove:
+- NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte;
+- TMQ (Total number of Quality Metrics) è il numero di metriche di qualità totali.
+
+Nel nostro caso è stato calcolato un valore che si attesta circa all'80%. Rientrando e superando il valore accettabile della metrice MPC13.
+
+== IG - Indice di Gulpease
+Indice di Gulpease è uno strumento utilizzato per verificare la difficoltà di lettura di un documento.\
+Considera due fattori per la valutazione, la lunghezza della parola e la lunghezza della frase rispetto al numero di lettere.\
+La formula per il suo calcolo è la seguente:
+#align(center)[$ "IG" = 89+ (300*("numero delle frasi") - 10*("numero delle lettere"))/ "numero delle parole"$]
+Come valori per le diverse difficoltà abbiamo:
+- < 80: difficili da leggere per chi ha la licenza elementare;
+- < 60: difficili da leggere per chi ha la licenza media;
+- < 40: difficili da leggere per chi ha la licenza superiore.
+
+=== IG documenti
+#align(center)[
+#table(
+  columns: (60mm, 40mm),
+  inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Documento*], [*Valore IG*],
+  [Analisi dei requisiti], [73],
+  [Glossario], [],
+  [Piano di Progetto], [69],
+  [Piano di qualifica], [],
+  [Norme di progetto], [68],
+)
+]
+#align(center)[Tabella 15: Indice di Gulpease dei documenti]
+Per il calcolo del indice è stato utilizzato un software online che si trova al seguente indirizzo: #link("https://farfalla-project.org/readability_static/").
+I documenti sono stati convertiti in file di testo e successivamente calcolati dal sito sopra menzionato.
+
+//INSERIRE GRAFICO QUANDO TUTTI I FILE SARANNO TESTATI
+== EO - Errori Ortografici
+La metrica che si occupa della correttezza ortografica (MPD1) ha dato come risultato un valore nullo.
+#align(center)[$ "EO"=0 $]
+Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di software per l'individuazione di errori ortografici, si stima un valore quasi nullo di essi. Viene stimata una correttezza del 100% e non assicurata poichè nonostante la minuziosità dei controlli e l'esecuzione dei test è possibile ci siano comunque artefatti riguardanti l'ortografia.
