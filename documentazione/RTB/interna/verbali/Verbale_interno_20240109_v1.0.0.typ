@@ -6,13 +6,13 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-01-09", p.bomben, "", "Stesura del verbale",
+    "1.0.0", "2024-01-09", p.bomben, p.favaron, "Stesura del verbale",
   ),
 )
 
 = Durata e partecipanti
 
-- Ora: 15:00-15:35;
+- Ora: 15:00-15:45;
 - Partecipanti: 
 
     -- Baggio Matteo;
@@ -33,18 +33,18 @@
 
 = Sintesi
 Il meeting è iniziato parlando di quanto fatto nello sprint precedente, discutendo maggiormente sulla carenza di lavoro durante le vacanza invernali.\
-Successivamente è stato fatto un recap sulle mancanze e criticità della documentazione, e non solo, per la revisione del RTB.\
-I gli elementi più cirtici risultano essere, il documento Piano di Qualifica, il Glossario e il Piano di Progetto. 
-E' stato discusso anche delle migliorie da apportare agli altri documenti, al codice e alla repository.\
-Abbiamo quindi fatto una pianificazione più fitta dei lavori da fare in modo da recuperare il periodo Natalizio che è risultato meno produttivo.\
-La riunione si è conclusa decidendo i ruoli del nuovo sprint, i ruoli decisi sono riportati nella tabella della sezione 4 di questo documento.
+Successivamente è stato fatto un recap sulle mancanze e criticità della documentazione in vista della revisione del RTB.\
+Gli elementi più cirtici che necessitano più spazio risultano essere, il documento Piano di Qualifica, il Glossario e il Piano di Progetto. 
+E' stato discusso anche delle migliorie da apportare agli altri documenti, quali Analisi dei Requisiti e Norme di Progetto, al codice e alla repository.\
+Abbiamo quindi fatto una pianificazione più fitta dei lavori da fare in modo da recuperare il periodo a cavallo del vecchio e nuovo anno che è risultato meno produttivo.\
+La riunione si è conclusa decidendo i ruoli del nuovo sprint, i ruoli decisi sono riportati nella tabella della sezione 4 di questo documento, e delle varie attività da svolgere per ogni componente del gruppo di progetto.
 
 
 
 = Obiettivi fissati
 Gli obiettivi fissati sono quelli di:\
 - Sistemare e completare la documentazione;
-- Sistemare e abbellire la repository e la pagina git.io;
+- Sistemare e abbellire la repository e la pagina github.io;
 - Accedere alla revisione del RTB.
 
 
