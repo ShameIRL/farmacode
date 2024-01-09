@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "29-11-2023", p.bomben, "", "Stesura del verbale",
+    "1.0.0", "2024-01-09", p.bomben, "", "Stesura del verbale",
   ),
 )
 
@@ -32,18 +32,21 @@
 - Mezzo tramite: Discord (online)
 
 = Sintesi
-Il meeting ha preso avvio con una panoramica del progresso compiuto dal gruppo, durante la quale ciascun partecipante ha presentato le attività portate a termine nel corso del secondo sprint, focalizzandosi sul proprio ruolo assegnato.\
-Successivamente abbiamo concluso definitivamente lo sprint per iniziare con la pianificazione del successivo, sono stati quindi assegnati ai componenti del gruppo i ruoli per la nuova settimana. \
-E' stato deciso di incrementare il numero di programmatori in maniera da velocizzare lo sviluppo di una prima versione del POC.\
-I componenti del gruppo addetti al ruolo di "Programmatore" nello sprint precedente hanno mostrato il lavoro svolto da loro, in maniera da aggiornare il gruppo
-e discutere meglio in che direzione proseguire fino allo sprint successivo. \
-Si è inoltre deciso di fissare un meeting con l'azienda, in modo da discutere di alcune difficolà incontrate che riguardano sopratutto le tecnologie per lo sviluppo in locale e l'implementazione del sistema di raccomandazione
-sulla Web App.
+Il meeting è iniziato parlando di quanto fatto nello sprint precedente, discutendo maggiormente sulla carenza di lavoro durante le vacanza invernali.\
+Successivamente è stato fatto un recap sulle mancanze e criticità della documentazione, e non solo, per la revisione del RTB.\
+I gli elementi più cirtici risultano essere, il documento Piano di Qualifica, il Glossario e il Piano di Progetto. 
+E' stato discusso anche delle migliorie da apportare agli altri documenti, al codice e alla repository.\
+Abbiamo quindi fatto una pianificazione più fitta dei lavori da fare in modo da recuperare il periodo Natalizio che è risultato meno produttivo.\
+La riunione si è conclusa decidendo i ruoli del nuovo sprint, i ruoli decisi sono riportati nella tabella della sezione 4 di questo documento.
+
+
 
 = Obiettivi fissati
 Gli obiettivi fissati sono quelli di:\
-Riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo;\
-Fissare un meeting con l'azienda per esporre e discutere quanto svolto.
+- Sistemare e completare la documentazione;
+- Sistemare e abbellire la repository e la pagina git.io;
+- Accedere alla revisione del RTB.
+
 
 = Nuova distribuzione ruolisitca
 #align(
@@ -51,11 +54,11 @@ table(
   columns: (auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Ruolo*],[*Nome e cognome*],
-  [Responsabile],[#p.passarella],
+  [Responsabile],[#p.pandolfo],
   [Analista],[#p.rosson],
-  [Programmatore],[#p.baggio],
-  [],[#p.favaron],
-  [],[#p.carraro],
-  [],[#p.pandolfo],
-  [Verificatore],[#p.bomben],
+  [Analista],[#p.baggio],
+  [Amministratore],[#p.passarella],
+  [Amministratore],[#p.carraro],
+  [Amministratore],[#p.bomben],
+  [Verificatore],[#p.favaron],
 ),center)
