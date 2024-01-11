@@ -8,18 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.13.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
-    "0.12.1", "2023-12-15", p.rosson, p.bomben, "Correzione UC1 e sotto casi",
-    "0.12.0", "2023-12-15", p.bomben, p.baggio, "Sistemazione UC3",
-    "0.11.1", "2023-12-10", p.passarella, p.bomben, "Aggiunta elenco immagini e elenco tabelle e correzioni varie",
-    "0.11.0", "2023-12-08", p.rosson, p.bomben, "Aggiunte sezioni finali sezione 4, e apportate alcune modifiche",
-    "0.10.1", "2023-11-30", p.passarella, p.pandolfo, "aggiunta e conseguente modifica requisiti di vincolo",
-    "0.10.0", "2023-11-30", p.pandolfo, p.passarella, "Stesura UC9",
-    "0.9.0", "2023-11-29", p.pandolfo, p.passarella, "Stesura introduzione requisiti e requisiti funzionali",
-    "0.8.0", "2023-11-27", p.passarella, p.pandolfo, "Stesura requisiti di qualità e di vincolo",
-    "0.7.0", "2023-11-27", p.pandolfo, p.passarella, "Stesura di un nuovo UC3 e modifica deglu UC successivi",
-    "0.6.1", "2023-11-20", p.rosson, p.pandolfo, "Corretto registro delle modifiche",
-    "0.6.0", "2023-11-20", p.bomben, p.pandolfo, "Stesura da UC4 a UC7",
+    "0.7.0", "2024-01-11", p.bomben, "", "Nuova stesura definitiva requisiti e tracciamento",
+    "0.6.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
     "0.4.0", "2023-11-17", p.bomben, p.pandolfo, "Stesura UC3",
     "0.3.0", "2023-11-16", p.bomben, p.pandolfo, "Stesura UC1 e UC2",
@@ -2618,57 +2608,47 @@ riportate indicano:
 
 
 #table(
-  columns: (auto, auto, auto),
+  columns: (auto, auto, 45mm),
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
-  [ROF 1],
-  [L’utente deve poter accedere all’applicazione],
-  [UC1, UC1.1, UC1.2],
-  [RDF 2],
-  [Il sistema deve visualizzare un messaggio di errore esplicativo],
-  [UC2],
-  [ROF 3],
-  [L’admin deve poter visualizzare la lista degli utenti],
-  [UC3],
-  [ROF 4],
-  [L’admin deve poter aggiungere un nuovo utente],
-  [UC4, UC4.1, UC4.2],
-  [ROF 5],
-  [L’admin deve poter eliminare un determinato utente],
-  [UC5],
-  [ROF 6],
-  [L’utente deve poter vedere la lista dei prodotti consigliati per un determinato cliente],
-  [UC6, Capitolato],
-  [ROF 7],
-  [L’utente deve poter vedere la lista dei clienti consigliati per un determinato prodotto],
-  [UC7, Capitolato],
-  [ROF 8],
-  [L’utente deve poter lasciare un feedback per valutare il risultato della ricerca],
-  [UC8, Capitolato],
-  [ROF 9],
-  [L’utente deve poter effettuare il logout],
-  [UC9],
-  [RDF 10],
-  [L’utente deve poter caricare un dataset],
-  [Verbale Interno],
-  [RDF 11],
-  [L’utente deve poter avviare il training di un determinato dataset],
-  [Verbale Interno],
-  [RDF 12],
-  [L’utente deve poter visualizzare la lista dei suoi clienti],
-  [Verbale Interno],
-  [RDF 13],
-  [L’utente deve poter visualizzare la lista dei suoi prodotti],
-  [Verbale Interno],
-  // si possono anche mettere opzionali
-  [RDF 14],
-  [L’utente deve poter visualizzare una cronologia delle interrogazioni più recenti],
-  [Verbale Esterno],
-  [RDF 15],
-  [L’utente deve poter visualizzare una vista con statistiche mensili sull'efficienza delle raccomandazioni],
-  [Verbale Esterno],
-  
+  [ROF 1], [L'utente deve potere accedere all'applicazione], [UC1, UC1.1, UC1.2],
+  [RDF 2], [L'utente deve, in caso, visualizzare l'alert di manutenzione], [UC2],
+  [RDF 3], [L'utente deve, in caso, visualizzare il messaggio di errore login], [UC3],
+  [RDF 4], [L'utente deve visualizzare il banner dei Cookie di sessione], [UC4, UC4.1, UC4.2],
+  [ROF 5], [L'utente deve poter visualizzare il menù], [UC5],
+  [ROF 6], [L'utente deve poter visualizzare la funzione "Ricerca"], [UC5, UC5.1, UC5.1.1],
+  [ROF 7], [L'utente deve poter visualizzare la funzione "Catalogo prodotti"], [UC5, UC5.1, UC5.1.2],
+  [ROF 8], [L'utende deve poter visualizzare la funzione "Lista clienti"], [UC5, UC5.1, UC5.1.3],
+  [RDF 9], [L'utente deve poter visualizzare la funzione "Vista statische mensili"], [UC5, UC5.1, UC5.1.4],
+  [RDF 10],[L'admin deve poter visualizzare le sue funzioni], [UC5, UC5.2, UC5.2.1, UC5.2.2],
+  [ROF 11], [L'utente deve poter vedere i suoi dati personali], [UC6, UC6.1, UC6.1.1, UC6.1.2, UC6.1.3, UC6.1.4],
+  [ROF 12], [L'utende deve poter modificare la sua email e password], [UC6.2, UC6.2.1, UC6.2.2],
+  [ROF 13], [L'utente deve poter terminare la sua sessione], [UC7],
+  [ROF 14], [L'utente deve poter eseguire una ricerca di raccomandazione], [UC8, UC8.1, UC8.1.1, 8.1.2, \ Capitolato],
+  [ROF 15], [L'utente deve poter scegliere il "Topic" della ricerca], [UC8.1.1.1],
+  [ROF 16], [L'utente deve poter scegliere i "TOP N" risultati], [UC8.1.1.3],
+  [ROF 17], [L'utente deve poter visualizzare i risultati della ricerca], [UC8.2, UC8.2.1, \ Capitolato],
+  [ROF 18], [L'utente deve poter inserire un feedback], [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2 \
+  Capitolato],
+  [ROF 19], [L'utente deve poter visualizzare la vista "Catalogo prodotti" e relativa lista], [UC10, UC10.2, \ Verbale interno],
+  [RDF 20], [L'utente deve poter parametrizzare la ricerca della lista "Catalogo prodotti"], [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC10.1.2],
+  [RDF 21], [L'utente deve poter visualizzare i dettagli di un prodotto], [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7 \ Verbale interno],
+  [ROF 22], [L'utente deve poter visualizzare la vista "Lista clienti" e relativa lista], [UC12, UC12.2 \ Verbale interno],
+  [RDF 23], [L'utente deve poter parametrizzare la ricerca della lista "Lista clienti"], [UC12.1, UC12.1.1, UC12.1.1.1, UC12.1.1.2, UC12.1.1.3, UC12.1.2],
+  [RDF 24], [L'utende deve poter visualizzare i dettagli di un cliente], [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4],
+  [RDF 25], [L'utente deve poter visualizzare la vista "Statistiche mensili"], [UC13, UC13.1, UC13.2, \ Verbale esterno],
+  [RDF 26],[L'admin deve poter visualizzare la vista "Cronologie ricerche" e relativa lista], [UC14, UC14.2 \ Verbale esterno],
+  [RDF 27], [L'admin deve poter parametrizzare la ricerca della lista "Cronologie ricerche"], [UC14.1, UC14.1.1, UC14.1.1.1, UC14.1.1.2, UC14.1.2],
+  [RDF 28], [L'admin deve poter visualizzare i dettagli di una cronologia di ricerca], [UC14.2.1, UC14.2.1.1, UC14.2.1.2, UC14.2.1.3],
+  [RDF 29], [L'admin deve poter visualizzare la vista "Cronologie feedback" e relativa lista], [UC15, UC15.2 \ Verbale esterno],
+  [RDF 30], [L'admin deve poter parametrizzare la ricerca della lista "Cronologie feedback"], [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2],
+  [RDF 31], [L'admin deve poter visualizzare i dettagli du una cronologia di feedback], [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3],
+  [RDF 32], [L'utente deve, in caso, visualizzare l'errore di ricerca], [UC16],
+  [RDF 33], [L'utente deve poter caricare un dataset], [Verbale interno],
+  [RDF 34], [L’utente deve poter avviare il training di un determinato dataset], [Verbale interno],
+
+
 )
 
 
@@ -2747,7 +2727,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Verbale interno],
   //forse va scritto meglio?
   [RDV 10],
-  [Utilizzo e creazione di API per l'interazione fra app web-based e algoritmo di raccomandazione],
+  [Utilizzo e creazione di API per l'interazione fra webapp e algoritmo di raccomandazione],
   [Verbale interno],
   [RDV 11],
   [Utilizzo della piattaforma Anaconda per la gestione dell'ambiente di sviluppo],
@@ -2760,7 +2740,8 @@ Le sigle sotto riportate possono essere così classificate:
 
 === Requisiti d'ambiente
 
-Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica che per la fruizione del servizio, non siano necessari particolari requisiti d'ambiente. 
+Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica che per la fruizione del servizio, non siano necessari particolari requisiti d'ambiente, basterà avere una connesione stabile è un browser in cui navigare.
+
 // questa parte va definita meglio una volta che sapremo effettivamente come gestiamo l'hosting.
 
 === Requisiti di performance
@@ -2788,7 +2769,7 @@ Internamente, i requisiti di sicurezza trovati e definiti sono:
 // da specificare che tipo di crittografia magari. es:RSA :RE (aspetterei di implementare)
 + Crittografia dei dati degli utenti in ingresso, quali password e identificativo.
 // ha senso ritenerlo di sicurezza? :RE (secondo me si)
-+ Presenza di allert informativo sulle normative dei coockie utilizzati dalla web-app.
++ Presenza di allert informativo sulle normative dei cookie utilizzati dalla web-app.
 // si può aggiungere il banner per la manutenzione del sito qui?
 
 == Tracciamento
@@ -2803,21 +2784,39 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   columns: (1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Funzionali*],[],
-  [UC1, UC1.1, UC1.2],[ROF 1],
-  [UC2],[ROF 2],
-  [UC3],[ROF 3],
-  [UC4, UC4.1, UC4.2],[ROF 4],
-  [UC5],[ROF 5],
-  [UC6, Capitolato],[ROF 6],
-  [UC7, Capitolato],[ROF 7],
-  [UC8, Capitolato],[ROF 8],
-  [UC9],[ROF 9],
-  [Verbale Interno],[RDF 10],
-  [Verbale Interno],[RDF 11],
-  [Verbale Interno],[RDF 12],
-  [Verbale Interno],[RDF 13],
-  [Verbale Esterno],[RDF 14],
-  [Verbale Esterno],[RDF 15],
+  [UC1, UC1.1, UC1.2], [ROF 1],
+  [UC2], [RDF 2],
+  [UC3], [RDF 3],
+  [UC4, UC4.1, UC4.2], [RDF 4],
+  [UC5], [ROF 5],
+  [UC5, UC5.1, UC5.1.1], [ROF 6],
+  [UC5, UC5.1, UC5.1.2], [ROF 7],
+  [UC5, UC5.1, UC5.1.3], [ROF 8],
+  [UC5, UC5.1, UC5.1.4], [ROF 9],
+  [UC5, UC5.2, UC5.2.1, UC5.2.2], [RDF 10],
+  [UC6, UC6.1, UC6.1.1, UC6.1.2, UC6.1.3, UC6.1.4], [ROF 11],
+  [UC6.2 UC6.2.1, UC6.2.2], [ROF 12],
+  [UC7], [ROF 13],
+  [UC8, UC8.1, UC8.1.1, UC8.1.2], [ROF 14],
+  [UC8.1.1.1], [ROF 15],
+  [UC8.1.1.3], [ROF 16],
+  [UC8.2, UC8.2.1], [ROF 17],
+  [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2], [ROF 18],
+  [UC10, UC10.2], [ROF 19],
+  [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC10.1.2], [RDF 20],
+  [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7], [RDF 21],
+  [UC12, UC12.2], [ROF 22],
+  [UC12.1, UC12.1.1, UC12.1.1.1, UC12.1.1.2, UC12.1.1.3, UC12.1.2], [RDF 23],
+  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4], [RDF 24],
+  [UC13, UC13.1, UC13.2], [RDF 25],
+  [UC14, UC14.2], [RDF 26],
+  [UC14.1, UC14.1.1, UC14.1.1.1, UC14.1.1.2, UC14.1.2], [RDF 27],
+  [UC14.2.1, CU14.2.1.1, UC14.2.1.2, UC14.2.1.3], [RDF 28],
+  [UC15, UC15.2], [RDF 29],
+  [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2], [RDF 30],
+  [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3], [RDF 31],
+  [UC16], [RDF 32],
+  [verbale interno], [RDF 33, RDF 34],
 )
 #table(
   columns: (1fr, 1fr),
@@ -2852,7 +2851,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   columns: (1fr, 1fr, 1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Tipologia*],[*Obbligatorio*], [*Desiderabile*],[*Complessivo*],
-  [Funzionale],[9],[6],[15],
+  [Funzionale],[15],[19],[34],
   [di Qualità],[4],[/],[4],
   [di Vincolo],[7],[5],[12],
   
@@ -2860,8 +2859,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 #table(
   columns: (1fr, auto,),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Totale*],[*31*],
+  [*Totale*],[*50*],
 )
+#pagebreak()
 
 = Elenco delle immagini
 
