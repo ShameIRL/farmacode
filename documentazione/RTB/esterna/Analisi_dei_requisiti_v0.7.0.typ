@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.7.0", "2024-01-11", p.bomben, "", "Nuova stesura definitiva requisiti e tracciamento",
+    "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
     "0.6.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
     "0.4.0", "2023-11-17", p.bomben, p.pandolfo, "Stesura UC3",
@@ -2612,26 +2612,26 @@ riportate indicano:
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
-  [ROF 1], [L'utente deve potere accedere all'applicazione], [UC1, UC1.1, UC1.2],
+  [ROF 1], [L'utente deve potere accedere all'applicazione (Login)], [UC1, UC1.1, UC1.2],
   [RDF 2], [L'utente deve, in caso, visualizzare l'alert di manutenzione], [UC2],
   [RDF 3], [L'utente deve, in caso, visualizzare il messaggio di errore login], [UC3],
   [RDF 4], [L'utente deve visualizzare il banner dei Cookie di sessione], [UC4, UC4.1, UC4.2],
   [ROF 5], [L'utente deve poter visualizzare il menù], [UC5],
   [ROF 6], [L'utente deve poter visualizzare la funzione "Ricerca"], [UC5, UC5.1, UC5.1.1],
   [ROF 7], [L'utente deve poter visualizzare la funzione "Catalogo prodotti"], [UC5, UC5.1, UC5.1.2],
-  [ROF 8], [L'utende deve poter visualizzare la funzione "Lista clienti"], [UC5, UC5.1, UC5.1.3],
+  [ROF 8], [L'utente deve poter visualizzare la funzione "Lista clienti"], [UC5, UC5.1, UC5.1.3],
   [RDF 9], [L'utente deve poter visualizzare la funzione "Vista statische mensili"], [UC5, UC5.1, UC5.1.4],
   [RDF 10],[L'admin deve poter visualizzare le sue funzioni], [UC5, UC5.2, UC5.2.1, UC5.2.2],
   [ROF 11], [L'utente deve poter vedere i suoi dati personali], [UC6, UC6.1, UC6.1.1, UC6.1.2, UC6.1.3, UC6.1.4],
   [ROF 12], [L'utende deve poter modificare la sua email e password], [UC6.2, UC6.2.1, UC6.2.2],
-  [ROF 13], [L'utente deve poter terminare la sua sessione], [UC7],
+  [ROF 13], [L'utente deve poter terminare la sua sessione (Logout)], [UC7],
   [ROF 14], [L'utente deve poter eseguire una ricerca di raccomandazione], [UC8, UC8.1, UC8.1.1, 8.1.2, \ Capitolato],
   [ROF 15], [L'utente deve poter scegliere il "Topic" della ricerca], [UC8.1.1.1],
   [ROF 16], [L'utente deve poter scegliere i "TOP N" risultati], [UC8.1.1.3],
-  [ROF 17], [L'utente deve poter visualizzare i risultati della ricerca], [UC8.2, UC8.2.1, \ Capitolato],
+  [ROF 17], [L'utente deve poter visualizzare i risultati della ricerca], [UC8.2, UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4 \ Capitolato],
   [ROF 18], [L'utente deve poter inserire un feedback], [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2 \
   Capitolato],
-  [ROF 19], [L'utente deve poter visualizzare la vista "Catalogo prodotti" e relativa lista], [UC10, UC10.2, \ Verbale interno],
+  [ROF 19], [L'utente deve poter visualizzare la vista "Catalogo prodotti" e relativa lista], [UC10, UC10.2, UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC10.2.1.3, UC10.2.1.4, \ Verbale interno],
   [RDF 20], [L'utente deve poter parametrizzare la ricerca della lista "Catalogo prodotti"], [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC10.1.2],
   [RDF 21], [L'utente deve poter visualizzare i dettagli di un prodotto], [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7 \ Verbale interno],
   [ROF 22], [L'utente deve poter visualizzare la vista "Lista clienti" e relativa lista], [UC12, UC12.2 \ Verbale interno],
@@ -2643,7 +2643,7 @@ riportate indicano:
   [RDF 28], [L'admin deve poter visualizzare i dettagli di una cronologia di ricerca], [UC14.2.1, UC14.2.1.1, UC14.2.1.2, UC14.2.1.3],
   [RDF 29], [L'admin deve poter visualizzare la vista "Cronologie feedback" e relativa lista], [UC15, UC15.2 \ Verbale esterno],
   [RDF 30], [L'admin deve poter parametrizzare la ricerca della lista "Cronologie feedback"], [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2],
-  [RDF 31], [L'admin deve poter visualizzare i dettagli du una cronologia di feedback], [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3],
+  [RDF 31], [L'admin deve poter visualizzare i dettagli di una cronologia di feedback], [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3],
   [RDF 32], [L'utente deve, in caso, visualizzare l'errore di ricerca], [UC16],
   [RDF 33], [L'utente deve poter caricare un dataset], [Verbale interno],
   [RDF 34], [L’utente deve poter avviare il training di un determinato dataset], [Verbale interno],
@@ -2730,10 +2730,13 @@ Le sigle sotto riportate possono essere così classificate:
   [Utilizzo e creazione di API per l'interazione fra webapp e algoritmo di raccomandazione],
   [Verbale interno],
   [RDV 11],
+  [Utilizzo e creazione di API per l'interazione fra webapp e il database],
+  [Verbale interno],
+  [RDV 12],
   [Utilizzo della piattaforma Anaconda per la gestione dell'ambiente di sviluppo],
   [Verbale interno],
   //va bene messo qui?
-  [RDV 12],
+  [RDV 13],
   [Possibile approccio multi-thread o multi-modello per la gestione dell'attesa in caso di interrogazione durante l'addestramento del modello],
   [Verbale Esterno],
 )
@@ -2800,9 +2803,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [UC8, UC8.1, UC8.1.1, UC8.1.2], [ROF 14],
   [UC8.1.1.1], [ROF 15],
   [UC8.1.1.3], [ROF 16],
-  [UC8.2, UC8.2.1], [ROF 17],
+  [UC8.2, UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4], [ROF 17],
   [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2], [ROF 18],
-  [UC10, UC10.2], [ROF 19],
+  [UC10, UC10.2, UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC10.2.1.3, UC10.2.1.4], [ROF 19],
   [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC10.1.2], [RDF 20],
   [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7], [RDF 21],
   [UC12, UC12.2], [ROF 22],
@@ -2842,7 +2845,8 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Verbale Interno],[RDV 9],
   [Verbale Interno],[RDV 10],
   [Verbale Interno],[RDV 11],
-  [Verbale Esterno],[RDV 12],           
+  [Verbale Interno],[RDV 12],
+  [Verbale Esterno],[RDV 13],           
 )
 
 == Riepilogo
@@ -2853,13 +2857,13 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [*Tipologia*],[*Obbligatorio*], [*Desiderabile*],[*Complessivo*],
   [Funzionale],[15],[19],[34],
   [di Qualità],[4],[/],[4],
-  [di Vincolo],[7],[5],[12],
+  [di Vincolo],[5],[8],[13],
   
 )
 #table(
   columns: (1fr, auto,),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Totale*],[*50*],
+  [*Totale*],[*51*],
 )
 #pagebreak()
 
