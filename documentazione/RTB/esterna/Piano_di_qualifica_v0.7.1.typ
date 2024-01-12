@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.7.1", "2024-01-12", p.favaron, "", "Aggiunte alla sezione introduzione",
+    "0.7.1", "2024-01-12", p.favaron, p.passarella, "Aggiunte alla sezione introduzione",
     "0.7.0", "2024-01-05", p.bomben, p.favaron, "Stesura sezione 5, 6 e 7",
     "0.6.0", "2023-12-21", p.pandolfo, p.bomben, "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
@@ -619,6 +619,23 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   //lasciamo o è da infami?
 )
 #align(center)[Tabella 15: Valutazione organizzativa e personale]
+
+== Valutazione sui ruoli
+#table(
+  columns: (33mm, auto, auto),
+  inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  [*Ruolo*], [*Problema*], [*Soluzione*],
+  [Project manager], [Difficoltà nella gestione e automazione del repository.], [],
+  [Amministratore], [Scelta delle tecnologie da utilizzare.], [Confronto con il proponente e studio individuale di membri del gruppo],
+  [Analista], [Stesura casi d'uso e analisi dei requisiti.], [],
+  [Progettista], [scelte progettuali], [],
+  [Verificatore], [], [Ogni membro del gruppo si occupava di revizionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
+  [Programmatore], [realizzazione prodotto], [],
+)
+#align(center)[Tabella 15: Valutazione sui ruoli]
 
 = Controllo delle metriche
 == QMS - Quality Metrics Satisfied
