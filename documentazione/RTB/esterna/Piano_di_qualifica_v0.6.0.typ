@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.7.1", "2024-01-12", p.favaron, "", "Aggiunte alla sezione introduzione",
     "0.7.0", "2024-01-05", p.bomben, p.favaron, "Stesura sezione 5, 6 e 7",
     "0.6.0", "2023-12-21", p.pandolfo, p.bomben, "Modifica qualità di prodotto",
     "0.5.0", "2023-12-14", p.pandolfo, p.baggio, "Prima stesura qualità di processo",
@@ -35,17 +36,21 @@ Valutazione tecnologica\
 Valutazione organizzativa e personale\
 Indice di Gulpease dei documenti\
 
-#pagebreak(),
+#pagebreak()
 
 = Introduzione
-
-Il documento relativo al piano di qualità rappresenta un elemento di fondamentale importanza per i progetti di sviluppo software che mirano a conformarsi agli elevati standard di qualità definiti nei principi dell'ingegneria del software.\
-La qualita' e la valutazione del prodotto sono due concetti indispensabili per fare confronti o determinare il grado di aderenza alle attese.\
-Il documento sara' utile a chi si occupa della creazione del prodotto, a chi usera' il prodotto e a chi lo valutera'.
-
 == Scopo del documento
-Il presente documento ha lo scopo di fornire una descrizione dettagliata e il piu' precisa possibile sulle metriche e sulle metodologie di controllo e misurazione della qualita' nelle varie parti del prodotto software.\
-Verranno definiti gli obiettivi di qualita' e i relativi processi e risorse necessarie per conseguirli, oltre alla definizione dei test con la loro documentazione: metodologie ed esito.
+Il documento relativo al piano di qualità rappresenta un elemento di fondamentale importanza per i progetti di sviluppo software che mirano a conformarsi agli elevati standard di qualità definiti nei principi dell'ingegneria del software.\
+La qualità e la valutazione del prodotto sono due concetti indispensabili per fare confronti o determinare il grado di aderenza alle attese.\
+Il presente documento ha lo scopo di fornire una descrizione dettagliata e il più precisa possibile sulle metriche e sulle metodologie di controllo e misurazione della qualità nelle varie parti del prodotto software.\
+Verranno definiti gli obiettivi di qualità e i relativi processi e risorse necessarie per conseguirli, oltre alla definizione dei test con la loro documentazione: metodologie ed esito. \
+Il documento sarà utile a chi si occupa della creazione del prodotto, a chi userà il prodotto e a chi lo valuterà.
+
+== Scopo del prodotto
+Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
+Dall'interfaccia utente del sistema software sarà possibile selezionare uno specifico cliente e visualizzare i prodotti da lui acquistati e quelli che il sistema ha individuato come raccomandati. Inoltre selezionato un articolo o un insieme di articoli il sistema suggerisce a quali clienti proporli, selezionandoli in base a quanto probabile siano interessati per i prodotti analizzati. I vari prodotti possono essere filtrati per categoria così da facilitare ricerche e restringere il campo di soluzione.\
+Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'algoritmo che ha fornito l'esito della suggerimento.\
+L'utente amministratore ha la possibilità di creare ulteriori account per eventuali operatori che necessitano di utilizzare l'applicativo.\
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
@@ -56,14 +61,24 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 
 == Riferimenti
 
+=== Riferimenti normativi
+- Norme di Progetto v.1.0.0;
+- Capitolato C2: Sistemi di raccomandazione\ 
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+- Regolamento progetto ditattico\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+
 === Riferimenti informativi
-- T6 - Progettazione software (slide del corso di Ingegneria del Software);\
-  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf")
-- T7 - Qualità del software (slide del corso di Ingegneria del Software);\
-  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf")
-- T8 - Qualità di processo (slide del corso di Ingegneria del Software).\
-  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf")
-#pagebreak()
+- T7 - Qualità del software (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf;
+- T8 - Qualità di processo (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf;
+- T9 - Verifica e validazione: introduzione (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf;
+- T10 - Verifica e validazione: analisti statica (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
+- T11 - Verifica e validazione: analisti dinamica (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
 
 = Qualità di prodotto
 
