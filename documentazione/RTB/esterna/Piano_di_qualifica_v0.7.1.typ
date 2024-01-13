@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.7.2", "2024-01-13", p.bomben, "", "tabella di test di sistema e tracciamento",
     "0.7.1", "2024-01-12", p.favaron, p.passarella, "Aggiunte alla sezione introduzione",
     "0.7.0", "2024-01-05", p.bomben, p.favaron, "Stesura sezione 5, 6 e 7",
     "0.6.0", "2023-12-21", p.pandolfo, p.bomben, "Modifica qualità di prodotto",
@@ -18,25 +19,6 @@
     "0.1.0", "2023-11-24", p.carraro, p.rosson, "Struttura iniziale del documento",
   ),
 )
-= Elenco tabelle
-Qualità della documentazione\
-Metriche qualità della documentazione\
-Qualità del software\
-Metriche qualità del software\
-Processi primari\
-Processi di supporto\
-Processi organizzativi\
-Metriche processi primari\
-Metriche processi di supporto\
-Metriche processi organizzativi\
-Test di accettazione\
-Tracciamento test di accettazione\
-Test e tracciamento di sistema\
-Valutazione tecnologica\
-Valutazione organizzativa e personale\
-Indice di Gulpease dei documenti\
-
-#pagebreak()
 
 = Introduzione
 == Scopo del documento
@@ -569,20 +551,23 @@ Di seguito una tabella con il codice del test, la descrizione, il risultato e il
     x: 5pt,
     y: 10pt,
   ),
-  align: center,
+  align: left,
   [*Codice\ Test*], [*Descrizione*], [*Risultato Test*], [*Codice\ Requisito*],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
+  [TS01], [Verificare la corretta visualizzazione della pagina principale], [Passato], [ROF 14,\ ROF 5],
+  [TS02], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento, questo include:\ -Visualizzazione eventuale dell'alert di manutenzione; \ -Visualizzazione della normativa cookie;\ -Visualizzazione eventuale dell'errore di login.], [Non implementato], [ROF 1,\ RDF 2,\ RDF 3,\ RDF 4],
+  [TS03], [Verificare la corretta visualizzazione e funzione della funzionalità di ricerca per la raccomandazione.], [Passato], [ROF 6,\ ROF 14,\ ROF 15,\ ROF 16,\ ROF 17],
+  [TS04], [Verificare la possibilità di lasiare un feedback per il risultato della ricerca.], [Non implementato], [ROF 18],
+  [TS05], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [Non implementato], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
+  [TS06], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [Non implementato], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
+  [TS07], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [Non implementato], [RDF 9,\ RDF 25],
+  [TS08], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [Non implementato], [RDF 10,],
+  [TS08.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Non implementato], [RDF 26,\ RDF 27,\ RDF 28],
+  [TS08.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Non implementato], [RDF 29,\ RDF 30,\ RDF 31],
+  [TS09], [Verificare la corretta visualizzazione della pagine dei dati personali.], [Non implementato], [ROF 11],
+  [TS09.1], [Verificare che l'utente possa cambiare la sua email e password.], [Non implementato], [ROF 12],
+  [TS10], [Verificare la possibilità di eseguire il Logout.], [Non implementato], [ROF 13],
+  [TS11], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [Non implementato (?)], [RDF 32],
+  
 )
 #align(center)[Tabella 13: Test e tracciamento di sistema]
 
@@ -637,6 +622,8 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 )
 #align(center)[Tabella 15: Valutazione sui ruoli]
 
+#pagebreak()
+
 = Controllo delle metriche
 == QMS - Quality Metrics Satisfied
 Sotto riportata una formula per calcolare la percentuale delle metriche soddisfatte:
@@ -683,3 +670,23 @@ I documenti sono stati convertiti in file di testo e successivamente calcolati d
 La metrica che si occupa della correttezza ortografica (MPD1) ha dato come risultato un valore nullo.
 #align(center)[$ "EO"=0 $]
 Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di software per l'individuazione di errori ortografici, si stima un valore quasi nullo di essi. Viene stimata una correttezza del 100% e non assicurata poichè nonostante la minuziosità dei controlli e l'esecuzione dei test è possibile ci siano comunque artefatti riguardanti l'ortografia.
+
+#pagebreak()
+
+= Elenco tabelle
+Qualità della documentazione\
+Metriche qualità della documentazione\
+Qualità del software\
+Metriche qualità del software\
+Processi primari\
+Processi di supporto\
+Processi organizzativi\
+Metriche processi primari\
+Metriche processi di supporto\
+Metriche processi organizzativi\
+Test di accettazione\
+Tracciamento test di accettazione\
+Test e tracciamento di sistema\
+Valutazione tecnologica\
+Valutazione organizzativa e personale\
+Indice di Gulpease dei documenti\
