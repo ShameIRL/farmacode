@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.8.0", "2024-01-13", p.passarella, "", "Tabella di test di sistema e tracciamento",
     "0.7.2", "2024-01-13", p.bomben, p.favaron, "Tabella di test di sistema e tracciamento",
     "0.7.1", "2024-01-12", p.favaron, p.passarella, "Aggiunte alla sezione introduzione",
     "0.7.0", "2024-01-05", p.bomben, p.favaron, "Stesura sezione 5, 6 e 7",
@@ -604,7 +605,8 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [Periodi di malattia all'interno del team che ha portato a dei leggeri cali di performance durante alcuni sprint.], [RP4], [Ridistribuzione del carico di lavoro e maggiore disponibilità nel periodo successivo.],
   [A causa del periodo natalizio e dell'imminente sessione, la performance del team è calata molto con un conseguente calo delle attività di progetto.], [RP4], [Recupero post vacanze aumentando la disponibilità oraria.],
   [Leggero ritardo nella consegna del dataset da parte dell'azienda.], [ROE2], [Abbiamo dedicato ad uno sprint nella sua quasi interezza la programmazione.],
-  //lasciamo o è da infami?
+  [Difficoltà iniziali della gestione dei ruoli e dei carichi di lavoro.], [ROI2], [Aggiustamenti nei successivi sprint grazie all'esperienza acquisita dallo sprint precedente e alla comunicazione dei membri.],
+  //lasciamo o è da infami? 
 )
 #align(center)[Tabella 15: Valutazione organizzativa e personale]
 
@@ -616,12 +618,12 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
     y: 10pt,
   ),
   [*Ruolo*], [*Problema*], [*Soluzione*],
-  [Project manager], [Difficoltà nella gestione e automazione del repository.], [],
-  [Amministratore], [Scelta delle tecnologie da utilizzare.], [Confronto con il proponente e studio individuale di membri del gruppo],
-  [Analista], [Stesura casi d'uso e analisi dei requisiti.], [],
-  [Progettista], [scelte progettuali], [],
-  [Verificatore], [], [Ogni membro del gruppo si occupava di revizionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
-  [Programmatore], [realizzazione prodotto], [],
+  [Project manager], [Difficoltà nella gestione e automazione del repository.], [Diversi tentativi per ottenere un risultato ottimale.],
+  [Amministratore], [Scelta delle tecnologie da utilizzare.], [Confronto con il proponente e studio individuale di membri del gruppo.],
+  [Analista], [Stesura casi d'uso e analisi dei requisiti.], [Confronto con il proponente e prof cardin (non so se metterlo come committente)],
+  [Progettista], [Interazione algoritmo, api, database e webapp.], [Studio individuale dei membri del gruppo e interpretazione capitolato d'appalto],
+  [Verificatore], [La distribuzione del lavoro non era uniforme nell'arco della settimana ma concentrata eccessivamente negli ultimi giorni dello sprint.], [Ogni membro del gruppo si occupava di revizionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
+  [Programmatore], [Realizzazione api.], [Studio individuale dei membri del gruppo e diversi tentativi.],
 )
 #align(center)[Tabella 15: Valutazione sui ruoli]
 
