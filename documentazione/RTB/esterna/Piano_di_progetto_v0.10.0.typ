@@ -543,6 +543,7 @@ Questo sprint di progetto è sicuramente etichettabile come il più roccambolesc
 Durante questo periodo i componenti più disponibili si sono divisi, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto.
 A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting interno asincrono. Il focus dello sprint numero sei è stato l'avanzamento di tutti i documenti in previsone della prima sprint di progetto(RTB).\
 
+
 - Gantt view:
 #align(left,
 figure(
