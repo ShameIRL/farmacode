@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.10.0", "2024-01-14", p.carraro, "", "Stesura sprint.6 e relativo consultivo e grafici",
+    "0.10.0", "2024-01-14", p.carraro, p.rosson, "Stesura sprint.6 e relativo consultivo e grafici",
     "0.9.0", "2024-01-02", p.favaron, p.carraro, "Stesura sprint.5 e relativo consultivo e grafici",
     "0.8.1", "2024-01-02", p.favaron, p.carraro, "Stesura consultivo sprint.4",
     "0.8.0", "2024-01-02", p.favaron, p.rosson, "Seconda stesura sezione analisi dei rischi",
@@ -75,9 +75,9 @@ La pianificazione descritta, in seguito, all'interno questo documento si basa su
   columns: (auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Revisione*],[*Data*],
-  [Prima revisione: Requirements and Technology Baseline [RTB]],[2023-01-05],
-  [Seconda revisione: Product Baseline [PB]],[2023-03-25],
-  [Terza Revisione: Customer Acceptance [CA]],[2023-04-10],
+  [Prima revisione: Requirements and Technology Baseline [RTB]],[2024-01-20],
+  [Seconda revisione: Product Baseline [PB]],[2024-03-25],
+  [Terza Revisione: Customer Acceptance [CA]],[2024-04-10],
 )
 #align(center)[Tabella 1: Scadenze revisioni.]
 
@@ -383,7 +383,7 @@ figure(
 )
 - Imprevisti incotrati e loro risoluzione:\
 Necessità di automatizzare versionamento della documentazione e di migliorarne in generale il processo di realizzazione e manutenibilità. \
-  Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actions. Riadattamento della vecchia documentazione.
+Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actions. Riadattamento della vecchia documentazione.
 
 ==== sprint.2
 - Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
@@ -452,6 +452,7 @@ figure(
 )
 
 - Imprevisti incotrati e loro risoluzione:
+nd.
 
 ==== sprint.4
 - Periodo: 2023/12/11-2023/12/18 (1 settimana)
@@ -483,7 +484,8 @@ figure(
 )
 
 - Imprevisti incotrati e loro risoluzione: 
-Durante il seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
+Durante il seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. \
+Risoluzione: Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
 
 ==== sprint.5
 - Periodo: 2023/12/18-2023/12/27 (1 settimana e 5 giorni)
@@ -504,8 +506,8 @@ Durante il seguente sprint si è incontrato un problema che riguardava il datase
 
 - Sintesi:
 Durante il quinto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto", del "Piano di Qualifica" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". \ 
-Lo sprint è iniziato, come siamo sempre stati abituati a fare, con un meeting interno per discutere quanto di buono o non buono è stato fatto durante lo scorso sprint e si è discusso su come procedere per il periodo attuale. Il focus dello sprint numero cinque è stato l'avanzamento di tutti i documento per riuscire ad arrivare ad il loro completamento, come da preventivo riguardanete il seguente periodo. Grande attenzione è stata posta sull'Analisi dei Requisiti, in quanto, a termine della scorsa sprint di progetto, il gruppo aveva partecipato ad un meeting esterno con il  Professor Cardin, il quale aveva sottolineato l'importanza di arricchire il documento e cercare di andare più nel dettaglio riguardo la descrizione dei vari casi d'uso. E inoltre continuata la stesura incrementale degli altri documenti di progetto. \
-In data 2023/12/19 l'intero gruppo ha partecipato ad un meeting con l'azienda proponente, nel quale abbiamo esposto quanto svolto per il POC attraverso un breve showcase delle funzionalita e usi. Il nostro mentore è rimasto soddisfatto del lavoro svolto e ci ha dato consigli relativi a migliorie in vista poi del continuo sviluppo dopo questa prima fase (RTB).
+Lo sprint è iniziato, come siamo sempre stati abituati a fare, con un meeting interno per discutere quanto di buono o non buono è stato fatto durante lo scorso sprint e per discutere su come procedere per il periodo prossimo. Il focus dello sprint numero cinque è stato l'avanzamento di tutti i documenti per riuscire ad arrivare ad il loro completamento, come da preventivo riguardanete il seguente periodo. Grande attenzione è stata posta sull'Analisi dei Requisiti, in quanto, a termine della scorsa sprint di progetto, il gruppo aveva partecipato ad un meeting esterno con il  Professor Cardin, il quale aveva sottolineato l'importanza di arricchire il documento e cercare di andare più nel dettaglio riguardo la descrizione dei vari casi d'uso. E' inoltre continuata la stesura incrementale degli altri documenti di progetto. \
+In data 2023/12/19 l'intero gruppo ha partecipato ad un meeting con l'azienda proponente, nel quale è stato esposto quanto svolto per il POC attraverso un breve showcase delle funzionalita e usi. Il nostro mentore è rimasto soddisfatto del lavoro svolto e ci ha dato consigli relativi a migliorie in vista poi del continuo sviluppo dopo questa prima fase (RTB).
 
 - Gantt view:
 #align(left,
@@ -517,7 +519,7 @@ figure(
 )
 
 - Imprevisti incotrati e loro risoluzione: 
-Durante il seguente sprint ci siamo accorati che date le numerose festività e sfortunate influenze stagionali l'avanzamento degli obiettivi definiti ad inizio di questo periodo non è stato così importante e sicuramente molto indietro rispetto al preventivo fatto in fase di pianifiacazione. Quindi si è deciso di "allungare" la durata della sprint, da un consueto periodo di circa una settimana a circa due, fino la fine dell'anno, così da favorire un avanzamento più sostanzioso.
+nd.
 
 ==== sprint.6
 - Periodo: 2023/12/28-2024/01/08 (1 settimana e 6 giorni)
@@ -537,8 +539,9 @@ Durante il seguente sprint ci siamo accorati che date le numerose festività e s
   -- Revisione verbale interno del 2024/01/01.\
 
 - Sintesi:
-Durante il sesto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto", del "Piano di Qualifica" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". \
-A meta' sprint il gruppo si e' trovato per un meeting interno per discutere quanto di buono o non buono è stato fatto durante lo scorso sprint e si è discusso su come procedere per il periodo attuale. Il focus dello sprint numero sei è stato l'avanzamento di tutti i documento per riuscire ad arrivare ad il loro completamento entro la prima revione (RTB)\
+Questo sprint di progetto è sicuramente etichettabile come il più roccambolesco fino ad ora.
+Durante questo periodo i componenti più disponibili si sono divisi, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto.
+A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting interno asincrono. Il focus dello sprint numero sei è stato l'avanzamento di tutti i documenti in previsone della prima sprint di progetto(RTB).\
 
 - Gantt view:
 #align(left,
@@ -550,8 +553,9 @@ figure(
 )
 
 - Imprevisti incotrati e loro risoluzione: 
-Durante il seguente sprint la riprese dalle vacanze e l'inizio della sessione invernale di esami non ha permesso un ottimo avanzamento degli obiettivi definiti ad inizio di questo periodo.\
-La soluzione e' stato comunque quella di procedere, anche se piu' a rilento e impostare bene la documentazione e il lavoro per gli sprint successivi.
+Anche se un calo da questo punto di vista era stato previsto, l'inzio delle vacanze e l'avvicinarsi della sessione invernale di esami, non ha permesso al team di esprimere la stessa produttività caratterizante gli altri sprint. Inoltre l'indisponibilità di alcuni membri del gruppo (dovuta a cause esterne, come impegni o malattia), ha inferito ancor più sotto questo aspetto.
+\
+Risoluzione: La ridistribuzione delle attività previste è variata, cercando di portare avanti i lavori di documentazione il più possibile rispetto a quanto preventivato.
 
 ==== sprint.7
 - Periodo: 2024/01/09-to be define (to be define)
@@ -1096,7 +1100,7 @@ figure(
 )
 
 - Spiegazione:
-Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice alla revisione RTB. Le risorse del team verranno impiegate principalmente per la conclusione della documentazione, piccole correzioni e verifiche, oltre a rendere piu' presentabile la repository.
+Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice alla revisione RTB. Le risorse del team verranno impiegate principalmente per la conclusione della documentazione, piccole correzioni e verifiche, oltre a rendere piu' presentabile la repository. Data la presenza delle festività invernali, si preventivano meno ore rispetto ai soliti sprin, ed una lungata più lunga, in modo da, tolti i giorni festivi, dare più tempo a chi di dovere di svolgere i propri compiti stabiliti in precedenza.
 
 - Consuntivo:
 #align(center, text(0.85em)[
