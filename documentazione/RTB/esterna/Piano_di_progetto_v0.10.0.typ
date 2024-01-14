@@ -547,7 +547,7 @@ A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting in
 - Gantt view:
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#6.png", height: auto, width: auto),
+  image("/imgs/gantt_views/sprint#5.png", height: auto, width: auto),
   caption: [sprint.6]
   )
   
