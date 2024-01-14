@@ -9,7 +9,8 @@
 
   ),
   changelog: (
-    "0.12.0", "22-12-2023", p.passarella, p.carraro, "sezione 1.4",
+    "0.13.0", "14-01-2024", p.rosson, "", "Apportate alcune migliorie e correzioni sezione 3.1",
+    "0.12.0", "22-12-2023", p.passarella, p.carraro, "Stesura sezione 1.4",
     "0.11.1", "22-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
     "0.11.0", "21-12-2023", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
     "0.10.0", "21-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.4 Norme tipografiche",
@@ -149,7 +150,7 @@ Ogni caso d'uso deve essere così composto:
 - identificazione e nomenclatura:
     il formato concordato è il seguente:
 #align("UC.x.y - Nome", center)
-    dove: x, rappresenta il numero identificativo del caso d'uso generico; y, rappresenta l'id del sotto caso relativo. E "Nome" rappresenta il nome del caso d'uso da attribuire in modo chiaro e consono;
+    dove: x, rappresenta il numero identificativo del caso d'uso generico; y, rappresenta l'id del sotto caso relativo, che può essere composto da più cifre (n.n.n.n ...). E "Nome" rappresenta il nome del caso d'uso da attribuire in modo chiaro e consono;
 - figura;
 - attori: utente o componente che può svolgere quella determinata azione o chiedere quel servizio;
 - precondizioni: condizioni di utente e/o sistema, necessarie affinchè si verifichi quel caso d'uso/scenario;
@@ -158,47 +159,77 @@ Ogni caso d'uso deve essere così composto:
 - estensioni (se presenti): in questa sezione vanno elencate eventuali estensioni, nel caso ci possano essere degli scenari alternativi.
 - generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso, e la presenza o meno di una generalizzazione tra gli attori coinvolti;
 
-
-Per una migliore comprensione si riporta qui sotto un esempio nella forma standard da adottare per tutti i casi d'uso:
-
-*UC1 - Login*
-
+===== Linee guida interne
+- *Attore:*
 #figure(
-  image("/imgs/Uml/UC1.png", width: 80%),
+  image("/imgs/Uml/attore.png", width: 8%),
   caption: [
-    Login
+    Attore
   ],
 )
 
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente possiede un account valido consegnatoli dall'amministrazione;
-- L'utente non ha già eseguito l'accesso;
-- L'utente ha una connessione stabile.
-*Postcondizioni:*
-- L'utente ha effettuato correttamente l'accesso ed è stato riconosciuto dal sistema.
-*Scenario principale:*
-- Admin/User:
-    - inserisce il proprio username nel campo [username] del modulo di accesso (UC1.1).
-    - inserisce la propria password nel campo [password] del modulo di accesso (UC1.2).
-- Sistema:
-    - Il sistema di autenticazione verifica le credenziali inserite confrontandole con i dati memorizzati nel sistema.
-    - se le credenziali sono corrette, autentica l'utente con successo, tramite la creazione di cookies di sessione e reindirizzato alla pagina principale.
-    - se le credenziali sono errate, mostra un messaggio di errore per informare l'utente della fallita autenticazione (UC3).
+Un attore è un elemento esterno che interagisce con il sistema. Gli attori possono assumere diverse forme, come utenti, persone, macchine, altri sistemi informatici o organizzazioni. Un caso d'uso definisce una specifica funzionalità fornita agli attori senza specificarne dettagli implementativi. Nel diagramma dei casi d'uso, gli attori sono rappresentati da figure umane stilizzate, ciascuno identificato da un'etichetta contenente il suo nome.
 
+- *Caso d'uso*
+#figure(
+  image("/imgs/Uml/UC.png", width: 55%),
+  caption: [
+    Caso d'uso
+  ],
+)
 
-*Estensioni:*
-- UC2 - Visualizzazione alert di manutenzione
-- UC3 - Visualizzazione errore di login
+I casi d'uso rappresentano le azioni o funzionalità che gli utenti possono eseguire all'interno di un sistema. Ogni caso d'uso è collegato mediante una linea continua agli attori che hanno accesso a quella specifica funzionalità, fornendo una chiara relazione tra gli utenti e le azioni che possono compiere nel sistema software.
 
-*Generalizzazioni:*
-- *Attori*:
-  + Admin --> User.
-- *Use Case*:
-    + UC1.1 - Inserimento email;
-    + UC1.2 - Inserimento password.
+- *Inclusione*
+#figure(
+  image("/imgs/Uml/inclusione.png", width: 75%),
+  caption: [
+    Inclusione
+  ],
+)
+
+L'include serve a delineare un UC che fa parte
+sempre dello stesso scenario principale,
+solitamente viene usato quando uno stesso UC
+viene sempre utilizzato da più UC
+simultaneamente.
+
+- *Estensione*
+#figure(
+  image("/imgs/Uml/estensione.png", width: 75%),
+  caption: [
+    Estensione
+  ],
+)
+L'extend serve a delineare un UC che ha le stesse
+precondizioni dell'UC da cui è derivato, ma ha
+postcondizioni differenti perchè si verifica un
+evento che porta a deviare dallo scenario
+principale ad uno scenario alternativo: esempi
+sono scenari di errore.
+
+- *Generalizzazione*
+
+    + Generalizzazione casi d'uso:
+#figure(
+image("/imgs/Uml/GeneralizzazioneUC.png", width: 75%),
+caption: [
+    Generalizzazione casi d'uso
+],
+)
+    La generalizzazione serve a specificare meglio una funzionalità e   coincide con l'OR esclusivo;
+
+    + Sotto-UC:
+        Se si sceglie di specificare meglio una funzionalità non tramite generalizzazioni ma tramite Sotto-UC, la funzionalità deve rimanere invariata nei Sotto-UC (Ad esempio: "Visualizzazione oggetto" scomposto in: "Visualizzazione nome oggetto", ...). Utilizzare i sotto-UC coincide con l'AND logico;
+
+    + Generalizzazione attori:
+#figure(
+image("/imgs/Uml/genAttori.png", width: 5%),
+caption: [
+    Generalizzazione attori
+],
+)
+    La generalizzazione tra attori serve per evidenziare ed identificare le funzionalità, ovvero i casi d'uso, disponibili per l'attore "A", che sono anche utilizzabili dall'attore "B" (non vale il viceversa).
 
 ==== Requisiti
 I requisiti devono possedere un identificativo, composto come segue:
@@ -236,21 +267,21 @@ Dove:
     Sono state successivamente concordate altre tre tipologie ritenute dal team, in seguito ad un'attenta analisi, di secondaria importanza data la natura del capitolato.
     Questi ultimi requisiti non saranno accompagnati da un identificativo, ma verranno posti nelle sezioni apposite in modo da non perderne la tracciabilità.
 
-    + "d'Ambiente"; 
++ "d'Ambiente"; 
 
     I requisiti d'ambiente si riferiscono alle condizioni e alle risorse necessarie per sviluppare, testare e implementare il software in un ambiente operativo specifico. Questi requisiti forniscono le specifiche riguardanti l'infrastruttura tecnologica e le configurazioni d'ambiente.
 
-    + "di Performance";
++ "di Performance";
 
     I requisiti di performance definiscono le prestazioni e le caratteristiche di rendimento che il sistema deve raggiungere per soddisfare le aspettative degli utenti e del proponente.
 
-    + "di Sicurezza".
++ "di Sicurezza".
 
     I requisiti di sicurezza delineano le misure di sicurezza e i comportamenti attesi per proteggere il sistema da minacce esterne o interne.
 
 === Progettazine
 L'attività di progettazione segue ed utilizza la fase di analisi dei requisiti per definire ancor più struttura, vincoli e specifiche tecniche del prodotto software in oggetto. La fase di progettazione mira inoltre a facilitare definizione, suddivisione e quindi pianificazione delle attività di codifica del prodotto, beneficiando, se eseguita in modo corretto e vantaggioso, il ciclo di vita del software.
-La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti, analizzate nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto. Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
+La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti, analizzati nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto. Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
 
 ==== RTB
 ===== Bozza di Architettura:
@@ -263,15 +294,24 @@ il prodotto è suddivisibile in 5 Layer principali:
 - Livello di Logica: è formato dalle #glossario("API") che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP.
 - Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
 
-==== Algoritmo di raccomandazione:
-// qui vanno descritte le scelte sul alg
+===== Algoritmo di raccomandazione:
+Per quanto riguarda l'agoritmo di raccomandazione si è concordata con il proponente, come primo approccio, una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto. Come algoritmo, in seguito ai vari test di performance svolti, è stato scelto SVD, in quanto più efficente ed efficace nel formulare raccomandazioni.
+
 ===== Tecnologie scelte:
+Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
+- *Livello Dati:*
+    + Mysql per il datatbase.
+    + Xampp (o Mamp, a seconda del sistema operativo) per l'hosting.
+- *Livello Elaborazione:*
+    + Anaconda, per la gestione della configurazione;
+    + Python, come linguaggio per il sistema di raccomandazioni;
+    + Come librerie: numpy, surprise e panda. 
+- *Livello di Logica:*
+    + Php. 
+- *Livello di Presentazione:*
+    + React.
 // vanno elencate le tecnologie scelte
-
-==== PB
-In questa sezione verrano in futuro definite le norme da seguire durante lo sviluppo relative alle scelte architetturali e di design prese nella fase di progettazione del MVP.
-
-=== Programmazione e verifica del software /** descrizione processo di coding e test software */
+===== Programmazione e verifica del software /** descrizione processo di coding e test software */
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.
 
 - Linguaggi e ambiente:
@@ -282,7 +322,7 @@ Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a s
 + Php per il backend della webapp;
 + React e Node.js per il frontend dell'interfaccia web.
 
-Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente con Anaconda durante lo sviluppo. Anaconda permette di creare configurazioni di Python per semplificare la gestione e la distribuzione di librerie e pacchetti.
+Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente con Anaconda durante lo sviluppo. Anacondaè un software che permette di creare configurazioni di Python per semplificare la gestione e la distribuzione di librerie e pacchetti.
 
 - Stile di codifica:
 Al fine di poter lavorare in un ambiente omogeneo ed ordinato il team ha deciso di predisporre delle automazioni che migliorino la qualità del codice ed organizzino la sua formattazione.
@@ -296,30 +336,32 @@ Segue un elenco dei principali principi guida:
 
 + Riuso del Codice: Ogni componente del gruppo è incoraggiato a sviluppare funzioni e metodi modulari che possano essere riutilizzati in diverse parti del progetto, sfavorendo la duplicazione del codice, e facilitando la manutenzione e la gestione delle funzionalità comuni.
 
-// + Mantenimento del Codice: Le funzioni devono essere scritte in modo chiaro e documentate adeguatamente per facilitare il mantenimento del codice nel tempo. Commenti significativi e una documentazione chiara aiutano i membri del team a comprendere rapidamente le funzionalità e apportare modifiche quando necessario.
++ Mantenimento del Codice: Le funzioni devono essere scritte in modo chiaro e documentate adeguatamente per facilitare il mantenimento del codice nel tempo. Commenti significativi e una documentazione chiara aiutano i membri del team a comprendere rapidamente le funzionalità e apportare modifiche quando necessario.
 
 + Efficienza del Codice: Si presta particolare attenzione all'efficienza del codice. Le funzioni dovrebbero essere progettate in modo ottimale per garantire un'esecuzione efficiente. L'attenzione è rivolta alla complessità algoritmica, all'utilizzo appropriato delle risorse e alla minimizzazione di operazioni computazionalmente costose.
 
 + Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
 
-=== Integrazione /** descrizione processo di integrazione di sistema e software */
-La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. // non so cosa scrivere
+===== Integrazione /** descrizione processo di integrazione di sistema e software */
+La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. Il team si impegna fin da subito nell'integrare le varie componenti del prodotto, in modo solido e al contempo elastico, in modo che quanto esplorato durante la produzione del PoC possa essere utile una volta inziati i lavori sul prodotto di MVP. 
 
 == Gestione operativa
 === Descrizione e Scopo /** descrizione di questa sezione */
-Questa sezione fornirà dettagli sull'installazione del software come i requisiti di sistema e le procedure necessari per eseguire correttamente il prodotto. Inoltre illustrerà una guida all'utilizzo, esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.
+Questa sezione fornirà dettagli sull'installazione del software come i requisiti di sistema e le procedure necessarie per eseguire correttamente il prodotto. Inoltre illustrerà una guida all'utilizzo, esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.
 
 Per quanto riguarda il PoC si rimanda al relativo README.md disponibile nel repository.
 
 === Utilizzo operativo /** descrizione di installazione, erogazione e utilizzo del prodotto */
 
-=== Accettazione del cliente /** descrizione feedback del cliente */
+In questa sezione verranno descritti i processi di installazione, erogazione ed utilizzo del prodotto.
 
 == Manutenzione
 
 === Descrizione e Scopo /** descrizione di questa sezione */
+Questa sezione fornisce una panoramica delle pratiche di manutenzione adottate dal team durante lo sviluppo del prodotto software, delineandone gli obiettivi e lo scopo principale. Include informazioni sulle attività svolte per garantire la stabilità, l'efficienza e la sicurezza del software nel tempo.
 
 === Correzione /** descrizione di come avviene la correzione */
+La correzione si concentra sull'identificazione e sulla risoluzione di difetti o problemi nel software. Questa sezione descrive il processo di individuazione degli errori, la loro classificazione e la successiva implementazione delle correzioni. Si illustrano anche le pratiche adottate per garantire che le correzioni siano tempestive e accurate, contribuendo così a migliorare la qualità complessiva del prodotto.
 
 === Adattamento /** descrizione di come avviene l'adattamento */
 
@@ -330,17 +372,15 @@ Per quanto riguarda il PoC si rimanda al relativo README.md disponibile nel repo
 == Documentazione
 
 === Descrizione e Scopo
-La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato e implementato e come lo si utilizza. Nel contesto del team di sviluppo è necessaria per facilitare il lavoro dei componenti, tenendo traccia e
-documentando tutti i processi e attività presenti andando a facilitare anche la manutenzione migliorando la qualità del risultato finale.
-
+La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato, implementato e come lo si utilizza. Nel contesto del team di sviluppo, la gestione efficace dei processi e delle attività è essenziale per agevolare il lavoro dei membri del team. La tracciabilità e la documentazione dettagliata di ogni fase del progetto sono fondamentali per semplificare le operazioni quotidiane e per facilitare la manutenzione del software nel tempo. Questa pratica non solo contribuisce a garantire una maggiore coerenza e coesione all'interno del team, ma anche a migliorare complessivamente la qualità del risultato finale.
 È bene quindi che vengano definite delle regole chiare e concise utili per la stesura di un documento, da seguire durante tutto il ciclo di vita del progetto allo scopo di garantire maggiore comprensione. 
 
 === Strumenti 
-    - Typst: scelto per la definitiva formattazione dei documenti per via della comodità con cui effettuare il versionamento dei documenti stessi;
+    - Typst: scelto per la definitiva formattazione dei documenti per via della comodità con cui effettuare il versionamento e revisione dei documenti stessi;
 
     - Overleaf (LaTeX): utilizzato nelle prime fasi del progetto per la realizzazione dei documenti necessari, successivamente sostituito con typst;
 
-    - UML: per la creazione di diagrammi UML il team ha deciso di utilizzare StarUML.
+    - UML: per la creazione di diagrammi UML il team ha deciso di utilizzare Diagramas.net.
 
 /** aggiungere in caso si utilizzino altri strumenti */
 
@@ -350,22 +390,22 @@ documentando tutti i processi e attività presenti andando a facilitare anche la
         + verbals.typ, per i verbali, sia esterni che interni;
         + p_letters.typ, per le lettere di presentazione.
 
-    - Tabelle: le tabelle presentano una classica intestazione del contenuto, i nomi delle colonne in grassetto e nessun altra particolarità, si è scelto di utilizzare una filosofia minimale per non appesantire i documenti. Si applicano colori alternati tra righe adiacenti in modo da facilitarne la lettura, rispettivamente "white" per le dispari, e "luma(230)"" per le pari. In alcune occasioni, è possibile se concordato, applicare il colore "c33435" alla riga di intestazione, per motivi puramente estetici.
+    - Tabelle: le tabelle presentano una classica intestazione del contenuto, i nomi delle colonne in grassetto e nessun altra particolarità, si è scelto di utilizzare una filosofia minimale per non appesantire i documenti. Si applicano colori alternati tra righe adiacenti in modo da facilitarne la lettura, rispettivamente "white" per le dispari, e "luma(230)" per le pari. In alcune occasioni, è possibile se concordato, applicare il colore "c33435" alla riga di intestazione, per motivi puramente estetici.
 
-    - Figure: le immagini devono rigorosamente essere accompagnate da relativa didascalia, ed essere ridimensionate in modo ragionevole, senza eccessiva perdità di qualità e contenuto e senza andare ad occupare spazi esagerati.
+    - Figure: le immagini devono rigorosamente essere accompagnate da relativa didascalia, ed essere ridimensionate in modo ragionevole, senza eccessiva perdità di qualità e contenuto, e senza andare ad occupare spazi esagerati rendendo la lettura del documento sgradevole.
 
 === Norme tipografiche
 //da mettere apposto e rendere tutto conforme !!!!!
     - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, la lettera iniziale è sempre maiuscola e il resto tutto minuscolo. Le parole sono separate da degli underscore e la data viene scritta in formato AAAA-MM-GG;
 
-    - Sezionamento: Divisione in sezioni X.X.X e in caso di ulteriori suddivisioni si utilizza un elenco puntato, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
+    - Sezionamento: Divisione in sezioni X.X.X (con alcune eccezioni) e in caso di ulteriori suddivisioni si utilizzano degli elenchi puntati, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
 
-    - Glossario: Il documento glossario è strutturato simile ad un dizionario, le sezioni primarie suddividono il documento in ordine alfabetico, la sottosezione contiene la parola, all'interno della sottosezione viene descritta la parola, la sua definizione o l'uso che ne si fa nel progetto;
+    - Glossario: Il documento glossario è strutturato similmente ad un dizionario, le sezioni primarie suddividono il documento in ordine alfabetico, la sottosezione contiene la parola, all'interno della sottosezione viene descritta la parola, la sua definizione o l'uso che ne si fa nel progetto;
 
-    - Stile del testo: Ai documenti vengono applicati stili di testo per facilita la lettura e per segnalare la funzione di certe parole. \ Parole in blu segnalano parole inserite all'interno del glossario, #glossario("esempio"). \ Parole in grassetto segnalano parole tecniche, *esempio*. \ Gli acronimi e le parole in termini tecnici vanno racchiuse fra parentesi tonde, (Esempio);
+    - Stile del testo: Ai documenti vengono applicati stili di testo per facilita la lettura e per segnalare la funzione di certe parole. \ Parole in blu, carattarezziate anche dal corsivo, segnalano parole inserite all'interno del glossario, #glossario("esempio"). \ Parole in grassetto segnalano parole tecniche, *esempio*. \ L'enunciazione di acronimi e le spiegazioni di termini tecnici vanno racchiuse fra parentesi tonde, (esempio);
     
-    - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" spaziato dal nome dell'elemento. La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".
-
+    - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" o da un "+", spaziati dal nome dell'elemento (rispettivamente rapresentanti un elenco puntato, o un elenco numerato). La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".
+    L'uso di quale tipologia di elenco utilizzare (puntato o numerato) è lasciato a propria discrezione.
 /** da ampliare in caso di aggiunte */
 
 === Struttura
@@ -415,8 +455,8 @@ Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno posse
 
     - Informali: Sono i documenti interni non destinati alla divulgazione con esterni e fini a loro stessi. Perciò non necessitano di versionamento. Spesso sono bozze in preparazione a documenti formali, o note e appunti generiche.
 
-=== Struttura file di progetto
-In questa sezione viene descritta la struttura dei vari file di progetto.\ Verrà in seguito descritta la parte di introduzione, comune fra i vari documenti, e successivamente una descrione più accurata per ogni documento.
+=== Contenuti
+In questa sezione vengono elencati i contenuti dei vari file di progetto.\ Verrà in seguito descritta la parte di introduzione, comune fra i vari documenti, e successivamente una descrione più accurata per ogni documento.
 
 ==== Introduzione
 Ogni documento ha come prima sezione quella di introduzione, tale sezione serve per introdurre il documento al lettore e sarà composta dalle seguenti sotto sezioni:
@@ -429,19 +469,20 @@ Ogni documento ha come prima sezione quella di introduzione, tale sezione serve 
 ==== Analisi dei Requisiti
 Il documento Analisi dei Requisiti va strutturato nel seguente modo:
     - Descrizione: sezione che descrive brevemente il prodotto software, il suo obiettivo, le funzionalità e gli utenti;
-    - Casi d'uso: sezione che descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le postcondizioni, lo scenario principale e le generalizzazioni;
-    - Requisiti: sezione che descrive in maniera approfondita i requisiti del prodotto. \ Vanno segnati i requisiti funzionali, di qualità e requisiti di vincolo, oltre al tracciamento dei requisiti stessi;
+    - Casi d'uso: sezione che descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le postcondizioni, lo scenario principale,le estensione e le generalizzazioni (quest'ultime due, se presenti);
+    - Requisiti: sezione che descrive in maniera approfondita i requisiti del prodotto. \ Vanno elencati i requisiti funzionali, di qualità, di vincolo, d'ambiente, di performace e di sicurezza;
+    - Tracciamento: in questa sezione, di fondamentale importanza, verranno riportati i requisiti e le loro fonti, in modo da garantirne il tracciamento.
     - Elenchi: questa sezione deve comprendere gli elenchi delle immagini e delle tabelle utilizzate all'interno del file.
 
 ==== Glossario
 Il documento Glossario va strutturato nel seguento modo:\
-Le sezione suddividono il documento in ordine alfabelico, le sottosezioni avranno come titolo la parola e come descrizione la definizione della parola.
+Le sezione suddividono il documento in ordine alfabelico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
 
 ==== Piano di Progetto
 Il documento Piano di Progetto va strutturato nel seguento modo:
-    - Analisi dei rischi: In questa sezione vanno definiti i rischi possibili del progetto. \ I rischi vanno divisi in rischi personali, rischi organizzativi e rischi tecnologici/software; 
-    - Pianificazione: In questa sezione vanno descritte le modalità di pianificazione delle attività svolte dal gruppo durante il progetto. \ In particolare vanno inseriti i Metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attività e distibusione dei ruoli;
-    - Preventivi e Consumi: In questa sezione vanno descritti i preventi e consumi durante il progetto, per semplicità di lettura si utilizzeranno tabelle e grafici a torta.
+    - Analisi dei rischi: In questa sezione vanno definiti i rischi possibili del progetto. \ I rischi vanno divisi in rischi personali, rischi Rischi organizzativi interni ed esterni, rischi tecnologici/software; 
+    - Pianificazione: In questa sezione vanno descritte le modalità di pianificazione delle attività svolte dal gruppo durante il progetto. \ In particolare vanno inseriti i metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attività e distibusione dei ruoli;
+    - Preventivi e Consuntivi: In questa sezione vanno descritti i preventivi e consuntivi per ogni sprint durante il progetto. Per semplicità di lettura si utilizzeranno tabelle e grafici.
 
 ==== Piano di Qualifica
 Il documento Piano di Qualifica va strutturato nel seguente modo:
@@ -452,9 +493,9 @@ Il documento Piano di Qualifica va strutturato nel seguente modo:
 
 ==== Norme di Progetto
 Il documento Norme di Progetto va strutturato nel seguento modo:
-    - Processi Primari: In questa sezione vanno descritti i processi primari: Fornitura, Sviluppo, Gestione Operativa e Manutenzione;
-    - Processi di supporto: In questa sezione vanno descritti i processi di supporto: Documentazione, Gestione, Qualifica, Revisione e Verifica e Risoluzione dei problemi;
-    - Processi organizzativi: In questa sezione vanno descritti i processi organizzativi: la gestione, in particolare gestione ruoli e comunicazioni, le infrastrutture, i miglioramenti e soprattutto la formazione.
+    - Processi Primari: In questa sezione vanno descritti i processi primari: fornitura, sviluppo, gestione operativa e manutenzione;
+    - Processi di supporto: In questa sezione vanno descritti i processi di supporto: documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
+    - Processi organizzativi: In questa sezione vanno descritti i processi organizzativi: gestione dei processi, gestione ruolistica e gestione delle comunicazioni. Seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
 
 == Gestione della configurazione
 
@@ -465,7 +506,7 @@ Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essen
 === Versionamento <versionamento>/** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
   
 Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni #glossario("artefatto"),
-documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte, e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
+documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori e conflitti. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
 Ogni documento oltre a essere dotato di un changelog è identificato da un numero di versione così composto:
 
 #align(center, "vX.Y.Z")
@@ -474,9 +515,9 @@ dove :
 
 - X rappesenta fasi del documento che suddividono e raccolgono i cambiamenti più significativi apportati all'artefatto anche detti "major".
 - Y rappresenta modifiche minori come ad esempio la realizzazione di una sezione o feature le quali si pensa non siano sufficienti a stabilire una nuova "fase" del documento. Sono anche identificati con l'appellativo "minor".
-- Z rappresenta piccoli aggiustamenti (fixes) o migliorie generali.
+- Z rappresenta piccoli aggiustamenti (anche identificati come "fixes") o migliorie generali.
 
-Si noti che ogni versione rappresenta non solo un'aggiunta di tipo prettamente produttivo, ma anche al sua revisione.
+Ad ogni versione corrispode uno stato del documento revisionato.
 
 /* ha senso metterlo qui? o in una sezione "automazioni" */
 
@@ -492,10 +533,12 @@ changelog: (
 )
 
 ```
+La prima persona inserita identifica chi ha svolto le modifiche sul documento, mentre la seconda, chi ne ha revisionato il contenuto.
 
-Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutte le informazioni specificate e richieste. Si noti che _p_ è una variabile d'ambiente contenente tutti i nominativi dei componenti del gruppo di lavoro e di ulteriori nominativi utili e ripetuti molteplici volte nel corso del progetto.
+Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutte le informazioni specificate e richieste. Si noti che _p_  ("people") è una variabile d'ambiente contenente tutti i nominativi dei componenti del gruppo di lavoro e di ulteriori nominativi utili e ripetuti molteplici volte nel corso del progetto.
 
 ==== Lato software
+Per quanto riuarda il software il versionamento verrà completamente gestito da github, usufruendo dei suoi vari servizi, come ad esempio releases automatiche e github action.
 //parte sulla possibile integrazione di un versionamento automatico
 
 === Repository /** spiegazione dello strumento usato per la repo (github) e descrizione della struttura (immagine) */
@@ -519,16 +562,22 @@ E' definibile come il branch di presentazione, nel quale sono presenti solo arte
 che non ne permette i push diretti e protegge il ramo.
 
 approval:\
-Come intuibile dal nome, è il branch che rappresenta il main durante lo sviluppo e che garantisce che ciò che entra nel ramo principale sia completamente revisionato e approvato. I suoi contenuti verrano uniti a quelli del main tramite un processo di merge una volta che il responsabile di progetto lo ritenga possibile. Le pull request da qualsiasi ramo verso quello di presentazione verranno infatti reinderizzate a quest'ultimo, che ne andrà a valutare la qualità, accettando il lavoro svolto o rimandandolo al mittente con direttive sul come migliorarlo.
+Come intuibile dal nome, è il branch che rappresenta il main durante lo sviluppo e che garantisce che ciò che entra nel ramo principale sia completamente revisionato e approvato. I suoi contenuti verrano uniti a quelli del main tramite un processo di merge ad ogni conclusione di uno sprint, o una volta che il responsabile di progetto lo ritenga possibile e necessario. Le pull request da qualsiasi ramo verso quello di presentazione verranno infatti reinderizzate a quest'ultimo, che ne andrà a valutare la qualità, accettando il lavoro svolto o rimandandolo al mittente con direttive sul come migliorarlo.
 
 sources:\
 E' il branch relativo alla produzione della documentazione, perciò contiene solo file di tipo .typ e non è pensato per una sua supervisione esterna. I file sorgenti verranno compilati e resi disponibili automaticamente nel ramo approval.
 
-Nel branch main è disponibile un README.md che ne descrive la struttura di cartelle.
-Qui sotto un link al repository:
+Nel branch main è disponibile un README.md che ne descrive la struttura di cartelle per consentirne una migliore navigazione.
+Inoltre il team ha pensato di predisporre una pagina web di presentazione dei contenuti del repository, utilizzando le risorse che github.io mette a diposizione.
+
+Qui sotto un link al repository, e alla pagina di presentazione:
 
 #link("https://github.com/farmacodeunipd/farmacode")[
     Repository di progetto.
+]
+
+#link("https://farmacodeunipd.github.io/")[
+    Pagina di presentazione.
 ]
 
 == Accertamento della qualità 
@@ -543,30 +592,94 @@ Le attività messe in atto per garantirne la qualità sono:
 == Qualifica
 
 === Verifica /** descrizione di come avviene la verifica ed i vari tipi di analisi */
-La verifica del software è definita come il processo di valutazione del prodotto software, mirato a garantire l'accuratezza dell'esecuzione della fase di sviluppo per costruire il prodotto software desiderato. Questa attività si svolge durante la fase in corso di sviluppo per rilevare difetti e guasti nella fase iniziale del ciclo di vita dello sviluppo, assicurando al contempo che il prodotto soddisfi i requisiti del cliente. La verifica quindi, è un elemento cruciale per garantire la qualità e la conformità del software alle specifiche stabilite.
+
+La verifica è un processo fondamentale per la valutazione di un prodotto software. Questa attività si svolge nel corso della fase di sviluppo con l'obiettivo di individuare difetti e guasti fin dalla fase iniziale del ciclo di vita del prodotto, garantendo simultaneamente il massimo rispetto dei requisiti imposti dal cliente.
+\ Essa rappresenta un elemento cruciale per garantire la qualità e la conformità del software alle specifiche stabilite. Attraverso metodologie di testing, analisi del codice e altre tecniche di valutazione, si mira a identificare e correggere tempestivamente eventuali anomalie. Ciò non solo contribuisce a prevenire la diffusione di difetti nelle fasi successive, ma assicura anche che il prodotto finale soddisfi le aspettative del cliente.
 
 ==== Analisi statica
 
-La verifica statica, così chiamata poichè non richiede l'esecuzione del prodotto, consiste nell'individuazione e correzione di eventuali problematiche che riguardano convenzioni o metriche stabilite. L'analisi statica riguarda sia il codice del software che la stesura dei documenti e può essere effettuata sia in maniera manuale o grazie all'utilizzo di strumenti per l'automazione.\
-Esistono inoltre due tipi per la verifica tramite l'analisi statica:
+La verifica statica, così chiamata poichè non richiede l'esecuzione del prodotto, consiste nell'individuazione e correzione di eventuali problematiche che riguardano convenzioni o metriche stabilite. L'analisi statica riguarda sia il codice del software che la stesura dei documenti allegati. Essa può essere effettuata manualmente, o grazie all'utilizzo di strumenti per l'automazione.\
+Esistono inoltre due modalità differenti per la verifica tramite analisi statica:
 - Walkthrought: viene utilizzato nel momento in cui non si sappia dove viene riscontrata la problematica e consiste in una lettura più ampia scorrendo nella sua interezza il documento/codice per trovare l'errore. Questo metodo è sicuramente molto efficace ma anche molto dispendioso in termini di risorse.
 - Inspection: A differenza del Walkthrought, questo metodo viene utilizzato quando si è a conoscenza di dove potrebbe essere la problematica. E' quindi un approccio più mirato per l'eliminazione dell'errore e molto meno dispendioso.
 
+Conscio di quanto appena descritto, il gruppo ha deciso di ripiegare sul utilizzo di automazioni qual'ora possibile, in modo da velocizzare e abbattere i costi (almeno nel lungo termine) della pratica.
+
+- Documentazione:
+    Per quanto riguarda la sintassi e correttezza dei file .typ, il gruppo si affida agli strumenti di correzione automatica integrati nel editor predisposto per la stesura dei documenti. Per quanto riguarda invece i controlli sulla correttezza della grammatica e ortografia della lingua italiana, dopo aver testato diversi strumenti di "spell checking" integrabili nel editor, il team ha deciso di attenersi ad un controllo manuale, sicuramente più dispendioso, ma anche più affidabile ed efficace.
+ 
+- Codice:
+    A proposito del codice il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice.
+
 ==== Analisi dinamica
 
-L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento.\
+L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento. Questo processo dinamico è complementare all'analisi statica, che si concentra sulla revisione del codice sorgente senza eseguirlo. Insieme, l'analisi dinamica e statica costituiscono una strategia completa per la verifica e la validazione del software durante il suo sviluppo e oltre.\
+
+- Documentazione:
+    Per quanto riguarda la sintassi e correttezza dei file .typ è stata creata una github action ad hoc che oltre a compilare questi ultimi si accerta che i documenti non presentino errori che possano compromettere la loro visione una volta avvenuta la conversione in formato pdf. In caso il parser trovi delle incongruenze o errori, stampa nel log delle action di github il problema, in modo da facilitarne la correzione.
+    Per quanto riguarda invece i controlli sulla correttezza della grammatica e ortografia della lingua italiana, dopo aver testato diversi strumenti di "spell checking" integrabili sempre tramite action, il team ha deciso di attenersi ad un controllo manuale, sicuramente più dispendioso, ma anche più affidabile ed efficace.
 //bisogna scrivere dei test automatici, noi effettivamente li implementeremo(?)
 
+- Codice: L'analisi dinamica comporta l'esecuzione di vari casi di test durante il funzionamento del codice. L'obiettivo principale di questi test è verificare che il software esegua correttamente, individuando eventuali divergenze tra i risultati ottenuti e quelli attesi.\ Per garantire l'efficacia di tali test, è imperativo automatizzare il processo e renderlo ripetibile. Questo approccio mira a valutare in modo il più oggettivo possibile il prodotto. Nel panorama dell'ingegneria del software, la tecnica principale associata all'analisi dinamica è il testing. Per massimizzarne l'efficacia, ogni test deve essere deterministico e replicabile, cioè, dati gli stessi input, deve produrre sempre lo stesso output. Inoltre, ogni test deve presentare parametri ben definiti, inclusi la descrizione degli input e degli output, il comportamento atteso del software e le condizioni di esecuzione del test. \ L'efficacia complessiva dei test dipende dalla qualità del codice scritto e dalla corretta identificazione dei requisiti funzionali e non funzionali del sistema. Sta quindi agli sviluppatori identificare un insieme di casi di prova rappresentativo, consentendo così l'applicazione dei test su un numero limitato e significativo di situazioni. \ Vi sono varie tipologie di test:
+
+    + Test di unità:
+        I test di unità sono una componente fondamentale del processo di testing software. Essi si focalizzano sulla verifica del corretto funzionamento di unità di codice individuali e indivisibili. Possono essere suddivisi in due categorie principali: test strutturali e test funzionali. I test di unità strutturali si concentrano sulla verifica interna dell'implementazione, mentre i test funzionali si focalizzano sul comportamento esterno e sulle funzionalità offerte dall'unità.
+
+    + Test di integrazione:
+        I test di integrazione hanno lo scopo di verificare le interazioni tra le diverse unità architetturali. Questi test sono fondamentali per garantire che i vari componenti del sistema si integrino correttamente, identificando eventuali difetti derivanti dall'interazione tra le unità. Questi test possono essere concepiti e realizzati seguendo principalmente tre approcci diversi: #glossario("top-down"), #glossario("bottom-up"), e in modo #glossario("incrementale") (o misto).
+        Queste tre modalità hanno loro vantaggi, svantaggi e applicazioni. Il team, dopo una riflessione colletiva, ha indivuato il primo elencato come il più naturale da seguire data la scarsa esperienza nell'ambito.
+
+    + Test di sistema:
+        I test di sistema sono una fase del processo di testing software che verifica il comportamento del sistema nel suo complesso, in accordo con i requisiti individuati. Questi test vengono eseguiti dopo i test di integrazione e possono includere diversi aspetti del sistema, tra cui funzionalità, prestazioni, sicurezza e affidabilità. La loro finalità è accertare che il software soddisfi gli obiettivi e le specifiche del progetto. Il loro obiettivo principale è garantire che il sistema complessivo soddisfi gli standard di qualità e le aspettative dell'utente, fornendo un software stabile, sicuro e pratico.
+
+    + Test di regressione:
+        Questa tipologia di test che eseguita per verificare che le modifiche apportate a una parte del codice non abbiano causato regressioni o rotture in altre parti del sistema. In altre parole, l'obiettivo dei test di regressione è assicurarsi che le modifiche al software non abbiano introdotto nuovi difetti o compromesso le funzionalità esistenti.
+
+    + Test di accettazionne:
+        I test di accettazione rappresentano la fase finale del processo di testing software, sono volti a verificarne la conformità rispetto ai requisiti specificati e a ottenere l'approvazione da parte degli stakeholder, inclusi clienti e utenti finali. Questi test sono eseguiti per assicurare che il software soddisfi le aspettative e sia pronto per un possibile rilascio.
+
+==== Struttura dei test
+
+Tutti i test andrannò definiti nella seguente modalità:
+
+- Identificativo:
+
+    Ogni test deve essere corredato da un identificativo definito come segue (questo anche per favorirne la tracciabilità):
+
+    #align(center, "test_[Tipologia]_[Id]")
+
+    dove: "Tipologia" ne indica il tipo (U --> "Unità", I --> "Integrazione", S ... ), ed "Id" un semplice codice seriale formato da al massimo due cifre, funge da nome.
+
+- Stato:
+
+    Ad ogni test verrà poi associato uno stato che ne rappresenterà il risultato, esso potrà essere:
+
+        + ND: quando il test non è ancora stato implementato. 
+        + Passato: quando il test riporta esito positivo. 
+        + Non passato: quando il test riporta esito negativo.
+
+Affinché ogni test sia ripetibile e fornito con precisione, è essenziale specificare nel apposita documentazione:
+
+- Ambiente e requisiti:
+
+    Definire lo stato iniziale dell'ambiente, includendo dettagli sull'hardware e il software necessari per eseguire il test. Questo può includere informazioni sulla configurazione del sistema, versioni del software, e condizioni che possono influenzare l'esecuzione del test.
+
+- Attese e funzionamento:
+
+    Individuare ed esplicitare gli input richiesti e i corrispondenti output attesi. Questo comprende la descrizione dettagliata di cosa ci si aspetta che accada durante l'esecuzione del test e i risultati attesi alla sua conclusione.
+
+- Procedure e valutazione:
+
+    Definire le procedure coinvolte nell'esecuzione del test, fornendo istruzioni dettagliate su come condurre il test. Ciò può includere sequenze di azioni da eseguire e descrizioni degli scenari specifici da testare. Inoltre va indicato come valutare se il test è stato superato con successo o se sono emersi eventuali problemi.
+
+- Tracciamento: 
+
+    Indicare che funzionalità mira a coprire il test in esame, specificandone requisiti funzionali rispetto l'utente finale.
+ 
 === Validazione /** descrizione di come avviene la validazione */
 
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
 Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
-
-==== Validazione statica
-Per la documentazione è stato implementato un GitHub Actions che verifica la correttezza semantica e sintattica del codice Typst per poi andare a costruire il file in formato pdf da esso.\
-Per quanto riguarda i file di codice, sempre tramite Actions, sono stati implementati, grazie a ruff, sistemi automatici legati al codice del file per la formattazione del codice.
-
-==== Validazione dinamica
 
 == Revisioni congiunte con il cliente
 
@@ -585,7 +698,6 @@ Questo approccio consente al team di esaminare attivamente il prodotto, fornendo
 Le verifiche interne offrono un'opportunità cruciale per allineare le aspettative del team di sviluppo con la realizzazione pratica del software, identificare eventuali incongruenze e garantire che il prodotto finale soddisfi appieno le esigenze e le aspettative interne precedentemente accordate con il proponente.
 
 == Risoluzione dei problemi
-
 === Descrizione e Scopo /** descrizione della sezione */
 Durante il progetto il nostro team ha sempre cercato di operare seguendo un modello di miglioramento continuo, in modo da applicare alle best practices, le soluzioni incontrate fino ad ora alle problematiche più riccorrenti.\
 La risoluzione dei problemi gioca quindi un ruolo fondamentale per l'avanzamento del progetto didattico in quanto permette di monitorare e risolvere i problemi che possono sorgere durante lo sviluppo o il testing. 
@@ -613,7 +725,7 @@ Questa fase rigurda prettamente problematiche riguardanti il codice la cui discu
 Durante gli incontri si toccano tre temi principali: la causa, l'impatto e il rischio.
 
 ==== Risoluzione del problema
-Una volta valutato il problema, sarà la persona incaricata a risolverlo, comunicando tramite il ITS lo stato di avanzamento della risoluzione al problema e sfruttando la strategia valutata precedentemente.
+Una volta valutato il problema, sarà la persona incaricata a risolverlo, comunicando tramite il ITS lo stato di avanzamento della risoluzione del problema e sfruttando la strategia valutata precedentemente.
 
 ==== Comunicazione e aggiornamento documentazione
 Durante il processo di gestione del problema, è fondamentale mantenere una comunicazione trasparente con il proponente. 
@@ -665,7 +777,7 @@ La suddivisione in ruoli segue le norme definite nel "Regolamento progetto didat
   [Verificatore],[15],[- Svolge le attività di verifica],
 )
 
-Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità, ovviamente senza venire meno alle pratiche di tracciabilità adottate  normalmente dal team.
+Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità, ovviamente senza venire meno alle pratiche di tracciabilità adottate normalmente dal team.
 
 La loro assegnazione viene gestita dal Responsabile di progetto corrente, il quale confrontandosi con gli altri componenti del gruppo, va a stabilire una rotazione conforme al regolamento. Ogni membro del team dovrà infatti ricoprire ogni carica almeno una volta.
 

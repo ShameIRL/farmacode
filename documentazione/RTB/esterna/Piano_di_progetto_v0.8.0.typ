@@ -157,7 +157,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 5: RP4 - Malattia o indisponibilità.]
 
-== Rischi organizzativi interni e esterni
+== Rischi organizzativi interni ed esterni
 
 === Interni
 
@@ -351,9 +351,6 @@ La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto
 )
 
 Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità.  // da mettere?
-
-
-
 
 == Periodi
 
