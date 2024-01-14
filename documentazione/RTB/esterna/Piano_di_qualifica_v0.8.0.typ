@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica selezionare 5.3 e aggiunta sezione 5.4",
+    "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica sezione 5.3 e aggiunta sezione 5.4",
     "0.7.2", "2024-01-13", p.bomben, p.favaron, "Tabella di test di sistema e tracciamento",
     "0.7.1", "2024-01-12", p.favaron, p.passarella, "Aggiunte alla sezione introduzione",
     "0.7.0", "2024-01-05", p.bomben, p.favaron, "Stesura sezione 5, 6 e 7",
@@ -650,6 +650,7 @@ Come valori per le diverse difficoltà abbiamo:
 - < 80: difficili da leggere per chi ha la licenza elementare;
 - < 60: difficili da leggere per chi ha la licenza media;
 - < 40: difficili da leggere per chi ha la licenza superiore.
+Un intervallo ideale si aggira fra i 40 e 60.
 
 === IG documenti
 #align(center)[
@@ -661,11 +662,11 @@ Come valori per le diverse difficoltà abbiamo:
   ),
   align: center,
   [*Documento*], [*Valore IG*],
-  [Analisi dei requisiti], [73],
-  [Glossario], [],
+  [Analisi dei requisiti], [87],
+  [Glossario], [48],
   [Piano di Progetto], [69],
-  [Piano di qualifica], [],
-  [Norme di progetto], [68],
+  [Piano di qualifica], [88],
+  [Norme di progetto], [56],
 )
 ]
 #align(center)[Tabella 15: Indice di Gulpease dei documenti]
