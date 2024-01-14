@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.7.1", "2024-01-14", p.bomben, "", "Tracciamento requisiti - fonte",
     "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
     "0.6.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",
@@ -2814,12 +2815,13 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [UC13, UC13.1, UC13.2], [RDF 25],
   [UC14, UC14.2], [RDF 26],
   [UC14.1, UC14.1.1, UC14.1.1.1, UC14.1.1.2, UC14.1.2], [RDF 27],
-  [UC14.2.1, CU14.2.1.1, UC14.2.1.2, UC14.2.1.3], [RDF 28],
+  [UC14.2.1, UC14.2.1.1, UC14.2.1.2, UC14.2.1.3], [RDF 28],
   [UC15, UC15.2], [RDF 29],
   [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2], [RDF 30],
   [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3], [RDF 31],
   [UC16], [RDF 32],
-  [verbale interno], [RDF 33, RDF 34],
+  [Verbale Interno], [RDF 33],
+  [Verbale Interno], [RDF 34],
 )
 #table(
   columns: (1fr, 1fr),
@@ -2830,6 +2832,8 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Capitolato],[ROQ 3],
   [Capitolato],[ROQ 4],
 )
+#pagebreak()
+
 #table(
   columns: (1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
@@ -2848,6 +2852,84 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Verbale Interno],[RDV 12],
   [Verbale Esterno],[RDV 13],           
 )
+
+=== Requisiti - Fonte
+
+#table(
+  columns: (1fr, 1fr),
+  [*Requisito*],[*Fonte*]
+)
+
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*Funzionali*],[],
+  [ROF 1], [UC1, UC1.1, UC1.2],
+  [RDF 2], [UC2],
+  [RDF 3], [UC3],
+  [RDF 4], [UC4, UC4.1, UC4.2],
+  [RDF 5], [UC5],
+  [ROF 6], [UC5, UC5.1, UC5.1.1],
+  [ROF 7], [UC5, UC5.1, UC5.1.2],
+  [ROF 8], [UC5, UC5.1, UC5.1.3],
+  [ROF 9], [UC5, UC5.1, UC5.1.4],
+  [RDF 10], [UC5, UC5.2, UC5.2.1, UC5.2.2],
+  [ROF 11], [UC6, UC6.1, UC6.1.1, UC6.1.2, UC6.1.4, UC6.1.4],
+  [ROF 12], [UC6.2, UC6.2.1, UC6.2.2],
+  [ROF 13], [UC7],
+  [ROF 14], [UC8, UC8.1, UC8.1.1, UC8.1.2],
+  [ROF 15], [UC8.1.1.1],
+  [ROF 16], [UC8.1.1.3],
+  [ROF 17], [UC8.2, UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4],
+  [ROF 18], [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2],
+  [ROF 19], [UC10, UC10.2, UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC10.2.1.3, UC19.2.1.4],
+  [RDF 20], [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC1O.1.2],
+  [RDF 21], [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7],
+  [ROF 22], [UC12, UC12.2],
+  [RDF 23], [UC12.1, UC12.11, UC12.1.1.1, UC12.1.1.2, UC12.1.1.3, UC12.1.2],
+  [RDF 24], [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4],
+  [RDF 25], [UC13, UC13.1, UC13.2],
+  [RDF 26], [UC14, UC14.2],
+  [RDF 27], [UC14.1, UC14.1.1, UC14.1.1.1, UC14.1.1.2, UC14.1.2],
+  [RDF 28], [UC14.2.1, UC14.2.1.1, UC14.2.1.2, UC14.2.1.3],
+  [RDF 29], [UC15, UC15.2],
+  [RDF 30], [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2],
+  [RDF 31], [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3],
+  [RDF 32], [UC16],
+  [RDF 33], [Verbale Interno],
+  [RDF 34], [Verbale Interno],
+  
+)
+
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*di Qualità*],[],
+  [ROQ 1], [Capitolato],
+  [ROQ 2], [Capitolato],
+  [ROQ 3], [Capitolato],
+  [ROQ 4], [Capitolato],
+)
+
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*di Vincolo*],[],
+  [ROV 1], [Capitolato],
+  [ROV 2], [Capitolato],
+  [ROV 3], [Capitolato],
+  [ROV 4], [Capitolato],
+  [ROV 5], [Capitolato],
+  [ROV 6], [Capitolato],
+  [ROV 7], [Capitolato],
+  [RDV 8], [Verbale Interno],
+  [RDV 9], [Verbale Interno],
+  [RDV 10], [Verbale Interno],
+  [RDV 11], [Verbale Interno],
+  [RDV 12], [Verbale Interno],
+  [RDV 13], [Verbale Interno],
+)
+
 
 == Riepilogo
 
