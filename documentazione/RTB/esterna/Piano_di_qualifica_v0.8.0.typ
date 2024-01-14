@@ -8,6 +8,8 @@
     p.cardin,
   ),
   changelog: (
+    "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica selezionare 5.3 e aggiunta sezione 5.4",
+    "0.7.2", "2024-01-13", p.bomben, p.favaron, "Tabella di test di sistema e tracciamento",
     "0.7.1", "2024-01-12", p.favaron, p.passarella, "Aggiunte alla sezione introduzione",
     "0.7.0", "2024-01-05", p.bomben, p.favaron, "Stesura sezione 5, 6 e 7",
     "0.6.0", "2023-12-21", p.pandolfo, p.bomben, "Modifica qualità di prodotto",
@@ -18,25 +20,6 @@
     "0.1.0", "2023-11-24", p.carraro, p.rosson, "Struttura iniziale del documento",
   ),
 )
-= Elenco tabelle
-Qualità della documentazione\
-Metriche qualità della documentazione\
-Qualità del software\
-Metriche qualità del software\
-Processi primari\
-Processi di supporto\
-Processi organizzativi\
-Metriche processi primari\
-Metriche processi di supporto\
-Metriche processi organizzativi\
-Test di accettazione\
-Tracciamento test di accettazione\
-Test e tracciamento di sistema\
-Valutazione tecnologica\
-Valutazione organizzativa e personale\
-Indice di Gulpease dei documenti\
-
-#pagebreak()
 
 = Introduzione
 == Scopo del documento
@@ -569,20 +552,26 @@ Di seguito una tabella con il codice del test, la descrizione, il risultato e il
     x: 5pt,
     y: 10pt,
   ),
-  align: center,
+  align: left,
   [*Codice\ Test*], [*Descrizione*], [*Risultato Test*], [*Codice\ Requisito*],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
-  [], [], [], [],
+  [TS01], [Verificare la corretta visualizzazione della pagina principale], [Passato], [ROF 14,\ ROF 5],
+  [TS02], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [Non implementato], [ROF 1s],
+  [TS03], [Verificare la corretta visualizzazione di eventuale dell'alert di manutenzione.], [Non implementato], [RDF 2],
+  [TS04], [Verificare la corretta visualizzazione  della normativa cookie.], [Non implementato], [RDF 3],
+  [TS05], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [Non implementato], [RDF 4],
+  [TS06], [Verificare la corretta visualizzazione e funzione della funzionalità di ricerca per la raccomandazione.], [Passato], [ROF 6,\ ROF 14,\ ROF 15,\ ROF 16,\ ROF 17],
+  [TS07], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [Non implementato], [ROF 18],
+  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [Non implementato], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
+  [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [Non implementato], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
+  [TS10], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [Non implementato], [RDF 9,\ RDF 25],
+  [TS11], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [Non implementato], [RDF 10,],
+  [TS11.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Non implementato], [RDF 26,\ RDF 27,\ RDF 28],
+  [TS11.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Non implementato], [RDF 29,\ RDF 30,\ RDF 31],
+  [TS12], [Verificare la corretta visualizzazione della pagine dei dati personali.], [Non implementato], [ROF 11],
+  [TS12.1], [Verificare che l'utente possa cambiare la sua email e password.], [Non implementato], [ROF 12],
+  [TS13], [Verificare la possibilità di eseguire il Logout.], [Non implementato], [ROF 13],
+  [TS14], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [Non implementato], [RDF 32],
+  
 )
 #align(center)[Tabella 13: Test e tracciamento di sistema]
 
@@ -616,26 +605,31 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [Periodi di malattia all'interno del team che ha portato a dei leggeri cali di performance durante alcuni sprint.], [RP4], [Ridistribuzione del carico di lavoro e maggiore disponibilità nel periodo successivo.],
   [A causa del periodo natalizio e dell'imminente sessione, la performance del team è calata molto con un conseguente calo delle attività di progetto.], [RP4], [Recupero post vacanze aumentando la disponibilità oraria.],
   [Leggero ritardo nella consegna del dataset da parte dell'azienda.], [ROE2], [Abbiamo dedicato ad uno sprint nella sua quasi interezza la programmazione.],
-  //lasciamo o è da infami?
+  [Difficoltà iniziali della gestione dei ruoli e dei carichi di lavoro.], [ROI2], [Aggiustamenti nei successivi sprint grazie all'esperienza acquisita dallo sprint precedente e alla comunicazione dei membri.],
+  //lasciamo o è da infami? 
 )
 #align(center)[Tabella 15: Valutazione organizzativa e personale]
 
 == Valutazione sui ruoli
 #table(
-  columns: (33mm, auto, auto),
+  columns: (auto, 33mm, auto, auto),
   inset: (
     x: 5pt,
     y: 10pt,
   ),
-  [*Ruolo*], [*Problema*], [*Soluzione*],
-  [Project manager], [Difficoltà nella gestione e automazione del repository.], [],
-  [Amministratore], [Scelta delle tecnologie da utilizzare.], [Confronto con il proponente e studio individuale di membri del gruppo],
-  [Analista], [Stesura casi d'uso e analisi dei requisiti.], [],
-  [Progettista], [scelte progettuali], [],
-  [Verificatore], [], [Ogni membro del gruppo si occupava di revizionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
-  [Programmatore], [realizzazione prodotto], [],
+  [*Fase*], [*Ruolo*], [*Problema*], [*Soluzione*],
+  [Sprint 1 - 4], [Project manager], [Inizialmente sono state rilevate delle difficoltà nella gestione e automazione del repository legata anche al fatto che al termine di ogni sprint di progetto veniva cambiato il membro del gruppo che ricopriva questo ruolo.], [Diversi tentativi  e l'unione di più parti hanno portato al raggiungimento di un risultato ottimale. Tuttavia il tempo impiegato è stato maggiore di quanto uno si potesse aspettare.],
+  [Analisi preliminare], [Analista], [Data l'inesperienza dei membri del gruppo in questo ambito è sorto il problema di come individuare i vari requisiti e annessi casi d'uso e come descriverlli al meglio (quanto andare più nel dettaglio)], [Confronto con il proponente per quanto riguarda l'individuazione e confornto con il committente (professor Cardin) per la descrizione.],
+  [Analisi preliminare], [Verificatore], [La distribuzione del lavoro non era uniforme nell'arco della settimana ma concentrata eccessivamente negli ultimi giorni dello sprint.], [Ogni membro del gruppo si occupava di revizionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
+  [Sprint 4], [Programmatore], [Alcuni programmatori si sono trovati in difficoltà dovendo "assemblare" porzioni di codice scritto da altri membri del gruppo.], [Massima disponibilità da parte dei membri che hanno sviluppato l'altra porzione di codice a spiegare hai nuovi programmatori quanto svolto.],
+  /*
+  [], [Amministratore], [Scelta delle tecnologie da utilizzare.], [Confronto con il proponente e studio individuale di membri del gruppo.],
+  [], [Progettista], [Interazione algoritmo, api, database e webapp.], [Studio individuale dei membri del gruppo e interpretazione capitolato d'appalto],
+  */
 )
 #align(center)[Tabella 15: Valutazione sui ruoli]
+
+#pagebreak()
 
 = Controllo delle metriche
 == QMS - Quality Metrics Satisfied
@@ -683,3 +677,23 @@ I documenti sono stati convertiti in file di testo e successivamente calcolati d
 La metrica che si occupa della correttezza ortografica (MPD1) ha dato come risultato un valore nullo.
 #align(center)[$ "EO"=0 $]
 Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di software per l'individuazione di errori ortografici, si stima un valore quasi nullo di essi. Viene stimata una correttezza del 100% e non assicurata poichè nonostante la minuziosità dei controlli e l'esecuzione dei test è possibile ci siano comunque artefatti riguardanti l'ortografia.
+
+#pagebreak()
+
+= Elenco tabelle
+Qualità della documentazione\
+Metriche qualità della documentazione\
+Qualità del software\
+Metriche qualità del software\
+Processi primari\
+Processi di supporto\
+Processi organizzativi\
+Metriche processi primari\
+Metriche processi di supporto\
+Metriche processi organizzativi\
+Test di accettazione\
+Tracciamento test di accettazione\
+Test e tracciamento di sistema\
+Valutazione tecnologica\
+Valutazione organizzativa e personale\
+Indice di Gulpease dei documenti\
