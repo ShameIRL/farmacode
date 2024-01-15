@@ -1203,13 +1203,13 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [3#green("(-2)")], [], [], [2], [],
-  [Bomben F.], [], [], [], [2], [], [3],
-  [Carraro A.], [], [3#green("(-1)")], [], [], [3#green("(-1)")], [],
-  [Favaron R.], [], [], [], [2], [1], [],
+  [Baggio M.], [], [3#red("(+1)")], [], [], [2], [],
+  [Bomben F.], [], [], [], [2#red("(+1)")], [], [3],
+  [Carraro A.], [], [3#red("(+1)")], [], [], [3#green("(-1)")], [],
+  [Favaron R.], [], [], [], [2#red("(+1)")], [1], [],
   [Pandolfo M.], [5#green("(-1)")], [], [], [], [1], [],
-  [Passarella A.], [], [2#green("(-1)")], [], [1], [1], [],
-  [Rosson L.], [], [], [1], [], [], [3],
+  [Passarella A.], [], [2#red("(+1)")], [], [1], [1], [],
+  [Rosson L.], [], [], [1], [], [], [3#red("(+1)")],
 )
 ])
 
@@ -1221,11 +1221,11 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [#green("4")], [#green("4")], [1], [5], [#green("7")], [6],
+  [Totale Ore], [#green("4")], [#red("11")], [1], [#red("7")], [#green("7")], [#red("7")],
   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€120,00")], [#green("€100,00")], [€25,00], [€100,00], [#green("€105,00")], [€90,00],
-  [Totale], [], [], [], [], [], [€540,00], 
-  [Bilancio], [], [], [], [], [], [€8995,00],
+  [Costo], [#green("€120,00")], [#red("275,00")], [€25,00], [#red("140,00")], [#green("€105,00")], [#red("€105,00")],
+  [Totale], [], [], [], [], [], [€770,00], 
+  [Bilancio], [], [], [], [], [], [€8765,00],
 )
 ])
 
