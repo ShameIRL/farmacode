@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.13.0", "14-01-2024", p.rosson, "", "Apportate alcune migliorie e correzioni sezione 3.1",
+    "0.13.0", "14-01-2024", p.baggio + "\n" + p.rosson, "", "Apportate alcune migliorie e correzioni sezione 3.1",
     "0.12.0", "22-12-2023", p.passarella, p.carraro, "Stesura sezione 1.4",
     "0.11.1", "22-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
     "0.11.0", "21-12-2023", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
@@ -295,7 +295,7 @@ il prodotto è suddivisibile in 5 Layer principali:
 - Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
 
 ===== Algoritmo di raccomandazione:
-Per quanto riguarda l'agoritmo di raccomandazione si è concordata con il proponente, come primo approccio, una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto. Come algoritmo, in seguito ai vari test di performance svolti, è stato scelto SVD, in quanto più efficente ed efficace nel formulare raccomandazioni.
+Per quanto riguarda l'agoritmo di raccomandazione, come primo approccio, si è concordata con il proponente una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto. Sempre in accordo con il proponente si è deciso di utilizzare la libreria Surprise di python, la quale contiene e permette di usare vari algoritmi di predizioni, moduli di predizione e vari modelli di allenamento. Al seguito di vari test di performance si è deciso di utilizzare come algoritmo l'algoritmo di predizione SVD, il quale non richiede nessun modulo di predizione. Come modello di allenamento si è invece scelto di utilizzare il KFold, un semplice iteratore che si basa sulla cross-validation. Inoltre poiché i dati forniti erano grezzi, prima di farli elaborare dallo script, si è dovuto strutturarli nel seguente modo sensato: si è creato un file .csv contenente solo tuple di tipo "Utente;Oggetto;Rating", il rating è inoltre il prodotto della manipolazione del numero di volte le quali un oggetto è stato comprato da un utente, per ottenere un rating sensato si è trattato questo numero come un argomento di un algoritmo.
 
 ===== Tecnologie scelte:
 Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
