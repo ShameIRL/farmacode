@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.7.1", "2024-01-14", p.bomben, "", "Tracciamento requisiti - fonte",
+    "0.7.1", "2024-01-14", p.bomben, p.rosson, "Tracciamento requisiti - fonte",
     "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
     "0.6.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
     "0.5.0", "2023-11-18", p.favaron, p.pandolfo, "Stesura sezione descrizione",

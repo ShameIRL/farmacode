@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "0.5.0", "2024-01-14", p.baggio, "", "Stesura nuove definizioni",
+    "0.5.0", "2024-01-14", p.baggio, p.rosson, "Stesura nuove definizioni",
     "0.4.0", "2024-01-02", p.favaron, p.rosson, "Stesura nuova definizioni",
     "0.3.0", "2023-12-12", p.bomben, p.baggio, "Stesura nuove definizioni",
     "0.2.0", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
