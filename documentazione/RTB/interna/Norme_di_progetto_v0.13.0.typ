@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "0.13.0", "14-01-2024", p.baggio + "\n" + p.rosson, "", "Apportate alcune migliorie e correzioni sezione 3.1",
+    "0.13.0", "14-01-2024", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
     "0.12.0", "22-12-2023", p.passarella, p.carraro, "Stesura sezione 1.4",
     "0.11.1", "22-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
     "0.11.0", "21-12-2023", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
@@ -295,19 +295,19 @@ il prodotto è suddivisibile in 5 Layer principali:
 - Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
 
 ===== Algoritmo di raccomandazione:
-Per quanto riguarda l'agoritmo di raccomandazione, come primo approccio, si è concordata con il proponente una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto. Sempre in accordo con il proponente si è deciso di utilizzare la libreria Surprise di python, la quale contiene e permette di usare vari algoritmi di predizioni, moduli di predizione e vari modelli di allenamento. Al seguito di vari test di performance si è deciso di utilizzare come algoritmo l'algoritmo di predizione SVD, il quale non richiede nessun modulo di predizione. Come modello di allenamento si è invece scelto di utilizzare il KFold, un semplice iteratore che si basa sulla cross-validation. Inoltre poiché i dati forniti erano grezzi, prima di farli elaborare dallo script, si è dovuto strutturarli nel seguente modo sensato: si è creato un file .csv contenente solo tuple di tipo "Utente;Oggetto;Rating", il rating è inoltre il prodotto della manipolazione del numero di volte le quali un oggetto è stato comprato da un utente, per ottenere un rating sensato si è trattato questo numero come un argomento di un algoritmo.
+L'approccio concordato con il proponente, per quanto riguarda l'algoritmo di raccomandazione, prevede l'adozione di una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto.\ Confrontandoci con il proponente si è deciso di utilizzare la libreria Surprise di python, la quale contiene e permette di usare vari algoritmi di predizioni, moduli di predizione e vari modelli di allenamento. Al seguito di vari test di performance si è deciso di utilizzare come algoritmo l'algoritmo di predizione #glossario("SVD") (Singular Value Decomposition), il quale non richiede nessun modulo di predizione.\ Per quanto riguarda il modello di allenamento, si è invece scelto di utilizzare il KFold, un semplice iteratore che si basa sulla cross-validation.\ I dati forniti erano grezzi per questo, prima di farli elaborare dallo script, si è dovuto strutturarli nel seguente modo sensato: abbiamo creato un file .csv contenente solo tuple di tipo "Utente;Oggetto;Rating", dove il rating è il prodotto della manipolazione del numero di volte le quali un oggetto è stato comprato da un utente. Per non penalizzare troppo oggetti comprati meno volte o agevolare troppo pochi prodotti acquistati un numero considerevole di volte, abbiamo trattato il valore di rating come argomento di un logaritmo.
 
 ===== Tecnologie scelte:
 Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
 - *Livello Dati:*
-    + Mysql per il datatbase.
+    + Mysql per il datatbase;
     + Xampp (o Mamp, a seconda del sistema operativo) per l'hosting.
 - *Livello Elaborazione:*
     + Anaconda, per la gestione della configurazione;
     + Python, come linguaggio per il sistema di raccomandazioni;
     + Come librerie: numpy, surprise e panda. 
 - *Livello di Logica:*
-    + Php. 
+    + PHP. 
 - *Livello di Presentazione:*
     + React.
 // vanno elencate le tecnologie scelte
@@ -633,7 +633,7 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
         I test di sistema sono una fase del processo di testing software che verifica il comportamento del sistema nel suo complesso, in accordo con i requisiti individuati. Questi test vengono eseguiti dopo i test di integrazione e possono includere diversi aspetti del sistema, tra cui funzionalità, prestazioni, sicurezza e affidabilità. La loro finalità è accertare che il software soddisfi gli obiettivi e le specifiche del progetto. Il loro obiettivo principale è garantire che il sistema complessivo soddisfi gli standard di qualità e le aspettative dell'utente, fornendo un software stabile, sicuro e pratico.
 
     + Test di regressione:
-        Questa tipologia di test che eseguita per verificare che le modifiche apportate a una parte del codice non abbiano causato regressioni o rotture in altre parti del sistema. In altre parole, l'obiettivo dei test di regressione è assicurarsi che le modifiche al software non abbiano introdotto nuovi difetti o compromesso le funzionalità esistenti.
+        Questa tipologia di test viene eseguita per verificare che le modifiche apportate a una parte del codice non abbiano causato regressioni o rotture in altre parti del sistema. In altre parole, l'obiettivo dei test di regressione è assicurarsi che le modifiche al software non abbiano introdotto nuovi difetti o compromesso le funzionalità esistenti.
 
     + Test di accettazionne:
         I test di accettazione rappresentano la fase finale del processo di testing software, sono volti a verificarne la conformità rispetto ai requisiti specificati e a ottenere l'approvazione da parte degli stakeholder, inclusi clienti e utenti finali. Questi test sono eseguiti per assicurare che il software soddisfi le aspettative e sia pronto per un possibile rilascio.

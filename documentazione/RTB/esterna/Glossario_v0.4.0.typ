@@ -159,6 +159,8 @@ Questo set è un insieme di dati (estrapolato da un insieme più grande). Questi
 Un sistema di raccomandazione o motore di raccomandazione è un software di filtraggio dei contenuti che
 crea delle raccomandazioni personalizzate specifiche per l’utente così da aiutarlo nelle sue scelte. Viene utilizzato per diversi prodotti, come libri, musica, film, video, notizie e social media.
 
+== SVD (Singular Value Decomposition)
+
 = T
 
 == Telegram
