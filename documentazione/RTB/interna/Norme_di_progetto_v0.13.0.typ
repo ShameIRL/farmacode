@@ -1054,8 +1054,7 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
     #link("https://git-scm.com/doc")
 - Framework Scrum:
     #link("https://www.atlassian.com/it/agile/scrum")  
-- Approccio XP:
-    
+- Approccio XP: 
     #link("https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/extreme-programming")  
 
 = Elenco delle tabelle
