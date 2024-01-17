@@ -133,6 +133,8 @@ Un modello di apprendimento automatico è un programma che viene utilizzato per 
 == Pair programming
 Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
 
+== Parser
+
 == Piano di Progetto
 
 == Piano di Qualifica

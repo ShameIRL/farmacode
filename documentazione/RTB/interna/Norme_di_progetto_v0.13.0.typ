@@ -9,22 +9,22 @@
 
   ),
   changelog: (
-    "0.13.0", "14-01-2024", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
-    "0.12.0", "22-12-2023", p.passarella, p.carraro, "Stesura sezione 1.4",
-    "0.11.1", "22-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
-    "0.11.0", "21-12-2023", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
-    "0.10.0", "21-12-2023", p.carraro, p.passarella, "Completata sezione 3.1.4 Norme tipografiche",
-    "0.9.1", "20-12-2023", p.rosson, p.passarella, "Correzione sezione use case",
-    "0.9.0", "14-12-2023", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
-    "0.8.0", "10-12-2023", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
-    "0.7.1", "5-12-2023", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
-    "0.7.0", "2-12-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
-    "0.6.0", "25-11-2023", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
-    "0.5.0", "21-11-2023", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
-    "0.4.0", "20-11-2023", p.passarella, p.carraro, "Completamento stesura sezione 3.1",
-    "0.3.0", "18-11-2023", p.baggio, p.carraro, "Completamento stesura sezione 1",
-    "0.2.0", "15-11-2023", p.baggio + "\n" + p.passarella, p.carraro, "Stesura indice",
-    "0.1.0", "12-11-2023", p.bomben + "\n" + p.rosson, p.baggio, "Stesura iniziale del documento",
+    "0.13.0", "2024-01-14", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
+    "0.12.0", "2023-12-22", p.passarella, p.carraro, "Stesura sezione 1.4",
+    "0.11.1", "2023-12-22", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
+    "0.11.0", "2023-12-21", p.carraro, p.passarella, "Inizio sezione 3.1.7 Struttura file di progetto",
+    "0.10.0", "2023-12-21", p.carraro, p.passarella, "Completata sezione 3.1.4 Norme tipografiche",
+    "0.9.1", "2023-12-20", p.rosson, p.passarella, "Correzione sezione use case",
+    "0.9.0", "2023-12-14", p.bomben, p.baggio, "Stesura documento da sezione 3.3 a 3.7, eccetto 3.4.2.2",
+    "0.8.0", "2023-12-10", p.rosson, p.bomben, "Completata prima stesura della sezione 2, e modificate alcune parti della sezione 3",
+    "0.7.1", "2023-12-05", p.rosson, p.bomben, "Completata sezione 4 con alcuni miglioramenti",
+    "0.7.0", "2023-12-02", p.rosson, p.favaron, "Realizzata prima stesura sezione 4",
+    "0.6.0", "2023-11-25", p.rosson, p.favaron, "Realizzata prima stesura sezione 3.2, apportate modifiche alla sezione 3.1.5",
+    "0.5.0", "2023-11-21", p.baggio, p.carraro, "Trasferimento da LaTeX a Typst del documento",
+    "0.4.0", "2023-11-20", p.passarella, p.carraro, "Completamento stesura sezione 3.1",
+    "0.3.0", "2023-11-18", p.baggio, p.carraro, "Completamento stesura sezione 1",
+    "0.2.0", "2023-11-15", p.baggio + "\n" + p.passarella, p.carraro, "Stesura indice",
+    "0.1.0", "2023-11-12", p.bomben + "\n" + p.rosson, p.baggio, "Stesura iniziale del documento",
   ),
 )
 
@@ -372,40 +372,39 @@ La correzione si concentra sull'identificazione e sulla risoluzione di difetti o
 == Documentazione
 
 === Descrizione e Scopo
-La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato, implementato e come lo si utilizza. Nel contesto del team di sviluppo, la gestione efficace dei processi e delle attività è essenziale per agevolare il lavoro dei membri del team. La tracciabilità e la documentazione dettagliata di ogni fase del progetto sono fondamentali per semplificare le operazioni quotidiane e per facilitare la manutenzione del software nel tempo. Questa pratica non solo contribuisce a garantire una maggiore coerenza e coesione all'interno del team, ma anche a migliorare complessivamente la qualità del risultato finale.
+La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato, implementato e come lo si utilizza. Nel contesto del team di sviluppo, la gestione efficace dei processi e delle attività è essenziale per agevolare il lavoro dei membri del team. La tracciabilità e la documentazione dettagliata di ogni fase del progetto sono fondamentali per semplificare le operazioni quotidiane e per facilitare la manutenzione del software nel tempo. Questa pratica non solo contribuisce a garantire una maggiore coerenza e coesione all'interno del team, ma anche a migliorare complessivamente la qualità del risultato finale.\
 È bene quindi che vengano definite delle regole chiare e concise utili per la stesura di un documento, da seguire durante tutto il ciclo di vita del progetto allo scopo di garantire maggiore comprensione. 
 
 === Strumenti 
-    - Typst: scelto per la definitiva formattazione dei documenti per via della comodità con cui effettuare il versionamento e revisione dei documenti stessi;
+    - Typst: scelta definitiva per la formattazione dei documenti, motivata della comodità con cui è possibile effettuare il versionamento e la revisione dei documenti stessi;
 
-    - Overleaf (LaTeX): utilizzato nelle prime fasi del progetto per la realizzazione dei documenti necessari, successivamente sostituito con typst;
+    - Overleaf (LaTeX): utilizzato nelle prime fasi del progetto per la realizzazione dei documenti necessari, successivamente sostituito con Typst;
 
-    - UML: per la creazione di diagrammi UML il team ha deciso di utilizzare Diagramas.net.
+    - UML: per la creazione di diagrammi UML, il team ha deciso di utilizzare Diagramas.net.
 
 /** aggiungere in caso si utilizzino altri strumenti */
 
 === Grafiche
-    - Template: i documenti di progetto sono realizzati e caratterizzati da un preciso template, che differisce da quelli utilizzati per verbali e lettere di presentazione. Rispettivamente i file da includere per applicare il relativo template sono: 
+    - Template: i documenti di progetto sono realizzati e caratterizzati da un preciso template, che differisce da quelli utilizzati per verbali e lettere di presentazione. I file da includere per applicare il relativo template sono i seguenti: 
         + big_docs.typ, per la documentazione ufficiale di progetto;
         + verbals.typ, per i verbali, sia esterni che interni;
         + p_letters.typ, per le lettere di presentazione.
 
     - Tabelle: le tabelle presentano una classica intestazione del contenuto, i nomi delle colonne in grassetto e nessun altra particolarità, si è scelto di utilizzare una filosofia minimale per non appesantire i documenti. Si applicano colori alternati tra righe adiacenti in modo da facilitarne la lettura, rispettivamente "white" per le dispari, e "luma(230)" per le pari. In alcune occasioni, è possibile se concordato, applicare il colore "c33435" alla riga di intestazione, per motivi puramente estetici.
 
-    - Figure: le immagini devono rigorosamente essere accompagnate da relativa didascalia, ed essere ridimensionate in modo ragionevole, senza eccessiva perdità di qualità e contenuto, e senza andare ad occupare spazi esagerati rendendo la lettura del documento sgradevole.
-
+    - Figure: le immagini devono rigorosamente essere accompagnate da relativa didascalia, ed essere ridimensionate in modo ragionevole, senza eccessiva perdità di qualità, contenuto e senza andare ad occupare spazi esagerati rendendo la lettura del documento sgradevole.
+//revisionato fin qua
 === Norme tipografiche
 //da mettere apposto e rendere tutto conforme !!!!!
-    - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, la lettera iniziale è sempre maiuscola e il resto tutto minuscolo. Le parole sono separate da degli underscore e la data viene scritta in formato AAAA-MM-GG;
+    - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, la lettera iniziale è sempre maiuscola e il resto tutto minuscolo. Le parole sono separate da degli underscore e la data viene scritta in formato AAAA-MM-GG senza spazi;
 
     - Sezionamento: Divisione in sezioni X.X.X (con alcune eccezioni) e in caso di ulteriori suddivisioni si utilizzano degli elenchi puntati, la sezione X.X.1 è sempre la descrizione del contenuto di quella sezione. Si cerca sempre di rendere il tutto più semplice possibile per facilitarne la lettura e mantenere ordinato il documento;
 
     - Glossario: Il documento glossario è strutturato similmente ad un dizionario, le sezioni primarie suddividono il documento in ordine alfabetico, la sottosezione contiene la parola, all'interno della sottosezione viene descritta la parola, la sua definizione o l'uso che ne si fa nel progetto;
 
-    - Stile del testo: Ai documenti vengono applicati stili di testo per facilita la lettura e per segnalare la funzione di certe parole. \ Parole in blu, carattarezziate anche dal corsivo, segnalano parole inserite all'interno del glossario, #glossario("esempio"). \ Parole in grassetto segnalano parole tecniche, *esempio*. \ L'enunciazione di acronimi e le spiegazioni di termini tecnici vanno racchiuse fra parentesi tonde, (esempio);
+    - Stile del testo: Vengono applicati ai documenti stili di testo per facilita la lettura e per segnalare la funzione di certe parole. \ Parole in blu, carattarezzate anche dal corsivo, segnalano parole inserite all'interno del glossario, #glossario("esempio"). \ Parole in grassetto segnalano parole tecniche, *esempio*. \ L'enunciazione di acronimi e le spiegazioni di termini tecnici vanno racchiuse fra parentesi tonde, (esempio);
     
-    - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" o da un "+", spaziati dal nome dell'elemento (rispettivamente rapresentanti un elenco puntato, o un elenco numerato). La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".
-    L'uso di quale tipologia di elenco utilizzare (puntato o numerato) è lasciato a propria discrezione.
+    - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" o da un "+", spaziati dal nome dell'elemento (rispettivamente rapresentanti un elenco puntato, o un elenco numerato). La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".\ L'uso di quale tipologia di elenco utilizzare (puntato o numerato) è lasciato a propria discrezione.
 /** da ampliare in caso di aggiunte */
 
 === Struttura
@@ -419,7 +418,7 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
 
     - Contenuto: esposto con la maggiore chiarezza e semplicità, rigorosamente diviso in sezioni secondo i principi di indicizzazione;
 
-    - Pié pagina: solamente il numero della pagina in questione ed il logo del gruppo separati dal contenuto da un' interlinea.
+    - Pié pagina: il numero della pagina in qui ci si trova e il logo del gruppo, separati dal contenuto con un'interlinea.
 
 ==== Verbali
 I verbali differiscono in quanto a struttura rispetto ai documenti di progetto. Vanno rispettate le seguenti sezioni: \
@@ -433,17 +432,17 @@ Per i verbali interni:
 - Obiettivi fissati, elenco contenente gli obiettivi fissati per il prossimo periodo.
 
 
-Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno possedere una sezione "Nuova distribuzione ruolistica" contenente una tabella (Ruolo, Nome e cognome) riportante i ruoli per il prossimo periodo.
+Inoltre i verbali interni, relativi all'inizio di un nuovo sprint, dovranno possedere una sezione "Nuova distribuzione ruolistica" contenente una tabella (Ruolo, Nome e cognome) riportante i ruoli per il prossimo periodo.
 
 === Caratterizzazione
-    - Formali: Sono i documenti che andranno a formare la documentazione software del prodotto. In quanto tali sono sottoposti a versionamento e a processi di verifica e approvazione. Essi comprendono documenti interni, utili quindi ai membri del team di sviluppo, ed esterni, destinati a proponente e committente. 
+    - Formali: Sono i documenti che andranno a formare la documentazione software del prodotto. In quanto tali sono sottoposti a versionamento, a processi di verifica e approvazione. Essi comprendono documenti interni, utili quindi ai membri del team di sviluppo, ed esterni, destinati a proponente e committente. 
  
       Complessivamente ne fanno parte:
 
         - Interni: 
 
             - Norme di progetto, rappresentano il "way of working";
-            - Verbali interni e esterni, a uso consultativo;
+            - Verbali interni a uso consultativo.
 
         - Esterni:
 
@@ -451,9 +450,9 @@ Inoltre i verbali interni relativi all'inizio di un nuovo sprint, dovranno posse
             - Piano di Progetto; 
             - Piano di Qualifica; 
             - Glossario; 
-            - Verbali interni e esterni, attestanti di quanto discusso.
+            - Verbali esterni, attestanti di quanto discusso.
 
-    - Informali: Sono i documenti interni non destinati alla divulgazione con esterni e fini a loro stessi. Perciò non necessitano di versionamento. Spesso sono bozze in preparazione a documenti formali, o note e appunti generiche.
+    - Informali: Sono i documenti interni non destinati alla divulgazione con esterni e fini a loro stessi. Perciò non necessitano di versionamento. Spesso sono bozze in preparazione a documenti formali, o note e appunti generici.
 
 === Contenuti
 In questa sezione vengono elencati i contenuti dei vari file di progetto.\ Verrà in seguito descritta la parte di introduzione, comune fra i vari documenti, e successivamente una descrione più accurata per ogni documento.
@@ -471,16 +470,16 @@ Il documento Analisi dei Requisiti va strutturato nel seguente modo:
     - Descrizione: sezione che descrive brevemente il prodotto software, il suo obiettivo, le funzionalità e gli utenti;
     - Casi d'uso: sezione che descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le postcondizioni, lo scenario principale,le estensione e le generalizzazioni (quest'ultime due, se presenti);
     - Requisiti: sezione che descrive in maniera approfondita i requisiti del prodotto. \ Vanno elencati i requisiti funzionali, di qualità, di vincolo, d'ambiente, di performace e di sicurezza;
-    - Tracciamento: in questa sezione, di fondamentale importanza, verranno riportati i requisiti e le loro fonti, in modo da garantirne il tracciamento.
+    - Tracciamento: in questa sezione, di fondamentale importanza, verranno riportati i requisiti e le loro fonti, in modo da garantirne il tracciamento;
     - Elenchi: questa sezione deve comprendere gli elenchi delle immagini e delle tabelle utilizzate all'interno del file.
 
 ==== Glossario
 Il documento Glossario va strutturato nel seguento modo:\
-Le sezione suddividono il documento in ordine alfabelico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
+Le sezioni suddividono il documento in ordine alfabetico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
 
 ==== Piano di Progetto
 Il documento Piano di Progetto va strutturato nel seguento modo:
-    - Analisi dei rischi: In questa sezione vanno definiti i rischi possibili del progetto. \ I rischi vanno divisi in rischi personali, rischi Rischi organizzativi interni ed esterni, rischi tecnologici/software; 
+    - Analisi dei rischi: In questa sezione vanno definiti i rischi possibili del progetto. \ I rischi vanno divisi in rischi personali, rischi organizzativi interni ed esterni, rischi tecnologici/software; 
     - Pianificazione: In questa sezione vanno descritte le modalità di pianificazione delle attività svolte dal gruppo durante il progetto. \ In particolare vanno inseriti i metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attività e distibusione dei ruoli;
     - Preventivi e Consuntivi: In questa sezione vanno descritti i preventivi e consuntivi per ogni sprint durante il progetto. Per semplicità di lettura si utilizzeranno tabelle e grafici.
 
@@ -489,19 +488,20 @@ Il documento Piano di Qualifica va strutturato nel seguente modo:
     - Qualità del prodotto: In questa sezione va strutturata la modilità e le metriche di valutazione del prodotto software, in particolare l'architettura, la documentazione e la qualità del software;
     - Qualità di processo: In questa sezione va strutturata la modalità e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
     - Controllo di qualità: In questa sezione vanno spiegati i test di controllo con relativi grafici e tabelle;
-    - Miglioramenti: In questa sezione vanno indicati i miglioramenti possibili del prodotto e del processe.
+    - Miglioramenti: In questa sezione vanno indicati i miglioramenti possibili del prodotto e dei processi;
+    - Controllo delle metriche: Questa sezione funge da cruscotto per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
 
 ==== Norme di Progetto
 Il documento Norme di Progetto va strutturato nel seguento modo:
-    - Processi Primari: In questa sezione vanno descritti i processi primari: fornitura, sviluppo, gestione operativa e manutenzione;
-    - Processi di supporto: In questa sezione vanno descritti i processi di supporto: documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
-    - Processi organizzativi: In questa sezione vanno descritti i processi organizzativi: gestione dei processi, gestione ruolistica e gestione delle comunicazioni. Seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
+    - Processi Primari: In questa sezione vanno descritti i processi primari tra cui fornitura, sviluppo, gestione operativa e manutenzione;
+    - Processi di supporto: In questa sezione vanno descritti i processi di supporto tra cui documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
+    - Processi organizzativi: In questa sezione vanno descritti i processi organizzativi tra cui gestione dei processi, gestione ruolistica e gestione delle comunicazioni, seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
 
 == Gestione della configurazione
 
 === Descrizione e Scopo /** descrizione di questa sezione */
   
-Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essenziali per gestire lo stato di un prodotto software e di tutti i suoi componenti, compresi sorgenti e documentazione. Questo insieme di norme e procedure non solo fornisce informazioni sullo stato di avanzamento del progetto, ma offre anche un resoconto dettagliato dell'evoluzione nel tempo del prodotto, garantendo nel contempo che il sistema operi secondo le attese. Un'efficace gestione della configurazione è cruciale per preservare l'integrità e le prestazioni del prodotto software durante il suo avanzamento. Inoltre, dovrebbe facilitare la risoluzione di problematiche e conflitti, assicurando una gestione fluida e efficiente del ciclo di vita del software.
+Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essenziali per gestire lo stato di un prodotto software e di tutti i suoi componenti, compresi i file sorgenti e la documentazione. Questo insieme di norme e procedure non solo fornisce informazioni sullo stato di avanzamento del progetto, ma offre anche un resoconto dettagliato dell'evoluzione nel tempo del prodotto, garantendo che il sistema operi secondo le attese. Un'efficace gestione della configurazione è cruciale per preservare l'integrità e le prestazioni del prodotto software durante il suo avanzamento. Inoltre, dovrebbe facilitare la risoluzione di problematiche e conflitti, assicurando una gestione fluida e efficiente del ciclo di vita del software.
 
 === Versionamento <versionamento>/** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
   
@@ -513,8 +513,8 @@ Ogni documento oltre a essere dotato di un changelog è identificato da un numer
 
 dove :
 
-- X rappesenta fasi del documento che suddividono e raccolgono i cambiamenti più significativi apportati all'artefatto anche detti "major".
-- Y rappresenta modifiche minori come ad esempio la realizzazione di una sezione o feature le quali si pensa non siano sufficienti a stabilire una nuova "fase" del documento. Sono anche identificati con l'appellativo "minor".
+- X rappesenta fasi del documento che suddividono e raccolgono i cambiamenti più significativi apportati all'artefatto anche detti "major";
+- Y rappresenta modifiche minori come ad esempio la realizzazione di una sezione o feature le quali si pensa non siano sufficienti a stabilire una nuova "fase" del documento. Sono anche identificati con l'appellativo "minor";
 - Z rappresenta piccoli aggiustamenti (anche identificati come "fixes") o migliorie generali.
 
 Ad ogni versione corrispode uno stato del documento revisionato.
@@ -527,15 +527,15 @@ Nella documentazione è possibile aggiornare la versione andando semplicemente a
     ```
 changelog: (
 
-    "0.5.0", "21-11-2023", p.baggio, p.carraro, "Stesura sezione 3.2",
-    "0.4.0", "20-11-2023", p.passarella, p.carraro, "Stesura sezione 3.1",
+    "0.5.0", "2023-11-21", p.baggio, p.carraro, "Stesura sezione 3.2",
+    "0.4.0", "2023-11-20", p.passarella, p.carraro, "Stesura sezione 3.1",
     
 )
 
 ```
 La prima persona inserita identifica chi ha svolto le modifiche sul documento, mentre la seconda, chi ne ha revisionato il contenuto.
 
-Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc, insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutte le informazioni specificate e richieste. Si noti che _p_  ("people") è una variabile d'ambiente contenente tutti i nominativi dei componenti del gruppo di lavoro e di ulteriori nominativi utili e ripetuti molteplici volte nel corso del progetto.
+Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutte le informazioni specificate e richieste. Si noti che _p_  ("people") è una variabile d'ambiente contenente tutti i nominativi dei componenti del gruppo di lavoro e di ulteriori nominativi utili e ripetuti molteplici volte nel corso del progetto.
 
 ==== Lato software
 Per quanto riuarda il software il versionamento verrà completamente gestito da github, usufruendo dei suoi vari servizi, come ad esempio releases automatiche e github action.
@@ -586,8 +586,8 @@ Qui sotto un link al repository, e alla pagina di presentazione:
 
 La qualità di progetto è l'iniseme delle attività e di accorgimenti eseguiti durante il suo sviluppo per garantire che le performance del progetto siano congruenti con gli obiettivi e i requisiti stabiliti. Questo implica l'attuazione di misure e controlli volti a garantire che gli output del progetto soddisfino gli standard di qualità prefissati e rispettino le aspettative stabilite nel contesto del progetto stesso. La gestione della qualità è un elemento chiave per assicurare il successo complessivo del progetto e la soddisfazione delle parti interessate.\
 Le attività messe in atto per garantirne la qualità sono:
-- Rispettare e comprendere le necessità del proponente, sia in termini di quantità che di qualità, in modo da rilasciare un prodotto il più possibile fedele all'idea del cliente.
-- Seguire il piano di qualifica per il sviluppo del progetto, in modo da rientrare nei termini pattuiti, di tempo e di costo.
+- Rispettare e comprendere le necessità del proponente, sia in termini di quantità che di qualità, in modo da rilasciare un prodotto il più possibile fedele all'idea del cliente;
+- Seguire il piano di qualifica per lo sviluppo del progetto, in modo da rientrare nei termini pattuiti, di tempo e di costo.
 
 == Qualifica
 
@@ -600,7 +600,7 @@ La verifica è un processo fondamentale per la valutazione di un prodotto softwa
 
 La verifica statica, così chiamata poichè non richiede l'esecuzione del prodotto, consiste nell'individuazione e correzione di eventuali problematiche che riguardano convenzioni o metriche stabilite. L'analisi statica riguarda sia il codice del software che la stesura dei documenti allegati. Essa può essere effettuata manualmente, o grazie all'utilizzo di strumenti per l'automazione.\
 Esistono inoltre due modalità differenti per la verifica tramite analisi statica:
-- Walkthrought: viene utilizzato nel momento in cui non si sappia dove viene riscontrata la problematica e consiste in una lettura più ampia scorrendo nella sua interezza il documento/codice per trovare l'errore. Questo metodo è sicuramente molto efficace ma anche molto dispendioso in termini di risorse.
+- Walkthrought: viene utilizzato nel momento in cui non si sappia dove viene riscontrata la problematica e consiste in una lettura più ampia scorrendo nella sua interezza il documento/codice per trovare l'errore. Questo metodo è sicuramente molto efficace ma anche molto dispendioso in termini di risorse;
 - Inspection: A differenza del Walkthrought, questo metodo viene utilizzato quando si è a conoscenza di dove potrebbe essere la problematica. E' quindi un approccio più mirato per l'eliminazione dell'errore e molto meno dispendioso.
 
 Conscio di quanto appena descritto, il gruppo ha deciso di ripiegare sul utilizzo di automazioni qual'ora possibile, in modo da velocizzare e abbattere i costi (almeno nel lungo termine) della pratica.
@@ -609,31 +609,31 @@ Conscio di quanto appena descritto, il gruppo ha deciso di ripiegare sul utilizz
     Per quanto riguarda la sintassi e correttezza dei file .typ, il gruppo si affida agli strumenti di correzione automatica integrati nel editor predisposto per la stesura dei documenti. Per quanto riguarda invece i controlli sulla correttezza della grammatica e ortografia della lingua italiana, dopo aver testato diversi strumenti di "spell checking" integrabili nel editor, il team ha deciso di attenersi ad un controllo manuale, sicuramente più dispendioso, ma anche più affidabile ed efficace.
  
 - Codice:
-    A proposito del codice il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice.
+    A proposito del codice, il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice.
 
 ==== Analisi dinamica
 
 L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento. Questo processo dinamico è complementare all'analisi statica, che si concentra sulla revisione del codice sorgente senza eseguirlo. Insieme, l'analisi dinamica e statica costituiscono una strategia completa per la verifica e la validazione del software durante il suo sviluppo e oltre.\
 
 - Documentazione:
-    Per quanto riguarda la sintassi e correttezza dei file .typ è stata creata una github action ad hoc che oltre a compilare questi ultimi si accerta che i documenti non presentino errori che possano compromettere la loro visione una volta avvenuta la conversione in formato pdf. In caso il parser trovi delle incongruenze o errori, stampa nel log delle action di github il problema, in modo da facilitarne la correzione.
+    Per quanto riguarda la sintassi e correttezza dei file .typ è stata creata una github action ad hoc che oltre a compilare questi ultimi si accerta che i documenti non presentino errori che possano compromettere la loro visione una volta avvenuta la conversione in formato pdf. In caso il #glossario("parser") trovi delle incongruenze o errori, stampa nel log delle action di github il problema, in modo da facilitarne la correzione.
     Per quanto riguarda invece i controlli sulla correttezza della grammatica e ortografia della lingua italiana, dopo aver testato diversi strumenti di "spell checking" integrabili sempre tramite action, il team ha deciso di attenersi ad un controllo manuale, sicuramente più dispendioso, ma anche più affidabile ed efficace.
 //bisogna scrivere dei test automatici, noi effettivamente li implementeremo(?)
 
-- Codice: L'analisi dinamica comporta l'esecuzione di vari casi di test durante il funzionamento del codice. L'obiettivo principale di questi test è verificare che il software esegua correttamente, individuando eventuali divergenze tra i risultati ottenuti e quelli attesi.\ Per garantire l'efficacia di tali test, è imperativo automatizzare il processo e renderlo ripetibile. Questo approccio mira a valutare in modo il più oggettivo possibile il prodotto. Nel panorama dell'ingegneria del software, la tecnica principale associata all'analisi dinamica è il testing. Per massimizzarne l'efficacia, ogni test deve essere deterministico e replicabile, cioè, dati gli stessi input, deve produrre sempre lo stesso output. Inoltre, ogni test deve presentare parametri ben definiti, inclusi la descrizione degli input e degli output, il comportamento atteso del software e le condizioni di esecuzione del test. \ L'efficacia complessiva dei test dipende dalla qualità del codice scritto e dalla corretta identificazione dei requisiti funzionali e non funzionali del sistema. Sta quindi agli sviluppatori identificare un insieme di casi di prova rappresentativo, consentendo così l'applicazione dei test su un numero limitato e significativo di situazioni. \ Vi sono varie tipologie di test:
+- Codice: L'analisi dinamica comporta l'esecuzione di vari casi di test durante il funzionamento del codice. L'obiettivo principale di questi test è verificare che il software esegua correttamente, individuando eventuali divergenze tra i risultati ottenuti e quelli attesi.\ Per garantire l'efficacia di tali test, è imperativo automatizzare il processo e renderlo ripetibile. Questo approccio mira a valutare in modo il più oggettivo possibile il prodotto.\ Nel panorama dell'ingegneria del software, la tecnica principale associata all'analisi dinamica è il testing.\ Per massimizzarne l'efficacia, ogni test deve essere deterministico e replicabile, cioè, dati gli stessi input, deve produrre sempre lo stesso output. Inoltre, ogni test deve presentare parametri ben definiti, inclusi la descrizione degli input e degli output, il comportamento atteso del software e le condizioni di esecuzione del test. \ L'efficacia complessiva dei test dipende dalla qualità del codice scritto e dalla corretta identificazione dei requisiti funzionali e non funzionali del sistema. Sta quindi agli sviluppatori identificare un insieme di casi di prova rappresentativi, consentendo così l'applicazione dei test su un numero limitato e significativo di situazioni. \ Vi sono varie tipologie di test:
 
     + Test di unità:
-        I test di unità sono una componente fondamentale del processo di testing software. Essi si focalizzano sulla verifica del corretto funzionamento di unità di codice individuali e indivisibili. Possono essere suddivisi in due categorie principali: test strutturali e test funzionali. I test di unità strutturali si concentrano sulla verifica interna dell'implementazione, mentre i test funzionali si focalizzano sul comportamento esterno e sulle funzionalità offerte dall'unità.
+        I test di unità sono una componente fondamentale del processo di testing software. Essi si focalizzano sulla verifica del corretto funzionamento di unità di codice individuali e indivisibili. Possono essere suddivisi in due categorie principali: test strutturali e test funzionali. I test di unità strutturali si concentrano sulla verifica interna dell'implementazione, mentre i test funzionali si focalizzano sul comportamento esterno e sulle funzionalità offerte dall'unità;
 
     + Test di integrazione:
-        I test di integrazione hanno lo scopo di verificare le interazioni tra le diverse unità architetturali. Questi test sono fondamentali per garantire che i vari componenti del sistema si integrino correttamente, identificando eventuali difetti derivanti dall'interazione tra le unità. Questi test possono essere concepiti e realizzati seguendo principalmente tre approcci diversi: #glossario("top-down"), #glossario("bottom-up"), e in modo #glossario("incrementale") (o misto).
-        Queste tre modalità hanno loro vantaggi, svantaggi e applicazioni. Il team, dopo una riflessione colletiva, ha indivuato il primo elencato come il più naturale da seguire data la scarsa esperienza nell'ambito.
+        I test di integrazione hanno lo scopo di verificare le interazioni tra le diverse unità architetturali. Questi test sono fondamentali per garantire che i vari componenti del sistema si integrino correttamente, identificando eventuali difetti derivanti dall'interazione tra le unità. Questi test possono essere concepiti e realizzati seguendo principalmente tre approcci diversi: #glossario("top-down"), #glossario("bottom-up") e in modo #glossario("incrementale") (o misto).\
+        Queste tre modalità hanno i loro vantaggi, svantaggi e applicazioni. Il team, dopo una riflessione colletiva, ha indivuato il primo elencato come il più naturale da seguire data la scarsa esperienza nell'ambito;
 
     + Test di sistema:
-        I test di sistema sono una fase del processo di testing software che verifica il comportamento del sistema nel suo complesso, in accordo con i requisiti individuati. Questi test vengono eseguiti dopo i test di integrazione e possono includere diversi aspetti del sistema, tra cui funzionalità, prestazioni, sicurezza e affidabilità. La loro finalità è accertare che il software soddisfi gli obiettivi e le specifiche del progetto. Il loro obiettivo principale è garantire che il sistema complessivo soddisfi gli standard di qualità e le aspettative dell'utente, fornendo un software stabile, sicuro e pratico.
+        I test di sistema sono una fase del processo di testing software che verifica il comportamento del sistema nel suo complesso in accordo con i requisiti individuati. Questi test vengono eseguiti dopo i test di integrazione e possono includere diversi aspetti del sistema, tra cui funzionalità, prestazioni, sicurezza e affidabilità. La loro finalità è accertare che il software soddisfi gli obiettivi e le specifiche del progetto. Il loro obiettivo principale è garantire che il sistema complessivo soddisfi gli standard di qualità e le aspettative dell'utente, fornendo un software stabile, sicuro e pratico;
 
     + Test di regressione:
-        Questa tipologia di test viene eseguita per verificare che le modifiche apportate a una parte del codice non abbiano causato regressioni o rotture in altre parti del sistema. In altre parole, l'obiettivo dei test di regressione è assicurarsi che le modifiche al software non abbiano introdotto nuovi difetti o compromesso le funzionalità esistenti.
+        Questa tipologia di test viene eseguita per verificare che le modifiche apportate a una parte del codice non abbiano causato regressioni o rotture in altre parti del sistema. In altre parole, l'obiettivo dei test di regressione è assicurarsi che le modifiche al software non abbiano introdotto nuovi difetti o compromesso le funzionalità esistenti;
 
     + Test di accettazionne:
         I test di accettazione rappresentano la fase finale del processo di testing software, sono volti a verificarne la conformità rispetto ai requisiti specificati e a ottenere l'approvazione da parte degli stakeholder, inclusi clienti e utenti finali. Questi test sono eseguiti per assicurare che il software soddisfi le aspettative e sia pronto per un possibile rilascio.
@@ -646,7 +646,7 @@ Tutti i test andrannò definiti nella seguente modalità:
 
     Ogni test deve essere corredato da un identificativo definito come segue (questo anche per favorirne la tracciabilità):
 
-    #align(center, "test_[Tipologia]_[Id]")
+    #align(center, "T[Tipologia][Id]")
 
     dove: "Tipologia" ne indica il tipo (U --> "Unità", I --> "Integrazione", S ... ), ed "Id" un semplice codice seriale formato da al massimo due cifre, funge da nome.
 
@@ -654,23 +654,23 @@ Tutti i test andrannò definiti nella seguente modalità:
 
     Ad ogni test verrà poi associato uno stato che ne rappresenterà il risultato, esso potrà essere:
 
-        + ND: quando il test non è ancora stato implementato. 
-        + Passato: quando il test riporta esito positivo. 
+        + ND: quando il test non è ancora stato implementato;
+        + Passato: quando il test riporta esito positivo;
         + Non passato: quando il test riporta esito negativo.
 
 Affinché ogni test sia ripetibile e fornito con precisione, è essenziale specificare nel apposita documentazione:
 
 - Ambiente e requisiti:
 
-    Definire lo stato iniziale dell'ambiente, includendo dettagli sull'hardware e il software necessari per eseguire il test. Questo può includere informazioni sulla configurazione del sistema, versioni del software, e condizioni che possono influenzare l'esecuzione del test.
+    Definire lo stato iniziale dell'ambiente, includendo dettagli sull'hardware e il software necessari per eseguire il test. Questo può includere informazioni sulla configurazione del sistema, versioni del software e condizioni che possono influenzare l'esecuzione del test;
 
 - Attese e funzionamento:
 
-    Individuare ed esplicitare gli input richiesti e i corrispondenti output attesi. Questo comprende la descrizione dettagliata di cosa ci si aspetta che accada durante l'esecuzione del test e i risultati attesi alla sua conclusione.
+    Individuare ed esplicitare gli input richiesti e i corrispondenti output attesi. Questo comprende la descrizione dettagliata di cosa ci si aspetta che accada durante l'esecuzione del test e i risultati attesi alla sua conclusione;
 
 - Procedure e valutazione:
 
-    Definire le procedure coinvolte nell'esecuzione del test, fornendo istruzioni dettagliate su come condurre il test. Ciò può includere sequenze di azioni da eseguire e descrizioni degli scenari specifici da testare. Inoltre va indicato come valutare se il test è stato superato con successo o se sono emersi eventuali problemi.
+    Definire le procedure coinvolte nell'esecuzione del test, fornendo istruzioni dettagliate su come condurre il test. Ciò può includere sequenze di azioni da eseguire e descrizioni degli scenari specifici da testare. Inoltre va indicato come valutare se il test è stato superato con successo o se sono emersi eventuali problemi;
 
 - Tracciamento: 
 
@@ -735,7 +735,7 @@ Deve inoltre, se necessario, essere aggiornata la documentazione in maniera da m
 === Gestione dei cambiamenti /** descrizione di come si reagisce a richieste di cambiamenti */
 La gestione dei cambiamenti è un processo cruciale all'interno dello sviluppo del software, poiché consente di gestire in modo efficace e controllato le modifiche apportate al progetto.
 Il tener traccia dei cambiamenti è fondamentale in ogni parte del ciclo di vita di un prodotto.\
-La documentazione dettagliata di ciascun cambiamento, insieme alla sua motivazione contribuisce a costruire una base solida per la 
+La documentazione dettagliata di ciascun cambiamento, insieme alla sua motivazione, contribuisce a costruire una base solida per la 
 manutenzione futura. La gestione dei cambiamenti viene controllata attraverso il changelog presente in ogni documento, e inoltre riportato nel nome del file la sua versione corrente come spiegato nella sezione del #link(<versionamento>)[versionamento]
 
 /** Ha senso mettere sta roba?
@@ -750,13 +750,13 @@ manutenzione futura. La gestione dei cambiamenti viene controllata attraverso il
 === Descrizione /** descrizione di questa sezione */
 In questa sezione vengono trattate tutte le normative utili alla stesura e redazione del documneto "Piano di progetto", gli argomenti che ne fanno parte sono:
 - Ruoli e relativa organizzazione: 
-    con conseguente descrizione ed esposizione della strategia utilizzata per la rotazione degli stessi.
+    descrizione ed esposizione della strategia utilizzata per la rotazione degli stessi;
 - Gestione degli incontri e delle comunicazioni:
-    comprendente loro suddivisone in tipologia.
+    comprendente della loro suddivisone in base alla tipologia;
 - Gestione dell'organizzazione: 
-    informazioni relative alle pratiche per la suddivisone in attività, e loro collocazione temporale, del corso del progetto.
+    informazioni relative alle pratiche per la suddivisone delle attività e la loro collocazione temporale nel corso del progetto.
 
-L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del documento denominato "Piano di progetto" nella sua forma il più completa possibile, andando a definire ruoli, attività e loro collocazione nel tempo. Il documento, oltre ad essere utile al team per gestire l'organizzazione e la gestione dei ruoli di ogni componente, fa da bacheca al commitente di quanto appena citato. Il piano di progetto punta a comprendere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.
+L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del documento denominato "Piano di progetto" nella sua forma il più completa possibile, andando a definire ruoli, attività e la loro collocazione nel tempo. Il documento, oltre ad essere utile al team per gestire l'organizzazione e la gestione dei ruoli di ogni componente, fa da bacheca al commitente di quanto appena citato.\ Il piano di progetto punta a comprendere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.
     
 
 === Ruoli e relativa organizzazione /** descrizione di tutti e sei i ruoli, con spiegazione finale di come vengono assegnati e ruotati */
@@ -767,15 +767,16 @@ La suddivisione in ruoli segue le norme definite nel "Regolamento progetto didat
   columns: (auto, auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
   [*Ruolo*],[*Costo orario*],[*Responsabilità*],
-  [Responsabile],[30],[- Coordina l’elaborazione di piani e scadenze 
-  - Approva il rilascio di prodotti parziali o finali (SW, documenti) 
-  - Coordina le attività del gruppo],
-  [Amministratore],[20],[- Assicura l’efficienza di procedure, strumenti e tecnologie a supporto del way of working],
-  [Analista],[25],[- Svolge le attività di analisi dei requisiti],
-  [Progettista],[25],[- Svolge le attività di progettazione (design)],
-  [Programmatore],[15],[- Svolge le attività di codifica],
-  [Verificatore],[15],[- Svolge le attività di verifica],
+  [Responsabile],[30],[- Coordina l’elaborazione di piani e scadenze; 
+  - Approva il rilascio di prodotti parziali o finali (SW, documenti); 
+  - Coordina le attività del gruppo.],
+  [Amministratore],[20],[- Assicura l’efficienza di procedure, strumenti e tecnologie a supporto del way of working.],
+  [Analista],[25],[- Svolge le attività di analisi dei requisiti.],
+  [Progettista],[25],[- Svolge le attività di progettazione (design).],
+  [Programmatore],[15],[- Svolge le attività di codifica.],
+  [Verificatore],[15],[- Svolge le attività di verifica.],
 )
+#align(center)[Tabella 1: Ruoli e responsabilità.]
 
 Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità, ovviamente senza venire meno alle pratiche di tracciabilità adottate normalmente dal team.
 
@@ -801,7 +802,7 @@ Segue una descrizione più dettagliata per alcuni ruoli, perchè ritenuti più c
 - Verificatore:
 
     Il verificatore si occupa oltre alle attività già sopra elencate, di:
-    + Dare feedback completi e chiari a chi ha prodotto il lavoro successivamente revisionato.
+    + Dare feedback completi e chiari a chi ha prodotto il lavoro successivamente revisionato;
     + Assicurare che la qualità di quanto prodotto sia conforme agli standard imposti.
 
 ==== Gestione dei "cold start"
@@ -809,15 +810,15 @@ Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle s
 
 - Documentazione dettaglita:
     
-    Ogni membro è tenuto a documentare ogni azione ritenuta non banale e avente valenza e dipendenze future. Prima in documenti informali, questo per non rallentare troppo i tempi, successivamente da integrare nella documentazione ufficiale.
+    Ogni membro è tenuto a documentare ogni azione ritenuta non banale e avente valenza e dipendenze future, prima in documenti informali, questo per non rallentare troppo i tempi, successivamente da integrare nella documentazione ufficiale;
 
 - Formazione e Condivisione delle Conoscenze:
 
-    Ogni membro è tenuto, qualora si ritenga necessario, a condividere, oltre che in forma scritta attraverso la documentazione, verbalmente le conoscenze e le competenze apprese durante gli sviluppi, o pregresse.
+    Ogni membro è tenuto, qualora si ritenga necessario, a condividere, oltre che in forma scritta attraverso la documentazione, anche verbalmente le conoscenze e le competenze pregresse o apprese durante gli sviluppi;
 
 - Rotazione Graduale:
 
-    Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del "#glossario("pair programming").
+    Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito, di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del "#glossario("pair programming").
 
 === Gestione degli incontri e delle comunicazioni/** descrizione della gestione di incontri interni ed esterni */
 
@@ -826,7 +827,7 @@ Ogni membro del gruppo si impegna ad essere reperibile per riunioni sincrone dur
 
 Durante il corso di uno sprint ogni mebro è libero di gestire le proprie attività di progetto in modo asincrono, a meno che esse non richiedano la collaborazione di più componenti. Ogni membro si assume responsabilmente la gestione di impegni accademici e personali, rispettando le scadenze imposte dal relativo sprint.
 
-Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni componente, il team ha a disposizione un file "Google Fogli" dove sono visualizzabili le proprie disponibilità giornaliere (inserite al inizio del progetto), e dove nel eventualità è possibile segnare altri impegni inderogabili e sorti in un secondo momento.
+Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni componente, il team ha a disposizione un file "Google Fogli" dove sono visualizzabili le proprie disponibilità giornaliere (inserite all'inizio del progetto), dove nel eventualità, è possibile segnare altri impegni inderogabili e sorti in un secondo momento.
 
 ==== Comunicazioni <comunicazioni>
 
@@ -835,7 +836,7 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     Le comunicazioni interne sono quelle coinvolgenti solo il team, o alcuni dei suoi membri, avvengono tramite mezzi quali:
     
     -- Telegram: 
-    Il gruppo è usato per comunicazioni di tipo più breve e repentino. Solitamente viene utilizzato per stilare un breve ordine del giorno, e per organizzare incontri interni. Mentre in privato avvengono comunicazioni che interessano solo le parti conivolte in modo da non intasare il gruppo.
+    Il gruppo è usato per comunicazioni di tipo più breve e repentino. Solitamente viene utilizzato per stilare un breve ordine del giorno e per organizzare incontri interni. In privato invece, avvengono comunicazioni che interessano solo le parti conivolte in modo da regolare il flusso di comunicazioni nel gruppo;
 
     -- Discord: 
     Il server è suddiviso in vari canali testuali:
@@ -857,8 +858,8 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
 
 - *Interni*
 
-Per una migliore gestione degli imprevisti e in generale della pianificazione e organizzazione delle attività, il gruppo ha deciso di adottare 2 tipologie differenti di incontri interni: "Scheduled Meeting", e "Daily Call".
-Per questioni di efficenza e praticità si è concordato di adoperare Discord come mezzo tramite, la modalità di questi incontri è quindi "da remoto".
+Per una migliore gestione degli imprevisti e in generale della pianificazione e organizzazione delle attività, il gruppo ha deciso di adottare due tipologie differenti di incontri interni: "Scheduled Meeting", e "Daily Call".
+Per questioni di efficenza e praticità si è concordato di adoperare Discord come tramite, la modalità di questi incontri è quindi "da remoto".
 
 - *"Scheduled meeting"*
     
@@ -868,20 +869,15 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 
     -- Struttura:
 
-    1) Ordine del giorno:
-    Al inizio di ogni meeting chi ha partecipato alle lezioni del giorno, condivide informazioni utili con il team, aggiornadolo su quanto stato discusso con i docenti.
+    + Ordine del giorno: Al inizio di ogni meeting chi ha partecipato alle lezioni del giorno condivide informazioni utili con il team, aggiornadolo su quanto stato discusso con i docenti;
 
-    2) Retrospettiva: 
-    Prima di discutere le varie domande e dubbi, il responsabile di progetto corrente stila un breve riassunto di quanto stato fatto nel ultimo sprint, evidenziandone aspetti positivi e negativi. Per facilitare queste operazioni, il responsabile di progetto è tenuto ad arrivare "preparato" al incontro, in modo che sia tutto più scorrevole.
+    + Retrospettiva: Prima di discutere le varie domande e dubbi, il responsabile di progetto corrente stila un breve riassunto di quanto stato fatto nel ultimo sprint, evidenziandone aspetti positivi e negativi. Per facilitare queste operazioni, il responsabile di progetto è tenuto ad arrivare "preparato" al incontro, in modo che sia tutto più scorrevole;
 
-    3) Domande e dubbi:
-    Successivamente vengono discusse domande e dubbi per le quali si ritenga necessaria una discussione collettiva. 
+    + Domande e dubbi: Successivamente vengono discusse domande e dubbi per le quali si ritenga necessaria una discussione collettiva; 
 
-    4) Pianificazione prossima:
-    Infine viene effettuata, avendo un miglior cruscotto sul avanzamento del progetto, una pianificazione più mirata per il prossimo sprint, andando a definire effettivamente le attività, ruotando i ruoli e spartendo queste ultime.
+    + Pianificazione prossima: Infine viene effettuata, avendo una migliore idea sul avanzamento del progetto, una pianificazione più mirata per il prossimo sprint, andando a definire effettivamente le attività, ruotando i ruoli e spartendo questi ultimi;
 
-    5) Post meeting:
-    Alla fine di ogni meeting il responsabile di progetto fa un breve resoconto di quanto discusso e lo condivide sul gruppo telegram in modo da aggiornare chi eventualmente non fosse riuscito a presenziare al incontro. Successivamente si adopera anche ad una prima stesura del relativo verbale. Per facilitare queste operazioni ogni meeting interno viene registrato.
+    + Post meeting: Alla fine di ogni meeting il responsabile di progetto fa un breve resoconto di quanto discusso e lo condivide sul gruppo telegram in modo da aggiornare chi eventualmente non fosse riuscito a presenziare al incontro. Successivamente si adopera anche ad una prima stesura del relativo verbale. Per facilitare queste operazioni ogni meeting interno viene registrato.
 
 
 - *"Daily Call"* //nome da concordare, lol
@@ -909,19 +905,19 @@ Questa scelta mira a fornire diversi vantaggi e valori aggiunti:
 
 - Favorire il Lavoro di Gruppo:
 
-    Promuove la collaborazione e la comunicazione all'interno del team, incoraggiando la condivisione delle idee e delle competenze.
+    Promuove la collaborazione e la comunicazione all'interno del team, incoraggiando la condivisione delle idee e delle competenze;
 
 - Sviluppo Individuale:
 
-    Favorirsce la crescita individuale a livello di conoscenze e competenze, consentendo a ciascun membro di contribuire al massimo delle proprie capacità indipendentemente dal ruolo corrente.
+    Favorirsce la crescita individuale a livello di conoscenze e competenze, consentendo a ciascun membro di contribuire al massimo delle proprie capacità indipendentemente dal ruolo corrente;
 
 - Miglioramento Continuo:
 
-    Promuove il miglioramento continuo attraverso pratiche di retrospezione, identificando e risolvendo le problematiche in modo tempestivo e continuo.
+    Promuove il miglioramento continuo attraverso pratiche di retrospezione, identificando e risolvendo le problematiche in modo tempestivo e continuo;
 
 - Organizzazione Efficace:
 
-    Migliora e facilita l'organizzazione tra i membri del team, assicurando una distribuzione efficace delle responsabilità e delle attività.
+    Migliora e facilita l'organizzazione tra i membri del team, assicurando una distribuzione efficace delle responsabilità e delle attività; 
 
 - Trasparenza per Proponenti e Committenti:
 
@@ -936,12 +932,12 @@ Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il t
 
 - Milestone: 
     
-    Rappresentano le revisioni di progetto, e gli sprint necessari al loro compimento. Ragionevolmente, ogni sprint verrà a posteriori suddiviso in macro attività pianificandone le fasi, la cui granularità e specificità verranno esplorate durante un periodo più a ridosso dello stesso, avendo un istantanea migliore dello stato del progetto. 
+    Rappresentano le revisioni di progetto e gli sprint necessari al loro compimento. Ragionevolmente, ogni sprint verrà a posteriori suddiviso in macro attività pianificandone le fasi, la cui granularità e specificità verranno esplorate durante un periodo più a ridosso dello stesso, avendo un istantanea migliore dello stato del progetto. 
 
 - Sprint: 
 
-    Definiscono finestre di tempo durante le quali il team lavora per portare a termine relative attività, rispettandone le scadenze. La durata degli sprint deve essere tassativamente fissata, in modo che ogni componente percepisca l'incobenza delle scadenze e quindi si adegui di conseguenza, evitando così "pigrizie". Questo senza andare a discapito della salute mentale di ogni componente, la quale andrebbe ad incidere sulla qualità di quanto prodotto. Solo in casi eccezionali, come durante gli inizi del periodo relativo al RTB, considerato, di "assestamento", sono ammesse delle variazioni, perlopiù per facilitare l'adeguamento di ogni membro al respettivo ruolo corrente.
-    In modo da mantenere un workflow scorrevole, si è concordata la durata di 1 settimana per sprint. Così facendo ogni membro ha la possibilità di esplorare più ruoli, e di gestire il proprio tempo in modo più produttivo.
+    Definiscono finestre di tempo durante le quali il team lavora per portare a termine le relative attività, rispettandone le scadenze.\ La durata degli sprint deve essere tassativamente fissata, in modo che ogni componente percepisca l'incobenza delle scadenze e quindi si adegui di conseguenza, evitando così "pigrizie". Questo senza andare a discapito della salute mentale di ogni componente, la quale andrebbe ad incidere sulla qualità di quanto prodotto. Solo in casi eccezionali, come durante gli inizi del periodo relativo al RTB, considerato, di "assestamento", sono ammesse delle variazioni, perlopiù per facilitare l'adeguamento di ogni membro al respettivo ruolo corrente.\
+    Per mantenere un workflow scorrevole, si è concordata la durata di una settimana per sprint. Così facendo ogni membro ha la possibilità di esplorare più ruoli e di gestire il proprio tempo in modo più produttivo.
 
 La loro definizione e collocazione temporale è definita nel documento "Piano di progetto", redatto dal responsabile di progetto.
 
@@ -949,10 +945,10 @@ La loro definizione e collocazione temporale è definita nel documento "Piano di
 Per una migliore gestione delle attività di progetto vengono suddivise in tre categorie differenti:
 
 - Macro Issues:
-  Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto.
+  Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto;
 
 - Issues:
-  Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
+  Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto;
 
 - Task: 
   Sono micro attività individuate durante lo sviluppo stesso della relativa issue.
@@ -960,33 +956,31 @@ Per una migliore gestione delle attività di progetto vengono suddivise in tre c
 Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di #glossario("Issues Tracking System") (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
 Creazione: L'attività viene definita come un compito da svolgere e viene registrata come una issue su GitHub.
-Le issue devono essere collegate alla/e board di progetto, ed al rispettivo sprint utilizzando la milestone allegata. Inoltre devono essere contrassegnate da label identificative consone. Ne segue la lista che ne norma l'uso:
+Le issue devono essere collegate alla/e board di progetto e al rispettivo sprint utilizzando la milestone allegata. Inoltre devono essere contrassegnate da label identificative consone. Ne segue la lista che ne norma l'uso:
 
-- approval: da utilizzare solo per issue che identificano attività di approvazione, da svolgere dal Responsabile corrente. Solitamente una finale per sprint.
-- bug-fix: denota una issue la cui rispettiva attività mira alla correzione di un bug, o altre problematiche.
-- code: rappresentano una nuova feature o integrazione nel codice.
-- enhancement: issue riferite ad attività portanti migliorie nel repository.
-- documentation: rappresentano issue legate alla stesura di documentazione.
-- revision: da utilizzare solo per issue legate alle attività di revisone.
-- RTB: deve essere usata solo per issue rappresentanti sprint legati al periodo di RTB.
+- approval: da utilizzare solo per issue che identificano attività di approvazione, da svolgere da parte del Responsabile corrente. Solitamente una issue finale per sprint;
+- bug-fix: denota una issue la cui rispettiva attività mira alla correzione di un bug, o altre problematiche;
+- code: rappresentano una nuova feature o integrazione nel codice;
+- enhancement: issue riferite ad attività portanti migliorie nel repository;
+- documentation: rappresentano issue legate alla stesura di documentazione;
+- revision: da utilizzare solo per issue legate alle attività di revisone;
+- RTB: deve essere usata solo per issue rappresentanti sprint legati al periodo di RTB;
 - PB: deve essere usata solo per issue rappresentanti sprint legati al periodo di PB.
 
 Infine le issue devono avere un nome significativo e possedere una descrizione definita come segue: 
 
-(h3 in markdown) desc:  (plain text) testo della descrizione.
+(h3 in markdown) desc:  (plain text) testo della descrizione;
 
 
-Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint per quanto riguarda le Issues. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso.
+Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni sprint per quanto riguarda le issues. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso;
 
 Completamento: L'attività viene completata dalla persona incaricata, per poi essere spostata nello stato "ReadyToReview" nella rispettiva board di progetto, in modo da notificarne la revisione.
-Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone.
+Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone;
 
-Verifica: Chi ne è incaricato procede a verificare quanto svolto utilizzando strumenti automatici o meno, a seconda di quanto prodotto (Documentazione, codice, ...). Nel caso in cui il verificatore non sia soddisfatto del lavoro svolto, e vi siano grandi modifiche impossibili da apportare da quest ultimo, informerà l'autore e il Responsabile. L'autore dovrà quindi ritornare su quanto fatto e apportare le modifiche suggerite dal verificatore. Una volta finito con esito positivo il processo di verifica il verificatore procederà chiduendo sia la issue relativa all'attività corrisponendete, che la issue relativa alla verifica di tale attività.
+Verifica: Chi ne è incaricato procede a verificare quanto svolto utilizzando strumenti automatici o meno, a seconda di quanto prodotto (Documentazione, codice, ...). Nel caso in cui il verificatore non sia soddisfatto del lavoro svolto e vi siano grandi modifiche impossibili da apportare da quest ultimo, informerà l'autore e il Responsabile. L'autore dovrà quindi ritornare su quanto fatto e apportare le modifiche suggerite dal verificatore. Una volta finito con esito positivo il processo di verifica, il verificatore procederà chiduendo sia la issue relativa all'attività corrisponendete, che la issue relativa alla verifica di tale attività.\
+Si noti che è stato scelto di avere una issue specifica per la verifica, per rendere ai verificatori più facile organizzare e pianificare il proprio lavoro al inizio di ogni sprint;
 
-Si noti che è stato scelto di avere una issue specifica per la verifica, per rendere ai verificatori più facile organizzare e pianificare il proprio lavoro al inizio di ogni sprint.
-
-Accettazione: Dopo la conferma positiva da parte del Verificatore, a ridosso della fine di ogni sprint, il Responsabile effettua un controllo aggiuntivo, procedendo quindi a chiudere l'issue di approvazione corrispondente, e a eseguire il merge nel branch principale di presentazione.
-
+Accettazione: Dopo la conferma positiva da parte del Verificatore, a ridosso della fine di ogni sprint, il Responsabile effettua un controllo aggiuntivo, procedendo quindi a chiudere l'issue di approvazione corrispondente e a eseguire il merge nel branch principale di presentazione.\
 Le singole attività vengono valutate in base alla loro dimensione e alla pianificazione definita, considerando sia il carico di lavoro che le responsabilità associate.
 
 \
@@ -1003,11 +997,11 @@ Per una migliore gestione e visualizzazione delle attività di progetto, le issu
     + ReadyToReview: questa colonna è adibita alle attività necessitanti una revisione;
     + Done: qui si trovano tutte le issue completate.
 
-    Al fine di un utilizzo utile della board ogni membro del gruppo è tenuto a gestire le proprie attività di progetto e a tenere sotto controllo la Project view in modo da avere sempre una visione dello stato si avanzamento dello sprint.
+    Al fine di un utilizzo utile della board ogni membro del gruppo è tenuto a gestire le proprie attività di progetto e a tenere sotto controllo la Project view in modo da avere sempre una visione dello stato si avanzamento dello sprint;
 
 - Gantt:
 
-    A differenza di quella precedente, mira a fornire una rappresentazione calendarizzata delle attività di progetto. Ogni issue viene collocata temporalmente in base alla sua data di "presa a carico" (ovvero nel momento in cui il suo stato cambia da todo, a in progress) come inizio e alla sua data di completamento (inclusa la revisione) come fine. Questo approccio consente una visione più chiara e strutturata delle tempistiche di ciascuna attività.
+    A differenza di quella precedente, mira a fornire una rappresentazione calendarizzata delle attività di progetto. Ogni issue viene collocata temporalmente in base alla sua data di "presa a carico" (ovvero nel momento in cui il suo stato cambia da todo a in progress) come inizio e alla sua data di completamento (inclusa la revisione) come fine. Questo approccio consente una visione più chiara e strutturata delle tempistiche di ciascuna attività.
 
     Per una comprensione ancora più approfondita dell'insieme, la board viene suddivisa in milestone, consentendo la visualizzazione singola di ciascuna di esse. Questa suddivisione facilita il monitoraggio e la gestione specifica di ciascun obiettivo intermedio, migliorando ulteriormente la chiarezza e la gestione del progetto nel suo complesso.
 
@@ -1016,10 +1010,10 @@ Per una migliore gestione e visualizzazione delle attività di progetto, le issu
 
 L'infrastruttura organizzativa costituisce l'insieme degli strumenti impiegati per facilitare e ottimizzare i processi organizzativi, consentendo uno svolgimento pratico ed efficiente delle attività lavorative. Questa struttura svolge un ruolo cruciale nel fornire il supporto necessario per garantire che le operazioni quotidiane come i processi più complessi vengano gestiti con successo.
 
-Questa infrastruttura può comprendere una vasta gamma di elementi, tra cui software specializzato, piattaforme tecnologiche, e strumenti di comunicazione.
+Questa infrastruttura può comprendere una vasta gamma di elementi, tra cui software specializzato, piattaforme tecnologiche e strumenti di comunicazione.
 
 === Strumenti di supporto ai processi /** lista strumenti usati (github, discord, etc.) */
- - GitHub:
+ - GitHub
     
     E' un servizio di hosting per progetti software, implementazione dello strumento di controllo versione distribuito Git. Viene utilizzato per gestire tutti gli artefatti del progetto.
 
@@ -1031,7 +1025,7 @@ Questa infrastruttura può comprendere una vasta gamma di elementi, tra cui soft
     
     E' una piattaforma di VoIP, messaggistica istantanea e distribuzione digitale. Viene utilizzata per incontri interni fra membri del team
 
- - Google Drive, e suo ecosistema: Fogli e Documenti.
+ - Google Drive, e suo ecosistema: Fogli e Documenti
 
     Google Drive è un servizio web, in ambiente cloud computing, di memorizzazione e sincronizzazione online. Viene utilizzato per la gestione di file informali, che variano tra note e appunti realizzate utilizzando Documenti, e tabelle di vario tipo e uso, realizzate con Fogli.
 
@@ -1045,7 +1039,7 @@ Questa infrastruttura può comprendere una vasta gamma di elementi, tra cui soft
     
 == Miglioramento /** descrizione di come si svolge il miglioramento */
 
-Durante lo svolgimento delle attività e la successiva elaborazione della documentazione, ci poniamo come obiettivo quello di cercare di seguire costantemente il principio di miglioramento continuo. L'obiettivo principale è quello di identificare in modo proattivo le attività, i ruoli e le opportunità di miglioramento, cercando nuove o alternative soluzioni per affrontare sfide emergenti, o passate. Questo approccio contraddistinguerà ogni fase del processo, dalla pianificazione, all'esecuzione e alla documentazione.
+Durante lo svolgimento delle attività e la successiva elaborazione della documentazione, ci poniamo come obiettivo quello di cercare di seguire costantemente il principio di miglioramento continuo. L'obiettivo principale è quello di identificare in modo proattivo le attività, i ruoli e le opportunità di miglioramento, cercando nuove alternative o soluzioni per affrontare sfide emergenti o passate. Questo approccio contraddistinguerà ogni fase del processo, dalla pianificazione, all'esecuzione compresa anche la documentazione.
 
 In sintesi, la manutenzione migliorativa dei processi è un ciclo iterativo che ci consente di adattarci dinamicamente alle esigenze mutevoli del progetto, garantendo una crescita continua e una maggiore efficienza nelle nostre attività.
 
@@ -1063,3 +1057,6 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 - Approccio XP:
     
     #link("https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/extreme-programming")  
+
+= Elenco delle tabelle
+- Tabella 1: Ruoli e responsabilità
