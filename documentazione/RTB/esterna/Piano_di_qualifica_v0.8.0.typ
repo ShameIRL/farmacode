@@ -24,8 +24,8 @@
 = Introduzione
 == Scopo del documento
 Il documento relativo al piano di qualità rappresenta un elemento di fondamentale importanza per i progetti di sviluppo software che mirano a conformarsi agli elevati standard di qualità definiti nei principi dell'ingegneria del software.\
-La qualità e la valutazione del prodotto sono due concetti indispensabili per fare confronti o determinare il grado di aderenza alle attese.\
-Il presente documento ha lo scopo di fornire una descrizione dettagliata e il più precisa possibile sulle metriche e sulle metodologie di controllo e misurazione della qualità nelle varie parti del prodotto software.\
+La #glossario("qualità") e la valutazione del prodotto sono due concetti indispensabili per fare confronti o determinare il grado di aderenza alle attese.\
+Il presente documento ha lo scopo di fornire una descrizione dettagliata e il più precisa possibile sulle #glossario("metriche") e sulle metodologie di controllo e misurazione della qualità nelle varie parti del prodotto software.\
 Verranno definiti gli obiettivi di qualità e i relativi processi e risorse necessarie per conseguirli, oltre alla definizione dei test con la loro documentazione: metodologie ed esito. \
 Il documento sarà utile a chi si occupa della creazione del prodotto, a chi userà il prodotto e a chi lo valuterà.
 
