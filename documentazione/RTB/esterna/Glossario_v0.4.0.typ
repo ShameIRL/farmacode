@@ -122,6 +122,10 @@ Il Minimum Viable Product (MVP) è una versione ridotta del prodotto, la quale i
 == Modello di Apprendimento Automatico
 Un modello di apprendimento automatico è un programma che viene utilizzato per riconoscere pattern in insiemi di dati o per eseguire predizioni dato un insieme di dati iniziale. Un modello si ottiene effettuando il processo di addestramento su un algoritmo di apprendimento automatico.
 
+== Metrica per la valutazione quantitativa
+Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
+punto di vista tecnico che documentale. 
+
 = N
 
 == Norme di Progetto
@@ -142,7 +146,16 @@ Il pair programming è una metodologia di sviluppo del software nella quale due 
 == Product Baseline
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
+== Proof of Concept
+
 = Q
+
+== Qualità
+Insieme delle caratteristiche di un'entità, che ne determinano la capacità di
+soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodotto software in termini di qualità:
+- Intrinseca: conformità ai requisiti, idoneità all’uso;
+- Relativa: soddisfazione del cliente;
+- Quantitativa: misurazione oggettiva, per confronto.
 
 = R
 
@@ -161,6 +174,10 @@ Questo set è un insieme di dati (estrapolato da un insieme più grande). Questi
 Un sistema di raccomandazione o motore di raccomandazione è un software di filtraggio dei contenuti che
 crea delle raccomandazioni personalizzate specifiche per l’utente così da aiutarlo nelle sue scelte. Viene utilizzato per diversi prodotti, come libri, musica, film, video, notizie e social media.
 
+== Stakeholder
+
+== Surprise
+
 == SVD (Singular Value Decomposition)
 
 = T
@@ -178,6 +195,8 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 == Verbale
 
 = W
+
+== Way of working
 
 == Web app
 Una web application (web app) è un'applicazione software progettata per essere utilizzata attraverso un browser web su un dispositivo Internet. A differenza delle applicazioni desktop tradizionali, le web app non richiedono un download o un'installazione separata, poiché vengono eseguite direttamente all'interno di un browser.

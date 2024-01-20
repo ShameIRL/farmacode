@@ -500,8 +500,8 @@ Risoluzione: Il tutto è stato risolto con la creazione di svariati script che s
   -- Continuazione stesura del documento "Glossario";\
   -- Continuazione stesura del documento "Piano di Progetto";\
   -- Continuazione stesura del documento "Piano di Qualifica";\
-  -- Stesura verbale interno del 2023/12/18.\
-  -- Revisione verbale interno del 2023/12/18.\
+  -- Stesura verbale interno del 2023/12/18;\
+  -- Revisione verbale interno del 2023/12/18;\
   -- Stesura verbale esterno del 2023/12/19.\
 
 - Sintesi:
@@ -522,7 +522,7 @@ figure(
 nd.
 
 ==== sprint.6
-- Periodo: 2023/12/28-2024/01/08 (1 settimana e 6 giorni)
+- Periodo: 2023/12/28-2024/01/07 (1 settimana e 3 giorni)
 
 - Macro-issues:\
   -- Approvare quanto prodotto nello sprint.6;\
@@ -535,7 +535,7 @@ nd.
   -- Continuazione stesura del documento "Glossario";\
   -- Continuazione stesura del documento "Piano di Progetto";\
   -- Continuazione stesura del documento "Piano di Qualifica";\
-  -- Stesura verbale interno del 2024/01/01.\
+  -- Stesura verbale interno del 2024/01/01;\
   -- Revisione verbale interno del 2024/01/01.\
 
 - Sintesi:
@@ -559,9 +559,44 @@ Anche se un calo da questo punto di vista era stato previsto, l'inzio delle vaca
 Risoluzione: La ridistribuzione delle attività previste è variata, cercando di portare avanti i lavori di documentazione il più possibile rispetto a quanto preventivato.
 
 ==== sprint.7
-- Periodo: 2024/01/09-to be define (to be define)
+- Periodo: 2024/01/08 - 2024/01/15
 
-- Macro-issues:
+- Macro-issues:\
+  -- Approvare quanto prodotto nello sprint.7;\
+  -- Revisionare quanto prodotto nello sprint.7;\
+  -- Documentazione;\
+
+- Issue e task:
+
+  -- Continuazione stesura del file "Analisi dei Requisiti";\
+  -- Continuazione stesura del file "Piano di Progetto";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Continuazione stesura del file "Norme di Progetto";\
+  -- Continuazione stesura del file "Glossario";\
+  -- Stesura verbale interno del 2024/01/08;\
+  -- Revisione verbale interno del 2024/01/08.\
+
+- Sintesi:
+Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
+In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in base alle differenti disponibilità, cercando comunque di portare avanti il progetto il più possibile. In periodi di questo tipo inoltre la collaborazione tra membri si è rivelata essenziale.
+
+- Gantt view:
+/*
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#7.png", height: auto, width: auto),
+  caption: [sprint.7]
+  )
+  
+)
+*/
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+==== sprint.8
+- Periodo: 2024/01/15 - TBD
+
+- Macro-issues:\
 
 - Issue e task:
 
@@ -571,8 +606,8 @@ Risoluzione: La ridistribuzione delle attività previste è variata, cercando di
 /*
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#5.png", height: auto, width: auto),
-  caption: [sprint.7]
+  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
+  caption: [sprint.8]
   )
   
 )

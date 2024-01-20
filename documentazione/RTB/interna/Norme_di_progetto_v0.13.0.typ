@@ -28,18 +28,26 @@
   ),
 )
 
-= Introduzione al documento
-Questo documento è stato creato per identificare le #glossario("best practices") di progetto e per stabilire una metodologia di lavoro chiara nel corso dell'attività produttiva. L'obiettivo è garantire una gestione omogenea e coesa del lavoro. Per facilitare il monitoraggio del progresso e consentire un approccio incrementale, vengono registrate le diverse versioni del documento.
+= Introduzione
+
+== Scopo del documento
+Questo documento è stato creato per identificare le #glossario("best practices") di progetto e per stabilire la #glossario("way of working"), ovvero una metodologia di lavoro chiara, nel corso dell'attività produttiva. L'obiettivo è garantire una gestione omogenea e coesa del lavoro. Per facilitare il monitoraggio del progresso e consentire un approccio incrementale è consentito apportare modifiche e aggiornamenti alle pratiche successivamente descritte, in modo di addattarsi a nuove attività e/o strumenti di lavoro, il tutto viene registrato nello storico delle modifiche del documento.
 
 == Scopo del prodotto
-Lo scopo del prodotto è creare un'applicazione dove sia possibile verificare i possibili interessi di un cliente nei confronti di un prodotto. Al giorno d'oggi l'ambito degli #glossario("e-commerce") si sta sempre più espandendo ed evolvendo. La presenza di negozi virtuali permette di accedere a molti dati legati agli acquisti, alle preferenze ed al comportamento degli utenti. Questi dati se analizzati propriamente permettono di prevedere preferenze e comportamenti futuri degli utenti, dando spazio ad operazioni di marketing mirate.
+Al giorno d'oggi l'ambito degli #glossario("e-commerce") si sta sempre più espandendo ed evolvendo. La presenza di negozi virtuali permette di accedere a molti dati legati agli acquisti, alle preferenze ed al comportamento degli utenti. Questi dati se analizzati propriamente permettono di prevedere preferenze e comportamenti futuri degli utenti, dando spazio ad operazioni di marketing mirate.
 
-Il prodotto sarà dunque un'applicazione attraverso la quale l'amministrazione di un e-commerce sarà in grado di accedere ai risultati dell'analisi dei dati relativi all'utilizzo della suddetta attività. Il lavoro principale di questa applicazione non sarà dunque svolto dal lato dell'utente, il quale avrà solo accesso ad un'analisi dei dati e potrà garantire feedback sulla loro correttezza, ma sarà svolto da un algoritmo non visibile né accessibile all'utente. Questo algoritmo utilizzerà la tecnologia dell'intelligenza artificiale per analizzare i dati forniti dall'azienda con lo scopo di trovare e definire le correlazioni tra i vari prodotti, tra i vari utenti e tra utenti e prodotti. Queste correlazioni trovate su più livelli di profondità permetteranno di creare un altro set di dati, dal quale l'utente dell'applicazione potrà accedere ai dati che necessita, principalmente questi dati saranno gli N prodotti che potrebbero interessare ad un X utente e gli N utenti che potrebbero essere interessati ad un X prodotto.
+Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
 
-Questa applicazione inoltre per comodità d'uso sarà sviluppata sotto la forma di una #glossario("webapp") che potrà essere accessibile utilizzando diversi dispositivi, sistemi e browser.
+L'appicazione è sviluppata sotto forma di #glossario("webapp") per la sua comodità, favorendo così l'accesso e la fruizioneda diversi dispositivi, sistemi o browser.\
+
+Dall'interfaccia utente del sistema software sarà possibile selezionare uno specifico cliente e visualizzare i prodotti da lui acquistati e quelli che il sistema ha individuato come raccomandati. Inoltre selezionato un articolo o un insieme di articoli il sistema suggerisce a quali clienti proporli, selezionandoli in base a quanto probabile siano interessati per i prodotti analizzati. I vari prodotti possono essere filtrati per categoria così da facilitare ricerche e restringere il campo di soluzione.\
+Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'algoritmo che ha fornito l'esito della suggerimento.\
+L'utente amministratore ha la possibilità di creare ulteriori account per eventuali operatori che necessitano di utilizzare l'applicativo.\
+
 
 == Glossario
-Si fa inoltre notare la presenza di un Glossario nel quale sono riportati i termini utilizzati nei documenti. Con questo principio le best practices per la creazione del prodotto riusciranno facilmente ad essere rispettate garantendo il più possibile l'omogeneità del prodotto.
+Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu").
 
 == Miglioramenti e maturità del documento
 Questo documento è stato creato seguendo un approccio incrementale, il che implica la sua natura adattabile e suscettibile di modifiche nel tempo. Queste modifiche saranno apportate in risposta alle esigenze concordate tra i membri del gruppo e il proponente. Pertanto, questa versione del documento non deve essere considerata come una versione definitiva o completa, ma piuttosto come un punto di partenza che sarà ulteriormente sviluppato e aggiornato per meglio rispondere alle mutevoli esigenze del progetto.
@@ -47,32 +55,36 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 == Riferimenti /** elenco con link dei file a cui si fa riferimento (capitolato, slide del prof, altri file nostri) */
 
 === Riferimenti normativi
-- Capitolato C2 - Sistema di raccomandazione
-https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf
+- Capitolato C2 - Sistema di raccomandazione\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+- Regolamento progetto ditattico\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 
 === Riferimenti informativi
 
 ==== Slide corso di ingegneria del software
-- T2 - Processi di ciclo di vita
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf
+- T2 - Processi di ciclo di vita\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf;
 
-- T6 - Progettazione software
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf
+- T6 - Progettazione software\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf;
 
-- T7 - Qualità del software
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf
+- T7 - Qualità del software\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf;
 
-- T9 - Verifica e validazione: introduzione
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf
+- T9 - Verifica e validazione: introduzione\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf;
 
-- T10 - Verifica e validazione: analisi statica
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf
+- T10 - Verifica e validazione: analisi statica\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
 
-- T11 - Verifica e validazione: analisi dinamica
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf
+- T11 - Verifica e validazione: analisi dinamica\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
 
-- P2 - Diagrammi dei casi d'uso
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf
+- P2 - Diagrammi dei casi d'uso\
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+
+#pagebreak()
 
 = Processi primari
 
@@ -116,10 +128,11 @@ In questa sezione viene presentanto un elenco contenente tutta la documentazione
 
 === Strumenti
 Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura:
-
+- Typst per la stesura dei documenti ufficiali di progetto;
 - Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
 - Google Meet e Zoom per gli incontri verso l'esterno;
-- GitHub per l'hosting e versionamento del prodotto software (documentazione inclusa)
+- GitHub per l'hosting e versionamento del prodotto software (documentazione inclusa);
+- Diagrams.net (draw.io) per la realizzazione dei casi d'uso.
 - KeyNote per la realizzazione dei diari di bordo.
 
 == Sviluppo
@@ -136,7 +149,7 @@ Il processo di sviluppo di un prodotto software è suddivisibile come segue:
 
 === Analisi dei requisiti /** descrizione analisi requisiti di sistema e di software */
 
-Il processo di analisi dei requisiti si colloca come prima fase dello sviluppo software, un momento cruciale in cui è imperativo delineare con precisione e robustezza gli scenari dei casi d'uso e le relative necessità o requisiti del sistema. Questa fase è di fondamentale importanza, perché implica la comprensione approfondita delle richieste degli utenti e degli stakeholder, offrendo una base solida per il progresso del ciclo di sviluppo.
+Il processo di analisi dei requisiti si colloca come prima fase dello sviluppo software, un momento cruciale in cui è imperativo delineare con precisione e robustezza gli scenari dei casi d'uso e le relative necessità o requisiti del sistema. Questa fase è di fondamentale importanza, perché implica la comprensione approfondita delle richieste degli utenti e degli #glossario("stakeholder"), offrendo una base solida per il progresso del ciclo di sviluppo.
 
 Nel corso dell'analisi dei requisiti, il focus è posto sull'identificazione, la documentazione e la comprensione esaustiva delle funzionalità necessarie che il sistema dovrà incorporare.
 
@@ -149,7 +162,7 @@ I #glossario("Casi d'uso") rappresentano azioni o sequenze di azioni collocabili
 Ogni caso d'uso deve essere così composto:
 - identificazione e nomenclatura:
     il formato concordato è il seguente:
-#align("UC.x.y - Nome", center)
+    #align("UC.x.y - Nome", center)
     dove: x, rappresenta il numero identificativo del caso d'uso generico; y, rappresenta l'id del sotto caso relativo, che può essere composto da più cifre (n.n.n.n ...). E "Nome" rappresenta il nome del caso d'uso da attribuire in modo chiaro e consono;
 - figura;
 - attori: utente o componente che può svolgere quella determinata azione o chiedere quel servizio;
@@ -161,75 +174,75 @@ Ogni caso d'uso deve essere così composto:
 
 ===== Linee guida interne
 - *Attore:*
-#figure(
-  image("/imgs/Uml/attore.png", width: 8%),
-  caption: [
-    Attore
-  ],
-)
+    #figure(
+    image("/imgs/Uml/attore.png", width: 8%),
+    caption: [
+        Attore
+    ],
+    )
 
-Un attore è un elemento esterno che interagisce con il sistema. Gli attori possono assumere diverse forme, come utenti, persone, macchine, altri sistemi informatici o organizzazioni. Un caso d'uso definisce una specifica funzionalità fornita agli attori senza specificarne dettagli implementativi. Nel diagramma dei casi d'uso, gli attori sono rappresentati da figure umane stilizzate, ciascuno identificato da un'etichetta contenente il suo nome.
+    Un attore è un elemento esterno che interagisce con il sistema. Gli attori possono assumere diverse forme, come utenti, persone, macchine, altri sistemi informatici o organizzazioni. Un caso d'uso definisce una specifica funzionalità fornita agli attori senza specificarne dettagli implementativi. Nel diagramma dei casi d'uso, gli attori sono rappresentati da figure umane stilizzate, ciascuno identificato da un'etichetta contenente il suo nome.
 
 - *Caso d'uso*
-#figure(
-  image("/imgs/Uml/UC.png", width: 55%),
-  caption: [
-    Caso d'uso
-  ],
-)
+    #figure(
+    image("/imgs/Uml/UC.png", width: 55%),
+    caption: [
+        Caso d'uso
+    ],
+    )
 
-I casi d'uso rappresentano le azioni o funzionalità che gli utenti possono eseguire all'interno di un sistema. Ogni caso d'uso è collegato mediante una linea continua agli attori che hanno accesso a quella specifica funzionalità, fornendo una chiara relazione tra gli utenti e le azioni che possono compiere nel sistema software.
+    I casi d'uso rappresentano le azioni o funzionalità che gli utenti possono eseguire all'interno di un sistema. Ogni caso d'uso è collegato mediante una linea continua agli attori che hanno accesso a quella specifica funzionalità, fornendo una chiara relazione tra gli utenti e le azioni che possono compiere nel sistema software.
 
 - *Inclusione*
-#figure(
-  image("/imgs/Uml/inclusione.png", width: 75%),
-  caption: [
-    Inclusione
-  ],
-)
+    #figure(
+    image("/imgs/Uml/inclusione.png", width: 75%),
+    caption: [
+        Inclusione
+    ],
+    )
 
-L'include serve a delineare un UC che fa parte
-sempre dello stesso scenario principale,
-solitamente viene usato quando uno stesso UC
-viene sempre utilizzato da più UC
-simultaneamente.
+    L'include serve a delineare un UC che fa parte
+    sempre dello stesso scenario principale,
+    solitamente viene usato quando uno stesso UC
+    viene sempre utilizzato da più UC
+    simultaneamente.
 
 - *Estensione*
-#figure(
-  image("/imgs/Uml/estensione.png", width: 75%),
-  caption: [
-    Estensione
-  ],
-)
-L'extend serve a delineare un UC che ha le stesse
-precondizioni dell'UC da cui è derivato, ma ha
-postcondizioni differenti perchè si verifica un
-evento che porta a deviare dallo scenario
-principale ad uno scenario alternativo: esempi
-sono scenari di errore.
+    #figure(
+    image("/imgs/Uml/estensione.png", width: 75%),
+    caption: [
+        Estensione
+    ],
+    )
+    L'extend serve a delineare un UC che ha le stesse
+    precondizioni dell'UC da cui è derivato, ma ha
+    postcondizioni differenti perchè si verifica un
+    evento che porta a deviare dallo scenario
+    principale ad uno scenario alternativo: esempi
+    sono scenari di errore.
 
 - *Generalizzazione*
 
     + Generalizzazione casi d'uso:
-#figure(
-image("/imgs/Uml/GeneralizzazioneUC.png", width: 75%),
-caption: [
-    Generalizzazione casi d'uso
-],
-)
-    La generalizzazione serve a specificare meglio una funzionalità e   coincide con l'OR esclusivo;
+        #figure(
+        image("/imgs/Uml/GeneralizzazioneUC.png", width: 75%),
+        caption: [
+            Generalizzazione casi d'uso
+        ],
+        )
+        La generalizzazione serve a specificare meglio una funzionalità e   coincide con l'OR esclusivo;
 
-    + Sotto-UC:
-        Se si sceglie di specificare meglio una funzionalità non tramite generalizzazioni ma tramite Sotto-UC, la funzionalità deve rimanere invariata nei Sotto-UC (Ad esempio: "Visualizzazione oggetto" scomposto in: "Visualizzazione nome oggetto", ...). Utilizzare i sotto-UC coincide con l'AND logico;
+        + Sotto-UC:
+            Se si sceglie di specificare meglio una funzionalità non tramite generalizzazioni ma tramite Sotto-UC, la funzionalità deve rimanere invariata nei Sotto-UC (Ad esempio: "Visualizzazione oggetto" scomposto in: "Visualizzazione nome oggetto", ...). Utilizzare i sotto-UC coincide con l'AND logico;
 
-    + Generalizzazione attori:
-#figure(
-image("/imgs/Uml/genAttori.png", width: 5%),
-caption: [
-    Generalizzazione attori
-],
-)
-    La generalizzazione tra attori serve per evidenziare ed identificare le funzionalità, ovvero i casi d'uso, disponibili per l'attore "A", che sono anche utilizzabili dall'attore "B" (non vale il viceversa).
+        + Generalizzazione attori:
+            #figure(
+            image("/imgs/Uml/genAttori.png", width: 5%),
+            caption: [
+                Generalizzazione attori
+            ],
+            )
+            La generalizzazione tra attori serve per evidenziare ed identificare le funzionalità, ovvero i casi d'uso, disponibili per l'attore "A", che sono anche utilizzabili dall'attore "B" (non vale il viceversa).
 
 ==== Requisiti
 I requisiti devono possedere un identificativo, composto come segue:
@@ -238,15 +251,15 @@ Dove:
 -  Importanza: Indica il grado di importanza del requisito ed indirettamente la sua incidenza sul progetto. Un requisito può essere: 
     + O --> "Obbligatorio";
         
-        Un requisito deve venire defenito ed identificato come obbligatorio se ritenuto tale dal proponente, o se considerato tale e soddisfabile, dopo una cauta ed approfondita analisi, dal team di sviluppo.
+        Un requisito deve essere defenito ed identificato come obbligatorio se ritenuto tale dal proponente, o se considerato tale e soddisfabile, dopo una cauta ed approfondita analisi, dal team di sviluppo.
 
     + D --> "Desiderabile";
 
-        Un requisito deve venire defenito ed identificato come desiderabile, se ritenuto tale dal gruppo, in accordo con il proponente. Un requisito di questa categoria è da considerarsi soddisfabile in un secondo momento, a seconda di tempistche e costi.
+        Un requisito deve essere defenito ed identificato come desiderabile, se ritenuto tale dal gruppo, in accordo con il proponente. Un requisito di questa categoria è da considerarsi soddisfabile in un secondo momento, a seconda di tempistche e costi.
 
     + OPT --> "Opzionale".
 
-        Un requisito deve venire defenito ed identificato come opzionale, se ritenuto tale dal gruppo, in accordo con il proponente. Un requisito di questa categoria è da considerarsi di valore aggiunto per il prodotto, anche se secondario, ma insoddisfabile date tempistiche e costi.
+        Un requisito deve essere defenito ed identificato come opzionale, se ritenuto tale dal gruppo, in accordo con il proponente. Un requisito di questa categoria è da considerarsi di valore aggiunto per il prodotto, anche se secondario, ma insoddisfabile date tempistiche e costi.
 
 - Tipologia: Indica il tipo di requisito in esame. Un requisito può essere:
     
@@ -289,13 +302,13 @@ La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Conce
 Le scelte concordate per la realizzazione del PoC sono le seguenti:
 il prodotto è suddivisibile in 5 Layer principali:
 
-- Livello Dati: comprendente il Database relazionale, contente parte del dataset fornitoci dal proponente.
-- Livello di Elaborazione: comprendente gli script Python adibiti alla gestione e applicazione, del algoritmo di raccomandazioni.
-- Livello di Logica: è formato dalle #glossario("API") che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP.
+- Livello Dati: comprendente il Database relazionale, contente parte del dataset fornitoci dal proponente;
+- Livello di Elaborazione: comprendente gli script Python adibiti alla gestione e applicazione, del algoritmo di raccomandazioni;
+- Livello di Logica: è formato dalle #glossario("API") che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP;
 - Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
 
 ===== Algoritmo di raccomandazione:
-L'approccio concordato con il proponente, per quanto riguarda l'algoritmo di raccomandazione, prevede l'adozione di una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto.\ Confrontandoci con il proponente si è deciso di utilizzare la libreria Surprise di python, la quale contiene e permette di usare vari algoritmi di predizioni, moduli di predizione e vari modelli di allenamento. Al seguito di vari test di performance si è deciso di utilizzare come algoritmo l'algoritmo di predizione #glossario("SVD") (Singular Value Decomposition), il quale non richiede nessun modulo di predizione.\ Per quanto riguarda il modello di allenamento, si è invece scelto di utilizzare il KFold, un semplice iteratore che si basa sulla cross-validation.\ I dati forniti erano grezzi per questo, prima di farli elaborare dallo script, si è dovuto strutturarli nel seguente modo sensato: abbiamo creato un file .csv contenente solo tuple di tipo "Utente;Oggetto;Rating", dove il rating è il prodotto della manipolazione del numero di volte le quali un oggetto è stato comprato da un utente. Per non penalizzare troppo oggetti comprati meno volte o agevolare troppo pochi prodotti acquistati un numero considerevole di volte, abbiamo trattato il valore di rating come argomento di un logaritmo.
+L'approccio concordato con il proponente, per quanto riguarda l'algoritmo di raccomandazione, prevede l'adozione di una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto.\ Confrontandoci con il proponente si è deciso di utilizzare la libreria #glossario("Surprise") di python, la quale contiene e permette di usare vari algoritmi di predizioni, moduli di predizione e vari modelli di allenamento. Al seguito di vari test di performance si è deciso di utilizzare come algoritmo l'algoritmo di predizione #glossario("SVD") (Singular Value Decomposition), il quale non richiede nessun modulo di predizione.\ Per quanto riguarda il modello di allenamento, si è invece scelto di utilizzare il KFold, un semplice iteratore che si basa sulla cross-validation.\ I dati forniti erano grezzi per questo, prima di farli elaborare dallo script, si è dovuto strutturarli nel seguente modo sensato: abbiamo creato un file .csv contenente solo tuple di tipo "Utente;Oggetto;Rating", dove il rating è il prodotto della manipolazione del numero di volte le quali un oggetto è stato comprato da un utente. Per non penalizzare troppo oggetti comprati meno volte o agevolare troppo pochi prodotti acquistati un numero considerevole di volte, abbiamo trattato il valore di rating come argomento di un logaritmo.
 
 ===== Tecnologie scelte:
 Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
@@ -314,33 +327,33 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
 ===== Programmazione e verifica del software /** descrizione processo di coding e test software */
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.
 
-- Linguaggi e ambiente:
-Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a seconda di esigenze e vincoli, imposti sia dal capitolato che dal proponente. Se ne riporta qui sotto un elenco per una più facile consultazione:
+- Linguaggi e ambiente:\
+    Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a seconda di esigenze e vincoli, imposti sia dal capitolato che dal proponente. Se ne riporta qui sotto un elenco per una più facile consultazione:
 
-+ Python, per l'agortimo di raccomandazione, e uso di sue svariate librerie come surprise, panda e numpy;
-+ Mysql per la realizzazione del database relazionale;
-+ Php per il backend della webapp;
-+ React e Node.js per il frontend dell'interfaccia web.
+    + Python, per l'agortimo di raccomandazione, e uso di sue svariate librerie come surprise, panda e numpy;
+    + Mysql per la realizzazione del database relazionale;
+    + Php per il backend della webapp;
+    + React e Node.js per il frontend dell'interfaccia web.
 
-Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente con Anaconda durante lo sviluppo. Anacondaè un software che permette di creare configurazioni di Python per semplificare la gestione e la distribuzione di librerie e pacchetti.
+    Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente con Anaconda durante lo sviluppo. Anaconda è un software che permette di creare configurazioni di Python per semplificare la gestione e la distribuzione di librerie e pacchetti.
 
-- Stile di codifica:
-Al fine di poter lavorare in un ambiente omogeneo ed ordinato il team ha deciso di predisporre delle automazioni che migliorino la qualità del codice ed organizzino la sua formattazione.
-// da finire
-+ Python:
-    Si è deciso di appoggiarsi a ruff, un sistema automatico di formattazione e analisi statica del codice. Esso è integrato nella repository tramite una GitHub action.
+- Stile di codifica: \
+    Al fine di poter lavorare in un ambiente omogeneo ed ordinato il team ha deciso di predisporre delle automazioni che migliorino la qualità del codice ed organizzino la sua formattazione.
+    // da finire
+    + Python:
+        Si è deciso di appoggiarsi a ruff, un sistema automatico di formattazione e analisi statica del codice. Esso è integrato nella repository tramite una GitHub action.
 
-- Lunghezza e complessità:
-Le funzioni e i metodi integrati nel codice del prodotto devono aderire rigorosamente agli standard di qualità stabiliti nel contesto del progetto. La filosofia che ogni membro del team si impegna ad adottare si concentra sull'incoraggiare il riuso del codice, sulla facilità del suo mantenimento e sull'ottimizzazione delle prestazioni.
-Segue un elenco dei principali principi guida:
+- Lunghezza e complessità:\
+    Le funzioni e i metodi integrati nel codice del prodotto devono aderire rigorosamente agli standard di qualità stabiliti nel contesto del progetto. La filosofia che ogni membro del team si impegna ad adottare si concentra sull'incoraggiare il riuso del codice, sulla facilità del suo mantenimento e sull'ottimizzazione delle prestazioni.
+    Segue un elenco dei principali principi guida:
 
-+ Riuso del Codice: Ogni componente del gruppo è incoraggiato a sviluppare funzioni e metodi modulari che possano essere riutilizzati in diverse parti del progetto, sfavorendo la duplicazione del codice, e facilitando la manutenzione e la gestione delle funzionalità comuni.
+    + Riuso del Codice: Ogni componente del gruppo è incoraggiato a sviluppare funzioni e metodi modulari che possano essere riutilizzati in diverse parti del progetto, sfavorendo la duplicazione del codice, e facilitando la manutenzione e la gestione delle funzionalità comuni.
 
-+ Mantenimento del Codice: Le funzioni devono essere scritte in modo chiaro e documentate adeguatamente per facilitare il mantenimento del codice nel tempo. Commenti significativi e una documentazione chiara aiutano i membri del team a comprendere rapidamente le funzionalità e apportare modifiche quando necessario.
+    + Mantenimento del Codice: Le funzioni devono essere scritte in modo chiaro e documentate adeguatamente per facilitare il mantenimento del codice nel tempo. Commenti significativi e una documentazione chiara aiutano i membri del team a comprendere rapidamente le funzionalità e apportare modifiche quando necessario.
 
-+ Efficienza del Codice: Si presta particolare attenzione all'efficienza del codice. Le funzioni dovrebbero essere progettate in modo ottimale per garantire un'esecuzione efficiente. L'attenzione è rivolta alla complessità algoritmica, all'utilizzo appropriato delle risorse e alla minimizzazione di operazioni computazionalmente costose.
+    + Efficienza del Codice: Si presta particolare attenzione all'efficienza del codice. Le funzioni dovrebbero essere progettate in modo ottimale per garantire un'esecuzione efficiente. L'attenzione è rivolta alla complessità algoritmica, all'utilizzo appropriato delle risorse e alla minimizzazione di operazioni computazionalmente costose.
 
-+ Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
+    + Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
 
 ===== Integrazione /** descrizione processo di integrazione di sistema e software */
 La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. Il team si impegna fin da subito nell'integrare le varie componenti del prodotto, in modo solido e al contempo elastico, in modo che quanto esplorato durante la produzione del PoC possa essere utile una volta inziati i lavori sul prodotto di MVP. 
@@ -364,8 +377,12 @@ Questa sezione fornisce una panoramica delle pratiche di manutenzione adottate d
 La correzione si concentra sull'identificazione e sulla risoluzione di difetti o problemi nel software. Questa sezione descrive il processo di individuazione degli errori, la loro classificazione e la successiva implementazione delle correzioni. Si illustrano anche le pratiche adottate per garantire che le correzioni siano tempestive e accurate, contribuendo così a migliorare la qualità complessiva del prodotto.
 
 === Adattamento /** descrizione di come avviene l'adattamento */
+Durante le successive implementazioni del software di progetto verranno descritte le operazioni di adattamento.
 
 === Evoluzione /** descrizione di come avviene l'evoluzione */
+Durante le successive implementazioni del software di progetto verranno descritte le operazioni di evoluzione.
+
+#pagebreak()
 
 = Processi di supporto
 
@@ -743,6 +760,9 @@ manutenzione futura. La gestione dei cambiamenti viene controllata attraverso il
 
 === Valutazione del prodotto /** descrizione di come viene valutato il prodotto */
 */
+
+#pagebreak()
+
 = Processi organizzativi
 
 == Gestione dei processi
@@ -818,7 +838,7 @@ Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle s
 
 - Rotazione Graduale:
 
-    Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito, di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del "#glossario("pair programming").
+    Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito, di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del #glossario("pair programming").
 
 === Gestione degli incontri e delle comunicazioni/** descrizione della gestione di incontri interni ed esterni */
 
@@ -1048,14 +1068,28 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 
 === Complementi all'auto-formazione /** lista con link usati per formarci (varie documentazioni) */
 
-- GitHub:
-    #link("https://docs.github.com/en")
-- Git:
-    #link("https://git-scm.com/doc")
+- GitHub:\
+    https://docs.github.com/en;
+- Git:\
+   https://git-scm.com/doc;
 - Framework Scrum:
-    #link("https://www.atlassian.com/it/agile/scrum")  
-- Approccio XP: 
-    #link("https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/extreme-programming")  
+    https://www.atlassian.com/it/agile/scrum;
+- Approccio XP:\
+    https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/extreme-programming;
+- Documentazione Typst:\
+    https://typst.app/docs/;
+
+#pagebreak()
+
+= Elenco delle immagini
+- Immagine 1: Attore;
+- Immagine 2: Caso d'uso;
+- Immagine 3: Inclusione; 
+- Immagine 4: Estensione;
+- Immagine 5: Generalizzazione caso d'uso;
+- Immagine 6: Generalizzazione attori.
+
+#pagebreak()
 
 = Elenco delle tabelle
-- Tabella 1: Ruoli e responsabilità
+- Tabella 1: Ruoli e responsabilità.
