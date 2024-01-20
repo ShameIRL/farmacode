@@ -1,13 +1,13 @@
 #import "/template/verbals.typ": *
 
 #show: project.with(
-  title: "Verbale interno del meeting in data 20/11/2023",
+  title: "Verbale interno del meeting in data 2023/11/20",
   recipients: (
     
   ),
   changelog: (
-    "1.0.1", "11-12-2023", p.rosson, p.baggio, "Riadattata struttura alle nuove norme di progetto",
-    "1.0.0", "23-11-2023", p.favaron, p.rosson, "Stesura e revisione del verbale",
+    "1.0.1", "2023-12-11", p.rosson, p.baggio, "Riadattata struttura alle nuove norme di progetto",
+    "1.0.0", "2023-11-23", p.favaron, p.rosson, "Stesura e revisione del verbale",
   ),
 )
 
@@ -33,15 +33,15 @@
 - Mezzo tramite: Discord (online)
 
 = Sintesi
-Nella prima parte del meeting siamo rimasti uniti e ci siamo concentrati nel passaggio da latex a typst per la stesura dei documenti di progetto. Il project manager ha indicato le modifiche da lui apportate nella repository e ha spiegato ai restanti membri del gruppo come utilizzare i nuovi strumenti per realizzare documenti migliori e favorire le revisioni. I nuovi processi produttivi verrano implementati nelle norme di progetto il prima possibile, in modo da favorirne la condivisione e conoscenza.
-Successivamente ci siamo divisi per copiare i documenti iniziati con i vecchi strumenti per poi ritrovarci ed effettuare le revisioni, concludento il primo sprint di progetto.\
+Nella prima parte del meeting l'intero gruppo si è concentrato nel passaggio da latex a typst per la stesura dei documenti di progetto. Il project manager ha indicato le modifiche da lui apportate nella repository e ha spiegato ai restanti membri del gruppo come utilizzare i nuovi strumenti per realizzare documenti migliori favorendone le revisioni. I nuovi processi produttivi verrano implementati nelle norme di progetto il prima possibile, in modo da favorirne la condivisione e conoscenza.
+Successivamente il gruppo si è diviso per copiare i documenti iniziati con i vecchi strumenti per riconcigliarsi ed effettuare le revisioni, concludento il primo sprint di progetto.\
 
-Nella seconda parte del meeting ci siamo riorganizzati per il secondo sprint. I ruoli di progetto sono ruotati e abbiamo definito il lavoro per le settimane a venire. Abbiamo discusso di possibili topic, in particolare relativi al POC, da concordare con l'azienda proponente. Nello specifico definire le varie scelte implementative e definire un design, così da iniziare la realizzazione di un walking skeleton del prodotto. Si è creato così un documento "di appunti" che riassume tutte le idee suscitate durante l'incontro per poi discuterne nei giorni seguenti con il proponente. 
+Nella seconda parte del meeting il team si è riorganizzato per il secondo sprint. I ruoli di progetto sono ruotati ed è stato definito il lavoro per le settimane a venire. Si è discusso di vari topic, in particolare relativi al POC, da concordare con l'azienda proponente. Nello specifico definire le varie scelte implementative e definire un design, così da iniziare la realizzazione di un walking skeleton del prodotto. Si è creato così un documento "di appunti" che riassume tutte le idee suscitate durante l'incontro per poi discuterne nei giorni seguenti con il proponente. 
 
 = Obiettivi fissati
-Organizzare meeting con l’azienda Ergon Informatica in base alle disponibilità da loro offerte;\
-Pensare ad eventuali ulteriori domande da porre;\
-Continuare la stesura dei vari documenti di progetto come definito all'inizio del secondo sprint.
+- Organizzare meeting con l’azienda Ergon Informatica in base alle disponibilità da loro offerte;\
+- Pensare ad eventuali ulteriori domande da porre;\
+- Continuare la stesura dei vari documenti di progetto come definito all'inizio del secondo sprint.
 
 = Nuova distribuzione ruolisitca
 #align(

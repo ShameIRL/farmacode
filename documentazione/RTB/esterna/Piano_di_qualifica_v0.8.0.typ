@@ -146,7 +146,8 @@ In particolare andranno verificati:
 #align(center)[Tabella 1: Qualità della documentazione]
 
 === Metriche utilizzate
-#table(
+
+#align(center,table(
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
     x: 5pt,
@@ -162,7 +163,7 @@ In particolare andranno verificati:
   [Indice di Gulpease], 
   [≥ 40],
   [60],
-)
+))
 #align(center)[Tabella 2: Metriche qualità della documentazione]
 #pagebreak()
 
@@ -385,6 +386,79 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 )
 #align(center)[Tabella 8: Metriche processi primari]
 
+*Descrizione: *
+
+- EAC: (Estimated at Completion) indica quanto si prevede che costerà il progetto nel suo complesso, considerando l'andamento attuale e le prestazioni passate del progetto.
+
+Formula: #align(center)[$ = ("BAC" - "EV") / "CPI" + "AC" $]
+dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
+
+- ETC: (Estimate to Complete) indica quanto si prevede che sarà necessario spendere per portare a termine le attività rimanenti e completare con successo il progetto.
+
+Formula: #align(center)[$ = "BAC" - "EV"
+$]
+dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
+
+- EV: (Earned Value) riflette il valore finanziario delle attività che sono state completate con successo fino a un certo punto nel tempo.
+
+Formula: #align(center)[$ = "%dicompletamento" * "BAC"
+$]
+dove "%dicompletamento" rappresenta la percentuale di avanzamento del lavoro rispetto a quello pianificato.
+
+- AC: (Actual Cost) riflette la somma totale di denaro effettivamente speso per eseguire le attività del progetto fino a un punto specifico nel tempo.
+
+- CV: (Cost Variance) indica se il progetto è al di sopra o al di sotto del budget pianificato per il lavoro effettivamente completato.
+
+Formula: #align(center)[$ = "EV" - "AC"
+$]
+
+Dove:
+
+  + Se $"CV">0$, significa che il valore guadagnato è superiore al costo effettivo, indicando che il progetto sta procedendo sotto il budget pianificato.
+
+  + Se $"CV"<0$, significa che il costo effettivo è superiore al valore guadagnato, indicando che il progetto sta superando il budget pianificato.
+
+  + Se $"CV"=0$, significa che il progetto sta rispettando esattamente il budget pianificato fino a quel momento.
+
+- PV: (Planned Value) appresenta il valore pianificato delle attività da svolgere fino a un dato punto nel tempo.
+
+Formula: #align(center)[$ = "%dicompletamento" * "BAC"
+$]
+dove a differenza di quanto detto per EV, BAC è sempre il Budget at Completion, ma in questo contesto rappresenta il valore finanziario delle attività effettivamente completate fino a quel momento.
+
+- SV: (Scheduled Variance) indica se il progetto è in anticipo, in ritardo o in linea rispetto alla pianificazione temporale.
+
+Formula: #align(center)[$ = "EV" - "PV"
+$]
+
+Dove:
+
+  + Se $"SV">0$, significa che il valore guadagnato è superiore al valore pianificato, indicando che il progetto è in anticipo rispetto alla pianificazione temporale.
+
+  + Se $"SV"<0$, significa che il valore guadagnato è inferiore al valore pianificato, indicando che il progetto è in ritardo rispetto alla pianificazione temporale.
+
+  + Se $"SV"=0$, significa che il progetto è in linea con la pianificazione temporale fino a quel momento.
+
+- CPI: (Cost Performance Index) è utile per valutare l'efficienza finanziaria di un progetto fino a un determinato momento.
+
+Formula: #align(center)[$ = "EV" / "AC"
+$]
+
+Dove:
+
+  + Se $"CPI">1$: Indica che il valore guadagnato è superiore al costo effettivo, indicando un'efficienza finanziaria positiva. Più il CPI è alto, più efficientemente il progetto sta utilizzando i suoi budget finanziari.
+
+  + Se $"CPI"<1$: Indica che il costo effettivo è superiore al valore guadagnato, indicando un'efficienza finanziaria negativa. Un CPI inferiore a 1 suggerisce che il progetto sta spendendo più del previsto per il valore ottenuto.
+
+  + Se $"CPI"=1$: Indica che il progetto sta spendendo esattamente ciò che è stato pianificato per ottenere il valore guadagnato.
+
+- RSI: (Requirements Stability Index) indice progettato per misurare la stabilità dei requisiti di un progetto durante il suo ciclo di vita.
+
+Formula: #align(center)[$ = "Numero di requisiti invariati" / "Numero totale di requisiti"
+$]
+
+- SOR: (Satisfied Obligatory Requirements) indice che misura il numero requisiti obbligatori soddisfatti.
+
 === Processi di supporto
 #table(
   columns: (25mm, auto, 35mm, 35mm),
@@ -397,16 +471,16 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   //VERIFICA
   [MPC11],
   [Code Coverage (CC)], 
-  [≥ 80%],
+  [≥ 90%],
   [100%],
   [MPC12], 
   [Passed Tests (PT)], 
-  [≥ 80%],
+  [≥ 90%],
   [100%],
   //ACCERTAMENTO DELLA QUALITA
   [MPC13],
   [Quality Metrics Satisfied (QMS)], 
-  [≥ 75%],
+  [≥ 80%],
   [100%],
   //DOCUMENTAZIONE
   /* [MPC ...],
@@ -419,6 +493,22 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [60-100], */
 )
 #align(center)[Tabella 9: Metriche processi di supporto]
+
+*Descrizione:*
+
+- CC: (Code Covarage) espressa come una percentuale fornisce un'indicazione della quantità di codice che è stata esaminata e verificata rispetto al totale del codice sorgente.
+
+Formula: #align(center)[$ = ("Linee di codice eseguite/testate" / "Totale linee di codice") * 100
+$]
+
+- PT: (Passed Test) espressa come una percentuale fornisce un'indicazione della quantità di test passati in seguito a verifica.
+
+- QMS: (Quality Metrics Satisfied) espressa come una percentuale fornisce un'indicazione della quantità metriche soddisfatte in seguito a verifica.
+
+Formula:
+#align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
+dove: NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte mentre TMQ (Total number of Quality Metrics) è il numero di metriche di qualità totali.
+
 
 === Processi organizzativi
 #table(
@@ -604,7 +694,8 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [*Problema*], [*Rischio associato*], [*Soluzione*],
   [Periodi di malattia all'interno del team che ha portato a dei leggeri cali di performance durante alcuni sprint.], [RP4], [Ridistribuzione del carico di lavoro e maggiore disponibilità nel periodo successivo.],
   [A causa del periodo natalizio e dell'imminente sessione, la performance del team è calata molto con un conseguente calo delle attività di progetto.], [RP4], [Recupero post vacanze aumentando la disponibilità oraria.],
-  [Leggero ritardo nella consegna del dataset da parte dell'azienda.], [ROE2], [Abbiamo dedicato ad uno sprint nella sua quasi interezza la programmazione.],
+  [Leggero ritardo nella consegna del dataset da parte dell'azienda.], [ROE2], [Si è deciso di dare priorità ad altre parti e componenti del codice utilizzando altri dataset similari. Si è esposto il problema al proponente.],
+  [Problemi nella struttura e contenuto del dataset.], [ROE2], [Sono stati realizzati degli script ad hoc per la correzione e pulizia del dataset. Si è esposto il problema al proponente.],
   [Difficoltà iniziali della gestione dei ruoli e dei carichi di lavoro.], [ROI2], [Aggiustamenti nei successivi sprint grazie all'esperienza acquisita dallo sprint precedente e alla comunicazione dei membri.],
   //lasciamo o è da infami? 
 )
@@ -618,10 +709,10 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
     y: 10pt,
   ),
   [*Fase*], [*Ruolo*], [*Problema*], [*Soluzione*],
-  [Sprint 1 - 4], [Project manager], [Inizialmente sono state rilevate delle difficoltà nella gestione e automazione del repository legata anche al fatto che al termine di ogni sprint di progetto veniva cambiato il membro del gruppo che ricopriva questo ruolo.], [Diversi tentativi  e l'unione di più parti hanno portato al raggiungimento di un risultato ottimale. Tuttavia il tempo impiegato è stato maggiore di quanto uno si potesse aspettare.],
-  [Analisi preliminare], [Analista], [Data l'inesperienza dei membri del gruppo in questo ambito è sorto il problema di come individuare i vari requisiti e annessi casi d'uso e come descriverlli al meglio (quanto andare più nel dettaglio)], [Confronto con il proponente per quanto riguarda l'individuazione e confornto con il committente (professor Cardin) per la descrizione.],
-  [Analisi preliminare], [Verificatore], [La distribuzione del lavoro non era uniforme nell'arco della settimana ma concentrata eccessivamente negli ultimi giorni dello sprint.], [Ogni membro del gruppo si occupava di revizionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
-  [Sprint 4], [Programmatore], [Alcuni programmatori si sono trovati in difficoltà dovendo "assemblare" porzioni di codice scritto da altri membri del gruppo.], [Massima disponibilità da parte dei membri che hanno sviluppato l'altra porzione di codice a spiegare hai nuovi programmatori quanto svolto.],
+  [Sprint 1 - 4], [Project manager], [Inizialmente sono state rilevate delle difficoltà nella gestione e automazione del repository legata anche al fatto che al termine di ogni sprint di progetto veniva cambiato il membro del gruppo che ricopriva questo ruolo.], [Diversi tentativi  e l'unione di più parti hanno portato al raggiungimento di un risultato ottimale. Tuttavia il tempo impiegato è stato maggiore rispetto alle attese.],
+  [Analisi preliminare], [Analista], [Data l'inesperienza dei membri del gruppo in questo ambito è sorto il problema di come individuare i vari requisiti e annessi casi d'uso e come descriverlli al meglio (quanto andare più nel dettaglio).], [Confronto con il proponente per quanto riguarda l'individuazione e confornto con il committente (professor Cardin) per la descrizione.],
+  [Analisi preliminare], [Verificatore], [La distribuzione del lavoro non era uniforme nell'arco della settimana ma concentrata eccessivamente negli ultimi giorni dello sprint.], [Ogni membro del gruppo si occupava di revisionare una parte del lavoro degli altri componenti in modo da dividersi il carico di lavoro e rimanere costantemente aggiornati su ogni aspetto del progetto.],
+  [Sprint 4], [Programmatore], [Alcuni programmatori si sono trovati in difficoltà dovendo "assemblare" porzioni di codice scritto da altri membri del gruppo.], [Massima disponibilità da parte dei membri che hanno sviluppato l'altra porzione di codice nello spiegare hai nuovi programmatori quanto svolto.],
   /*
   [], [Amministratore], [Scelta delle tecnologie da utilizzare.], [Confronto con il proponente e studio individuale di membri del gruppo.],
   [], [Progettista], [Interazione algoritmo, api, database e webapp.], [Studio individuale dei membri del gruppo e interpretazione capitolato d'appalto],
@@ -633,7 +724,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 
 = Controllo delle metriche
 == QMS - Quality Metrics Satisfied
-Sotto riportata una formula per calcolare la percentuale delle metriche soddisfatte:
+Sotto riportata la formula utilizzata per calcolare la percentuale delle metriche soddisfatte:
 #align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
 Dove:
 - NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte;
@@ -678,6 +769,20 @@ I documenti sono stati convertiti in file di testo e successivamente calcolati d
 La metrica che si occupa della correttezza ortografica (MPD1) ha dato come risultato un valore nullo.
 #align(center)[$ "EO"=0 $]
 Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di software per l'individuazione di errori ortografici, si stima un valore quasi nullo di essi. Viene stimata una correttezza del 100% e non assicurata poichè nonostante la minuziosità dei controlli e l'esecuzione dei test è possibile ci siano comunque artefatti riguardanti l'ortografia.
+
+== EAC - Estimated at Completion
+
+== AC e ETC - Actual Cost e Estimate to Complete
+
+== EV e PV - Earned Value e Planned Value 
+
+== CV - Cost Variance
+
+== SV - Schedule Variance
+
+
+
+
 
 #pagebreak()
 

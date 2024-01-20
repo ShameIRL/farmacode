@@ -1,12 +1,12 @@
 #import "/template/verbals.typ": *
 
 #show: project.with(
-  title: "Verbale interno del meeting in data 11/12/2023",
+  title: "Verbale interno del meeting in data 2023/12/11",
   recipients: (
     
   ),
   changelog: (
-    "1.0.0", "11-12-2023", p.rosson, p.baggio, "Stesura del verbale",
+    "1.0.0", "2023-12-11", p.rosson, p.baggio, "Stesura del verbale",
   ),
 )
 
@@ -36,13 +36,12 @@ Il meeting è iniziato come di consueto con una scaletta di quanto stato fatto d
 - API e hosting del prodotto.
 In riferimento a questo ultimo punto si riportano le decisioni concordate: \
 In modo da non dipendere dall'attesa dell'ambiente che l'azienda ci fornirà, si è pensato di procedere con lo sviluppo utilizzando un servizio di hosting in locale, quali XAMPP o MAMP a seconda del sistema operativo, andando a creare delle API di tipo rest, in modo da integrare le varie parti del software così da concludere una vera e propria versione del PoC.
-Successivamente si è discusso della prossima pianificazione e relativa distribuzione di ruoli e attività. Decidendo di spostare la priorità dal codice, prossimo al suo completamento, alla documentazione, in alcune parti ancora carente. Infine, si è insieme deciso di fissare un incontro con il #p.cardin in merito all'analisi dei requisiti.
-
+Successivamente si è discusso della prossima pianificazione e relativa distribuzione di ruoli e attività. Decidendo di spostare la priorità dal codice, prossimo al suo completamento, alla documentazione, in alcune parti ancora carente. Infine, si è insieme deciso di fissare un incontro con il #p.cardin in merito alla documentazione utile all'analisi dei requisiti.
 
 = Obiettivi fissati
-Completamento del PoC; \
-Fissare un incontro con il #p.cardin; \
-Avanzare con i lavori di documentazione. 
+- Completamento del PoC; \
+- Fissare un incontro con il #p.cardin; \
+- Avanzare con i lavori di documentazione. 
 
 = Nuova distribuzione ruolisitca
 #align(

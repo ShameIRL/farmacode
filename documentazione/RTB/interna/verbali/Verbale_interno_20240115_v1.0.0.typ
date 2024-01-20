@@ -34,7 +34,7 @@ Il meeting è iniziato con la solita retrospettiva dello sprint precedente, disc
 Successivamente si è discusso di una possibile data per l'RTB (considerando il periodo di esami) e delle mancanze da completare in vista di esso.\
 I punti critici su cui concentrare gli sforzi del gruppo sono il documento Piano di Qualifica, il Glossario e la pagina di presentazione del repo. 
 Si è discusso sul tracciamento delle ore lavorative assegnate a ciascun ruolo, in particolare all'assegnazione di determinati ruoli ai membri che hanno svolto meno ore in quel ruolo.\
-La riunione si è conclusa assegnando i ruoli del nuovo sprint, i ruoli decisi sono riportati nella tabella della sezione 4 di questo documento, e delle varie attività da svolgere per ogni componente del gruppo di progetto.
+La riunione si è conclusa assegnando i ruoli del nuovo sprint. I ruoli decisi sono riportati nella tabella della sezione 4 di questo documento, e delle varie attività da svolgere per ogni componente del gruppo di progetto.
 
 
 

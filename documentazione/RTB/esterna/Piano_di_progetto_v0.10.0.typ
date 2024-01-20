@@ -1158,13 +1158,13 @@ Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [3], [], [], [2], [],
-  [Bomben F.], [], [], [], [2], [], [3],
-  [Carraro A.], [], [3], [], [], [3], [],
-  [Favaron R.], [], [], [], [2], [1], [],
-  [Pandolfo M.], [5], [], [], [], [1], [],
-  [Passarella A.], [], [2], [], [1], [1], [],
-  [Rosson L.], [], [], [1], [], [], [3],
+  [Baggio M.], [], [], [], [], [], [],
+  [Bomben F.], [], [], [], [], [], [],
+  [Carraro A.], [], [], [], [], [], [],
+  [Favaron R.], [], [], [], [], [], [],
+  [Pandolfo M.], [], [], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [],
+  [Rosson L.], [], [], [], [], [], [],
 )
 ])
 
@@ -1176,20 +1176,20 @@ Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [5], [8], [1], [5], [8], [6],
+  [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€150,00], [€200,00], [€25,00], [€100,00], [€120,00], [€90,00],
-  [Totale], [], [], [], [], [], [*€685,00*], 
+  [Costo], [], [], [], [], [], [],
+  [Totale], [], [], [], [], [], [], 
 )
 ])
 
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#7.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.7]
-  )
+// #align(left,
+// figure(
+//   image("/imgs/PdP/graphs/preventivi/sprint#7.png", height: 20%, width: auto),
+//   caption: [preventivi/sprint.7]
+//   )
   
-)
+// )
 
 - Spiegazione:
 Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore vengono distribuite in modo equo, includendo per la prima volta anche il ruolo di progettista.
@@ -1203,13 +1203,13 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [3#red("(+1)")], [], [], [2], [],
-  [Bomben F.], [], [], [], [2#red("(+1)")], [], [3],
-  [Carraro A.], [], [3#red("(+1)")], [], [], [3#green("(-1)")], [],
-  [Favaron R.], [], [], [], [2#red("(+1)")], [1], [],
-  [Pandolfo M.], [5#green("(-1)")], [], [], [], [1], [],
-  [Passarella A.], [], [2#red("(+1)")], [], [1], [1], [],
-  [Rosson L.], [], [], [1], [], [], [3#red("(+1)")],
+  [Baggio M.], [], [], [], [], [], [],
+  [Bomben F.], [], [], [], [], [], [],
+  [Carraro A.], [], [], [], [], [], [],
+  [Favaron R.], [], [], [], [], [], [],
+  [Pandolfo M.], [], [], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [],
+  [Rosson L.], [], [], [], [], [], [],
 )
 ])
 
@@ -1221,134 +1221,134 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [#green("4")], [#red("11")], [1], [#red("7")], [#green("7")], [#red("7")],
+  [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€120,00")], [#red("275,00")], [€25,00], [#red("140,00")], [#green("€105,00")], [#red("€105,00")],
-  [Totale], [], [], [], [], [], [€770,00], 
-  [Bilancio], [], [], [], [], [], [€8765,00],
+  [Costo], [], [], [], [], [], [],
+  [Totale], [], [], [], [], [], [], 
+  [Bilancio], [], [], [], [], [], [],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#7.png", height: 15%, width: auto),    
-  caption: [consuntivi/scarti/sprint.7]
-)
+// #figure(
+//   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#7.png", height: 15%, width: auto),    
+//   caption: [consuntivi/scarti/sprint.7]
+// )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#7.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.7]
-)
+// #figure(
+//   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#7.png", height: 30%, width: auto),
+//   caption: [consuntivi/bilanci/sprint.7]
+// )
 
 == PB
 
 === sprint.8
-- Preventivo:
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [4], [2], [], [], [], [],
-  [Bomben F.], [], [], [], [], [1], [5],
-  [Carraro A.], [], [2], [], [1], [], [],
-  [Favaron R.], [], [], [], [], [2], [3],
-  [Pandolfo M.], [], [], [], [], [2], [3],
-  [Passarella A.], [], [], [2], [], [4], [],
-  [Rosson L.], [], [], [], [], [1], [5],
-)
-])
+// - Preventivo:
+// #align(center, text(0.85em)[
+// #table(
+//   fill: (col, row) => 
+//     if row == 0 and col == 0 { rgb("#c33435") }
+//     else if calc.odd(row) { luma(215) } else { white },
+//   columns: (auto,)*7,
+//   align: center,
+//   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+//   [Baggio M.], [4], [2], [], [], [], [],
+//   [Bomben F.], [], [], [], [], [1], [5],
+//   [Carraro A.], [], [2], [], [1], [], [],
+//   [Favaron R.], [], [], [], [], [2], [3],
+//   [Pandolfo M.], [], [], [], [], [2], [3],
+//   [Passarella A.], [], [], [2], [], [4], [],
+//   [Rosson L.], [], [], [], [], [1], [5],
+// )
+// ])
 
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [4], [2], [1], [10], [16],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€100,00], [€50,00], [€20,00], [€150,00], [€240,00],
-  [Totale], [], [], [], [], [], [*€240,00*], 
+// #align(center, text(0.85em)[
+// #table(
+//   fill: (col, row) => 
+//     if row == 0 and col == 0 { rgb("#c33435") }
+//     else if calc.odd(row) { luma(215) } else { white },
+//   columns: (auto,)*7,
+//   align: center,
+//   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+//   [Totale Ore], [4], [4], [2], [1], [10], [16],
+//   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
+//   [Costo], [€120,00], [€100,00], [€50,00], [€20,00], [€150,00], [€240,00],
+//   [Totale], [], [], [], [], [], [*€240,00*], 
 
-)
-])
+// )
+// ])
 
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#8.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.8]
-  )
+// #align(left,
+// figure(
+//   image("/imgs/PdP/graphs/preventivi/sprint#8.png", height: 20%, width: auto),
+//   caption: [preventivi/sprint.8]
+//   )
   
-)
+// )
 
-- Spiegazione:
-Il preventivo per questo sprint prevede uno spostamento della priporità del team verso le attività di progettazione, ritenute di fondamentale importanza all'inizio del periodo di PB, analogamente a quanto pensato per le attività di Analisi dei requisiti durante la fase di RTB.
+// - Spiegazione:
+// Il preventivo per questo sprint prevede uno spostamento della priporità del team verso le attività di progettazione, ritenute di fondamentale importanza all'inizio del periodo di PB, analogamente a quanto pensato per le attività di Analisi dei requisiti durante la fase di RTB.
 
-- Consuntivo:
-nd.
+// - Consuntivo:
+// nd.
 
 === sprint.9
-- Preventivo:
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [4], [2], [], [], [], [],
-  [Bomben F.], [], [], [], [], [1], [5],
-  [Carraro A.], [], [2], [], [1], [], [],
-  [Favaron R.], [], [], [], [], [2], [3],
-  [Pandolfo M.], [], [], [], [], [2], [3],
-  [Passarella A.], [], [], [2], [], [4], [],
-  [Rosson L.], [], [], [], [], [1], [5],
-)
-])
+// - Preventivo:
+// #align(center, text(0.85em)[
+// #table(
+//   fill: (col, row) => 
+//     if row == 0 and col == 0 { rgb("#c33435") }
+//     else if calc.odd(row) { luma(215) } else { white },
+//   columns: (auto,)*7,
+//   align: center,
+//   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+//   [Baggio M.], [4], [2], [], [], [], [],
+//   [Bomben F.], [], [], [], [], [1], [5],
+//   [Carraro A.], [], [2], [], [1], [], [],
+//   [Favaron R.], [], [], [], [], [2], [3],
+//   [Pandolfo M.], [], [], [], [], [2], [3],
+//   [Passarella A.], [], [], [2], [], [4], [],
+//   [Rosson L.], [], [], [], [], [1], [5],
+// )
+// ])
 
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [4], [2], [1], [10], [16],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€100,00], [€50,00], [€20,00], [€150,00], [€240,00],
-  [Totale], [], [], [], [], [], [*€240,00*], 
+// #align(center, text(0.85em)[
+// #table(
+//   fill: (col, row) => 
+//     if row == 0 and col == 0 { rgb("#c33435") }
+//     else if calc.odd(row) { luma(215) } else { white },
+//   columns: (auto,)*7,
+//   align: center,
+//   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+//   [Totale Ore], [4], [4], [2], [1], [10], [16],
+//   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
+//   [Costo], [€120,00], [€100,00], [€50,00], [€20,00], [€150,00], [€240,00],
+//   [Totale], [], [], [], [], [], [*€240,00*], 
 
-)
-])
+// )
+// ])
 
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#9.png", height: auto, width: auto),
-  caption: [preventivi/sprint.9]
-  )
+// #align(left,
+// figure(
+//   image("/imgs/PdP/tables/preventivi/sprint#9.png", height: auto, width: auto),
+//   caption: [preventivi/sprint.9]
+//   )
   
-)
+// )
 
 
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#9.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.9]
-  )
+// #align(left,
+// figure(
+//   image("/imgs/PdP/graphs/preventivi/sprint#9.png", height: 20%, width: auto),
+//   caption: [preventivi/sprint.9]
+//   )
   
-)
+// )
 
-- Spiegazione:
-In questo sprint si prevede un avanzamento stabile dei lavori di progettazione, seguiti parallelamente dalle prime attività di codifica che ne verifichino la solidità nel concreto.
+// - Spiegazione:
+// In questo sprint si prevede un avanzamento stabile dei lavori di progettazione, seguiti parallelamente dalle prime attività di codifica che ne verifichino la solidità nel concreto.
 
-- Consuntivo:
-nd.
+// - Consuntivo:
+// nd.
 
 === sprint.10
 /*

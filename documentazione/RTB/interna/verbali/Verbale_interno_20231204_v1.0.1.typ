@@ -1,13 +1,13 @@
 #import "/template/verbals.typ": *
 
 #show: project.with(
-  title: "Verbale interno del meeting in data 04/12/2023",
+  title: "Verbale interno del meeting in data 2023/12/04",
   recipients: (
     
   ),
   changelog: (
-    "1.0.1", "11-12-2023", p.rosson, p.baggio, "Riadattata struttura alle nuove norme di progetto",
-    "1.0.0", "29-11-2023", p.bomben, p.rosson, "Stesura del verbale",
+    "1.0.1", "2023-12-11", p.rosson, p.baggio, "Riadattata struttura alle nuove norme di progetto",
+    "1.0.0", "2023-12-04", p.bomben, p.rosson, "Stesura del verbale",
   ),
 )
 
@@ -34,17 +34,15 @@
 
 = Sintesi
 Il meeting ha preso avvio con una panoramica del progresso compiuto dal gruppo, durante la quale ciascun partecipante ha presentato le attività portate a termine nel corso del secondo sprint, focalizzandosi sul proprio ruolo assegnato.\
-Successivamente abbiamo concluso definitivamente lo sprint per iniziare con la pianificazione del successivo, sono stati quindi assegnati ai componenti del gruppo i ruoli per la nuova settimana. \
+Successivamente si è concluso definitivamente lo sprint per iniziare con la pianificazione del successivo, sono stati quindi assegnati ai componenti del gruppo i ruoli per la nuova settimana. \
 E' stato deciso di incrementare il numero di programmatori in maniera da velocizzare lo sviluppo di una prima versione del POC.\
-I componenti del gruppo addetti al ruolo di "Programmatore" nello sprint precedente hanno mostrato il lavoro svolto da loro, in maniera da aggiornare il gruppo
-e discutere meglio in che direzione proseguire fino allo sprint successivo. \
-Si è inoltre deciso di fissare un meeting con l'azienda, in modo da discutere di alcune difficolà incontrate che riguardano sopratutto le tecnologie per lo sviluppo in locale e l'implementazione del sistema di raccomandazione
-sulla Web App.
+I componenti del gruppo addetti al ruolo di "Programmatore" nello sprint precedente hanno mostrato il lavoro svolto da loro, in maniera da aggiornare il gruppo per discutere meglio in che direzione proseguire fino allo sprint successivo. \
+Si è inoltre deciso di fissare un meeting con l'azienda, in modo da discutere di alcune difficolà incontrate che riguardano sopratutto le tecnologie per lo sviluppo in locale e l'implementazione del sistema di raccomandazione sulla Web App.
 
 = Obiettivi fissati
-Gli obiettivi fissati sono quelli di:\
-Riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo;\
-Fissare un meeting con l'azienda per esporre e discutere quanto svolto.
+- Gli obiettivi fissati sono quelli di:\
+- Riuscire a finire l'algoritmo di raccomandazione per il POC, senza implementarlo;\
+- Fissare un meeting con l'azienda per esporre e discutere quanto svolto.
 
 = Nuova distribuzione ruolisitca
 #align(

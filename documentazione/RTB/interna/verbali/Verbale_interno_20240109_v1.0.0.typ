@@ -37,8 +37,7 @@ Successivamente è stato fatto un recap sulle mancanze e criticità della docume
 Gli elementi più cirtici che necessitano più spazio risultano essere, il documento Piano di Qualifica, il Glossario e il Piano di Progetto. 
 E' stato discusso anche delle migliorie da apportare agli altri documenti, quali Analisi dei Requisiti e Norme di Progetto, al codice e alla repository.\
 Abbiamo quindi fatto una pianificazione più fitta dei lavori da fare in modo da recuperare il periodo a cavallo del vecchio e nuovo anno che è risultato meno produttivo.\
-La riunione si è conclusa decidendo i ruoli del nuovo sprint, i ruoli decisi sono riportati nella tabella della sezione 4 di questo documento, e delle varie attività da svolgere per ogni componente del gruppo di progetto.
-
+La riunione si è conclusa con l'assegnazione dei ruoli per lo sprint. I ruoli decisi sono riportati nella tabella della sezione 4 di questo documento, e delle varie attività da svolgere per ogni componente del gruppo di progetto.
 
 
 = Obiettivi fissati
@@ -55,10 +54,10 @@ table(
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Ruolo*],[*Nome e cognome*],
   [Responsabile],[#p.pandolfo],
-  [Analista],[#p.rosson],
+  [Analista],[#p.bomben],
   [Analista],[#p.baggio],
   [Amministratore],[#p.passarella],
-  [Amministratore],[#p.carraro],
-  [Amministratore],[#p.bomben],
-  [Verificatore],[#p.favaron],
+  [Amministratore],[#p.favaron],
+  [Amministratore],[#p.rosson],
+  [Verificatore],[#p.carraro],
 ),center)
