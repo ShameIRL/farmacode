@@ -132,10 +132,10 @@ Il sistema dispone di due attori:
 - UC2 - Visualizzazione alert di manutenzione;
 - UC3 - Visualizzazione errore di login.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- Admin/User:
+- Attori:\
+  Admin --> User.
+- Use Case:\
+  Admin/User:
   - UC1.1 - Inserimento username;
   - UC1.2 - Inserimento password.
 
@@ -201,8 +201,8 @@ Il sistema dispone di due attori:
     - verifica lo stato dei servizi;
     - mostra l'alert informativo.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
+- Attori:
+  - Admin --> User.
 
 === UC3 - Visualizzazione errore di login
 *Attori:*
@@ -223,8 +223,8 @@ Il sistema dispone di due attori:
     - verifica le credenziali immesse dall'utente nei relativi campi (username, password);
     - se il sistema rileva le credenziali come non corrette, mostra il messaggio di errore di login.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
+- Attori:
+  - Admin --> User.
 #pagebreak()
 === UC4 - Avviso normativa sui Cookies
 #figure(
@@ -252,12 +252,12 @@ Il sistema dispone di due attori:
   - prende a conoscenza che l'utente ha accettato la normativa e l'utilizzo di cookies (UC4.2);
   - fa sparire l'avviso una volta presa conoscenza dell'accettazione della normativa sui cookies.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- Admin/User:
-  - UC4.1 - Visualizzazione normativa sui cookies;
-  - UC4.2 - Accettazione normativa sui cookies.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - Admin/User:
+    - UC4.1 - Visualizzazione normativa sui cookies;
+    - UC4.2 - Accettazione normativa sui cookies.
 #pagebreak()
 ==== UC4.1 - Visualizzazione normativa sui cookies
 *Attori:*
@@ -311,13 +311,13 @@ Il sistema dispone di due attori:
     - mostra all'utente i bottoni relativi alle funzionalità della sua categoria;
     - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- Admin/User:
-  - UC5.1 - Visualizzazione funzionalità Admin/User.
-- Admin:
-  - UC5.2 - Visualizzazione funzionalità Admin.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - Admin/User:
+    - UC5.1 - Visualizzazione funzionalità Admin/User.
+  - Admin:
+    - UC5.2 - Visualizzazione funzionalità Admin.
 #pagebreak()
 ==== UC5.1 - Visualizzazione funzionalità Admin/User
 #figure(
@@ -342,13 +342,13 @@ Il sistema dispone di due attori:
   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC5.1.1 - Selezione opzione "Ricerca"
-- UC5.1.2 - Selezione opzione "Catalogo Prodotti"
-- UC5.1.3 - Selezione opzione "Lista Clienti"
-- UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC5.1.1 - Selezione opzione "Ricerca"
+  - UC5.1.2 - Selezione opzione "Catalogo Prodotti"
+  - UC5.1.3 - Selezione opzione "Lista Clienti"
+  - UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
 
 #pagebreak()
 ===== UC5.1.1 - Selezione opzione "Ricerca"
@@ -430,7 +430,7 @@ Il sistema dispone di due attori:
 )
 *Attori:*
 - Admin.
-- *Precondizioni:*
+*Precondizioni:*
 - L'utente sta visualizzando le opzioni del menù;
 - L'utente fa parte della categoria Admin.
 *Postcondizioni:*
@@ -444,9 +444,9 @@ Il sistema dispone di due attori:
   - mostra all'utente i bottoni relativi alle funzionalità della categoria Admin;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 *Generalizzazioni:*
-- *Use Case:*
-- UC5.2.1 - Selezione opzione "Cronologia Ricerce"
-- UC5.2.2 - Selezione opzione "Cronologia Feedback"
+- Use Case:
+  - UC5.2.1 - Selezione opzione "Cronologia Ricerce"
+  - UC5.2.2 - Selezione opzione "Cronologia Feedback"
 
 #pagebreak()
 ===== UC5.2.1 - Selezione opzione "Cronologia Ricerce"
@@ -509,11 +509,11 @@ Il sistema dispone di due attori:
   - mostra all'utente i suoi dati, permettendogli di visualizzare le sue informazioni (UC6.1);
   - fornisce all'utente la possibilità di modificare alcuni dati non strettamente legati ad esso, ovvero password ed email (UC6.2).
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC6.1 - Visualizzazione dati utente;
-- UC6.2 - Modifica dati utente.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC6.1 - Visualizzazione dati utente;
+  - UC6.2 - Modifica dati utente.
 
 // da cambiare il diagramma, vanno divisi i sotto UC
 
@@ -540,13 +540,13 @@ Il sistema dispone di due attori:
   - mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC6.1.1, UC6.1.2, UC6.1.3);
   - se richiesto mostra all'utente i dati nascosti, ovvero la password (UC6.1.4).
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC6.1.1 - Visualizzazione anagrafica;
-- UC6.1.2 - Visualizzazione email;
-- UC6.1.3 - Visualizzazione username;
-- UC6.1.4 - Visualizzazione password.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC6.1.1 - Visualizzazione anagrafica;
+  - UC6.1.2 - Visualizzazione email;
+  - UC6.1.3 - Visualizzazione username;
+  - UC6.1.4 - Visualizzazione password.
 
 #pagebreak()
 ===== Sotto-UC UC6.1 
@@ -653,11 +653,11 @@ Il sistema dispone di due attori:
   - se i nuovi dati vengono confermati, sostituisce i vecchi dati con i nuovi dati all'interno del sistema e li salva;
   - se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC6.2.1 - Modifica email;
-- UC6.2.2 - Modifica password.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC6.2.1 - Modifica email;
+  - UC6.2.2 - Modifica password.
 
 #pagebreak()
 ===== UC6.2.1 - Modifica email
@@ -731,9 +731,9 @@ Il sistema dispone di due attori:
   - prende a conoscenza la decisione dell'utente di voler uscire dalla piattaforma;
   - rimuove i cookie di sessione relativi all'utente;
   - reindirizza l'utente alla pagina di login della piattaforma.
-*Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
+*Generalizzazioni:*\
+- Attori:
+  - Admin --> User.
 
 #pagebreak()
 === UC8 - Visualizzazione vista "Ricerca"
@@ -762,11 +762,11 @@ Il sistema dispone di due attori:
   - mostra all'utente la funzionalità di ricerca;
   - fornisce all'utente la possibilità di effettuare una ricerca (UC8.1) e di visualizzarne i risultati (UC8.2).
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC8.1 - Ricerca per vista "Ricerca";
-- UC8.2 - Visualizzazione lista risultati.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC8.1 - Ricerca per vista "Ricerca";
+  - UC8.2 - Visualizzazione lista risultati.
 
 #pagebreak()
 ==== UC8.1 - Ricerca per vista "Ricerca"
@@ -798,11 +798,11 @@ Il sistema dispone di due attori:
   - riceve tramite API una risposta dal software;
   - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC8.1.1 - Compilazione campi ricerca.
-- UC8.1.2 - Avvio ricerca.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC8.1.1 - Compilazione campi ricerca.
+  - UC8.1.2 - Avvio ricerca.
 
 #pagebreak()
 ===== UC8.1.1 - Compilazione campi ricerca
@@ -822,13 +822,13 @@ Il sistema dispone di due attori:
   - se l'utente seleziona una ricerca dalla cronologia (UC8.1.1.4), modifica i campi della ricerca in modo pertinente;
   - memorizza i dati inseriti nei campi della barra di ricerca (UC8.1.1);
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC8.1.1.1 - Scelta input "Topic";
-- UC8.1.1.2 - Completamento input "Nome Topic";
-- UC8.1.1.3 - Scelta input "Top N";
-- UC8.1.1.4 - Selezione input "Cronologia";
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC8.1.1.1 - Scelta input "Topic";
+  - UC8.1.1.2 - Completamento input "Nome Topic";
+  - UC8.1.1.3 - Scelta input "Top N";
+  - UC8.1.1.4 - Selezione input "Cronologia";
 
 #pagebreak()
 ===== Sotto-UC UC8.1.1 
@@ -987,10 +987,10 @@ Il sistema dispone di due attori:
 - UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC8.2.1 - Visualizzazione dettagli singolo "Risultato".
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC8.2.1 - Visualizzazione dettagli singolo "Risultato".
 
 ===== UC8.2.1 - Visualizzazione dettagli singolo "Risultato"
 #figure(
@@ -1011,13 +1011,13 @@ Il sistema dispone di due attori:
   - osserva un risultato della sua ricerca tra i vari mostrati.
 #pagebreak()
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC8.2.1.1 - Visualizzazione "ID" risultato;
-- UC8.2.1.2 - Visualizzazione "Nome" risultato;
-- UC8.2.1.3 - Visualizzazione "Score" risultato;
-- UC8.2.1.4 - Visualizzazione bottone "Inserimento Feedback".
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC8.2.1.1 - Visualizzazione "ID" risultato;
+  - UC8.2.1.2 - Visualizzazione "Nome" risultato;
+  - UC8.2.1.3 - Visualizzazione "Score" risultato;
+  - UC8.2.1.4 - Visualizzazione bottone "Inserimento Feedback".
 
 ====== Sotto-UC UC8.2.1 
 #figure(
@@ -1104,11 +1104,11 @@ Il sistema dispone di due attori:
   - se l'utente conferma l'intenzione di inserire il feedback, salva i dati inseriti nel database;
   - se l'utente non conferma l'intenzione di inserire il feedback, termina la visualizzazione della funzionalità di feedback.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC9.1 - Completamento input;
-- UC9.2 - Conferma inserimento feedback.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC9.1 - Completamento input;
+  - UC9.2 - Conferma inserimento feedback.
 
 #pagebreak()
 ==== UC9.1 - Completamento input
@@ -1132,11 +1132,11 @@ Il sistema dispone di due attori:
   - se l'utente compila uno dei campi con un nuovo dato, verifica che sia nel formato corretto e memorizza il nuovo dato inserito e lo mostra all'utente;
   - se l'utente non compila i campi con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC9.1.1 - Completamento input "Valutazione";
-- UC9.1.2 - Completamento input "Commento".
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC9.1.1 - Completamento input "Valutazione";
+  - UC9.1.2 - Completamento input "Commento".
 
 #pagebreak()
 ===== Sotto-UC UC9.1
@@ -1240,11 +1240,11 @@ Il sistema dispone di due attori:
   - fornisce all'utente la possibilità di effettuare una ricerca (UC10.1) e di visualizzarne i risultati;
   - mostra all'utente la lista dei prodotti(UC10.2).
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC10.1 - Ricerca per vista "Catalogo Prodotti";
-- UC10.2 - Visualizzazione lista prodotti.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC10.1 - Ricerca per vista "Catalogo Prodotti";
+  - UC10.2 - Visualizzazione lista prodotti.
 
 #pagebreak()
 ==== UC10.1 - Ricerca per vista "Catalogo Prodotti"
@@ -1276,11 +1276,11 @@ Il sistema dispone di due attori:
   - riceve tramite API una risposta dal software;
   - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC10.1.1 - Compilazione campi ricerca.
-- UC10.1.2 - Avvio ricerca.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC10.1.1 - Compilazione campi ricerca.
+  - UC10.1.2 - Avvio ricerca.
 
 #pagebreak()
 ===== UC10.1.1 - Compilazione campi ricerca
@@ -1299,13 +1299,13 @@ Il sistema dispone di due attori:
 - Sistema:
   - memorizza i dati inseriti nei campi della barra di ricerca (UC10.1.1);
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC10.1.1.1 - Completamento input "Codice Prodotto";
-- UC10.1.1.2 - Selezione input "Linea Commerciale";
-- UC10.1.1.3 - Completamento input "Settore Commerciale";
-- UC10.1.1.4 - Completamento input "Marca Prodotto";
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC10.1.1.1 - Completamento input "Codice Prodotto";
+  - UC10.1.1.2 - Selezione input "Linea Commerciale";
+  - UC10.1.1.3 - Completamento input "Settore Commerciale";
+  - UC10.1.1.4 - Completamento input "Marca Prodotto";
 // - UC10.1.1.5 - Selezione input "Provenienza Prodotto";
 
 #pagebreak()
@@ -1475,10 +1475,10 @@ Il sistema dispone di due attori:
 - UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC10.2.1 - Visualizzazione dettagli singolo "Prodotto".
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC10.2.1 - Visualizzazione dettagli singolo "Prodotto".
 
 #pagebreak()
 ===== UC10.2.1 - Visualizzazione informazioni singolo "Prodotto"
@@ -1500,13 +1500,13 @@ Il sistema dispone di due attori:
 - Admin/User:
   - osserva un prodotto della lista tra i vari mostrati.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC10.2.1.1 - Visualizzazione "Immagine" prodotto;
-- UC10.2.1.2 - Visualizzazione "ID" prodotto;
-- UC10.2.1.3 - Visualizzazione "Nome" prodotto;
-- UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC10.2.1.1 - Visualizzazione "Immagine" prodotto;
+  - UC10.2.1.2 - Visualizzazione "ID" prodotto;
+  - UC10.2.1.3 - Visualizzazione "Nome" prodotto;
+  - UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
 
 #pagebreak()
 ====== Sotto-UC UC10.2.1 
@@ -1567,7 +1567,6 @@ Il sistema dispone di due attori:
   - L'utente visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-  - Admin/User:
     - visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
 
 #pagebreak()
@@ -1592,16 +1591,16 @@ Il sistema dispone di due attori:
 - Sistema: 
   - mostra i dettagli del corrispondente prodotto all'utente.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC11.1 - Visualizzazione "Immagine" prodotto;
-- UC11.2 - Visualizzazione "ID" prodotto;
-- UC11.3 - Visualizzazione "Nome" prodotto;
-- UC11.4 - Visualizzazione "Linea Commerciale" prodotto;
-- UC11.5 - Visualizzazione "Settore Commerciale" prodotto;
-- UC11.6 - Visualizzazione "Marca" prodotto;
-- UC11.7 - Visualizzazione "Provenienza" prodotto;
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC11.1 - Visualizzazione "Immagine" prodotto;
+  - UC11.2 - Visualizzazione "ID" prodotto;
+  - UC11.3 - Visualizzazione "Nome" prodotto;
+  - UC11.4 - Visualizzazione "Linea Commerciale" prodotto;
+  - UC11.5 - Visualizzazione "Settore Commerciale" prodotto;
+  - UC11.6 - Visualizzazione "Marca" prodotto;
+  - UC11.7 - Visualizzazione "Provenienza" prodotto;
 
 #pagebreak()
 ==== Sotto-UC UC11
@@ -1733,11 +1732,11 @@ Il sistema dispone di due attori:
   - fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
   - mostra all'utente la lista dei clienti (UC12.1).
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC12.1 - Ricerca per vista "Lista Clienti";
-- UC12.2 - Visualizzazione lista clienti.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC12.1 - Ricerca per vista "Lista Clienti";
+  - UC12.2 - Visualizzazione lista clienti.
 
 #pagebreak()
 ==== UC12.1 - Ricerca per vista "Lista Clienti";
@@ -1769,11 +1768,11 @@ Il sistema dispone di due attori:
   - riceve tramite API una risposta dal software;
   - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC12.1.1 - Compilazione campi ricerca.
-- UC12.1.2 - Avvio ricerca.
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC12.1.1 - Compilazione campi ricerca.
+  - UC12.1.2 - Avvio ricerca.
 
 #pagebreak()
 ===== UC12.1.1 - Compilazione campi ricerca
@@ -1792,12 +1791,12 @@ Il sistema dispone di due attori:
 - Sistema:
   - memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC12.1.1.1 - Completamento input "Nome";
-- UC12.1.1.2 - Completamento input "Cognome";
-- UC12.1.1.3 - Selezione input "Provincia";
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC12.1.1.1 - Completamento input "Nome";
+  - UC12.1.1.2 - Completamento input "Cognome";
+  - UC12.1.1.3 - Selezione input "Provincia";
 
 #pagebreak()
 ===== Sotto-UC UC12.1.1 
@@ -1936,10 +1935,10 @@ Il sistema dispone di due attori:
 - UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC12.2.1 - Visualizzazione dettagli singolo "Cliente".
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC12.2.1 - Visualizzazione dettagli singolo "Cliente".
 
 #pagebreak()
 ===== UC12.2.1 - Visualizzazione dettagli singolo "Cliente"
@@ -1961,13 +1960,13 @@ Il sistema dispone di due attori:
 - Admin/User:
   - osserva un cliente della lista tra i vari mostrati.
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use Case:*
-- UC12.2.1.1 - Visualizzazione "ID" cliente;
-- UC12.2.1.2 - Visualizzazione "Nome" cliente;
-- UC12.2.1.1 - Visualizzazione "Cognome" cliente;
-- UC12.2.1.4 - Visualizzazione "Provincia" cliente;
+- Attori:
+  - Admin --> User.
+- Use Case:
+  - UC12.2.1.1 - Visualizzazione "ID" cliente;
+  - UC12.2.1.2 - Visualizzazione "Nome" cliente;
+  - UC12.2.1.1 - Visualizzazione "Cognome" cliente;
+  - UC12.2.1.4 - Visualizzazione "Provincia" cliente;
 
 #pagebreak()
 ====== Sotto-UC UC12.2.1 
@@ -2058,11 +2057,11 @@ Il sistema dispone di due attori:
 - Sistema:
   - mostra all'utente la funzionalità di vista statistiche mensili;
 *Generalizzazioni:*
-- *Attori:*
-- Admin --> User.
-- *Use CAse:*
-- UC13.1 - Visualizzazione "Grafico"
-- UC13.2 - Visualizzazione "Raccomandazioni utili"
+- Attori:
+  - Admin --> User.
+- Use CAse:
+  - UC13.1 - Visualizzazione "Grafico"
+  - UC13.2 - Visualizzazione "Raccomandazioni utili"
 
 #pagebreak()
 ==== Sotto-UC UC13
@@ -2145,9 +2144,9 @@ Il sistema dispone di due attori:
   - fornisce all'utente la possibilità di effettuare una ricerca (UC14.1) e di visualizzarne i risultati;
   - mostra all'utente la lista delle ricerche (UC14.2).
 *Generalizzazioni:*
-- *Use Case:*
-- UC14.1 - Ricerca per vista "Cronologia Ricerche";
-- UC14.2 - Visualizzazione lista ricerche.
+- Use Case:
+  - UC14.1 - Ricerca per vista "Cronologia Ricerche";
+  - UC14.2 - Visualizzazione lista ricerche.
 
 #pagebreak()
 ==== UC14.1 - Ricerca per vista "Cronologia Ricerche"
@@ -2177,9 +2176,9 @@ Il sistema dispone di due attori:
   - riceve tramite API una risposta dal software;
   - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
-- *Use Case:*
-- UC14.1.1 - Compilazione campi ricerca.
-- UC14.1.2 - Avvio ricerca.
+- Use Case:
+  - UC14.1.1 - Compilazione campi ricerca.
+  - UC14.1.2 - Avvio ricerca.
 
 #pagebreak()
 ===== UC14.1.1 - Compilazione campi ricerca
@@ -2196,9 +2195,9 @@ Il sistema dispone di due attori:
 - Sistema:
   - memorizza i dati inseriti nei campi della barra di ricerca (UC14.1.1).
 *Generalizzazioni:*
-- *Use Case:*
-- UC14.1.1.1 - Scelta input "Data";
-- UC14.1.1.2 - Completamento input "Username";
+- Use Case:
+  - UC14.1.1.1 - Scelta input "Data";
+  - UC14.1.1.2 - Completamento input "Username";
 
 #pagebreak()
 ===== Sotto-UC UC14.1.1
@@ -2301,8 +2300,8 @@ Il sistema dispone di due attori:
 *Estensioni:*
 - UC16 - Errore di ricerca.
 *Generalizzazioni:*
-- *Use Case:*
-- UC14.2.1 - Visualizzazione dettagli singola "Ricerca".
+- Use Case:
+  - UC14.2.1 - Visualizzazione dettagli singola "Ricerca".
 
 #pagebreak()
 ===== UC14.2.1 - Visualizzazione dettagli singola "Ricerca"
@@ -2322,10 +2321,10 @@ Il sistema dispone di due attori:
 - Admin:
   - osserva una ricerca della lista tra i vari mostrati.
 *Generalizzazioni:*
-- *Use Case:*
-- UC14.2.1.1 - Visualizzazione "Data" ricerca;
-- UC14.2.1.2 - Visualizzazione "Username" utente ricerca;
-- UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca.
+- Use Case:
+  - UC14.2.1.1 - Visualizzazione "Data" ricerca;
+  - UC14.2.1.2 - Visualizzazione "Username" utente ricerca;
+  - UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca.
 
 #pagebreak()
 ===== Sotto-UC UC14.2.1
@@ -2399,9 +2398,9 @@ Il sistema dispone di due attori:
   - fornisce all'utente la possibilità di effettuare una ricerca (UC15.1) e di visualizzarne i risultati;
   - mostra all'utente la lista dei feedback (UC15.2).
 *Generalizzazioni:*
-- *Use Case:*
-- UC15.1 - Ricerca per vista "Cronologia Feedback";
-- UC15.2 - Visualizzazione lista feedback.
+- Use Case:
+  - UC15.1 - Ricerca per vista "Cronologia Feedback";
+  - UC15.2 - Visualizzazione lista feedback.
 
 #pagebreak()
 ==== UC15.1 - Ricerca per vista "Cronologia Feedback"
@@ -2431,9 +2430,9 @@ Il sistema dispone di due attori:
   - riceve tramite API una risposta dal software;
   - mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
-- *Use Case:*
-- UC15.1.1 - Compilazione campi ricerca.
-- UC15.1.2 - Avvio ricerca.
+- Use Case:
+  - UC15.1.1 - Compilazione campi ricerca.
+  - UC15.1.2 - Avvio ricerca.
 
 #pagebreak()
 ===== UC15.1.1 - Compilazione campi ricerca
@@ -2450,9 +2449,9 @@ Il sistema dispone di due attori:
 - Sistema:
   - memorizza i dati inseriti nei campi della barra di ricerca (UC15.1.1).
 *Generalizzazioni:*
-- *Use Case:*
-- UC15.1.1.1 - Scelta input "Data";
-- UC15.1.1.2 - Completamento input "Username utente";
+- Use Case:
+  - UC15.1.1.1 - Scelta input "Data";
+  - UC15.1.1.2 - Completamento input "Username utente";
 
 #pagebreak()
 ===== Sotto-UC UC15.1.1
@@ -2555,8 +2554,8 @@ Il sistema dispone di due attori:
 *Estensioni:*
 - UC16 - Errore di ricerca.
 *Generalizzazioni:*
-- *Use Case:*
-- UC15.2.1 - Visualizzazione dettagli singolo "Feedback".
+- Use Case:
+  - UC15.2.1 - Visualizzazione dettagli singolo "Feedback".
 
 #pagebreak()
 ===== UC15.2.1 - Visualizzazione dettagli singolo "Feedback"
@@ -2576,10 +2575,10 @@ Il sistema dispone di due attori:
 - Admin:
   - osserva un feedback della lista tra i vari mostrati.
 *Generalizzazioni:*
-- *Use Case:*
-- UC15.2.1.1 - Visualizzazione "Data" feedback;
-- UC15.2.1.2 - Visualizzazione "Username" utente feedback;
-- UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback.
+- Use Case:
+  - UC15.2.1.1 - Visualizzazione "Data" feedback;
+  - UC15.2.1.2 - Visualizzazione "Username" utente feedback;
+  - UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback.
 
 #pagebreak()
 ===== Sotto-UC UC15.2.1
