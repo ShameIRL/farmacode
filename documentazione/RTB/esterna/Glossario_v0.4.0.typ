@@ -122,6 +122,10 @@ Il Minimum Viable Product (MVP) è una versione ridotta del prodotto, la quale i
 == Modello di Apprendimento Automatico
 Un modello di apprendimento automatico è un programma che viene utilizzato per riconoscere pattern in insiemi di dati o per eseguire predizioni dato un insieme di dati iniziale. Un modello si ottiene effettuando il processo di addestramento su un algoritmo di apprendimento automatico.
 
+== Metrica per la valutazione quantitativa
+Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
+punto di vista tecnico che documentale. 
+
 = N
 
 == Norme di Progetto
@@ -145,6 +149,13 @@ Il Product Baseline è un insieme di documenti, specifiche ed elementi che defin
 == Proof of Concept
 
 = Q
+
+== Qualità
+Insieme delle caratteristiche di un'entità, che ne determinano la capacità di
+soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodotto software in termini di qualità:
+- Intrinseca: conformità ai requisiti, idoneità all’uso;
+- Relativa: soddisfazione del cliente;
+- Quantitativa: misurazione oggettiva, per confronto.
 
 = R
 
