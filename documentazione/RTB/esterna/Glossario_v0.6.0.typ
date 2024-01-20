@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+    "0.6.0", "2024-01-20", p.passarella, "", "Stesura nuove definizioni",
     "0.5.0", "2024-01-14", p.baggio, p.rosson, "Stesura nuove definizioni",
     "0.4.0", "2024-01-02", p.favaron, p.rosson, "Stesura nuova definizioni",
     "0.3.0", "2023-12-12", p.bomben, p.baggio, "Stesura nuove definizioni",
@@ -74,6 +75,12 @@ Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce u
 
 == Discord
 Discord è una piattaforma VoIP (Voice over IP: tecnologia che rende possibile effettuare una conversazione sfruttando una connessione internet), messaggistica istantanea e distribuzione digitale progettata per la comunicazione.
+
+== Dipendenza
+Una dipendenza è definibile come un legame esistente tra due o piû componenti di un'applicazione per cui il funzionamento di una parte "dipende", appunto, dalla natura e dalla presenza delle altre parti, con la conseguenza che una modifica in una parte può generare side effects in altre componenti dell'applicazione.
+
+== Design
+La progettazione è una fase del ciclo di vita del software (che precede la codifica) in cui sulla base della specifica dei requisiti prodotta dall'analisi, il progetto definisce come tali requisiti saranno soddisfatti, entrando nel merito della struttura che dovrà essere data al sistema software che deve essere realizzato. 
 
 = E
 
@@ -147,6 +154,9 @@ Il pair programming è una metodologia di sviluppo del software nella quale due 
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
 == Proof of Concept
+
+== Processo
+Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
 
 = Q
 

@@ -87,8 +87,8 @@ La qualità di una buona architettura è definita da questi aspetti: \
 Si intende la suddivisione dell'architettura in parti chiare e ben distinte.\
 I passaggi di qualità sono due:
 - Determinare le parti che compongono l'interfaccia utente e quelle che compongono l'implementazione;
-- Particolare attenzione va posto nell'evitare l'effetto domino, ovvero quando la modifica interna di una parte comporta modifiche anche al suo esterno.
-Questi aspetti andranno verificati in fase di design e conseguentemente documentati. La stragegia scelta per modularizzare è ricercando information hiding.
+- Particolare attenzione va posto nell'evitare la propagazione delle #glossario("dipendenze"), ovvero quando la modifica interna di una parte comporta modifiche anche al suo esterno.
+Questi aspetti andranno verificati in fase di #glossario("design") e conseguentemente documentati. La stragegia scelta per modularizzare è ricercando information hiding.
 
 === Disponibilità
 Anche detta availability, indica il grado di indisponibilità causata dalla manutenzione.\
@@ -274,7 +274,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 
 
 = Qualità di processo
-Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
+Per garantire la qualità dei #glossario("processi"), abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
 La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
  In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.\
 
