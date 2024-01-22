@@ -31,7 +31,12 @@ Verranno definiti gli obiettivi di qualità e i relativi processi e risorse nece
 Il documento sarà utile a chi si occupa della creazione del prodotto, a chi userà il prodotto e a chi lo valuterà.
 
 == Scopo del prodotto
+Al giorno d'oggi l'ambito degli #glossario("e-commerce") si sta sempre più espandendo ed evolvendo. La presenza di negozi virtuali permette di accedere a molti dati legati agli acquisti, alle preferenze ed al comportamento degli utenti. Questi dati se analizzati propriamente permettono di prevedere preferenze e comportamenti futuri degli utenti, dando spazio ad operazioni di marketing mirate.
+
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
+
+L'appicazione è sviluppata sotto forma di #glossario("webapp") per la sua comodità, favorendo così l'accesso e la fruizioneda diversi dispositivi, sistemi o browser.\
+
 Dall'interfaccia utente del sistema software sarà possibile selezionare uno specifico cliente e visualizzare i prodotti da lui acquistati e quelli che il sistema ha individuato come raccomandati. Inoltre selezionato un articolo o un insieme di articoli il sistema suggerisce a quali clienti proporli, selezionandoli in base a quanto probabile siano interessati per i prodotti analizzati. I vari prodotti possono essere filtrati per categoria così da facilitare ricerche e restringere il campo di soluzione.\
 Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'algoritmo che ha fornito l'esito della suggerimento.\
 L'utente amministratore ha la possibilità di creare ulteriori account per eventuali operatori che necessitano di utilizzare l'applicativo.\
@@ -64,6 +69,8 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - T11 - Verifica e validazione: analisti dinamica (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
 
+#pagebreak()
+
 = Qualità di prodotto
 
 == Qualità dell'architettura
@@ -73,13 +80,13 @@ La qualità di una buona architettura è definita da questi aspetti: \
   stroke: (none),
   align: horizon,
   [*Aspetti auto-esplicativi o \
-  non qualificabili*], [*Aspetti considerati per\ qualificazione architettura*],
+  non qualificabili:*], [*Aspetti considerati per\ qualificazione architettura:*],
   [- Sufficienza;],[- Modularità;],
   [- Robustezza;],[- Disponibilità;],
   [- Flessibilità;], [- Semplicità;],
   [- Riusabilità;], [- Incapsulazione;],
   [- Efficienza;], [- Coesione;],
-  [- Affidabilità;], [- Basso accoppiamento;],
+  [- Affidabilità;], [- Basso accoppiamento.],
   [- Sicurezza rispetto a malfunzionamenti;], [],
   [- Sicurezza rispetto a intrusioni.], [],
 )
@@ -158,7 +165,7 @@ In particolare andranno verificati:
   [*Codice*], [*Nome metrica*], [*Valore \ accettabile*], [*Valore ottimale*], 
   [MPD1],
   [Errori Ortografici], 
-  [0%],
+  [5%],
   [0%],
   [MPD2],
   [Indice di Gulpease], 
@@ -251,28 +258,29 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 //AFFIDABILITA'
   [MPD10],
   [Gestione errori], 
-  [≥ 50%],
+  [≥ 60%],
   [100%],
 //COPERTURA TEST
   [MPD11],
   [Branch Coverage], 
-  [≥ 80%],
+  [≥ 90%],
   [100%],
   [MPD12],
   [Statement Coverage], 
-  [≥ 80%],
+  [≥ 90%],
   [100%],
   [MPD13],
   [Function Coverage], 
-  [≥ 80%],
+  [≥ 90%],
   [100%],
   [MPD14],
   [Line Coverage], 
-  [≥ 80%],
+  [≥ 90%],
   [100%],
 )
 #align(center)[Tabella 4: Metriche qualità del software]
 
+#pagebreak()
 
 = Qualità di processo
 Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
@@ -296,7 +304,6 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   [MPC9, MPC10],
 )
 #align(center)[Tabella 5: Processi primari]
-#pagebreak()
 
 == Processi di supporto
 #table(
@@ -391,71 +398,70 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 - EAC: (Estimated at Completion) indica quanto si prevede che costerà il progetto nel suo complesso, considerando l'andamento attuale e le prestazioni passate del progetto.
 
-Formula: #align(center)[$ = ("BAC" - "EV") / "CPI" + "AC" $]
-dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
+  Formula: #align(center)[$ = ("BAC" - "EV") / "CPI" + "AC" $]
+  dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
 
 - ETC: (Estimate to Complete) indica quanto si prevede che sarà necessario spendere per portare a termine le attività rimanenti e completare con successo il progetto.
 
-Formula: #align(center)[$ = "EAC" - "AC"
-$]
+  Formula: #align(center)[$ = "EAC" - "AC"$]
 
 - EV: (Earned Value) riflette il valore finanziario delle attività che sono state completate con successo fino a un certo punto nel tempo.
 
-Formula: #align(center)[$ = "%dicompletamento" * "BAC"
-$]
-dove "%dicompletamento" rappresenta la percentuale di avanzamento del lavoro effettivo.
+  Formula: #align(center)[$ = "%dicompletamento" * "BAC"
+  $]
+  dove "%dicompletamento" rappresenta la percentuale di avanzamento del lavoro effettivo.
 
 - AC: (Actual Cost) riflette la somma totale di denaro effettivamente speso per eseguire le attività del progetto fino a un punto specifico nel tempo.
 
 - CV: (Cost Variance) indica se il progetto è al di sopra o al di sotto del budget pianificato per il lavoro effettivamente completato.
 
-Formula: #align(center)[$ = "EV" - "AC"
-$]
+  Formula: #align(center)[$ = "EV" - "AC"
+  $]
 
-Dove:
+  Dove:
 
-  + Se $"CV">0$, significa che il valore guadagnato è superiore al costo effettivo, indicando che il progetto sta procedendo sotto il budget pianificato.
+    + Se $"CV">0$, significa che il valore guadagnato è superiore al costo effettivo, indicando che il progetto sta procedendo sotto il budget pianificato;
 
-  + Se $"CV"<0$, significa che il costo effettivo è superiore al valore guadagnato, indicando che il progetto sta superando il budget pianificato.
+    + Se $"CV"<0$, significa che il costo effettivo è superiore al valore guadagnato, indicando che il progetto sta superando il budget pianificato;
 
-  + Se $"CV"=0$, significa che il progetto sta rispettando esattamente il budget pianificato fino a quel momento.
+    + Se $"CV"=0$, significa che il progetto sta rispettando esattamente il budget pianificato fino a quel momento;
 
 - PV: (Planned Value) appresenta il valore pianificato delle attività da svolgere fino a un dato punto nel tempo.
 
-Formula: #align(center)[$ = "%dicompletamento" * "BAC"
-$]
-dove a differenza di quanto detto per EV, %dicompletamento rappresenta la percentuale di avanzamento del lavoro pianificata.
+  Formula: #align(center)[$ = "%dicompletamento" * "BAC"
+  $]
+  dove a differenza di quanto detto per EV, %dicompletamento rappresenta la percentuale di avanzamento del lavoro pianificata.
 
 - SV: (Scheduled Variance) indica se il progetto è in anticipo, in ritardo o in linea rispetto alla pianificazione temporale.
 
-Formula: #align(center)[$ = "EV" - "PV"
-$]
+  Formula: #align(center)[$ = "EV" - "PV"
+  $]
 
-Dove:
+  Dove:
 
-  + Se $"SV">0$, significa che il valore guadagnato è superiore al valore pianificato, indicando che il progetto è in anticipo rispetto alla pianificazione temporale.
+    + Se $"SV">0$, significa che il valore guadagnato è superiore al valore pianificato, indicando che il progetto è in anticipo rispetto alla pianificazione temporale;
 
-  + Se $"SV"<0$, significa che il valore guadagnato è inferiore al valore pianificato, indicando che il progetto è in ritardo rispetto alla pianificazione temporale.
+    + Se $"SV"<0$, significa che il valore guadagnato è inferiore al valore pianificato, indicando che il progetto è in ritardo rispetto alla pianificazione temporale;
 
-  + Se $"SV"=0$, significa che il progetto è in linea con la pianificazione temporale fino a quel momento.
+    + Se $"SV"=0$, significa che il progetto è in linea con la pianificazione temporale fino a quel momento.
 
 - CPI: (Cost Performance Index) è utile per valutare l'efficienza finanziaria di un progetto fino a un determinato momento.
 
-Formula: #align(center)[$ = "EV" / "AC"
-$]
+  Formula: #align(center)[$ = "EV" / "AC"
+  $]
 
-Dove:
+  Dove:
 
-  + Se $"CPI">1$: Indica che il valore guadagnato è superiore al costo effettivo, indicando un'efficienza finanziaria positiva. Più il CPI è alto, più efficientemente il progetto sta utilizzando i suoi budget finanziari.
+    + Se $"CPI">1$: Indica che il valore guadagnato è superiore al costo effettivo, indicando un'efficienza finanziaria positiva. Più il CPI è alto, più efficientemente il progetto sta utilizzando i suoi budget finanziari;
 
-  + Se $"CPI"<1$: Indica che il costo effettivo è superiore al valore guadagnato, indicando un'efficienza finanziaria negativa. Un CPI inferiore a 1 suggerisce che il progetto sta spendendo più del previsto per il valore ottenuto.
+    + Se $"CPI"<1$: Indica che il costo effettivo è superiore al valore guadagnato, indicando un'efficienza finanziaria negativa. Un CPI inferiore a 1 suggerisce che il progetto sta spendendo più del previsto per il valore ottenuto;
 
-  + Se $"CPI"=1$: Indica che il progetto sta spendendo esattamente ciò che è stato pianificato per ottenere il valore guadagnato.
+    + Se $"CPI"=1$: Indica che il progetto sta spendendo esattamente ciò che è stato pianificato per ottenere il valore guadagnato.
 
 - RSI: (Requirements Stability Index) indice progettato per misurare la stabilità dei requisiti di un progetto durante il suo ciclo di vita.
 
-Formula: #align(center)[$ = "Numero di requisiti invariati" / "Numero totale di requisiti"
-$]
+  Formula: #align(center)[$ = "Numero di requisiti invariati" / "Numero totale di requisiti"
+  $]
 
 - SOR: (Satisfied Obligatory Requirements) indice che misura il numero requisiti obbligatori soddisfatti.
 
@@ -498,16 +504,16 @@ $]
 
 - CC: (Code Covarage) espressa come una percentuale fornisce un'indicazione della quantità di codice che è stata esaminata e verificata rispetto al totale del codice sorgente.
 
-Formula: #align(center)[$ = ("Linee di codice eseguite/testate" / "Totale linee di codice") * 100
-$]
+  Formula: #align(center)[$ = ("Linee di codice eseguite/testate" / "Totale linee di codice") * 100
+  $]
 
 - PT: (Passed Test) espressa come una percentuale fornisce un'indicazione della quantità di test passati in seguito a verifica.
 
 - QMS: (Quality Metrics Satisfied) espressa come una percentuale fornisce un'indicazione della quantità metriche soddisfatte in seguito a verifica.
 
-Formula:
-#align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
-dove: NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte mentre TMQ (Total number of Quality Metrics) è il numero di metriche di qualità totali.
+  Formula:
+  #align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
+  dove: NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte mentre TMQ (Total number of Quality Metrics) è il numero di metriche di qualità totali.
 
 
 === Processi organizzativi
@@ -527,15 +533,16 @@ dove: NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qua
 )
 #align(center)[Tabella 10: Metriche processi organizzativi]
 
+#pagebreak()
+
 = Controllo di qualità
 
 == Test
 Questa sezione del documento è dedicata al testing, parte fondamentale per la correttezza e il rilascio del prodotto finale. La strategia adottata dal nostro gruppo per la fase di testing prevede quattro specifiche tipologie:
 - Test di unita: prevede la verifica delle singole unità del sistema, andando a verificare il corretto funzionamento dell'unità indipendente;
 - Test di integrazione: prevede la verifica di più unita che cooperano tra di loro per lo svolgimento di una specifica richiesta, questa tipologia di test viene svolta dopo i test di unità.
-- Test di sistema: prevede le verifica dell'interno sistema, andando a verificare che tutte le componenti funzionino correttamente tra di loro.
+- Test di sistema: prevede le verifica dell'interno sistema, andando a verificare che tutte le componenti funzionino correttamente tra di loro;
 - Test di accettazione: prevede la verifica del software con il committente. Devono essere quindi soddisfatti tutti i requisiti obbligatori, di vincolo, di qualità e di prestazione concordati e accettati con il proponente. Il superamento di questo test permette il rilascio del prodotto finale.
-#pagebreak()
 
 === Test di accettazione
 I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode in presenza del proponente. In quella occasione si è quindi mostrata l'efficienza e la completezza del prodotto, /* qua boh, nel senso si può specificare che era il POC? */in modo da poter avviare l'attività di validazione.
@@ -557,31 +564,31 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
   [TA05], [Verificare la corretta visualizzazione dei risultati], [Passato],
     [TA05.1], [Verificare la corretta visualizzazione delle righe dei risultati], [Passato],
   [TA06], [Verificare la performance del tempo di risposta], [Passato],
-  [TA07], [Verificare la corretta visualizzazione della pagina di Login], [Non implementato],
-  [TA08], [Verificare la corretta visualizzazione della normativa cookies], [Non implementato],
-  [TA09], [Verificare la corretta visualizzazione dell'alert di manutenzione], [Non implementato],
-  [TA10], [Verificare la corretta visualizzazione dell'alert errore di login], [Non implementato],
-  [TA11], [Verificare la corretta visualizzazione del Menù delle funzionalità], [Non implementato],
-    [TA11.1], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin/User], [Non implementato],
-    [TA11.2], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin], [Non implementato],
-  [TA12], [Verificare la corretta visualizzazione della sezione Profilo Utente], [Non implementato],
-    [TA12.1], [Verificare la corretta visualizzazione dei dati dell'utente], [Non implementato],
-    [TA12.2], [Verificare la corretta modifica dei dati dell'utente], [Non implementato],
-  [TA13], [Verificare la possibilità di eseguire il Logout], [Non implementato],
-  [TA14], [Verificare la possibilità di inserire un Feedback], [Non implementato],
-  [TA15], [Verificare la possibilità di visualizzare il catalogo prodotti], [Non implementato],
-    [TA15.1], [Verificare la corretta visualizzazione della lista di prodotti], [Non implementato],
-    [TA15.2], [Verificare la corretta visualizzazione del dettaglio prodotto], [Non implementato],
-  [TA16], [Verificare la possibilità di visualizzare la lista clienti], [Non implementato],
-    [TA16.1], [Verificare la corretta visualizzazione della lista di clienti], [Non implementato],
-    [TA16.2], [Verificare la corretta visualizzazione del dettaglio cliente], [Non implementato],
-  [TA17], [Verificare la possibilità di visualizzare le statistiche mensili], [Non implementato],
-    [TA17.1], [Verificare la corretta visualizzazione dei risultati], [Non implementato],
-  [TA18], [Verificare la possibilità di visualizzare la cronologia di ricerche], [Non implementato],
-    [TA18.1], [Verificare la corretta visualizzazione dei risultati], [Non implementato],
-  [TA19], [Verificare la possibilità di visualizzare la cronologia dei feedback], [Non implementato],
-    [TA19.1], [Verificare la corretta visualizzazione dei risultati], [Non implementato],
-  [TA20], [Verificare la corretta visualizzazione di "Errore di ricerca"], [Non implementato],
+  [TA07], [Verificare la corretta visualizzazione della pagina di Login], [ND],
+  [TA08], [Verificare la corretta visualizzazione della normativa cookies], [ND],
+  [TA09], [Verificare la corretta visualizzazione dell'alert di manutenzione], [ND],
+  [TA10], [Verificare la corretta visualizzazione dell'alert errore di login], [ND],
+  [TA11], [Verificare la corretta visualizzazione del Menù delle funzionalità], [ND],
+    [TA11.1], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin/User], [ND],
+    [TA11.2], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin], [ND],
+  [TA12], [Verificare la corretta visualizzazione della sezione Profilo Utente], [ND],
+    [TA12.1], [Verificare la corretta visualizzazione dei dati dell'utente], [ND],
+    [TA12.2], [Verificare la corretta modifica dei dati dell'utente], [ND],
+  [TA13], [Verificare la possibilità di eseguire il Logout], [ND],
+  [TA14], [Verificare la possibilità di inserire un Feedback], [ND],
+  [TA15], [Verificare la possibilità di visualizzare il catalogo prodotti], [ND],
+    [TA15.1], [Verificare la corretta visualizzazione della lista di prodotti], [ND],
+    [TA15.2], [Verificare la corretta visualizzazione del dettaglio prodotto], [ND],
+  [TA16], [Verificare la possibilità di visualizzare la lista clienti], [ND],
+    [TA16.1], [Verificare la corretta visualizzazione della lista di clienti], [ND],
+    [TA16.2], [Verificare la corretta visualizzazione del dettaglio cliente], [ND],
+  [TA17], [Verificare la possibilità di visualizzare le statistiche mensili], [NDo],
+    [TA17.1], [Verificare la corretta visualizzazione dei risultati], [ND],
+  [TA18], [Verificare la possibilità di visualizzare la cronologia di ricerche], [ND],
+    [TA18.1], [Verificare la corretta visualizzazione dei risultati], [ND],
+  [TA19], [Verificare la possibilità di visualizzare la cronologia dei feedback], [ND],
+    [TA19.1], [Verificare la corretta visualizzazione dei risultati], [ND],
+  [TA20], [Verificare la corretta visualizzazione di "Errore di ricerca"], [ND],
 )
 #align(center)[Tabella 11: Test di accettazione]
 
@@ -645,25 +652,27 @@ Di seguito una tabella con il codice del test, la descrizione, il risultato e il
   align: left,
   [*Codice\ Test*], [*Descrizione*], [*Risultato Test*], [*Codice\ Requisito*],
   [TS01], [Verificare la corretta visualizzazione della pagina principale], [Passato], [ROF 14,\ ROF 5],
-  [TS02], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [Non implementato], [ROF 1s],
-  [TS03], [Verificare la corretta visualizzazione di eventuale dell'alert di manutenzione.], [Non implementato], [RDF 2],
-  [TS04], [Verificare la corretta visualizzazione  della normativa cookie.], [Non implementato], [RDF 3],
-  [TS05], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [Non implementato], [RDF 4],
+  [TS02], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [ND], [ROF 1s],
+  [TS03], [Verificare la corretta visualizzazione di eventuale dell'alert di manutenzione.], [ND], [RDF 2],
+  [TS04], [Verificare la corretta visualizzazione  della normativa cookie.], [ND], [RDF 3],
+  [TS05], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [ND], [RDF 4],
   [TS06], [Verificare la corretta visualizzazione e funzione della funzionalità di ricerca per la raccomandazione.], [Passato], [ROF 6,\ ROF 14,\ ROF 15,\ ROF 16,\ ROF 17],
-  [TS07], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [Non implementato], [ROF 18],
-  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [Non implementato], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
-  [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [Non implementato], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
-  [TS10], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [Non implementato], [RDF 9,\ RDF 25],
-  [TS11], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [Non implementato], [RDF 10,],
-  [TS11.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Non implementato], [RDF 26,\ RDF 27,\ RDF 28],
-  [TS11.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Non implementato], [RDF 29,\ RDF 30,\ RDF 31],
-  [TS12], [Verificare la corretta visualizzazione della pagine dei dati personali.], [Non implementato], [ROF 11],
-  [TS12.1], [Verificare che l'utente possa cambiare la sua email e password.], [Non implementato], [ROF 12],
-  [TS13], [Verificare la possibilità di eseguire il Logout.], [Non implementato], [ROF 13],
-  [TS14], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [Non implementato], [RDF 32],
+  [TS07], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [ND], [ROF 18],
+  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [ND], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
+  [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [ND], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
+  [TS10], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [ND], [RDF 9,\ RDF 25],
+  [TS11], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [ND], [RDF 10,],
+  [TS11.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 26,\ RDF 27,\ RDF 28],
+  [TS11.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 29,\ RDF 30,\ RDF 31],
+  [TS12], [Verificare la corretta visualizzazione della pagine dei dati personali.], [ND], [ROF 11],
+  [TS12.1], [Verificare che l'utente possa cambiare la sua email e password.], [ND], [ROF 12],
+  [TS13], [Verificare la possibilità di eseguire il Logout.], [ND], [ROF 13],
+  [TS14], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [ND], [RDF 32],
   
 )
 #align(center)[Tabella 13: Test e tracciamento di sistema]
+
+#pagebreak()
 
 = Miglioramenti
 == Descrizione
@@ -908,20 +917,30 @@ Il grafico mostra l'andamento delle metriche di CV e SV. I valori positivi di CV
 
 #pagebreak()
 
+= Elenco delle immagini
+- Immagine 1: IG;
+- Immagine 2: EAC;
+- Immagine 3: AC e ETC;
+- Immagine 4: EV e PV;
+- Immagine 5: CV e SV.
+
+#pagebreak()
+
 = Elenco tabelle
-Qualità della documentazione\
-Metriche qualità della documentazione\
-Qualità del software\
-Metriche qualità del software\
-Processi primari\
-Processi di supporto\
-Processi organizzativi\
-Metriche processi primari\
-Metriche processi di supporto\
-Metriche processi organizzativi\
-Test di accettazione\
-Tracciamento test di accettazione\
-Test e tracciamento di sistema\
-Valutazione tecnologica\
-Valutazione organizzativa e personale\
-Indice di Gulpease dei documenti\
+- Tabella 1: Qualità della documentazione;
+- Tabella 2: Metriche qualità della documentazione;
+- Tabella 3: Qualità del software;
+- Tabella 4: Metriche qualità del software;
+- Tabella 5: Processi primari;
+- Tabella 6: Processi di supporto;
+- Tabella 7: Processi organizzativi;
+- Tabella 8: Metriche processi primari;
+- Tabella 9: Metriche processi di supporto;
+- Tabella 10: Metriche processi organizzativi;
+- Tabella 11: Test di accettazione;
+- Tabella 12: Tracciamento test di accettazione;
+- Tabella 13: Test e tracciamento di sistema;
+- Tabella 14: Valutazione tecnologica;
+- Tabella 15: Valutazione organizzativa e personale;
+- Tabella 16: Valutazione sui ruoli;
+- Tabella 17: Indice di Gulpease dei documenti.
