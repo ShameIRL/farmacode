@@ -351,7 +351,8 @@ Il sistema dispone di due attori:
   - UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
 
 #pagebreak()
-===== UC5.1.1 - Selezione opzione "Ricerca"
+==== Generalizzazioni UC5.1
+#align(left, text(11pt)[*UC5.1.1 - Selezione opzione "Ricerca"*])
 *Attori:*
 - Admin;
 - User.
@@ -368,7 +369,7 @@ Il sistema dispone di due attori:
   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 
-===== UC5.1.2 - Selezione opzione "Catalogo Prodotti"
+#align(left, text(11pt)[*UC5.1.2 - Selezione opzione "Catalogo Prodotti"*])
 *Attori:*
 - Admin;
 - User.
@@ -386,7 +387,7 @@ Il sistema dispone di due attori:
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 
 #pagebreak()
-===== UC5.1.3 - Selezione opzione "Lista Clienti"
+#align(left, text(11pt)[*UC5.1.3 - Selezione opzione "Lista Clienti"*])
 *Attori:*
 - Admin;
 - User.
@@ -403,7 +404,7 @@ Il sistema dispone di due attori:
   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 
-===== UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
+#align(left, text(11pt)[*UC5.1.4 - Selezione opzione "Vista Statistiche mensili"*])
 *Attori:*
 - Admin;
 - User.
@@ -449,7 +450,8 @@ Il sistema dispone di due attori:
   - UC5.2.2 - Selezione opzione "Cronologia Feedback"
 
 #pagebreak()
-===== UC5.2.1 - Selezione opzione "Cronologia Ricerce"
+==== Generalizzazioni UC5.2
+#align(left, text(11pt)[*UC5.2.1 - Selezione opzione "Cronologia Ricerce"*])
 *Attori:*
 - Admin;
 - User.
@@ -466,7 +468,7 @@ Il sistema dispone di due attori:
   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
 
-===== UC5.2.2 - Selezione opzione "Cronologia Feedback"
+#align(left, text(11pt)[*UC5.2.2 - Selezione opzione "Cronologia Feedback"*])
 *Attori:*
 - Admin;
 - User.
@@ -549,7 +551,7 @@ Il sistema dispone di due attori:
   - UC6.1.4 - Visualizzazione password.
 
 #pagebreak()
-===== Sotto-UC UC6.1 
+==== Sotto-UC UC6.1 
 #figure(
   image("/imgs/Uml/UC6.1_gen.png", width: 55%),
   caption: [
@@ -660,7 +662,10 @@ Il sistema dispone di due attori:
   - UC6.2.2 - Modifica password.
 
 #pagebreak()
-===== UC6.2.1 - Modifica email
+==== Generalizzazioni UC6.2
+
+#align(left, text(11pt)[*UC6.2.1 - Modifica email*])
+
 *Attori:*
 - Admin;
 - User.
@@ -684,7 +689,8 @@ Il sistema dispone di due attori:
   - se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
 
 #pagebreak()
-===== UC6.2.2 - Modifica password
+#align(left, text(11pt)[*UC6.2.2 - Modifica password*])
+
 *Attori:*
 - Admin;
 - User.
@@ -805,7 +811,9 @@ Il sistema dispone di due attori:
   - UC8.1.2 - Avvio ricerca.
 
 #pagebreak()
-===== UC8.1.1 - Compilazione campi ricerca
+==== Generalizzazioni UC8.1
+
+#align(left, text(11pt)[*UC8.1.1 - Compilazione campi ricerca*])
 
 *Attori:*
 - Admin;
@@ -831,7 +839,7 @@ Il sistema dispone di due attori:
   - UC8.1.1.4 - Selezione input "Cronologia";
 
 #pagebreak()
-===== Sotto-UC UC8.1.1 
+#align(left, text(11pt)[*Sotto-UC UC8.1.1 *]) 
 #figure(
   image("/imgs/Uml/UC8.1.1_gen.png", width: 80%),
   caption: [
@@ -941,7 +949,7 @@ Il sistema dispone di due attori:
     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
 #pagebreak()
-===== UC8.1.2 - Avvio ricerca
+#align(left, text(11pt)[*UC8.1.2 - Avvio ricerca*]) 
 
 *Attori:*
 - Admin;
@@ -992,7 +1000,8 @@ Il sistema dispone di due attori:
 - Use Case:
   - UC8.2.1 - Visualizzazione dettagli singolo "Risultato".
 
-===== UC8.2.1 - Visualizzazione dettagli singolo "Risultato"
+==== Generalizzazioni UC8.2
+#align(left, text(11pt)[*UC8.2.1 - Visualizzazione dettagli singolo "Risultato"*]) 
 #figure(
   image("/imgs/Uml/UC8.2.1.png", width: 65%),
   caption: [
@@ -1019,7 +1028,7 @@ Il sistema dispone di due attori:
   - UC8.2.1.3 - Visualizzazione "Score" risultato;
   - UC8.2.1.4 - Visualizzazione bottone "Inserimento Feedback".
 
-====== Sotto-UC UC8.2.1 
+#align(left, text(11pt)[*Sotto-UC UC8.2.1 *]) 
 #figure(
   image("/imgs/Uml/UC8.2.1_gen.png", width: 70%),
   caption: [
@@ -1039,7 +1048,7 @@ Il sistema dispone di due attori:
   - Admin/User:
     - visualizza l'ID del risultato che sta osservando.
 
-#pagebreak()
+
 + *UC8.2.1.2 - Visualizzazione "Nome" risultato*
 
   *Attori:*
@@ -1139,11 +1148,11 @@ Il sistema dispone di due attori:
   - UC9.1.2 - Completamento input "Commento".
 
 #pagebreak()
-===== Sotto-UC UC9.1
+==== Sotto-UC UC9.1
 #figure(
   image("/imgs/Uml/UC9.1_gen.png", width: 65%),
   caption: [
-    Inserimento "Feedback"
+    Sotto-UC UC9.1
   ],
 )
 + *UC9.1.1 - Completamento input "Valutazione"*
@@ -1283,7 +1292,8 @@ Il sistema dispone di due attori:
   - UC10.1.2 - Avvio ricerca.
 
 #pagebreak()
-===== UC10.1.1 - Compilazione campi ricerca
+==== Generalizzazioni UC10.1
+#align(left, text(11pt)[*UC10.1.1 - Compilazione campi ricerca*])
 
 *Attori:*
 - Admin;
@@ -1309,7 +1319,7 @@ Il sistema dispone di due attori:
 // - UC10.1.1.5 - Selezione input "Provenienza Prodotto";
 
 #pagebreak()
-===== Sotto-UC UC10.1.1
+#align(left, text(11pt)[*Sotto-UC UC10.1.1*])
 #figure(
   image("/imgs/Uml/UC10.1.1_gen.png", width: 80%),
   caption: [
@@ -1426,7 +1436,7 @@ Il sistema dispone di due attori:
     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-===== UC10.1.2 - Avvio ricerca
+#align(left, text(11pt)[*UC10.1.2 - Avvio ricerca*])
 
 *Attori:*
 - Admin;
@@ -1481,7 +1491,8 @@ Il sistema dispone di due attori:
   - UC10.2.1 - Visualizzazione dettagli singolo "Prodotto".
 
 #pagebreak()
-===== UC10.2.1 - Visualizzazione informazioni singolo "Prodotto"
+==== Generalizzazioni UC10.2
+#align(left, text(11pt)[*UC10.2.1 - Visualizzazione informazioni singolo "Prodotto"*])
 
 #figure(
   image("/imgs/Uml/UC10.2.1.png", width: 65%),
@@ -1509,7 +1520,8 @@ Il sistema dispone di due attori:
   - UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
 
 #pagebreak()
-====== Sotto-UC UC10.2.1 
+#align(left, text(11pt)[*Sotto-UC UC10.2.1*])
+
 #figure(
   image("/imgs/Uml/UC10.2.1_gen.png", width: 70%),
   caption: [
@@ -1775,7 +1787,8 @@ Il sistema dispone di due attori:
   - UC12.1.2 - Avvio ricerca.
 
 #pagebreak()
-===== UC12.1.1 - Compilazione campi ricerca
+==== Generalizzazioni UC12.1
+#align(left, text(11pt)[*UC12.1.1 - Compilazione campi ricerca*])
 
 *Attori:*
 - Admin;
@@ -1799,7 +1812,8 @@ Il sistema dispone di due attori:
   - UC12.1.1.3 - Selezione input "Provincia";
 
 #pagebreak()
-===== Sotto-UC UC12.1.1 
+#align(left, text(11pt)[*Sotto-UC UC12.1.1 *])
+
 #figure(
   image("/imgs/Uml/UC12.1.1_gen.png", width: 80%),
   caption: [
@@ -1886,7 +1900,7 @@ Il sistema dispone di due attori:
     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-===== UC12.1.2- Avvio ricerca
+#align(left, text(11pt)[*UC12.1.2- Avvio ricerca*])
 
 *Attori:*
 - Admin;
@@ -1941,7 +1955,8 @@ Il sistema dispone di due attori:
   - UC12.2.1 - Visualizzazione dettagli singolo "Cliente".
 
 #pagebreak()
-===== UC12.2.1 - Visualizzazione dettagli singolo "Cliente"
+==== Generalizzazioni UC12.2
+#align(left, text(11pt)[*UC12.2.1 - Visualizzazione dettagli singolo "Cliente"*])
 
 #figure(
   image("/imgs/Uml/UC12.2.1.png", width: 65%),
@@ -1969,7 +1984,8 @@ Il sistema dispone di due attori:
   - UC12.2.1.4 - Visualizzazione "Provincia" cliente;
 
 #pagebreak()
-====== Sotto-UC UC12.2.1 
+#align(left, text(11pt)[*Sotto-UC UC12.2.1 *])
+
 #figure(
   image("/imgs/Uml/UC12.2.1_gen.png", width: 70%),
   caption: [
@@ -2181,7 +2197,9 @@ Il sistema dispone di due attori:
   - UC14.1.2 - Avvio ricerca.
 
 #pagebreak()
-===== UC14.1.1 - Compilazione campi ricerca
+==== Generalizzazioni UC14.1
+#align(left, text(11pt)[*UC14.1.1 - Compilazione campi ricerca*])
+
 *Attori:*
 - Admin;
 *Precondizioni:*
@@ -2200,7 +2218,8 @@ Il sistema dispone di due attori:
   - UC14.1.1.2 - Completamento input "Username";
 
 #pagebreak()
-===== Sotto-UC UC14.1.1
+#align(left, text(11pt)[*Sotto-UC UC14.1.1*])
+
 #figure(
   image("/imgs/Uml/UC14.1.1_gen.png", width: 80%),
   caption: [
@@ -2257,7 +2276,7 @@ Il sistema dispone di due attori:
     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-===== UC14.1.2 - Avvio ricerca
+#align(left, text(11pt)[*UC14.1.2 - Avvio ricerca*])
 
 *Attori:*
 - Admin;
@@ -2304,7 +2323,9 @@ Il sistema dispone di due attori:
   - UC14.2.1 - Visualizzazione dettagli singola "Ricerca".
 
 #pagebreak()
-===== UC14.2.1 - Visualizzazione dettagli singola "Ricerca"
+==== Generalizzazioni UC14.2
+#align(left, text(11pt)[*UC14.2.1 - Visualizzazione dettagli singola "Ricerca"*])
+
 #figure(
   image("/imgs/Uml/UC14.2.1.png", width: 65%),
   caption: [
@@ -2327,7 +2348,8 @@ Il sistema dispone di due attori:
   - UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca.
 
 #pagebreak()
-===== Sotto-UC UC14.2.1
+#align(left, text(11pt)[*Sotto-UC UC14.2.1*])
+
 #figure(
   image("/imgs/Uml/UC14.2.1_gen.png", width: 70%),
   caption: [
@@ -2435,7 +2457,9 @@ Il sistema dispone di due attori:
   - UC15.1.2 - Avvio ricerca.
 
 #pagebreak()
-===== UC15.1.1 - Compilazione campi ricerca
+==== Generalizzazioni UC15.1
+#align(left, text(11pt)[*UC15.1.1 - Compilazione campi ricerca*])
+
 *Attori:*
 - Admin;
 *Precondizioni:*
@@ -2454,7 +2478,8 @@ Il sistema dispone di due attori:
   - UC15.1.1.2 - Completamento input "Username utente";
 
 #pagebreak()
-===== Sotto-UC UC15.1.1
+#align(left, text(11pt)[*Sotto-UC UC15.1.1*])
+
 #figure(
   image("/imgs/Uml/UC15.1.1_gen.png", width: 80%),
   caption: [
@@ -2511,7 +2536,7 @@ Il sistema dispone di due attori:
     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-===== UC15.1.2 - Avvio ricerca
+#align(left, text(11pt)[*UC15.1.2 - Avvio ricerca*])
 
 *Attori:*
 - Admin;
@@ -2558,7 +2583,9 @@ Il sistema dispone di due attori:
   - UC15.2.1 - Visualizzazione dettagli singolo "Feedback".
 
 #pagebreak()
-===== UC15.2.1 - Visualizzazione dettagli singolo "Feedback"
+==== Generalizzazioni UC15.2
+#align(left, text(11pt)[*UC15.2.1 - Visualizzazione dettagli singolo "Feedback"*])
+
 #figure(
   image("/imgs/Uml/UC15.2.1.png", width: 65%),
   caption: [
@@ -2581,7 +2608,8 @@ Il sistema dispone di due attori:
   - UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback.
 
 #pagebreak()
-===== Sotto-UC UC15.2.1
+#align(left, text(11pt)[*Sotto-UC UC15.2.1*])
+
 #figure(
   image("/imgs/Uml/UC15.2.1_gen.png", width: 70%),
   caption: [
@@ -2684,6 +2712,7 @@ riportate indicano:
 
 #table(
   columns: (auto, auto, 45mm),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
@@ -2723,6 +2752,7 @@ riportate indicano:
   [RDF 33], [L'utente deve poter caricare un dataset], [Verbale interno],
   [RDF 34], [L’utente deve poter avviare il training di un determinato dataset], [Verbale interno],
 )
+#align(center)[Tabella 1: Requisiti funzionali]
 
 #pagebreak()
 == Requisiti di qualità
@@ -2736,6 +2766,7 @@ Le sigle sotto riportate possono essere così classificate:
 
 #table(
   columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
@@ -2752,7 +2783,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Documentazione descrittiva del sistema di raccomandazione implementato],
   [Capitolato],
 )
-
+#align(center)[Tabella 2: Requisiti di qualità]
 
 == Requisiti di vincolo
 
@@ -2765,6 +2796,7 @@ Le sigle sotto riportate possono essere così classificate:
 
 #table(
   columns: (22mm, auto, 35mm),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
@@ -2810,6 +2842,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Possibile approccio multi-thread o multi-modello per la gestione dell'attesa in caso di interrogazione durante l'addestramento del modello],
   [Verbale Esterno],
 )
+#align(center)[Tabella 3: Requisi di vincolo]
 
 === Requisiti d'ambiente
 
@@ -2893,6 +2926,8 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Verbale Interno], [RDF 33],
   [Verbale Interno], [RDF 34],
 )
+#align(center)[Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali]
+
 #table(
   columns: (1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
@@ -2902,7 +2937,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Capitolato],[ROQ 3],
   [Capitolato],[ROQ 4],
 )
-#pagebreak()
+#align(center)[Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità]
+
+
 
 #table(
   columns: (1fr, 1fr),
@@ -2922,6 +2959,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Verbale Interno],[RDV 12],
   [Verbale Esterno],[RDV 13],           
 )
+#align(center)[Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo]
 
 === Requisiti - Fonte
 
@@ -2970,6 +3008,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [RDF 34], [Verbale Interno],
   
 )
+#align(center)[Tabella 7: Requisito - Fonte. Tracciamento requisiti funzionali]
 
 #table(
   columns: (1fr, 1fr),
@@ -2980,8 +3019,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [ROQ 3], [Capitolato],
   [ROQ 4], [Capitolato],
 )
+#align(center)[Tabella 8: Requisito - Fonte. Tracciamento requisiti di qualità]
 
-#pagebreak()
+
 #table(
   columns: (1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
@@ -3000,7 +3040,8 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [RDV 12], [Verbale Interno],
   [RDV 13], [Verbale Interno],
 )
-
+#align(center)[Tabella 9: Requisito - Fonte. Tracciamento requisiti di vincolo]
+#pagebreak()
 
 == Riepilogo
 
@@ -3018,25 +3059,72 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Totale*],[*51*],
 )
+#align(center)[Tabella 10: Riepilogo requisiti]
 #pagebreak()
+
 
 = Elenco delle immagini
 
 - Immagine 1: Login
-- Immagine 2: Inserimento email e password per accesso
-- Immagine 3: Visualizzazione lista utenti
-- Immagine 4: Aggiunta nuovo utente 
-- Immagine 5: Inserimento email e password per nuovo utente
-- Immagine 6: Eliminazione utente
-- Immagine 7: Vista cliente per prodotti
-- Immagine 8: Vista prodotti per cliente
-- Immagine 9: Feedback raccomandazione
-- Immagine 10: Logout
+- Immagine 2: Inserimento email 
+- Immagine 3: Inserimento password
+- Immagine 4: Avviso normativa sui Cookies 
+- Immagine 5: Visualizzazione "Menù" delle funzionalità
+- Immagine 6: Visualizzazione funzionalità Admin/User
+- Immagine 7: Visualizzazione funzionalità Admin
+- Immagine 8: Visualizzazione "Profilo Utente"
+- Immagine 9: Visualizzazionedati utente
+- Immagine 10: Sotto-UC UC6.1
+- Immagine 11: Modifica dati utente
+- Immagine 12: Logout
+- Immagine 13: Visualizzazione vista "Ricerca"
+- Immagine 14: Ricerca per vista "Ricerca"
+- Immagine 15: Sotto-UC UC8.1.1
+- Immagine 16: Visualizzazione lista risultati
+- Immagine 17: Visualizzazione dettagli singolo "Risultato"
+- Immagine 18: Sotto-UC UC8.2.1
+- Immagine 19: Inserimento "Feedback"
+- Immagine 20: Sotto-UC UC9.1
+- Immagine 21: Visualizzazione vista "Catalogo Prodotti"
+- Immagine 22: Ricerca per vista "Catalogo Prodotti"
+- Immagine 23: Sotto-UC UC10.1.1
+- Immagine 24: Visualizzazione lista prodotti
+- Immagine 25: Visualizzazione informazioni singolo "Prodotto"
+- Immagine 26: Sotto-UC UC10.2.1
+- Immagine 27: Visualizzazione dettaglio "Prodotto"
+- Immagine 28: Sotto-UC UC11
+- Immagine 29: Visualizzazione vista "Lista Clienti"
+- Immagine 30: Ricerca per vista "Lista Clienti"
+- Immagine 31: Sotto-UC UC12.1.1
+- Immagine 32: Visualizzazione lista clienti
+- Immagine 33: Visualizzazione dettagli singolo "Cliente"
+- Immagine 34: Sotto-UC UC12.2.1
+- Immagine 35: Visualizzazione vista "Statistiche Mensili"
+- Immagine 36: Sotto-UC UC13
+- Immagine 37: Visualizzazione vista "Cronologia Ricerche"
+- Immagine 38: Ricerca per vista "Cronologia Ricerche"
+- Immagine 39: Sotto-UC UC14.1.1
+- Immagine 40: Visualizzazione lista ricerche
+- Immagine 41: Visualizzazione dettagli singola "Ricerca"
+- Immagine 42: Sotto-UC UC14.2.1
+- Immagine 43: Visualizzazione vista "Cronologia Feedback"
+- Immagine 44: Ricerca per vista "Cronologia Feedback"
+- Immagine 45: Sotto-UC UC15.1.1
+- Immagine 46: Visualizzazione dettagli singolo item
+- Immagine 47: Visualizzazione dettagli singolo "Feedback"
+- Immagine 48: Sotto-UC UC15.2.1
 
+
+#pagebreak()
 = Elenco delle tabelle
 
 - Tabella 1: Requisiti funzionali
 - Tabella 2: Requisiti di qualità
 - Tabella 3: Requisiti di vincolo
-- Tabella 4: Tracciamento fonte-requisito
-- Tabella 5: Riepilogo
+- Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali
+- Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità
+- Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo
+- Tabella 7: Requisito - Fonte. Tracciamento requisiti funzionali
+- Tabella 8: Requisito - Fonte. Tracciamento requisiti di qualità
+- Tabella 9: Requisito - Fonte. Tracciamento requisiti di vincolo
+- Tabella 10: Riepilogo requisiti
