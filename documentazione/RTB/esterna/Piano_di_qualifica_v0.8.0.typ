@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.9.0", "2024-01-22", p.rosson, p.favaron, "Aggiunti grafici",
     "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica sezione 5.3 e aggiunta sezione 5.4",
     "0.7.2", "2024-01-13", p.bomben, p.favaron, "Tabella di test di sistema e tracciamento",
     "0.7.1", "2024-01-12", p.favaron, p.passarella, "Aggiunte alla sezione introduzione",
@@ -87,8 +88,8 @@ La qualità di una buona architettura è definita da questi aspetti: \
 Si intende la suddivisione dell'architettura in parti chiare e ben distinte.\
 I passaggi di qualità sono due:
 - Determinare le parti che compongono l'interfaccia utente e quelle che compongono l'implementazione;
-- Particolare attenzione va posto nell'evitare la propagazione delle #glossario("dipendenze"), ovvero quando la modifica interna di una parte comporta modifiche anche al suo esterno.
-Questi aspetti andranno verificati in fase di #glossario("design") e conseguentemente documentati. La stragegia scelta per modularizzare è ricercando information hiding.
+- Particolare attenzione va posto nell'evitare l'effetto domino, ovvero quando la modifica interna di una parte comporta modifiche anche al suo esterno.
+Questi aspetti andranno verificati in fase di design e conseguentemente documentati. La stragegia scelta per modularizzare è ricercando information hiding.
 
 === Disponibilità
 Anche detta availability, indica il grado di indisponibilità causata dalla manutenzione.\
@@ -274,7 +275,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 
 
 = Qualità di processo
-Per garantire la qualità dei #glossario("processi"), abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
+Per garantire la qualità dei processi, abbiamo utilizzato delle  metriche che permettano di valutarli e accertarsi che questi raggiungano i corretti obbiettivi di qualità previsti, per questo si è scelto di fare riferimento allo standard ISO/IE-C/IEEE 12207:1997, semplificando e adattando secondo le nostre necessità i processi in esso elencati.\
 La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictive Capability".\
  In questa sezione sono presentati i valori accettabili e i valori ottimali per i processi primari, di supporto e organizzativi.\
 
@@ -395,15 +396,14 @@ dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
 
 - ETC: (Estimate to Complete) indica quanto si prevede che sarà necessario spendere per portare a termine le attività rimanenti e completare con successo il progetto.
 
-Formula: #align(center)[$ = "BAC" - "EV"
+Formula: #align(center)[$ = "EAC" - "AC"
 $]
-dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
 
 - EV: (Earned Value) riflette il valore finanziario delle attività che sono state completate con successo fino a un certo punto nel tempo.
 
 Formula: #align(center)[$ = "%dicompletamento" * "BAC"
 $]
-dove "%dicompletamento" rappresenta la percentuale di avanzamento del lavoro rispetto a quello pianificato.
+dove "%dicompletamento" rappresenta la percentuale di avanzamento del lavoro effettivo.
 
 - AC: (Actual Cost) riflette la somma totale di denaro effettivamente speso per eseguire le attività del progetto fino a un punto specifico nel tempo.
 
@@ -424,7 +424,7 @@ Dove:
 
 Formula: #align(center)[$ = "%dicompletamento" * "BAC"
 $]
-dove a differenza di quanto detto per EV, BAC è sempre il Budget at Completion, ma in questo contesto rappresenta il valore finanziario delle attività effettivamente completate fino a quel momento.
+dove a differenza di quanto detto per EV, %dicompletamento rappresenta la percentuale di avanzamento del lavoro pianificata.
 
 - SV: (Scheduled Variance) indica se il progetto è in anticipo, in ritardo o in linea rispetto alla pianificazione temporale.
 
@@ -723,7 +723,10 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 #pagebreak()
 
 = Controllo delle metriche
-== QMS - Quality Metrics Satisfied
+*Premessa:* \
+Durante ogni sprint del progetto, il controllo delle metriche viene eseguito utilizzando una modalità Just-in-Time (JiT). Ciò significa che l'analisi delle prestazioni, la valutazione dei progressi e altre metriche pertinenti vengono eseguite in tempo reale, immediatamente dopo la fase sviluppo nota come sprint. Questa approccio JiT consente al team di ottenere un quadro attuale e dinamico delle prestazioni e dell'avanzamento del progetto, consentendo una rapida identificazione di eventuali problemi o aree di miglioramento.\
+
+=== QMS - Quality Metrics Satisfied
 Sotto riportata la formula utilizzata per calcolare la percentuale delle metriche soddisfatte:
 #align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
 Dove:
@@ -732,7 +735,7 @@ Dove:
 
 Nel nostro caso è stato calcolato un valore che si attesta circa all'80%. Rientrando e superando il valore accettabile della metrice MPC13.
 
-== IG - Indice di Gulpease
+=== IG - Indice di Gulpease
 Indice di Gulpease è uno strumento utilizzato per verificare la difficoltà di lettura di un documento.\
 Considera due fattori per la valutazione, la lunghezza della parola e la lunghezza della frase rispetto al numero di lettere.\
 La formula per il suo calcolo è la seguente:
@@ -743,7 +746,7 @@ Come valori per le diverse difficoltà abbiamo:
 - < 40: difficili da leggere per chi ha la licenza superiore.
 Un intervallo ideale si aggira fra i 40 e 60.
 
-=== IG documenti
+*IG documenti*
 #align(center)[
 #table(
   columns: (60mm, 40mm),
@@ -761,28 +764,147 @@ Un intervallo ideale si aggira fra i 40 e 60.
 )
 ]
 #align(center)[Tabella 15: Indice di Gulpease dei documenti]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ig.png", height: auto, width: auto),
+  caption: [IG]
+  )
+  
+)
+
 Per il calcolo del indice è stato utilizzato un software online che si trova al seguente indirizzo: #link("https://farfalla-project.org/readability_static/").
 I documenti sono stati convertiti in file di testo e successivamente calcolati dal sito sopra menzionato.
 
 //INSERIRE GRAFICO QUANDO TUTTI I FILE SARANNO TESTATI
-== EO - Errori Ortografici
+=== EO - Errori Ortografici
 La metrica che si occupa della correttezza ortografica (MPD1) ha dato come risultato un valore nullo.
 #align(center)[$ "EO"=0 $]
 Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di software per l'individuazione di errori ortografici, si stima un valore quasi nullo di essi. Viene stimata una correttezza del 100% e non assicurata poichè nonostante la minuziosità dei controlli e l'esecuzione dei test è possibile ci siano comunque artefatti riguardanti l'ortografia.
 
-== EAC - Estimated at Completion
+=== EAC - Estimated at Completion
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],
+  [*EAC* (in €)], [12100], [11750], [11535], [11125],[10680],
+[11259],
+[11883],
+[12102],
+)
+]
 
-== AC e ETC - Actual Cost e Estimate to Complete
+#align(left,
+figure(
+  image("/imgs/PdQ/eac.png", height: auto, width: auto),
+  caption: [EAC]
+  )
+  
+)
 
-== EV e PV - Earned Value e Planned Value 
+- Spiegazione:
+Il grafico mostra come nel tempo il costo totale previsto per il compimento del progetto subisca delle variazioni in base all'andamento dei lavori. Si può notare una situazione nel complesso stabile, con l'EAC massimo che non sfora mai il budget preventivato inizialmente per il progetto. Degni di nota sono: il minimo storico di 10680.00€, e il cambio di tendenza subito intorno allo sprint numero 6, che si ricorda essere avvenuto in corrispondenza delle festività invernali.
 
-== CV - Cost Variance
+=== AC e ETC - Actual Cost e Estimate to Complete
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],
+  [*AC* (in €)], [605], [1175], [1615], [2225],[2670],
+[3040],
+[3565],
+[4115],
+  [*ETC* (in €)], [11495], [10575], [9920], [8900],[8010],
+[8219],
+[8318],
+[7987],
+)
+]
 
-== SV - Schedule Variance
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
 
+- Spiegazione:
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). La situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati.
 
+=== EV e PV - Earned Value e Planned Value 
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],
+  [*EV* (in €)], [644], [1288], [1803], [2576],[3220],
+[3477],
+[3864],
+[4379],
+  [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
+[3864],
+[3864],
+[4508],
+)
+]
 
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
 
+- Spiegazione:
+Il grafico mostra l'andamento delle metriche di EV e PV. Alcuni valori di PV sovrastanti i corrispettivi (a livello temporale) di EV, denotano dei ritardi rispetto a quanto preventivato ad ogni sprint.
+
+=== CV e SV - Cost Variance e Schedule Variance
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],
+  [*CV* (in €)], [39], [113], [188,2], [351],[550],
+[437],
+[299],
+[264],
+  [*SV* (in €)], [0], [0], [-128,8], [0],[0],
+[-386],
+[0],
+[-128,8],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv.png", height: auto, width: auto),
+  caption: [CV e SV]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico mostra l'andamento delle metriche di CV e SV. I valori positivi di CV indicano spese minori rispetto alle rispettive previsioni. Tuttavia sebbene un CV positivo suggerisca che si sta risparmiando denaro rispetto al budget, è importante considerare anche le tempistiche del progetto. Valori negativi di SV indicano che il progetto, in quel determinato istante, è in ritardo rispetto alla pianificazione. Il valore del lavoro effettivamente completato è inferiore a quanto pianificato. Sebbene quindi il progetto stia risparmiando denaro rispetto al budget (CV positivo), potrebbe esserci stata una sottoperformance nella realizzazione delle attività pianificate (SV negativo). Ciò potrebbe essere dovuto a una pianificazione ottimistica, problemi nella gestione delle risorse, o altri fattori esterni. I valori attuali rientrano comunque nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista.
 
 #pagebreak()
 

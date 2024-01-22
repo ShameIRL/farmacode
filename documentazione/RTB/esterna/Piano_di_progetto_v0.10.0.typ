@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.11.0", "2024-01-20", p.favaron, "", "Stesura consultivo sprint 7 e 8",
+    "0.12.0", "2024-01-21", p.rosson, "", "Stesura sezione 'Globale' e migliorie grafiche generali",
+    "0.11.0", "2024-01-20", p.favaron, p.rosson, "Stesura consultivo sprint 7 e 8",
     "0.10.0", "2024-01-14", p.carraro, p.rosson, "Stesura sprint.6 e relativo consultivo e grafici",
     "0.9.0", "2024-01-02", p.favaron, p.carraro, "Stesura sprint.5 e relativo consultivo e grafici",
     "0.8.1", "2024-01-02", p.favaron, p.carraro, "Stesura consultivo sprint.4",
@@ -286,20 +287,17 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 
 == Metodo e motivazioni
 
-Il team ha deciso di adottare un modello di sviluppo di tipo *agile*, prendendo spunto da framework e metodologie già esistenti e di uso comune in contesti lavorativi realistici, come Scrum e XP.
-La filosofia che caratterizza le strategie di tipo agile è quella di, adottando pratiche di CI/CD //glossario?
-, garantire alcuni vantaggi e valori aggiunti, come:
+Il team ha deciso di adottare un modello di sviluppo di tipo agile, prendendo spunto da framework e metodologie già esistenti e di uso comune in contesti lavorativi realistici, come Scrum e XP. La filosofia che caratterizza le strategie di tipo agile è quella di, adottando pratiche di Continuous Integration/Continuous Deployment (CI/CD), garantire alcuni vantaggi e valori aggiunti, come:
 
-- favorire il lavoro in gruppo;
+- Favorire il Lavoro in Gruppo: La collaborazione e la comunicazione continua sono promosse per consentire al team di lavorare in modo sinergico, affrontare sfide e condividere conoscenze.
 
-- favorire lo sviluppo del singolo a livello di conoscenze e competenze;
+- Sviluppo Individuale: questo approccio promuove lo sviluppo individuale attraverso la condivisione di conoscenze e competenze all'interno del team, incoraggiando ciascun membro a crescere professionalmente.
 
-- favorire il miglioramento continuo, andando a facilitare e migliorare le attività di retrospettiva e la soluzione di problematiche;
+- Miglioramento Continuo: incoraggia il miglioramento continuo attraverso pratiche di retrospettiva, che consentono al team di riflettere sulle attività passate e risolvere eventuali problematiche per ottimizzare le prestazioni future.
 
-- migliorare e facilitare l'organizzazione fra i componenti;
+- Organizzazione Efficiente: mira a migliorare l'organizzazione tra i membri del team, garantendo una distribuzione efficiente dei compiti e facilitando la gestione delle risorse.
 
-- garantire trasparenza a proponente, favorendo maggiori e migliori feedback, e committente facilitandone l'analisi.
-
+- Trasparenza e Feedback: Attraverso pratiche di CI/CD, viene promossa la trasparenza del processo di sviluppo, fornendo feedback tempestivi e di qualità ai proponenti e committenti. Ciò facilita un'analisi più approfondita e contribuisce a migliorare la qualità del prodotto finale.
 //...?
 == Gestione delle comunicazioni
 === "Scheduled Meeting" e "Daily Call"
@@ -316,18 +314,13 @@ Sono incontri di durata mediamente minore, che avvengono giornalmente quando e s
 == Suddivisione delle attività 
 Questa sezione comprende tutte le pratiche adottate dal team per fare fronte alla gestione delle scadenze e necessità organizzative. Concendrandosi sull'aspetto quantitativo e temporale della pianificazione, andando a descrivere in che modo sono state suddivise le attività di progetto.
 
-=== Milestone, Macro Issues, Issues e Task
-- Milestone: 
-  Rappresentano le revisioni di progetto, e gli sprint per arrivarne al conseguimento.
-
-- Macro Issues:
-  Rappresentano le prime attività individuate dal team durante la prima fase di pianificazione generale. Saranno ragionevolmente soggette a modifiche durante il corso del progetto.
+=== Issues e Task
 
 - Issues:
-  Rappresentano le attività più specifiche individuate a ridosso di un nuovo sprint, e quindi ragionate e definite avendo un cruscotto più chiaro sullo stato di avanzamento del progetto.
+  Rappresentano le prime attività identificate dal team durante la fase di pianificazione generale. Con l'avvicinarsi di un nuovo sprint, queste attività diventeranno più specifiche, passando attraverso un processo di analisi e definizione più approfondito, beneficiando di un cruscotto più chiaro che riflette lo stato di avanzamento del progetto;
 
-- Task:
-  Sono micro attività individuate durante lo sviluppo stesso della relativa issue.
+- Task: 
+  Sono micro attività individuate durante lo sviluppo stesso del corrispettivo sprint.
 
 === Milestones e Sprint
 Il gruppo ha deciso di provare a dare fin da subito una suddivisone in macro attività, e relativa collocazione temporale, del periodo di progetto.
@@ -362,15 +355,15 @@ Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro respo
 La prima settimana che va dal 2023/11/07 al 2023/11/14 è stata di "assestamento".\
 La seconda settimana che va dal 2023/11/14 al 2023/11/23 (1 settimana e 2 giorni).
 
-- Macro-issues:\
+- Issues:\
   -- Approvare quanto prodotto nello sprint.1;\
   -- Revisionare quanto prodotto nello sprint.1;\
   -- Prima stesura del file "analisi dei requisiti";\
   -- Migliorare e implementare sezione 2.1 del documento "Norme di progetto";\
   -- Completare sezione 1 del documento "Norme di progetto".\
 
-- Issues e task:
-
+- Task: \
+ -- nd.
 - Sintesi:
 Questo primo sprint rientra a far parte di un primo periodo di "assestamento". Nella sua prima metà infatti, il team si è adoperato oltre che alla pianificazione stessa, a ricercare ed adottare dei metodi che potessero attuarla in modo professionale, efficace ed efficiente. Successivamente, il gruppo si è concentrato sulla stesura della documentazione in particolare sui file di "Norme di progetto" e "Analisi dei requisiti". Inoltre si sono attuate migliorie al repository lato automazione, e si sono stabiliti e affermati i contatti con il proponente svolgendo già alcuni meeting di consultazione ed esplorazione. In questo periodo il team ha rivoluzionato il modo in cui scrivere la documentazione di progetto, passando da Latex a Typst, questo procedimento che inizialmente ha rallentato di molto i lavori, si è rivelato molto vantaggioso.
 
@@ -388,7 +381,7 @@ Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actio
 
 ==== sprint.2
 - Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
-- Macro-issues:\
+- Issues:\
   -- Approvate quanto prodotto nello sprint.2;\
   -- Revisionare quanto prodotto nello sprint.2;\
   -- Realizzazione pagina github.io;\
@@ -398,7 +391,7 @@ Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actio
   -- Seconda stesura del file "analisi dei requisiti";\
   -- Prima stesura sezione 4 file "Norme di progetto";\
 
-- Issue e task:\
+- Task:\
   -- Revisionare "Piano di qualifica";\
   -- Prima stesure sezione 3 "Piano di progetto";\
   -- struttura piano di qualifica;\
@@ -424,7 +417,7 @@ Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente.
 
 ==== sprint.3
 - Periodo: 2023/12/04-2023/12/11 (1 settimana)
-- Macro-issues:\
+- Issues:\
   -- Approvate quanto prodotto nello sprint.3;\
   -- Revisionare quanto prodotto nello sprint.3;\
   -- Continuazione del file "Piano di progetto";\
@@ -433,7 +426,7 @@ Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente.
   -- Realizzare algoritmo per il POC; \
   -- Iniziare interfaccia POC.
 
-- Issue e task:\
+- Task:\
   -- Completamento prima stesura sezione 4 file "Analisi dei requisiti";\
   -- Stesura verbale interno 2023/12/04;\
   -- Stesura Verbale esterno 2023/12/06;\
@@ -457,13 +450,13 @@ nd.
 
 ==== sprint.4
 - Periodo: 2023/12/11-2023/12/18 (1 settimana)
-- Macro-issues:\
+- Issues:\
   -- Approvare quanto prodotto nello sprint.4;\
   -- Revisionare quanto prodotto nello sprint.4;\
   -- Documentazione;\
   -- POC - completamento prima versione.\
 
-- Issue e task:\
+- Task:\
   -- Continuazione stesura del documento "Norme di Progetto";\
   -- Continuazione stesura del documento "Analisi dei Requisiti";\
   -- Continuazione stesura del documento "Glossario";\
@@ -473,7 +466,7 @@ nd.
 
 - Sintesi:
 Durante il quarto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin in data 2023/12/15 relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
-È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prioìma versione stabile.
+È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prima versione stabile.
 
 - Gantt view:
 #align(left,
@@ -490,12 +483,12 @@ Risoluzione: Il tutto è stato risolto con la creazione di svariati script che s
 
 ==== sprint.5
 - Periodo: 2023/12/18-2023/12/27 (1 settimana e 5 giorni)
-- Macro-issues:\
+- Issues:\
   -- Approvare quanto prodotto nello sprint.5;\
   -- Revisionare quanto prodotto nello sprint.5;\
   -- Documentazione;\
 
-- Issue e task:\
+- Task:\
   -- Continuazione stesura del documento "Norme di Progetto";\
   -- Continuazione stesura del documento "Analisi dei Requisiti";\
   -- Continuazione stesura del documento "Glossario";\
@@ -525,12 +518,12 @@ nd.
 ==== sprint.6
 - Periodo: 2023/12/28-2024/01/07 (1 settimana e 3 giorni)
 
-- Macro-issues:\
+- Issues:\
   -- Approvare quanto prodotto nello sprint.6;\
   -- Revisionare quanto prodotto nello sprint.6;\
   -- Documentazione;\
 
-- Issue e task:\
+- Task:\
   -- Continuazione stesura del documento "Norme di Progetto";\
   -- Continuazione stesura del documento "Analisi dei Requisiti";\
   -- Continuazione stesura del documento "Glossario";\
@@ -562,12 +555,12 @@ Risoluzione: La ridistribuzione delle attività previste è variata, cercando di
 ==== sprint.7
 - Periodo: 2024/01/08 - 2024/01/15
 
-- Macro-issues:\
+- Issues:\
   -- Approvare quanto prodotto nello sprint.7;\
   -- Revisionare quanto prodotto nello sprint.7;\
   -- Documentazione;\
 
-- Issue e task:
+- Task:
 
   -- Continuazione stesura del file "Analisi dei Requisiti";\
   -- Continuazione stesura del file "Piano di Progetto";\
@@ -597,9 +590,9 @@ nd.
 ==== sprint.8
 - Periodo: 2024/01/15 - TBD
 
-- Macro-issues:\
+- Issues:\
 
-- Issue e task:
+- Task:
 
 - Sintesi:
 
@@ -625,15 +618,6 @@ figure(
 
 - Premessa:
 La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo.
-
-- Legenda: 
-  + S --> Scarto in ore;
-  + Totale (1) --> Totale ore per ruolo;
-  + C. o. --> Costo per ora;
-  + Costo --> Costo totale per ruolo;
-  + Totale (2) --> Costo totale sprint;
-  + Preventivato tot. --> Costo preventivato totale progetto (in candidatura);
-  + Bilancio --> Bilancio relativo alla fine dello sprint.
 
 == RTB
 
@@ -666,9 +650,10 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
   align: center,
   [*SPRINT 1*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [4], [8], [3], [7], [8], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€200,00], [€75,00], [€140,00], [€120,00], [€0,00],
-  [Totale], [], [], [], [], [], [*€655,00*], 
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€200,00], [€45,00], [€140,00], [€120,00], [€0,00],
+  [Totale], [], [], [], [], [], [*€625,00*], 
+  [Bilancio], [], [], [], [], [], [*€12255,00*],
 )
 ])
 
@@ -711,21 +696,32 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
   align: center,
   [*SPRINT 1*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [#red("5")], [8], [#green("2")], [#green("6")], [#green("7")], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#red("€150,00")], [€200,00], [#green("€50,00")], [#green("€120,00")], [#green("€105,00")], [€0,00],
-  [Totale], [], [], [], [], [], [#green("€625,00")], 
-  [Bilancio], [], [], [], [], [], [€12.255,00],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#red("€150,00")], [€200,00], [#green("€30,00")], [#green("€120,00")], [#green("€105,00")], [€0,00],
+  [Totale], [], [], [], [], [], [#green("€605,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€12.275,00")],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#1.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.1]
-)
 
-#figure(
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#1.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.1]
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [1]
+  )
 )
+  
+- Spiegazione:
+Come si può notare il consuntivo di questo sprint denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. Ciò tuttavia non esclude una possibile pianificazione ottimistica, per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica". 
+
+#pagebreak()
 
 === sprint.2
 - Preventivo:
@@ -756,10 +752,10 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
   align: center,
   [*SPRINT 2*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [5], [6], [8], [4], [7], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€150,00], [€150,00], [€200,00], [€80,00], [€105,00], [€0,00],
-  [Totale], [], [], [], [], [], [*€685,00*], 
-
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€150,00], [€150,00], [€120,00], [€80,00], [€105,00], [€0,00],
+  [Totale], [], [], [], [], [], [*€605,00*], 
+  [Bilancio], [], [], [], [], [], [*€11.670,00*],
 )
 ])
 
@@ -770,10 +766,9 @@ figure(
   )
   
 )
-
 - Spiegazione:
 
-Come si può notare, il preventivo di questo sprint indica un cambio di priorità verso la realizzazione di codice per il PoC senza però tralasciare la documentazione. 
+Come si può notare, il preventivo di questo sprint indica un cambio di priorità verso la realizzazione di codice per il PoC. Come già fatto notare la pianificazione di questo sprint è stata realizzata con l'idea di prefissarne la durata ad una settimana. Tuttavia si confida in un aumento generale della produttività ora che il team ha avuto modo di allinearsi.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -803,21 +798,31 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
   align: center,
   [*SPRINT 2*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [#green("4")], [#green("5")], [8], [#red("5")], [7], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€120,00")], [#green("€125,00")], [€200,00], [#red("€100,00")], [€105,00], [€0,00],
-  [Totale], [], [], [], [], [], [#green("€650,00")], 
-  [Bilancio], [], [], [], [], [], [€11.605,00],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#green("€120,00")], [#green("€125,00")], [€120,00], [#red("€100,00")], [€105,00], [€0,00],
+  [Totale], [], [], [], [], [], [#green("€570,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€11.705,00")],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#2.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.2]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [1]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.2]
-)
+- Spiegazione:
+Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. 
+
+#pagebreak()
 
 === sprint.3
 - Preventivo:
@@ -848,10 +853,10 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
   align: center,
   [*SPRINT 3*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [4], [2], [14], [0], [8], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€50,00], [€350,00], [€0,00], [€120,00], [€0,00],
-  [Totale], [], [], [], [], [], [*€640,00*], 
-
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€50,00], [€210,00], [€0,00], [€120,00], [€0,00],
+  [Totale], [], [], [], [], [], [*€500,00*], 
+  [Bilancio], [], [], [], [], [], [*€11.205,00*],
 )
 ])
 
@@ -894,21 +899,31 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
   align: center,
   [*SPRINT 3*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [#green("4")], [2], [#green("12")], [0], [8], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€90,00")], [€50,00], [#green("€300,00")], [€0,00], [€120,00], [€0,00],
-  [Totale], [], [], [], [], [], [#green("€560,00")], 
-  [Bilancio], [], [], [], [], [], [€11.045,00],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#green("€90,00")], [€50,00], [#green("€180,00")], [€0,00], [€120,00], [€0,00],
+  [Totale], [], [], [], [], [], [#green("€440,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€11.265,00")],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#3.png", height: 15%, width: auto),    caption: [consuntivi/scarti/sprint.3]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#3.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0.93]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#3.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.3]
-)
+- Spiegazione:
+Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. Per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica".
+
+#pagebreak()
 
 === sprint.4
 - Preventivo:
@@ -939,10 +954,10 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
   align: center,
   [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [4], [3], [9], [8], [7], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€75,00], [€225,00], [€160,00], [€105,00], [€0,00],
-  [Totale], [], [], [], [], [], [*€685,00*], 
-
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€75,00], [€135,00], [€160,00], [€105,00], [€0,00],
+  [Totale], [], [], [], [], [], [*€595,00*], 
+[Bilancio], [], [], [], [], [], [*€10670,00*], 
 )
 ])
 
@@ -955,7 +970,7 @@ figure(
 )
 
 - Spiegazione:
-Il preventivo per questo sprint ridistribuisce il focus del team in modo più equo. Dopo due sprint incentrati sui lavori del PoC si stima infatti di essere arrivati ad un suo prossimo completamento.
+Il preventivo per questo sprint ridistribuisce il focus del team in modo più equo. Dopo due sprint incentrati sui lavori del PoC si stima infatti di essere prossiami ad un suo primo completamento.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -972,7 +987,7 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
   [Favaron R.], [], [], [4 #red("(+1)")], [], [1], [],
   [Pandolfo M.], [], [2], [], [2], [], [],
   [Passarella A.], [], [], [3], [], [2], [],
-  [Rosson L.], [], [1], [], [3], [], [],
+  [Rosson L.], [], [1], [], [2 #green("(-1)")], [], [],
 )
 ])
 
@@ -984,23 +999,33 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
   columns: (auto,)*7,
   align: center,
   [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [3], [#red("10")], [#red("9")], [7], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€75,00], [#red("€250,00")], [#red("€180,00")], [€105,00], [€0,00],
-  [Totale], [], [], [], [], [], [#red("€730,00")], 
-  [Bilancio], [], [], [], [], [], [€10.315,00],
+  [Totale Ore], [4], [3], [#red("10")], [8], [7], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€75,00], [#red("€150,00")], [€160,00], [€105,00], [€0,00],
+  [Totale], [], [], [], [], [], [#red("€610,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€10.655,00")],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#4.png", height: 15%, width: auto),    
-  caption: [consuntivi/scarti/sprint.4]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#4.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [1]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#4.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.4]
-)
+- Spiegazione:
+Il consuntivo di questo sprint denota una leggera variazione nei costi, con una spesa leggermente superiore rispetto al preventivo. Tuttavia, è incoraggiante notare che il valore di SPI sia ritornato ad 1. Questo indica che, nonostante la variazione nei costi, il nostro progresso è allineato con la pianificazione temporale prevista. 
+
+#pagebreak()
+
 
 === sprint.5
 - Preventivo:
@@ -1031,9 +1056,10 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
   align: center,
   [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [4], [4], [2], [10], [9], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€100,00], [€50,00], [€200,00], [€135,00], [€0,00],
-  [Totale], [], [], [], [], [], [*€605,00*], 
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€100,00], [€30,00], [€200,00], [€135,00], [€0,00],
+  [Totale], [], [], [], [], [], [*€585,00*], 
+  [Bilancio], [], [], [], [], [], [*€10070,00*], 
 )
 ])
 
@@ -1076,22 +1102,31 @@ Questo sprint si pianifica essere fra gli ultimi della fase di RTB. Le risorse d
   align: center,
   [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [#green("3")], [#green("3")], [#green("1")], [#green("8")], [#green("7")], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€90,00")], [#green("€75,00")], [#green("€25,00")], [#green("€160,00")], [#green("€105,00")], [€0,00],
-  [Totale], [], [], [], [], [], [#green("€455,00")], 
-  [Bilancio], [], [], [], [], [], [€9.860,00],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#green("€90,00")], [#green("€75,00")], [#green("€15,00")], [#green("€160,00")], [#green("€105,00")], [€0,00],
+  [Totale], [], [], [], [], [], [#green("€445,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€10.210,00")],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#5.png", height: 15%, width: auto),    
-  caption: [consuntivi/scarti/sprint.5]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#5.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [1]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#5.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.5]
-)
+- Spiegazione:
+Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate.  
+
+#pagebreak()
 
 === sprint.6
 - Preventivo:
@@ -1103,13 +1138,13 @@ Questo sprint si pianifica essere fra gli ultimi della fase di RTB. Le risorse d
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [2], [1], [], [], [], [],
+  [Baggio M.], [3], [2], [], [], [], [],
   [Bomben F.], [], [], [], [2], [1], [],
-  [Carraro A.], [], [], [], [], [1], [1],
-  [Favaron R.], [], [], [1], [], [], [1],
+  [Carraro A.], [], [], [], [1], [1], [],
+  [Favaron R.], [], [], [2], [1], [], [],
   [Pandolfo M.], [], [], [], [2], [], [],
-  [Passarella A.], [], [], [], [1], [1], [],
-  [Rosson L.], [], [2], [], [], [], [1],
+  [Passarella A.], [], [], [], [2], [1], [],
+  [Rosson L.], [], [2], [], [], [], [],
 )
 ])
 
@@ -1121,10 +1156,11 @@ Questo sprint si pianifica essere fra gli ultimi della fase di RTB. Le risorse d
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [2], [3], [1], [5], [3], [3],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€60,00], [€75,00], [€25,00], [€100,00], [€45,00], [€45,00],
-  [Totale], [], [], [], [], [], [*€350,00*], 
+  [Totale Ore], [3], [4], [2], [8], [3], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€100,00], [€30,00], [€160,00], [€45,00], [€0,00],
+  [Totale], [], [], [], [], [], [*€425,00*], 
+   [Bilancio], [], [], [], [], [], [*€9.785,00*],
 )
 ])
 
@@ -1137,7 +1173,7 @@ figure(
 )
 
 - Spiegazione:
-Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice alla revisione RTB. Le risorse del team verranno impiegate principalmente per la conclusione della documentazione, piccole correzioni e verifiche, oltre a rendere piu' presentabile la repository. Data la presenza delle festività invernali, si preventivano meno ore rispetto ai soliti sprin, ed una lungata più lunga, in modo da, tolti i giorni festivi, dare più tempo a chi di dovere di svolgere i propri compiti stabiliti in precedenza.
+Data la presenza delle festività invernali, sono state preventivate meno ore rispetto alla consuetudine. Si è inoltre concordato di stabilire una durata più lunga, in modo dà, tolti i giorni festivi, dare più tempo a chi di dovere di svolgere i propri compiti stabiliti in precedenza.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -1148,13 +1184,13 @@ Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [2#green("(-1)")], [1], [], [], [], [],
-  [Bomben F.], [], [], [], [2#green("(-1)")], [1], [],
-  [Carraro A.], [], [], [], [], [1#green("(-1)")], [1],
-  [Favaron R.], [], [], [1], [], [], [1],
+  [Baggio M.], [3 #green("(-2)")], [2], [], [], [], [],
+  [Bomben F.], [], [], [], [2 #green("(-1)")], [1], [],
+  [Carraro A.], [], [], [], [1 #green("(-1)")], [1], [],
+  [Favaron R.], [], [], [2], [1], [], [],
   [Pandolfo M.], [], [], [], [2], [], [],
-  [Passarella A.], [], [], [], [1], [1], [],
-  [Rosson L.], [], [2#red("(+1)")], [], [], [], [1],
+  [Passarella A.], [], [], [], [2 #red("(+1)")], [1], [],
+  [Rosson L.], [], [2 #red("(+1)")], [], [], [], [],
 )
 ])
 
@@ -1166,23 +1202,32 @@ Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [#green("1")], [#red("4")], [1], [#green("4")], [#green("2")], [3],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€30,00")], [#red("€100,00")], [€25,00], [#green("€100,00")], [#green("€60,00")], [€45,00],
-  [Totale], [], [], [], [], [], [€310,00], 
-  [Bilancio], [], [], [], [], [], [€9.535,00],
+  [Totale Ore], [#green("1")], [#red("5")], [2], [#green("7")], [3], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#green("€30,00")], [#red("€125,00")], [€30,00], [#green("€140,00")], [€45,00], [€0,00],
+  [Totale], [], [], [], [], [], [#green("€370,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€9.840,00")],
 )
 ])
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/scarti/sprint#6.png", height: 15%, width: auto),    
-  caption: [consuntivi/scarti/sprint.6]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#6.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0.9]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#6.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.6]
-)
+- Spiegazione:
+Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. Per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica".
+
+#pagebreak()
 
 === sprint.7
 - Preventivo:
@@ -1194,13 +1239,13 @@ Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [4], [], [],
-  [Bomben F.], [], [3], [], [1], [], [],
-  [Carraro A.], [], [], [], [4], [], [],
-  [Favaron R.], [], [], [], [1], [3], [],
+  [Baggio M.], [], [], [], [3], [], [],
+  [Bomben F.], [], [2], [], [1], [], [],
+  [Carraro A.], [], [], [], [2], [], [],
+  [Favaron R.], [], [], [], [2], [3], [],
   [Pandolfo M.], [4], [], [], [], [], [],
-  [Passarella A.], [], [], [], [4], [], [],
-  [Rosson L.], [], [], [], [4], [], [],
+  [Passarella A.], [], [], [], [3], [], [],
+  [Rosson L.], [], [], [], [1], [2], [],
 )
 ])
 
@@ -1212,10 +1257,11 @@ Questo sprint ha l'obiettivo di preparare la documentazione, la repo e il codice
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [3], [0], [18], [3], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€75,00], [€0,00], [€360,00], [€45,00], [€0,00],
-  [Totale], [], [], [], [], [], [€600,00], 
+  [Totale Ore], [4], [2], [0], [12], [5], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€50,00], [€0,00], [€240,00], [€75,00], [€0,00],
+  [Totale], [], [], [], [], [], [€485,00], 
+  [Bilancio], [], [], [], [], [], [*€9.355,0*],
 )
 ])
 
@@ -1228,7 +1274,7 @@ figure(
 )
 
 - Spiegazione:
-Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore vengono distribuite in modo equo, includendo per la prima volta anche il ruolo di progettista.
+A seguito dello slittamento dell'apertura della finestra di candidatura per la prima revisione e del calo di produttività registrato nello scorso sprint, si stimano ancora molte ore utili al completamento e miglioria della documentazione di progetto.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -1239,13 +1285,13 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [4 #green("(-1)")], [], [],
-  [Bomben F.], [], [3], [], [1], [], [],
-  [Carraro A.], [], [], [], [4], [], [],
-  [Favaron R.], [], [], [], [1], [3], [],
-  [Pandolfo M.], [4 #green("(-1)")], [], [], [], [#red("(+1)")], [],
-  [Passarella A.], [], [], [], [4], [], [],
-  [Rosson L.], [], [], [], [4], [], [],
+  [Baggio M.], [], [], [], [3], [], [],
+  [Bomben F.], [], [2], [], [1], [], [],
+  [Carraro A.], [], [], [], [2 #red("(+1)")], [], [],
+  [Favaron R.], [], [], [], [2], [3], [],
+  [Pandolfo M.], [4], [], [], [#red("(+1)")], [], [],
+  [Passarella A.], [], [], [], [3], [], [],
+  [Rosson L.], [], [], [], [1], [2], [],
 )
 ])
 
@@ -1257,23 +1303,33 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [#green("3")], [3], [0], [#green("17")], [#red("4")], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€90,00")], [€75,00], [€0,00], [#green("€340,00")], [#red("€60,00")], [€0,00],
-  [Totale], [], [], [], [], [], [#green("€565,00")], 
-  [Bilancio], [], [], [], [], [], [€8.970,00],
+  [Totale Ore], [4], [2], [0], [14], [5], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€50,00], [€0,00], [#red("€280,00")], [€75,00], [€0,00],
+  [Totale], [], [], [], [], [], [#red("€525,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€9315,00")], 
 )
 ])
 
-#figure(
-   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#7.png", height: 15%, width: auto),    
-   caption: [consuntivi/scarti/sprint.7]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#7.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [1]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#7.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.7]
-)
+- Spiegazione:
+Il consuntivo di questo sprint denota una leggera variazione nei costi, con una spesa leggermente superiore rispetto al preventivo. Tuttavia, è incoraggiante notare che il valore di SPI sia ritornato ad 1. Questo indica che, nonostante la variazione nei costi, il nostro progresso è allineato con la pianificazione temporale prevista. 
+
+#pagebreak()
+
 
 === sprint.8
 - Preventivo:
@@ -1290,8 +1346,8 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   [Carraro A.], [], [2], [], [], [2], [],
   [Favaron R.], [], [], [], [], [4], [],
   [Pandolfo M.], [], [], [], [3], [1], [],
-  [Passarella A.], [], [], [], [1], [3], [],
-  [Rosson L.], [4], [], [], [], [2], [],
+  [Passarella A.], [], [], [], [2], [3], [],
+  [Rosson L.], [3], [], [], [], [2], [],
 )
 ])
 
@@ -1303,10 +1359,11 @@ Questo sprint si pianifica essere il primo utile alla revisione di PB. Le ore ve
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [2], [0], [7], [18], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [€120,00], [€50,00], [€0,00], [€140,00], [€270,00], [€0,00],
-  [Totale], [], [], [], [], [], [€580,00], 
+  [Totale Ore], [3], [2], [0], [8], [18], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€50,00], [€0,00], [€160,00], [€270,00], [€0,00],
+  [Totale], [], [], [], [], [], [€570,00], 
+  [Bilancio], [], [], [], [], [], [*€8745,00*],
 )
 ])
 
@@ -1319,7 +1376,7 @@ figure(
 )
 
 - Spiegazione:
-
+Questo sprint si pianifica essere uno degli ultimi utili alla fase di RTB. Sono state quindi preventivate ore utili alla verifica e miglioramento dei documenti, e alla preparazione del materiale necessario alla prima fase della revisione.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -1330,13 +1387,13 @@ figure(
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [2], [3], [],
+ [Baggio M.], [], [], [], [2], [3], [],
   [Bomben F.], [], [], [], [1], [3], [],
   [Carraro A.], [], [2], [], [], [2], [],
   [Favaron R.], [], [], [], [], [4], [],
   [Pandolfo M.], [], [], [], [3], [1], [],
-  [Passarella A.], [], [], [], [1], [3], [],
-  [Rosson L.], [4 #green("(-1)")], [], [], [], [2], [],
+  [Passarella A.], [], [], [], [2], [3], [],
+  [Rosson L.], [3 #green("(-1)")], [], [], [], [2], [],
 )
 ])
 
@@ -1348,27 +1405,117 @@ figure(
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [#green("3")], [2], [0], [7], [18], [0],
-  [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-  [Costo], [#green("€90,00")], [€50,00], [€0,00], [€140,00], [€270,00], [€0,00],
+  [Totale Ore], [2], [2], [0], [8], [18], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#green("€60,00")], [€50,00], [€0,00], [€160,00], [€270,00], [€0,00],
   [Totale], [], [], [], [], [], [#green("€550,00")], 
-  [Bilancio], [], [], [], [], [], [€8.420,00],
+  [Bilancio], [], [], [], [], [], [#green("€8765,00")],
 )
 ])
 
-#figure(
-   image("/imgs/PdP/graphs/consuntivi/scarti/sprint#8.png", height: 15%, width: auto),    
-   caption: [consuntivi/scarti/sprint.8]
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0.97]
+  )
 )
 
-#figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
-  caption: [consuntivi/bilanci/sprint.8]
+- Spiegazione:
+Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. I valori registrati rientrano comunque nei limiti imposti dal team (per una visione più completa si rimanda al documento "Piano di Qualifica").
+
+#pagebreak()
+
+=== sprint.9
+
+=== Globale
+
+- Preventivo Candidatura:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Candidatura*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [10], [5], [36], [5], [20], [19],
+  [Bomben F.], [10], [5], [36], [5], [20], [19],
+  [Carraro A.], [10], [5], [36], [5], [20], [19],
+  [Favaron R.], [10], [5], [36], [5], [20], [19],
+  [Pandolfo M.], [10], [5], [36], [5], [20], [19],
+  [Passarella A.], [10], [5], [36], [5], [20], [19],
+  [Rosson L.], [10], [5], [36], [5], [20], [19],
 )
+])
+
+- Consuntivo Effettivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Effettivo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [1], [2], [7], [#red("10")], [11], [0],
+  [Bomben F.], [3], [#red("7")], [3], [#red("7")], [8], [0],
+  [Carraro A.], [4], [2], [5], [#red("6")], [10], [0],
+  [Favaron R.], [4], [4], [12], [#red("6")], [10], [0],
+  [Pandolfo M.], [4], [5], [3], [#red("10")], [7], [0],
+  [Passarella A.], [3], [2], [3], [#red("11")], [9], [0],
+  [Rosson L.], [7], [#red("8")], [2], [5], [7], [0],
+)
+])
+
+- Spiegazione:
+Come evidente dall'andamento delle attività, le ore inizialmente pianificate per svolgere l'analisi dei requisiti e per il ruolo di Amministratore si sono rivelate insufficienti. Di fronte a questa constatazione, il gruppo ha preso la decisione di rivedere le stime effettuate in fase di candidatura, mantenendo tuttavia l'impegno a non aumentare i costi complessivi del progetto, conformemente alle disposizioni normative stabilite. Riteniamo questo adattamento necessario per garantire una pianificazione più accurata e per affrontare le esigenze effettive delle attività future, senza impattare negativamente sul bilancio complessivo del progetto. Segue la nuova ridistribuzione oraria:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Nuovo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [10], [9], [30], [11], [22], [12],
+  [Bomben F.], [10], [9], [30], [11], [22], [12],
+  [Carraro A.], [10], [9], [30], [11], [22], [12],
+  [Favaron R.], [10], [9], [30], [11], [22], [12],
+  [Pandolfo M.], [10], [9], [30], [11], [22], [12],
+  [Passarella A.], [10], [9], [30], [11], [22], [12],
+  [Rosson L.], [10], [9], [30], [11], [22], [12],
+)
+])
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Costi*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [70], [63], [210], [77], [154], [84],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€2100,00], [€1575,00], [€3150,00], [€1540,00], [€2100,00], [€2100,00],
+  [Totale], [], [], [], [], [], [#green("€12565,00")], 
+)
+])
+
+Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica.
 
 == PB
 
-=== sprint.9
+In questa sezione verrano riportati preventivi e consutivi relativi al periodo di PB.
+// === sprint.10
 // - Preventivo:
 // #align(center, text(0.85em)[
 // #table(
@@ -1427,7 +1574,7 @@ figure(
 // - Consuntivo:
 // nd.
 
-=== sprint.10
+// === sprint.11
 /*
 - Preventivo:
 #align(left,
@@ -1453,7 +1600,7 @@ Il preventivo per questo sprint prevede un continuo sui lavori di progettazione 
 nd.
 */
 
-=== sprint.11
+// === sprint.11
 /*
 - Preventivo:
 #align(left,
@@ -1479,7 +1626,7 @@ Il preventivo per questo sprint segue la strategia del precedente.
 nd.
 */
 
-=== sprint.12
+// === sprint.12
 /*
 - Preventivo:
 #align(left,
@@ -1505,7 +1652,7 @@ In questo sprint si prevede un accentuamento delle attività relative alla codif
 nd.
 */
 
-=== sprint.13
+// === sprint.13
 /*
 - Preventivo:
 #align(left,
@@ -1531,7 +1678,7 @@ Il preventivo per questo sprint prevede un continuo sui lavori di codifica, e ri
 nd.
 */
 
-=== sprint.14
+// === sprint.14
 /*
 - Preventivo:
 #align(left,
@@ -1557,7 +1704,7 @@ In questo sprint le attività di codifica vengono incrementate dando la priorit�
 nd.
 */
 
-=== sprint.15
+// === sprint.15
 /*
 - Preventivo:
 #align(left,
@@ -1583,7 +1730,7 @@ Il preventivo per questo sprint indica un aumento alle attività di verifica del
 nd.
 */
 
-=== sprint.16
+// === sprint.16
 /*
 - Preventivo:
 #align(left,
@@ -1609,9 +1756,7 @@ Questo sprint si pianifica essere l'ultimo della fase di PB. Le attività a cui 
 nd.
 */
 
-== CA
-
-=== sprint.17
+// === sprint.17
 /*
 - Preventivo:
 #align(left,
@@ -1637,7 +1782,7 @@ In questo primo sprint della fase di CA, si prevedono nuovi lavori di codifica e
 nd.
 */
 
-=== sprint.18
+// === sprint.18
 /*
 - Preventivo:
 #align(left,
@@ -1662,3 +1807,7 @@ Il preventivo per questo periodo segue la strategia del precedente. Si pianifica
 - Consuntivo:
 nd.
 */
+
+
+
+//sp5
