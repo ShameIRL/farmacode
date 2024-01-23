@@ -41,7 +41,7 @@ Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione"
 L'appicazione è sviluppata sotto forma di #glossario("webapp") per la sua comodità, favorendo così l'accesso e la fruizioneda diversi dispositivi, sistemi o browser.\
 
 Dall'interfaccia utente del sistema software sarà possibile selezionare uno specifico cliente e visualizzare i prodotti da lui acquistati e quelli che il sistema ha individuato come raccomandati. Inoltre selezionato un articolo o un insieme di articoli il sistema suggerisce a quali clienti proporli, selezionandoli in base a quanto probabile siano interessati per i prodotti analizzati. I vari prodotti possono essere filtrati per categoria così da facilitare ricerche e restringere il campo di soluzione.\
-Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'algoritmo che ha fornito l'esito della suggerimento.\
+Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'#glossario("algoritmo") che ha fornito l'esito della suggerimento.\
 L'utente amministratore ha la possibilità di creare ulteriori account per eventuali operatori che necessitano di utilizzare l'applicativo.\
 
 
@@ -55,7 +55,7 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 == Riferimenti /** elenco con link dei file a cui si fa riferimento (capitolato, slide del prof, altri file nostri) */
 
 === Riferimenti normativi
-- Capitolato C2 - Sistema di raccomandazione\
+- #glossario("Capitolato") C2 - Sistema di raccomandazione\
     https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
 - Regolamento progetto ditattico\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
@@ -131,8 +131,8 @@ Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura
 - Typst per la stesura dei documenti ufficiali di progetto;
 - Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
 - Google Meet e Zoom per gli incontri verso l'esterno;
-- GitHub per l'hosting e versionamento del prodotto software (documentazione inclusa);
-- Diagrams.net (draw.io) per la realizzazione dei casi d'uso.
+- #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa);
+- Diagrams.net (draw.io) per la realizzazione dei #glossario("casi d'uso").
 - KeyNote per la realizzazione dei diari di bordo.
 
 == Sviluppo
@@ -316,7 +316,7 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
     + Mysql per il datatbase;
     + Xampp (o Mamp, a seconda del sistema operativo) per l'hosting.
 - *Livello Elaborazione:*
-    + Anaconda, per la gestione della configurazione;
+    + #glossario("Anaconda"), per la gestione della configurazione;
     + Python, come linguaggio per il sistema di raccomandazioni;
     + Come librerie: numpy, surprise e panda. 
 - *Livello di Logica:*
@@ -506,7 +506,7 @@ Il documento Piano di Qualifica va strutturato nel seguente modo:
     - Qualità di processo: In questa sezione va strutturata la modalità e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
     - Controllo di qualità: In questa sezione vanno spiegati i test di controllo con relativi grafici e tabelle;
     - Miglioramenti: In questa sezione vanno indicati i miglioramenti possibili del prodotto e dei processi;
-    - Controllo delle metriche: Questa sezione funge da cruscotto per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
+    - Controllo delle metriche: Questa sezione funge da #glossario("cruscotto") per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
 
 ==== Norme di Progetto
 Il documento Norme di Progetto va strutturato nel seguento modo:
@@ -855,10 +855,10 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
 
     Le comunicazioni interne sono quelle coinvolgenti solo il team, o alcuni dei suoi membri, avvengono tramite mezzi quali:
     
-    -- Telegram: 
+    -- #glossario("Telegram"): 
     Il gruppo è usato per comunicazioni di tipo più breve e repentino. Solitamente viene utilizzato per stilare un breve ordine del giorno e per organizzare incontri interni. In privato invece, avvengono comunicazioni che interessano solo le parti conivolte in modo da regolare il flusso di comunicazioni nel gruppo;
 
-    -- Discord: 
+    -- #glossario("Discord"): 
     Il server è suddiviso in vari canali testuali:
     - General: utilizzato per comunicazioni generali;
     - Link-utility: in esso sono riversati tutti i link utili al gruppo perchè spesso visitati o consultati (ad esempio: link alla tabella condivisa per la gestione costi/ore);
@@ -883,7 +883,7 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 
 - *"Scheduled meeting"*
     
-    Sono i meeting interni che solitamente prevedono la messa a verbale. Vengono fissati con cadenza settimanale con data variabile a seconda delle disponibilità dei membri del team, quest'ultima viene regolarmente concordata alla fine del incontro precedente.
+    Sono i meeting interni che solitamente prevedono la messa a #glossario("verbale"). Vengono fissati con cadenza settimanale con data variabile a seconda delle disponibilità dei membri del team, quest'ultima viene regolarmente concordata alla fine del incontro precedente.
     La loro durata è variabile, e tutte le componenti sono tenute a presenziarvi. 
     Per una migliore gestione del tempo a disposizione è stato deciso di strutturare i meeting come segue:
 
