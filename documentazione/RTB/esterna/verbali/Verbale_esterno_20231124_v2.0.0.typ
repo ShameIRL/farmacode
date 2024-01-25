@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+                "2.0.0", "20-12-2023", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
     "1.0.1", "25-11-2023", p.rosson , p.bomben, "Apportate alcune modifiche e miglioramenti",
     "1.0.0", "24-11-2023", p.favaron , p.bomben, "Stesura e revisione del verbale",
   ),
@@ -53,19 +54,6 @@ L'azienda ci ha inoltre comunicato che Lunedì 27 Novembre ci consegnerà il dat
 Infine ci siamo accordati per un incotro nell'arco delle settimane a venire.
 
 #v(16cm)
-Con la seguente firma il proponente esterno conferma e valida il documento:
-#v(0.5cm)
-
-#set line(length: 40%)
-#stack(
-    spacing: 0.2em,
-    [Firma:],
-    line(stroke: 1pt + black)
-)
-#v(0.3cm)
-#set line(length: 35%)
-#stack(
-    spacing: 0.2em,
-    [Data:],
-    line(stroke: (paint: black, thickness: 1pt, dash: "dashed"))
+#align(left,
+  image("/imgs/firme/20-12-2023.png", width: 75%, height: 12%),
 )

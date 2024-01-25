@@ -35,7 +35,7 @@ Il meeting è iniziato come di consueto con una scaletta di quanto stato fatto d
 - Interfaccia web e sua prima realizzazione;
 - API e hosting del prodotto.
 In riferimento a questo ultimo punto si riportano le decisioni concordate: \
-In modo da non dipendere dall'attesa dell'ambiente che l'azienda ci fornirà, si è pensato di procedere con lo sviluppo utilizzando un servizio di hosting in locale, quali XAMPP o MAMP a seconda del sistema operativo, andando a creare delle API di tipo rest, in modo da integrare le varie parti del software così da concludere una vera e propria versione del PoC.
+In modo da non dipendere dall'attesa dell'ambiente che l'azienda ci fornirà, si è pensato di procedere con lo sviluppo in locale utilizzando Docker, andando a creare delle API di tipo rest, in modo da integrare le varie parti del software così da concludere una vera e propria versione del PoC.
 Successivamente si è discusso della prossima pianificazione e relativa distribuzione di ruoli e attività. Decidendo di spostare la priorità dal codice, prossimo al suo completamento, alla documentazione, in alcune parti ancora carente. Infine, si è insieme deciso di fissare un incontro con il #p.cardin in merito alla documentazione utile all'analisi dei requisiti.
 
 = Obiettivi fissati

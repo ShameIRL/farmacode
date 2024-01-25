@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+                  "2.0.0", "20-12-2023", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
     "1.0.0", "20-12-2023", p.rosson , p.bomben, "Stesura e revisione del verbale",
   ),
 )
@@ -41,20 +42,7 @@ Durante la prima parte del meeting è stato mostrato al proponente il prodotto r
 Nella seconda fase del meeting è stata chiarita la posizione del gruppo a livello accademico, in modo da poter già pianificare ed organizzare il periodo successivo le ferie invernali. \
 Inoltre si è parlato dell'ambiente per "l'hosting" già discusso precedentemente, concordando sostanzialmente nel rimandare il discordo a dopo il periodo di pausa, in modo che entrambe le parti possano riflettere meglio alle necessità del sistema. E' stata confermata la disponibilità nel predisporre una macchina virtuale ed eventualmente un account per servizi terzi online.
 
-#v(16cm)
-Con la seguente firma il proponente esterno conferma e valida il documento:
-#v(0.5cm)
-
-#set line(length: 40%)
-#stack(
-    spacing: 0.2em,
-    [Firma:],
-    line(stroke: 1pt + black)
-)
-#v(0.3cm)
-#set line(length: 35%)
-#stack(
-    spacing: 0.2em,
-    [Data:],
-    line(stroke: (paint: black, thickness: 1pt, dash: "dashed"))
+#v(4cm)
+#align(left,
+  image("/imgs/firme/20-12-2023.png", width: 75%, height: 12%),
 )
