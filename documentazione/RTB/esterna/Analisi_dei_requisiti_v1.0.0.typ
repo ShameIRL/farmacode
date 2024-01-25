@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
     "0.7.1", "2024-01-14", p.bomben, p.rosson, "Tracciamento requisiti - fonte",
     "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
     "0.6.0", "2023-12-22", p.baggio + "\n" + p.rosson, p.bomben, "Nuova stesura definitiva casi d'uso",
@@ -2835,7 +2836,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Utilizzo e creazione di API per l'interazione fra webapp e il database],
   [Verbale interno],
   [RDV 12],
-  [Utilizzo della piattaforma Anaconda per la gestione dell'ambiente di sviluppo],
+  [Utilizzo della piattaforma Docker per la gestione dell'ambiente di sviluppo],
   [Verbale interno],
   //va bene messo qui?
   [RDV 13],

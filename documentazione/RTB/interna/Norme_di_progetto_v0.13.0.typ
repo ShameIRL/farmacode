@@ -312,11 +312,11 @@ L'approccio concordato con il proponente, per quanto riguarda l'algoritmo di rac
 
 ===== Tecnologie scelte:
 Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
+- *Configurazione:*
+    + #glossario("Docker"), per la gestione della configurazione;
 - *Livello Dati:*
     + Mysql per il datatbase;
-    + Xampp (o Mamp, a seconda del sistema operativo) per l'hosting.
 - *Livello Elaborazione:*
-    + #glossario("Anaconda"), per la gestione della configurazione;
     + Python, come linguaggio per il sistema di raccomandazioni;
     + Come librerie: numpy, surprise e panda. 
 - *Livello di Logica:*
@@ -335,7 +335,7 @@ In questa sezione sono raccolte tutte le norme e regole che i programmatori in c
     + Php per il backend della webapp;
     + React e Node.js per il frontend dell'interfaccia web.
 
-    Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente con Anaconda durante lo sviluppo. Anaconda è un software che permette di creare configurazioni di Python per semplificare la gestione e la distribuzione di librerie e pacchetti.
+    Allo scopo di avere un ambiente coeso ed organizzato i componenti del gruppo sono tenuti ad utilizzare la configurazione creata appositamente Docker durante lo sviluppo. Docker è un software che permette di creare container per semplificare la gestione e la distribuzione di librerie e pacchetti e creare ambienti di lavoro uniformati.
 
 - Stile di codifica: \
     Al fine di poter lavorare in un ambiente omogeneo ed ordinato il team ha deciso di predisporre delle automazioni che migliorino la qualità del codice ed organizzino la sua formattazione.

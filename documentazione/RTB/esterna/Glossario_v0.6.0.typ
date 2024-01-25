@@ -29,9 +29,6 @@ Un algoritmo è una sequenza finita di operazioni (dette anche istruzioni) che c
 == Algoritmo di Apprendimento Automatico
 Questo tipo di algoritmo è specializzato nell'effettuare predizioni o nel riconoscere pattern partendo da una serie di dati iniziali, nell'algoritmo non viene specificata nessuna azione per effettuare ciò, tuttavia viene fornito ad esso un grande quantitativo di dati che permette facilmente di scoprire pattern, correlazioni ed altri dettagli.
 
-== Anaconda
-Anaconda è una distribuzione dei linguaggi Python ed R per elaborazioni scientifiche, che mira a semplificare la gestione e la distribuzione dei pacchetti, anche per l'utilizzo collaborativo. La distribuzione include pacchetti di data science adatti per Windows, Linux e macOS.
-
 == Analisi dei Requisiti
 
 == API
@@ -81,6 +78,8 @@ Una dipendenza è definibile come un legame esistente tra due o piû componenti 
 
 == Design
 La progettazione è una fase del ciclo di vita del software (che precede la codifica) in cui sulla base della specifica dei requisiti prodotta dall'analisi, il progetto definisce come tali requisiti saranno soddisfatti, entrando nel merito della struttura che dovrà essere data al sistema software che deve essere realizzato. 
+
+== Docker
 
 = E
 
