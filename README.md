@@ -20,9 +20,9 @@ Contatti: farmacode.swe.unipd@gmail.com
 ## Struttura repository corrente:
 
 ### Branches:
-- main (branch di presentazione)
-- approval (branch di approvazione)
-- sources (branch adibito alla stesura dei documenti)
+- main (branch di presentazione);
+- approval (branch di approvazione);
+- sources (branch adibito alla stesura dei documenti).
 
 ### Dir structure:
 ```
