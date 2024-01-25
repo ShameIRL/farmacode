@@ -19,6 +19,12 @@ Contatti: farmacode.swe.unipd@gmail.com
 
 ## Struttura repository corrente:
 
+### Branches:
+- main (branch di presentazione);
+- approval (branch di approvazione);
+- sources (branch adibito alla stesura dei documenti).
+
+### Dir structure:
 ```
 .
 ├── assets/
@@ -32,6 +38,8 @@ Contatti: farmacode.swe.unipd@gmail.com
     │   └── esterna/
     │       ├── analisi_dei_requisiti
     │       ├── glossario
+    │       ├── piano_di_progetto
+    │       ├── piano_di_qualifica
     │       └── verbali(esterni)/ ...
     └── candidatura_capitolato/ ...
 ```
