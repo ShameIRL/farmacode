@@ -1079,9 +1079,9 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 
 #pagebreak()
 
-=Metriche per la qualità
-==Metriche per la qualità di processo
-===Fornitura:
+= Metriche per la qualità
+== Metriche per la qualità di processo
+=== Fornitura:
 
 -MPC1 - Estimated at Completion: indica quanto si prevede che costerà il progetto nel suo complesso, considerando l'andamento attuale e le prestazioni passate del progetto.
      
@@ -1145,7 +1145,7 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 
     + Se $"CPI"=1$: Indica che il progetto sta spendendo esattamente ciò che è stato pianificato per ottenere il valore guadagnato.
 
-===Sviluppo: 
+=== Sviluppo: 
 
 - MPC9 - Requirements Stability Index: indice progettato per misurare la stabilità dei requisiti di un progetto durante il suo ciclo di vita.
 
@@ -1154,7 +1154,7 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 
 - MPC10 - Satisfied Obligatory Requirements: indice che misura il numero requisiti obbligatori soddisfatti.
 
-===Verifica:
+=== Verifica:
 
 - MPC11 - Code Covarage: espressa come una percentuale fornisce un'indicazione della quantità di codice che è stata esaminata e verificata rispetto al totale del codice sorgente.
 
@@ -1163,43 +1163,43 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 
 - MPC12 - Passed Test: espressa come una percentuale fornisce un'indicazione della quantità di test passati in seguito a verifica.
 
-===Accertamento della qualità: 
+=== Accertamento della qualità: 
 - MPC13 - Quality Metrics Satisfied: espressa come una percentuale fornisce un'indicazione della quantità metriche soddisfatte in seguito a verifica.
 
   Formula:
   #align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
   dove: NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte mentre TMQ (Total number of Quality Metrics) è il numero di metriche di qualità totali.
 
-===Gestione organizzativa:
+=== Gestione organizzativa:
 - MPC14 - Non-calculated Risk: è il numero di rischi non calcolati presi.
 
-==Metriche per la qualità di prodotto:
-===Correttezza linguistica:
+== Metriche per la qualità di prodotto:
+=== Correttezza linguistica:
 - MPD1 - Errori ortografici: percentuale di errori ortografici presenti.
 
-===Leggibilità: 
+=== Leggibilità: 
 - MPD2 - Indice di Gulpease: indice di leggibilità di un testo tarato sulla lingua italiana,
 viene calcolato attraverso il numero di frasi e lettere ed il risultato è un valore compreso tra 0 e 100, dove 100 indica la massima leggibilità.
 
-==Funzionalità:
+== Funzionalità:
 - MPD3 - Copertura dei requisiti obbligatori: indica la percentuale di requisiti obbligatori soddisfatti.
 - MPD4 - Copertura dei requisiti desiderabili: indica la percentuale di requisiti desiderabili soddisfatti.
 - MPD5 - Copertura dei requisiti opzionali: indica la percentuale di requisiti opzionali soddisfatti.
 
-==Usabilità:
+== Usabilità:
 - MPD6 - Facilità di utilizzo: espressa come numero di click, fornisce un'indicazione della complessià di utilizzo del prodotto.
 - MPD7 - Tempo per l'apprendimento: espressa in minuti, indica il tempo necessario ad imparare ad utilizzare il prodotto.
 
-==Portabilità:
+== Portabilità:
 - MPD8 - Versioni browser supportate: indica la percentuale di versioni di browser supportate.
 
-==Efficienza:
+== Efficienza:
 - MPD9 - Tempo medio di risposta al  comando di ricerca: indica il tempo in secondi  necessario al completamento di una ricerca dopo aver premuto il comando apposito.
 
-==Affidabilità:
+== Affidabilità:
 - MPD10 - Gestione errori: indica la percentuale di errori che vengono gestiti.
 
-==Copertura dei test:
+== Copertura dei test:
 - MPD11 - Branch coverage: indica la percentuale di rami del programma che sono stati eseguiti nella fase di test.
 - MPD12 - Statement coverage: indica la percentuale di istruzioni del programma che sono state eseguite nella fase di test.
 - MPD13 - Function coverage: indica la percentuale di funzioni che sono state eseguite nella fase di test.
