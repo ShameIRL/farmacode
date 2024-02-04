@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
     "0.13.0", "2024-01-14", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
     "0.12.0", "2023-12-22", p.passarella, p.carraro, "Stesura sezione 1.4",
     "0.11.1", "2023-12-22", p.carraro, p.passarella, "Completata sezione 3.1.7 Struttura file di progetto",
@@ -1075,6 +1076,134 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
     https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/extreme-programming;
 - Documentazione Typst:\
     https://typst.app/docs/;
+
+#pagebreak()
+
+=Metriche per la qualità
+==Metriche per la qualità di processo
+===Fornitura:
+
+-MPC1 - Estimated at Completion: indica quanto si prevede che costerà il progetto nel suo complesso, considerando l'andamento attuale e le prestazioni passate del progetto.
+     
+        Formula: #align(center)[$ = ("BAC" - "EV") / "CPI" + "AC" $]
+       dove BAC (Budget at Completion) è il costo totale preventivato del progetto.
+
+-MPC2 - Estimate to Complete: indica quanto si prevede che sarà necessario spendere per portare a termine le attività rimanenti e completare con successo il progetto.
+
+  Formula: #align(center)[$ = "EAC" - "AC"$]
+
+- MPC3 - Earned Value: riflette il valore finanziario delle attività che sono state completate con successo fino a un certo punto nel tempo.
+
+  Formula: #align(center)[$ = "%dicompletamento" * "BAC"
+  $]
+  dove "%dicompletamento" rappresenta la percentuale di avanzamento del lavoro effettivo.
+
+- MPC5 - Actual Cost: riflette la somma totale di denaro effettivamente speso per eseguire le attività del progetto fino a un punto specifico nel tempo.
+
+- MPC6 - Cost Variance: indica se il progetto è al di sopra o al di sotto del budget pianificato per il lavoro effettivamente completato.
+
+  Formula: #align(center)[$ = "EV" - "AC"
+  $]
+
+  Dove:
+
+    + Se $"CV">0$, significa che il valore guadagnato è superiore al costo effettivo, indicando che il progetto sta procedendo sotto il budget pianificato;
+
+    + Se $"CV"<0$, significa che il costo effettivo è superiore al valore guadagnato, indicando che il progetto sta superando il budget pianificato;
+
+    + Se $"CV"=0$, significa che il progetto sta rispettando esattamente il budget pianificato fino a quel momento;
+
+- MPC7 - Planned Value: appresenta il valore pianificato delle attività da svolgere fino a un dato punto nel tempo.
+
+  Formula: #align(center)[$ = "%dicompletamento" * "BAC"
+  $]
+  dove a differenza di quanto detto per EV, %dicompletamento rappresenta la percentuale di avanzamento del lavoro pianificata.
+
+- MPC8 - Scheduled Variance: indica se il progetto è in anticipo, in ritardo o in linea rispetto alla pianificazione temporale.
+
+  Formula: #align(center)[$ = "EV" - "PV"
+  $]
+
+  Dove:
+
+    + Se $"SV">0$, significa che il valore guadagnato è superiore al valore pianificato, indicando che il progetto è in anticipo rispetto alla pianificazione temporale;
+
+    + Se $"SV"<0$, significa che il valore guadagnato è inferiore al valore pianificato, indicando che il progetto è in ritardo rispetto alla pianificazione temporale;
+
+    + Se $"SV"=0$, significa che il progetto è in linea con la pianificazione temporale fino a quel momento.
+
+- MPC8 - Cost Performance Index: è utile per valutare l'efficienza finanziaria di un progetto fino a un determinato momento.
+
+  Formula: #align(center)[$ = "EV" / "AC"
+  $]
+
+  Dove:
+
+    + Se $"CPI">1$: Indica che il valore guadagnato è superiore al costo effettivo, indicando un'efficienza finanziaria positiva. Più il CPI è alto, più efficientemente il progetto sta utilizzando i suoi budget finanziari;
+
+    + Se $"CPI"<1$: Indica che il costo effettivo è superiore al valore guadagnato, indicando un'efficienza finanziaria negativa. Un CPI inferiore a 1 suggerisce che il progetto sta spendendo più del previsto per il valore ottenuto;
+
+    + Se $"CPI"=1$: Indica che il progetto sta spendendo esattamente ciò che è stato pianificato per ottenere il valore guadagnato.
+
+===Sviluppo: 
+
+- MPC9 - Requirements Stability Index: indice progettato per misurare la stabilità dei requisiti di un progetto durante il suo ciclo di vita.
+
+  Formula: #align(center)[$ = "Numero di requisiti invariati" / "Numero totale di requisiti"
+  $]
+
+- MPC10 - Satisfied Obligatory Requirements: indice che misura il numero requisiti obbligatori soddisfatti.
+
+===Verifica:
+
+- MPC11 - Code Covarage: espressa come una percentuale fornisce un'indicazione della quantità di codice che è stata esaminata e verificata rispetto al totale del codice sorgente.
+
+  Formula: #align(center)[$ = ("Linee di codice eseguite/testate" / "Totale linee di codice") * 100
+  $]
+
+- MPC12 - Passed Test: espressa come una percentuale fornisce un'indicazione della quantità di test passati in seguito a verifica.
+
+===Accertamento della qualità: 
+- MPC13 - Quality Metrics Satisfied: espressa come una percentuale fornisce un'indicazione della quantità metriche soddisfatte in seguito a verifica.
+
+  Formula:
+  #align(center)[$ "QMS" = "NQMS"/"TQM" * 100 $]
+  dove: NQMS (Number of Quality Metrics Satisfied) è il numero di metriche di qualità soddisfatte mentre TMQ (Total number of Quality Metrics) è il numero di metriche di qualità totali.
+
+===Gestione organizzativa:
+- MPC14 - Non-calculated Risk: è il numero di rischi non calcolati presi.
+
+==Metriche per la qualità di prodotto:
+===Correttezza linguistica:
+- MPD1 - Errori ortografici: percentuale di errori ortografici presenti.
+
+===Leggibilità: 
+- MPD2 - Indice di Gulpease: indice di leggibilità di un testo tarato sulla lingua italiana,
+viene calcolato attraverso il numero di frasi e lettere ed il risultato è un valore compreso tra 0 e 100, dove 100 indica la massima leggibilità.
+
+==Funzionalità:
+- MPD3 - Copertura dei requisiti obbligatori: indica la percentuale di requisiti obbligatori soddisfatti.
+- MPD4 - Copertura dei requisiti desiderabili: indica la percentuale di requisiti desiderabili soddisfatti.
+- MPD5 - Copertura dei requisiti opzionali: indica la percentuale di requisiti opzionali soddisfatti.
+
+==Usabilità:
+- MPD6 - Facilità di utilizzo: espressa come numero di click, fornisce un'indicazione della complessià di utilizzo del prodotto.
+- MPD7 - Tempo per l'apprendimento: espressa in minuti, indica il tempo necessario ad imparare ad utilizzare il prodotto.
+
+==Portabilità:
+- MPD8 - Versioni browser supportate: indica la percentuale di versioni di browser supportate.
+
+==Efficienza:
+- MPD9 - Tempo medio di risposta al  comando di ricerca: indica il tempo in secondi  necessario al completamento di una ricerca dopo aver premuto il comando apposito.
+
+==Affidabilità:
+- MPD10 - Gestione errori: indica la percentuale di errori che vengono gestiti.
+
+==Copertura dei test:
+- MPD11 - Branch coverage: indica la percentuale di rami del programma che sono stati eseguiti nella fase di test.
+- MPD12 - Statement coverage: indica la percentuale di istruzioni del programma che sono state eseguite nella fase di test.
+- MPD13 - Function coverage: indica la percentuale di funzioni che sono state eseguite nella fase di test.
+- MPD14 - Line coverage:  indica la percentuale di linee di codice che sono state testate.
 
 #pagebreak()
 
