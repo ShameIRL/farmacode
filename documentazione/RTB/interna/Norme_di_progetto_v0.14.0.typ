@@ -1181,25 +1181,25 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 - MPD2 - Indice di Gulpease: indice di leggibilità di un testo tarato sulla lingua italiana,
 viene calcolato attraverso il numero di frasi e lettere ed il risultato è un valore compreso tra 0 e 100, dove 100 indica la massima leggibilità.
 
-== Funzionalità:
+=== Funzionalità:
 - MPD3 - Copertura dei requisiti obbligatori: indica la percentuale di requisiti obbligatori soddisfatti.
 - MPD4 - Copertura dei requisiti desiderabili: indica la percentuale di requisiti desiderabili soddisfatti.
 - MPD5 - Copertura dei requisiti opzionali: indica la percentuale di requisiti opzionali soddisfatti.
 
-== Usabilità:
+=== Usabilità:
 - MPD6 - Facilità di utilizzo: espressa come numero di click, fornisce un'indicazione della complessià di utilizzo del prodotto.
 - MPD7 - Tempo per l'apprendimento: espressa in minuti, indica il tempo necessario ad imparare ad utilizzare il prodotto.
 
-== Portabilità:
+=== Portabilità:
 - MPD8 - Versioni browser supportate: indica la percentuale di versioni di browser supportate.
 
-== Efficienza:
+=== Efficienza:
 - MPD9 - Tempo medio di risposta al  comando di ricerca: indica il tempo in secondi  necessario al completamento di una ricerca dopo aver premuto il comando apposito.
 
-== Affidabilità:
+=== Affidabilità:
 - MPD10 - Gestione errori: indica la percentuale di errori che vengono gestiti.
 
-== Copertura dei test:
+=== Copertura dei test:
 - MPD11 - Branch coverage: indica la percentuale di rami del programma che sono stati eseguiti nella fase di test.
 - MPD12 - Statement coverage: indica la percentuale di istruzioni del programma che sono state eseguite nella fase di test.
 - MPD13 - Function coverage: indica la percentuale di funzioni che sono state eseguite nella fase di test.
