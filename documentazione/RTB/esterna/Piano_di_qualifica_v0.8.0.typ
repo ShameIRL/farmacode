@@ -728,7 +728,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [], [Progettista], [Interazione algoritmo, api, database e webapp.], [Studio individuale dei membri del gruppo e interpretazione capitolato d'appalto],
   */
 )
-#align(center)[Tabella 15: Valutazione sui ruoli]
+#align(center)[Tabella 16: Valutazione sui ruoli]
 
 #pagebreak()
 
@@ -773,7 +773,7 @@ Un intervallo ideale si aggira fra i 40 e 60.
   [Norme di progetto], [56],
 )
 ]
-#align(center)[Tabella 15: Indice di Gulpease dei documenti]
+#align(center)[Tabella 17: Indice di Gulpease dei documenti]
 
 #align(left,
 figure(
@@ -810,11 +810,12 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
   [*EAC* (in €)], [12100], [11750],
 )
 ]
+#align(center)[Tabella 18: EAC da sprint 1 a 2]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a2.png", height: 300pt, width: 400pt),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 2]
   )
   
 )
@@ -839,11 +840,12 @@ Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne
   [*EAC* (in €)], [12100], [11750],[11535],
 )
 ]
+#align(center)[Tabella 19: EAC da sprint 1 a 3]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a3.png", height: 300pt, width: 400pt),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 3]
   )
   
 )
@@ -868,11 +870,12 @@ Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne
   [*EAC* (in €)], [12100], [11750],[11535],[11125],
 )
 ]
+#align(center)[Tabella 20: EAC da sprint 1 a 4]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a4.png", height: 300pt, width: 400pt),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 4]
   )
   
 )
@@ -896,11 +899,12 @@ Il grafico non mostra variazioni rispetto all'andamento registrato nei precedent
   [*EAC* (in €)], [12100], [11750],[11535],[11125],[10680],
 )
 ]
+#align(center)[Tabella 21: EAC da sprint 1 a 5]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a5.png", height: 300pt, width: 400pt),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 5]
   )
   
 )
@@ -924,11 +928,12 @@ Il grafico non mostra variazioni rispetto all'andamento registrato nei precedent
   [*EAC* (in €)], [12100], [11750],[11535],[11125],[10680], [11259],
 )
 ]
+#align(center)[Tabella 22: EAC da sprint 1 a 6]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a6.png", height: 300pt, width: 400pt),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 6]
   )
   
 )
@@ -952,11 +957,12 @@ Il grafico mostra come dopo uno sprint in cui la produttività è stata comprome
   [*EAC* (in €)], [12100], [11750],[11535],[11125],[10680], [11259], [11883],
 )
 ]
+#align(center)[Tabella 23: EAC da sprint 1 a 7]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a7.png", height: auto, width: auto),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 7]
   )
   
 )
@@ -983,11 +989,12 @@ Il grafico denota un proseguo del andamento registrato nel precedente sprint. Ci
 [12102],
 )
 ]
+#align(center)[Tabella 24: EAC da sprint 1 a 8]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a8.png", height: auto, width: auto),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 8]
   )
   
 )
@@ -1015,11 +1022,12 @@ Nonostante le sfide incontrate negli sprint precedenti, incluso il ritorno dalle
 [12597]
 )
 ]
+#align(center)[Tabella 25: EAC da sprint 1 a 9]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a9.png", height: auto, width: auto),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 9]
   )
   
 )
@@ -1049,11 +1057,12 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 [12763]
 )
 ]
+#align(center)[Tabella 26: EAC da sprint 1 a 10]
 
 #align(left,
 figure(
   image("/imgs/PdQ/eac/da1a10.png", height: auto, width: auto),
-  caption: [EAC]
+  caption: [EAC da sprint 1 a 10]
   )
   
 )
@@ -1083,11 +1092,12 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
   [*ETC* (in €)], [11495], [10575],
 )
 ]
+#align(center)[Tabella 27: AC e ETC da sprint 1 a 2]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a2.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 2]
   )
   
 )
@@ -1111,11 +1121,12 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
   [*ETC* (in €)], [11495], [10575], [9920],
 )
 ]
+#align(center)[Tabella 28: AC e ETC da sprint 1 a 3]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a3.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 3]
   )
   
 )
@@ -1139,11 +1150,12 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
   [*ETC* (in €)], [11495], [10575], [9920], [8900],
 )
 ]
+#align(center)[Tabella 29: AC e ETC da sprint 1 a 4]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a4.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 4]
   )
   
 )
@@ -1168,11 +1180,12 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
   [*ETC* (in €)], [11495], [10575], [9920], [8900],[8010],
 )
 ]
+#align(center)[Tabella 30: AC e ETC da sprint 1 a 5]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a5.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 5]
   )
   
 )
@@ -1201,11 +1214,12 @@ La tendenza rimane la stessa che ha caratterizzato gli ultimi sprint, i nuovi va
 
 )
 ]
+#align(center)[Tabella 31: AC e ETC da sprint 1 a 6]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a6.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 6]
   )
   
 )
@@ -1234,11 +1248,12 @@ Come era possibile prevedere la concomitanza delle festività invernali, e l'avv
 [8318],
 )
 ]
+#align(center)[Tabella 32: AC e ETC da sprint 1 a 7]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a7.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 7]
   )
   
 )
@@ -1269,11 +1284,12 @@ Il grafico mostra una continuazione del trend registrato nel ultimo sprint, ciò
 [7987],
 )
 ]
+#align(center)[Tabella 33: AC e ETC da sprint 1 a 8]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a8.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 8]
   )
   
 )
@@ -1306,11 +1322,12 @@ Siamo lieti di poter constatare un miglioramento; l'andamento che ha caratterizz
 [8062]
 )
 ]
+#align(center)[Tabella 34: AC e ETC da sprint 1 a 9]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a9.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 9]
   )
   
 )
@@ -1345,11 +1362,12 @@ Il grafico indica un altra inversione di tendenza, pensiamo ciò sia attribuile 
 [7913],
 )
 ]
+#align(center)[Tabella 35: AC e ETC da sprint 1 a 10]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ac_etc/da1a10.png", height: auto, width: auto),
-  caption: [AC e ETC]
+  caption: [AC e ETC da sprint 1 a 10]
   )
   
 )
@@ -1376,11 +1394,12 @@ Gli sforzi impiegati nel ultimo periodo sembrano aver
   [*PV* (in €)], [644], [1288],
 )
 ]
+#align(center)[Tabella 36: EV e PV da sprint 1 a 2]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a2.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 2]
   )
   
 )
@@ -1406,11 +1425,12 @@ Il sovrapporsi dei valori registrati delle metriche di EV (valore guadagnato) e 
   [*PV* (in €)], [644], [1288], [1932],
 )
 ]
+#align(center)[Tabella 37: EV e PV da sprint 1 a 3]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a3.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 3]
   )
   
 )
@@ -1435,11 +1455,12 @@ Il grafico denota che il valore pianificato (PV) è superiore al valore guadagna
   [*PV* (in €)], [644], [1288], [1932], [2576],
 )
 ]
+#align(center)[Tabella 38: EV e PV da sprint 1 a 4]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a4.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 4]
   )
   
 )
@@ -1465,11 +1486,12 @@ La situazione sembra essere ritornata stabile, con i nuovi valori registrati nuo
   [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
 )
 ]
+#align(center)[Tabella 39: EV e PV da sprint 1 a 5]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a5.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 5]
   )
   
 )
@@ -1499,11 +1521,12 @@ Notiamo che EV e PV sono allineati in questo sprint, il che indica che il lavoro
 
 )
 ]
+#align(center)[Tabella 40: EV e PV da sprint 1 a 6]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a6.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 6]
   )
   
 )
@@ -1533,11 +1556,12 @@ In questo sprint, l'EV è inferiore al PV, indicando che il lavoro effettivament
 [3864],
 )
 ]
+#align(center)[Tabella 41: EV e PV da sprint 1 a 7]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a7.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 7]
   )
   
 )
@@ -1567,11 +1591,12 @@ figure(
 [4508],
 )
 ]
+#align(center)[Tabella 42: EV e PV da sprint 1 a 8]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a8.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 8]
   )
   
 )
@@ -1603,11 +1628,12 @@ figure(
 [4765],
 )
 ]
+#align(center)[Tabella 43: EV e PV da sprint 1 a 9]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a9.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 9]
   )
   
 )
@@ -1641,11 +1667,12 @@ figure(
 [5152],
 )
 ]
+#align(center)[Tabella 44: EV e PV da sprint 1 a 10]
 
 #align(left,
 figure(
   image("/imgs/PdQ/ev_pv/da1a10.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [EV e PV da sprint 1 a 10]
   )
   
 )
@@ -1654,8 +1681,173 @@ figure(
 
 #pagebreak()
 
-
 === CV e SV - Cost Variance e Schedule Variance
+
+==== sprint da 1 a 2
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],
+  [*CV*], [39], [113],
+  [*SV*], [0], [0],
+)
+]
+#align(center)[Tabella 45: CV e SV da sprint 1 a 2]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv/da1a2.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 2]
+  )
+  
+)
+
+- Spiegazione: I valori di CV e SV durante lo spint 1 e 2 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+
+==== sprint da 1 a 3
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],
+  [*CV*], [39], [113], [188,2],
+  [*SV*], [0], [0], [-128,8],
+)
+]
+#align(center)[Tabella 46: CV e SV da sprint 1 a 3]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv/da1a3.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 3]
+  )
+  
+)
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 3 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
+
+==== sprint da 1 a 4
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],
+  [*CV*], [39], [113], [188,2],[351],
+  [*SV*], [0], [0], [-128,8], [0],
+)
+]
+#align(center)[Tabella 47: CV e SV da sprint 1 a 4]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv/da1a4.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 4]
+  )
+  
+)
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 4 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+
+==== sprint da 1 a 5
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],
+  [*CV*], [39], [113], [188,2],[351],[550],
+  [*SV*], [0], [0], [-128,8],[0],[0]
+)
+]
+#align(center)[Tabella 48: CV e SV da sprint 1 a 5]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv/da1a5.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 5]
+  )
+  
+)
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 5 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+
+==== sprint da 1 a 6
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386]
+)
+]
+#align(center)[Tabella 49: CV e SV da sprint 1 a 6]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv/da1a6.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 6]
+  )
+  
+)
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 6 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo. Questo rallentamento di produttività durante lo sprint 6 viene dettato dalla pausa natalizia.
+
+==== sprint da 1 a 7
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0]
+)
+]
+#align(center)[Tabella 50: CV e SV da sprint 1 a 7]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/cv_sv/da1a7.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 7]
+  )
+  
+)
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 7 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+
+
+==== sprint da 1 a 8
+
 #align(center)[
 #table(
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -1665,117 +1857,130 @@ figure(
   ),
   align: center,
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],
-  [*CV* (in €)], [39], [113], [188,2], [351],[550],
-[437],
-[299],
-[264],
-  [*SV* (in €)], [0], [0], [-128,8], [0],[0],
-[-386],
-[0],
-[-128,8],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8]
 )
 ]
+#align(center)[Tabella 51: CV e SV da sprint 1 a 8]
 
 #align(left,
 figure(
-  image("/imgs/PdQ/cv_sv.png", height: auto, width: auto),
-  caption: [CV e SV]
-  )
-  
-)
-
-- Spiegazione:
-Il grafico mostra l'andamento delle metriche di CV e SV. I valori positivi di CV indicano spese minori rispetto alle rispettive previsioni. Tuttavia sebbene un CV positivo suggerisca che si sta risparmiando denaro rispetto al budget, è importante considerare anche le tempistiche del progetto. Valori negativi di SV indicano che il progetto, in quel determinato istante, è in ritardo rispetto alla pianificazione. Il valore del lavoro effettivamente completato è inferiore a quanto pianificato. Sebbene quindi il progetto stia risparmiando denaro rispetto al budget (CV positivo), potrebbe esserci stata una sottoperformance nella realizzazione delle attività pianificate (SV negativo). Ciò potrebbe essere dovuto a una pianificazione ottimistica, problemi nella gestione delle risorse, o altri fattori esterni. I valori attuali rientrano comunque nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista.
-
-==== sprint da 1 a 2
-
-figure(
-  image("/imgs/PdQ/cv_sv/da1a2.png", height: auto, width: auto),
-  caption: [EV e PV]
-  )
-  
-)
-
-==== sprint da 1 a 3
-
-figure(
-  image("/imgs/PdQ/cv_sv/da1a3.png", height: auto, width: auto),
-  caption: [EV e PV]
-  )
-  
-)
-
-==== sprint da 1 a 4
-
-figure(
-  image("/imgs/PdQ/cv_sv/da1a4.png", height: auto, width: auto),
-  caption: [EV e PV]
-  )
-  
-)
-
-==== sprint da 1 a 5
-
-figure(
-  image("/imgs/PdQ/cv_sv/da1a5.png", height: auto, width: auto),
-  caption: [EV e PV]
-  )
-  
-)
-
-==== sprint da 1 a 6
-
-figure(
-  image("/imgs/PdQ/cv_sv/da1a6.png", height: auto, width: auto),
-  caption: [EV e PV]
-  )
-  
-)
-
-==== sprint da 1 a 7
-
-figure(
-  image("/imgs/PdQ/cv_sv/da1a7.png", height: auto, width: auto),
-  caption: [EV e PV]
-  )
-  
-)
-
-==== sprint da 1 a 8
-
-figure(
   image("/imgs/PdQ/cv_sv/da1a8.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [CV e SV da sprint 1 a 8]
   )
   
 )
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 8 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
 
 ==== sprint da 1 a 9
 
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8]
+)
+]
+#align(center)[Tabella 52: CV e SV da sprint 1 a 9]
+
+#align(left,
 figure(
   image("/imgs/PdQ/cv_sv/da1a9.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [CV e SV da sprint 1 a 9]
   )
   
 )
+
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 9 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
 
 ==== sprint da 1 a 10
 
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6]
+)
+]
+#align(center)[Tabella 53: CV e SV da sprint 1 a 10]
+
+#align(left,
 figure(
   image("/imgs/PdQ/cv_sv/da1a10.png", height: auto, width: auto),
-  caption: [EV e PV]
+  caption: [CV e SV da sprint 1 a 10]
   )
   
 )
 
+- Spiegazione: I valori di CV e SV durante lo spint da 1 a 10 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
+
+/*
+
+- Spiegazione:
+
+Il grafico mostra l'andamento delle metriche di CV e SV. I valori positivi di CV indicano spese minori rispetto alle rispettive previsioni. 
+Tuttavia sebbene un CV positivo suggerisca che si sta risparmiando denaro rispetto al budget, è importante considerare anche le tempistiche del progetto. 
+Valori negativi di SV indicano che il progetto, in quel determinato istante, è in ritardo rispetto alla pianificazione. 
+Il valore del lavoro effettivamente completato è inferiore a quanto pianificato. 
+Sebbene quindi il progetto stia risparmiando denaro rispetto al budget (CV positivo), potrebbe esserci stata una sottoperformance nella realizzazione delle attività pianificate (SV negativo). 
+Ciò potrebbe essere dovuto a una pianificazione ottimistica, problemi nella gestione delle risorse, o altri fattori esterni. 
+I valori attuali rientrano comunque nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista.
+
+*/
 #pagebreak()
 
 = Elenco delle immagini
 - Immagine 1: IG;
-- Immagine 2: EAC;
-- Immagine 3: AC e ETC;
-- Immagine 4: EV e PV;
-- Immagine 5: CV e SV.
+- Immagine 2: EAC da sprint 1 a 2;
+- Immagine 3: EAC da sprint 1 a 3;
+- Immagine 4: EAC da sprint 1 a 4;
+- Immagine 5: EAC da sprint 1 a 5;
+- Immagine 6: EAC da sprint 1 a 6;
+- Immagine 7: EAC da sprint 1 a 7;
+- Immagine 8: EAC da sprint 1 a 8;
+- Immagine 9: EAC da sprint 1 a 9;
+- Immagine 10: EAC da sprint 1 a 10;
+- Immagine 11: AC e ETC da sprint 1 a 2;
+- Immagine 12: AC e ETC da sprint 1 a 3;
+- Immagine 13: AC e ETC da sprint 1 a 4;
+- Immagine 14: AC e ETC da sprint 1 a 5; 
+- Immagine 15: AC e ETC da sprint 1 a 6;
+- Immagine 16: AC e ETC da sprint 1 a 7;
+- Immagine 17: AC e ETC da sprint 1 a 8;
+- Immagine 18: AC e ETC da sprint 1 a 9;
+- Immagine 19: AC e ETC da sprint 1 a 10;
+- Immagine 20: EV e PV da sprint 1 a 2;
+- Immagine 21: EV e PV da sprint 1 a 3;
+- Immagine 22: EV e PV da sprint 1 a 4;
+- Immagine 23: EV e PV da sprint 1 a 5;
+- Immagine 24: EV e PV da sprint 1 a 6;
+- Immagine 25: EV e PV da sprint 1 a 7;
+- Immagine 26: EV e PV da sprint 1 a 8;
+- Immagine 27: EV e PV da sprint 1 a 9;
+- Immagine 28: EV e PV da sprint 1 a 10;
+- Immagine 29: CV e SV da sprint 1 a 2;
+- Immagine 30: CV e SV da sprint 1 a 3;
+- Immagine 31: CV e SV da sprint 1 a 4;
+- Immagine 32: CV e SV da sprint 1 a 5;
+- Immagine 33: CV e SV da sprint 1 a 6;
+- Immagine 34: CV e SV da sprint 1 a 7;
+- Immagine 35: CV e SV da sprint 1 a 8;
+- Immagine 36: CV e SV da sprint 1 a 9;
+- Immagine 37: CV e SV da sprint 1 a 10.
+
 
 #pagebreak()
 
@@ -1796,4 +2001,40 @@ figure(
 - Tabella 14: Valutazione tecnologica;
 - Tabella 15: Valutazione organizzativa e personale;
 - Tabella 16: Valutazione sui ruoli;
-- Tabella 17: Indice di Gulpease dei documenti.
+- Tabella 17: Indice di Gulpease dei documenti;
+- Tabella 18: EAC da sprint 1 a 2;
+- Tabella 19: EAC da sprint 1 a 3;
+- Tabella 20: EAC da sprint 1 a 4;
+- Tabella 21: EAC da sprint 1 a 5;
+- Tabella 22: EAC da sprint 1 a 6;
+- Tabella 23: EAC da sprint 1 a 7;
+- Tabella 24: EAC da sprint 1 a 8;
+- Tabella 25: EAC da sprint 1 a 9;
+- Tabella 26: EAC da sprint 1 a 10;
+- Tabella 27: AC e ETC da sprint 1 a 2;
+- Tabella 28: AC e ETC da sprint 1 a 3;
+- Tabella 29: AC e ETC da sprint 1 a 4;
+- Tabella 30: AC e ETC da sprint 1 a 5; 
+- Tabella 31: AC e ETC da sprint 1 a 6;
+- Tabella 32: AC e ETC da sprint 1 a 7;
+- Tabella 33: AC e ETC da sprint 1 a 8;
+- Tabella 34: AC e ETC da sprint 1 a 9;
+- Tabella 35: AC e ETC da sprint 1 a 10;
+- Tabella 36: EV e PV da sprint 1 a 2;
+- Tabella 37: EV e PV da sprint 1 a 3;
+- Tabella 38: EV e PV da sprint 1 a 4;
+- Tabella 39: EV e PV da sprint 1 a 5;
+- Tabella 40: EV e PV da sprint 1 a 6;
+- Tabella 41: EV e PV da sprint 1 a 7;
+- Tabella 42: EV e PV da sprint 1 a 8;
+- Tabella 43: EV e PV da sprint 1 a 9;
+- Tabella 44: EV e PV da sprint 1 a 10;
+- Tabella 45: CV e SV da sprint 1 a 2;
+- Tabella 46: CV e SV da sprint 1 a 3;
+- Tabella 47: CV e SV da sprint 1 a 4;
+- Tabella 48: CV e SV da sprint 1 a 5;
+- Tabella 49: CV e SV da sprint 1 a 6;
+- Tabella 50: CV e SV da sprint 1 a 7;
+- Tabella 51: CV e SV da sprint 1 a 8;
+- Tabella 52: CV e SV da sprint 1 a 9;
+- Tabella 53: CV e SV da sprint 1 a 10.
