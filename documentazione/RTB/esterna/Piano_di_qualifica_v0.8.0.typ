@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.10.0", "2024-02-05", p.rosson, "", "Aggiunti grafici e aggiornato sezione metriche",
     "0.9.0", "2024-01-22", p.rosson, p.favaron, "Aggiunti grafici",
     "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica sezione 5.3 e aggiunta sezione 5.4",
     "0.7.2", "2024-01-13", p.bomben, p.favaron, "Tabella di test di sistema e tracciamento",
@@ -791,7 +792,182 @@ La metrica che si occupa della correttezza ortografica (MPD1) ha dato come risul
 #align(center)[$ "EO"=0 $]
 Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di software per l'individuazione di errori ortografici, si stima un valore quasi nullo di essi. Viene stimata una correttezza del 100% e non assicurata poichè nonostante la minuziosità dei controlli e l'esecuzione dei test è possibile ci siano comunque artefatti riguardanti l'ortografia.
 
+#pagebreak()
+
 === EAC - Estimated at Completion
+
+==== sprint da 1 a 2
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],
+  [*EAC* (in €)], [12100], [11750],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a2.png", height: 300pt, width: 400pt),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+
+Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato.
+
+#pagebreak()
+
+==== sprint da 1 a 3
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2], [3],
+  [*EAC* (in €)], [12100], [11750],[11535],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a3.png", height: 300pt, width: 400pt),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+
+Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato. La tendenza a diminuire suggerisce un uso delle risorse efficace, tuttavia ciò non scongiura la possibilità di aver attuato una pianificazione troppo ottimistica che porti quindi a ritardi. 
+
+#pagebreak()
+
+==== sprint da 1 a 4
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2], [3], [4],
+  [*EAC* (in €)], [12100], [11750],[11535],[11125],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a4.png", height: 300pt, width: 400pt),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico non mostra variazioni rispetto all'andamento registrato nei precedenti sprint. I valori campionati sono inferiori al BAC preventivato in fase di candidatura ciò indica che i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato.
+
+#pagebreak()
+
+==== sprint da 1 a 5
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2], [3], [4], [5],
+  [*EAC* (in €)], [12100], [11750],[11535],[11125],[10680],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a5.png", height: 300pt, width: 400pt),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico non mostra variazioni rispetto all'andamento registrato nei precedenti sprint. I valori campionati sono inferiori al BAC preventivato in fase di candidatura ciò indica che i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato.
+
+#pagebreak()
+
+==== sprint da 1 a 6
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2], [3], [4], [5], [6],
+  [*EAC* (in €)], [12100], [11750],[11535],[11125],[10680], [11259],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a6.png", height: 300pt, width: 400pt),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico mostra come dopo uno sprint in cui la produttività è stata compromessa a causa di indisponibilità e festività invernali, l'andamento dell'earned value ha subito un inversione. In particolare, l'EAC, che in precedenza stava diminuendo, ha ora iniziato a salire. Questo suggerisce che l'impatto delle indisponibilità sul lavoro effettivo sta influenzando le previsioni di costo del progetto. È importante valutare attentamente questo cambiamento e adottare misure appropriate per mitigare eventuali conseguenze negative sul programma e sul budget complessivo del progetto.
+
+#pagebreak()
+
+==== sprint da 1 a 7 
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2], [3], [4], [5], [6], [7],
+  [*EAC* (in €)], [12100], [11750],[11535],[11125],[10680], [11259], [11883],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a7.png", height: auto, width: auto),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico denota un proseguo del andamento registrato nel precedente sprint. Ciò è sicuramente attribuibile ad un calo di produttività dovuto in parte sia al rientro dalle festività invernali, sia all'aggiunta degli impegni accademici. Questo impegno aggiuntivo ha comportato un ulteriore aumento dell'earned value del progetto. È evidente che il tempo dedicatogli ha influito sulle prestazioni del progetto, contribuendo all'aumento dei costi stimati. È essenziale considerare attentamente questo impatto aggiuntivo e valutare le strategie per gestire efficacemente le risorse e mantenere il progetto allineato agli obiettivi di costo e di tempo
+
+#pagebreak()
+
+==== sprint da 1 a 8
+
 #align(center)[
 #table(
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -810,16 +986,270 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 
 #align(left,
 figure(
-  image("/imgs/PdQ/eac.png", height: auto, width: auto),
+  image("/imgs/PdQ/eac/da1a8.png", height: auto, width: auto),
   caption: [EAC]
   )
   
 )
 
 - Spiegazione:
-Il grafico mostra come nel tempo il costo totale previsto per il compimento del progetto subisca delle variazioni in base all'andamento dei lavori. Si può notare una situazione nel complesso stabile, con l'EAC massimo che non sfora mai il budget preventivato inizialmente per il progetto. Degni di nota sono: il minimo storico di 10680.00€, e il cambio di tendenza subito intorno allo sprint numero 6, che si ricorda essere avvenuto in corrispondenza delle festività invernali.
+Nonostante le sfide incontrate negli sprint precedenti, incluso il ritorno dalle vacanze e lo studio per la sessione di esami, siamo incoraggiati nel vedere che il grafico corrente indica una situazione simile agli scorsi sprint, ma con un aumento dell'earned value (EAC) decisamente inferiore. Questo indica una ripresa generale del regime mantenuto negli sprint precedenti al sesto.
+
+#pagebreak()
+
+==== sprint da 1 a 9
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],
+  [*EAC*], [12100], [11750], [11535], [11125],[10680],
+[11259],
+[11883],
+[12102],
+[12597]
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a9.png", height: auto, width: auto),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico mostra come nonostante nel precedente sprint ci sia effettivamente stata una ripresa, non sia ancora tuttavia abbastanza per fermare l'andamento di crescita. Restiamo tuttavia fiduciosi, in quanto il periodo considerabile il più fitto e complicato stia ormai volgendo alla sua conclusione.
+La situazione rimane stabile con il valore campionato inferiore al valore di BAC preventivato.
+
+#pagebreak()
+
+==== spint da 1 a 10
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],
+  [*EAC*], [12100], [11750], [11535], [11125],[10680],
+[11259],
+[11883],
+[12102],
+[12597],
+[12763]
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/eac/da1a10.png", height: auto, width: auto),
+  caption: [EAC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico mostra come nonostante nel precedente sprint ci sia effettivamente stata una ripresa, non sia ancora tuttavia abbastanza per fermare l'andamento di crescita. Restiamo tuttavia fiduciosi, in quanto il periodo considerabile il più fitto e complicato stia ormai volgendo alla sua conclusione.
+La situazione rimane stabile con il valore campionato inferiore al valore di BAC preventivato.
+
+#pagebreak()
+
+// - Spiegazione:
+// Il grafico mostra come nel tempo il costo totale previsto per il compimento del progetto subisca delle variazioni in base all'andamento dei lavori. Si può notare una situazione nel complesso stabile, con l'EAC massimo che non sfora mai il budget preventivato inizialmente per il progetto. Degni di nota sono: il minimo storico di 10680.00€, e il cambio di tendenza subito intorno allo sprint numero 6, che si ricorda essere avvenuto in corrispondenza delle festività invernali.
 
 === AC e ETC - Actual Cost e Estimate to Complete
+
+==== sprint da 1 a 2
+#align(center)[
+#table(
+  columns: (auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],
+  [*AC* (in €)], [605], [1175],
+  [*ETC* (in €)], [11495], [10575],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a2.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). La situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati, ovvero non super il BAC.
+
+#pagebreak()
+
+==== sprint da 1 a 3
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],
+  [*AC* (in €)], [605], [1175], [1615],
+  [*ETC* (in €)], [11495], [10575], [9920],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a3.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). L'andamento sembra rimanere stabile considerando i valori campionati fino ad ora.
+
+#pagebreak()
+
+==== sprint da 1 a 4
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],
+  [*AC* (in €)], [605], [1175], [1615], [2225],
+  [*ETC* (in €)], [11495], [10575], [9920], [8900],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a4.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). Se si sommano i valori registrati si ottengono valori che rientrano nel budget preventivato inizialemente.
+
+#pagebreak()
+
+==== sprint da 1 a 5
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],
+  [*AC* (in €)], [605], [1175], [1615], [2225],[2670],
+  [*ETC* (in €)], [11495], [10575], [9920], [8900],[8010],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a5.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+La tendenza rimane la stessa che ha caratterizzato gli ultimi sprint, i nuovi valori registrati indicano un andamento stablile ed in linea con le previsioni. Questo suggerisce che le previsioni fatte in precedenza stanno risultando realistiche. Speriamo di mantenere questa tendenza anche con l'avvicinamento di festività invernali ed impegni accademi.
+
+#pagebreak()
+
+==== sprint da 1 a 6
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],
+  [*AC* (in €)], [605], [1175], [1615], [2225],[2670],
+[3040],
+
+  [*ETC* (in €)], [11495], [10575], [9920], [8900],[8010],
+[8219],
+
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a6.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Come era possibile prevedere la concomitanza delle festività invernali, e l'avvicinarsi dei vari impegni accademici a cui ogni componente del gruppo è soggetto, ha influito negativamente con l'andamento registrato fino ad ora. L'ETC è infatti cresciuto, sicuramente a causa di quanto appena menzionato. Potrebbe essere necessario rivedere le stime dei costi rimanenti e assicurarsi che siano realistiche e aggiornate in base alla situazione attuale del progetto, e attuare misure di mitigazione. Il gruppo ha quindi deciso di rivedere quanto pianificato per il prossimo periodo ridistribuendo ruoli ed attività.
+
+#pagebreak()
+
+==== sprint da 1 a 7
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],
+  [*AC* (in €)], [605], [1175], [1615], [2225],[2670],
+[3040],
+[3565],
+  [*ETC* (in €)], [11495], [10575], [9920], [8900],[8010],
+[8219],
+[8318],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a7.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico mostra una continuazione del trend registrato nel ultimo sprint, ciò indica che le misure adottate per provare a sanare la situazione creatasi nel precedente periodo non sono state sufficientemente efficaci. Ciò è sicuramente da attribuire all'indisponibilità creatasi dalla presenza degli impegni universitari già citati in precedenza, e ad un calo generale della produttività registrato al rientro delle festività invernali. Il gruppo si impegnerà per migliorare sotto questo punto di vista, cercando di ritornare a pieno regime.
+
+#pagebreak()
+
+==== sprint da 1 a 8
+
 #align(center)[
 #table(
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -842,16 +1272,282 @@ Il grafico mostra come nel tempo il costo totale previsto per il compimento del 
 
 #align(left,
 figure(
-  image("/imgs/PdQ/ac_etc.png", height: auto, width: auto),
+  image("/imgs/PdQ/ac_etc/da1a8.png", height: auto, width: auto),
   caption: [AC e ETC]
   )
   
 )
 
 - Spiegazione:
-Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). La situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati.
+Siamo lieti di poter constatare un miglioramento; l'andamento che ha caratterizzato i precedenti sprint sembra essere cambiato. Gli sforzi impiegati sembrano essere stati ripagati. Rivedere la pianificazione e gli obiettivi a breve termine sembra essere stata la scelta giusta. In corrispondenza rispetto a quanto preventivato il gruppo si considera pronto ad affrontare la prima parte di revisone RTB. 
+
+#pagebreak()
+
+==== sprint da 1 a 9
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9],
+  [*AC* (in €)], [605], [1175], [1615], [2225],[2670],
+[3040],
+[3565],
+[4115],
+[4535],
+  [*ETC* (in €)], [11495], [10575], [9920], [8900],[8010],
+[8219],
+[8318],
+[7987],
+[8062]
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a9.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico indica un altra inversione di tendenza, pensiamo ciò sia attribuile ad una sorta di "tempo morto" causato dalla concomitanza con la revisone di progetto e con quella di altri impegni accademici. Il gruppo si impegnerà a ristabilire la tendenda posivitiva caratterizzante i primi periodi del progetto.
+
+#pagebreak()
+
+==== sprint da 1 a 10
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],
+  [*AC*], [605], [1175], [1615], [2225],[2670],
+[3040],
+[3565],
+[4115],
+[4535],
+[4850],
+  [*ETC*], [11495], [10575], [9920], [8900],[8010],
+[8219],
+[8318],
+[7987],
+[8062],
+[7913],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ac_etc/da1a10.png", height: auto, width: auto),
+  caption: [AC e ETC]
+  )
+  
+)
+
+- Spiegazione:
+Gli sforzi impiegati nel ultimo periodo sembrano aver
+
+#pagebreak()
 
 === EV e PV - Earned Value e Planned Value 
+
+==== sprint da 1 a 2
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],
+  [*EV* (in €)], [644], [1288],
+  [*PV* (in €)], [644], [1288],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a2.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+Il sovrapporsi dei valori registrati delle metriche di EV (valore guadagnato) e PV (valore pianificato) nel grafico suggerisce che i lavori stanno procedendo in linea con quanto pianificato. Tuttavia, riteniamo che sia ancora troppo presto per giudicare pienamente la validità della nostra pianificazione originale. Questa sovrapposizione potrebbe indicare una pianificazione ottimistica, che richiede ulteriori verifiche e analisi.
+
+
+#pagebreak()
+
+==== sprint da 1 a 3
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],
+  [*EV* (in €)], [644], [1288], [1803],
+  [*PV* (in €)], [644], [1288], [1932],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a3.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+Il grafico denota che il valore pianificato (PV) è superiore al valore guadagnato (EV). Questo suggerisce che il lavoro effettivamente completato è inferiore a quanto pianificato per lo stesso periodo di tempo. È importante esaminare attentamente questa discrepanza e identificare le cause sottostanti. Potrebbe essere necessario rivedere la pianificazione, valutare le risorse disponibili e adottare misure correttive per riportare il progetto sulla buona strada."
+
+#pagebreak()
+
+==== sprint da 1 a 4
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],
+  [*EV* (in €)], [644], [1288], [1803], [2576],
+  [*PV* (in €)], [644], [1288], [1932], [2576],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a4.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+La situazione sembra essere ritornata stabile, con i nuovi valori registrati nuovamente coincidenti. 
+
+#pagebreak()
+
+==== sprint da 1 a 5
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],
+  [*EV* (in €)], [644], [1288], [1803], [2576],[3220],
+
+  [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a5.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+Notiamo che EV e PV sono allineati in questo sprint, il che indica che il lavoro effettivamente completato corrisponde alla pianificazione. Questo è un segnale positivo di una buona esecuzione delle attività pianificate.
+
+
+#pagebreak()
+
+==== sprint da 1 a 6
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],
+  [*EV* (in €)], [644], [1288], [1803], [2576],[3220],
+[3477],
+
+  [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
+[3864],
+
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a6.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+In questo sprint, l'EV è inferiore al PV, indicando che il lavoro effettivamente completato è al di sotto delle aspettative rispetto alla pianificazione. La discrepanza tra EV e PV è sicuramte riconducibile alla concomitanza delle festività invernali ed all'avvicinamento degli impegni accademici.
+
+
+#pagebreak()
+
+==== sprint da 1 a 7
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto,),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],
+  [*EV* (in €)], [644], [1288], [1803], [2576],[3220],
+[3477],
+[3864],
+  [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
+[3864],
+[3864],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a7.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+
+#pagebreak()
+
+==== sprint da 1 a 8
+
 #align(center)[
 #table(
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -874,14 +1570,90 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
 
 #align(left,
 figure(
-  image("/imgs/PdQ/ev_pv.png", height: auto, width: auto),
+  image("/imgs/PdQ/ev_pv/da1a8.png", height: auto, width: auto),
   caption: [EV e PV]
   )
   
 )
 
 - Spiegazione:
-Il grafico mostra l'andamento delle metriche di EV e PV. Alcuni valori di PV sovrastanti i corrispettivi (a livello temporale) di EV, denotano dei ritardi rispetto a quanto preventivato ad ogni sprint.
+
+#pagebreak()
+
+==== sprint da 1 a 9
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],
+  [*EV* (in €)], [644], [1288], [1803], [2576],[3220],
+[3477],
+[3864],
+[4379],
+[4636],
+  [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
+[3864],
+[3864],
+[4508],
+[4765],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a9.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+
+#pagebreak()
+
+==== sprint da 1 a 10
+
+#align(center)[
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
+  [*EV* (in €)], [644], [1288], [1803], [2576],[3220],
+[3477],
+[3864],
+[4379],
+[4636],
+[4894],
+  [*PV* (in €)], [644], [1288], [1932], [2576],[3220],
+[3864],
+[3864],
+[4508],
+[4765],
+[5152],
+)
+]
+
+#align(left,
+figure(
+  image("/imgs/PdQ/ev_pv/da1a10.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+- Spiegazione:
+
+#pagebreak()
+
 
 === CV e SV - Cost Variance e Schedule Variance
 #align(center)[
