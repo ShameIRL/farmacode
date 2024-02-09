@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.10.1", "2024-02-09", p.bomben, "", "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
     "0.10.0", "2024-02-05", p.rosson, "", "Aggiunti grafici e aggiornato sezione metriche",
     "0.9.0", "2024-01-22", p.rosson, p.favaron, "Aggiunti grafici",
     "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica sezione 5.3 e aggiunta sezione 5.4",
