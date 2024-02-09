@@ -1687,6 +1687,87 @@ figure(
 - Spiegazione:
 Il grafico mostra l'andamento delle metriche di CV e SV. I valori positivi di CV indicano spese minori rispetto alle rispettive previsioni. Tuttavia sebbene un CV positivo suggerisca che si sta risparmiando denaro rispetto al budget, è importante considerare anche le tempistiche del progetto. Valori negativi di SV indicano che il progetto, in quel determinato istante, è in ritardo rispetto alla pianificazione. Il valore del lavoro effettivamente completato è inferiore a quanto pianificato. Sebbene quindi il progetto stia risparmiando denaro rispetto al budget (CV positivo), potrebbe esserci stata una sottoperformance nella realizzazione delle attività pianificate (SV negativo). Ciò potrebbe essere dovuto a una pianificazione ottimistica, problemi nella gestione delle risorse, o altri fattori esterni. I valori attuali rientrano comunque nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista.
 
+==== sprint da 1 a 2
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a2.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 3
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a3.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 4
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a4.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 5
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a5.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 6
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a6.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 7
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a7.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 8
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a8.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 9
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a9.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
+==== sprint da 1 a 10
+
+figure(
+  image("/imgs/PdQ/cv_sv/da1a10.png", height: auto, width: auto),
+  caption: [EV e PV]
+  )
+  
+)
+
 #pagebreak()
 
 = Elenco delle immagini
