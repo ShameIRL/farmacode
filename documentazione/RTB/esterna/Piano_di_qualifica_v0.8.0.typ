@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.10.1", "2024-02-09", p.bomben, "", "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
+    "0.10.1", "2024-02-09", p.bomben, p.rosson, "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
     "0.10.0", "2024-02-05", p.rosson, "", "Aggiunti grafici e aggiornato sezione metriche",
     "0.9.0", "2024-01-22", p.rosson, p.favaron, "Aggiunti grafici",
     "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica sezione 5.3 e aggiunta sezione 5.4",
@@ -1162,7 +1162,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). Se si sommano i valori registrati si ottengono valori che rientrano nel budget preventivato inizialemente. Come per quando detto per i precedenti periodi, la situazione è quindi considerabile stabile.
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). Se si sommano i valori registrati si ottengono valori che rientrano nel budget preventivato inizialemente. Come per quanto detto per i precedenti periodi, la situazione è quindi considerabile stabile.
 
 #pagebreak()
 
@@ -1374,7 +1374,7 @@ figure(
 )
 
 - Spiegazione:
-Gli sforzi impiegati nel ultimo periodo sembrano aver
+Gli sforzi impiegati nel ultimo periodo sembrano non aver migliorato troppo la situazione. La presenza di esami e delle revisioni per l'RTB sta rallendando significativamente il gruppo. Contiamo che gli sprint successivi invertano la tendenza orami creata da un po'. La prospettiva è che finite le revisioni si cerchi di recuperare con incremento costante durante la milestone PB. 
 
 #pagebreak()
 
@@ -1467,7 +1467,7 @@ figure(
 )
 
 - Spiegazione:
-La situazione sembra essere ritornata stabile, con i nuovi valori registrati nuovamente coincidenti. 
+La situazione sembra essere ritornata stabile, con i nuovi valori registrati nuovamente coincidenti. Siamo quindi riusciti a recuperare terreno rispetto allo sprint precedente, sperando che questo andamento si rifletta anche per i prossimi periodi.
 
 #pagebreak()
 
@@ -1498,7 +1498,7 @@ figure(
 )
 
 - Spiegazione:
-Notiamo che EV e PV sono allineati in questo sprint, il che indica che il lavoro effettivamente completato corrisponde alla pianificazione. Questo è un segnale positivo di una buona esecuzione delle attività pianificate.
+Notiamo che EV e PV sono allineati in questo sprint, il che indica che il lavoro effettivamente completato corrisponde alla pianificazione. Questo è un segnale positivo di una buona esecuzione delle attività pianificate. Le nostre attese dallo sprint precedente sono state soddisfatte.
 
 
 #pagebreak()
@@ -1568,6 +1568,7 @@ figure(
 )
 
 - Spiegazione:
+Il rientro dalle festività e il conseguente riassestamento da parte del gruppo, ha comportato ad un riallineamento tra lavoro completato e quello pianificato. La prospettiva per il gli sprint successivi è quella di mantenere questa andatura, i rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicuramente porteranno via molto tempo alla realizzazione e lavoro del progetto.
 
 #pagebreak()
 
@@ -1603,6 +1604,7 @@ figure(
 )
 
 - Spiegazione:
+Come preventivato, purtroppo c'è stata nuovamente una inversione di tendenza, questo sprint non siamo riusciti a mantenere il valore programmato. Durante lo sprint siamo riusciti comunque a progredire e a candidarci per la prima revisione dell'RTB. 
 
 #pagebreak()
 
@@ -1640,6 +1642,9 @@ figure(
 )
 
 - Spiegazione:
+La tendenza è in linea con lo sprint precedente, i motivi sono invariati. La prospettiva è di aumentare la disponibilità per il progetto e cercare di concludere la milestone RTB il prossimo periodo.
+
+
 
 #pagebreak()
 
@@ -1679,6 +1684,7 @@ figure(
 )
 
 - Spiegazione:
+Valori EV e PV sono ancora discordanti, purtroppo la pianificazione rimane ancora ottimistica rispetto all'andamneto effettivo del progetto. Anche la prospettiva di concludere la milestone questo sprint non è stata rispettata, abbiamo preferito concedere ancora un po' di tempo per ridefinire e concludere il materiale da presentare.
 
 #pagebreak()
 
