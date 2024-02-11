@@ -54,7 +54,7 @@
   set align(center)
   text(1.1em, link("mailto:"+g.mail))
   [\ #v(1em)]
-  text(1.1em, link(g.repo))
+  text(1.1em, link("https://farmacodeunipd.github.io"))
 
   set align(bottom)
 
