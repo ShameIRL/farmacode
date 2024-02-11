@@ -823,7 +823,7 @@ figure(
 
 - Spiegazione:
 
-Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato.
+Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato. Riteniamo tuttavia sia ancora prematuro trarre conclusioni, che potrebbero quindi risultare affrettate.
 
 #pagebreak()
 
@@ -1069,7 +1069,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico mostra come nonostante nel precedente sprint ci sia effettivamente stata una ripresa, non sia ancora tuttavia abbastanza per fermare l'andamento di crescita. Restiamo tuttavia fiduciosi, in quanto il periodo considerabile il più fitto e complicato stia ormai volgendo alla sua conclusione.
+Il grafico mostra come nonostante nel precedente sprint ci sia effettivamente stata una ripresa, non sia ancora tuttavia abbastanza per fermare l'andamento di crescita. La situazione rimane quindi simile a quella caratterizzante lo scorso periodo.  Il periodo considerabile il più fitto e complicato sta ormai volgendo al termine. Ci impegneremo quindi a ritornare a lavorare a pieno regime aumentando anche la produttività generlae.
 La situazione rimane stabile con il valore campionato inferiore al valore di BAC preventivato.
 
 #pagebreak()
@@ -1162,7 +1162,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). Se si sommano i valori registrati si ottengono valori che rientrano nel budget preventivato inizialemente.
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). Se si sommano i valori registrati si ottengono valori che rientrano nel budget preventivato inizialemente. Come per quando detto per i precedenti periodi, la situazione è quindi considerabile stabile.
 
 #pagebreak()
 
@@ -1437,7 +1437,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico denota che il valore pianificato (PV) è superiore al valore guadagnato (EV). Questo suggerisce che il lavoro effettivamente completato è inferiore a quanto pianificato per lo stesso periodo di tempo. È importante esaminare attentamente questa discrepanza e identificare le cause sottostanti. Potrebbe essere necessario rivedere la pianificazione, valutare le risorse disponibili e adottare misure correttive per riportare il progetto sulla buona strada."
+Il grafico denota che il valore pianificato (PV) è superiore al valore guadagnato (EV). Questo suggerisce che il lavoro effettivamente completato è inferiore a quanto pianificato per lo stesso periodo di tempo. È importante esaminare attentamente questa discrepanza e identificare le cause sottostanti. Potrebbe essere necessario rivedere la pianificazione, valutare le risorse disponibili e adottare misure correttive per riportare il progetto sulla buona strada.
 
 #pagebreak()
 
@@ -1709,7 +1709,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint 1 e 2 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+- Spiegazione: 
+I valori di CV e SV registarti mostrano un uso minore di risorse monetarie rispetto a quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+
+#pagebreak()
 
 ==== sprint da 1 a 3
 
@@ -1736,7 +1739,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 3 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
+- Spiegazione: 
+Il nuovo valore di CV registrato indica un uso ancora minore di risorse monetarie rispetto a quanto preventivato. Nonostante il risparmio del budget il valore di SV indica un andamento più lento rispetto alla pianificazione, questo mostra come, in questo caso, il risparmio del budget sia comportato da una sottoperformance da parte del gruppo e non da un uso efficiente delle risorse. Il team provvederà a migliorare sotto questo punto di vista, cercando di non ripetere gli errori commessi.
+
+#pagebreak()
 
 ==== sprint da 1 a 4
 
@@ -1763,7 +1769,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 4 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+- Spiegazione: 
+I valori campionati per questo nuovo sprint sembrano restare in linea con i predenti. In particolare il valore di SV è tornato ad essere nullo, ciò indica che le misure adottate per evitare di ricadere nella situazione caratterizzante le scorso periodo si sono rivelate efficaci.
+
+#pagebreak()
 
 ==== sprint da 1 a 5
 
@@ -1790,7 +1799,11 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 5 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+- Spiegazione: 
+Nel grafico di questo sprint è possibile iniziare a delineeare un andamento che vede il valore di CV crescere, ed il valore di SV rimanere nullo. Il valore fortemente positivo di CV potrebbe indicare un uso efficiente delle risorse, ed il corrispondente valore di SV sembra validare tale ipotesi (il valore campionato di SV non indica ritardi sulla pianificazione). Tuttavia la tendenda dei valori di CV registrati potrebbe indicare la presenza di un troppo ottimismo durante la pianificazione. Ciò potrebbe indurre a ritardi nel "lungo" periodo. Gli ultimi eventi ed il colloquio con il #p.cardin hanno confermato questa nostra preoccupazione.
+Dopo un confronto abbiamo quindi deciso di non riternci ancora pronti, a differenza di quanto pianificato, alla prima revisione di progetto.
+
+#pagebreak()
 
 ==== sprint da 1 a 6
 
@@ -1817,7 +1830,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 6 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo. Questo rallentamento di produttività durante lo sprint 6 viene dettato dalla pausa natalizia.
+- Spiegazione: 
+I nuovi valori di CV e SV indica una situazione ben diversa da quella registrata nel ultimo sprint. Nonostante il risparmio del budget il valore di SV indica un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo. Questo rallentamento di produttività durante lo sprint 6 viene dettato dalla pausa natalizia. Nonostante fosse in parte stato preventivato la presenza delle festività invernali ha di fatto influito negativamente sull'andamento del progetto.
+
+#pagebreak()
 
 ==== sprint da 1 a 7
 
@@ -1844,7 +1860,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 7 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV nulli indicano l'avanzamento corretto del progetto secondo la pianificazione.
+- Spiegazione: 
+Siamo lieti di poter notare un miglioramente rispetto al ultimo periodo passato. I valori campionati per questo sprint vedono un CV ancora positivo, ma in minor quantità, ed un SV nuovamente nullo. Siamo tuttavia consapevoli che ciò è dovuto anche in parte ad una ripianificazione del periodo, oltre che ai nostri maggiori sforzi. Inoltre l'avvicinarsi dei vari impegni accademici a cui ogni componente è soggetto non ci fa ben sperare. Concordiamo tuttavia sul dover continuare con lo stesso passo, evitando di ripetere la situazione ed il clima creatori in corrispondenza delle ferie invernali.
+
+#pagebreak()
 
 
 ==== sprint da 1 a 8
@@ -1872,7 +1891,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 8 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
+- Spiegazione: 
+I nuovi valori registrati rientrano nelle aspettative. Il valore di CV è calato, tuttavia il valore negativo di SV indica un ritardo rispetto a quanto preventivato. Il gruppo ha comuqnue raggiunto il suo obiettivo primario, ovvero il candidarsi alla prima parte della revisone di RTB entro il mese di Gennaio.
+
+#pagebreak()
 
 ==== sprint da 1 a 9
 
@@ -1899,7 +1921,10 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 9 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
+- Spiegazione: 
+I nuovi valori campionati indicano una situazione simile a quella registrata nel periodo precedente. Come avevamo previsto la concomitanza con il periodo più fitto di impegni accademici ha influito sulla produttivatà del team, siamo tuttavia fiduciosi in quanto il nuovo sprint successivo a questo si prospetta essere l'ultimo a svolgersi in corrispondenza di questo periodo.
+
+#pagebreak()
 
 ==== sprint da 1 a 10
 
@@ -1926,7 +1951,8 @@ figure(
   
 )
 
-- Spiegazione: I valori di CV e SV durante lo spint da 1 a 10 mostrano come si stessero usando meno risorse monetarie di quanto preventivato. Nonostante il risparmio del budget i valori di SV indicano un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo.
+- Spiegazione: 
+I valori di CV e SV registrati denotano una situazione simile alla precedente. E' importante notare che il valore SV indica un ritardo rispetto a quanto preventivato. Questo sprint doveva infatti essere l'ultimo utile alla revisione di RTB, tuttavia riteniamo sia utile spendere ancora alcuni giorni del prossimo sprint per sistemare gli ultimi accorgimenti.
 
 /*
 
