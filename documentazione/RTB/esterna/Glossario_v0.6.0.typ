@@ -146,6 +146,7 @@ Il pair programming è una metodologia di sviluppo del software nella quale due 
 
 == Parser
 Programma che analizza un file, verificandone la correttezza sintattica rispetto a una data grammatica, viene utilizzato in ambiti come il parsing del linguaggio naturale, l'analisi del codice sorgente e la manipolazione di dati strutturati.
+
 == Piano di Qualifica
 
 == Product Baseline
