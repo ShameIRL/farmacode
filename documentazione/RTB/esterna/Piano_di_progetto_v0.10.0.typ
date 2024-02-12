@@ -622,7 +622,7 @@ In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in 
 nd.
 
 ==== sprint.8
-- Periodo: 2024/01/15 - 2024/01/25
+- Periodo: 2024/01/16 - 2024/01/25
 
 - Issues:\
 
@@ -677,7 +677,7 @@ Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In
 
 
 ==== sprint.10
-- Periodo: 2024/02/02 - 2024/02/09
+- Periodo: 2024/02/03 - 2024/02/12
 
 - Issues:\
 
@@ -706,7 +706,7 @@ nd.
 === PB
 
 ==== sprint.11
-- Periodo: 2024/02/09 - 2024/02/16
+- Periodo: 2024/02/13 - 2024/02/16 //TBD da cambiare
 
 - Issues:\
 
@@ -730,7 +730,7 @@ figure(
 - Imprevisti incotrati e loro risoluzione: 
 
 ==== sprint.12
-- Periodo: 2024/02/16 - 2024/02/23
+- Periodo: 2024/02/16 - 2024/02/23 //TBD
 
 - Issues:\
 
