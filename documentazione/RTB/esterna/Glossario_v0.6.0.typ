@@ -80,7 +80,7 @@ Una dipendenza è definibile come un legame esistente tra due o piû componenti 
 La progettazione è una fase del ciclo di vita del software (che precede la codifica) in cui sulla base della specifica dei requisiti prodotta dall'analisi, il progetto definisce come tali requisiti saranno soddisfatti, entrando nel merito della struttura che dovrà essere data al sistema software che deve essere realizzato. 
 
 == Docker
-
+Docker è un software progettato per eseguire processi informatici in ambienti isolabili, minimali e facilmente distribuibili chiamati container, con l'obiettivo di semplificare i processi di deployment di applicazioni software.
 = E
 
 == E-commerce
@@ -144,9 +144,7 @@ punto di vista tecnico che documentale.
 Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
 
 == Parser
-
-== Piano di Progetto
-
+Programma che analizza un file, verificandone la correttezza sintattica rispetto a una data grammatica, viene utilizzato in ambiti come il parsing del linguaggio naturale, l'analisi del codice sorgente e la manipolazione di dati strutturati.
 == Piano di Qualifica
 
 == Product Baseline
@@ -186,8 +184,10 @@ crea delle raccomandazioni personalizzate specifiche per l’utente così da aiu
 == Stakeholder
 
 == Surprise
+Una libreria Python specificamente progettata per la costruzione e l'analisi di sistemi di raccomandazione. Si concentra principalmente sulle raccomandazioni basate su valutazioni esplicite, come voti o valutazioni numeriche date dagli utenti a determinati elementi.
 
 == SVD (Singular Value Decomposition)
+Una tecnica matematica che scompone una matrice in tre parti: due matrici ortogonali e una matrice diagonale contenente i valori singolari. È ampiamente utilizzata nel machine learning e nei sistemi di raccomandazione per ridurre la dimensionalità dei dati, identificare pattern nascosti e generare raccomandazioni personalizzate.
 
 = T
 
