@@ -713,7 +713,7 @@ nd.
 - Task:
 
 - Sintesi:
-Questo sprint si pianifica essere il primo successivo alla revisone di RTB, il preventivo per questo periodo vede quindi come principali attività lavori utili alle "restaurazione" di tutti i documenti a seguito della revisone. Inoltre si pianifica di iniziare a pensare e concepire delle idee più concrete riguardo il design e la progettazione di un MVP. Si confida in oltre in un incremento della produttività una volta superato il periodo corrente, considerabile il più impegnativo.
+Questo sprint si pianifica essere il primo successivo alla revisone di RTB, il preventivo per questo periodo vede quindi come principali attività lavori utili alla "restaurazione" di tutti i documenti a seguito della revisone. Inoltre si pianifica di iniziare a pensare e concepire delle idee più concrete riguardo il design e la progettazione di un MVP. Si confida in oltre in un incremento della produttività una volta superato il periodo corrente, considerabile il più impegnativo.
 
 - Gantt view:
 /*
@@ -1610,15 +1610,16 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 )
 ])
 
-// #align(left,
-// figure(
-//   image("/imgs/PdP/graphs/preventivi/sprint#9.png", height: 20%, width: auto),
-//   caption: [preventivi/sprint.9]
-//   )
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#9.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.9]
+  )
   
-// )
+)
 
 - Spiegazione:
+La pianificazione per questo sprint segue la filosfia adottata per il precedente periodo. Sono state quindi preventivate ore utili alla verifica e miglioramento dei documenti, e alla preparazione del materiale necessario alla prima parte della revisione.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -1669,7 +1670,22 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 //   )
 // )
 
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#9.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0.97]
+  )
+)
+
 - Spiegazione:
+L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto preventivato e uso di più risorse monetarie rispetto a quanto previsto. Nello specifico dopo aver sostenuto la prima parte di revisone con il #p.cardin si è concordato di utilizzare alcune risorse per rivedere le criticità e problematiche sorte dopo e durante il colloquio.
 
 
 #pagebreak()
@@ -1710,15 +1726,16 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 )
 ])
 
-// #align(left,
-// figure(
-//   image("/imgs/PdP/graphs/preventivi/sprint#9.png", height: 20%, width: auto),
-//   caption: [preventivi/sprint.9]
-//   )
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#10.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.10]
+  )
   
-// )
+)
 
 - Spiegazione:
+Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento della documentazione in vista della seconda parte della revisione di RTB. Come già menzionato il gruppo ritiene questo periodo l'ultimo utile alla revisione. 
 
 
 - Consuntivo:
@@ -1770,8 +1787,22 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 //   )
 // )
 
-- Spiegazione:
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#10.png", height: 30%, width: auto),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(215) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0.95]
+  )
+)
 
+- Spiegazione:
+Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di SPI registrato indica un ritardo, che riteniamo sia dovuto all'accumularsi delle situazioni createsi nei precedenti sprint, ed ad una pianificazione troppo ottimistica. Gli sforzi previsti si sono rivelati non essere sufficienti per portare l'avanzamento del progetto al stato che ci eravamo prefissati. Prevediamo infatti ancora alcune giornate di lavoro prima della candidatuara della seconda parte della revisione di RTB, ciò per rispettare il livello di qualità con il quale il team intende presentarsi.
 
 #pagebreak()
 
@@ -1891,6 +1922,17 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
 )
 ])
 
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#11.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.11]
+  )
+  
+)
+
+- Spiegazione:
+Il preventivo per questo sprint prevede ore utili alla correzione dei vari documenti in seguito alla revisione di RTB. Sono quindi state allocate ore utili alla "ristrutturazione" e necessaria verifica dei vari artefatti. Inoltri si prevedono le prime ore utili all'attività di progettazione. L'idea è quella di non ricadere in "tempi morti", ed anzi ora che molti impegni sono passati, di aumentare la produttività; sempre senza andare a discapito della qualità di quanto prodotto.
+
 === sprint.12
 - Preventivo:
 #align(center, text(0.85em)[
@@ -1926,6 +1968,17 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
   [Bilancio], [], [], [], [], [], [*€6785,00*],
 )
 ])
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.12]
+  )
+  
+)
+
+- Spiegazione:
+Il preventivo per questo sprint segue la filosofia adottata per il precedente, si prevedono ancora ore utili al miglioramente e aggiornamento generale della documentazione, e in maggior numero, ore utili alla progettazione.
 
 // === sprint.10
 // - Preventivo:

@@ -26,7 +26,7 @@
 - Mezzo tramite: Discord (online)
 
 = Sintesi
-Il meeting è iniziato discutendeo sulla gestione della contabilità, l'RTB svolto e la futura candidatura al colloquio con il prof. Tullio.\
+Il meeting è iniziato discutendeo sulla gestione della contabilità, l'RTB svolto e la futura candidatura al colloquio con il #p.vardanega.\
 Successivamente si è fatto il punto sui documenti delle norme e del completamento del piano di progetto.\
 Un'altra parte fondamentale è la discussione sulla gestione degli sprint e gestione del tempo data la minore mole di lavoro di questo periodo.\
 La riunione si è conclusa assegnando i ruoli del nuovo sprint. I ruoli decisi sono riportati nella tabella della sezione 4 di questo documento, e delle varie attività da svolgere per ogni componente del gruppo di progetto.

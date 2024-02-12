@@ -67,12 +67,12 @@
       align: (left, right),
       hlinex(stroke: 0.05em),
       box(
-      image(g.group-logo, width:  1.5em), baseline: 0.4em) + 
-      g.name,
-      text("pagina: ") +
-      counter(page).display(
-      "1", 
-    )
+      image(g.group-logo, width:  1.5em), baseline: 0.5em) + 
+      text(g.name, baseline: 0.1em),
+      text("pagina ", baseline: 0.5em) +
+      text(counter(page).display(
+      "1 / 1", both: true,
+    ), baseline: 0.5em)
     ),
   )
 
