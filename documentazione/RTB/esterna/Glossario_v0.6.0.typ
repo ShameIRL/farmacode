@@ -81,6 +81,7 @@ La progettazione è una fase del ciclo di vita del software (che precede la codi
 
 == Docker
 Docker è un software progettato per eseguire processi informatici in ambienti isolabili, minimali e facilmente distribuibili chiamati container, con l'obiettivo di semplificare i processi di deployment di applicazioni software.
+
 = E
 
 == E-commerce
@@ -151,6 +152,7 @@ Programma che analizza un file, verificandone la correttezza sintattica rispetto
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
 == Proof of Concept
+Una versione preliminare di un'applicazione o di una soluzione software che viene sviluppata per dimostrare la fattibilità tecnica di un'idea o di un concetto, viene utilizzata per testare rapidamente l'efficacia di un approccio, identificare eventuali limitazioni delle tecnologie scelte e valutare se l'idea può essere realizzata in modo pratico.
 
 == Processo
 Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
