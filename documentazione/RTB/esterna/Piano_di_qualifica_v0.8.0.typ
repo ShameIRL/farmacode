@@ -9,7 +9,7 @@
   ),
   changelog: (
     "0.10.1", "2024-02-09", p.bomben, p.rosson, "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
-    "0.10.0", "2024-02-05", p.rosson, "", "Aggiunti grafici e aggiornato sezione metriche",
+    "0.10.0", "2024-02-05", p.rosson, p.bomben, "Aggiunti grafici e aggiornato sezione metriche",
     "0.9.0", "2024-01-22", p.rosson, p.favaron, "Aggiunti grafici",
     "0.8.0", "2024-01-13", p.passarella, p.favaron, "Modifica sezione 5.3 e aggiunta sezione 5.4",
     "0.7.2", "2024-01-13", p.bomben, p.favaron, "Tabella di test di sistema e tracciamento",
@@ -823,7 +823,7 @@ figure(
 
 - Spiegazione:
 
-Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato. Riteniamo tuttavia sia ancora prematuro trarre conclusioni, che potrebbero quindi risultare affrettate.
+Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale del progetto così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato. Riteniamo tuttavia sia ancora prematuro trarre conclusioni, che potrebbero quindi risultare affrettate.
 
 #pagebreak()
 
@@ -853,7 +853,7 @@ figure(
 
 - Spiegazione:
 
-Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato. La tendenza a diminuire suggerisce un uso delle risorse efficace, tuttavia ciò non scongiura la possibilità di aver attuato una pianificazione troppo ottimistica che porti quindi a ritardi. 
+Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale del progetto  così da individuare la necessità di attuare misure preventive. Il grafico mostra come i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato. La tendenza a diminuire suggerisce un uso delle risorse efficace, tuttavia ciò non scongiura la possibilità di aver attuato una pianificazione troppo ottimistica che porti quindi a ritardi. 
 
 #pagebreak()
 
@@ -911,7 +911,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico non mostra variazioni rispetto all'andamento registrato nei precedenti sprint. I valori campionati sono inferiori al BAC preventivato in fase di candidatura ciò indica che i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato.
+Il grafico non mostra variazioni rispetto all'andamento registrato nei precedenti sprint. I valori campionati sono inferiori al BAC preventivato in fase di candidatura, ciò indica che i fondi necessari per il totale svolgimento del progetto potrebbero risultare minori rispetto a quanto preventivato.
 
 #pagebreak()
 
@@ -969,7 +969,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico denota un proseguo del andamento registrato nel precedente sprint. Ciò è sicuramente attribuibile ad un calo di produttività dovuto in parte sia al rientro dalle festività invernali, sia all'aggiunta degli impegni accademici. Questo impegno aggiuntivo ha comportato un ulteriore aumento dell'earned value del progetto. È evidente che il tempo dedicatogli ha influito sulle prestazioni del progetto, contribuendo all'aumento dei costi stimati. È essenziale considerare attentamente questo impatto aggiuntivo e valutare le strategie per gestire efficacemente le risorse e mantenere il progetto allineato agli obiettivi di costo e di tempo
+Il grafico denota un proseguo del andamento registrato nel precedente sprint. Ciò è sicuramente attribuibile ad un calo di produttività dovuto in parte sia al rientro dalle festività invernali, sia all'aggiunta degli impegni accademici. Questo impegno aggiuntivo ha comportato un ulteriore aumento dell'earned value del progetto. È evidente che il tempo dedicatogli ha influito sulle prestazioni del progetto, contribuendo all'aumento dei costi stimati. È essenziale considerare attentamente questo impatto aggiuntivo e valutare le strategie per gestire efficacemente le risorse e mantenere il progetto allineato agli obiettivi di costo e di tempo.
 
 #pagebreak()
 
@@ -1069,7 +1069,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico mostra come nonostante nel precedente sprint ci sia effettivamente stata una ripresa, non sia ancora tuttavia abbastanza per fermare l'andamento di crescita. La situazione rimane quindi simile a quella caratterizzante lo scorso periodo.  Il periodo considerabile il più fitto e complicato sta ormai volgendo al termine. Ci impegneremo quindi a ritornare a lavorare a pieno regime aumentando anche la produttività generlae.
+Il grafico mostra come nonostante nel precedente sprint ci sia stata effettivamente una ripresa, non sia ancora tuttavia abbastanza per fermare l'andamento di crescita. La situazione rimane quindi simile a quella caratterizzante lo scorso periodo.  Il periodo considerabile il più fitto e complicato sta ormai volgendo al termine. Ci impegneremo quindi a ritornare a lavorare a pieno regime aumentando anche la produttività generale.
 La situazione rimane stabile con il valore campionato inferiore al valore di BAC preventivato.
 
 #pagebreak()
@@ -1104,7 +1104,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). La situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati, ovvero non super il BAC.
+Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovvero quanto si stima andrà ancora a costare il progetto) in corrispondenza dell'AC (Actual Cost, ovvero quanto effettivamente è stato speso fino a quel determinato momento). La situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati, ovvero non supera il BAC.
 
 #pagebreak()
 
@@ -1192,7 +1192,7 @@ figure(
 )
 
 - Spiegazione:
-La tendenza rimane la stessa che ha caratterizzato gli ultimi sprint, i nuovi valori registrati indicano un andamento stablile ed in linea con le previsioni. Questo suggerisce che le previsioni fatte in precedenza stanno risultando realistiche. Speriamo di mantenere questa tendenza anche con l'avvicinamento di festività invernali ed impegni accademi.
+La tendenza rimane la stessa che ha caratterizzato gli ultimi sprint, i nuovi valori registrati indicano un andamento stablile ed in linea con le previsioni. Questo suggerisce che le previsioni fatte in precedenza stanno risultando realistiche. Speriamo di mantenere questa tendenza anche con l'avvicinamento di festività invernali ed impegni accademici.
 
 #pagebreak()
 
@@ -1226,7 +1226,7 @@ figure(
 )
 
 - Spiegazione:
-Come era possibile prevedere la concomitanza delle festività invernali, e l'avvicinarsi dei vari impegni accademici a cui ogni componente del gruppo è soggetto, ha influito negativamente con l'andamento registrato fino ad ora. L'ETC è infatti cresciuto, sicuramente a causa di quanto appena menzionato. Potrebbe essere necessario rivedere le stime dei costi rimanenti e assicurarsi che siano realistiche e aggiornate in base alla situazione attuale del progetto, e attuare misure di mitigazione. Il gruppo ha quindi deciso di rivedere quanto pianificato per il prossimo periodo ridistribuendo ruoli ed attività.
+Come era possibile prevedere la concomitanza delle festività invernali, e l'avvicinarsi dei vari impegni accademici a cui ogni componente del gruppo è soggetto, ha influito negativamente con l'andamento registrato fino ad ora. L'ETC è infatti cresciuto, sicuramente a causa di quanto appena menzionato. Potrebbe essere necessario rivedere le stime dei costi rimanenti, assicurarsi che siano realistiche, aggiornate in base alla situazione attuale del progetto e attuare misure di mitigazione. Il gruppo ha quindi deciso di rivedere quanto pianificato per il prossimo periodo ridistribuendo ruoli ed attività.
 
 #pagebreak()
 
@@ -1260,7 +1260,7 @@ figure(
 )
 
 - Spiegazione:
-Il grafico mostra una continuazione del trend registrato nel ultimo sprint, ciò indica che le misure adottate per provare a sanare la situazione creatasi nel precedente periodo non sono state sufficientemente efficaci. Ciò è sicuramente da attribuire all'indisponibilità creatasi dalla presenza degli impegni universitari già citati in precedenza, e ad un calo generale della produttività registrato al rientro delle festività invernali. Il gruppo si impegnerà per migliorare sotto questo punto di vista, cercando di ritornare a pieno regime.
+Il grafico mostra una continuazione del trend registrato nel ultimo sprint, ciò indica che le misure adottate per provare a sanare la situazione creatasi nel precedente periodo non sono state sufficientemente efficaci. Ciò è sicuramente da attribuire all'indisponibilità creatasi dalla presenza degli impegni universitari già citati in precedenza e ad un calo generale della produttività registrato al rientro delle festività invernali. Il gruppo si impegnerà per migliorare sotto questo punto di vista, cercando di ritornare a pieno regime.
 
 #pagebreak()
 
@@ -1604,7 +1604,7 @@ figure(
 )
 
 - Spiegazione:
-Come preventivato, purtroppo c'è stata nuovamente una inversione di tendenza, questo sprint non siamo riusciti a mantenere il valore programmato. Durante lo sprint siamo riusciti comunque a progredire e a candidarci per la prima revisione dell'RTB. 
+Come preventivato, purtroppo c'è stata nuovamente una inversione di tendenza, questo sprint non siamo riusciti a mantenere il valore programmato. Durante lo sprint siamo riusciti comunque a progredire e a candidarci per la prima revisione dell'RTB. Contiamo di riuscire a essere più costanti man mano che gli impegni diminuiscono.
 
 #pagebreak()
 
@@ -1684,7 +1684,7 @@ figure(
 )
 
 - Spiegazione:
-Valori EV e PV sono ancora discordanti, purtroppo la pianificazione rimane ancora ottimistica rispetto all'andamneto effettivo del progetto. Anche la prospettiva di concludere la milestone questo sprint non è stata rispettata, abbiamo preferito concedere ancora un po' di tempo per ridefinire e concludere il materiale da presentare.
+Valori EV e PV sono ancora discordanti, purtroppo la pianificazione rimane ancora ottimistica rispetto all'andamneto effettivo del progetto. Anche la prospettiva di concludere la milestone questo sprint non è stata rispettata, abbiamo preferito concedere ancora un po' di tempo in più per ridefinire e concludere il materiale da presentare.
 
 #pagebreak()
 
@@ -1806,8 +1806,8 @@ figure(
 )
 
 - Spiegazione: 
-Nel grafico di questo sprint è possibile iniziare a delineeare un andamento che vede il valore di CV crescere, ed il valore di SV rimanere nullo. Il valore fortemente positivo di CV potrebbe indicare un uso efficiente delle risorse, ed il corrispondente valore di SV sembra validare tale ipotesi (il valore campionato di SV non indica ritardi sulla pianificazione). Tuttavia la tendenda dei valori di CV registrati potrebbe indicare la presenza di un troppo ottimismo durante la pianificazione. Ciò potrebbe indurre a ritardi nel "lungo" periodo. Gli ultimi eventi ed il colloquio con il #p.cardin hanno confermato questa nostra preoccupazione.
-Dopo un confronto abbiamo quindi deciso di non riternci ancora pronti, a differenza di quanto pianificato, alla prima revisione di progetto.
+Nel grafico di questo sprint è possibile iniziare a delineeare un andamento che vede il valore di CV crescere, ed il valore di SV rimanere nullo. Il valore fortemente positivo di CV potrebbe indicare un uso efficiente delle risorse, ed il corrispondente valore di SV sembra validare tale ipotesi (il valore campionato di SV non indica ritardi sulla pianificazione). Tuttavia la tendenza dei valori di CV registrati potrebbe indicare la presenza di un troppo ottimismo durante la pianificazione. Ciò potrebbe indurre a ritardi nel "lungo" periodo. Gli ultimi eventi ed il colloquio con il #p.cardin hanno confermato questa nostra preoccupazione.
+Dopo un confronto abbiamo quindi deciso di non ritenerci ancora pronti, a differenza di quanto pianificato, alla prima revisione di progetto.
 
 #pagebreak()
 
@@ -1837,7 +1837,7 @@ figure(
 )
 
 - Spiegazione: 
-I nuovi valori di CV e SV indica una situazione ben diversa da quella registrata nel ultimo sprint. Nonostante il risparmio del budget il valore di SV indica un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo. Questo rallentamento di produttività durante lo sprint 6 viene dettato dalla pausa natalizia. Nonostante fosse in parte stato preventivato la presenza delle festività invernali ha di fatto influito negativamente sull'andamento del progetto.
+I nuovi valori di CV e SV indica una situazione ben diversa da quella registrata nel ultimo sprint. Nonostante il risparmio del budget il valore di SV indica un andamento più lento rispetto alla pianificazione, questo mostra come il risparmio del budget sia comportato da una sottoperformance da parte del gruppo. Questo rallentamento di produttività durante lo sprint 6 viene dettato dalla pausa natalizia. Nonostante fosse in parte stato preventivato la presenza delle festività invernali, ha di fatto influito negativamente sull'andamento del progetto.
 
 #pagebreak()
 
@@ -1867,7 +1867,7 @@ figure(
 )
 
 - Spiegazione: 
-Siamo lieti di poter notare un miglioramente rispetto al ultimo periodo passato. I valori campionati per questo sprint vedono un CV ancora positivo, ma in minor quantità, ed un SV nuovamente nullo. Siamo tuttavia consapevoli che ciò è dovuto anche in parte ad una ripianificazione del periodo, oltre che ai nostri maggiori sforzi. Inoltre l'avvicinarsi dei vari impegni accademici a cui ogni componente è soggetto non ci fa ben sperare. Concordiamo tuttavia sul dover continuare con lo stesso passo, evitando di ripetere la situazione ed il clima creatori in corrispondenza delle ferie invernali.
+Siamo lieti di poter notare un miglioramente rispetto al ultimo periodo passato. I valori campionati per questo sprint vedono un CV ancora positivo, ma in minor quantità, ed un SV nuovamente nullo. Siamo tuttavia consapevoli che ciò è dovuto anche in parte ad una ripianificazione del periodo, oltre che ai nostri maggiori sforzi. Inoltre l'avvicinarsi dei vari impegni accademici a cui ogni componente è soggetto non ci fa ben sperare. Concordiamo tuttavia sul dover continuare con lo stesso passo, evitando di ripetere la situazione ed il clima creatosi in corrispondenza delle ferie invernali.
 
 #pagebreak()
 
@@ -1928,7 +1928,7 @@ figure(
 )
 
 - Spiegazione: 
-I nuovi valori campionati indicano una situazione simile a quella registrata nel periodo precedente. Come avevamo previsto la concomitanza con il periodo più fitto di impegni accademici ha influito sulla produttivatà del team, siamo tuttavia fiduciosi in quanto il nuovo sprint successivo a questo si prospetta essere l'ultimo a svolgersi in corrispondenza di questo periodo.
+I nuovi valori campionati indicano una situazione simile a quella registrata nel periodo precedente. Come avevamo previsto la concomitanza con il periodo più fitto di impegni accademici ha influito sulla produttivatà del team, siamo tuttavia fiduciosi in quanto lo sprint successivo a questo si prospetta essere l'ultimo a svolgersi in corrispondenza di questo periodo.
 
 #pagebreak()
 
