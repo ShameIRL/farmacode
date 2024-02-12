@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-02-12", p.bomben, "", "Stesura del verbale",
+    "1.0.0", "2024-02-12", p.bomben, p.baggio, "Stesura del verbale",
   ),
 )
 
@@ -15,7 +15,7 @@
 - Ora: 16:00-16:30;
 - Partecipanti: 
 
-    -- Baggio Matteo
+    -- Baggio Matteo;
 
     -- Bomben Filippo;
 
