@@ -44,30 +44,33 @@ Al suo interno sono presenti i seguenti documenti:
 
 \
 
-#pagebreak()
+Inoltre per quanto riguarda il PoC è stato predisposto un repository apposito che può visitare al seguente link: 
+#align(center, [https://github.com/farmacodeunipd/PoC])
+
+\
 
 Per quanto concerne il PaF sono state apportate alcune modifiche rispetto a quanto definito in fase di Candidatura. Riportiamo qui sotto un prospetto riassuntivo, che riflette quanto viene esposto nel documento "Piano_di_Progetto_v1.0.0" nella sezione "Globale":
 
-Segue la nuova ridistribuzione oraria:
+Segue la nuova ridistribuzione oraria ed il corrispondente preventivo:
 
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*Nuovo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Componente], [10], [8], [30], [12], [22], [12],
 )
 ])
-#align(center)[Tabella 56: Nuova distribuzione oraria.]
+#align(center)[Tabella 1: Nuova distribuzione oraria.]
 
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*Costi*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -77,9 +80,12 @@ Segue la nuova ridistribuzione oraria:
   [Totale], [], [], [], [], [], [#green("€12530,00")], 
 )
 ])
-#align(center)[Tabella 57: Nuovo preventivo.]
+#align(center)[Tabella 2: Nuovo preventivo.]
+
+Si noti che il costo di completamento previsto risulta essere leggermente inferiore rispetto a quello preventivato in fase di Candidatura, ovvero *12880€*. Inoltre la data di consegna del progetto, inizialmente fissata per il *25/03/2024*, è stata posticipata al *15/04/2024*. Si riportano inoltre l'ultimo valore di EAC registrato, ovvero: 12763€; ed i corrispettivi valori di AC ed ETC: rispettivamente 4850€ e 7913€. Le ricordiamo inoltre che nei documenti relativi è possibile consultare un analisi più approfondita dell'andamento del progetto.
 
 
+#v(2cm)
 
 Cordiali saluti,\
 

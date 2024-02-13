@@ -139,6 +139,7 @@ In particolare andranno verificati:
 
 == Qualità della documentazione
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, auto, 30mm),
    inset: (
     x: 5pt,
@@ -157,7 +158,9 @@ In particolare andranno verificati:
 
 === Metriche utilizzate
 
+
 #align(center,table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
     x: 5pt,
@@ -188,6 +191,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 - Manutenibilità.
 
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, auto, 30mm),
    inset: (
     x: 5pt,
@@ -218,6 +222,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 
 === Metriche utilizzate
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
     x: 5pt,
@@ -291,6 +296,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 == Processi primari
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, auto, 30mm),
    inset: (
     x: 5pt,
@@ -309,6 +315,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 == Processi di supporto
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, auto, 30mm),
    inset: (
     x: 5pt,
@@ -330,6 +337,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 == Processi organizzativi
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, auto, 30mm),
    inset: (
     x: 5pt,
@@ -346,6 +354,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 == Metriche utilizzate
 === Processi primari
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
     x: 5pt,
@@ -469,6 +478,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 === Processi di supporto
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (25mm, auto, 35mm, 35mm),
    inset: (
     x: 5pt,
@@ -520,6 +530,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 === Processi organizzativi
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (25mm, 60mm, 35mm, 35mm),
    inset: (
     x: 5pt,
@@ -550,6 +561,7 @@ Questa sezione del documento è dedicata al testing, parte fondamentale per la c
 I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode in presenza del proponente. In quella occasione si è quindi mostrata l'efficienza e la completezza del prodotto, /* qua boh, nel senso si può specificare che era il POC? */in modo da poter avviare l'attività di validazione.
 
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, 85mm, 35mm),
    inset: (
     x: 5pt,
@@ -597,6 +609,7 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
 ==== Tracciamento test di accettazione
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (40mm, 40mm),
   inset: (
     x: 5pt,
@@ -646,6 +659,7 @@ I test di sistema hanno il compito di verificare la completezza del progetto, ve
 Di seguito una tabella con il codice del test, la descrizione, il risultato e il codice requisito.
 
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (25mm, 65mm, 35mm, 25mm),
   inset: (
     x: 5pt,
@@ -683,6 +697,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 
 == Valutazione tecnologica
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (70mm, 30mm, 55mm),
   inset: (
     x: 5pt,
@@ -697,6 +712,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 
 == Valutazione organizzativa e personale
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (70mm, 40mm, 50mm),
   inset: (
     x: 5pt,
@@ -714,6 +730,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 
 == Valutazione sui ruoli
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, 33mm, auto, auto),
   inset: (
     x: 5pt,
@@ -760,6 +777,7 @@ Un intervallo ideale si aggira fra i 40 e 60.
 *IG documenti*
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (60mm, 40mm),
   inset: (
     x: 5pt,
@@ -801,6 +819,7 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -831,6 +850,7 @@ Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -861,6 +881,7 @@ Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -890,6 +911,7 @@ Il grafico non mostra variazioni rispetto all'andamento registrato nei precedent
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -919,6 +941,7 @@ Il grafico non mostra variazioni rispetto all'andamento registrato nei precedent
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -948,6 +971,7 @@ Il grafico mostra come dopo uno sprint in cui la produttività è stata comprome
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -977,6 +1001,7 @@ Il grafico denota un proseguo del andamento registrato nel precedente sprint. Ci
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1009,6 +1034,7 @@ Nonostante le sfide incontrate negli sprint precedenti, incluso il ritorno dalle
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1043,6 +1069,7 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1082,6 +1109,7 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 ==== sprint da 1 a 2
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1111,6 +1139,7 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
 ==== sprint da 1 a 3
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1140,6 +1169,7 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
 ==== sprint da 1 a 4
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1170,6 +1200,7 @@ Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete, ovver
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1200,6 +1231,7 @@ La tendenza rimane la stessa che ha caratterizzato gli ultimi sprint, i nuovi va
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1234,6 +1266,7 @@ Come era possibile prevedere la concomitanza delle festività invernali, e l'avv
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1268,6 +1301,7 @@ Il grafico mostra una continuazione del trend registrato nel ultimo sprint, ciò
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1304,6 +1338,7 @@ Siamo lieti di poter constatare un miglioramento; l'andamento che ha caratterizz
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1342,6 +1377,7 @@ Il grafico indica un altra inversione di tendenza, pensiamo ciò sia attribuile 
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1384,6 +1420,7 @@ Gli sforzi impiegati nel ultimo periodo sembrano non aver migliorato troppo la s
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1415,6 +1452,7 @@ Il sovrapporsi dei valori registrati delle metriche di EV (valore guadagnato) e 
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1445,6 +1483,7 @@ Il grafico denota che il valore pianificato (PV) è superiore al valore guadagna
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1475,6 +1514,7 @@ La situazione sembra essere ritornata stabile, con i nuovi valori registrati nuo
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1507,6 +1547,7 @@ Notiamo che EV e PV sono allineati in questo sprint, il che indica che il lavoro
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1542,6 +1583,7 @@ In questo sprint, l'EV è inferiore al PV, indicando che il lavoro effettivament
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto,),
   inset: (
     x: 8pt,
@@ -1576,6 +1618,7 @@ Il rientro dalle festività e il conseguente riassestamento da parte del gruppo,
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1612,6 +1655,7 @@ Come preventivato, purtroppo c'è stata nuovamente una inversione di tendenza, q
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1652,6 +1696,7 @@ La tendenza è in linea con lo sprint precedente, i motivi sono invariati. La pr
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1694,6 +1739,7 @@ Valori EV e PV sono ancora discordanti, purtroppo la pianificazione rimane ancor
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1724,6 +1770,7 @@ I valori di CV e SV registarti mostrano un uso minore di risorse monetarie rispe
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1754,6 +1801,7 @@ Il nuovo valore di CV registrato indica un uso ancora minore di risorse monetari
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1784,6 +1832,7 @@ I valori campionati per questo nuovo sprint sembrano restare in linea con i pred
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1815,6 +1864,7 @@ Dopo un confronto abbiamo quindi deciso di non ritenerci ancora pronti, a differ
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1845,6 +1895,7 @@ I nuovi valori di CV e SV indica una situazione ben diversa da quella registrata
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1876,6 +1927,7 @@ Siamo lieti di poter notare un miglioramente rispetto al ultimo periodo passato.
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1906,6 +1958,7 @@ I nuovi valori registrati rientrano nelle aspettative. Il valore di CV è calato
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
@@ -1936,6 +1989,7 @@ I nuovi valori campionati indicano una situazione simile a quella registrata nel
 
 #align(center)[
 #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,

@@ -81,8 +81,8 @@ La pianificazione descritta, in seguito, all'interno questo documento si basa su
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Revisione*],[*Data*],
   [Prima revisione: Requirements and Technology Baseline [RTB]],[2024-01-20],
-  [Seconda revisione: Product Baseline [PB]],[2024-03-25],
-  [Terza Revisione: Customer Acceptance [CA]],[2024-04-10],
+  [Seconda revisione: Product Baseline [PB]],[2024-04-15],
+  [Terza Revisione: Customer Acceptance [CA]],[2024-04-25],
 )
 #align(center)[Tabella 1: Scadenze revisioni.]
 
@@ -802,7 +802,7 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 1*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -822,7 +822,7 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 1*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -852,7 +852,7 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 1*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -871,7 +871,7 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 1*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -894,7 +894,7 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -915,7 +915,7 @@ Come si può notare il consuntivo di questo sprint denota un risparmio di fondi 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 2*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -934,7 +934,7 @@ Come si può notare il consuntivo di questo sprint denota un risparmio di fondi 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 2*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -963,7 +963,7 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 2*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -982,7 +982,7 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 2*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1004,7 +1004,7 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1023,7 +1023,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 3*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1042,7 +1042,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 3*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1071,7 +1071,7 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 3*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1090,7 +1090,7 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 3*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1112,7 +1112,7 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1131,7 +1131,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1150,7 +1150,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1179,7 +1179,7 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1198,7 +1198,7 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 4*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1220,7 +1220,7 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1240,7 +1240,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1259,7 +1259,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1288,7 +1288,7 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1307,7 +1307,7 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 5*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1329,7 +1329,7 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1348,7 +1348,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1367,7 +1367,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1396,7 +1396,7 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1415,7 +1415,7 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 6*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1437,7 +1437,7 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1456,7 +1456,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1475,7 +1475,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1504,7 +1504,7 @@ A seguito dello slittamento dell'apertura della finestra di candidatura per la p
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1523,7 +1523,7 @@ A seguito dello slittamento dell'apertura della finestra di candidatura per la p
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 7*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1545,7 +1545,7 @@ A seguito dello slittamento dell'apertura della finestra di candidatura per la p
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1565,7 +1565,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1584,7 +1584,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1613,7 +1613,7 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1632,7 +1632,7 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1654,7 +1654,7 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1673,7 +1673,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 9*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1692,7 +1692,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 9*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1721,7 +1721,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 9*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1740,7 +1740,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 9*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1759,7 +1759,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
 //   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
 //   table(
 //     fill: (col, row) => 
-//       if calc.odd(row) { luma(215) } else { white },
+//       if calc.odd(row) { luma(230) } else { white },
 //     columns: (auto,),
 //     align: center,
 //     [*Valore di SPI*],
@@ -1776,7 +1776,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1796,7 +1796,7 @@ L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto p
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1815,7 +1815,7 @@ L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto p
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1845,7 +1845,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1864,7 +1864,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1883,7 +1883,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 //   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
 //   table(
 //     fill: (col, row) => 
-//       if calc.odd(row) { luma(215) } else { white },
+//       if calc.odd(row) { luma(230) } else { white },
 //     columns: (auto,),
 //     align: center,
 //     [*Valore di SPI*],
@@ -1900,7 +1900,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
   ),
   table(
     fill: (col, row) => 
-      if calc.odd(row) { luma(215) } else { white },
+      if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
@@ -1920,7 +1920,7 @@ Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*Candidatura*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1940,7 +1940,7 @@ Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di 
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*Effettivo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1962,7 +1962,7 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*Nuovo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1981,7 +1981,7 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*Costi*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -1994,7 +1994,7 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 #align(center)[Tabella 57: Nuovo preventivo.]
 
 - Spiegazione:
-Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024.
+Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024. La decisione di spostare la data di consegna è stata influenzata dall'andamento del progetto e dai ritardi accumulati durante e in seguito al periodo di festività invernali. Durante questo periodo, la produttività del gruppo è diminuita, causando ritardi nell'avanzamento delle attività. Di conseguenza, è stato necessario posticipare la data di consegna per assicurare la qualità e il completamento del lavoro entro i nuovi termini previsti.
 
 == PB
 
@@ -2004,7 +2004,7 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -2023,7 +2023,7 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -2053,7 +2053,7 @@ Il preventivo per questo sprint prevede ore utili alla correzione dei vari docum
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -2072,7 +2072,7 @@ Il preventivo per questo sprint prevede ore utili alla correzione dei vari docum
 #table(
   fill: (col, row) => 
     if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(215) } else { white },
+    else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
   [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -2102,7 +2102,7 @@ Il preventivo per questo sprint segue la filosofia adottata per il precedente, s
 // #table(
 //   fill: (col, row) => 
 //     if row == 0 and col == 0 { rgb("#c33435") }
-//     else if calc.odd(row) { luma(215) } else { white },
+//     else if calc.odd(row) { luma(230) } else { white },
 //   columns: (auto,)*7,
 //   align: center,
 //   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
@@ -2120,7 +2120,7 @@ Il preventivo per questo sprint segue la filosofia adottata per il precedente, s
 // #table(
 //   fill: (col, row) => 
 //     if row == 0 and col == 0 { rgb("#c33435") }
-//     else if calc.odd(row) { luma(215) } else { white },
+//     else if calc.odd(row) { luma(230) } else { white },
 //   columns: (auto,)*7,
 //   align: center,
 //   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],

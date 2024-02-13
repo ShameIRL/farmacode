@@ -786,7 +786,7 @@ La suddivisione in ruoli segue le norme definite nel "Regolamento progetto didat
 
 #table(
   columns: (auto, auto, auto),
-    fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Ruolo*],[*Costo orario*],[*Responsabilità*],
   [Responsabile],[30],[- Coordina l’elaborazione di piani e scadenze; 
   - Approva il rilascio di prodotti parziali o finali (SW, documenti); 

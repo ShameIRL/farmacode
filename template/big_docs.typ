@@ -88,7 +88,7 @@
     )
     table(
       align: top,
-      fill: (_, row) => if calc.odd(row) { luma(215) } else { white },
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
       inset: 0.5em,
       columns: (auto,)*4 + (1fr,),
       ..changelog.map(el => text(size: 0.8em)[
