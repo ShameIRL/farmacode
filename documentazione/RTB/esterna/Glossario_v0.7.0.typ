@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+    "0.7.0", "2024-02-13", p.pandolfo, p.carraro, "Stesura nuove definizioni",
     "0.6.0", "2024-01-20", p.passarella, p.pandolfo, "Stesura nuove definizioni",
     "0.5.0", "2024-01-14", p.baggio, p.rosson, "Stesura nuove definizioni",
     "0.4.0", "2024-01-02", p.favaron, p.rosson, "Stesura nuova definizioni",
@@ -43,14 +44,11 @@ L'Apprendimento Automatico è una branca dell'intelligenza artificiale che utili
 == Artefatto
 Nel contesto dello sviluppo software, il termine artefatto si riferisce a un risultato intermedio generato durante il processo di sviluppo del software. Gli artefatti sono documenti, codice sorgente o altri elementi che fungono da risultati intermedi di varie attività nel ciclo di vita del software. 
 
-#pagebreak()
-
 = B
 
 == Best practices
 Le "best practices" nello sviluppo software sono metodologie che, attraverso l'esperienza e la sperimentazione, sono stati identificati come modi efficaci e raccomandati di affrontare determinati problemi o compiti nel processo di sviluppo del software. Queste pratiche sono considerate migliori (best) perché hanno dimostrato di portare a risultati di alta qualità, facilitando la manutenzione del codice e promuovendo una migliore collaborazione nel team di sviluppo.
 
-#pagebreak()
 
 = C
 
@@ -74,8 +72,6 @@ La Continuous Integration (CI) è una pratica di sviluppo del software che mira 
 
 == Cruscotto
 Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce una panoramica sintetica ed immediata riguardanti lo stato delle attività di progetto. Evolve in modo dinamico all'avanzare del progetto e permette a chi lo consulta di avere una visione chiara e intuitiva permettendo di prendere decisioni in modo tempestivo.  
-
-#pagebreak()
 
 = D
 
@@ -101,7 +97,7 @@ Docker è un software progettato per eseguire processi informatici in ambienti i
 == E-commerce
 Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio Elettronico", si riferisce dunque alle attività di commercio che vengono svolte attraverso modalità elettroniche, prevalentemente attraverso l'utilizzo di internet e software. Oltre che esclusivamente alle attività di commercio esso si può riferire anche in senso lato ad attività di comunicazione e di gestione delle attività che avvengono attraverso modalità elettroniche.
 
-#pagebreak()
+= F
 
 = G
 
@@ -120,7 +116,7 @@ Google Drive è un servizio di cloud e di sincronizzazione. Esso permette dunque
 == Google Meet
 Google Meet è un'applicazione di teleconferenza. Per uso desktop, è un prodotto software di tipo SaaS cioè un servizio usufruibile mediante browser, senza richiedere client installati, richiede tuttavia un account Google per avviare le chiamate.
 
-#pagebreak()
+= H
 
 = I
 
@@ -130,14 +126,14 @@ L'intelligenza artificiale è una disciplina che studia come realizzare sistemi 
 == Issues Tracking System
 Un Issues Tracking System è uno strumento progettato per gestire e monitorare le problematiche riscontrate durante lo sviluppo del progetto, non solo in ambito software. Il sistema fornisce un modo sistematico per segnalare, monitorare e risolvere i problemi rilevati durante il ciclo di vita del prodotto.
 
-#pagebreak()
+= J
 
 = K
 
 == Keynote
 Un software di presentazione sviluppato da Apple, progettato per consentire agli utenti di creare presentazioni di alta qualità con facilità, utilizzando una varietà di strumenti per la progettazione e la personalizzazione.
 
-#pagebreak()
+= L
 
 = M
 
@@ -151,8 +147,6 @@ Un modello di apprendimento automatico è un programma che viene utilizzato per 
 Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
 punto di vista tecnico che documentale. 
 
-#pagebreak()
-
 = N
 
 == Norme di Progetto
@@ -161,7 +155,7 @@ Insieme di linee guida, procedure e regole stabilite per regolare e standardizza
 == Numpy
 Libreria open-source per il linguaggio di programmazione Python, che aggiunge supporto per array e matrici multidimensionali, insieme a una vasta collezione di funzioni matematiche di alto livello per operare su questi array.
 
-#pagebreak()
+= O
 
 = P
 
@@ -189,7 +183,6 @@ Una versione preliminare di un'applicazione o di una soluzione software che vien
 == Processo
 Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
 
-#pagebreak()
 
 = Q
 
@@ -200,14 +193,12 @@ soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodott
 - Relativa: soddisfazione del cliente;
 - Quantitativa: misurazione oggettiva, per confronto.
 
-#pagebreak()
 
 = R
 
 == React
 Libreria JavaScript open-source utilizzata principalmente per la creazione di interfacce utente (UI) interattive e dinamiche per applicazioni web e mobile. È nota per la sua architettura dichiarativa e basata su componenti, che consente agli sviluppatori di costruire UI complesse dividendo l'interfaccia in componenti riutilizzabili.
 
-#pagebreak()
 
 = S
 
@@ -233,8 +224,6 @@ Una libreria Python specificamente progettata per la costruzione e l'analisi di 
 == SVD (Singular Value Decomposition)
 Una tecnica matematica che scompone una matrice in tre parti: due matrici ortogonali e una matrice diagonale contenente i valori singolari. È ampiamente utilizzata nel machine learning e nei sistemi di raccomandazione per ridurre la dimensionalità dei dati, identificare pattern nascosti e generare raccomandazioni personalizzate.
 
-#pagebreak()
-
 = T
 
 == Telegram
@@ -246,14 +235,12 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 == Typst
 Typst è un sistema di composizione tipografica basato su markup. È progettato per essere un'alternativa sia agli strumenti avanzati come LaTeX sia agli strumenti più semplici come Word e Google Docs.
 
-#pagebreak()
+= U
 
 = V
 
 == Verbale
 Documento che riporta in modo dettagliato gli argomenti discussi e le decisioni prese. Questo documento è essenziale per registrare e documentare le attività svolte durante la riunione, consentendo ai partecipanti di avere un riferimento chiaro e completo delle discussioni e delle decisioni prese.
-
-#pagebreak()
 
 = W
 
@@ -266,7 +253,9 @@ Una web application (web app) è un'applicazione software progettata per essere 
 == Workshop
 Un workshop interno costituisce un evento appositamente organizzato per agevolare la condivisione e il trasferimento di conoscenze e competenze tra i membri del gruppo. Durante questa sessione, i partecipanti più esperti svolgono il ruolo di formatori, condividendo le proprie competenze, esperienze e conoscenze con coloro che necessitano acquisirle.
 
-#pagebreak()
+= X
+
+= Y
 
 = Z
 
