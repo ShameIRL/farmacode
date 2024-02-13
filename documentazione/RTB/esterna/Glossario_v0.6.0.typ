@@ -50,6 +50,8 @@ Nel contesto dello sviluppo software, il termine artefatto si riferisce a un ris
 == Best practices
 Le "best practices" nello sviluppo software sono metodologie che, attraverso l'esperienza e la sperimentazione, sono stati identificati come modi efficaci e raccomandati di affrontare determinati problemi o compiti nel processo di sviluppo del software. Queste pratiche sono considerate migliori (best) perché hanno dimostrato di portare a risultati di alta qualità, facilitando la manutenzione del codice e promuovendo una migliore collaborazione nel team di sviluppo.
 
+#pagebreak()
+
 = C
 
 == Capitolato
@@ -132,7 +134,7 @@ Un Issues Tracking System è uno strumento progettato per gestire e monitorare l
 
 = K
 
-==Keynote
+== Keynote
 Un software di presentazione sviluppato da Apple, progettato per consentire agli utenti di creare presentazioni di alta qualità con facilità, utilizzando una varietà di strumenti per la progettazione e la personalizzazione.
 
 #pagebreak()
