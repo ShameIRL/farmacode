@@ -134,7 +134,7 @@ Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura
 - Google Meet e Zoom per gli incontri verso l'esterno;
 - #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa);
 - Diagrams.net (draw.io) per la realizzazione dei #glossario("casi d'uso").
-- KeyNote per la realizzazione dei diari di bordo.
+- #glossario("KeyNote") per la realizzazione dei diari di bordo.
 
 == Sviluppo
 
