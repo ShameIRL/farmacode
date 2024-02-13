@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "0.6.0", "2024-01-20", p.passarella, "", "Stesura nuove definizioni",
+    "0.6.0", "2024-01-20", p.passarella, p.pandolfo, "Stesura nuove definizioni",
     "0.5.0", "2024-01-14", p.baggio, p.rosson, "Stesura nuove definizioni",
     "0.4.0", "2024-01-02", p.favaron, p.rosson, "Stesura nuova definizioni",
     "0.3.0", "2023-12-12", p.bomben, p.baggio, "Stesura nuove definizioni",
@@ -30,6 +30,7 @@ Un algoritmo è una sequenza finita di operazioni (dette anche istruzioni) che c
 Questo tipo di algoritmo è specializzato nell'effettuare predizioni o nel riconoscere pattern partendo da una serie di dati iniziali, nell'algoritmo non viene specificata nessuna azione per effettuare ciò, tuttavia viene fornito ad esso un grande quantitativo di dati che permette facilmente di scoprire pattern, correlazioni ed altri dettagli.
 
 == Analisi dei Requisiti
+Processo di raccolta, analisi e definizione delle necessità e delle aspettative degli utenti finali, degli stakeholder e del sistema nel suo complesso. Questo processo si concentra sulla comprensione approfondita delle funzionalità, delle prestazioni e dei vincoli del sistema software da sviluppare. L'obiettivo principale dell'analisi dei requisiti è identificare e documentare in modo accurato e completo ciò che il software deve fare per soddisfare le esigenze degli utenti e raggiungere gli obiettivi del progetto.
 
 == API
 Un'Application Programming Interface (API), rappresenta un insieme di regole e definizioni che consente a un software di interagire con altri software. Le API sono quindi un collegamento tra un'applicazione che invia una richiesta e l'applicazione che invia la risposta.
@@ -98,6 +99,7 @@ Git è un software per il controllo di versione distribuito utilizzabile da inte
 GitHub è un servizio di hosting per progetti software. Il sito è principalmente utilizzato da sviluppatori che caricano il codice sorgente di programmi e lo rendono scaricabile e migliorabile da altre persone. Questi ultimi possono interagire con gli sviluppatori tramite un sistema per inviare segnalazione di bug o funzionalità (issue tracker), un sistema per copiare il software in una versione modificabile (fork), un sistema per proporre modifiche agli sviluppatori originali (pull request) e un sistema di discussione legato al codice del repository.
 
 == Glossario
+Elenco organizzato di termini tecnici, acronimi e definizioni utilizzati nel contesto del progetto. Questo documento fornisce una chiara comprensione dei concetti e dei linguaggi specifici impiegati nel progetto, aiutando a ridurre ambiguità e fraintendimenti tra i membri del team e gli stakeholder.
 
 == Google Drive
 Google Drive è un servizio di cloud e di sincronizzazione. Esso permette dunque di caricare file su un cloud e di sincronizzarli tra più dispositivi e più utenti in tempo reale. Offre anche varie tipologie di app con capacità sia online che offline.
@@ -136,10 +138,17 @@ punto di vista tecnico che documentale.
 = N
 
 == Norme di Progetto
+Insieme di linee guida, procedure e regole stabilite per regolare e standardizzare l'approccio, il processo e l'output del lavoro all'interno del progetto. Queste norme possono riguardare diversi aspetti del progetto, come la gestione del codice, la documentazione, la comunicazione e la gestione dei rischi. L'obiettivo delle norme di progetto è promuovere la coerenza, la qualità e l'efficienza nel processo di sviluppo del software, consentendo al team di lavorare in modo più efficace e collaborativo.
+
+== Numpy
+Libreria open-source per il linguaggio di programmazione Python, che aggiunge supporto per array e matrici multidimensionali, insieme a una vasta collezione di funzioni matematiche di alto livello per operare su questi array.
 
 = O
 
 = P
+
+==Pandas 
+Libreria open-source per il linguaggio di programmazione Python che offre strutture dati e strumenti per la manipolazione e l'analisi di dati in forma di tabelle, chiamate DataFrame. È una delle librerie più utilizzate per l'elaborazione dei dati in Python.
 
 == Pair programming
 Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
@@ -148,6 +157,7 @@ Il pair programming è una metodologia di sviluppo del software nella quale due 
 Programma che analizza un file, verificandone la correttezza sintattica rispetto a una data grammatica, viene utilizzato in ambiti come il parsing del linguaggio naturale, l'analisi del codice sorgente e la manipolazione di dati strutturati.
 
 == Piano di Qualifica
+Documento che stabilisce gli obiettivi, le strategie e le procedure per garantire la qualità del software. Include test, risorse, metriche di qualità e gestione dei difetti, e serve per assicurare che il software soddisfi gli standard richiesti.
 
 == Product Baseline
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
@@ -169,6 +179,9 @@ soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodott
 
 = R
 
+== React
+Libreria JavaScript open-source utilizzata principalmente per la creazione di interfacce utente (UI) interattive e dinamiche per applicazioni web e mobile. È nota per la sua architettura dichiarativa e basata su componenti, che consente agli sviluppatori di costruire UI complesse dividendo l'interfaccia in componenti riutilizzabili.
+
 = S
 
 == Set di Training
@@ -185,6 +198,7 @@ Un sistema di raccomandazione o motore di raccomandazione è un software di filt
 crea delle raccomandazioni personalizzate specifiche per l’utente così da aiutarlo nelle sue scelte. Viene utilizzato per diversi prodotti, come libri, musica, film, video, notizie e social media.
 
 == Stakeholder
+Letteralmente "portatore di interesse", rappresenta l'insieme di coloro i quali hanno influenza sul prodotto, sul progetto e sui processi, come ad esempio committente e fornitore.
 
 == Surprise
 Una libreria Python specificamente progettata per la costruzione e l'analisi di sistemi di raccomandazione. Si concentra principalmente sulle raccomandazioni basate su valutazioni esplicite, come voti o valutazioni numeriche date dagli utenti a determinati elementi.
@@ -205,10 +219,12 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 = V
 
 == Verbale
+Documento che riporta in modo dettagliato gli argomenti discussi e le decisioni prese. Questo documento è essenziale per registrare e documentare le attività svolte durante la riunione, consentendo ai partecipanti di avere un riferimento chiaro e completo delle discussioni e delle decisioni prese.
 
 = W
 
 == Way of working
+Letterealmente "modo di lavorare",  si riferisce al metodo, alle procedure e alle pratiche adottate dal team di sviluppo per gestire, organizzare e completare il lavoro assegnato. 
 
 == Web app
 Una web application (web app) è un'applicazione software progettata per essere utilizzata attraverso un browser web su un dispositivo Internet. A differenza delle applicazioni desktop tradizionali, le web app non richiedono un download o un'installazione separata, poiché vengono eseguite direttamente all'interno di un browser.

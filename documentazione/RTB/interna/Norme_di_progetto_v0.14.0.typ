@@ -129,7 +129,7 @@ In questa sezione viene presentanto un elenco contenente tutta la documentazione
 
 === Strumenti
 Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura:
-- Typst per la stesura dei documenti ufficiali di progetto;
+- #glossario("Typst") per la stesura dei documenti ufficiali di progetto;
 - Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
 - Google Meet e Zoom per gli incontri verso l'esterno;
 - #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa);
@@ -319,11 +319,11 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
     + Mysql per il datatbase;
 - *Livello Elaborazione:*
     + Python, come linguaggio per il sistema di raccomandazioni;
-    + Come librerie: numpy, surprise e panda. 
+    + Come librerie: #glossario("numpy"), surprise e #glossario("pandas"). 
 - *Livello di Logica:*
-    + PHP. 
+    + #glossario("PHP"). 
 - *Livello di Presentazione:*
-    + React.
+    + #glossario("React").
 // vanno elencate le tecnologie scelte
 ===== Programmazione e verifica del software /** descrizione processo di coding e test software */
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.
