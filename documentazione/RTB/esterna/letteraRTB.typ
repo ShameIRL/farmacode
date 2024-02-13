@@ -18,6 +18,10 @@ La documentazione da lei richiesta per sostenere la revisione è presente al lin
 
 #align(center, [https://github.com/farmacodeunipd/farmacode])
 
+Il sito vetrina del repository per una migliore navigazione è invece disponibile al seguente link:
+
+#align(center, [https://farmacodeunipd.github.io/])
+
 #let cycle_markers(markers) = {
   let marker_fn(markers, depth) = {
     let index = calc.rem(depth, markers.len())
