@@ -1,7 +1,17 @@
 #import "/template/letters.typ": *
 
+#set page(
+  background: image(
+  "/imgs/sfondo/lettera.png"
+)
+)
+
 #show: project.with(
   title: "Lettera di candidatura",
+)
+
+#set page(
+  background: none
 )
 
 #align(right, [12 Febbraio 2024]) 
