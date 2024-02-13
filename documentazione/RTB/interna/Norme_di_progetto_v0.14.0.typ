@@ -319,7 +319,7 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
     + Mysql per il datatbase;
 - *Livello Elaborazione:*
     + Python, come linguaggio per il sistema di raccomandazioni;
-    + Come librerie: #glossario("numpy"), surprise e panda. 
+    + Come librerie: #glossario("numpy"), surprise e #glossario("pandas"). 
 - *Livello di Logica:*
     + PHP. 
 - *Livello di Presentazione:*
