@@ -323,7 +323,7 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
 - *Livello di Logica:*
     + PHP. 
 - *Livello di Presentazione:*
-    + React.
+    + #glossario("React").
 // vanno elencate le tecnologie scelte
 ===== Programmazione e verifica del software /** descrizione processo di coding e test software */
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.
