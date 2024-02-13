@@ -1976,98 +1976,98 @@ I valori attuali rientrano comunque nei limiti imposti dal team, che si impegner
 #pagebreak()
 
 = Elenco delle immagini
-- Immagine 1: IG;
-- Immagine 2: EAC da sprint 1 a 2;
-- Immagine 3: EAC da sprint 1 a 3;
-- Immagine 4: EAC da sprint 1 a 4;
-- Immagine 5: EAC da sprint 1 a 5;
-- Immagine 6: EAC da sprint 1 a 6;
-- Immagine 7: EAC da sprint 1 a 7;
-- Immagine 8: EAC da sprint 1 a 8;
-- Immagine 9: EAC da sprint 1 a 9;
-- Immagine 10: EAC da sprint 1 a 10;
-- Immagine 11: AC e ETC da sprint 1 a 2;
-- Immagine 12: AC e ETC da sprint 1 a 3;
-- Immagine 13: AC e ETC da sprint 1 a 4;
-- Immagine 14: AC e ETC da sprint 1 a 5; 
-- Immagine 15: AC e ETC da sprint 1 a 6;
-- Immagine 16: AC e ETC da sprint 1 a 7;
-- Immagine 17: AC e ETC da sprint 1 a 8;
-- Immagine 18: AC e ETC da sprint 1 a 9;
-- Immagine 19: AC e ETC da sprint 1 a 10;
-- Immagine 20: EV e PV da sprint 1 a 2;
-- Immagine 21: EV e PV da sprint 1 a 3;
-- Immagine 22: EV e PV da sprint 1 a 4;
-- Immagine 23: EV e PV da sprint 1 a 5;
-- Immagine 24: EV e PV da sprint 1 a 6;
-- Immagine 25: EV e PV da sprint 1 a 7;
-- Immagine 26: EV e PV da sprint 1 a 8;
-- Immagine 27: EV e PV da sprint 1 a 9;
-- Immagine 28: EV e PV da sprint 1 a 10;
-- Immagine 29: CV e SV da sprint 1 a 2;
-- Immagine 30: CV e SV da sprint 1 a 3;
-- Immagine 31: CV e SV da sprint 1 a 4;
-- Immagine 32: CV e SV da sprint 1 a 5;
-- Immagine 33: CV e SV da sprint 1 a 6;
-- Immagine 34: CV e SV da sprint 1 a 7;
-- Immagine 35: CV e SV da sprint 1 a 8;
-- Immagine 36: CV e SV da sprint 1 a 9;
-- Immagine 37: CV e SV da sprint 1 a 10.
+- Immagine 1: IG
+- Immagine 2: EAC da sprint 1 a 2
+- Immagine 3: EAC da sprint 1 a 3
+- Immagine 4: EAC da sprint 1 a 4
+- Immagine 5: EAC da sprint 1 a 5
+- Immagine 6: EAC da sprint 1 a 6
+- Immagine 7: EAC da sprint 1 a 7
+- Immagine 8: EAC da sprint 1 a 8
+- Immagine 9: EAC da sprint 1 a 9
+- Immagine 10: EAC da sprint 1 a 10
+- Immagine 11: AC e ETC da sprint 1 a 2
+- Immagine 12: AC e ETC da sprint 1 a 3
+- Immagine 13: AC e ETC da sprint 1 a 4
+- Immagine 14: AC e ETC da sprint 1 a 5
+- Immagine 15: AC e ETC da sprint 1 a 6
+- Immagine 16: AC e ETC da sprint 1 a 7
+- Immagine 17: AC e ETC da sprint 1 a 8
+- Immagine 18: AC e ETC da sprint 1 a 9
+- Immagine 19: AC e ETC da sprint 1 a 10
+- Immagine 20: EV e PV da sprint 1 a 2
+- Immagine 21: EV e PV da sprint 1 a 3
+- Immagine 22: EV e PV da sprint 1 a 4
+- Immagine 23: EV e PV da sprint 1 a 5
+- Immagine 24: EV e PV da sprint 1 a 6
+- Immagine 25: EV e PV da sprint 1 a 7
+- Immagine 26: EV e PV da sprint 1 a 8
+- Immagine 27: EV e PV da sprint 1 a 9
+- Immagine 28: EV e PV da sprint 1 a 10
+- Immagine 29: CV e SV da sprint 1 a 2
+- Immagine 30: CV e SV da sprint 1 a 3
+- Immagine 31: CV e SV da sprint 1 a 4
+- Immagine 32: CV e SV da sprint 1 a 5
+- Immagine 33: CV e SV da sprint 1 a 6
+- Immagine 34: CV e SV da sprint 1 a 7
+- Immagine 35: CV e SV da sprint 1 a 8
+- Immagine 36: CV e SV da sprint 1 a 9
+- Immagine 37: CV e SV da sprint 1 a 10
 
 
 #pagebreak()
 
 = Elenco tabelle
-- Tabella 1: Qualità della documentazione;
-- Tabella 2: Metriche qualità della documentazione;
-- Tabella 3: Qualità del software;
-- Tabella 4: Metriche qualità del software;
-- Tabella 5: Processi primari;
-- Tabella 6: Processi di supporto;
-- Tabella 7: Processi organizzativi;
-- Tabella 8: Metriche processi primari;
-- Tabella 9: Metriche processi di supporto;
-- Tabella 10: Metriche processi organizzativi;
-- Tabella 11: Test di accettazione;
-- Tabella 12: Tracciamento test di accettazione;
-- Tabella 13: Test e tracciamento di sistema;
-- Tabella 14: Valutazione tecnologica;
-- Tabella 15: Valutazione organizzativa e personale;
-- Tabella 16: Valutazione sui ruoli;
-- Tabella 17: Indice di Gulpease dei documenti;
-- Tabella 18: EAC da sprint 1 a 2;
-- Tabella 19: EAC da sprint 1 a 3;
-- Tabella 20: EAC da sprint 1 a 4;
-- Tabella 21: EAC da sprint 1 a 5;
-- Tabella 22: EAC da sprint 1 a 6;
-- Tabella 23: EAC da sprint 1 a 7;
-- Tabella 24: EAC da sprint 1 a 8;
-- Tabella 25: EAC da sprint 1 a 9;
-- Tabella 26: EAC da sprint 1 a 10;
-- Tabella 27: AC e ETC da sprint 1 a 2;
-- Tabella 28: AC e ETC da sprint 1 a 3;
-- Tabella 29: AC e ETC da sprint 1 a 4;
-- Tabella 30: AC e ETC da sprint 1 a 5; 
-- Tabella 31: AC e ETC da sprint 1 a 6;
-- Tabella 32: AC e ETC da sprint 1 a 7;
-- Tabella 33: AC e ETC da sprint 1 a 8;
-- Tabella 34: AC e ETC da sprint 1 a 9;
-- Tabella 35: AC e ETC da sprint 1 a 10;
-- Tabella 36: EV e PV da sprint 1 a 2;
-- Tabella 37: EV e PV da sprint 1 a 3;
-- Tabella 38: EV e PV da sprint 1 a 4;
-- Tabella 39: EV e PV da sprint 1 a 5;
-- Tabella 40: EV e PV da sprint 1 a 6;
-- Tabella 41: EV e PV da sprint 1 a 7;
-- Tabella 42: EV e PV da sprint 1 a 8;
-- Tabella 43: EV e PV da sprint 1 a 9;
-- Tabella 44: EV e PV da sprint 1 a 10;
-- Tabella 45: CV e SV da sprint 1 a 2;
-- Tabella 46: CV e SV da sprint 1 a 3;
-- Tabella 47: CV e SV da sprint 1 a 4;
-- Tabella 48: CV e SV da sprint 1 a 5;
-- Tabella 49: CV e SV da sprint 1 a 6;
-- Tabella 50: CV e SV da sprint 1 a 7;
-- Tabella 51: CV e SV da sprint 1 a 8;
-- Tabella 52: CV e SV da sprint 1 a 9;
-- Tabella 53: CV e SV da sprint 1 a 10.
+- Tabella 1: Qualità della documentazione
+- Tabella 2: Metriche qualità della documentazione
+- Tabella 3: Qualità del software
+- Tabella 4: Metriche qualità del software
+- Tabella 5: Processi primari
+- Tabella 6: Processi di supporto
+- Tabella 7: Processi organizzativi
+- Tabella 8: Metriche processi primari
+- Tabella 9: Metriche processi di supporto
+- Tabella 10: Metriche processi organizzativi
+- Tabella 11: Test di accettazione
+- Tabella 12: Tracciamento test di accettazione
+- Tabella 13: Test e tracciamento di sistema
+- Tabella 14: Valutazione tecnologica
+- Tabella 15: Valutazione organizzativa e personale
+- Tabella 16: Valutazione sui ruoli
+- Tabella 17: Indice di Gulpease dei documenti
+- Tabella 18: EAC da sprint 1 a 2
+- Tabella 19: EAC da sprint 1 a 3
+- Tabella 20: EAC da sprint 1 a 4
+- Tabella 21: EAC da sprint 1 a 5
+- Tabella 22: EAC da sprint 1 a 6
+- Tabella 23: EAC da sprint 1 a 7
+- Tabella 24: EAC da sprint 1 a 8
+- Tabella 25: EAC da sprint 1 a 9
+- Tabella 26: EAC da sprint 1 a 10
+- Tabella 27: AC e ETC da sprint 1 a 2
+- Tabella 28: AC e ETC da sprint 1 a 3
+- Tabella 29: AC e ETC da sprint 1 a 4
+- Tabella 30: AC e ETC da sprint 1 a 5 
+- Tabella 31: AC e ETC da sprint 1 a 6
+- Tabella 32: AC e ETC da sprint 1 a 7
+- Tabella 33: AC e ETC da sprint 1 a 8
+- Tabella 34: AC e ETC da sprint 1 a 9
+- Tabella 35: AC e ETC da sprint 1 a 10
+- Tabella 36: EV e PV da sprint 1 a 2
+- Tabella 37: EV e PV da sprint 1 a 3
+- Tabella 38: EV e PV da sprint 1 a 4
+- Tabella 39: EV e PV da sprint 1 a 5
+- Tabella 40: EV e PV da sprint 1 a 6
+- Tabella 41: EV e PV da sprint 1 a 7
+- Tabella 42: EV e PV da sprint 1 a 8
+- Tabella 43: EV e PV da sprint 1 a 9
+- Tabella 44: EV e PV da sprint 1 a 10
+- Tabella 45: CV e SV da sprint 1 a 2
+- Tabella 46: CV e SV da sprint 1 a 3
+- Tabella 47: CV e SV da sprint 1 a 4
+- Tabella 48: CV e SV da sprint 1 a 5
+- Tabella 49: CV e SV da sprint 1 a 6
+- Tabella 50: CV e SV da sprint 1 a 7
+- Tabella 51: CV e SV da sprint 1 a 8
+- Tabella 52: CV e SV da sprint 1 a 9
+- Tabella 53: CV e SV da sprint 1 a 10

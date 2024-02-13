@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.15.0", "2024-02-13", p.bomben, "", "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
     "0.14.0", "2024-02-09", p.rosson, "", "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
     "0.13.0", "2024-02-03", p.rosson, "", "Stesura consuntivo sprint 9 e aggiornamento sezione 'Globale'",
     "0.12.0", "2024-01-21", p.rosson, "", "Stesura sezione 'Globale' e migliorie grafiche generali",
@@ -347,6 +348,9 @@ La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto
   [Verificatore],[15],[- Svolge le attività di verifica],
 )
 
+#align(center)[Tabella 13: Distribuzione ruolistica.]
+
+
 Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità.  // da mettere?
 
 == Periodi
@@ -398,7 +402,7 @@ Questo primo sprint rientra a far parte di un primo periodo di "assestamento". N
   -- POC - Design e primo approccio;\
   -- Prima stesura del file "Piano di qualifica";\
   -- Seconda stesura del file "analisi dei requisiti";\
-  -- Prima stesura sezione 4 file "Norme di progetto";\
+  -- Prima stesura sezione 4 file "Norme di progetto".\
 
 - Task:\
   -- Revisionare "Piano di qualifica";\
@@ -508,7 +512,7 @@ Durante il quarto sprint di progetto, il team si è diviso, come di consueto, fo
 - Issues:\
   -- Approvare quanto prodotto nello sprint.5;\
   -- Revisionare quanto prodotto nello sprint.5;\
-  -- Documentazione;\
+  -- Documentazione.\
 
 - Task:\
   -- Continuazione stesura del documento "Norme di Progetto";\
@@ -547,7 +551,7 @@ nd.
 - Issues:\
   -- Approvare quanto prodotto nello sprint.6;\
   -- Revisionare quanto prodotto nello sprint.6;\
-  -- Documentazione;\
+  -- Documentazione.\
 
 - Task:\
   -- Continuazione stesura del documento "Norme di Progetto";\
@@ -588,7 +592,7 @@ A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting in
 - Issues:\
   -- Approvare quanto prodotto nello sprint.7;\
   -- Revisionare quanto prodotto nello sprint.7;\
-  -- Documentazione;\
+  -- Documentazione.\
 
 - Task:
 
@@ -604,7 +608,7 @@ A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting in
 Rispetto a quanto accaduto per il periodo precedente la pianificazione di questo sprint è avvenuta regolarmente. Si è concordato di concentrare gli sforzi sulla documentazione, in modo da avvicinarsi così alla prima revisione di progetto. Dati gli impegni accademici si è comunque cercato di ragionare in modo oggettivo, considerando le disponibilità di tutti ed evitando di ricadere in una pianificazione ottimistica.
 
 - Gantt view:
-/*
+
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#7.png", height: auto, width: auto),
@@ -612,7 +616,7 @@ figure(
   )
   
 )
-*/
+
 
 - Retrospettiva:
 Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
@@ -625,14 +629,22 @@ nd.
 - Periodo: 2024/01/16 - 2024/01/25
 
 - Issues:\
+  -- Approvare quanto prodotto nello sprint.8;\
+  -- Revisionare quanto prodotto nello sprint.8;\
+  -- Documentazione.\
 
-- Task:
+- Task:\
+  -- Continuazione stesura del file "Analisi dei Requisiti";\
+  -- Continuazione stesura del file "Norme di Progetto";\
+  -- Continuazione stesura del file "Piano di Progetto";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Continuazione stesura del file "Glossario".\
 
 - Sintesi:
 Questo sprint si pianifica essere l'ultimo prima dell'effettiva candidatura alla revisone di RTB (alla sua prima parte). Si prevedeno quindi molte ore utili al lavoro di verifica, e rifinitura. Alcuni componenti si concentreranno maggiormente sugli artefatti in esame durante la prima parte della revisione (AdR e PoC). Altri sulla preparazione del materiale utile alla presentazione. Il tutto senza tralasciare l'aggiornamento dei documenti che ne necessitano periodicamente.
 
 - Gantt view:
-/*
+
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
@@ -640,7 +652,7 @@ figure(
   )
   
 )
-*/
+
 - Retrospettiva:
 
 Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
@@ -652,23 +664,31 @@ In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in 
 - Periodo: 2024/01/26 - 2024/02/02
 
 - Issues:\
+  -- Approvare quanto prodotto nello sprint.9;\
+  -- Revisionare quanto prodotto nello sprint.9;\
+  -- Documentazione.\
 
-- Task:
+- Task:\
+  -- Continuazione stesura del file "Glossario";\
+  -- Aggiunta firme aziendale ai verbali esterni;\
+  -- Conclusione stesura del file "Analisi dei requisiti";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Presentazione RTB prof Cardin.\
 
 - Sintesi:
 La pianificazione per questo sprint prevede un calo generale della produttività in quanto nel corso del suo svolgimento il team affronterà la prima parte di revisione. Inoltre, come per quanto vale per il precedente periodo, la concomitanza di alcuni degli impegni accademici già più volte citati, influirà sicuramente negativamente sugli avanzamenti utili al progetto. Il gruppo ha concordato sul impegnarsi nel fare in modo che queste influenze non vadiano ad intaccare sulla qualità di quanto prodotto, ma piuttosto sulla quantità.
 Inoltre gli sforzi utili alla prima revisione di progetto sono pressocchè utlimati.
 
 - Gantt view:
-/*
+
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
+  image("/imgs/gantt_views/sprint#9.png", height: auto, width: auto),
   caption: [sprint.9]
   )
   
 )
-*/
+
 
 - Retrospettiva:
 Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In generale il team si è concentrato sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica.
@@ -680,23 +700,31 @@ Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In
 - Periodo: 2024/02/03 - 2024/02/12
 
 - Issues:\
+  -- Approvare quanto prodotto nello sprint.10;\
+  -- Revisionare quanto prodotto nello sprint.10;\
+  -- Documentazione.\
 
-- Task:
+- Task:\
+  -- Continuazione stesura del file "Norme di Progetto";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Continuazione stesura del file "Piano di Progetto";\
+  -- Creazione template "letters.typ";\
+  -- Stesura del file "Verbale interno 05/02/2024".\
 
 - Sintesi:
 Questo sprint si pianifica essere l'ultimo utile al periodo di RTB. Dopo aver infatti aggiornato e verificato i documenti il gruppo procederà con la candidatura alla seconda parte della revisone. Inoltre alcune risorse saranno impiegate per la realizzazione della lettere di candidatura.
 Come per quanto detto per il precedente periodo, si stimano meno ore lavorative, in quanto lo stato dei documenti rientra nelle aspettative di quanto concordato tra i vari membri.
 
 - Gantt view:
-/*
+
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
-  caption: [sprint.9]
+  image("/imgs/gantt_views/sprint#10.png", height: auto, width: auto),
+  caption: [sprint.10]
   )
   
 )
-*/
+
 
 - Retrospettiva:
 nd.
@@ -782,6 +810,8 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
   [Rosson L.], [4], [], [3], [], [], [],
 )
 ])
+#align(center)[Tabella 14: preventivo orario sprint.1.]
+
 
 #align(center, text(0.85em)[
 #table(
@@ -798,6 +828,8 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
   [Bilancio], [], [], [], [], [], [*€12255,00*],
 )
 ])
+#align(center)[Tabella 15: preventivo costi sprint.1.]
+
 
 #align(left,
 figure(
@@ -828,6 +860,7 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
   [Rosson L.], [4  #red("(+1)")], [], [3 #green("(-1)")], [], [], [],
 )
 ])
+#align(center)[Tabella 16: consuntivo orario sprint.1.]
 
 #align(center, text(0.85em)[
 #table(
@@ -844,12 +877,16 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
   [Bilancio], [], [], [], [], [], [#green("€12.275,00")],
 )
 ])
+#align(center)[Tabella 17: consuntivo costi sprint.1.]
 
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#1.png", height: 30%, width: auto),
+  figure(
+    image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#1.png", height: 30%, width: auto),
+    caption: [bilancio/sprint.1]  
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -858,7 +895,9 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
     [*Valore di SPI*],
     [1]
   )
+  
 )
+
   
 - Spiegazione:
 Come si può notare il consuntivo di questo sprint denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. Ciò tuttavia non esclude una possibile pianificazione ottimistica, per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica". 
@@ -884,6 +923,7 @@ Come si può notare il consuntivo di questo sprint denota un risparmio di fondi 
   [Rosson L.], [], [], [], [2], [1], [],
 )
 ])
+#align(center)[Tabella 18: preventivo orario sprint.2.]
 
 #align(center, text(0.85em)[
 #table(
@@ -900,6 +940,7 @@ Come si può notare il consuntivo di questo sprint denota un risparmio di fondi 
   [Bilancio], [], [], [], [], [], [*€11.670,00*],
 )
 ])
+#align(center)[Tabella 19: preventivo costi sprint.2.]
 
 #align(left,
 figure(
@@ -930,6 +971,7 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
   [Rosson L.], [], [], [], [2 #red("(+1)")], [1], [],
 )
 ])
+#align(center)[Tabella 20: consuntivo orario sprint.2.]
 
 #align(center, text(0.85em)[
 #table(
@@ -946,11 +988,15 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
   [Bilancio], [], [], [], [], [], [#green("€11.705,00")],
 )
 ])
+#align(center)[Tabella 21: consuntivo costi sprint.2.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 30%, width: auto),
+  caption :[bilancio/sprint.2],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -985,6 +1031,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
   [Rosson L.], [], [2], [], [], [1], [],
 )
 ])
+#align(center)[Tabella 22: preventivo orario sprint.3.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1001,6 +1048,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
   [Bilancio], [], [], [], [], [], [*€11.205,00*],
 )
 ])
+#align(center)[Tabella 23: preventivo costi sprint.3.]
 
 #align(left,
 figure(
@@ -1031,6 +1079,7 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
   [Rosson L.], [], [2], [], [], [1], [],
 )
 ])
+#align(center)[Tabella 24: consuntivo orario sprint.3.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1047,11 +1096,15 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
   [Bilancio], [], [], [], [], [], [#green("€11.265,00")],
 )
 ])
+#align(center)[Tabella 25: consuntivo costi sprint.3.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#3.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.3],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1086,6 +1139,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
   [Rosson L.], [], [1], [], [3], [], [],
 )
 ])
+#align(center)[Tabella 26: preventivo orario sprint.4.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1102,6 +1156,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
 [Bilancio], [], [], [], [], [], [*€10670,00*], 
 )
 ])
+#align(center)[Tabella 27: preventivo costi sprint.4.]
 
 #align(left,
 figure(
@@ -1132,6 +1187,7 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
   [Rosson L.], [], [1], [], [2 #green("(-1)")], [], [],
 )
 ])
+#align(center)[Tabella 28: consuntivo orario sprint.4.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1148,11 +1204,15 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
   [Bilancio], [], [], [], [], [], [#red("€10.655,00")],
 )
 ])
+#align(center)[Tabella 29: consuntivo costi sprint.4.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#4.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.4],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1188,6 +1248,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
   [Rosson L.], [], [2], [], [], [4], [],
 )
 ])
+#align(center)[Tabella 30: preventivo orario sprint.5.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1204,6 +1265,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
   [Bilancio], [], [], [], [], [], [*€10070,00*], 
 )
 ])
+#align(center)[Tabella 31: preventivo costi sprint.5.]
 
 #align(left,
 figure(
@@ -1234,6 +1296,7 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
   [Rosson L.], [], [2], [], [], [4 #green("(-1)")], [],
 )
 ])
+#align(center)[Tabella 32: consuntivo orario sprint.5.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1250,11 +1313,15 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
   [Bilancio], [], [], [], [], [], [#green("€10.210,00")],
 )
 ])
+#align(center)[Tabella 33: consuntivo costi sprint.5.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#5.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.5],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1289,6 +1356,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
   [Rosson L.], [], [2], [], [], [], [],
 )
 ])
+#align(center)[Tabella 34: preventivo orario sprint.6.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1305,6 +1373,7 @@ Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota 
    [Bilancio], [], [], [], [], [], [*€9.785,00*],
 )
 ])
+#align(center)[Tabella 35: preventivo costi sprint.6.]
 
 #align(left,
 figure(
@@ -1335,6 +1404,7 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
   [Rosson L.], [], [2 #red("(+1)")], [], [], [], [],
 )
 ])
+#align(center)[Tabella 36: consuntivo orario sprint.6.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1351,11 +1421,15 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
   [Bilancio], [], [], [], [], [], [#green("€9.840,00")],
 )
 ])
+#align(center)[Tabella 37: consuntivo costi sprint.6.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#6.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.6],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1390,6 +1464,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
   [Rosson L.], [], [], [], [1], [2], [],
 )
 ])
+#align(center)[Tabella 38: preventivo orario sprint.7.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1406,6 +1481,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
   [Bilancio], [], [], [], [], [], [*€9.355,0*],
 )
 ])
+#align(center)[Tabella 39: preventivo costi sprint.7.]
 
 #align(left,
 figure(
@@ -1436,6 +1512,7 @@ A seguito dello slittamento dell'apertura della finestra di candidatura per la p
   [Rosson L.], [], [], [], [1], [2], [],
 )
 ])
+#align(center)[Tabella 40: consuntivo orario sprint.7.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1452,11 +1529,15 @@ A seguito dello slittamento dell'apertura della finestra di candidatura per la p
   [Bilancio], [], [], [], [], [], [#red("€9315,00")], 
 )
 ])
+#align(center)[Tabella 41: consuntivo costi sprint.7.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#7.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.7],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1492,6 +1573,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
   [Rosson L.], [3], [], [], [], [2], [],
 )
 ])
+#align(center)[Tabella 42: preventivo orario sprint.8.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1508,6 +1590,7 @@ Il consuntivo di questo sprint denota una leggera variazione nei costi, con una 
   [Bilancio], [], [], [], [], [], [*€8745,00*],
 )
 ])
+#align(center)[Tabella 43: preventivo costi sprint.8.]
 
 #align(left,
 figure(
@@ -1538,6 +1621,7 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
   [Rosson L.], [3 #green("(-1)")], [], [], [], [2], [],
 )
 ])
+#align(center)[Tabella 44: consuntivo orario sprint.8.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1554,11 +1638,15 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
   [Bilancio], [], [], [], [], [], [#green("€8765,00")],
 )
 ])
+#align(center)[Tabella 45: consuntivo costi sprint.8.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.8],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1593,6 +1681,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
   [Rosson L.], [], [], [], [3], [], [],
 )
 ])
+#align(center)[Tabella 46: preventivo orario sprint.9.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1609,6 +1698,7 @@ Nonostante il risparmio di fondi, è importante notare che l'indice di performan
   [Bilancio], [], [], [], [], [], [*€8400,00*],
 )
 ])
+#align(center)[Tabella 47: preventivo costi sprint.9.]
 
 #align(left,
 figure(
@@ -1639,6 +1729,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
   [Rosson L.], [], [], [], [3], [], [],
 )
 ])
+#align(center)[Tabella 48: consuntivo orario sprint.9.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1655,6 +1746,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
   [Bilancio], [], [], [], [], [], [#red("€8345,00")],
 )
 ])
+#align(center)[Tabella 49: consuntivo costi sprint.9.]
 
 // #grid(
 //   columns: (1fr, auto),
@@ -1673,7 +1765,10 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#9.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.9],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1709,6 +1804,7 @@ L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto p
   [Rosson L.], [], [], [], [], [3], [],
 )
 ])
+#align(center)[Tabella 50: preventivo orario sprint.10.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1725,6 +1821,7 @@ L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto p
   [Bilancio], [], [], [], [], [], [*€8030,00*],
 )
 ])
+#align(center)[Tabella 51: preventivo costi sprint.10.]
 
 #align(left,
 figure(
@@ -1756,6 +1853,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
   [Rosson L.], [], [], [], [], [3], [],
 )
 ])
+#align(center)[Tabella 52: consuntivo orario sprint.10.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1772,6 +1870,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
   [Bilancio], [], [], [], [], [], [*€8030,00*],
 )
 ])
+#align(center)[Tabella 53: consuntivo costi sprint.10.]
 
 // #grid(
 //   columns: (1fr, auto),
@@ -1790,7 +1889,10 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 #grid(
   columns: (1fr, auto),
   rows: (auto),
+  figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#10.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.10],
+  ),
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(215) } else { white },
@@ -1826,6 +1928,7 @@ Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di 
   [Rosson L.], [10], [5], [36], [5], [20], [19],
 )
 ])
+#align(center)[Tabella 54: Preventivo candidatura.]
 
 - Consuntivo Effettivo:
 #align(center, text(0.85em)[
@@ -1845,6 +1948,7 @@ Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di 
   [Rosson L.], [7], [#red("8")], [2], [#red("8")], [10], [0],
 )
 ])
+#align(center)[Tabella 55: Consuntivo effettivo.]
 
 - Spiegazione:
 Come evidente dall'andamento delle attività, le ore inizialmente pianificate per svolgere l'analisi dei requisiti e per il ruolo di Amministratore si sono rivelate insufficienti. Di fronte a questa constatazione, il gruppo ha preso la decisione di rivedere le stime effettuate in fase di candidatura, mantenendo tuttavia l'impegno a non aumentare i costi complessivi del progetto, conformemente alle disposizioni normative stabilite. Riteniamo questo adattamento necessario per garantire una pianificazione più accurata e per affrontare le esigenze effettive delle attività future, senza impattare negativamente sul bilancio complessivo del progetto. Segue la nuova ridistribuzione oraria:
@@ -1866,6 +1970,7 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
   [Rosson L.], [10], [8], [30], [12], [22], [12],
 )
 ])
+#align(center)[Tabella 56: Nuova distribuzione oraria.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1881,6 +1986,7 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
   [Totale], [], [], [], [], [], [#green("€12530,00")], 
 )
 ])
+#align(center)[Tabella 57: Nuovo preventivo.]
 
 Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica.
 
@@ -1905,6 +2011,7 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
   [Rosson L.], [], [], [], [2], [2], [],
 )
 ])
+#align(center)[Tabella 58: preventivo orario sprint.11.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1921,6 +2028,7 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
   [Bilancio], [], [], [], [], [], [*€7445,00*],
 )
 ])
+#align(center)[Tabella 59: preventivo costi sprint.11.]
 
 #align(left,
 figure(
@@ -1952,6 +2060,7 @@ Il preventivo per questo sprint prevede ore utili alla correzione dei vari docum
   [Rosson L.], [], [], [], [], [2], [2],
 )
 ])
+#align(center)[Tabella 60: preventivo orario sprint.12.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1968,6 +2077,7 @@ Il preventivo per questo sprint prevede ore utili alla correzione dei vari docum
   [Bilancio], [], [], [], [], [], [*€6785,00*],
 )
 ])
+#align(center)[Tabella 61: preventivo costi sprint.12.]
 
 #align(left,
 figure(
@@ -2276,3 +2386,105 @@ nd.
 
 
 //sp5
+
+#pagebreak()
+
+= Elenco delle immagini
+- Immagine 1: sprint.1
+- Immagine 2: sprint.2
+- Immagine 3: sprint.3
+- Immagine 4: sprint.4
+- Immagine 5: sprint.5
+- Immagine 6: sprint.6
+- Immagine 7: sprint.7
+- Immagine 8: sprint.8
+- Immagine 9: sprint.9
+- Immagine 10: sprint.10
+- Immagine 11: preventivi/sprint.1
+- Immagine 12: bilancio/sprint.1
+- Immagine 13: preventivi/sprint.2
+- Immagine 14: bilancio/sprint.2
+- Immagine 15: preventivi/sprint.3
+- Immagine 16: bilancio/sprint.3
+- Immagine 17: preventivi/sprint.4
+- Immagine 18: bilancio/sprint.4
+- Immagine 19: preventivi/sprint.5
+- Immagine 20: bilancio/sprint.5
+- Immagine 21: preventivi/sprint.6
+- Immagine 22: bilancio/sprint.6
+- Immagine 23: preventivi/sprint.7
+- Immagine 24: bilancio/sprint.7
+- Immagine 25: preventivi/sprint.8
+- Immagine 26: bilancio/sprint.8
+- Immagine 27: preventivi/sprint.9
+- Immagine 28: bilancio/sprint.9
+- Immagine 29: preventivi/sprint.10
+- Immagine 30: bilancio/sprint.10
+- Immagine 31: preventivi/sprint.11
+- Immagine 32: preventivi/sprint.12
+
+
+#pagebreak()
+
+= Elenco tabelle
+- Tabella 1: Scadenze revisioni
+- Tabella 2: RP1 - Mancanza di competenze tecniche specifiche
+- Tabella 3: RP2 - Non conformità agli impegni dichiarati
+- Tabella 4: RP3 - Problemi di comunicazione e collaborazione
+- Tabella 5: RP4 - Malattia o indisponibilità
+- Tabella 6: ROI1 - Comunicativi e organizzativi
+- Tabella 7: ROI2 - Scarsa definizione dei ruoli e delle resposabilità all'interno del team
+- Tabella 8: ROI3 - Risorse limitate o budget insufficiente per sostenere lo sviluppo del progetto
+- Tabella 9: ROE1 - Difficoltà comunicative
+- Tabella 10: ROE2 - Fornitura
+- Tabella 11: RT1 - Incompatibilità tra diverse tecnologie o componenti software
+- Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso
+- Tabella 13: Distribuzione ruolistica
+- Tabella 14: preventivo orario sprint.1
+- Tabella 15: preventivo costo sprint.1
+- Tabella 16: consuntivo orario sprint.1
+- Tabella 17: consuntivo costo sprint.1
+- Tabella 18: preventivo orario sprint.2
+- Tabella 19: preventivo costo sprint.2
+- Tabella 20: consuntivo orario sprint.2
+- Tabella 21: consuntivo costo sprint.2
+- Tabella 22: preventivo orario sprint.3
+- Tabella 23: preventivo costo sprint.3
+- Tabella 24: consuntivo orario sprint.3
+- Tabella 25: consuntivo costo sprint.3
+- Tabella 26: preventivo orario sprint.4
+- Tabella 27: preventivo costo sprint.4
+- Tabella 28: consuntivo orario sprint.4
+- Tabella 29: consuntivo costo sprint.4
+- Tabella 30: preventivo orario sprint.5
+- Tabella 31: preventivo costo sprint.5
+- Tabella 32: consuntivo orario sprint.5
+- Tabella 33: consuntivo costo sprint.5
+- Tabella 34: preventivo orario sprint.6
+- Tabella 35: preventivo costo sprint.6
+- Tabella 36: consuntivo orario sprint.6
+- Tabella 37: consuntivo costo sprint.6
+- Tabella 38: preventivo orario sprint.7
+- Tabella 39: preventivo costo sprint.7
+- Tabella 40: consuntivo orario sprint.7
+- Tabella 41: consuntivo costo sprint.7
+- Tabella 42: preventivo orario sprint.8
+- Tabella 43: preventivo costo sprint.8
+- Tabella 44: consuntivo orario sprint.8
+- Tabella 45: consuntivo costo sprint.8
+- Tabella 46: preventivo orario sprint.9
+- Tabella 47: preventivo costo sprint.9
+- Tabella 48: consuntivo orario sprint.9
+- Tabella 49: consuntivo costo sprint.9
+- Tabella 50: preventivo orario sprint.10
+- Tabella 51: preventivo costo sprint.10
+- Tabella 52: consuntivo orario sprint.10
+- Tabella 53: consuntivo costo sprint.10
+- Tabella 54: Preventivo candidatura
+- Tabella 55: Consuntivo effettivo
+- Tabella 56: Nuova distribuzione oraria
+- Tabella 57: Nuovo preventivo
+- Tabella 58: preventivo orario sprint.11
+- Tabella 59: preventivo costo sprint.11
+- Tabella 60: preventivo orario sprint.12
+- Tabella 61: preventivo costo sprint.12
