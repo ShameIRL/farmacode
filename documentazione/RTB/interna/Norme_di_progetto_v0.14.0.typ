@@ -129,7 +129,7 @@ In questa sezione viene presentanto un elenco contenente tutta la documentazione
 
 === Strumenti
 Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura:
-- Typst per la stesura dei documenti ufficiali di progetto;
+- #glossario("Typst") per la stesura dei documenti ufficiali di progetto;
 - Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
 - Google Meet e Zoom per gli incontri verso l'esterno;
 - #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa);
