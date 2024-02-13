@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
     "0.15.0", "2024-02-13", p.bomben, p.rosson, "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
     "0.14.0", "2024-02-09", p.rosson, p.bomben, "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
     "0.13.0", "2024-02-03", p.rosson, p.bomben, "Stesura consuntivo sprint 9 e aggiornamento sezione 'Globale'",
