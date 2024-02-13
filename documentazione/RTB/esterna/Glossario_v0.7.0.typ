@@ -44,6 +44,8 @@ L'Apprendimento Automatico è una branca dell'intelligenza artificiale che utili
 == Artefatto
 Nel contesto dello sviluppo software, il termine artefatto si riferisce a un risultato intermedio generato durante il processo di sviluppo del software. Gli artefatti sono documenti, codice sorgente o altri elementi che fungono da risultati intermedi di varie attività nel ciclo di vita del software. 
 
+#pagebreak()
+
 = B
 
 == Best practices
@@ -73,6 +75,7 @@ La Continuous Integration (CI) è una pratica di sviluppo del software che mira 
 == Cruscotto
 Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce una panoramica sintetica ed immediata riguardanti lo stato delle attività di progetto. Evolve in modo dinamico all'avanzare del progetto e permette a chi lo consulta di avere una visione chiara e intuitiva permettendo di prendere decisioni in modo tempestivo.  
 
+#pagebreak()
 = D
 
 == Diagrams.net
@@ -95,6 +98,7 @@ Docker è un software progettato per eseguire processi informatici in ambienti i
 == E-commerce
 Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio Elettronico", si riferisce dunque alle attività di commercio che vengono svolte attraverso modalità elettroniche, prevalentemente attraverso l'utilizzo di internet e software. Oltre che esclusivamente alle attività di commercio esso si può riferire anche in senso lato ad attività di comunicazione e di gestione delle attività che avvengono attraverso modalità elettroniche.
 
+#pagebreak()
 = F
 
 = G
@@ -153,6 +157,7 @@ Insieme di linee guida, procedure e regole stabilite per regolare e standardizza
 == Numpy
 Libreria open-source per il linguaggio di programmazione Python, che aggiunge supporto per array e matrici multidimensionali, insieme a una vasta collezione di funzioni matematiche di alto livello per operare su questi array.
 
+#pagebreak()
 = O
 
 = P
@@ -181,7 +186,7 @@ Una versione preliminare di un'applicazione o di una soluzione software che vien
 == Processo
 Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
 
-
+#pagebreak()
 = Q
 
 == Qualità
@@ -216,6 +221,7 @@ crea delle raccomandazioni personalizzate specifiche per l’utente così da aiu
 == Stakeholder
 Letteralmente "portatore di interesse", rappresenta l'insieme di coloro i quali hanno influenza sul prodotto, sul progetto e sui processi, come ad esempio committente e fornitore.
 
+#pagebreak()
 == Surprise
 Una libreria Python specificamente progettata per la costruzione e l'analisi di sistemi di raccomandazione. Si concentra principalmente sulle raccomandazioni basate su valutazioni esplicite, come voti o valutazioni numeriche date dagli utenti a determinati elementi.
 
@@ -240,6 +246,7 @@ Typst è un sistema di composizione tipografica basato su markup. È progettato 
 == Verbale
 Documento che riporta in modo dettagliato gli argomenti discussi e le decisioni prese. Questo documento è essenziale per registrare e documentare le attività svolte durante la riunione, consentendo ai partecipanti di avere un riferimento chiaro e completo delle discussioni e delle decisioni prese.
 
+#pagebreak()
 = W
 
 == Way of working
