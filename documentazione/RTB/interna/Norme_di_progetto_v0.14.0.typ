@@ -321,7 +321,7 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
     + Python, come linguaggio per il sistema di raccomandazioni;
     + Come librerie: #glossario("numpy"), surprise e #glossario("pandas"). 
 - *Livello di Logica:*
-    + PHP. 
+    + #glossario("PHP"). 
 - *Livello di Presentazione:*
     + #glossario("React").
 // vanno elencate le tecnologie scelte
