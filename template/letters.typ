@@ -4,6 +4,12 @@
   return a.split().at(-1)
 }
 
+#set page(background: rotate(24deg,
+  text(18pt, fill: rgb("FFCBC4"))[
+    *CONFIDENTIAL*
+  ]
+))
+
 #let sortBySurname(a) = {
   let a = (a,).flatten().dedup()
   if a.last() == false {
