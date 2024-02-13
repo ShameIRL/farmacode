@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "1.0.0", "2024-02-13", p.rosson, "", "Verifica e revisone del documento",
     "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
     "0.13.0", "2024-01-14", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
     "0.12.0", "2023-12-22", p.passarella, p.carraro, "Stesura sezione 1.4",
