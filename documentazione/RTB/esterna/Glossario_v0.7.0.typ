@@ -90,8 +90,6 @@ La progettazione è una fase del ciclo di vita del software (che precede la codi
 == Docker
 Docker è un software progettato per eseguire processi informatici in ambienti isolabili, minimali e facilmente distribuibili chiamati container, con l'obiettivo di semplificare i processi di deployment di applicazioni software.
 
-#pagebreak()
-
 = E
 
 == E-commerce
