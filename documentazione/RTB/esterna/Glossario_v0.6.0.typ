@@ -147,7 +147,7 @@ Libreria open-source per il linguaggio di programmazione Python, che aggiunge su
 
 = P
 
-==Pandas 
+== Pandas 
 Libreria open-source per il linguaggio di programmazione Python che offre strutture dati e strumenti per la manipolazione e l'analisi di dati in forma di tabelle, chiamate DataFrame. È una delle librerie più utilizzate per l'elaborazione dei dati in Python.
 
 == Pair programming
@@ -155,6 +155,9 @@ Il pair programming è una metodologia di sviluppo del software nella quale due 
 
 == Parser
 Programma che analizza un file, verificandone la correttezza sintattica rispetto a una data grammatica, viene utilizzato in ambiti come il parsing del linguaggio naturale, l'analisi del codice sorgente e la manipolazione di dati strutturati.
+
+== PHP
+Linguaggio di scripting utilizzato per lo sviluppo di applicazioni web dinamiche. Ha una sintassi simile a C ed è facilmente integrabile con HTML e supporta una vasta gamma di database.
 
 == Piano di Qualifica
 Documento che stabilisce gli obiettivi, le strategie e le procedure per garantire la qualità del software. Include test, risorse, metriche di qualità e gestione dei difetti, e serve per assicurare che il software soddisfi gli standard richiesti.
@@ -213,6 +216,9 @@ Telegram è un servizio di messaggistica istantanea e broadcasting basato su clo
 
 == Test Driven Development
 Il Test Driven Development (TDD) è un modello per lo sviluppo software che prevede la stesura di test automatici prima dell'implementazione del codice che poi deve essere sottoposta ai test. In questo modello lo sviluppo del software è orientato esclusivamente all'obiettivo di passare i test precedentemente predisposti.
+
+== Typst
+Typst è un sistema di composizione tipografica basato su markup. È progettato per essere un'alternativa sia agli strumenti avanzati come LaTeX sia agli strumenti più semplici come Word e Google Docs.
 
 = U
 
