@@ -71,6 +71,9 @@ Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce u
 
 = D
 
+== Diagrams.net
+Applicazione open-source online per la creazione di diagrammi e disegni tecnici. Offre una vasta gamma di strumenti per la creazione di diagrammi, tra cui diagrammi di flusso, diagrammi UML e molto altro ancora.
+
 == Discord
 Discord è una piattaforma VoIP (Voice over IP: tecnologia che rende possibile effettuare una conversazione sfruttando una connessione internet), messaggistica istantanea e distribuzione digitale progettata per la comunicazione.
 
@@ -120,6 +123,9 @@ Un Issues Tracking System è uno strumento progettato per gestire e monitorare l
 = J
 
 = K
+
+==Keynote
+Un software di presentazione sviluppato da Apple, progettato per consentire agli utenti di creare presentazioni di alta qualità con facilità, utilizzando una varietà di strumenti per la progettazione e la personalizzazione.
 
 = L
 
