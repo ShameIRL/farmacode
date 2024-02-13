@@ -53,7 +53,7 @@ Al suo interno sono presenti i seguenti documenti:
   - Piano_di_qualifica_v1.0.0.pdf\
 
 - Interna:\
-  - Verbali_intenri/\
+  - Verbali_interni/\
   - Norme_di_progetto_v1.0.0.pdf\
 
 \
