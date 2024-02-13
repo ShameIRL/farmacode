@@ -11,7 +11,7 @@
     "0.15.0", "2024-02-13", p.bomben, p.rosson, "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
     "0.14.0", "2024-02-09", p.rosson, p.bomben, "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
     "0.13.0", "2024-02-03", p.rosson, p.bomben, "Stesura consuntivo sprint 9 e aggiornamento sezione 'Globale'",
-    "0.12.0", "2024-01-21", p.rosson, "", "Stesura sezione 'Globale' e migliorie grafiche generali",
+    "0.12.0", "2024-01-21", p.rosson, p.favaron, "Stesura sezione 'Globale' e migliorie grafiche generali",
     "0.11.0", "2024-01-20", p.favaron, p.rosson, "Stesura consutivo sprint 7 e 8",
     "0.10.0", "2024-01-14", p.carraro, p.rosson, "Stesura sprint.6 e relativo consuntivo e grafici",
     "0.9.0", "2024-01-02", p.favaron, p.carraro, "Stesura sprint.5 e relativo consuntivo e grafici",
@@ -739,7 +739,7 @@ nd.
 === PB
 
 ==== sprint.11
-- Periodo: 2024/02/13 - 2024/02/16 //TBD da cambiare
+- Periodo: 2024/02/13 - 2024/02/20 //TBD da cambiare
 
 - Issues:\
 
@@ -763,7 +763,7 @@ figure(
 - Imprevisti incotrati e loro risoluzione: 
 
 ==== sprint.12
-- Periodo: 2024/02/16 - 2024/02/23 //TBD
+- Periodo: 2024/02/20 - 2024/02/27 //TBD
 
 - Issues:\
 

@@ -1112,7 +1112,7 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 
     + Se $"CV"<0$, significa che il costo effettivo è superiore al valore guadagnato, indicando che il progetto sta superando il budget pianificato;
 
-    + Se $"CV"=0$, significa che il progetto sta rispettando esattamente il budget pianificato fino a quel momento;
+    + Se $"CV"=0$, significa che il progetto sta rispettando esattamente il budget pianificato fino a quel momento.
 
 - MPC7 - Planned Value: appresenta il valore pianificato delle attività da svolgere fino a un dato punto nel tempo.
 
@@ -1183,12 +1183,12 @@ Per promuovere un miglioramento continuo nelle attività svolte e garantirne il 
 viene calcolato attraverso il numero di frasi e lettere ed il risultato è un valore compreso tra 0 e 100, dove 100 indica la massima leggibilità.
 
 === Funzionalità:
-- MPD3 - Copertura dei requisiti obbligatori: indica la percentuale di requisiti obbligatori soddisfatti.
-- MPD4 - Copertura dei requisiti desiderabili: indica la percentuale di requisiti desiderabili soddisfatti.
+- MPD3 - Copertura dei requisiti obbligatori: indica la percentuale di requisiti obbligatori soddisfatti;
+- MPD4 - Copertura dei requisiti desiderabili: indica la percentuale di requisiti desiderabili soddisfatti;
 - MPD5 - Copertura dei requisiti opzionali: indica la percentuale di requisiti opzionali soddisfatti.
 
 === Usabilità:
-- MPD6 - Facilità di utilizzo: espressa come numero di click, fornisce un'indicazione della complessià di utilizzo del prodotto.
+- MPD6 - Facilità di utilizzo: espressa come numero di click, fornisce un'indicazione della complessià di utilizzo del prodotto;
 - MPD7 - Tempo per l'apprendimento: espressa in minuti, indica il tempo necessario ad imparare ad utilizzare il prodotto.
 
 === Portabilità:
@@ -1201,22 +1201,22 @@ viene calcolato attraverso il numero di frasi e lettere ed il risultato è un va
 - MPD10 - Gestione errori: indica la percentuale di errori che vengono gestiti.
 
 === Copertura dei test:
-- MPD11 - Branch coverage: indica la percentuale di rami del programma che sono stati eseguiti nella fase di test.
-- MPD12 - Statement coverage: indica la percentuale di istruzioni del programma che sono state eseguite nella fase di test.
-- MPD13 - Function coverage: indica la percentuale di funzioni che sono state eseguite nella fase di test.
+- MPD11 - Branch coverage: indica la percentuale di rami del programma che sono stati eseguiti nella fase di test;
+- MPD12 - Statement coverage: indica la percentuale di istruzioni del programma che sono state eseguite nella fase di test;
+- MPD13 - Function coverage: indica la percentuale di funzioni che sono state eseguite nella fase di test;
 - MPD14 - Line coverage:  indica la percentuale di linee di codice che sono state testate.
 
 #pagebreak()
 
 = Elenco delle immagini
-- Immagine 1: Attore;
-- Immagine 2: Caso d'uso;
-- Immagine 3: Inclusione; 
-- Immagine 4: Estensione;
-- Immagine 5: Generalizzazione caso d'uso;
-- Immagine 6: Generalizzazione attori.
+- Immagine 1: Attore
+- Immagine 2: Caso d'uso
+- Immagine 3: Inclusione
+- Immagine 4: Estensione
+- Immagine 5: Generalizzazione caso d'uso
+- Immagine 6: Generalizzazione attori
 
 #pagebreak()
 
 = Elenco delle tabelle
-- Tabella 1: Ruoli e responsabilità.
+- Tabella 1: Ruoli e responsabilità
