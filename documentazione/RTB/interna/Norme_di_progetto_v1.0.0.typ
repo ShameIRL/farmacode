@@ -9,7 +9,7 @@
 
   ),
   changelog: (
-    "1.0.0", "2024-02-13", p.rosson, "", "Verifica e revisone del documento",
+    "1.0.0", "2024-02-13", p.rosson, p.baggio, "Verifica e revisone del documento",
     "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
     "0.13.0", "2024-01-14", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
     "0.12.0", "2023-12-22", p.passarella, p.carraro, "Stesura sezione 1.4",
@@ -134,7 +134,7 @@ Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura
 - Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
 - Google Meet e Zoom per gli incontri verso l'esterno;
 - #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa);
-- #glossario("Diagrams.net") (draw.io) per la realizzazione dei #glossario("casi d'uso").
+- #glossario("Diagrams.net") (draw.io) per la realizzazione dei #glossario("casi d'uso");
 - #glossario("KeyNote") per la realizzazione dei diari di bordo.
 
 == Sviluppo
@@ -171,8 +171,8 @@ Ogni caso d'uso deve essere così composto:
 - precondizioni: condizioni di utente e/o sistema, necessarie affinchè si verifichi quel caso d'uso/scenario;
 - postcondizioni: rappresentano lo stato del sistema e/o utente, dopo che il caso d'uso è stato eseguito;
 - scenario principale: in questa sezione si elencano le fasi che caratterizzano il caso d'uso;
-- estensioni (se presenti): in questa sezione vanno elencate eventuali estensioni, nel caso ci possano essere degli scenari alternativi.
-- generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso, e la presenza o meno di una generalizzazione tra gli attori coinvolti;
+- estensioni (se presenti): in questa sezione vanno elencate eventuali estensioni, nel caso ci possano essere degli scenari alternativi;
+- generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso, e la presenza o meno di una generalizzazione tra gli attori coinvolti.
 
 ===== Linee guida interne
 - *Attore:*
