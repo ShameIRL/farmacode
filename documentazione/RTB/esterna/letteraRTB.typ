@@ -1,19 +1,20 @@
 #import "/template/letters.typ": *
 
 #show: project.with(
-  title: "Lettera",
+  title: "Lettera di candidatura",
 )
 
-#align(right, [Padova, 12 Febbraio 2024]) 
+#align(right, [12 Febbraio 2024]) 
 
 Egregio Prof. Vardanega Tullio,
 
-con la presente lettera il gruppo Farmacode è lieto di comunicarle l'intenzione di partecipare alla revisione di avanzamento RTB, in data [...], sul progetto denominato:
+con la presente lettera il gruppo Farmacode è lieto di comunicarle la propria candidatura alla revisione di avanzamento RTB, sul progetto denominato:
 
 #align(center, text(14pt)[*Sistema di raccomandazione*])
 
-proposto dall’azienda Ergon Informatica.\
-La documentazione da lei richiesta per sostenere la revisione è presente al link, alla voce documentazione/RTB:
+opportunità proposta dall’azienda Ergon Informatica con il capitolato C2.\
+
+La documentazione da lei richiesta per sostenere la revisione è presente al link qui sotto, alla voce documentazione/RTB:
 
 #align(center, [https://github.com/farmacodeunipd/farmacode])
 
@@ -31,33 +32,57 @@ La documentazione da lei richiesta per sostenere la revisione è presente al lin
 
 Al suo interno sono presenti i seguenti documenti:
 - Esterna:\
-  - Verbali\
-    - Verbale_esterno_20231110_v2.0.0.pdf\
-    - Verbale_esterno_20231115_v2.0.0.pdf\
-    - Verbale_esterno_20231124_v2.0.0.pdf\
-    - Verbale_esterno_20231206_v2.0.0.pdf\
-    - Verbale_esterno_20231219_v2.0.0.pdf\
+  - Verbali_esterni/\
   - Analisi_dei_requisiti_v1.0.0.pdf\
-  - Glossario_v0.6.0.pdf\
-  - Piano_di_progetto_v0.10.0.pdf\
-  - Piano_di_qualifica_v0.8.0.pdf\
+  - Glossario_v1.0.0.pdf\
+  - Piano_di_progetto_v1.0.0.pdf\
+  - Piano_di_qualifica_v1.0.0.pdf\
 
 - Interna:\
-  - Verbali\
-    - Verbale_interno_20231107_v1.0.1.pdf\
-    - Verbale_interno_20231123_v1.0.1.pdf\
-    - Verbale_interno_20231129_v1.0.0.pdf\
-    - Verbale_interno_20231204_v1.0.1.pdf\
-    - Verbale_interno_20231211_v1.0.0.pdf\
-    - Verbale_interno_20231218_v1.0.0.pdf\
-    - Verbale_interno_20240101_v1.0.0.pdf\
-    - Verbale_interno_20240109_v1.0.0.pdf\
-    - Verbale_interno_20240115_v1.0.0.pdf\
-  - Norme_di_progetto_v0.13.0.pdf\
+  - Verbali_intenri/\
+  - Norme_di_progetto_v1.0.0.pdf\
 
 \
 
+#pagebreak()
+
+Per quanto concerne il PaF sono state apportate alcune modifiche rispetto a quanto definito in fase di Candidatura. Riportiamo qui sotto un prospetto riassuntivo, che riflette quanto viene esposto nel documento "Piano_di_Progetto_v1.0.0" nella sezione "Globale":
+
+Segue la nuova ridistribuzione oraria:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Nuovo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Componente], [10], [8], [30], [12], [22], [12],
+)
+])
+#align(center)[Tabella 56: Nuova distribuzione oraria.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(215) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Costi*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [70], [56], [210], [84], [154], [84],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€2100,00], [€1400,00], [€3150,00], [€1680,00], [€2100,00], [€2100,00],
+  [Totale], [], [], [], [], [], [#green("€12530,00")], 
+)
+])
+#align(center)[Tabella 57: Nuovo preventivo.]
+
+
+
 Cordiali saluti,\
-Farmacode
+
+Farmacode.
 
 

@@ -78,3 +78,7 @@
   body
 }
 
+#let green(a)= {
+  set text(fill: rgb("#2ecc40"), weight: "bold") 
+  a
+}

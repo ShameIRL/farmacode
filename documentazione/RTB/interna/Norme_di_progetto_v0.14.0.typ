@@ -989,6 +989,7 @@ Infine le issue devono avere un nome significativo e possedere una descrizione d
 
 (h3 in markdown) desc:  (plain text) testo della descrizione;
 
+Per garantire maggiore uniformità ed omogeneità sono stati predisposti dei template tramite il meccanismo integrato di github, per la creazione di issues dalla struttura riccorrente.
 
 Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni nuovo sprint. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso;
 

@@ -8,9 +8,9 @@
     p.cardin,
   ),
   changelog: (
-    "0.15.0", "2024-02-13", p.bomben, "", "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
-    "0.14.0", "2024-02-09", p.rosson, "", "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
-    "0.13.0", "2024-02-03", p.rosson, "", "Stesura consuntivo sprint 9 e aggiornamento sezione 'Globale'",
+    "0.15.0", "2024-02-13", p.bomben, p.rosson, "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
+    "0.14.0", "2024-02-09", p.rosson, p.bomben, "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
+    "0.13.0", "2024-02-03", p.rosson, p.bomben, "Stesura consuntivo sprint 9 e aggiornamento sezione 'Globale'",
     "0.12.0", "2024-01-21", p.rosson, "", "Stesura sezione 'Globale' e migliorie grafiche generali",
     "0.11.0", "2024-01-20", p.favaron, p.rosson, "Stesura consutivo sprint 7 e 8",
     "0.10.0", "2024-01-14", p.carraro, p.rosson, "Stesura sprint.6 e relativo consuntivo e grafici",
@@ -355,6 +355,9 @@ Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro respo
 
 == Periodi
 
+- Premessa:
+La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. La pianificazione di progetto viene aggiornata regolarmente seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitarla a due sprint nel futuro, in modo che la pianificazione pensata risulti più realistica ed affidabile.
+
 === RTB
 ==== sprint.1
 - Periodo: 2023/11/07-2023/11/23 (2 settimane e 2 giorni)
@@ -694,7 +697,7 @@ figure(
 Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In generale il team si è concentrato sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica.
 
 - Imprevisti incotrati e loro risoluzione: 
-
+nd.
 
 ==== sprint.10
 - Periodo: 2024/02/03 - 2024/02/12
@@ -727,7 +730,9 @@ figure(
 
 
 - Retrospettiva:
-nd.
+
+Durante lo sprint il team si è concentrato generalmente sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica. Nonostante gli sforzi il gruppo pensa ancora sia necessario apportare alcuni miglioramenti prima di procedere alla candidatura, in particolare al glossario ed alla presentazione del repository. Ciò non dovrebbe comunque influire troppo sulle tempistiche, si è infatti concordato di apportare questi miglioramenti nel arco dei prossimi giorni per procedere alla candidatura entro la metà del mese.
+
 - Imprevisti incotrati e loro risoluzione: 
 nd.
 
@@ -787,7 +792,7 @@ nd.
 = Preventivi e Consuntivi
 
 - Premessa:
-La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. I preventivi di progetto sono aggiornati seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato.
+La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. I preventivi di progetto sono aggiornati seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitare i preventivi, come avviene per la pianificazione, a due sprint nel futuro, in modo che risultino realistici ed affidabili.
 
 == RTB
 
@@ -1988,7 +1993,8 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 ])
 #align(center)[Tabella 57: Nuovo preventivo.]
 
-Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica.
+- Spiegazione:
+Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024.
 
 == PB
 

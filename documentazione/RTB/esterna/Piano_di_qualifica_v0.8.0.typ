@@ -1684,7 +1684,7 @@ figure(
 )
 
 - Spiegazione:
-Valori EV e PV sono ancora discordanti, purtroppo la pianificazione rimane ancora ottimistica rispetto all'andamneto effettivo del progetto. Anche la prospettiva di concludere la milestone questo sprint non è stata rispettata, abbiamo preferito concedere ancora un po' di tempo in più per ridefinire e concludere il materiale da presentare.
+Valori EV e PV sono ancora discordanti, purtroppo la pianificazione rimane ancora ottimistica rispetto all'andamneto effettivo del progetto. Anche la prospettiva di concludere la milestone di RTB durante questo sprint non è stata rispettata, abbiamo preferito concedere ancora un po' di tempo in più per ridefinire e concludere il materiale da presentare.
 
 #pagebreak()
 
