@@ -1,14 +1,14 @@
 #import "/template/verbals.typ": *
 
 #show: project.with(
-  title: "Verbale esterno del meeting in data 24/11/2023",
+  title: "Verbale esterno del meeting in data 2023/11/24",
   recipients: (
     
   ),
   changelog: (
-                "2.0.0", "20-12-2023", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
-    "1.0.1", "25-11-2023", p.rosson , p.bomben, "Apportate alcune modifiche e miglioramenti",
-    "1.0.0", "24-11-2023", p.favaron , p.bomben, "Stesura e revisione del verbale",
+                "2.0.0", "2023-12-20", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
+    "1.0.1", "2023-11-25", p.rosson , p.bomben, "Apportate alcune modifiche e miglioramenti",
+    "1.0.0", "2023-11-24", p.favaron , p.bomben, "Stesura e revisione del verbale",
   ),
 )
 
