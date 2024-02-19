@@ -761,7 +761,7 @@ Questo sprint si pianifica essere l'ultimo prima della revisone di RTB, il preve
 - Gantt view:
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#10.png", height: auto, width: auto),
+  image("/imgs/gantt_views/sprint#11.png", height: 250pt, width: auto),
   caption: [sprint.11]
   )
   
