@@ -25,7 +25,7 @@ jobs:
         uses: tj-actions/changed-files@v40
         with:
           files: |
-             documentazione/PB/*.typ
+             documentazione/PB/**/*.typ
 
       - name: End action if no changes
         if: steps.changed-typst-files.outputs.all_changed_files == ''
@@ -65,8 +65,8 @@ jobs:
             # Concatenate "pdf" to the base name and clear the version
             pdf_file=$(echo "$base_name" | awk -F '_v' '{print $1}')
             
-            if (( $(git ls-files -- "**/PB/$pdf_file*.pdf" | wc -l) > 0 )); then
-              git rm -- **/PB/"$pdf_file"*.pdf
+            if (( $(git ls-files -- "**/PB/**/$pdf_file*.pdf" | wc -l) > 0 )); then
+              git rm -- **/PB/**/"$pdf_file"*.pdf
               check=true
             fi
           done
