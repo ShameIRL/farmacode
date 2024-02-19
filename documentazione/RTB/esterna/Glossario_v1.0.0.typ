@@ -267,3 +267,4 @@ Un workshop interno costituisce un evento appositamente organizzato per agevolar
 
 == Zoom
 Zoom è un'applicazione VoIP (Voice over IP: tecnologia che rende possibile effettuare una conversazione sfruttando una connessione internet), di teleconferenza e di messaggistica istantanea. Si può usufruire sia tramite browser, sia tramite client, richiede tuttavia un account Zoom per avviare le chiamate.
+
