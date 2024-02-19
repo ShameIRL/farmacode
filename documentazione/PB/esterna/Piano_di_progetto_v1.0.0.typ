@@ -737,34 +737,47 @@ Durante lo sprint il team si è concentrato generalmente sul aggiornare i docume
 - Imprevisti incotrati e loro risoluzione: 
 nd.
 
-=== PB
-
 ==== sprint.11
-- Periodo: 2024/02/13 - 2024/02/20 //TBD da cambiare
+- Periodo: 2024/02/13 - 2024/02/18 
 
 - Issues:\
+  -- Correzioni documenti RTB;\
+  -- Revisione e Approvazione documenti RTB;\
+  -- Preparazione valutazione RTB con prof. Vardanega\
 
-- Task:
+- Task:\
+  -- Correzioni "Analisi dei requisiti";\
+  -- Verifica e Approvazione "Glossario";\
+  -- Verifica e Approvazione "Norme di Progetto";\
+  -- Verifica e Approvazione del file "Piano di Qualifica";\
+  -- Verifica e Approvazione del file "Piano di Progetto";\
+  -- Preparazione presentazione RTB con prof. Vardanega;\
+  -- Preparazione pagina vetrina GitHub.io;\
+  -- Stesura del file "Verbale interno 12/02/2024".\
 
 - Sintesi:
-Questo sprint si pianifica essere il primo successivo alla revisone di RTB, il preventivo per questo periodo vede quindi come principali attività lavori utili alla "restaurazione" di tutti i documenti a seguito della revisone. Inoltre si pianifica di iniziare a pensare e concepire delle idee più concrete riguardo il design e la progettazione di un MVP. Si confida in oltre in un incremento della produttività una volta superato il periodo corrente, considerabile il più impegnativo.
+Questo sprint si pianifica essere l'ultimo prima della revisone di RTB, il preventivo per questo periodo vede quindi come principali attività lavori utili alla "restaurazione" di tutti i documenti a seguito della revisone. Inoltre si pianifica di iniziare a pensare e concepire delle idee più concrete riguardo il design e la progettazione di un MVP. Si confida in oltre in un incremento della produttività una volta superato il periodo corrente, considerabile il più impegnativo.
 
 - Gantt view:
-/*
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
-  caption: [sprint.9]
+  image("/imgs/gantt_views/sprint#11.png", height: auto, width: auto),
+  caption: [sprint.11]
   )
   
 )
-*/
+#pagebreak()
 - Retrospettiva:
+Durante lo spirnt il gruppo si e' concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
+Svolta la seconda parte di RTB il gruppo dovra' parallelamente apportare le migliorie e iniziare il design e miglioramento del prodotto finale.
 
 - Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== PB
 
 ==== sprint.12
-- Periodo: 2024/02/20 - 2024/02/27 //TBD
+- Periodo: 2024/02/19 - 2024/02/27 //TBD
 
 - Issues:\
 
@@ -1911,6 +1924,127 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 
 - Spiegazione:
 Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di SPI registrato indica un ritardo, che riteniamo sia dovuto all'accumularsi delle situazioni createsi nei precedenti sprint, ed ad una pianificazione troppo ottimistica. Gli sforzi previsti si sono rivelati non essere sufficienti per portare l'avanzamento del progetto al stato che ci eravamo prefissati. Prevediamo infatti ancora alcune giornate di lavoro prima della candidatuara della seconda parte della revisione di RTB, ciò per rispettare il livello di qualità con il quale il team intende presentarsi.
+
+#pagebreak()
+
+=== sprint.11
+- Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [4], [], [], [], [],
+  [Bomben F.], [], [], [], [3], [], [],
+  [Carraro A.], [3], [], [], [], [2], [],
+  [Favaron R.], [], [], [], [3], [], [],
+  [Pandolfo M.], [], [4], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [4],
+  [Rosson L.], [], [], [], [2], [2], [],
+)
+])
+#align(center)[Tabella 50: preventivo orario sprint.11.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [8], [0], [8], [4], [4],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€200,00], [€0,00], [€160,00], [€60,00], [€100,00],
+  [Totale], [], [], [], [], [], [€610], 
+  [Bilancio], [], [], [], [], [], [*€7420,00*],
+)
+])
+#align(center)[Tabella 51: preventivo costi sprint.10.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#11.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.10]
+  )
+  
+)
+
+- Spiegazione: 
+
+
+- Consuntivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [2], [],
+  [Bomben F.], [], [], [], [2], [], [],
+  [Carraro A.], [], [], [], [2], [], [],
+  [Favaron R.], [], [], [], [2], [], [],
+  [Pandolfo M.], [], [], [], [], [2], [],
+  [Passarella A.], [3], [], [], [], [], [],
+  [Rosson L.], [], [], [], [], [3], [],
+)
+])
+#align(center)[Tabella 52: consuntivo orario sprint.10.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [0], [0], [6], [7], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€0,00], [€0,00], [€120,00], [€105,00], [€0,00],
+  [Totale], [], [], [], [], [], [€315,00], 
+  [Bilancio], [], [], [], [], [], [*€8030,00*],
+)
+])
+#align(center)[Tabella 53: consuntivo costi sprint.10.]
+
+// #grid(
+//   columns: (1fr, auto),
+//   rows: (auto),
+//   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
+//   table(
+//     fill: (col, row) => 
+//       if calc.odd(row) { luma(230) } else { white },
+//     columns: (auto,),
+//     align: center,
+//     [*Valore di SPI*],
+//     [0.97]
+//   )
+// )
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#10.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.10],
+  ),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0.95]
+  )
+)
+
+- Spiegazione:
 
 #pagebreak()
 
