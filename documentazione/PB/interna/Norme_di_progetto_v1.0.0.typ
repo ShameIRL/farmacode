@@ -1221,3 +1221,4 @@ viene calcolato attraverso il numero di frasi e lettere ed il risultato è un va
 
 = Elenco delle tabelle
 - Tabella 1: Ruoli e responsabilità
+
