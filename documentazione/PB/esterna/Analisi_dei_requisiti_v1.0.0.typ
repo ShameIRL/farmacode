@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.1.0", "", p.rosson, "", "",
+    "1.1.0", "", p.rosson, "", " ",
     "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
     "0.7.1", "2024-01-14", p.bomben, p.rosson, "Tracciamento requisiti - fonte",
     "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
