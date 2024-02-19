@@ -2126,3 +2126,4 @@ I valori attuali rientrano comunque nei limiti imposti dal team, che si impegner
 - Tabella 51: CV e SV da sprint 1 a 8
 - Tabella 52: CV e SV da sprint 1 a 9
 - Tabella 53: CV e SV da sprint 1 a 10
+
