@@ -5,7 +5,9 @@
   recipients: (
     
   ),
+  heading_numbers: none,
   changelog: (
+    "1.0.1", "2024-02-20", p.bomben, "", "Eliminazione numerica capitoli",
     "1.0.0", "2024-02-13", p.bomben, p.passarella, "Verifica del documento",
     "0.7.0", "2024-02-13", p.pandolfo, p.carraro, "Stesura nuove definizioni",
     "0.6.0", "2024-01-20", p.passarella, p.pandolfo, "Stesura nuove definizioni",
