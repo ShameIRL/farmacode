@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.1.0", "2024-02-13", p.carraro, "", "Stesura sprint 11",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
     "0.15.0", "2024-02-13", p.bomben, p.rosson, "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
     "0.14.0", "2024-02-09", p.rosson, p.bomben, "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
@@ -1959,22 +1960,22 @@ Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di 
   [Totale Ore], [3], [8], [0], [8], [4], [4],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€90,00], [€200,00], [€0,00], [€160,00], [€60,00], [€100,00],
-  [Totale], [], [], [], [], [], [€610], 
+  [Totale], [], [], [], [], [], [€610,00], 
   [Bilancio], [], [], [], [], [], [*€7420,00*],
 )
 ])
-#align(center)[Tabella 51: preventivo costi sprint.10.]
+#align(center)[Tabella 51: preventivo costi sprint.11.]
 
 #align(left,
 figure(
   image("/imgs/PdP/graphs/preventivi/sprint#11.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.10]
+  caption: [preventivi/sprint.11]
   )
   
 )
 
 - Spiegazione: 
-
+Il preventivo per questo sprint prevede ore utili alla conclusione della documentazione alla prime versione in vista della seconda parte della revisione di RTB.
 
 - Consuntivo:
 #align(center, text(0.85em)[
@@ -1984,17 +1985,17 @@ figure(
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [2], [],
-  [Bomben F.], [], [], [], [2], [], [],
-  [Carraro A.], [], [], [], [2], [], [],
-  [Favaron R.], [], [], [], [2], [], [],
-  [Pandolfo M.], [], [], [], [], [2], [],
-  [Passarella A.], [3], [], [], [], [], [],
-  [Rosson L.], [], [], [], [], [3], [],
+  [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [4], [], [], [], [],
+  [Bomben F.], [], [], [], [3], [], [],
+  [Carraro A.], [3], [], [], [], [2 #red("+1")], [],
+  [Favaron R.], [], [], [], [3 #red("+1")], [], [],
+  [Pandolfo M.], [], [4 #red("+1")], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [4],
+  [Rosson L.], [], [], [], [2], [2 #red("+1")], [],
 )
 ])
-#align(center)[Tabella 52: consuntivo orario sprint.10.]
+#align(center)[Tabella 52: consuntivo orario sprint.11.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2003,15 +2004,15 @@ figure(
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 10*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [0], [6], [7], [0],
+  [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [9], [0], [9], [6], [4],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [€0,00], [€120,00], [€105,00], [€0,00],
-  [Totale], [], [], [], [], [], [€315,00], 
-  [Bilancio], [], [], [], [], [], [*€8030,00*],
+  [Costo], [€90,00], [#red("€225,00")], [€0,00], [#red("€160,00")], [#red("€60,00")], [€100,00],
+  [Totale], [], [], [], [], [], [€635,00], 
+  [Bilancio], [], [], [], [], [], [*€7395,00*],
 )
 ])
-#align(center)[Tabella 53: consuntivo costi sprint.10.]
+#align(center)[Tabella 53: consuntivo costi sprint.11.]
 
 // #grid(
 //   columns: (1fr, auto),
@@ -2031,8 +2032,8 @@ figure(
   columns: (1fr, auto),
   rows: (auto),
   figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#10.png", height: 30%, width: auto),
-  caption: [bilancio/sprint.10],
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#11.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.11],
   ),
   table(
     fill: (col, row) => 
@@ -2045,6 +2046,8 @@ figure(
 )
 
 - Spiegazione:
+Durante questo sprint il gruppo si e' concentrato molto sul preparare i documenti per la secondo parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io.
+
 
 #pagebreak()
 
