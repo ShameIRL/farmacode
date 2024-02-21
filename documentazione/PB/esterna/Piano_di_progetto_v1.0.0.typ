@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.3.0", "2024-02-21", p.carraro, "", "Sistemazione Analisi dei rischi",
     "1.2.0", "2024-02-21", p.carraro, "", "Ristrutturazione documento",
     "1.1.0", "2024-02-20", p.carraro, "", "Stesura sprint 11",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
