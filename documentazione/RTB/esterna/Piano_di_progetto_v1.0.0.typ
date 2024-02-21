@@ -89,7 +89,7 @@ La pianificazione descritta, in seguito, all'interno questo documento si basa su
 
 = Analisi dei rischi
 
-Questa sezione del documento si concentra sull'analisi delle potenziali difficoltà che potrebbero emergere durante il corso del progetto, con l'obiettivo di identificare, analizzare e prevenire eventuali ostacoli o rallentamenti che potrebbero comprometterne il progresso complessivo. Per affrontare queste possibili problematiche, si è scelto di esaminare attentamente ciascun rischio, fornendo dettagli quali la *descrizione del rischio*, il *grado di rischio* associato, la *pericolosità*, le *precauzioni* da adottare e un *piano di lavoro riorganizzato*. Il grado di rischio definisce la possibilità di occorrenza dello stesso e varia da una scala crescente da 1 a 5, mentre la pericolosità varia tra "Alta", "Media" e "Bassa".
+Questa sezione del documento si concentra sull'analisi delle potenziali difficoltà che potrebbero emergere durante il corso del progetto, con l'obiettivo di identificare, analizzare e prevenire eventuali ostacoli o rallentamenti che potrebbero comprometterne il progresso complessivo. Per affrontare queste possibili problematiche, si è scelto di esaminare attentamente ciascun rischio, fornendo dettagli quali la *descrizione del rischio*, il *grado di rischio* associato, la *pericolosità*, le *precauzioni* da adottare e un *Piano di contingenza*. Il grado di rischio definisce la possibilità di occorrenza dello stesso e varia da una scala crescente da 1 a 5, mentre la pericolosità varia tra "Alta", "Media" e "Bassa".
 
 
 Le informazioni vengono presentante in forma tabellare, in modo da facilitarne il monitoraggio continuo durante l'intero ciclo di vita del progetto. Le principali categorie di rischi considerate includono:
@@ -112,7 +112,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [5],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Studio a monte di pratiche utilizzate in contesti realistici, e delle tecnologie coinvolte. Supporto interno tra i membri del team. Inoltre la metodologia di lavoro utilizzata dal gruppo di progetto, la quale prevede la divisioni dei compiti relativi relativi ad una singola sprint da svolgere generalmente in coppia, favorisce la condivisione delle conoscenze e aiuto reciproco per sopperire a lacune di tipo tecnologico.],
-  [*Piano di lavoro riorganizzato*], [Comunicazioni interne ed esterne rapide in caso di dubbi per chiarimenti e delucidazioni. Eventuali #glossario("workshop") da parte dei membri del gruppo più esperti su specifiche tecnologie.],)
+  [*Piano di contingenza*], [Comunicazioni interne ed esterne rapide in caso di dubbi per chiarimenti e delucidazioni. Eventuali #glossario("workshop") da parte dei membri del gruppo più esperti su specifiche tecnologie.],)
 )
 #align(center)[Tabella 2: RP1 - Mancanza di competenze tecniche specifiche.]
 
@@ -128,7 +128,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Buone pratiche di pianificazione, e assegnazione dei ruoli in modo da avere un #glossario("cruscotto") completo dei lavori fin da subito. Mantenere una comunicazione costante nel tempo tra tutti i membri del team di progetto.],
-  [*Piano di lavoro riorganizzato*], [Comunicazione e discussione con il docente del corso. Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Comunicazione e discussione con il docente del corso. Conseguente adeguamento e ridistribuzione dei compiti.],)
 )
 #align(center)[Tabella 3: RP2 - Non conformità agli impegni dichiarati.]
 
@@ -144,7 +144,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Instaurare un rapporto umano e sociale tra i membri del gruppo. Avere pratiche di risoluzione dei conflitti efficaci e veloci. Inotre il Responsabile ha il compito di intervenire e cercare di mediare, cercando di portare ad una risoluzione che ristabilisca il clima di lavoro positivo.],
-  [*Piano di lavoro riorganizzato*], [Definire dei meeting nel quale esporre le varie divergenze e poi cercare di arrivare ad una soluzione di gruppo, trammite eventuali votazioni. Avviare una ipotetica comunicazione e discussione con il docente del corso. Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Definire dei meeting nel quale esporre le varie divergenze e poi cercare di arrivare ad una soluzione di gruppo, trammite eventuali votazioni. Avviare una ipotetica comunicazione e discussione con il docente del corso. Conseguente adeguamento e ridistribuzione dei compiti.],)
 )
 #align(center)[Tabella 4: RP3 - Problemi di comunicazione e collaborazione.]
 
@@ -160,7 +160,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
   [*Precauzioni*], [Gestione delle attività il più possibile preventiva, definendo deadline "larghe" che lascino spazio a imprevisti di questo genere. Mantenere una comunicazione con tutti i membri del gruppo e questi devono impegnarsi ad avvisare tempostivamente i colleghi così da provvedere ad eventuali #glossario("context switch").],
-  [*Piano di lavoro riorganizzato*], [Conseguente adeguamento e ridistribuzione dei compiti],)
+  [*Piano di contingenza*], [Conseguente adeguamento e ridistribuzione dei compiti],)
 )
 #align(center)[Tabella 5: RP4 - Malattia o indisponibilità.]
 
@@ -180,7 +180,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
   [*Precauzioni*], [Scelta di mezzi comunicativi "solidi" e pratici, sia per discussioni di tipo più generale e discorsivo con l'utilizzo di chat testuali e/o vocali, sia per gestire le varie attività da svolgere e il loro avanzamento nel tempo trammite strumenti come gli ITS e grafi di Gantt. Alto quantitativo di meeting interni, anche solo di tipo organizzativo.],
-  [*Piano di lavoro riorganizzato*], [Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Conseguente adeguamento e ridistribuzione dei compiti.],)
 )
 #align(center)[Tabella 6: ROI1 - Comunicativi e organizzativi.]
 
@@ -196,7 +196,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [4],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Scelta a monte di una metodologia già affermata nel settore con valori dimostrati.],
-  [*Piano di lavoro riorganizzato*], [Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Conseguente adeguamento e ridistribuzione dei compiti.],)
 )
 #align(center)[Tabella 7: ROI2 - Scarsa definizione dei ruoli e delle responsabilità all'interno del team.]
 
@@ -212,7 +212,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Definire una pianificazione flessibile con ampi margini di risorse e costi che consideri possibili variazioni durante tutto l'arco di sviluppo di progetto. Inoltre avere prospetti e rendicontazioni ad ogni sprint in modo da avere una vista sul quadro generale il più completa possibile e adeguarsi di conseguenza. Attuazione del monitoraggio costante di tutte le attività svolte e da svolgere, con particolare attenzione alle varie tempistiche, attraverso strumenti come il grafo di Gantt.],
-  [*Piano di lavoro riorganizzato*], [Comunicazione con committente e proponente e conseguente adeguamento.],)
+  [*Piano di contingenza*], [Comunicazione con committente e proponente e conseguente adeguamento.],)
 )
 #align(center)[Tabella 8: ROI3 - Risorse limitate o budget insufficiente per sostenere lo sviluppo del progetto.]
 
@@ -231,7 +231,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
   [*Precauzioni*], [Scelta concordata di mezzi pratici ed efficenti. Comunicazioni rapide verso l'esterno. Invio di domande e/o richieste di materiale utile prima di ogni meeting con il proponente, così da dare il tempo tecnico per ricevere risposte il più dettagliate possibili e permettere di avere un meeting più efficace e favorire uno sviluppo continuativo senza troppe interruzioni per necessità di un feedback.],
-  [*Piano di lavoro riorganizzato*], [Chiarimento con committente e proponente, conseguente adeguamento e instaurazione di nuovi mezzi di comunicazione.],)
+  [*Piano di contingenza*], [Chiarimento con committente e proponente, conseguente adeguamento e instaurazione di nuovi mezzi di comunicazione.],)
 )
 #align(center)[Tabella 9: ROE1 - Difficoltà comunicative.]
 
@@ -248,7 +248,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Comunicazioni rapide e chiare verso l'esterno, misure di approvvigionamento alternative. Invio di domande e/o richieste di materiale utile prima di ogni meeting con il proponente, così da dare il tempo tecnico per ricevere risposte il più dettagliate possibili e permettere di avere un meeting più efficace e favorire uno sviluppo continuativo senza troppe interruzioni per necessità di un feedback e risorse necessarie.],
-  [*Piano di lavoro riorganizzato*], [Comunicazione con committente e proponente e conseguente adeguamento.],)
+  [*Piano di contingenza*], [Comunicazione con committente e proponente e conseguente adeguamento.],)
 )
 #align(center)[Tabella 10: ROE2 - Fornitura.]
 
@@ -266,7 +266,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Media],
   [*Precauzioni*], [Studio a monte delle tecnologie e conseguente scelta ragionata delle stesse. Comunicazione con il proponente, che ricopre il ruolo di mentore, per discutere di eventuali dubbi e chiedere così consigli ad una figura che ha molta esperienza nel settore.],
-  [*Piano di lavoro riorganizzato*], [Comunicazione con proponente per concordare misure di adattamento.],)
+  [*Piano di contingenza*], [Comunicazione con proponente per concordare misure di adattamento.],)
 )
 #align(center)[Tabella 11: RT1 - Incompatibilità tra diverse tecnologie o componenti software.]
 
@@ -282,7 +282,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Grado di rischio*], [3],
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Scelta ponderata delle tecnologie. Costruire un ambiente flessibile ai cambiamenti. Comunicazione con il proponente, che ricopre il ruolo di mentore, per discutere di eventuali dubbi e chiedere così consigli ad una figura che ha molta esperienza nel settore.],
-  [*Piano di lavoro riorganizzato*], [Comunicazione con proponente e conseguente adeguamento.],)
+  [*Piano di contingenza*], [Comunicazione con proponente e conseguente adeguamento.],)
 )
 #align(center)[Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso.]
 
