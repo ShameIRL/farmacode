@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.1.0", "2024-02-13", p.carraro, "", "Stesura sprint 11",
+    "1.2.0", "2024-02-21", p.carraro, "", "Ristrutturazione documento",
+    "1.1.0", "2024-02-20", p.carraro, "", "Stesura sprint 11",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
     "0.15.0", "2024-02-13", p.bomben, p.rosson, "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
     "0.14.0", "2024-02-09", p.rosson, p.bomben, "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
@@ -288,7 +289,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 #align(center)[Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso.]
 
 
-= Pianificazione
+= Modello di lavoro
 
 == Metodo e motivazioni
 
@@ -355,13 +356,12 @@ La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto
 
 Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità.  // da mettere?
 
-== Periodi
+= Periodi
 
 - Premessa:
 La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. La pianificazione di progetto viene aggiornata regolarmente seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitarla a due sprint nel futuro, in modo che la pianificazione pensata risulti più realistica ed affidabile.
 
-=== RTB
-==== sprint.1
+== RTB - sprint.1
 - Periodo: 2023/11/07-2023/11/23 (2 settimane e 2 giorni)
 La prima settimana che va dal 2023/11/07 al 2023/11/14 è stata considerata come di "assestamento".\
 La seconda settimana che va dal 2023/11/14 al 2023/11/23 (1 settimana e 2 giorni) rappresenta il primo effettivo sprint.
@@ -397,422 +397,7 @@ Questo primo sprint rientra a far parte di un primo periodo di "assestamento". N
     
     Risoluzione: cambio di strumento e creazione di automatismi tramite GitHub actions. Riadattamento della vecchia documentazione.
 
-==== sprint.2
-- Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
-- Issues:\
-  -- Approvate quanto prodotto nello sprint.2;\
-  -- Revisionare quanto prodotto nello sprint.2;\
-  -- Realizzazione pagina github.io;\
-  -- Prima stesura del file "Piano di progetto";\
-  -- POC - Design e primo approccio;\
-  -- Prima stesura del file "Piano di qualifica";\
-  -- Seconda stesura del file "analisi dei requisiti";\
-  -- Prima stesura sezione 4 file "Norme di progetto".\
-
-- Task:\
-  -- Revisionare "Piano di qualifica";\
-  -- Prima stesure sezione 3 "Piano di progetto";\
-  -- struttura piano di qualifica;\
-  -- scrittura introduzione piano di qualifica;\
-  -- stesura qualita' architettura piano di qualifica;\
-  -- Revisione Piano di progetto.
-
-- Pianificazione:
-La pianificazione per questo sprint prevede una continuazione generale dei lavori di documentazione, ed un primo approccio all'ideazione e sviluppo del POC. L'esperienza acquisita dal primo sprint ci ha permesso di definire meglio il nostro piano di lavoro. Per ogni documento che ancora non ne possiede una, si pensa infatti di idearne e realizzarne innanzitutto una struttura, possibilmente solida ma flessibile. Si è inoltre concordato di continuare a lavorare con più impegno alle Norme di Progetto, così da chiarire maggiormente all'intenro del gruppo dubbi relativi allo sviluppo delle attività.
-
-- Gantt view:
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#2.png", height: auto, width: auto),
-  caption: [sprint.2]
-  )
-  
-)
-
-- Retrospettiva: 
-In questo secondo sprint si è iniziato a ragionare anche sul Design e ad una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di amministratore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
-
-- Imprevisti incotrati e loro risoluzione:
-
-  + Problemi con il dataset fornito dall'azienda proponente, in quanto mancante di valutazioni esplicite necessarie al sistema di raccomandazione. 
-    
-    Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente. 
-
-==== sprint.3
-- Periodo: 2023/12/04-2023/12/11 (1 settimana)
-- Issues:\
-  -- Approvate quanto prodotto nello sprint.3;\
-  -- Revisionare quanto prodotto nello sprint.3;\
-  -- Continuazione del file "Piano di progetto";\
-  -- Completamento sezione 4 file "Norme di progetto";\
-  -- stesura nuove definizioni Glossario; \
-  -- Realizzare algoritmo per il POC; \
-  -- Iniziare interfaccia POC.
-
-- Task:\
-  -- Completamento prima stesura sezione 4 file "Analisi dei requisiti";\
-  -- Stesura verbale interno 2023/12/04;\
-  -- Stesura Verbale esterno 2023/12/06;\
-  -- Prima stesura sezione 2 file "Norme di progetto";\
-  -- Continuazione sezione 4 file "Analisi dei requisiti".
-
-- Pianificazione:
-Come ormai consuetudine, la pianificazione di questo sprint deriva da un meeting interno durante il quale il team ha analizzato quanto fatto recentemente. Ragionando sulla situazione attuale si è concordato di continuare con i lavori di documentazione e di iniziare con l'effettiva implementazione del POC focalizzandosi maggiormente su di essa.
-
-- Gantt view:
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#3.png", height: auto, width: auto),
-  caption: [sprint.3]
-  )
-  
-)
-
-- Retrospettiva:
-Durante questo terzo sprint, il team ha deciso di focalizzare più risorse verso lo sviluppo del PoC senza però tralasciare la documentazione di progetto. In particolare si sono fatti grandi progessi lato implementazione del prodotto. Progressi che sono stati condivisi con il proponente riscontrando approvazione generale. Per quanto riguarda la documentazione, sono state apportate migliorie generali ponendo più attenzione verso le "Norme di progetto".
-
-- Imprevisti incotrati e loro risoluzione:
-nd.
-
-==== sprint.4
-- Periodo: 2023/12/11-2023/12/18 (1 settimana)
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.4;\
-  -- Revisionare quanto prodotto nello sprint.4;\
-  -- Documentazione;\
-  -- POC - completamento prima versione.\
-
-- Task:\
-  -- Continuazione stesura del documento "Norme di Progetto";\
-  -- Continuazione stesura del documento "Analisi dei Requisiti";\
-  -- Continuazione stesura del documento "Glossario";\
-  -- Continuazione stesura del documento "Piano di Progetto";\
-  -- Riadattamento verbali interni a nuova struttura;\
-  -- Stesura verbale interno del 2023/12/11.\
-
-- Pianificazione:
-La pianificazione per questo sprint prevede la conclusione di una prima versione del PoC. Si pianifica inoltre un avanzamento generale dei lavori di documentazione che procedono in modo regolare.
-
-- Gantt view:
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#4.png", height: auto, width: auto),
-  caption: [sprint.4]
-  )
-  
-)
-
-- Retrospettiva:
-Durante il quarto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e dell' "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin in data 2023/12/15 relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
-È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prima versione stabile.
-
-- Imprevisti incotrati e loro risoluzione: 
-
-  + Durante il seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. 
-
-    Risoluzione: Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
-
-==== sprint.5
-- Periodo: 2023/12/18-2023/12/27 (1 settimana e 5 giorni)
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.5;\
-  -- Revisionare quanto prodotto nello sprint.5;\
-  -- Documentazione.\
-
-- Task:\
-  -- Continuazione stesura del documento "Norme di Progetto";\
-  -- Continuazione stesura del documento "Analisi dei Requisiti";\
-  -- Continuazione stesura del documento "Glossario";\
-  -- Continuazione stesura del documento "Piano di Progetto";\
-  -- Continuazione stesura del documento "Piano di Qualifica";\
-  -- Stesura verbale interno del 2023/12/18;\
-  -- Revisione verbale interno del 2023/12/18;\
-  -- Stesura verbale esterno del 2023/12/19.\
-
-- Pianificazione:
-La pianificazione per questo sprint prevede un maggiore focus sui lavori utili alla documentazione. Durante lo scorso periodo è infatti stata conclusa una prima versione del PoC (sempre comunque migliorabile). Si pianificano sforzi utili alla ristrutturazione del documento di AdR in seguito al meeting con il #p.cardin ed ingenerale sul avanzamento dei documenti. Durante il regolare meeting si è inoltre concordato di fissare un incontro con il proponente per esporre quanto fatto per il PoC. Dato l'avvicinarsi delle festività natalizie si è concordato di prolungare lo sprint di 3 giorni così da permetterne una chiusura regolare.
-
-- Gantt view:
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#5.png", height: auto, width: auto),
-  caption: [sprint.5]
-  )
-  
-)
-
-- Retrospettiva:
-
-Durante il quinto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto", del "Piano di Qualifica" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". \ 
-Lo sprint è iniziato, come siamo sempre stati abituati a fare, con un meeting interno per discutere quanto di buono o non buono è stato fatto durante lo scorso sprint e per discutere su come procedere per il periodo prossimo. Il focus dello sprint numero cinque è stato l'avanzamento di tutti i documenti per riuscire ad arrivare ad il loro completamento, come da preventivo riguardanete il seguente periodo. Grande attenzione è stata posta sull'Analisi dei Requisiti, in quanto, a termine dello scorso sprint di progetto, il gruppo aveva partecipato ad un meeting esterno con il  Professor Cardin, il quale aveva sottolineato l'importanza di arricchire il documento e cercare di andare più nel dettaglio riguardo la descrizione dei vari casi d'uso. E' inoltre continuata la stesura incrementale degli altri documenti di progetto. \
-In data 2023/12/19 l'intero gruppo ha partecipato ad un meeting con l'azienda proponente, nel quale è stato esposto quanto svolto per il POC attraverso un breve showcase delle funzionalita e usi. Il nostro mentore è rimasto soddisfatto del lavoro svolto e ci ha dato consigli relativi a migliorie in vista poi del continuo sviluppo dopo questo primo periodo (RTB).
-
-- Imprevisti incotrati e loro risoluzione: 
-nd.
-
-==== sprint.6
-- Periodo: 2023/12/28-2024/01/07 (1 settimana e 3 giorni)
-
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.6;\
-  -- Revisionare quanto prodotto nello sprint.6;\
-  -- Documentazione.\
-
-- Task:\
-  -- Continuazione stesura del documento "Norme di Progetto";\
-  -- Continuazione stesura del documento "Analisi dei Requisiti";\
-  -- Continuazione stesura del documento "Glossario";\
-  -- Continuazione stesura del documento "Piano di Progetto";\
-  -- Continuazione stesura del documento "Piano di Qualifica";\
-  -- Stesura verbale interno del 2024/01/01;\
-  -- Revisione verbale interno del 2024/01/01.\
-
-- Sintesi:
-La pianificazione per questo sprint è avvenuta principalmente in modalità asincrona, senza la presenza di un vero e proprio meeting interno. Il gruppo si è organizzato utilizzando telegram e dividendo i vari compiti regolarmente. La presenza delle festività, e l'avvicinarsi della sessione invernale hanno influito molto sul organizzazione generale del gruppo, ruoli e attività. Prevedendo un calo della produttività, si è concordato di proseguire con i lavori utili alla documentazione, per riorganizzarsi meglio successivamente.
-
-
-- Gantt view:
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#6.png", height: auto, width: auto),
-  caption: [sprint.6]
-  )
-  
-)
-
-- Retrospettiva:
-Questo sprint di progetto è sicuramente etichettabile come il più "roccambolesco" fino ad ora.
-Durante questo periodo i componenti più disponibili si sono divisi, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto.
-A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting interno asincrono. Il focus dello sprint numero sei è stato l'avanzamento di tutti i documenti in previsone della prima sprint di progetto(RTB).\
-
-- Imprevisti incotrati e loro risoluzione: 
-
-  +  Anche se un calo da questo punto di vista era stato previsto, l'inzio delle vacanze e l'avvicinarsi della sessione invernale di esami, non ha permesso al team di esprimere la stessa produttività caratterizante gli altri sprint. Inoltre l'indisponibilità di alcuni membri del gruppo (dovuta a cause esterne, come impegni o malattia), ha inferito ancor più sotto questo aspetto.
-
-    Risoluzione: La distribuzione delle attività previste è variata, cercando di portare avanti i lavori di documentazione il più possibile rispetto a quanto preventivato.
-
-==== sprint.7
-- Periodo: 2024/01/08 - 2024/01/15
-
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.7;\
-  -- Revisionare quanto prodotto nello sprint.7;\
-  -- Documentazione.\
-
-- Task:
-
-  -- Continuazione stesura del file "Analisi dei Requisiti";\
-  -- Continuazione stesura del file "Piano di Progetto";\
-  -- Continuazione stesura del file "Piano di Qualifica";\
-  -- Continuazione stesura del file "Norme di Progetto";\
-  -- Continuazione stesura del file "Glossario";\
-  -- Stesura verbale interno del 2024/01/08;\
-  -- Revisione verbale interno del 2024/01/08.\
-
-- Sintesi:
-Rispetto a quanto accaduto per il periodo precedente la pianificazione di questo sprint è avvenuta regolarmente. Si è concordato di concentrare gli sforzi sulla documentazione, in modo da avvicinarsi così alla prima revisione di progetto. Dati gli impegni accademici si è comunque cercato di ragionare in modo oggettivo, considerando le disponibilità di tutti ed evitando di ricadere in una pianificazione ottimistica.
-
-- Gantt view:
-
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#7.png", height: auto, width: auto),
-  caption: [sprint.7]
-  )
-  
-)
-
-
-- Retrospettiva:
-Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
-In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in base alle differenti disponibilità, cercando comunque di portare avanti il progetto il più possibile. In periodi di questo tipo inoltre la collaborazione tra membri si è rivelata essenziale. Principalemente sono stati migliorati i vari documenti, aggiornando quelli che necessitano di un aggironamento periodico come il Piano di Progetto.
-
-- Imprevisti incotrati e loro risoluzione: 
-nd.
-
-==== sprint.8
-- Periodo: 2024/01/16 - 2024/01/25
-
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.8;\
-  -- Revisionare quanto prodotto nello sprint.8;\
-  -- Documentazione.\
-
-- Task:\
-  -- Continuazione stesura del file "Analisi dei Requisiti";\
-  -- Continuazione stesura del file "Norme di Progetto";\
-  -- Continuazione stesura del file "Piano di Progetto";\
-  -- Continuazione stesura del file "Piano di Qualifica";\
-  -- Continuazione stesura del file "Glossario".\
-
-- Sintesi:
-Questo sprint si pianifica essere l'ultimo prima dell'effettiva candidatura alla revisone di RTB (alla sua prima parte). Si prevedeno quindi molte ore utili al lavoro di verifica, e rifinitura. Alcuni componenti si concentreranno maggiormente sugli artefatti in esame durante la prima parte della revisione (AdR e PoC). Altri sulla preparazione del materiale utile alla presentazione. Il tutto senza tralasciare l'aggiornamento dei documenti che ne necessitano periodicamente.
-
-- Gantt view:
-
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
-  caption: [sprint.8]
-  )
-  
-)
-
-- Retrospettiva:
-
-Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
-In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in base alle differenti disponibilità, cercando comunque di portare avanti il progetto il più possibile. Come da programma, principalemente sono stati esaminati gli artefatti utili alla prima parte della revisione senza tralasciare quelli che necessitano di un aggironamento periodico. Alla fine dello sprint il gruppo ha comunicato in via ufficiosa la propria candidatura alla prima parte della revisione di RTB.
-
-- Imprevisti incotrati e loro risoluzione: 
-
-==== sprint.9
-- Periodo: 2024/01/26 - 2024/02/02
-
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.9;\
-  -- Revisionare quanto prodotto nello sprint.9;\
-  -- Documentazione.\
-
-- Task:\
-  -- Continuazione stesura del file "Glossario";\
-  -- Aggiunta firme aziendale ai verbali esterni;\
-  -- Conclusione stesura del file "Analisi dei requisiti";\
-  -- Continuazione stesura del file "Piano di Qualifica";\
-  -- Presentazione RTB prof Cardin.\
-
-- Sintesi:
-La pianificazione per questo sprint prevede un calo generale della produttività in quanto nel corso del suo svolgimento il team affronterà la prima parte di revisione. Inoltre, come per quanto vale per il precedente periodo, la concomitanza di alcuni degli impegni accademici già più volte citati, influirà sicuramente negativamente sugli avanzamenti utili al progetto. Il gruppo ha concordato sul impegnarsi nel fare in modo che queste influenze non vadiano ad intaccare sulla qualità di quanto prodotto, ma piuttosto sulla quantità.
-Inoltre gli sforzi utili alla prima revisione di progetto sono pressocchè utlimati.
-
-- Gantt view:
-
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#9.png", height: auto, width: auto),
-  caption: [sprint.9]
-  )
-  
-)
-
-
-- Retrospettiva:
-Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In generale il team si è concentrato sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica.
-
-- Imprevisti incotrati e loro risoluzione: 
-nd.
-
-==== sprint.10
-- Periodo: 2024/02/03 - 2024/02/12
-
-- Issues:\
-  -- Approvare quanto prodotto nello sprint.10;\
-  -- Revisionare quanto prodotto nello sprint.10;\
-  -- Documentazione.\
-
-- Task:\
-  -- Continuazione stesura del file "Norme di Progetto";\
-  -- Continuazione stesura del file "Piano di Qualifica";\
-  -- Continuazione stesura del file "Piano di Progetto";\
-  -- Creazione template "letters.typ";\
-  -- Stesura del file "Verbale interno 05/02/2024".\
-
-- Sintesi:
-Questo sprint si pianifica essere l'ultimo utile al periodo di RTB. Dopo aver infatti aggiornato e verificato i documenti il gruppo procederà con la candidatura alla seconda parte della revisone. Inoltre alcune risorse saranno impiegate per la realizzazione della lettere di candidatura.
-Come per quanto detto per il precedente periodo, si stimano meno ore lavorative, in quanto lo stato dei documenti rientra nelle aspettative di quanto concordato tra i vari membri.
-
-- Gantt view:
-
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#10.png", height: auto, width: auto),
-  caption: [sprint.10]
-  )
-  
-)
-
-
-- Retrospettiva:
-
-Durante lo sprint il team si è concentrato generalmente sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica. Nonostante gli sforzi il gruppo pensa ancora sia necessario apportare alcuni miglioramenti prima di procedere alla candidatura, in particolare al glossario ed alla presentazione del repository. Ciò non dovrebbe comunque influire troppo sulle tempistiche, si è infatti concordato di apportare questi miglioramenti nel arco dei prossimi giorni per procedere alla candidatura entro la metà del mese.
-
-- Imprevisti incotrati e loro risoluzione: 
-nd.
-
-==== sprint.11
-- Periodo: 2024/02/13 - 2024/02/18 
-
-- Issues:\
-  -- Correzioni documenti RTB;\
-  -- Revisione e Approvazione documenti RTB;\
-  -- Preparazione valutazione RTB con prof. Vardanega\
-
-- Task:\
-  -- Correzioni "Analisi dei requisiti";\
-  -- Verifica e Approvazione "Glossario";\
-  -- Verifica e Approvazione "Norme di Progetto";\
-  -- Verifica e Approvazione del file "Piano di Qualifica";\
-  -- Verifica e Approvazione del file "Piano di Progetto";\
-  -- Preparazione presentazione RTB con prof. Vardanega;\
-  -- Preparazione pagina vetrina GitHub.io;\
-  -- Stesura del file "Verbale interno 12/02/2024".\
-
-- Sintesi:
-Questo sprint si pianifica essere l'ultimo prima della revisone di RTB, il preventivo per questo periodo vede quindi come principali attività lavori utili alla "restaurazione" di tutti i documenti a seguito della revisone. Inoltre si pianifica di iniziare a pensare e concepire delle idee più concrete riguardo il design e la progettazione di un MVP. Si confida in oltre in un incremento della produttività una volta superato il periodo corrente, considerabile il più impegnativo.
-
-- Gantt view:
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#11.png", height: 250pt, width: auto),
-  caption: [sprint.11]
-  )
-  
-)
-#pagebreak()
-- Retrospettiva:
-Durante lo spirnt il gruppo si e' concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
-Svolta la seconda parte di RTB il gruppo dovra' parallelamente apportare le migliorie e iniziare il design e miglioramento del prodotto finale.
-
-- Imprevisti incotrati e loro risoluzione: 
-nd.
-
-=== PB
-
-==== sprint.12
-- Periodo: 2024/02/19 - 2024/02/27 //TBD
-
-- Issues:\
-
-- Task:
-
-- Sintesi:
-La pianificazione per questo sprint segue la filosofia del precedente, si prevedono infatti ancora ore utili ai lavori di "ristrutturazione" dei documenti esaminati durante la prima revisione. Inoltre verranno utilizzate più risorse per le attività di progettazione, così da progredire effettivamente con il design e successivo sviluppo di un MVP.
-
-- Gantt view:
-/*
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
-  caption: [sprint.9]
-  )
-  
-)
-*/
-
-- Retrospettiva:
-nd.
-
-- Imprevisti incotrati e loro risoluzione: 
-nd.
-
-= Preventivi e Consuntivi
-
-- Premessa:
-La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. I preventivi di progetto sono aggiornati seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitare i preventivi, come avviene per la pianificazione, a due sprint nel futuro, in modo che risultino realistici ed affidabili.
-
-== RTB
-
-=== sprint.1
-- Preventivo:
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -862,7 +447,7 @@ figure(
 - Spiegazione:
 In questo primo sprint la distribuzione oraria è stata pianificata per un periodo di durata più lunga rispetto ai successivi, tenendo però in conto un inizio più lento e meno produttivo derivante dall'inesperienza del team. Data la fondamentale importanza dell'analisi dei requisiti, come primo processo di sviluppo, e delle norme di progetto, per iniziare ad'unificare e stabilire un "Way of Working", sono state allocate varie ore alla stesura della relativa documentazione. Inoltre data la necessità del cambio di strumento per la redazione dei documenti, sono state assegnate anche ore da programmatore al responsabile corrente, per la realizzazione di GitHub action e script per template typst.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -922,10 +507,48 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
 - Spiegazione:
 Come si può notare il consuntivo di questo sprint denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. Ciò tuttavia non esclude una possibile pianificazione ottimistica, per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica". 
 
-#pagebreak()
+== RTB - sprint.2
+- Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
+- Issues:\
+  -- Approvate quanto prodotto nello sprint.2;\
+  -- Revisionare quanto prodotto nello sprint.2;\
+  -- Realizzazione pagina github.io;\
+  -- Prima stesura del file "Piano di progetto";\
+  -- POC - Design e primo approccio;\
+  -- Prima stesura del file "Piano di qualifica";\
+  -- Seconda stesura del file "analisi dei requisiti";\
+  -- Prima stesura sezione 4 file "Norme di progetto".\
 
-=== sprint.2
-- Preventivo:
+- Task:\
+  -- Revisionare "Piano di qualifica";\
+  -- Prima stesure sezione 3 "Piano di progetto";\
+  -- struttura piano di qualifica;\
+  -- scrittura introduzione piano di qualifica;\
+  -- stesura qualita' architettura piano di qualifica;\
+  -- Revisione Piano di progetto.
+
+- Pianificazione:
+La pianificazione per questo sprint prevede una continuazione generale dei lavori di documentazione, ed un primo approccio all'ideazione e sviluppo del POC. L'esperienza acquisita dal primo sprint ci ha permesso di definire meglio il nostro piano di lavoro. Per ogni documento che ancora non ne possiede una, si pensa infatti di idearne e realizzarne innanzitutto una struttura, possibilmente solida ma flessibile. Si è inoltre concordato di continuare a lavorare con più impegno alle Norme di Progetto, così da chiarire maggiormente all'intenro del gruppo dubbi relativi allo sviluppo delle attività.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#2.png", height: auto, width: auto),
+  caption: [sprint.2]
+  )
+  
+)
+
+- Retrospettiva: 
+In questo secondo sprint si è iniziato a ragionare anche sul Design e ad una prima implementazione del POC. Si sono quindi assegnati i primi ruoli da programmatore mantenendo comunque un equlibrio stabile con gli altri incarichi e proseguendo con la stesura dei documenti. E' stata creata una pagina github.io per facilitare la visualizzazione della documentazione del progetto e del glossario. I componenti del gruppo a cui è stato affidato il ruolo di amministratore, si sono concentrati soprattuto sulla stesura di "Piano di progetto" e "Piano di qualifica".
+
+- Imprevisti incotrati e loro risoluzione:
+
+  + Problemi con il dataset fornito dall'azienda proponente, in quanto mancante di valutazioni esplicite necessarie al sistema di raccomandazione. 
+    
+    Risoluzione: creazione di ratings ad' hoc. Comunicazione verso il proponente. 
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -973,7 +596,7 @@ figure(
 
 Come si può notare, il preventivo di questo sprint indica un cambio di priorità verso la realizzazione di codice per il PoC. Come già fatto notare la pianificazione di questo sprint è stata realizzata con l'idea di prefissarne la durata ad una settimana. Tuttavia si confida in un aumento generale della produttività ora che il team ha avuto modo di allinearsi.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1030,10 +653,43 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
 - Spiegazione:
 Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. 
 
-#pagebreak()
+== RTB - sprint.3
+- Periodo: 2023/12/04-2023/12/11 (1 settimana)
+- Issues:\
+  -- Approvate quanto prodotto nello sprint.3;\
+  -- Revisionare quanto prodotto nello sprint.3;\
+  -- Continuazione del file "Piano di progetto";\
+  -- Completamento sezione 4 file "Norme di progetto";\
+  -- stesura nuove definizioni Glossario; \
+  -- Realizzare algoritmo per il POC; \
+  -- Iniziare interfaccia POC.
 
-=== sprint.3
-- Preventivo:
+- Task:\
+  -- Completamento prima stesura sezione 4 file "Analisi dei requisiti";\
+  -- Stesura verbale interno 2023/12/04;\
+  -- Stesura Verbale esterno 2023/12/06;\
+  -- Prima stesura sezione 2 file "Norme di progetto";\
+  -- Continuazione sezione 4 file "Analisi dei requisiti".
+
+- Pianificazione:
+Come ormai consuetudine, la pianificazione di questo sprint deriva da un meeting interno durante il quale il team ha analizzato quanto fatto recentemente. Ragionando sulla situazione attuale si è concordato di continuare con i lavori di documentazione e di iniziare con l'effettiva implementazione del POC focalizzandosi maggiormente su di essa.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#3.png", height: auto, width: auto),
+  caption: [sprint.3]
+  )
+  
+)
+
+- Retrospettiva:
+Durante questo terzo sprint, il team ha deciso di focalizzare più risorse verso lo sviluppo del PoC senza però tralasciare la documentazione di progetto. In particolare si sono fatti grandi progessi lato implementazione del prodotto. Progressi che sono stati condivisi con il proponente riscontrando approvazione generale. Per quanto riguarda la documentazione, sono state apportate migliorie generali ponendo più attenzione verso le "Norme di progetto".
+
+- Imprevisti incotrati e loro risoluzione:
+nd.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1081,7 +737,7 @@ figure(
 - Spiegazione:
 La pianificazione per questo sprint segue la strategia adottata anche per il precedente, dando più peso alla continuazione dei lavori per l'implementazione del PoC che alla documentazione.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1138,10 +794,45 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
 - Spiegazione:
 Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. Per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica".
 
-#pagebreak()
+== RTB - sprint.4
+- Periodo: 2023/12/11-2023/12/18 (1 settimana)
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.4;\
+  -- Revisionare quanto prodotto nello sprint.4;\
+  -- Documentazione;\
+  -- POC - completamento prima versione.\
 
-=== sprint.4
-- Preventivo:
+- Task:\
+  -- Continuazione stesura del documento "Norme di Progetto";\
+  -- Continuazione stesura del documento "Analisi dei Requisiti";\
+  -- Continuazione stesura del documento "Glossario";\
+  -- Continuazione stesura del documento "Piano di Progetto";\
+  -- Riadattamento verbali interni a nuova struttura;\
+  -- Stesura verbale interno del 2023/12/11.\
+
+- Pianificazione:
+La pianificazione per questo sprint prevede la conclusione di una prima versione del PoC. Si pianifica inoltre un avanzamento generale dei lavori di documentazione che procedono in modo regolare.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#4.png", height: auto, width: auto),
+  caption: [sprint.4]
+  )
+  
+)
+
+- Retrospettiva:
+Durante il quarto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e dell' "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin in data 2023/12/15 relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
+È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prima versione stabile.
+
+- Imprevisti incotrati e loro risoluzione: 
+
+  + Durante il seguente sprint si è incontrato un problema che riguardava il dataset fornito dall'azienda proponente e la creazione del relativo database. Gli imprevisti sono stati causati da una mole elevati di dati e dalla presenza di molteplici errori di formattazione. 
+
+    Risoluzione: Il tutto è stato risolto con la creazione di svariati script che sono andati a rimuovere i record non corretti, tuttavia è stato impegato più tempo del previsto per completare questa attività.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1189,7 +880,7 @@ figure(
 - Spiegazione:
 Il preventivo per questo sprint ridistribuisce il focus del team in modo più equo. Dopo due sprint incentrati sui lavori del PoC si stima infatti di essere prossiami ad un suo primo completamento.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1246,11 +937,45 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
 - Spiegazione:
 Il consuntivo di questo sprint denota una leggera variazione nei costi, con una spesa leggermente superiore rispetto al preventivo. Tuttavia, è incoraggiante notare che il valore di SPI sia ritornato ad 1. Questo indica che, nonostante la variazione nei costi, il nostro progresso è allineato con la pianificazione temporale prevista. 
 
-#pagebreak()
+== RTB - sprint.5
+- Periodo: 2023/12/18-2023/12/27 (1 settimana e 5 giorni)
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.5;\
+  -- Revisionare quanto prodotto nello sprint.5;\
+  -- Documentazione.\
 
+- Task:\
+  -- Continuazione stesura del documento "Norme di Progetto";\
+  -- Continuazione stesura del documento "Analisi dei Requisiti";\
+  -- Continuazione stesura del documento "Glossario";\
+  -- Continuazione stesura del documento "Piano di Progetto";\
+  -- Continuazione stesura del documento "Piano di Qualifica";\
+  -- Stesura verbale interno del 2023/12/18;\
+  -- Revisione verbale interno del 2023/12/18;\
+  -- Stesura verbale esterno del 2023/12/19.\
 
-=== sprint.5
-- Preventivo:
+- Pianificazione:
+La pianificazione per questo sprint prevede un maggiore focus sui lavori utili alla documentazione. Durante lo scorso periodo è infatti stata conclusa una prima versione del PoC (sempre comunque migliorabile). Si pianificano sforzi utili alla ristrutturazione del documento di AdR in seguito al meeting con il #p.cardin ed ingenerale sul avanzamento dei documenti. Durante il regolare meeting si è inoltre concordato di fissare un incontro con il proponente per esporre quanto fatto per il PoC. Dato l'avvicinarsi delle festività natalizie si è concordato di prolungare lo sprint di 3 giorni così da permetterne una chiusura regolare.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#5.png", height: auto, width: auto),
+  caption: [sprint.5]
+  )
+  
+)
+
+- Retrospettiva:
+
+Durante il quinto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto", del "Piano di Qualifica" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". \ 
+Lo sprint è iniziato, come siamo sempre stati abituati a fare, con un meeting interno per discutere quanto di buono o non buono è stato fatto durante lo scorso sprint e per discutere su come procedere per il periodo prossimo. Il focus dello sprint numero cinque è stato l'avanzamento di tutti i documenti per riuscire ad arrivare ad il loro completamento, come da preventivo riguardanete il seguente periodo. Grande attenzione è stata posta sull'Analisi dei Requisiti, in quanto, a termine dello scorso sprint di progetto, il gruppo aveva partecipato ad un meeting esterno con il  Professor Cardin, il quale aveva sottolineato l'importanza di arricchire il documento e cercare di andare più nel dettaglio riguardo la descrizione dei vari casi d'uso. E' inoltre continuata la stesura incrementale degli altri documenti di progetto. \
+In data 2023/12/19 l'intero gruppo ha partecipato ad un meeting con l'azienda proponente, nel quale è stato esposto quanto svolto per il POC attraverso un breve showcase delle funzionalita e usi. Il nostro mentore è rimasto soddisfatto del lavoro svolto e ci ha dato consigli relativi a migliorie in vista poi del continuo sviluppo dopo questo primo periodo (RTB).
+
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1298,7 +1023,7 @@ figure(
 - Spiegazione:
 Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse del team verranno impiegate per lo più sulla documentazione per arrivare a suo completamento e verifica. In particolare si stimano delle ore utili all'attività di analisi dei requisiti, in seguito al colloquio con il #p.cardin.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1353,12 +1078,50 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
 )
 
 - Spiegazione:
-Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate.  
+Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate.
 
-#pagebreak()
+== RTB - sprint.6
+- Periodo: 2023/12/28-2024/01/07 (1 settimana e 3 giorni)
 
-=== sprint.6
-- Preventivo:
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.6;\
+  -- Revisionare quanto prodotto nello sprint.6;\
+  -- Documentazione.\
+
+- Task:\
+  -- Continuazione stesura del documento "Norme di Progetto";\
+  -- Continuazione stesura del documento "Analisi dei Requisiti";\
+  -- Continuazione stesura del documento "Glossario";\
+  -- Continuazione stesura del documento "Piano di Progetto";\
+  -- Continuazione stesura del documento "Piano di Qualifica";\
+  -- Stesura verbale interno del 2024/01/01;\
+  -- Revisione verbale interno del 2024/01/01.\
+
+- Sintesi:
+La pianificazione per questo sprint è avvenuta principalmente in modalità asincrona, senza la presenza di un vero e proprio meeting interno. Il gruppo si è organizzato utilizzando telegram e dividendo i vari compiti regolarmente. La presenza delle festività, e l'avvicinarsi della sessione invernale hanno influito molto sul organizzazione generale del gruppo, ruoli e attività. Prevedendo un calo della produttività, si è concordato di proseguire con i lavori utili alla documentazione, per riorganizzarsi meglio successivamente.
+
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#6.png", height: auto, width: auto),
+  caption: [sprint.6]
+  )
+  
+)
+
+- Retrospettiva:
+Questo sprint di progetto è sicuramente etichettabile come il più "roccambolesco" fino ad ora.
+Durante questo periodo i componenti più disponibili si sono divisi, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto.
+A meta' sprint il gruppo si è, in parte, riorganizzato attreverso un meeting interno asincrono. Il focus dello sprint numero sei è stato l'avanzamento di tutti i documenti in previsone della prima sprint di progetto(RTB).\
+
+- Imprevisti incotrati e loro risoluzione: 
+
+  +  Anche se un calo da questo punto di vista era stato previsto, l'inzio delle vacanze e l'avvicinarsi della sessione invernale di esami, non ha permesso al team di esprimere la stessa produttività caratterizante gli altri sprint. Inoltre l'indisponibilità di alcuni membri del gruppo (dovuta a cause esterne, come impegni o malattia), ha inferito ancor più sotto questo aspetto.
+
+    Risoluzione: La distribuzione delle attività previste è variata, cercando di portare avanti i lavori di documentazione il più possibile rispetto a quanto preventivato.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1406,7 +1169,7 @@ figure(
 - Spiegazione:
 Data la presenza delle festività invernali, sono state preventivate meno ore rispetto alla consuetudine. Si è inoltre concordato di stabilire una durata più lunga, in modo dà, tolti i giorni festivi, dare più tempo a chi di dovere di svolgere i propri compiti stabiliti in precedenza.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1463,10 +1226,46 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
 - Spiegazione:
 Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. Per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica".
 
-#pagebreak()
+== RTB - sprint.7
+- Periodo: 2024/01/08 - 2024/01/15
 
-=== sprint.7
-- Preventivo:
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.7;\
+  -- Revisionare quanto prodotto nello sprint.7;\
+  -- Documentazione.\
+
+- Task:
+
+  -- Continuazione stesura del file "Analisi dei Requisiti";\
+  -- Continuazione stesura del file "Piano di Progetto";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Continuazione stesura del file "Norme di Progetto";\
+  -- Continuazione stesura del file "Glossario";\
+  -- Stesura verbale interno del 2024/01/08;\
+  -- Revisione verbale interno del 2024/01/08.\
+
+- Sintesi:
+Rispetto a quanto accaduto per il periodo precedente la pianificazione di questo sprint è avvenuta regolarmente. Si è concordato di concentrare gli sforzi sulla documentazione, in modo da avvicinarsi così alla prima revisione di progetto. Dati gli impegni accademici si è comunque cercato di ragionare in modo oggettivo, considerando le disponibilità di tutti ed evitando di ricadere in una pianificazione ottimistica.
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#7.png", height: auto, width: auto),
+  caption: [sprint.7]
+  )
+  
+)
+
+
+- Retrospettiva:
+Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
+In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in base alle differenti disponibilità, cercando comunque di portare avanti il progetto il più possibile. In periodi di questo tipo inoltre la collaborazione tra membri si è rivelata essenziale. Principalemente sono stati migliorati i vari documenti, aggiornando quelli che necessitano di un aggironamento periodico come il Piano di Progetto.
+
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1514,7 +1313,7 @@ figure(
 - Spiegazione:
 A seguito dello slittamento dell'apertura della finestra di candidatura per la prima revisione e del calo di produttività registrato nello scorso sprint, si stimano ancora molte ore utili al completamento e miglioria della documentazione di progetto.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1569,13 +1368,44 @@ A seguito dello slittamento dell'apertura della finestra di candidatura per la p
 )
 
 - Spiegazione:
-Il consuntivo di questo sprint denota una leggera variazione nei costi, con una spesa leggermente superiore rispetto al preventivo. Tuttavia, è incoraggiante notare che il valore di SPI sia ritornato ad 1. Questo indica che, nonostante la variazione nei costi, il nostro progresso è allineato con la pianificazione temporale prevista. 
+Il consuntivo di questo sprint denota una leggera variazione nei costi, con una spesa leggermente superiore rispetto al preventivo. Tuttavia, è incoraggiante notare che il valore di SPI sia ritornato ad 1. Questo indica che, nonostante la variazione nei costi, il nostro progresso è allineato con la pianificazione temporale prevista.
 
-#pagebreak()
+== RTB - sprint.8
+- Periodo: 2024/01/16 - 2024/01/25
 
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.8;\
+  -- Revisionare quanto prodotto nello sprint.8;\
+  -- Documentazione.\
 
-=== sprint.8
-- Preventivo:
+- Task:\
+  -- Continuazione stesura del file "Analisi dei Requisiti";\
+  -- Continuazione stesura del file "Norme di Progetto";\
+  -- Continuazione stesura del file "Piano di Progetto";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Continuazione stesura del file "Glossario".\
+
+- Sintesi:
+Questo sprint si pianifica essere l'ultimo prima dell'effettiva candidatura alla revisone di RTB (alla sua prima parte). Si prevedeno quindi molte ore utili al lavoro di verifica, e rifinitura. Alcuni componenti si concentreranno maggiormente sugli artefatti in esame durante la prima parte della revisione (AdR e PoC). Altri sulla preparazione del materiale utile alla presentazione. Il tutto senza tralasciare l'aggiornamento dei documenti che ne necessitano periodicamente.
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
+  caption: [sprint.8]
+  )
+  
+)
+
+- Retrospettiva:
+
+Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
+In questo periodo i componenti del gruppo si sono dunque suddivisi il lavoro in base alle differenti disponibilità, cercando comunque di portare avanti il progetto il più possibile. Come da programma, principalemente sono stati esaminati gli artefatti utili alla prima parte della revisione senza tralasciare quelli che necessitano di un aggironamento periodico. Alla fine dello sprint il gruppo ha comunicato in via ufficiosa la propria candidatura alla prima parte della revisione di RTB.
+
+- Imprevisti incotrati e loro risoluzione: 
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1623,7 +1453,7 @@ figure(
 - Spiegazione:
 Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono state quindi preventivate ore utili alla verifica e miglioramento dei documenti, e alla preparazione del materiale necessario alla prima parte della revisione.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1632,7 +1462,7 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
   columns: (auto,)*7,
   align: center,
   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
- [Baggio M.], [], [], [], [2], [3], [],
+  [Baggio M.], [], [], [], [2], [3], [],
   [Bomben F.], [], [], [], [1], [3], [],
   [Carraro A.], [], [2], [], [], [2], [],
   [Favaron R.], [], [], [], [], [4], [],
@@ -1680,10 +1510,42 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
 - Spiegazione:
 Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. I valori registrati rientrano comunque nei limiti imposti dal team (per una visione più completa si rimanda al documento "Piano di Qualifica").
 
-#pagebreak()
+== RTB - sprint.9
+- Periodo: 2024/01/26 - 2024/02/02
 
-=== sprint.9
-- Preventivo:
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.9;\
+  -- Revisionare quanto prodotto nello sprint.9;\
+  -- Documentazione.\
+
+- Task:\
+  -- Continuazione stesura del file "Glossario";\
+  -- Aggiunta firme aziendale ai verbali esterni;\
+  -- Conclusione stesura del file "Analisi dei requisiti";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Presentazione RTB prof Cardin.\
+
+- Sintesi:
+La pianificazione per questo sprint prevede un calo generale della produttività in quanto nel corso del suo svolgimento il team affronterà la prima parte di revisione. Inoltre, come per quanto vale per il precedente periodo, la concomitanza di alcuni degli impegni accademici già più volte citati, influirà sicuramente negativamente sugli avanzamenti utili al progetto. Il gruppo ha concordato sul impegnarsi nel fare in modo che queste influenze non vadiano ad intaccare sulla qualità di quanto prodotto, ma piuttosto sulla quantità.
+Inoltre gli sforzi utili alla prima revisione di progetto sono pressocchè utlimati.
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#9.png", height: auto, width: auto),
+  caption: [sprint.9]
+  )
+  
+)
+
+- Retrospettiva:
+Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In generale il team si è concentrato sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica.
+
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1731,7 +1593,7 @@ figure(
 - Spiegazione:
 La pianificazione per questo sprint segue la filosfia adottata per il precedente periodo. Sono state quindi preventivate ore utili alla verifica e miglioramento dei documenti, e alla preparazione del materiale necessario alla prima parte della revisione.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1802,11 +1664,44 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
 - Spiegazione:
 L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto preventivato e uso di più risorse monetarie rispetto a quanto previsto. Nello specifico dopo aver sostenuto la prima parte di revisone con il #p.cardin si è concordato di utilizzare alcune risorse per rivedere le criticità e problematiche sorte dopo e durante il colloquio.
 
+== RTB - sprint.10
+- Periodo: 2024/02/03 - 2024/02/12
 
-#pagebreak()
+- Issues:\
+  -- Approvare quanto prodotto nello sprint.10;\
+  -- Revisionare quanto prodotto nello sprint.10;\
+  -- Documentazione.\
 
-=== sprint.10
-- Preventivo:
+- Task:\
+  -- Continuazione stesura del file "Norme di Progetto";\
+  -- Continuazione stesura del file "Piano di Qualifica";\
+  -- Continuazione stesura del file "Piano di Progetto";\
+  -- Creazione template "letters.typ";\
+  -- Stesura del file "Verbale interno 05/02/2024".\
+
+- Sintesi:
+Questo sprint si pianifica essere l'ultimo utile al periodo di RTB. Dopo aver infatti aggiornato e verificato i documenti il gruppo procederà con la candidatura alla seconda parte della revisone. Inoltre alcune risorse saranno impiegate per la realizzazione della lettere di candidatura.
+Come per quanto detto per il precedente periodo, si stimano meno ore lavorative, in quanto lo stato dei documenti rientra nelle aspettative di quanto concordato tra i vari membri.
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#10.png", height: auto, width: auto),
+  caption: [sprint.10]
+  )
+  
+)
+
+
+- Retrospettiva:
+
+Durante lo sprint il team si è concentrato generalmente sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica. Nonostante gli sforzi il gruppo pensa ancora sia necessario apportare alcuni miglioramenti prima di procedere alla candidatura, in particolare al glossario ed alla presentazione del repository. Ciò non dovrebbe comunque influire troppo sulle tempistiche, si è infatti concordato di apportare questi miglioramenti nel arco dei prossimi giorni per procedere alla candidatura entro la metà del mese.
+
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1855,7 +1750,7 @@ figure(
 Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento della documentazione in vista della seconda parte della revisione di RTB. Come già menzionato il gruppo ritiene questo periodo l'ultimo utile alla revisione. 
 
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1926,10 +1821,44 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 - Spiegazione:
 Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di SPI registrato indica un ritardo, che riteniamo sia dovuto all'accumularsi delle situazioni createsi nei precedenti sprint, ed ad una pianificazione troppo ottimistica. Gli sforzi previsti si sono rivelati non essere sufficienti per portare l'avanzamento del progetto al stato che ci eravamo prefissati. Prevediamo infatti ancora alcune giornate di lavoro prima della candidatuara della seconda parte della revisione di RTB, ciò per rispettare il livello di qualità con il quale il team intende presentarsi.
 
-#pagebreak()
+== RTB - sprint.11
+- Periodo: 2024/02/13 - 2024/02/18 
 
-=== sprint.11
-- Preventivo:
+- Issues:\
+  -- Correzioni documenti RTB;\
+  -- Revisione e Approvazione documenti RTB;\
+  -- Preparazione valutazione RTB con prof. Vardanega\
+
+- Task:\
+  -- Correzioni "Analisi dei requisiti";\
+  -- Verifica e Approvazione "Glossario";\
+  -- Verifica e Approvazione "Norme di Progetto";\
+  -- Verifica e Approvazione del file "Piano di Qualifica";\
+  -- Verifica e Approvazione del file "Piano di Progetto";\
+  -- Preparazione presentazione RTB con prof. Vardanega;\
+  -- Preparazione pagina vetrina GitHub.io;\
+  -- Stesura del file "Verbale interno 12/02/2024".\
+
+- Sintesi:
+Questo sprint si pianifica essere l'ultimo prima della revisone di RTB, il preventivo per questo periodo vede quindi come principali attività lavori utili alla "restaurazione" di tutti i documenti a seguito della revisone. Inoltre si pianifica di iniziare a pensare e concepire delle idee più concrete riguardo il design e la progettazione di un MVP. Si confida in oltre in un incremento della produttività una volta superato il periodo corrente, considerabile il più impegnativo.
+
+- Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#11.png", height: 250pt, width: auto),
+  caption: [sprint.11]
+  )
+  
+)
+#pagebreak()
+- Retrospettiva:
+Durante lo spirnt il gruppo si e' concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
+Svolta la seconda parte di RTB il gruppo dovra' parallelamente apportare le migliorie e iniziare il design e miglioramento del prodotto finale.
+
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== Preventivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -1977,7 +1906,7 @@ figure(
 - Spiegazione: 
 Il preventivo per questo sprint prevede ore utili alla conclusione della documentazione alla prime versione in vista della seconda parte della revisione di RTB.
 
-- Consuntivo:
+=== Consuntivo:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -2048,12 +1977,87 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
 - Spiegazione:
 Durante questo sprint il gruppo si e' concentrato molto sul preparare i documenti per la secondo parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io.
 
+== PB - sprint.12
+- Periodo: 2024/02/19 - 2024/02/27 //TBD
 
-#pagebreak()
+- Issues:\
 
-=== Globale
+- Task:
 
-- Preventivo Candidatura:
+- Sintesi:
+La pianificazione per questo sprint segue la filosofia del precedente, si prevedono infatti ancora ore utili ai lavori di "ristrutturazione" dei documenti esaminati durante la prima revisione. Inoltre verranno utilizzate più risorse per le attività di progettazione, così da progredire effettivamente con il design e successivo sviluppo di un MVP.
+
+- Gantt view:
+/*
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
+  caption: [sprint.9]
+  )
+  
+)
+*/
+
+- Retrospettiva:
+nd.
+
+- Imprevisti incotrati e loro risoluzione: 
+nd.
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [3], [],
+  [Bomben F.], [4], [], [], [], [1], [],
+  [Carraro A.], [], [2], [], [3], [], [],
+  [Favaron R.], [], [3], [], [], [1], [],
+  [Pandolfo M.], [], [], [], [], [], [4],
+  [Passarella A.], [], [], [], [], [], [4],
+  [Rosson L.], [], [], [], [], [2], [2],
+)
+])
+#align(center)[Tabella 60: preventivo orario sprint.12.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [4], [5], [0], [3], [7], [10],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€125,00], [€0,00], [€60,00], [€105,00], [€250,00],
+  [Totale], [], [], [], [], [], [€660,00], 
+  [Bilancio], [], [], [], [], [], [*€6785,00*],
+)
+])
+#align(center)[Tabella 61: preventivo costi sprint.12.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.12]
+  )
+  
+)
+
+- Spiegazione:
+Il preventivo per questo sprint segue la filosofia adottata per il precedente, si prevedono ancora ore utili al miglioramente e aggiornamento generale della documentazione, e in maggior numero, ore utili alla progettazione.
+
+== Globale
+
+- Premessa:
+La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. I preventivi di progetto sono aggiornati seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitare i preventivi, come avviene per la pianificazione, a due sprint nel futuro, in modo che risultino realistici ed affidabili.
+
+=== Preventivo Candidatura
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -2073,7 +2077,7 @@ Durante questo sprint il gruppo si e' concentrato molto sul preparare i document
 ])
 #align(center)[Tabella 54: Preventivo candidatura.]
 
-- Consuntivo Effettivo:
+=== Consuntivo Effettivo
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -2133,403 +2137,6 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 
 - Spiegazione:
 Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024. La decisione di spostare la data di consegna è stata influenzata dall'andamento del progetto e dai ritardi accumulati durante e in seguito al periodo di festività invernali. Durante questo periodo, la produttività del gruppo è diminuita, causando ritardi nell'avanzamento delle attività. Di conseguenza, è stato necessario posticipare la data di consegna per assicurare la qualità e il completamento del lavoro entro i nuovi termini previsti.
-
-== PB
-
-=== sprint.11
-- Preventivo:
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [3], [], [], [], [],
-  [Bomben F.], [], [1], [], [2], [], [],
-  [Carraro A.], [3], [], [], [], [2], [],
-  [Favaron R.], [], [], [], [3], [], [],
-  [Pandolfo M.], [], [3], [], [1], [], [],
-  [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [], [], [2], [2], [],
-)
-])
-#align(center)[Tabella 58: preventivo orario sprint.11.]
-
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [7], [0], [8], [4], [4],
-  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€175,00], [€0,00], [€160,00], [€60,00], [€100,00],
-  [Totale], [], [], [], [], [], [€585,00], 
-  [Bilancio], [], [], [], [], [], [*€7445,00*],
-)
-])
-#align(center)[Tabella 59: preventivo costi sprint.11.]
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#11.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.11]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo sprint prevede ore utili alla correzione dei vari documenti in seguito alla revisione di RTB. Sono quindi state allocate ore utili alla "ristrutturazione" e necessaria verifica dei vari artefatti. Inoltri si prevedono le prime ore utili all'attività di progettazione. L'idea è quella di non ricadere in "tempi morti", ed anzi ora che molti impegni sono passati, di aumentare la produttività; sempre senza andare a discapito della qualità di quanto prodotto.
-
-=== sprint.12
-- Preventivo:
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [3], [],
-  [Bomben F.], [4], [], [], [], [1], [],
-  [Carraro A.], [], [2], [], [3], [], [],
-  [Favaron R.], [], [3], [], [], [1], [],
-  [Pandolfo M.], [], [], [], [], [], [4],
-  [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [], [], [], [2], [2],
-)
-])
-#align(center)[Tabella 60: preventivo orario sprint.12.]
-
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [5], [0], [3], [7], [10],
-  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€120,00], [€125,00], [€0,00], [€60,00], [€105,00], [€250,00],
-  [Totale], [], [], [], [], [], [€660,00], 
-  [Bilancio], [], [], [], [], [], [*€6785,00*],
-)
-])
-#align(center)[Tabella 61: preventivo costi sprint.12.]
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.12]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo sprint segue la filosofia adottata per il precedente, si prevedono ancora ore utili al miglioramente e aggiornamento generale della documentazione, e in maggior numero, ore utili alla progettazione.
-
-// === sprint.10
-// - Preventivo:
-// #align(center, text(0.85em)[
-// #table(
-//   fill: (col, row) => 
-//     if row == 0 and col == 0 { rgb("#c33435") }
-//     else if calc.odd(row) { luma(230) } else { white },
-//   columns: (auto,)*7,
-//   align: center,
-//   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-//   [Baggio M.], [4], [2], [], [], [], [],
-//   [Bomben F.], [], [], [], [], [1], [5],
-//   [Carraro A.], [], [2], [], [1], [], [],
-//   [Favaron R.], [], [], [], [], [2], [3],
-//   [Pandolfo M.], [], [], [], [], [2], [3],
-//   [Passarella A.], [], [], [2], [], [4], [],
-//   [Rosson L.], [], [], [], [], [1], [5],
-// )
-// ])
-
-// #align(center, text(0.85em)[
-// #table(
-//   fill: (col, row) => 
-//     if row == 0 and col == 0 { rgb("#c33435") }
-//     else if calc.odd(row) { luma(230) } else { white },
-//   columns: (auto,)*7,
-//   align: center,
-//   [*SPRINT 8*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-//   [Totale Ore], [4], [4], [2], [1], [10], [16],
-//   [Costo Orario], [€30,00], [€25,00], [€25,00], [€20,00], [€15,00], [€15,00],
-//   [Costo], [€120,00], [€100,00], [€50,00], [€20,00], [€150,00], [€240,00],
-//   [Totale], [], [], [], [], [], [*€240,00*], 
-
-// )
-// ])
-
-// #align(left,
-// figure(
-//   image("/imgs/PdP/tables/preventivi/sprint#9.png", height: auto, width: auto),
-//   caption: [preventivi/sprint.9]
-//   )
-  
-// )
-
-
-// #align(left,
-// figure(
-//   image("/imgs/PdP/graphs/preventivi/sprint#9.png", height: 20%, width: auto),
-//   caption: [preventivi/sprint.9]
-//   )
-  
-// )
-
-// - Spiegazione:
-// In questo sprint si prevede un avanzamento stabile dei lavori di progettazione, seguiti parallelamente dalle prime attività di codifica che ne verifichino la solidità nel concreto.
-
-// - Consuntivo:
-// nd.
-
-// === sprint.11
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#10.png", height: auto, width: auto),
-  caption: [preventivi/sprint.10]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#10.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.10]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo sprint prevede un continuo sui lavori di progettazione e codifica, anche a seguito di una nuova plausibile consulenza con il #p.cardin che ne evidenzi indirettamente difetti.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.11
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#11.png", height: auto, width: auto),
-  caption: [preventivi/sprint.11]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#11.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.11]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo sprint segue la strategia del precedente.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.12
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#12.png", height: auto, width: auto),
-  caption: [preventivi/sprint.12]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.12]
-  )
-  
-)
-
-- Spiegazione:
-In questo sprint si prevede un accentuamento delle attività relative alla codifica.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.13
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#13.png", height: auto, width: auto),
-  caption: [preventivi/sprint.7]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#13.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.13]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo sprint prevede un continuo sui lavori di codifica, e ritorno sulle attività di progettazione a seguito di una nuova plausibile consulenza con il #p.cardin che ne evidenzi indirettamente difetti.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.14
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#14.png", height: auto, width: auto),
-  caption: [preventivi/sprint.14]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#14.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.14]
-  )
-  
-)
-
-- Spiegazione:
-In questo sprint le attività di codifica vengono incrementate dando la priorità alla realizzazione del MVP.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.15
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#15.png", height: auto, width: auto),
-  caption: [preventivi/sprint.15]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#15.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.15]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo sprint indica un aumento alle attività di verifica del progetto, in quanto si pianifica essere prossimo alla conclusione della fase di PB.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.16
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#16.png", height: auto, width: auto),
-  caption: [preventivi/sprint.16]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#16.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.16]
-  )
-  
-)
-
-- Spiegazione:
-Questo sprint si pianifica essere l'ultimo della fase di PB. Le attività a cui si stima di dare una maggiore importanza sono quelle di verifica, per garantire correttezza, uniformità e qualità, e quelle di codifica, per la risoluzione di errori e ultimi miglioramenti al codice.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.17
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#17.png", height: auto, width: auto),
-  caption: [preventivi/sprint.17]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#17.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.17]
-  )
-  
-)
-
-- Spiegazione:
-In questo primo sprint della fase di CA, si prevedono nuovi lavori di codifica e correzione in base a quanto riscontrato nella revisone di PB.
-
-- Consuntivo:
-nd.
-*/
-
-// === sprint.18
-/*
-- Preventivo:
-#align(left,
-figure(
-  image("/imgs/PdP/tables/preventivi/sprint#18.png", height: auto, width: auto),
-  caption: [preventivi/sprint.18]
-  )
-  
-)
-
-#align(left,
-figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#18.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.18]
-  )
-  
-)
-
-- Spiegazione:
-Il preventivo per questo periodo segue la strategia del precedente. Si pianifica di apportare migliorie e potenzialmente, nuove feature al codice.
-
-- Consuntivo:
-nd.
-*/
-
-
-
-//sp5
 
 #pagebreak()
 
