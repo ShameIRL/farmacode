@@ -549,7 +549,7 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
 
 #pagebreak()
 
-= Controllo di qualità
+= Strategia di test
 
 == Test
 Questa sezione del documento è dedicata al testing, parte fondamentale per la correttezza e il rilascio del prodotto finale. La strategia adottata dal nostro gruppo per la fase di testing prevede quattro specifiche tipologie:
@@ -751,7 +751,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
 
 #pagebreak()
 
-= Controllo delle metriche
+= Cruscotto di valutazione della qualità
 *Premessa:* \
 Durante ogni sprint del progetto, il controllo delle metriche viene eseguito utilizzando una modalità Just-in-Time (JiT). Ciò significa che l'analisi delle prestazioni, la valutazione dei progressi e altre metriche pertinenti vengono eseguite in tempo reale, immediatamente dopo la fase sviluppo nota come sprint. Questa approccio JiT consente al team di ottenere un quadro attuale e dinamico delle prestazioni e dell'avanzamento del progetto, consentendo una rapida identificazione di eventuali problemi o aree di miglioramento.\
 
