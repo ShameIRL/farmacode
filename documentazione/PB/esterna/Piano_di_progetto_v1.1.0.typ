@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.2.0", "2024-02.23", p.bomben, "", "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
     "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
@@ -100,7 +101,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 - Rischi organizzativi interni e esterni (ROI/ROE)
 - Rischi tecnologici/software (RT)
 
-== Rischi Personali
+== Rischi Personali <rpersonali>
 
 #table(
   columns: (1fr),
@@ -170,7 +171,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 5: RP4 - Malattia o indisponibilità.]
 
-== Rischi organizzativi interni ed esterni
+== Rischi organizzativi interni ed esterni <rorganizzativi>
 
 === Interni
 
@@ -263,7 +264,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 10: ROE2 - Fornitura.]
 
-== Rischi tecnologici/software
+== Rischi tecnologici/software <rtecnologici>
 
 #table(
   columns: (1fr),
@@ -1954,20 +1955,6 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
 ])
 #align(center)[Tabella 53: consuntivo costi sprint.11.]
 
-// #grid(
-//   columns: (1fr, auto),
-//   rows: (auto),
-//   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#8.png", height: 30%, width: auto),
-//   table(
-//     fill: (col, row) => 
-//       if calc.odd(row) { luma(230) } else { white },
-//     columns: (auto,),
-//     align: center,
-//     [*Valore di SPI*],
-//     [0.97]
-//   )
-// )
-
 #grid(
   columns: (1fr, auto),
   rows: (auto),
@@ -1991,15 +1978,38 @@ Durante questo sprint il gruppo si e' concentrato molto sul preparare i document
 == PB - sprint.12
 - Periodo: 2024/02/19 - 2024/02/27 //TBD
 
-- Issues:\
-
-- Task:
+- Issues: \
+  -- Modifica e correzione dei documenti;\
+  -- Nuova scelta e implementazione tecnologica per API;\
+  -- Studio scleta dei design pattern.
+- Task:\
+  -- Miglioramento contenuti e modellazione "Analisi dei Requisiti";\
+  -- Sistemare, migliorare e ampliare i commenti delle metriche in "Piano di Qualifica";\
+  -- Sistemare la struttura del documento "Piano di Qualifica";\
+  -- Ragionare sull'utilizzo e l'implementazione dei design pattern;\
+  -- Stesura del Verbale interno del 2024/02/19;\
+  -- Rimozione numerazione indici in "Glossario";\
+  -- Sistemare e completare l'analisi dei rischi in "Piano di Progetto";\
+  -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
 - Gantt view:
 
 === Pianificazione
+Durante lo scorso periodo la milestone di RTB è stata conclusa, è stata quindi conclusa e revisionata tutta la documentazione al versionamento v1.0.0.\
+Dopo la revisione con i committenti ci è stato consegnato un documento con diversi feedback (negativi e positivi) rispetto alla documentazione.\
+In questo sprint si è quindi deciso di migliorare tutte le caratterische migliorabili della documentazione, come la riscrittura di alcuni capitoli e un miglioramento alla struttura generale di qualche documento.
+I documenti interessati riguardano:
+- Analisi dei Requisiti: prevediamo di migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi;\
+- Glossario: abbiamo previsto di eliminare la numerazione degli indici;\
+- Piano di Progetto: Completare e migliorare l'analisi dei rischi, che risultava scarna e incompleta, in dettaglio la mancanza di mitigazione dei rischi;\
+- Piano di Qualifica: Migliorare la struttura generale del documento e anche il suo contenuto.
+Oltre ai documenti abbiamo pianificato di modificare la tecnologia scelta per l'API sotto consiglio del #p.cardin, per evitare l'implementazione di eccessive "strutture (QUI E' DA CAMBIARE) tecnologiche.\
+Come ultimo obiettivo che ci siamo prefissati di completare è, lo studio e la scelta di design pattern per il nostro prodotto.
 
 === Rischi attesi
+Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
+- #link(<rtecnologici>)[RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso]. (AGGIUNGERE ALTRO?)
+Abbiamo preventivato questo rischio specifico a causa del cambio tecnologico per l'implementazione dell'API.
 
 
 === Preventivo:
@@ -2013,11 +2023,11 @@ Durante questo sprint il gruppo si e' concentrato molto sul preparare i document
   [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Baggio M.], [], [], [], [], [3], [],
   [Bomben F.], [4], [], [], [], [1], [],
-  [Carraro A.], [], [2], [], [3], [], [],
-  [Favaron R.], [], [3], [], [], [1], [],
+  [Carraro A.], [], [2], [], [4], [], [],
+  [Favaron R.], [], [4], [], [2], [], [],
   [Pandolfo M.], [], [], [], [], [], [4],
   [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [], [], [], [2], [2],
+  [Rosson L.], [], [3], [], [], [3], [],
 )
 ])
 #align(center)[Tabella 60: preventivo orario sprint.12.]
@@ -2030,11 +2040,11 @@ Durante questo sprint il gruppo si e' concentrato molto sul preparare i document
   columns: (auto,)*7,
   align: center,
   [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [5], [0], [3], [7], [10],
+  [Totale Ore], [4], [9], [2], [4], [7], [8],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€120,00], [€125,00], [€0,00], [€60,00], [€105,00], [€250,00],
-  [Totale], [], [], [], [], [], [€660,00], 
-  [Bilancio], [], [], [], [], [], [*€6785,00*],
+  [Costo], [€120,00], [€225,00], [€30,00], [€80,00], [€105,00], [€200,00],
+  [Totale], [], [], [], [], [], [€760,00], 
+  [Bilancio], [], [], [], [], [], [*€7375,00*],
 )
 ])
 #align(center)[Tabella 61: preventivo costi sprint.12.]
@@ -2048,9 +2058,65 @@ figure(
 )
 
 - Spiegazione:
-Il preventivo per questo sprint segue la filosofia adottata per il precedente, si prevedono ancora ore utili al miglioramente e aggiornamento generale della documentazione, e in maggior numero, ore utili alla progettazione.
+Il preventivo di questo sprint è una diretta conseguenza del maggior tempo disponibile da parte del gruppo.
+Avendo concluso gli esami e il periodo di sessione i membri di Farmacode dovrebbero riuscire a lavorare maggiormente e in maniera più produttiva.\
+Oltretutto la prospettiva per questo sprint è sistemare la documentazione in base ai feedback ricevuti, e stato quindi abbastanza facile, quantificare il lavoro da svolegere, proprio grazie alla concretezza delle attività da fare.\
+Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori per la natura dei task assegnati.
 
 === Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [3 #green(-1)], [],
+  [Bomben F.], [4], [], [], [], [1], [],
+  [Carraro A.], [], [2 #red("+1")], [], [4 #green(-1)], [], [],
+  [Favaron R.], [], [4], [2], [], [], [],
+  [Pandolfo M.], [], [], [], [], [], [4],
+  [Passarella A.], [], [], [], [], [], [4],
+  [Rosson L.], [], [3 #red("+1")], [], [], [3 #green(-1)], [],
+)
+])
+#align(center)[Tabella 62: consuntivo orario sprint.12.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [4], [11], [2], [3], [5], [8],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [#red("€275,00")], [€30,00], [#green("€60,00")], [#green("€75,00")], [€200,00],
+  [Totale], [], [], [], [], [], [€760,00], 
+  [Bilancio], [], [], [], [], [], [*€7375,00*],
+)
+])
+#align(center)[Tabella 63: consuntivo costi sprint.12.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#12.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.12],
+  ),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [1]
+  )
+)
 
 === Rischi incontrati e mitigazioni
 
