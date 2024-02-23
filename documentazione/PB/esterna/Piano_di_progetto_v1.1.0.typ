@@ -8,9 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.3.0", "2024-02-21", p.carraro, "", "Sistemazione Analisi dei rischi",
-    "1.2.0", "2024-02-21", p.carraro, "", "Ristrutturazione documento",
-    "1.1.0", "2024-02-20", p.carraro, "", "Stesura sprint 11",
+    "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
+    "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
     "0.15.0", "2024-02-13", p.bomben, p.rosson, "Aggiornamento tabelle/immagini, elenco tabelle/immagini, aggiunte gantt",
     "0.14.0", "2024-02-09", p.rosson, p.bomben, "Stesura consuntivo sprint 10 aggiornamento sezione 'Globale', e stesura preventivi",
@@ -150,7 +149,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Instaurare un rapporto umano e sociale tra i membri del gruppo. Avere pratiche di risoluzione dei conflitti efficaci e veloci. Inotre il Responsabile ha il compito di intervenire e cercare di mediare, cercando di portare ad una risoluzione che ristabilisca il clima di lavoro positivo.],
   [*Rilevamento*], [Assenze alle riunioni interne o difficile reperibilita' ingiustificata, oltre ad un tono poco rispettoso o educato nelle comunicazioni interne.],
-  [*Piano di contingenza*], [Definire dei meeting nel quale esporre le varie divergenze e poi cercare di arrivare ad una soluzione di gruppo, trammite eventuali votazioni. Avviare una ipotetica comunicazione e discussione con il docente del corso. Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Definire dei meeting nel quale esporre le varie divergenze e poi cercare di arrivare ad una soluzione di gruppo tramite eventuali votazioni. Avviare una ipotetica comunicazione e discussione con il docente del corso. Conseguente adeguamento e ridistribuzione dei compiti.],)
 )
 #align(center)[Tabella 4: RP3 - Problemi di comunicazione e collaborazione.]
 
@@ -188,7 +187,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Pericolosità*], [Media],
   [*Precauzioni*], [Scelta di mezzi comunicativi "solidi" e pratici, sia per discussioni di tipo più generale e discorsivo con l'utilizzo di chat testuali e/o vocali, sia per gestire le varie attività da svolgere e il loro avanzamento nel tempo trammite strumenti come gli ITS e grafi di Gantt. Alto quantitativo di meeting interni, anche solo di tipo organizzativo.],
   [*Rilevamento*],[Frequenti assenze o limitata disponibilita' da parte di un membro del gruppo. Difficolta' nell'organizzare lavoro sincrono e riunioni interne],
-  [*Piano di contingenza*], [Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Conseguente adeguamento tramite comunicazioni asincrone e/o aggiornamenti per ogni membrotramite resoconti.],)
 )
 #align(center)[Tabella 6: ROI1 - Comunicativi e organizzativi.]
 
@@ -205,7 +204,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Scelta a monte di una metodologia già affermata nel settore con valori dimostrati.],
   [*Rilevamento*],[Generale confuzione nel lavoro individuale da svolgere dimostrata con comunicazioni interne.],
-  [*Piano di contingenza*], [Conseguente adeguamento e ridistribuzione dei compiti.],)
+  [*Piano di contingenza*], [Riassagnazione dei compiti in maniera più specifica tramite nuovo meeting di gruppo, in maniera da poter chiarire ogni dubbio.],)
 )
 #align(center)[Tabella 7: ROI2 - Scarsa definizione dei ruoli e delle responsabilità all'interno del team.]
 
@@ -279,7 +278,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Pericolosità*], [Media],
   [*Precauzioni*], [Studio a monte delle tecnologie e conseguente scelta ragionata delle stesse. Comunicazione con il proponente, che ricopre il ruolo di mentore, per discutere di eventuali dubbi e chiedere così consigli ad una figura che ha molta esperienza nel settore.],
   [*Rilevamento*],[Eccissivo rallentamento nel rilascio software.],
-  [*Piano di contingenza*], [Comunicazione con proponente per concordare misure di adattamento.],)
+  [*Piano di contingenza*], [Comunicazione con proponente per concordare misure di adattamento e studio di nuove scelte tecnologiche per il progetto.],)
 )
 #align(center)[Tabella 11: RT1 - Incompatibilità tra diverse tecnologie o componenti software.]
 
@@ -296,7 +295,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Pericolosità*], [Alta],
   [*Precauzioni*], [Scelta ponderata delle tecnologie. Costruire un ambiente flessibile ai cambiamenti. Comunicazione con il proponente, che ricopre il ruolo di mentore, per discutere di eventuali dubbi e chiedere così consigli ad una figura che ha molta esperienza nel settore.],
   [*Rilevamento*],[Eccissivo rallentamento nello sviluppo software.],
-  [*Piano di contingenza*], [Comunicazione con proponente e conseguente adeguamento.],)
+  [*Piano di contingenza*], [Comunicazione con proponente per concordare misure di adattamento e studio di nuove scelte tecnologiche per il progetto.],)
 )
 #align(center)[Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso.]
 
@@ -1864,7 +1863,7 @@ figure(
 )
 #pagebreak()
 - Retrospettiva:
-Durante lo spirnt il gruppo si e' concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
+Durante lo sprint il gruppo si è concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
 Svolta la seconda parte di RTB il gruppo dovra' parallelamente apportare le migliorie e iniziare il design e miglioramento del prodotto finale.
 
 - Imprevisti incotrati e loro risoluzione: 
@@ -1996,25 +1995,12 @@ Durante questo sprint il gruppo si e' concentrato molto sul preparare i document
 
 - Task:
 
-- Sintesi:
-La pianificazione per questo sprint segue la filosofia del precedente, si prevedono infatti ancora ore utili ai lavori di "ristrutturazione" dei documenti esaminati durante la prima revisione. Inoltre verranno utilizzate più risorse per le attività di progettazione, così da progredire effettivamente con il design e successivo sviluppo di un MVP.
-
 - Gantt view:
-/*
-#align(left,
-figure(
-  image("/imgs/gantt_views/sprint#8.png", height: auto, width: auto),
-  caption: [sprint.9]
-  )
-  
-)
-*/
 
-- Retrospettiva:
-nd.
+=== Pianificazione
 
-- Imprevisti incotrati e loro risoluzione: 
-nd.
+=== Rischi attesi
+
 
 === Preventivo:
 #align(center, text(0.85em)[
@@ -2063,6 +2049,12 @@ figure(
 
 - Spiegazione:
 Il preventivo per questo sprint segue la filosofia adottata per il precedente, si prevedono ancora ore utili al miglioramente e aggiornamento generale della documentazione, e in maggior numero, ore utili alla progettazione.
+
+=== Consunitvo:
+
+=== Rischi incontrati e mitigazioni
+
+=== Retrospettiva
 
 == Globale
 
