@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.2.0", "2024-02.23", p.bomben, "", "Stesura sprint 12",
+    "1.2.0", "2024-02.26", p.bomben, "", "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
     "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
