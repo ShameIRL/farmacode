@@ -1119,7 +1119,7 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 [11883],
 [12102],
 [12597],
-[12763],[]
+[12763],[13059]
 )
 ]
 #align(center)[Tabella 26: EAC da sprint 1 a 11]
@@ -1147,13 +1147,13 @@ figure(
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],[],[],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],[11],[12],
   [*EAC*], [12100], [11750], [11535], [11125],[10680],
 [11259],
 [11883],
 [12102],
 [12597],
-[12763],[],[]
+[12763],[13059],[13010]
 )
 ]
 #align(center)[Tabella 26: EAC da sprint 1 a 12]
