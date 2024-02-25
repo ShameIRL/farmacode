@@ -2119,8 +2119,14 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori p
 )
 
 === Rischi incontrati e mitigazioni
+Il rischio che avevamo preventivato di attendere non si è verificato. Non abbiamo avuto problemi di integrazione con la nuova tecnologia usata per l'API.\
+L difficoltà maggiore è stata riscontrata nel settare l'ambiente di sviluppo con Docker, il quale ha richiesto abbastanza risorse per cambiare e sistemare correttamente l'integrazione di questa nuova scelta tecnologica.
 
 === Retrospettiva
+Lo sprint\#12 è stato una ripresa generale da parte del gruppo per l'avanzamento del progetto.\
+La conclusione dei periodi più duri e difficili dettati dagli esami universitari e dalle revisioni con i committenti a riportato gli avanzamenti del prodotto in linea a quanto preventivato per questo sprint.\
+Lo sprint\#12 è costato esattamente quanto preventivato, anche se non con le stesse ore preventivate, in particolare sono risultate essere necessarie 3 ore in meno tra verificatore e amministratore, ma due ore in più per il ruolo di analista.\
+Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretutto, l'andamento positivo e maggiormente produttivo fa ben sperare per i successivi sprint in maniera da recuperare il leggero ritardo creatosi precedentemente.  
 
 == Globale
 
