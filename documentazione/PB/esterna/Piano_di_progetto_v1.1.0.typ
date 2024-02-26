@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.2.0", "2024-02.26", p.bomben, "", "Stesura sprint 12",
+    "1.2.0", "2024-02.26", p.bomben, p.rosson, "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
     "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
@@ -1857,15 +1857,15 @@ Questo sprint si pianifica essere l'ultimo prima della revisone di RTB, il preve
 - Gantt view:
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#11.png", height: 250pt, width: auto),
+  image("/imgs/gantt_views/sprint#11.png", height: 230pt, width: auto),
   caption: [sprint.11]
   )
   
 )
-#pagebreak()
+
 - Retrospettiva:
 Durante lo sprint il gruppo si è concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
-Svolta la seconda parte di RTB il gruppo dovra' parallelamente apportare le migliorie e iniziare il design e miglioramento del prodotto finale.
+Svolta la seconda parte di RTB il gruppo ha parallelamente iniziato ad apportare le migliorie suggerite alla documentazione e ad ideare e studiare il design del prodotto finale.
 
 - Imprevisti incotrati e loro risoluzione: 
 nd.
@@ -1916,7 +1916,7 @@ figure(
 )
 
 - Spiegazione: 
-Il preventivo per questo sprint prevede ore utili alla conclusione della documentazione alla prime versione in vista della seconda parte della revisione di RTB.
+Il preventivo per questo sprint prevede ore utili alla conclusione della documentazione alla prima versione in vista della seconda parte della revisione di RTB. Inoltre si pianificano delle ore utili al primo vero e proprio approccio alla definizione di un design per il prodotto.
 
 === Consuntivo:
 #align(center, text(0.85em)[
@@ -1949,8 +1949,8 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
   [Totale Ore], [3], [9], [0], [9], [6], [4],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€90,00], [#red("€225,00")], [€0,00], [#red("€160,00")], [#red("€60,00")], [€100,00],
-  [Totale], [], [], [], [], [], [€635,00], 
-  [Bilancio], [], [], [], [], [], [*€7395,00*],
+  [Totale], [], [], [], [], [], [#red("€635,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€7395,00")],
 )
 ])
 #align(center)[Tabella 53: consuntivo costi sprint.11.]
@@ -1973,7 +1973,7 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
 )
 
 - Spiegazione:
-Durante questo sprint il gruppo si e' concentrato molto sul preparare i documenti per la secondo parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io.
+Durante questo sprint il gruppo si e'concentrato molto sul preparare i documenti per la seconda parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io. Come da preventivo una parte del gruppo, una volta svolta la revisione di progetto, ha iniziato i lavori di progettazione.
 
 == PB - sprint.12
 - Periodo: 2024/02/19 - 2024/02/27 //TBD
@@ -1995,21 +1995,21 @@ Durante questo sprint il gruppo si e' concentrato molto sul preparare i document
 - Gantt view:
 
 === Pianificazione
-Durante lo scorso periodo la milestone di RTB è stata conclusa, è stata quindi conclusa e revisionata tutta la documentazione al versionamento v1.0.0.\
-Dopo la revisione con i committenti ci è stato consegnato un documento con diversi feedback (negativi e positivi) rispetto alla documentazione.\
-In questo sprint si è quindi deciso di migliorare tutte le caratterische migliorabili della documentazione, come la riscrittura di alcuni capitoli e un miglioramento alla struttura generale di qualche documento.
+Durante lo scorso periodo la milestone di RTB è stata conclusa, è stata quindi completata e revisionata tutta la documentazione al versionamento v1.0.0.\
+Dopo la revisione con i committenti ci è stato consegnato un documento con diversi feedback (negativi e positivi) utili per poter migliorare sopratutto la documentazione.\
+In questo sprint si è quindi deciso di correggere e migliorare tutte le caratterische migliorabili della documentazione, come la riscrittura di alcuni capitoli e un miglioramento alla struttura generale di alcuni documenti.
 I documenti interessati riguardano:
-- Analisi dei Requisiti: prevediamo di migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi;\
-- Glossario: abbiamo previsto di eliminare la numerazione degli indici;\
-- Piano di Progetto: Completare e migliorare l'analisi dei rischi, che risultava scarna e incompleta, in dettaglio la mancanza di mitigazione dei rischi;\
-- Piano di Qualifica: Migliorare la struttura generale del documento e anche il suo contenuto.
-Oltre ai documenti abbiamo pianificato di modificare la tecnologia scelta per l'API sotto consiglio del #p.cardin, per evitare l'implementazione di eccessive "strutture (QUI E' DA CAMBIARE) tecnologiche.\
-Come ultimo obiettivo che ci siamo prefissati di completare è, lo studio e la scelta di design pattern per il nostro prodotto.
+- Analisi dei Requisiti: prevediamo di migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi apportando le correzioni suggerite ove necessario;\
+- Glossario: abbiamo previsto di eliminare la numerazione degli indici come suggeritoci;\
+- Piano di Progetto: Completare e migliorare l'analisi dei rischi, che risultava scarna e incompleta in dettaglio la mancanza di mitigazione dei rischi;\
+- Piano di Qualifica: Migliorare la struttura generale del documento e anche il suo contenuto, principalmente per quanto riguarda la sezione di cruscotto delle metriche.
+Oltre ai documenti abbiamo pianificato di cambiare la tecnologia scelta per l'API utile alla comunicazione con il db, sotto consiglio del #p.cardin, per evitare l'implementazione di eccessive "infrastrutture tecnologiche".\
+Come ultimo obiettivo, anche se non per importanza, ci siamo prefissati di iniziare con lo studio e l'individuazione e scelta di design pattern per il nostro prodotto. Pianifichiamo inoltre di sostenere, nel breve periodo, un colloquio a tal proposito con il #p.cardin.
 
 === Rischi attesi
 Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
-- #link(<rtecnologici>)[RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso]. (AGGIUNGERE ALTRO?)
-Abbiamo preventivato questo rischio specifico a causa del cambio tecnologico per l'implementazione dell'API.
+- #link(<rtecnologici>)[RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso]. 
+Abbiamo preventivato questo rischio specifico a causa del cambio tecnologico per l'implementazione dell'API menzionata sopra.
 
 
 === Preventivo:
@@ -2060,8 +2060,8 @@ figure(
 - Spiegazione:
 Il preventivo di questo sprint è una diretta conseguenza del maggior tempo disponibile da parte del gruppo.
 Avendo concluso gli esami e il periodo di sessione i membri di Farmacode dovrebbero riuscire a lavorare maggiormente e in maniera più produttiva.\
-Oltretutto la prospettiva per questo sprint è sistemare la documentazione in base ai feedback ricevuti, e stato quindi abbastanza facile, quantificare il lavoro da svolegere, proprio grazie alla concretezza delle attività da fare.\
-Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori per la natura dei task assegnati.
+Oltretutto la prospettiva per questo sprint è sistemare la documentazione in base ai feedback ricevuti, è stato quindi abbastanza facile, quantificare il lavoro da svolegere, proprio grazie alla concretezza delle attività da fare.\
+Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori vista la natura delle task assegnate.
 
 === Consunitvo:
 
@@ -2119,14 +2119,14 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori p
 )
 
 === Rischi incontrati e mitigazioni
-Il rischio che avevamo preventivato di attendere non si è verificato. Non abbiamo avuto problemi di integrazione con la nuova tecnologia usata per l'API.\
-L difficoltà maggiore è stata riscontrata nel settare l'ambiente di sviluppo con Docker, il quale ha richiesto abbastanza risorse per cambiare e sistemare correttamente l'integrazione di questa nuova scelta tecnologica.
+Il rischio che avevamo preventivato di attendere non si è verificato. Non abbiamo avuto grossi problemi di integrazione con la nuova tecnologia usata per l'API.\
+La difficoltà maggiore è stata riscontrata nel settare l'ambiente di sviluppo con Docker, il quale ha richiesto abbastanza risorse per cambiare e sistemare correttamente l'integrazione di questa nuova scelta tecnologica.
 
 === Retrospettiva
 Lo sprint\#12 è stato una ripresa generale da parte del gruppo per l'avanzamento del progetto.\
-La conclusione dei periodi più duri e difficili dettati dagli esami universitari e dalle revisioni con i committenti a riportato gli avanzamenti del prodotto in linea a quanto preventivato per questo sprint.\
+La conclusione dei periodi più duri e difficili dettati dagli esami universitari e dalle revisioni con i committenti ha riportato gli avanzamenti del prodotto in linea a quanto preventivato per questo sprint.\
 Lo sprint\#12 è costato esattamente quanto preventivato, anche se non con le stesse ore preventivate, in particolare sono risultate essere necessarie 3 ore in meno tra verificatore e amministratore, ma due ore in più per il ruolo di analista.\
-Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretutto, l'andamento positivo e maggiormente produttivo fa ben sperare per i successivi sprint in maniera da recuperare il leggero ritardo creatosi precedentemente.  
+Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretutto, l'andamento positivo e maggiormente produttivo fa ben sperare per i successivi sprint in maniera da recuperare il ritardo creatosi precedentemente.  
 
 == Globale
 
