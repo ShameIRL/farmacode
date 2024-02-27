@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "1.1.0", "2024-02-27", p.favaron, "", "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
     "1.0.0", "2024-02-13", p.rosson, p.baggio, "Verifica e revisone del documento",
     "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
     "0.13.0", "2024-01-14", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
@@ -64,6 +65,12 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 
 === Riferimenti informativi
 
+- Documentazione GitHub\
+    https://docs.github.com/en;
+
+- Documentazione Typst\
+    https://typst.app/docs/;
+
 ==== Slide corso di ingegneria del software
 - T2 - Processi di ciclo di vita\
     https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf;
@@ -86,6 +93,23 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 - P2 - Diagrammi dei casi d'uso\
     https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 
+==== Slide corso Metodi e Tecnologie per lo Sviluppo Software
+Le seguenti dispense sono relative all'anno accademico 2022/2023.
+- 2 - Issue Tracking System\
+    https://stem.elearning.unipd.it/pluginfile.php/478029/mod_resource/content/0/2-IssueTrackingSystem_22_23_libre.pdf;
+
+- 3 - GitHub Issue Tracker\
+    https://stem.elearning.unipd.it/pluginfile.php/482498/mod_resource/content/0/3-GitHubIssueTracker.pdf;
+
+- lab1 - GitHub Issue Tracker\
+    https://stem.elearning.unipd.it/pluginfile.php/482500/mod_resource/content/1/GitHubIssueTracker.pdf;
+
+- 4 - Git\
+    https://stem.elearning.unipd.it/pluginfile.php/490005/mod_resource/content/0/4-GIT.pdf;
+
+- lab2 - GitHub vcs\
+    https://stem.elearning.unipd.it/pluginfile.php/494455/mod_resource/content/0/lab2-github_vcs.pdf.
+
 #pagebreak()
 
 = Processi primari
@@ -101,41 +125,60 @@ Il processo di fornitura definisce l'insieme di attività, compiti e risorse nec
 Durante questa fase, il gruppo è tenuto a stabilire i contatti con il proponente e a definire i requisiti per il #glossario("MVP") (Minimum Viable Product) da concordare con quest'ultimo, basandosi su tempistiche, costi e importanza (intesa come incidenza sulla qualità del prodotto).
 
 === Rapporti con il proponente
-Il team si impegna a mantenere contatti costanti con il proponente per l'intera durata del progetto. Questo impegno non solo assicura in parte il corretto sviluppo dei lavori, ma facilita anche lo scambio di informazioni e feedback tra le parti, contribuendo a garantire il rispetto degli accordi stabiliti. Nella sezione #link(<comunicazioni>)[comunicazioni]
-e nella sezione #link(<incontri>)[incontri] è possibile consultare le norme e modalità con le quali avvengono questi contatti.
+Il team si impegna a mantenere contatti costanti con il proponente per l'intera durata del progetto. C'è la volontà di rapportarsi di settimana in settima, tuttavia non si è riuscitti ad accordarsi per fissare un giorno ed un orario preciso, causa trasferte da parte del proponente. Comunque massima disponibilità da entrambe le parti.  Questo impegno non solo assicura in parte il corretto sviluppo dei lavori, ma facilita anche lo scambio di informazioni e feedback tra le parti, contribuendo a garantire il rispetto degli accordi stabiliti.\ 
+Gli incontri con la proponente è attuata con l'utilizzo di canali diversi, quali e-mail, Google Meet e Zoom.\
+Gli incortri possone essere anche richiesti per le seguenti capacità:
+- Chiarimenti relativi ai vincoli o requisiti del capitolato;
+- Chiarimenti relativi alle tecnologie utilizzate e/o proposte;
+- Richieste di formazione su specifiche nuove tecnologie e/o concetti;
+- Richieste di feedback su quanto realizzato.
+Per ogni incontro verrà redatto un verbale esterno, il quale riporterà sul proprio nome ed all'interno del documento stesso la data dell'incontro.
+Nella sezione #link(<comunicazioni>)[comunicazioni] e nella sezione #link(<incontri>)[incontri] è possibile consultare le norme e modalità con le quali avvengono questi contatti.\
+
 
 === Documentazione fornita
-In questa sezione viene presentanto un elenco contenente tutta la documentazione che deve venire fornita a proponente e/o commitente, per obblighi accademici o per volontà del team.
+In questa sezione viene presentanto un elenco contenente tutta la documentazione che deve venire fornita a proponente e/o committente, per obblighi accademici o per volontà del team.
 
-- Piano di progetto;
-    
-    Documento contenente la pianificazione delle attività di progetto, la gestione dell'organizzazione ruolistica
-    ed il bilancio del progetto.
+- *Valutazione dei Capitolati*
 
-- Piano di qualifica;
+    Il documento ``` Valutazione dei Capitolati``` contiene l'analisi dei vari capitolati d'appalto proposti, con l'obiettivo di individuare quello più adatto al gruppo farmacode.\
+    Per ogni capitolato la struttura è la seguente:
+    - Descrizione: comprende il nome dell'azienda proponente, i committenti e una breve descrizione dell'obiettivo di progetto;
+    - Dominio applicativo: descrive più nel dettaglio il contesto del progetto;
+    - Dominio tecnologico: descrive le tecnologie proposte e/o da utilizzate per lo sviluppo;
+    - Aspetti positivi: elenco degli aspetti positivi riguardanti il progetto;
+    - Aspetti critici: elenco degli aspetti critici riguardanti il progetto;
+    - Consclusioni: descrizione delle motiviazioni di scelta o non scelta del capitolato valutato.
 
-    Documento contenente le normative e metriche riguardanti i processi di qualifica in adozione dal gruppo.
+- *Analisi dei Requisiti*
 
-- Analisi dei requisiti;
+    Documento ``` Analisi dei Requisiti``` contenente lo studio dei requisiti del prodotto software, loro classificazione, scenario e gestione. Definisce quindi le funzionalità che il prodotto offre e i requisiti da soddisfare affinchè si realizzi un output conforme alle rischieste fatte dal proponente. La struttura del documento è descritta nella seziona #link(<analisiDeiRequisiti>)[contenuti relativa].
 
-    Documento contenente lo studio dei requisiti del prodotto software, loro classificazione, scenario e gestione.
+- *Piano di Progetto*
 
-- Glossario;
+    Documento ``` Piano di Progetto``` contenente la pianificazione delle attività di progetto, la gestione dell'organizzazione ruolistica ed il bilancio del progetto. È soggetta a versionamento e approvazione, inoltre è redatta dal Resonsabile a quel momento con l'aiuto degli Amministratori. La struttura del documento è descritta nella seziona #link(<pianoDiProgetto>)[contenuti relativa].
 
-    Documento utile per favorire una corretta consultazione della documentazione di progetto. Viene accompagnato da una sua versione online disponibile nel sito vetrina del gruppo. // al link ...
+- *Piano di Qualifica*
 
-- Lettera di presentazione relativa;
+    Documento ``` Piano di Qualifica``` contenente le normative e metriche riguardanti i processi di qualifica in adozione dal gruppo per garantire la qualità del prodotto che si sta sviluppando. È uno strumento essenzaiale per la gestione del processo di sviluppo software in quanto garantisce che il prodotto finale sia conforme ai requisiti e alle aspettarive del committente. La struttura del documento è descritta nella seziona #link(<pianoDiQualifica>)[contenuti relativa].
 
-    Documento accompagnante ogni revisione di progetto, che ne illustra brevemente il contenuto.
+- *Glossario*
+
+    Documento ``` Glossario``` utile per favorire una corretta consultazione della documentazione di progetto. È destinato sia ai membri del gruppo di progetto, sia all'azienda proponente, che ai committenti Viene accompagnato da una sua versione online disponibile nel sito vetrina del gruppo al seguente #link("https://farmacodeunipd.github.io/glossario.html")[link]. La struttura del documento è descritta nella seziona #link(<glossario>)[contenuti relativa].
+
+- *Lettera di presentazione*
+
+    Documento ``` Lettera di Presentazione``` accompagna e introduce i documenti e il prodotto sowftare sviluppato in ogni fase di revisione di progetto. Illustra le risorse fornite al committente e all'azienda proponente.
 
 === Strumenti
 Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura:
 - #glossario("Typst") per la stesura dei documenti ufficiali di progetto;
-- Suite prodotti google (drive, documenti e fogli), per la condivisione di note, appunti e tabelle di funzione solitamente di tipo organizzativo;
-- Google Meet e Zoom per gli incontri verso l'esterno;
-- #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa);
-- #glossario("Diagrams.net") (draw.io) per la realizzazione dei #glossario("casi d'uso");
-- #glossario("KeyNote") per la realizzazione dei diari di bordo.
+- Suite prodotti Google (drive, documenti e fogli), per la condivisione di note, appunti, tabelle e grafici di funzione solitamente di tipo organizzativo;
+- Google Meet per effettuare videoconferenze con l'azienda proponente;
+- Zoom per effettuare videoconferenze con i committenti di progetto e con l'azienda proponente;
+- #glossario("GitHub") per l'hosting e versionamento del prodotto software (documentazione inclusa), per gestire le issue di progetto;
+- #glossario("Diagrams.net") (draw.io) per la realizzazione grafica dei #glossario("casi d'uso");
+- #glossario("KeyNote") per la realizzazione delle slide dei diari di bordo.
 
 == Sviluppo
 
@@ -157,7 +200,7 @@ Nel corso dell'analisi dei requisiti, il focus è posto sull'identificazione, la
 
 Inoltre, durante l'analisi dei requisiti, è essenziale stabilire una comunicazione efficace con il proponente, al fine di garantire che tutte le prospettive e le esigenze rilevanti siano adeguatamente considerate.
 
-==== Casi d'uso
+==== Casi d'uso <useCase>
 
 I #glossario("Casi d'uso") rappresentano azioni o sequenze di azioni collocabili in specifici scenari, caratterizzate da una richiesta e da una risposta. La loro definizione e realizzazione deve seguire gli standard imposti dal linguaggio UML, ed alcune regole interne al progetto.
 
@@ -478,43 +521,44 @@ In questa sezione vengono elencati i contenuti dei vari file di progetto.\ Verr�
 
 ==== Introduzione
 Ogni documento ha come prima sezione quella di introduzione, tale sezione serve per introdurre il documento al lettore e sarà composta dalle seguenti sotto sezioni:
-    - Scopo del documento;
-    - Scopo del prodotto: questa parte spiega lo scopo del nostro prodotto software;
-    - Glossario;
-    - Maturità e miglioramti;
-    - Riferimenti.
+    - *Scopo del documento*;
+    - *Scopo del prodotto*: questa parte spiega lo scopo del nostro prodotto software;
+    - *Glossario*;
+    - *Maturità e miglioramti*;
+    - *Riferimenti*.
 
-==== Analisi dei Requisiti
-Il documento Analisi dei Requisiti va strutturato nel seguente modo:
-    - Descrizione: sezione che descrive brevemente il prodotto software, il suo obiettivo, le funzionalità e gli utenti;
-    - Casi d'uso: sezione che descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le postcondizioni, lo scenario principale,le estensione e le generalizzazioni (quest'ultime due, se presenti);
-    - Requisiti: sezione che descrive in maniera approfondita i requisiti del prodotto. \ Vanno elencati i requisiti funzionali, di qualità, di vincolo, d'ambiente, di performace e di sicurezza;
-    - Tracciamento: in questa sezione, di fondamentale importanza, verranno riportati i requisiti e le loro fonti, in modo da garantirne il tracciamento;
-    - Elenchi: questa sezione deve comprendere gli elenchi delle immagini e delle tabelle utilizzate all'interno del file.
+==== Analisi dei Requisiti <analisiDeiRequisiti>
+Il documento ``` Analisi dei Requisiti``` va strutturato nel seguente modo:
+    - *Descrizione*: sezione che descrive brevemente il prodotto software, il suo obiettivo, le funzionalità e gli utenti;
+    - *Casi d'uso*: sezione che identifica e descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le postcondizioni, lo scenario principale,le estensione e le generalizzazioni (quest'ultime due, se presenti). Nella #link(<useCase>)[sezione seguente] è possibile consultare nel dettaglio le norme e le modalità con i quali vengono descritti i cari casi d'uso;
+    - *Requisiti*: sezione che elenca e descrive tutte le richieste e vincoli definiti dal proponente o dedotti dal team di progetto durante un meeting. Ogni requisito è caratterizzato da una descrizione e da un caso d'uso annesso. I requisiti possono essere obbligatori, desiderabili o opzionali, inoltre si fa la distinzione tra requisiti funzionali, di qualità, d'ambiente, di performance e di sicurezza;
+    - *Elenchi*: questa sezione deve comprendere gli elenchi delle immagini e delle tabelle utilizzate all'interno del documento.
 
-==== Glossario
-Il documento Glossario va strutturato nel seguento modo:\
-Le sezioni suddividono il documento in ordine alfabetico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
+==== Piano di Progetto <pianoDiProgetto>
+Il documento ``` Piano di Progetto``` va strutturato nel seguento modo:
+    - *Analisi dei rischi*: sezione nella quale di definiscono e analizzano i potenziali rischi che si possono incontrare e influenzare così il successo del progetto. \ I rischi vanno divisi in rischi personali (RP), rischi organizzativi interni ed esterni (ROI/ROE), rischi tecnologici/software (RT). Ogni rischio è caratterizzato da una propria descrizione, un grado di rischio (occorenza), la propria pericolosità, da una serie di precauzioni prese a priori, dal rilevamento e da un piano di contingenza; 
+    - *Pianificazione*: sezione che definisce periodi/sprint con le relative attività da svolgere, relative risporse e scadenze da rispoettare. Per ogni sprint vengono definiti i ruili di ogni componente e una stima delle ore rischieste per poter portare a compimento le attività pianificate. In particolare vanno inseriti i metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attività e distibusione dei ruoli;
+    - *Preventivo*: sezione che fornisce una stima e ripartizioni delle ore produttive di ogni membro del team andando così a definire la durata necessaria per completare le attività di periodo e il relativo costo. Per semplicità di lettura si utilizzeranno tabelle e grafici;
+    - *Consultivo*: sezione che analizza la ripartizione oraria effettiva in relazione a quella preventivata con relativo impatto sui costi. Viene anche fatta una analisi retrospettiva andando a definire eventuali cambiamenti nel metodo di lavoro e/o nella pianificazione delle attività da svolgere. Per semplicità di lettura si utilizzeranno tabelle e grafici.
 
-==== Piano di Progetto
-Il documento Piano di Progetto va strutturato nel seguento modo:
-    - Analisi dei rischi: In questa sezione vanno definiti i rischi possibili del progetto. \ I rischi vanno divisi in rischi personali, rischi organizzativi interni ed esterni, rischi tecnologici/software; 
-    - Pianificazione: In questa sezione vanno descritte le modalità di pianificazione delle attività svolte dal gruppo durante il progetto. \ In particolare vanno inseriti i metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attività e distibusione dei ruoli;
-    - Preventivi e Consuntivi: In questa sezione vanno descritti i preventivi e consuntivi per ogni sprint durante il progetto. Per semplicità di lettura si utilizzeranno tabelle e grafici.
-
-==== Piano di Qualifica
-Il documento Piano di Qualifica va strutturato nel seguente modo:
-    - Qualità del prodotto: In questa sezione va strutturata la modilità e le metriche di valutazione del prodotto software, in particolare l'architettura, la documentazione e la qualità del software;
-    - Qualità di processo: In questa sezione va strutturata la modalità e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
-    - Controllo di qualità: In questa sezione vanno spiegati i test di controllo con relativi grafici e tabelle;
-    - Miglioramenti: In questa sezione vanno indicati i miglioramenti possibili del prodotto e dei processi;
-    - Controllo delle metriche: Questa sezione funge da #glossario("cruscotto") per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
+==== Piano di Qualifica <pianoDiQualifica>
+Il documento ``` Piano di Qualifica``` va strutturato nel seguente modo:
+    - *Qualità del prodotto*: sezione in cui va strutturata la modilità e le metriche di valutazione del prodotto software, in particolare l'architettura, la documentazione e la qualità del software;
+    - *Qualità di processo*: sezione in cui va strutturata la modalità e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
+    - *Strategia dei test*: sezione in cui vanno spiegati i test di controllo con relativi grafici e tabelle;
+    - *Miglioramenti*: sezione in cui vanno indicati i miglioramenti possibili del prodotto e dei processi;
+    - *Controllo delle metriche*: sezione che funge da #glossario("cruscotto") per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
 
 ==== Norme di Progetto
-Il documento Norme di Progetto va strutturato nel seguento modo:
-    - Processi Primari: In questa sezione vanno descritti i processi primari tra cui fornitura, sviluppo, gestione operativa e manutenzione;
-    - Processi di supporto: In questa sezione vanno descritti i processi di supporto tra cui documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
-    - Processi organizzativi: In questa sezione vanno descritti i processi organizzativi tra cui gestione dei processi, gestione ruolistica e gestione delle comunicazioni, seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
+Il documento ``` Norme di Progetto``` va strutturato nel seguento modo:
+    - *Processi Primari*: sezione in cui vanno descritti i processi primari tra cui fornitura, sviluppo, gestione operativa e manutenzione;
+    - *Processi di supporto*: sezione in cui vanno descritti i processi di supporto tra cui documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
+    - *Processi organizzativi*: sezione in cui vanno descritti i processi organizzativi tra cui gestione dei processi, gestione ruolistica e gestione delle comunicazioni, seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
+
+==== Glossario <glossario>
+Il documento ``` Glossario``` va strutturato nel seguento modo:\
+Le sezioni suddividono il documento in ordine alfabetico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
+
 
 == Gestione della configurazione
 
@@ -778,7 +822,7 @@ In questa sezione vengono trattate tutte le normative utili alla stesura e redaz
 - Gestione dell'organizzazione: 
     informazioni relative alle pratiche per la suddivisone delle attività e la loro collocazione temporale nel corso del progetto.
 
-L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del documento denominato "Piano di progetto" nella sua forma il più completa possibile, andando a definire ruoli, attività e la loro collocazione nel tempo. Il documento, oltre ad essere utile al team per gestire l'organizzazione e la gestione dei ruoli di ogni componente, fa da bacheca al commitente di quanto appena citato.\ Il piano di progetto punta a comprendere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.
+L'obiettivo dei processi organizzativi è quello di arrivare alla creazione del documento denominato "Piano di progetto" nella sua forma il più completa possibile, andando a definire ruoli, attività e la loro collocazione nel tempo. Il documento, oltre ad essere utile al team per gestire l'organizzazione e la gestione dei ruoli di ogni componente, fa da bacheca al committente di quanto appena citato.\ Il piano di progetto punta a comprendere tutte le pratiche e metodi riguardati il processo organizzativo e di pianificazione, descrivendone l'applicazione.
     
 
 === Ruoli e relativa organizzazione /** descrizione di tutti e sei i ruoli, con spiegazione finale di come vengono assegnati e ruotati */
@@ -874,7 +918,7 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     Le comunicazioni esterne avvengono tramite i seguenti mezzi:
     
     -- E-mail: 
-    Usate per le comunicazioni con proponente e commitenti. Principalmente hanno la funzione di concordare meeting, o di esporre quesiti e dubbi.
+    Usate per le comunicazioni con proponente e committenti. Principalmente hanno la funzione di concordare meeting, o di esporre quesiti e dubbi.
 
 ==== Incontri o Meetings: <incontri>
 
