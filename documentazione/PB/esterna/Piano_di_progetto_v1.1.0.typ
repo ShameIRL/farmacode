@@ -2168,13 +2168,13 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [], [],
-  [Bomben F.], [], [], [], [], [1], [],
-  [Carraro A.], [], [], [], [], [], [],
-  [Favaron R.], [], [], [], [], [], [],
-  [Pandolfo M.], [], [], [], [], [], [],
-  [Passarella A.], [], [], [], [], [], [],
-  [Rosson L.], [], [], [], [], [], [],
+  [Baggio M.], [], [2], [], [4], [], [],
+  [Bomben F.], [], [5], [], [], [], [],
+  [Carraro A.], [], [], [], [], [4], [],
+  [Favaron R.], [], [], [], [], [4], [],
+  [Pandolfo M.], [4], [], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [4],
+  [Rosson L.], [], [], [2], [], [], [4],
 )
 ])
 #align(center)[Tabella 64: preventivo orario sprint.13.]
@@ -2187,11 +2187,11 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [], [], [], [], [], [],
+  [Totale Ore], [4], [7], [2], [4], [8], [8],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [], [], [], [], [], [],
-  [Totale], [], [], [], [], [], [], 
-  [Bilancio], [], [], [], [], [], [],
+  [Costo], [€120,00], [€175,00], [€60,00], [€80,00], [€120,00], [€200,00],
+  [Totale], [], [], [], [], [], [€755,00], 
+  [Bilancio], [], [], [], [], [], [*7370,00*],
 )
 ])
 #align(center)[Tabella 65: preventivo costi sprint.13.]
@@ -2220,13 +2220,13 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [], [],
-  [Bomben F.], [], [], [], [], [], [],
-  [Carraro A.], [], [], [], [], [], [],
-  [Favaron R.], [], [], [], [], [], [],
-  [Pandolfo M.], [], [], [], [], [], [],
-  [Passarella A.], [], [], [], [], [], [],
-  [Rosson L.], [], [], [], [], [], [],
+  [Baggio M.], [], [2], [], [4], [], [],
+  [Bomben F.], [], [5 #green(-1)], [], [], [], [],
+  [Carraro A.], [], [], [], [], [4 #green(-1)], [],
+  [Favaron R.], [], [], [], [], [4], [],
+  [Pandolfo M.], [4 #red(+1)], [], [], [], [], [],
+  [Passarella A.], [], [], [2], [], [], [4],
+  [Rosson L.], [], [], [], [], [], [4 #red(+1)],
 )
 ])
 #align(center)[Tabella 66: consuntivo orario sprint.13.]
@@ -2239,11 +2239,11 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [], [], [], [], [], [],
+  [Totale Ore], [5], [6], [2], [4], [7], [9],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [], [], [], [], [], [],
-  [Totale], [], [], [], [], [], [], 
-  [Bilancio], [], [], [], [], [], [],
+  [Costo], [€150,00], [€150,00], [€30,00], [€80,00], [€105,00], [€225,00],
+  [Totale], [], [], [], [], [], [#green("€740,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€7385,00")],
 )
 ])
 #align(center)[Tabella 67: consuntivo costi sprint.13.]
