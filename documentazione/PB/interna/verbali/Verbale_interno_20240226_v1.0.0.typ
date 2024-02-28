@@ -49,13 +49,12 @@ table(
   columns: (auto, auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Interessa*],[*Obiettivo*],[*Issue n°*],
-  [Analisi dei Requisiti],[Continuare il miglioramento dei contenuti e la modellazione], [\#],
-  [Norme di progetto],[Miglioramento generale del documento],[\#],
-  [Piano di Progetto],[Realizzare preventivo e consuntivo dello sprint 13], [\#],
-  [Piano di Qualifica],[Sistemare la struttura del documento, in particolare condensando le metriche ed i grafici per i vari periodi], [\#],
-  [Piano di Qualifica],[Migliorare le metriche],[\#],
-  [API],[Analizzare problemi riscontrati nell'interazione tra docker ed API e cercare una soluzione],[\#],
-  [Design],[Continuare a ragionare sull'utilizzo e l'implementazione di design pattern],[\#]
+  [Analisi dei Requisiti],[Continuare il miglioramento dei contenuti e la modellazione], [\#151],
+  [Norme di progetto],[Miglioramento generale del documento],[\#152],
+  [Piano di Qualifica],[Sistemare la struttura del documento, in particolare condensando le metriche ed i grafici per i vari periodi], [\#153],
+  [Piano di Qualifica],[Migliorare le metriche],[\#154],
+  [API],[Analizzare problemi riscontrati nell'interazione tra docker ed API e cercare una soluzione],[\#155],
+  [Design],[Continuare a ragionare sull'utilizzo e l'implementazione di design pattern],[\#156]
 
 ),center)
 
