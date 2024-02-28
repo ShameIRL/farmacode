@@ -2189,8 +2189,8 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [4], [7], [2], [4], [8], [8],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€120,00], [€175,00], [€60,00], [€80,00], [€120,00], [€200,00],
-  [Totale], [], [], [], [], [], [€755,00], 
+  [Costo], [€120,00], [€175,00], [€30,00], [€80,00], [€120,00], [€200,00],
+  [Totale], [], [], [], [], [], [€725,00], 
   [Bilancio], [], [], [], [], [], [*7370,00*],
 )
 ])
@@ -2220,13 +2220,13 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [2], [], [4], [], [],
-  [Bomben F.], [], [5 #green(-1)], [], [], [], [],
-  [Carraro A.], [], [], [], [], [4 #green(-1)], [],
+  [Baggio M.], [], [2], [], [4 #green("-1")], [], [],
+  [Bomben F.], [], [5 #green("-1")], [], [], [], [],
+  [Carraro A.], [], [], [], [], [4 #green("-1")], [],
   [Favaron R.], [], [], [], [], [4], [],
-  [Pandolfo M.], [4 #red(+1)], [], [], [], [], [],
+  [Pandolfo M.], [4 #red("+1")], [], [], [], [], [],
   [Passarella A.], [], [], [2], [], [], [4],
-  [Rosson L.], [], [], [], [], [], [4 #red(+1)],
+  [Rosson L.], [], [], [], [], [], [4 #red("+1")],
 )
 ])
 #align(center)[Tabella 66: consuntivo orario sprint.13.]
@@ -2239,11 +2239,11 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [5], [6], [2], [4], [7], [9],
+  [Totale Ore], [5], [6], [2], [3], [7], [9],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€150,00], [€150,00], [€30,00], [€80,00], [€105,00], [€225,00],
-  [Totale], [], [], [], [], [], [#green("€740,00")], 
-  [Bilancio], [], [], [], [], [], [#green("€7385,00")],
+  [Costo], [#red("€150,00")], [#green("€150,00")], [€30,00], [#green("€60,00")], [#green("€105,00")], [#red("€225,00")],
+  [Totale], [], [], [], [], [], [#green("€720,00")], 
+  [Bilancio], [], [], [], [], [], [#green("€7375,00")],
 )
 ])
 #align(center)[Tabella 67: consuntivo costi sprint.13.]
