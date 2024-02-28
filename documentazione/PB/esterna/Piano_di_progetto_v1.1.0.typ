@@ -2167,17 +2167,17 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [3], [],
-  [Bomben F.], [4], [], [], [], [1], [],
-  [Carraro A.], [], [2], [], [4], [], [],
-  [Favaron R.], [], [4], [], [2], [], [],
-  [Pandolfo M.], [], [], [], [], [], [4],
-  [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [3], [], [], [3], [],
+  [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [], [],
+  [Bomben F.], [], [], [], [], [1], [],
+  [Carraro A.], [], [], [], [], [], [],
+  [Favaron R.], [], [], [], [], [], [],
+  [Pandolfo M.], [], [], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [],
+  [Rosson L.], [], [], [], [], [], [],
 )
 ])
-#align(center)[Tabella 60: preventivo orario sprint.12.]
+#align(center)[Tabella 64: preventivo orario sprint.13.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2186,20 +2186,20 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [9], [2], [4], [7], [8],
+  [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€120,00], [€225,00], [€30,00], [€80,00], [€105,00], [€200,00],
-  [Totale], [], [], [], [], [], [€760,00], 
-  [Bilancio], [], [], [], [], [], [*€7375,00*],
+  [Costo], [], [], [], [], [], [],
+  [Totale], [], [], [], [], [], [], 
+  [Bilancio], [], [], [], [], [], [],
 )
 ])
-#align(center)[Tabella 61: preventivo costi sprint.12.]
+#align(center)[Tabella 65: preventivo costi sprint.13.]
 
 #align(left,
 figure(
   image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.12]
+  caption: [preventivi/sprint.13]
   )
   
 )
@@ -2219,17 +2219,17 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [3 #green(-1)], [],
-  [Bomben F.], [4], [], [], [], [1], [],
-  [Carraro A.], [], [2 #red("+1")], [], [4 #green(-1)], [], [],
-  [Favaron R.], [], [4], [2], [], [], [],
-  [Pandolfo M.], [], [], [], [], [], [4],
-  [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [3 #red("+1")], [], [], [3 #green(-1)], [],
+  [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [], [],
+  [Bomben F.], [], [], [], [], [], [],
+  [Carraro A.], [], [], [], [], [], [],
+  [Favaron R.], [], [], [], [], [], [],
+  [Pandolfo M.], [], [], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [],
+  [Rosson L.], [], [], [], [], [], [],
 )
 ])
-#align(center)[Tabella 62: consuntivo orario sprint.12.]
+#align(center)[Tabella 66: consuntivo orario sprint.13.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2238,22 +2238,22 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [4], [11], [2], [3], [5], [8],
+  [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€120,00], [#red("€275,00")], [€30,00], [#green("€60,00")], [#green("€75,00")], [€200,00],
-  [Totale], [], [], [], [], [], [€760,00], 
-  [Bilancio], [], [], [], [], [], [*€7375,00*],
+  [Costo], [], [], [], [], [], [],
+  [Totale], [], [], [], [], [], [], 
+  [Bilancio], [], [], [], [], [], [],
 )
 ])
-#align(center)[Tabella 63: consuntivo costi sprint.12.]
+#align(center)[Tabella 67: consuntivo costi sprint.13.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
   figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#12.png", height: 30%, width: auto),
-  caption: [bilancio/sprint.12],
+  caption: [bilancio/sprint.13],
   ),
   table(
     fill: (col, row) => 
@@ -2266,14 +2266,10 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
 )
 
 === Rischi incontrati e mitigazioni
-Il rischio che avevamo preventivato di attendere non si è verificato. Non abbiamo avuto grossi problemi di integrazione con la nuova tecnologia usata per l'API.\
-La difficoltà maggiore è stata riscontrata nel settare l'ambiente di sviluppo con Docker, il quale ha richiesto abbastanza risorse per cambiare e sistemare correttamente l'integrazione di questa nuova scelta tecnologica.
+
 
 === Retrospettiva
-Lo sprint\#12 è stato una ripresa generale da parte del gruppo per l'avanzamento del progetto.\
-La conclusione dei periodi più duri e difficili dettati dagli esami universitari e dalle revisioni con i committenti ha riportato gli avanzamenti del prodotto in linea a quanto preventivato per questo sprint.\
-Lo sprint\#12 è costato esattamente quanto preventivato, anche se non con le stesse ore preventivate, in particolare sono risultate essere necessarie 3 ore in meno tra verificatore e amministratore, ma due ore in più per il ruolo di analista.\
-Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretutto, l'andamento positivo e maggiormente produttivo fa ben sperare per i successivi sprint in maniera da recuperare il ritardo creatosi precedentemente.  
+
 
 
 
