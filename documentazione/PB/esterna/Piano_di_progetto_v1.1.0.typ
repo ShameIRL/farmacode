@@ -2138,6 +2138,7 @@ Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretut
 - Task:\
   -- Miglioramento contenuti e modellazione "Analisi dei Requisiti";\
   -- Sistemare, migliorare e ampliare i commenti delle metriche in "Piano di Qualifica";\
+  -- Migloramenti in "Norme di Progetto";\
   -- Continuare a ragionare sull'utilizzo e l'implementazione dei design pattern;\
   -- Stesura del Verbale interno del 2024/02/26;\
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
@@ -2188,9 +2189,9 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€,00], [€,00], [€,00], [€,00], [€,00], [€,00],
-  [Totale], [], [], [], [], [], [€,00], 
-  [Bilancio], [], [], [], [], [], [*€,00*],
+  [Costo], [€], [€], [€], [€], [€], [€],
+  [Totale], [], [], [], [], [], [€], 
+  [Bilancio], [], [], [], [], [], [*€*],
 )
 ])
 #align(center)[Tabella 65: preventivo costi sprint.13.]
@@ -2237,9 +2238,9 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€,00], [€,00], [€,00], [€,00], [€,00], [€,00],
-  [Totale], [], [], [], [], [], [€,00], 
-  [Bilancio], [], [], [], [], [], [*€,00*],
+  [Costo], [€], [€], [€], [€], [€], [€],
+  [Totale], [], [], [], [], [], [€], 
+  [Bilancio], [], [], [], [], [], [*€*],
 )
 ])
 #align(center)[Tabella 67: consuntivo costi sprint.13.]
