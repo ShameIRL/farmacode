@@ -2199,7 +2199,7 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
 #align(left,
 figure(
   image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.13]
+  caption: [preventivi/sprint.13 SISTEMARE!!!!!!!!!!!!!]
   )
   
 )
@@ -2253,7 +2253,7 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   rows: (auto),
   figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#12.png", height: 30%, width: auto),
-  caption: [bilancio/sprint.13],
+  caption: [bilancio/sprint.13 SISTEMARE!!!!!!!!!!!!!!!!!!!!1],
   ),
   table(
     fill: (col, row) => 
