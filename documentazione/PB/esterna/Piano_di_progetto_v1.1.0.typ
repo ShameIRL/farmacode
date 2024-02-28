@@ -2197,7 +2197,7 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
 
 #align(left,
 figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
+  image("", height: 20%, width: auto),
   caption: [preventivi/sprint.13]
   )
   
