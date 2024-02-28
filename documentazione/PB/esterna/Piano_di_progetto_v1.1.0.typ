@@ -2249,7 +2249,7 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (1fr, auto),
   rows: (auto),
   figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#13.png", height: 30%, width: auto),
+  image("", height: 30%, width: auto),
   caption: [bilancio/sprint.13],
   ),
   table(
