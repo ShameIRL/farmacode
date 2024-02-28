@@ -2176,7 +2176,7 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [Rosson L.], [], [], [], [], [], [],
 )
 ])
-#align(center)[Tabella 60: preventivo orario sprint.13.]
+#align(center)[Tabella 64: preventivo orario sprint.13.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2193,12 +2193,11 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [Bilancio], [], [], [], [], [], [*€,00*],
 )
 ])
-#align(center)[Tabella 61: preventivo costi sprint.13.]
+#align(center)[Tabella 65: preventivo costi sprint.13.]
 
 #align(left,
 figure(
-  image("", height: 20%, width: auto),
-  caption: [preventivi/sprint.13]
+ caption: [preventivi/sprint.13]
   )
   
 )
@@ -2226,7 +2225,7 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [Rosson L.], [], [], [], [], [], [],
 )
 ])
-#align(center)[Tabella 62: consuntivo orario sprint.13.]
+#align(center)[Tabella 66: consuntivo orario sprint.13.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2243,13 +2242,12 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [Bilancio], [], [], [], [], [], [*€,00*],
 )
 ])
-#align(center)[Tabella 63: consuntivo costi sprint.13.]
+#align(center)[Tabella 67: consuntivo costi sprint.13.]
 
 #grid(
   columns: (1fr, auto),
   rows: (auto),
   figure(
-  image("", height: 30%, width: auto),
   caption: [bilancio/sprint.13],
   ),
   table(
