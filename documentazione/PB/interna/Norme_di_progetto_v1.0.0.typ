@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "1.2.0", "2024-02-28", p.favaron, "", "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
     "1.1.0", "2024-02-27", p.favaron, "", "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
     "1.0.0", "2024-02-13", p.rosson, p.baggio, "Verifica e revisone del documento",
     "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
@@ -472,29 +473,50 @@ La documentazione software è l'insieme di informazioni, raccolte testualmente, 
 === Struttura
 I documenti ufficiali hanno una struttura precisa e comune che deve essere rigorosamente rispettata per i motivi citati nella descrizione.
 
-    - Prima pagina: sempre composta dal template esclusivo del team, il logo dell'università, l'anno accademico in cui viene svolto il progetto, il nome del documento, il nome del team con la mail e i componenti;
+    - Prima pagina, sempre composta dal template esclusivo del team, caratterizzata da:
+        - Nome del documento;
+        - Versione corrente del documento;
+        - Logo dell'università;
+        - Logo e nome del gruppo;
+        - E-mail del gruppo.;
 
-    - Registri modifiche (changelog): composti da versionamento, data della modifica effettuata, descrizione della modifica, ruolo dei componenti che hanno effettuato la modifica e i loro nomi.
-    
+    - Registro modifiche (changelog), informazioni organizzate in una tabella, caratterizzato da: 
+        - Versione del documento;
+        - Data delle modifica;
+        - Scrittori che hanno effettuato la modifica;
+        - Revisori che hanno revisionato la modifica fatta dagli scrittori;
+        - Descrizione della modifica.;
+      
     - Indice: ogni documento presenta un indice nella pagina seguente al registro delle modifiche, la strutture è divisa in sezioni X.X.X con il numero della pagina in cui inizia la sezione. La divisione X.X.X presenta i macro-argomenti suddivisi nei loro vari paragrafi a loro volta suddivisi in sezioni più specifiche;
 
     - Contenuto: esposto con la maggiore chiarezza e semplicità, rigorosamente diviso in sezioni secondo i principi di indicizzazione;
 
-    - Pié pagina: il numero della pagina in qui ci si trova e il logo del gruppo, separati dal contenuto con un'interlinea.
+    - Pié pagina, separato dal contenuto con un'interlinea, caratterizzato da:
+        - Logo e Nome del gruppo (sulla sinistra);
+        - Numero di pagina (sulla destra) nel seguente formato: pagina [n] / [numero di pagine totali]..
 
 ==== Verbali
-I verbali differiscono in quanto a struttura rispetto ai documenti di progetto. Vanno rispettate le seguenti sezioni: \
-Per i verbali esterni:
-- Durata e partecipanti, sezione nella quale si elencano i partecipanti all'incontro, e si espone la durata del meeting;
-- Oggeto, rappresenta gli argomenti discussi;
-- Sintesi, riassume in breve il contenuto delle discussioni.
-Per i verbali interni:
-- Durata e partecipanti;
-- Sintesi;
-- Obiettivi fissati, elenco contenente gli obiettivi fissati per il prossimo periodo.
+I verbali differiscono in quanto a struttura rispetto ai documenti di progetto. La pagina iniziale, il registro modifiche, l'indice e pié pagina sono sempre presenti anche in questi documenti.\ 
+Vanno rispettate le seguenti sezioni:
+- *Verbali esterni*:
+    - Durata e partecipanti, semplice elenco di informazioni:
+        - Ora;
+        - Partecipanti;
+        - Partecipante esterno;
+        - Mezzo tramite.;
+    - Oggetto, descrizione in breve dei temi trattati durante il meeting;
+    - Sintesi, descrizione corposa di ciò che si è discusso durante il meeting.
+    Inoltre i verbali esterni dovranno avere un'ultima sezione dedicata alla firma del partecipante esterno e relativa data così da confermare e validate il documento.
 
-
-Inoltre i verbali interni, relativi all'inizio di un nuovo sprint, dovranno possedere una sezione "Nuova distribuzione ruolistica" contenente una tabella (Ruolo, Nome e cognome) riportante i ruoli per il prossimo periodo.
+- *Verbali interni*:
+    - Durata e partecipanti, semplice elenco di informazioni:
+        - Ora;
+        - Partecipanti;
+        - Mezzo tramite.;
+    - Temi trattati, descrizione in breve dei temi trattati durante il meeting;
+    - Sintesi, descrizione corposa di ciò che si è discusso durante il meeting;
+    - Obiettivi fissata, tabella che descrive e traccia, attraverso il numero di issue, gli obiettivi prefissati durante il meeting.
+    Inoltre i verbali interni, relativi all'inizio di un nuovo sprint, dovranno possedere una sezione "Nuova distribuzione ruolistica" contenente una tabella (Ruolo, Nome e cognome) riportante i ruoli per il prossimo periodo.
 
 === Caratterizzazione
     - Formali: Sono i documenti che andranno a formare la documentazione software del prodotto. In quanto tali sono sottoposti a versionamento, a processi di verifica e approvazione. Essi comprendono documenti interni, utili quindi ai membri del team di sviluppo, ed esterni, destinati a proponente e committente. 
@@ -902,23 +924,27 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     Le comunicazioni interne sono quelle coinvolgenti solo il team, o alcuni dei suoi membri, avvengono tramite mezzi quali:
     
     -- #glossario("Telegram"): 
-    Il gruppo è usato per comunicazioni di tipo più breve e repentino. Solitamente viene utilizzato per stilare un breve ordine del giorno e per organizzare incontri interni. In privato invece, avvengono comunicazioni che interessano solo le parti conivolte in modo da regolare il flusso di comunicazioni nel gruppo;
+    App di messaggistica istantanea utilizzata apiamente. È stato creato una chat di gruppo e viene utilizzata per comunicazioni di tipo più breve e repentino. Solitamente viene utilizzato per stilare un semplice ordine del giorno e per organizzare gli incontri interni del team. Inoltre, sempre trammite Telegram, avvengono comunicazione in privato, quindi che interessano solo alcune parti del gruppo, così da gestire in maniera più regolare ed efficace il flusso di comunicazione interno.
 
     -- #glossario("Discord"): 
-    Il server è suddiviso in vari canali testuali:
-    - General: utilizzato per comunicazioni generali;
-    - Link-utility: in esso sono riversati tutti i link utili al gruppo perchè spesso visitati o consultati (ad esempio: link alla tabella condivisa per la gestione costi/ore);
-    - Link-brainstorming: racchiude tutti i link a fonti di tipo informativo (ad esempio: link alla documentazione della libreria di python surprise);
-    - Domande: è utilizzato per contenere le domande dei vari componenti del team, sia rivolte verso il team stesso, si verso l'esterno (proponente/committenti);
-    - Todo-reminder: contiene delle annotazioni su cose da fare nel breve periodo.
-    Sono inoltre presenti molteplici canali vocali per permettere di lavorare in piccoli sottogruppi.
+    Piattaforma VoIP, messaggistica istantanea e distribuzione digitale. È stato creato un server di gruppo suddiviso in vari canali.\
+    - Canali testuali:
+        - General: utilizzato per comunicazioni generali;
+        - Link-utility: in esso sono riversati tutti i link utili al gruppo perchè spesso visitati o consultati (ad esempio: link alla tabella condivisa per la gestione costi/ore);
+        - Link-brainstorming: racchiude tutti i link a fonti di tipo informativo (ad esempio: link alla documentazione della libreria di python surprise);
+        - Domande: è utilizzato per contenere le domande dei vari componenti del team, sia rivolte verso il team stesso, si verso l'esterno (proponente/committenti);
+        - Todo-reminder: contiene delle annotazioni su cose da fare nel breve periodo.
+    - Canali vocali: sono inoltre presenti molteplici canali vocali per permettere di lavorare in piccoli sottogruppi. In caso di meeting interni ci ritroviamo all'interno di un unico canale così da poter discutere e confrontarci.
     
 - *Esterne* 
 
     Le comunicazioni esterne avvengono tramite i seguenti mezzi:
     
-    -- E-mail: 
-    Usate per le comunicazioni con proponente e committenti. Principalmente hanno la funzione di concordare meeting, o di esporre quesiti e dubbi.
+    -- E-mail: Usate per le comunicazioni con proponente e committenti. Principalmente hanno la funzione di concordare meeting, o di esporre quesiti e dubbi;
+    
+    -- Google Meet: Usato per la comunicazione in videoconferenza con l'azienda proponente. I meeting sono concordati in precedenza tramite e-mail;
+
+    -- Zoom: Usato per le comunicazioni in videoconferenza con proponente e committenti. I meeting sono concordati in precedenza tramite e-mail.
 
 ==== Incontri o Meetings: <incontri>
 
