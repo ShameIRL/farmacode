@@ -2238,7 +2238,7 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [], [], [], [], [], [],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€,00], [€,00], [€,00], [€,00], ["€,00"], [€,00],
+  [Costo], [€,00], [€,00], [€,00], [€,00], [€,00], [€,00],
   [Totale], [], [], [], [], [], [€,00], 
   [Bilancio], [], [], [], [], [], [*€,00*],
 )
