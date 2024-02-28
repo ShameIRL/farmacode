@@ -2205,9 +2205,7 @@ figure(
 )
 
 - Spiegazione:
-Il preventivo di questo sprint è una diretta conseguenza del maggior tempo disponibile da parte del gruppo.
-Avendo concluso gli esami e il periodo di sessione i membri di Farmacode dovrebbero riuscire a lavorare maggiormente e in maniera più produttiva.\
-Oltretutto la prospettiva per questo sprint è sistemare la documentazione in base ai feedback ricevuti, è stato quindi abbastanza facile, quantificare il lavoro da svolegere, proprio grazie alla concretezza delle attività da fare.\
+La prospettiva per questo sprint è quella di continuare a sistemare la documentazione in base ai feedback ricevuti, è stato quindi abbastanza facile, quantificare il lavoro da svolegere, proprio grazie alla concretezza delle attività da fare.\
 Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori vista la natura delle task assegnate.
 
 === Consunitvo:
