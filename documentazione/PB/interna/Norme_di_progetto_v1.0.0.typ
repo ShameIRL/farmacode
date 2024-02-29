@@ -9,6 +9,7 @@
 
   ),
   changelog: (
+    "1.3.0", "2024-02-28", p.favaron, "", "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
     "1.2.0", "2024-02-28", p.favaron, "", "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
     "1.1.0", "2024-02-27", p.favaron, "", "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
     "1.0.0", "2024-02-13", p.rosson, p.baggio, "Verifica e revisone del documento",
@@ -438,6 +439,32 @@ Durante le successive implementazioni del software di progetto verranno descritt
 La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato, implementato e come lo si utilizza. Nel contesto del team di sviluppo, la gestione efficace dei processi e delle attività è essenziale per agevolare il lavoro dei membri del team. La tracciabilità e la documentazione dettagliata di ogni fase del progetto sono fondamentali per semplificare le operazioni quotidiane e per facilitare la manutenzione del software nel tempo. Questa pratica non solo contribuisce a garantire una maggiore coerenza e coesione all'interno del team, ma anche a migliorare complessivamente la qualità del risultato finale.\
 È bene quindi che vengano definite delle regole chiare e concise utili per la stesura di un documento, da seguire durante tutto il ciclo di vita del progetto allo scopo di garantire maggiore comprensione. 
 
+=== Documentation as Code
+Durate l'intero svolgimento di progetto abbiamo adottato la strategia ``` Documentation as Code``` che cosnsiste nel gestire la documentazione dell'intero progetto come se fosse il codice sorgente. Questa metodologia di lavoro ha i seguenti aspetti chiave:
+- Versionamento;
+- Collaborazione;
+- Automazione;
+- Integrazione continua;
+- Distribuzione continua;
+Questo approccio favorisce una migliore tracciabilità delle modifiche, piu facilità nella verifica e manutenzione.\
+I documenti sono scritti in formato testuale secondo le regole di formattazione di Typst, strumento che ci permette di performare gli aspetti appena elencati in maniera semplice e intuitiva, insieme al servizio di controllo di versione distibuito tramite interfaccia web GitHub.
+
+=== Ciclo di vita dei documenti
+Il ciclo di vista di un documento segue i seguenti stati:
+- Necessità/Opportunità:
+    1. Nasce la necessità per obbligo o per opportunità di un documento;
+    2. Pianificazione della stesura del documento;
+    3. Assegnazione dei redattori del documento.
+- Redazione:
+    1. Definizione di una struttura (come segue alla #link(<docStructure>)[sezione dedicata]);
+    2. Raccolta di informazioni/contenuti;
+    3. Stesura del documento rispettando le norme descritte nella #link(<docNorms>)[sezione dedicata].
+- Revisione/Verifica:
+    1. Revisione da parte dei verificatori del corretto utilizzo delle norme;
+- Manutenzione:
+    1. Avanzamento di versione del documento;
+    2. Richieste di modifiche derivate da nuove necessità o esigenze. Il documento torna nello stato di redazione.
+
 === Strumenti 
     - Typst: scelta definitiva per la formattazione dei documenti, motivata della comodità con cui è possibile effettuare il versionamento e la revisione dei documenti stessi;
 
@@ -457,7 +484,7 @@ La documentazione software è l'insieme di informazioni, raccolte testualmente, 
 
     - Figure: le immagini devono rigorosamente essere accompagnate da relativa didascalia, ed essere ridimensionate in modo ragionevole, senza eccessiva perdità di qualità, contenuto e senza andare ad occupare spazi esagerati rendendo la lettura del documento sgradevole.
 //revisionato fin qua
-=== Norme tipografiche
+=== Norme tipografiche <docNorms>
 //da mettere apposto e rendere tutto conforme !!!!!
     - Nome file: I nomi dei file hanno tutti una notazione omogenea tra di loro, ovvero, nomi descrittivi del contenuto, la lettera iniziale è sempre maiuscola e il resto tutto minuscolo. Le parole sono separate da degli underscore e la data viene scritta in formato AAAA-MM-GG senza spazi;
 
@@ -470,7 +497,7 @@ La documentazione software è l'insieme di informazioni, raccolte testualmente, 
     - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" o da un "+", spaziati dal nome dell'elemento (rispettivamente rapresentanti un elenco puntato, o un elenco numerato). La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".\ L'uso di quale tipologia di elenco utilizzare (puntato o numerato) è lasciato a propria discrezione.
 /** da ampliare in caso di aggiunte */
 
-=== Struttura
+=== Struttura <docStructure>
 I documenti ufficiali hanno una struttura precisa e comune che deve essere rigorosamente rispettata per i motivi citati nella descrizione.
 
     - Prima pagina, sempre composta dal template esclusivo del team, caratterizzata da:
@@ -664,6 +691,52 @@ Qui sotto un link al repository, e alla pagina di presentazione:
 #link("https://farmacodeunipd.github.io/")[
     Pagina di presentazione.
 ]
+
+==== Procedura di redazione/revisione/manutenzione
+Come appreso dalla sezione precedente, il branch sources è quello relativo alla produzione della documentazione di progetto. Questo ramo contiene quindi i file Typst (.typ) necessari per la stesura e modifica del documento.\ 
+I seguenti passaggi descrivono le operazioni da effettuare per poter effettuare le operazioni menzionate:
+
+    Consigliamo l'utilizzo dei seguenti programmi e strumenti:
+        - Visual Studio Code (Download disponibile #link("https://code.visualstudio.com/")[qui]);
+        - Typst Preview: estensione di Visual Studio Code (Extension ID: mgt19937.typst-preview).
+
+    Aprire il programma Visual Studio Code e creare una nuova cartella di progetto. (Passare allo step successivo in caso abbiate già la cartella e la repositori remota settata in maniera corretta).
+    Aprire un nuovo terminale all'interno di VScode, quindi dal menu superiore selezionare ``` Terminal``` e di nuovo ``` New Terminal```.\
+    Nel terminale digitare: 
+        ```
+            git clone https://github.com/farmacodeunipd/farmacode.git .
+        ```
+    Dopo qualche secondo potrete notare che sono stati scaricati i file all'interno del repository di progetto. 
+
+    Se necessario spostarsi nel branch sources (Passare allo step successivo se già all'interno del branch sources).\ 
+    Digitare nel terminale i seguenti comandi:
+        ```
+            git checkout sources
+        ```
+    Ora siamo all'interno del ramo di produzione documenti.
+
+    Nel caso in cui si intenda continuare ad esempio la stesura di un documento è opportuno scaricare eventuali avanzamenti da parte di altri membri del team di progetto.\
+    Sempre dal terminale integrato digitare il seguente comando:
+        ```
+            git pull
+        ```
+
+    Procedere con le operazioni da fare sui documenti. Si consiglia l'utilizzo dell'estensione nominata in precedenza così da avere una preview live del documento.
+
+    Una volta concluse le operazioni sui file .typ è necessario pushare il lavoro fatto e renderlo accessibile agli altri membri del team per ulteriori aggiornamenti.\
+    Da terminale digitare: <prev>
+        ```
+            git add .
+            git commit -m "Descrizione delle modifiche"
+            git push
+        ```
+
+    È possibile che vi siano dei problemi dopo aver eseguito il comando ``` git push```. In quel caso digitare da terminale:
+        ```
+            git pull
+        ```
+    Ora potrebbe essere necessario risolvere eventuali conflitti e al termine rieffettuare le operazione al passaggio #link(<prev>)[precedente].
+    //da fare meglio il link?????
 
 == Accertamento della qualità 
 
@@ -1045,8 +1118,15 @@ Per una migliore gestione delle attività di progetto vengono suddivise in due c
 Per la gestione delle attività relative ai processi primari e di supporto, si utilizza il sitema integrato di #glossario("Issues Tracking System") (ITS), di Github. Il ciclo di vita delle azioni segue i seguenti passaggi:
 
 Creazione: L'attività viene definita come un compito da svolgere e viene registrata come una issue su GitHub.
-Le issue devono essere collegate alla/e board di progetto e al rispettivo sprint utilizzando la milestone allegata. Inoltre devono essere contrassegnate da label identificative consone. Ne segue la lista che ne norma l'uso:
-
+Le issue devono essere collegate alla/e board di progetto e al rispettivo sprint utilizzando la milestone allegata.
+La creazione avviene in maniera semplificata in quanto sono stati creati dei template, tra cui abbiamo:
+- Documentazione: template per la stesura della documentazione;
+- Revisione: template per la revisione della documentazione;
+- Verbale esterno: template per la stesura di un verbale esterno;
+- Verbale interno: template per la stesuta di un verbale interno;
+- Standard issue template: template per una issue comune.
+I template favoriscono la compilazione guidata di tutti i campi della issue in questione. Nella maggior parte dei casi, quindi, le label sono già assegnate. Tuttavia è possibile inserirne molteplici e/o personalizzate in base al caso.\
+Qui ne segue la lista che ne norma l'uso:
 - approval: da utilizzare solo per issue che identificano attività di approvazione, da svolgere da parte del Responsabile corrente. Solitamente una issue finale per sprint;
 - bug-fix: denota una issue la cui rispettiva attività mira alla correzione di un bug, o altre problematiche;
 - code: rappresentano una nuova feature o integrazione nel codice;
@@ -1056,11 +1136,52 @@ Le issue devono essere collegate alla/e board di progetto e al rispettivo sprint
 - RTB: deve essere usata solo per issue rappresentanti sprint legati al periodo di RTB;
 - PB: deve essere usata solo per issue rappresentanti sprint legati al periodo di PB.
 
-Infine le issue devono avere un nome significativo e possedere una descrizione definita come segue: 
+Infine le issue devono avere un nome significativo e possedere una descrizione definita dai template descritti in precedenza: 
+- Documentazione: 
+    - Title: 
+        ```
+            Continuazione stesura del file ""
+        ```
+    - Description: 
+        ```
+            **Descrizione:**
 
-(h3 in markdown) desc:  (plain text) testo della descrizione;
+            **Data apertura:**
+        ```
+- Revisione:
+    - Title: 
+        ```
+            Revisione del file ""
+        ```
+    - Description: 
+        ```
+            **Descrizione:**
 
-Per garantire maggiore uniformità ed omogeneità sono stati predisposti dei template tramite il meccanismo integrato di github, per la creazione di issues dalla struttura riccorrente.
+            **Data apertura:**
+        ```
+- Verbale esterno:
+    - Title: 
+        ```
+            Stesura del file "Verbale esterno[data]"
+        ```
+    - Description: 
+        ```
+            **Descrizione:**
+
+            **Data apertura:**
+        ```
+- Verbale interno:
+    - Title: 
+        ```
+            Stesura del file "Verbale interno[data]"
+        ```
+    - Description: 
+        ```
+            **Descrizione:**
+
+            **Data apertura:**
+        ```
+- Standard issue template: titolo e descrizione libera.
 
 Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni nuovo sprint. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso;
 
