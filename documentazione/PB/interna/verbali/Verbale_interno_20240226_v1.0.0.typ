@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-02-26", p.pandolfo, "", "Stesura del verbale",
+    "1.0.0", "2024-02-26", p.pandolfo, p.favaron, "Stesura del verbale",
   ),
 )
 
@@ -36,10 +36,11 @@
 - Apertura nuovo sprint e turnazione ruoli.
 
 = Sintesi
-Il meeting è iniziato analizzando quanto svolto nello sprint precedente, in particolare i miglioramenti apportati all'analisi dei requisiti e al piano dei progetti, oltre alle modifiche apportate all'API. \
-Si è poi deciso su quali documenti continuare ad apportare miglioramenti, 
+Il meeting è iniziato analizzando quanto svolto nello sprint precedente, in particolare i miglioramenti apportati all'analisi dei requisiti e al piano di progetto, oltre alle modifiche apportate all'API. Quindi ogni membro del gruppo ha esposto il lavoro fatto nella settimana precedente. \
+Inoltre si è data un'occhiata a quanto fatto in una prima fase di design pattern. Con il team si è deciso di fissare nelle prossime settimane, a raggiungimento di una solida idea e buona quantità di materiale realizzato, un incontro con il professor Cardin per un feedback.\
+Si è poi deciso su quali documenti continuare ad apportare miglioramenti.\
 Successivamente si è parlato della chiusura dello sprint corrente e dell'apertura dello sprint 13, con relativa rotazione dei ruoli come sotto riportato. \
-Infine si è decisa una data in cui fissare un meeting con l'azeinda proponente. 
+Infine si è decisa una data in cui fissare un meeting con l'azienda proponente, venerdì 2024/03/01. 
 #pagebreak()
 
 = Obiettivi fissati
