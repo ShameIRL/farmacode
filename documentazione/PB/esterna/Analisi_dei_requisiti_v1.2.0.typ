@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.2.0", "2024-01-01", p.passarella, "", "Correzione UC da 9.1 a 11.2.1.4",
     "1.1.0", "2024-02-22", p.rosson, p.passarella, "Correzione e miglioramento introduzione e UC da 1 a 9",
     "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
     "0.7.1", "2024-01-14", p.bomben, p.rosson, "Tracciamento requisiti - fonte",
@@ -254,8 +255,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Attori:
   + Admin --> User.
 - Use Case:
-  - Admin/User:
-    + UC4.1 - Visualizzazione singola funzionalità.
+  + UC4.1 - Visualizzazione singola funzionalità.
 #pagebreak()
 
 ==== UC4.1 - Visualizzazione singola funzionalità
@@ -557,7 +557,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Sistema:
     + mostra all'utente la sua email in chiaro.
 
-
 + *UC5.1.3 - Visualizzazione username*
 
   *Attori:*
@@ -663,8 +662,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + modifica l'interfaccia per permettere all'utente di inserire la nuova email ed aggiungendo l'opzione di conferma della modifica dell'email;
     + se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
     + se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
-#pagebreak()
-2. *UC5.2.2 - Modifica password*
+
++ *UC5.2.2 - Modifica password*
 
   *Attori:*
   - Admin;
@@ -1011,11 +1010,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 ==== Approfondimento specificità UC7.2
 
-#align(left, text(11pt)[*UC7.2.1 - Visualizzazione dettagli singolo "Risultato"*]) 
 #figure(
   image("/imgs/Uml/UC7.2.1.png", width: 65%),
   caption: [
-    Visualizzazione dettagli singolo "Risultato"
+    Approfondimento specificità UC7.2 - Visualizzazione vista risultati
   ],
 )
 *Attori:*
@@ -1301,7 +1299,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-+ compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC9.1.1, UC9.1.2, UC9.1.3, UC9.1.4);
+  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC9.1.1, UC9.1.2, UC9.1.3, UC9.1.4);
   + avvia la ricerca;
   + visualizza i risultati della ricerca (UC9.2/UC16).
 - Sistema:
@@ -1443,7 +1441,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 ==== UC9.2 - Visualizzazione lista prodotti
 
 #figure(
-  image("/imgs/Uml/UC10.2.png", width: 80%),
+  image("/imgs/Uml/UC9.2.png", width: 80%),
   caption: [
     Visualizzazione lista prodotti
   ],
@@ -1456,31 +1454,30 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Catalogo prodotti".
 *Postcondizioni:*
 - L'utente visualizza la lista dei prodotti;
-- Nel caso l'utente abbia effettuato una ricerca (UC10.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC9.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin/User:
-  - visualizza la lista dei prodotti.
-  - visualizza i risultati della ricerca effettuata;
+  + visualizza la lista dei prodotti.
+  + visualizza i risultati della ricerca effettuata;
 - Sistema:
-  - mostra la lista dei prodotti;
-  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+  + mostra la lista dei prodotti;
+  + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
 - UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC10.2.1 - Visualizzazione dettagli singolo "Prodotto".
+  + UC9.2.1 - Visualizzazione dettagli singolo "Prodotto".
 
 #pagebreak()
-==== Generalizzazioni UC10.2
-#align(left, text(11pt)[*UC10.2.1 - Visualizzazione informazioni singolo "Prodotto"*])
+==== Approfondimento specificità UC9.2
 
 #figure(
-  image("/imgs/Uml/UC10.2.1.png", width: 65%),
+  image("/imgs/Uml/UC9.2.1.png", width: 65%),
   caption: [
-    Visualizzazione informazioni singolo "Prodotto"
+    Approfondimento specificità UC9.2 - Visualizzazione vista prodotti
   ],
 )
 *Attori:*
@@ -1492,26 +1489,26 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente osserva un singolo elemento della lista.
 *Scenario principale:*
 - Admin/User:
-  - osserva un prodotto della lista tra i vari mostrati.
+  + osserva un prodotto della lista tra i vari mostrati.
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC10.2.1.1 - Visualizzazione "Immagine" prodotto;
-  - UC10.2.1.2 - Visualizzazione "ID" prodotto;
-  - UC10.2.1.3 - Visualizzazione "Nome" prodotto;
-  - UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
+  + UC9.2.1.1 - Visualizzazione "Immagine" prodotto;
+  + UC9.2.1.2 - Visualizzazione "ID" prodotto;
+  + UC9.2.1.3 - Visualizzazione "Nome" prodotto;
+  + UC9.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
 
 #pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC10.2.1*])
+===== Approfondimento specificità UC9.2.1
 
 #figure(
-  image("/imgs/Uml/UC10.2.1_gen.png", width: 70%),
+  image("/imgs/Uml/UC9.2.1gen.png", width: 70%),
   caption: [
-    Sotto-UC UC10.2.1 
+    Approfondimento specificità UC9.2.1 - Visualizzazione dettagli singolo prodotto
   ],
 )
-+ *UC10.2.1.1 - Visualizzazione "Immagine" prodotto*
++ *UC9.2.1.1 - Visualizzazione "Immagine" prodotto*
 
   *Attori:*
   - Admin;
@@ -1522,9 +1519,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza l'immagine del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza l'immagine del prodotto che sta osservando.
+    + visualizza l'immagine del prodotto che sta osservando.
 
-+ *UC10.2.1.2 - Visualizzazione "ID" prodotto*
++ *UC9.2.1.2 - Visualizzazione "ID" prodotto*
 
   *Attori:*
   - Admin;
@@ -1535,10 +1532,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza l'ID del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza l'ID del prodotto che sta osservando.
+    + visualizza l'ID del prodotto che sta osservando.
 
-#pagebreak()
-+ *UC10.2.1.3 - Visualizzazione "Nome" prodotto*
++ *UC9.2.1.3 - Visualizzazione "Nome" prodotto*
 
   *Attori:*
   - Admin;
@@ -1549,9 +1545,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza il nome del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza il nome del prodotto che sta osservando.
+    + visualizza il nome del prodotto che sta osservando.
 
-+ *UC10.2.1.4 - Visualizzazione bottone "Dettagli prodotto"*
++ *UC9.2.1.4 - Visualizzazione bottone "Dettagli prodotto"*
 
   *Attori:*
   - Admin;
@@ -1562,50 +1558,50 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
+    + visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
 
 #pagebreak()
-=== UC11 - Visualizzazione dettaglio "Prodotto"
+=== UC10 - Visualizzazione "Dettagli prodotto"
 #figure(
-  image("/imgs/Uml/UC11.png", width: 80%),
+  image("/imgs/Uml/UC10.png", width: 80%),
   caption: [
-    Visualizzazione dettaglio "Prodotto"
+    Visualizzazione "Dettagli prodotto"
   ],
 )
 *Attori:*
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente ha interagito con il bottone di dettagli prodotto (UC10.2.1.4) di uno dei prodotti disponibili nella vista di catalogo prodotti (UC10);
+- L'utente ha interagito con il bottone "Dettagli prodotto" (UC9.2.1.4) di uno dei prodotti disponibili nella vista di catalogo prodotti (UC9);
 - L'utente sta visualizzando i dettagli del prodotto.
 *Postcondizioni:*
 - Il sistema mostra i dettagli del corrispondente prodotto all'utente.
 *Scenario principale:*
 - Admin/User:
-  - visualizza i dettagli del prodotto.
+  + visualizza i dettagli del prodotto.
 - Sistema: 
-  - mostra i dettagli del corrispondente prodotto all'utente.
+  + mostra i dettagli del corrispondente prodotto all'utente.
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC11.1 - Visualizzazione "Immagine" prodotto;
-  - UC11.2 - Visualizzazione "ID" prodotto;
-  - UC11.3 - Visualizzazione "Nome" prodotto;
-  - UC11.4 - Visualizzazione "Linea Commerciale" prodotto;
-  - UC11.5 - Visualizzazione "Settore Commerciale" prodotto;
-  - UC11.6 - Visualizzazione "Marca" prodotto;
-  - UC11.7 - Visualizzazione "Provenienza" prodotto;
+  + UC10.1 - Visualizzazione "Immagine" prodotto;
+  + UC10.2 - Visualizzazione "ID" prodotto;
+  + UC10.3 - Visualizzazione "Nome" prodotto;
+  + UC10.4 - Visualizzazione "Linea Commerciale" prodotto;
+  + UC10.5 - Visualizzazione "Settore Commerciale" prodotto;
+  + UC10.6 - Visualizzazione "Marca" prodotto;
+  + UC10.7 - Visualizzazione "Provenienza" prodotto;
 
 #pagebreak()
-==== Sotto-UC UC11
+==== Approfondimento specificità UC10
 #figure(
-  image("/imgs/Uml/UC11_gen.png", width: 80%),
+  image("/imgs/Uml/UC10gen.png", width: 80%),
   caption: [
-    Sotto-UC UC11
+    Approfondimento specificità UC10 - Visualizzazione "Dettagli prodotto"
   ],
 )
-+ *UC11.1 - Visualizzazione "Immagine" prodotto*
++ *UC10.1 - Visualizzazione "Immagine" prodotto*
 
   *Attori:*
   - Admin;
@@ -1616,9 +1612,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza l'immagine del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza l'immagine del prodotto che sta osservando.
+    + visualizza l'immagine del prodotto che sta osservando.
 
-+ *UC11.2 - Visualizzazione "ID" prodotto*
++ *UC10.2 - Visualizzazione "ID" prodotto*
 
   *Attori:*
   - Admin;
@@ -1627,12 +1623,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
   - L'utente visualizza l'ID del prodotto che sta osservando.
-#pagebreak()
   *Scenario principale:*
   - Admin/User:
-    - visualizza l'ID del prodotto che sta osservando.
+    + visualizza l'ID del prodotto che sta osservando.
 
-+ *UC11.3 - Visualizzazione "Nome" prodotto*
++ *UC10.3 - Visualizzazione "Nome" prodotto*
 
   *Attori:*
   - Admin;
@@ -1643,9 +1638,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza il nome del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza il nome del prodotto che sta osservando.
+    + visualizza il nome del prodotto che sta osservando.
 
-+ *UC11.4 - Visualizzazione "Linea Commerciale" prodotto*
++ *UC10.4 - Visualizzazione "Linea Commerciale" prodotto*
 
   *Attori:*
   - Admin;
@@ -1656,9 +1651,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza la linea commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza la linea commerciale del prodotto che sta osservando.
+    + visualizza la linea commerciale del prodotto che sta osservando.
 
-+ *UC11.5 - Visualizzazione "Settore Commerciale" prodotto*
++ *UC10.5 - Visualizzazione "Settore Commerciale" prodotto*
 
   *Attori:*
   - Admin;
@@ -1669,10 +1664,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza il settore commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza il settore commerciale del prodotto che sta osservando.
+    + visualizza il settore commerciale del prodotto che sta osservando.
 
-#pagebreak()
-+ *UC11.6 - Visualizzazione "Marca" prodotto*
++ *UC10.6 - Visualizzazione "Marca" prodotto*
 
   *Attori:*
   - Admin;
@@ -1683,9 +1677,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza la marca del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza la marca del prodotto che sta osservando.
+    + visualizza la marca del prodotto che sta osservando.
 
-+ *UC11.7 - Visualizzazione "Provenienza" prodotto*
++ *UC10.7 - Visualizzazione "Provenienza" prodotto*
 
   *Attori:*
   - Admin;
@@ -1696,13 +1690,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza la provenienza del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza la provenienza del prodotto che sta osservando.
+    + visualizza la provenienza del prodotto che sta osservando.
 
 #pagebreak()
-=== UC12 - Visualizzazione vista "Lista Clienti"
+=== UC11 - Visualizzazione vista "Lista Clienti"
 
 #figure(
-  image("/imgs/Uml/UC12.png", width: 80%),
+  image("/imgs/Uml/UC11.png", width: 80%),
   caption: [
     Visualizzazione vista "Lista Clienti"
   ],
@@ -1719,25 +1713,26 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di lista clienti.
 *Scenario principale:*
 - Admin/User:
-  - seleziona il bottone relativo alla funzionalità di lista clienti nel menù (UC5);
-  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC12.1);
-  - visualizza la lista dei clienti (UC12.2).
+  + seleziona il bottone relativo alla funzionalità di lista clienti nel menù (UC4);
+  + visualizza la lista dei clienti (UC11.2).
+  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC11.1);
+  + nel caso abbia effettuato una ricerca (UC11.1) visualizza la lista filtrata in base ai parametri (UC11.2)
 - Sistema:
-  - mostra all'utente la funzionalità di lista clienti;
-  - fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
-  - mostra all'utente la lista dei clienti (UC12.1).
+  + mostra all'utente la funzionalità di lista clienti;
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC11.1) e di visualizzarne i risultati;
+  + mostra all'utente la lista dei clienti (UC11.2).
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC12.1 - Ricerca per vista "Lista Clienti";
-  - UC12.2 - Visualizzazione lista clienti.
+  + UC12.1 - Ricerca per vista "Lista Clienti";
+  + UC12.2 - Visualizzazione lista clienti.
 
 #pagebreak()
-==== UC12.1 - Ricerca per vista "Lista Clienti";
+==== UC11.1 - Ricerca per vista "Lista Clienti";
 
 #figure(
-  image("/imgs/Uml/UC12.1.png", width: 80%),
+  image("/imgs/Uml/UC11.1.png", width: 80%),
   caption: [
     Ricerca per vista "Lista Clienti"
   ],
@@ -1750,60 +1745,36 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine;
+- L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine;
 - L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  - compila i campi presenti nella barra di ricerca (UC12.1.1);
-  - avvia la ricerca (UC12.1.2);
-  - visualizza i risultati della ricerca (UC12.2/UC16).
+  + compila i campi presenti nella barra di ricerca (UC11.1.1, UC11.1.2, UC11.1.3);
+  + avvia la ricerca;
+  + visualizza i risultati della ricerca (UC11.2/UC16).
 - Sistema:
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
-  - contatta tramite API il software che fornisce i risultati della ricerca;
-  - riceve tramite API una risposta dal software;
-  - mostra a schermo i risultati della ricerca.
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC11.1);
+  + contatta tramite API il software che fornisce i risultati della ricerca;
+  + riceve tramite API una risposta dal software;
+  + mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC12.1.1 - Compilazione campi ricerca.
-  - UC12.1.2 - Avvio ricerca.
+  + UC11.1.1 - Completamento input "Nome";
+  + UC11.1.2 - Completamento input "Cognome";
+  + UC11.1.3 - Selezione input "Provincia";
 
 #pagebreak()
-==== Generalizzazioni UC12.1
-#align(left, text(11pt)[*UC12.1.1 - Compilazione campi ricerca*])
-
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Lista Clienti" nella pagina principale;
-- L'utente decide di fare una ricerca e compila i campi necessari;
-*Postcondizioni:*
-- L'utente ha compilato correttamente i campi di ricerca;
-*Scenario principale:*
-- Admin/User:
-  - compila i campi presenti nella barra di ricerca (UC12.1.1)
-- Sistema:
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
-*Generalizzazioni:*
-- Attori:
-  - Admin --> User.
-- Use Case:
-  - UC12.1.1.1 - Completamento input "Nome";
-  - UC12.1.1.2 - Completamento input "Cognome";
-  - UC12.1.1.3 - Selezione input "Provincia";
-
-#pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC12.1.1 *])
+==== Approfondimento specificità UC11.1
 
 #figure(
-  image("/imgs/Uml/UC12.1.1_gen.png", width: 80%),
+  image("/imgs/Uml/UC11.1gen.png", width: 80%),
   caption: [
-    Sotto-UC UC12.1.1 
+    Approfondimento specificità UC11.1 - Ricerca per vista "Lista Clienti"
   ],
 )
-+ *UC12.1.1.1 - Completamento input "Nome"*
++ *UC11.1.1 - Completamento input "Nome"*
 
   *Attori:*
   - Admin;
@@ -1815,23 +1786,23 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo nome cliente mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin/User:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - inizia a compilare il campo con l'opzione che vuole selezionare;
-    - visualizza le opzioni possibili per l'input;
-    - visualizza suggerimenti di autocompletamento per l'input;
-    - sceglie una delle opzioni possibili.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili.
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
-    - prende a conoscenza i caratteri inseriti dall'utente;
-    - contatta tramite API il software che fornisce le opzioni possibili;
-    - riceve tramite API una risposta con le opzioni possibili dal software;
-    - mostra all'utente le opzioni possibili per l'input;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-+ *UC12.1.1.2 - Completamento input "Cognome"*
++ *UC11.1.2 - Completamento input "Cognome"*
 
   *Attori:*
   - Admin;
@@ -1843,23 +1814,23 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo cognome cliente mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin/User:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - inizia a compilare il campo con l'opzione che vuole selezionare;
-    - visualizza le opzioni possibili per l'input;
-    - visualizza suggerimenti di autocompletamento per l'input;
-    - sceglie una delle opzioni possibili.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili.
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
-    - prende a conoscenza i caratteri inseriti dall'utente;
-    - contatta tramite API il software che fornisce le opzioni possibili;
-    - riceve tramite API una risposta con le opzioni possibili dal software;
-    - mostra all'utente le opzioni possibili per l'input;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-+ *UC12.1.1.3 - Selezione input "Provincia"*
++ *UC11.1.3 - Selezione input "Provincia"*
 
   *Attori:*
   - Admin;
@@ -1871,43 +1842,22 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo provincia cliente mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin/User:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - visualizza le opzioni possibili per l'input;
-    - sceglie una delle opzioni possibili per l'input.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + visualizza le opzioni possibili per l'input;
+    + sceglie una delle opzioni possibili per l'input.
 #pagebreak()
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    - mostra all'utente le opzioni possibili;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    + mostra all'utente le opzioni possibili;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-#align(left, text(11pt)[*UC12.1.2- Avvio ricerca*])
-
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente ha compilato i campi della barra di ricerca (UC12.1.1.1, UC12.1.1.2, UC12.1.1.3).
-*Postcondizioni:*
-- Il sistema estrapola i dati dalla barra di ricerca;
-- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
-*Scenario principale:*
-- Admin/User:
-  - interagisce con il pulsante di avvio ricerca.
-- Sistema:
-  - estrapola i dati dalla barra di ricerca;
-  - contatta il software dedicato con i dati estrapolati tramite API;
-  - riceve una risposta tramite API dal software dedicato;
-  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC12.2).
-
-#pagebreak()
-==== UC12.2 - Visualizzazione lista clienti
+==== UC11.2 - Visualizzazione lista clienti
 
 #figure(
-  image("/imgs/Uml/UC12.2.png", width: 65%),
+  image("/imgs/Uml/UC11.2.png", width: 65%),
   caption: [
     Visualizzazione lista clienti
   ],
@@ -1920,31 +1870,30 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Lista clienti".
 *Postcondizioni:*
 - L'utente visualizza la lista dei clienti;
-- Nel caso l'utente abbia effettuato una ricerca (UC12.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC11.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin/User:
-  - visualizza la lista dei clienti;
-  - visualizza i risultati della ricerca effettuata.
+  + visualizza la lista dei clienti;
+  + visualizza i risultati della ricerca effettuata.
 - Sistema:
-  - mostra la lista dei clienti;
-  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+  + mostra la lista dei clienti;
+  + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
 - UC16 - Errore di ricerca.
 
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC12.2.1 - Visualizzazione dettagli singolo "Cliente".
+  + UC11.2.1 - Visualizzazione dettagli singolo "Cliente".
 
 #pagebreak()
-==== Generalizzazioni UC12.2
-#align(left, text(11pt)[*UC12.2.1 - Visualizzazione dettagli singolo "Cliente"*])
+==== Approfondimento specificità UC11.2
 
 #figure(
-  image("/imgs/Uml/UC12.2.1.png", width: 65%),
+  image("/imgs/Uml/UC11.2.1.png", width: 65%),
   caption: [
-    Visualizzazione dettagli singolo "Cliente"
+    Approfondimento specificità UC11.2 - Visualizzazione lista clienti
   ],
 )
 *Attori:*
@@ -1956,26 +1905,26 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente osserva singolo elemento della lista.
 *Scenario principale:*
 - Admin/User:
-  - osserva un cliente della lista tra i vari mostrati.
+  + osserva un cliente della lista tra i vari mostrati.
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 - Use Case:
-  - UC12.2.1.1 - Visualizzazione "ID" cliente;
-  - UC12.2.1.2 - Visualizzazione "Nome" cliente;
-  - UC12.2.1.1 - Visualizzazione "Cognome" cliente;
-  - UC12.2.1.4 - Visualizzazione "Provincia" cliente;
+  + UC11.2.1.1 - Visualizzazione "ID" cliente;
+  + UC11.2.1.2 - Visualizzazione "Nome" cliente;
+  + UC11.2.1.1 - Visualizzazione "Cognome" cliente;
+  + UC11.2.1.4 - Visualizzazione "Provincia" cliente;
 
 #pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC12.2.1 *])
+==== Approfondimento specificità 11.2.1
 
 #figure(
-  image("/imgs/Uml/UC12.2.1_gen.png", width: 70%),
+  image("/imgs/Uml/UC11.2.1gen.png", width: 70%),
   caption: [
-    Sotto-UC UC12.2.1 
+    Approfondimento specificità 11.2.1 - Visualizzazione dettagli singolo "Cliente"
   ],
 )
-+ *UC12.2.1.1 - Visualizzazione "ID" cliente*
++ *UC11.2.1.1 - Visualizzazione "ID" cliente*
 
   *Attori:*
   - Admin;
@@ -1986,9 +1935,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza l'ID del cliente che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza l'ID del cliente che sta osservando.
+    + visualizza l'ID del cliente che sta osservando.
 
-+ *UC12.2.1.2 - Visualizzazione "Nome" cliente*
++ *UC11.2.1.2 - Visualizzazione "Nome" cliente*
 
   *Attori:*
   - Admin;
@@ -1999,10 +1948,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza il nome del cliente che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza il nome del cliente che sta osservando.
+    + visualizza il nome del cliente che sta osservando.
 
-#pagebreak()
-+ *UC12.2.1.3 - Visualizzazione "Cognome" cliente*
++ *UC11.2.1.3 - Visualizzazione "Cognome" cliente*
 
   *Attori:*
   - Admin;
@@ -2013,9 +1961,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza il cognome del cliente che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza il cognome del cliente che sta osservando.
+    + visualizza il cognome del cliente che sta osservando.
 
-+ *UC12.2.1.4 - Visualizzazione "Provincia" cliente*
++ *UC11.2.1.4 - Visualizzazione "Provincia" cliente*
 
   *Attori:*
   - Admin;
@@ -2026,8 +1974,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza la provincia del cliente che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    - visualizza la provincia del cliente che sta osservando.
+    + visualizza la provincia del cliente che sta osservando.
 
+//FINO A QUI
 // questo caso d'uso (il 13) andrà definito meglio più avanti ma così può andare penso
 
 #pagebreak()
