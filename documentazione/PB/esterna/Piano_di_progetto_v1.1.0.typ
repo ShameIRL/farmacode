@@ -2151,7 +2151,7 @@ I documenti interessati riguardano:
 - Analisi dei Requisiti: prevediamo di continuare a migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi apportando le correzioni suggerite ove necessario;\
 - Norme di Progetto: Migliorare la struttura del file apportando piccole correzioni ove richiesto;\
 - Piano di Qualifica: Migliorare la struttura generale del documento e anche il suo contenuto, oltre a migliorare le metriche esistenti.
-Oltre ai documenti abbiamo pianificato di continuare la modifica della scelta tecnologica per l'API.\
+Oltre ai documenti abbiamo pianificato di continuare la modifica della scelta tecnologica per l'API, oltre ad iniziare la realizzazone dei test automatici.\
 Infine abbiamo deciso di continuare lo studio e l'individuazione e scelta di design pattern per il nostro prodotto.
 
 === Rischi attesi
@@ -2173,8 +2173,8 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [Carraro A.], [], [], [], [], [4], [],
   [Favaron R.], [], [], [], [], [4], [],
   [Pandolfo M.], [4], [], [], [], [], [],
-  [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [], [2], [], [], [4],
+  [Passarella A.], [], [], [1], [], [], [4],
+  [Rosson L.], [], [], [1], [], [], [4],
 )
 ])
 #align(center)[Tabella 64: preventivo orario sprint.13.]
@@ -2198,8 +2198,8 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
 
 #align(left,
 figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#12.png", height: 20%, width: auto),
-  caption: [preventivi/sprint.13 SISTEMARE!!!!!!!!!!!!!]
+  image("/imgs/PdP/graphs/preventivi/sprint#13.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.13]
   )
   
 )
@@ -2222,9 +2222,9 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [Bomben F.], [], [5 #green("-1")], [], [], [], [],
   [Carraro A.], [], [], [], [], [4 #green("-1")], [],
   [Favaron R.], [], [], [], [], [4], [],
-  [Pandolfo M.], [4 #red("+1")], [], [], [], [], [],
-  [Passarella A.], [], [], [2], [], [], [4],
-  [Rosson L.], [], [], [], [], [], [4 #red("+1")],
+  [Pandolfo M.], [4], [], [], [], [], [],
+  [Passarella A.], [], [], [1 #red("+1")], [], [], [4],
+  [Rosson L.], [], [], [], [1 #red("+1")], [], [4 #red("+1")],
 )
 ])
 #align(center)[Tabella 66: consuntivo orario sprint.13.]
@@ -2237,9 +2237,9 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [5], [6], [2], [3], [7], [9],
+  [Totale Ore], [4], [6], [4], [3], [7], [9],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [#red("€150,00")], [#green("€150,00")], [€30,00], [#green("€60,00")], [#green("€105,00")], [#red("€225,00")],
+  [Costo], [€120,00], [#green("€150,00")], [#red("€60,00")], [#green("€60,00")], [#green("€105,00")], [#red("€225,00")],
   [Totale], [], [], [], [], [], [#green("€720,00")], 
   [Bilancio], [], [], [], [], [], [#green("€7375,00")],
 )
@@ -2250,8 +2250,8 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (1fr, auto),
   rows: (auto),
   figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#12.png", height: 30%, width: auto),
-  caption: [bilancio/sprint.13 SISTEMARE!!!!!!!!!!!!!!!!!!!!1],
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#13.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.13],
   ),
   table(
     fill: (col, row) => 
@@ -2264,7 +2264,8 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
 )
 
 === Rischi incontrati e mitigazioni
-
+Il rischio preventivato non si è verificato, in quanto non ci sono stati altri problemi nella modifica dell'API.\
+Il principale problema riscontrato è stata l'integrazione dei test.
 
 === Retrospettiva
 
