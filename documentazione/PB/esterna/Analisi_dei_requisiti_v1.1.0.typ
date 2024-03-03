@@ -553,9 +553,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
 
-= DA FARE
 #pagebreak()
 ==== Approfondimento specificità UC6.1
 
@@ -572,23 +570,27 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin;
   - User.
   *Precondizioni:*
-  - L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
-  - L'utente decide di modificare la propria email.
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input "Topic".
   *Postcondizioni:*
-  - L'utente modifica la propria email;
-  - La nuova email viene sostituita alla precedente e salvata.
+  - Il campo "Topic" mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin/User:
-    + decide di modificare la propria email;
-    + inserisce la nuova email;
-    + conferma la nuova email;
-    + conferma la sua scelta confermando il salvataggio della nuova email nel sistema;
-    + nega la sua scelta tramite il processo di annullamento dell'operazione.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili.
   - Sistema:
-    + prende a conoscenza l'intenzione dell'utente di modificare la propria email;
-    + modifica l'interfaccia per permettere all'utente di inserire la nuova email ed aggiungendo l'opzione di conferma della modifica dell'email;
-    + se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
-    + se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+   + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili. 
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -597,29 +599,33 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + UC6.1.3 Ricerca "clienti per prodotto"
     + UC6.1.4 Ricerca per "cronologia"
 
-+ *UC6.1.2 - Scelta N risultati*
++ *UC6.1.5 - Scelta N risultati*
 
   *Attori:*
   - Admin;
   - User.
   *Precondizioni:*
-  - L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
-  - L'utente decide di modificare la propria password.
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input "N risultati".
   *Postcondizioni:*
-  - L'utente modifica la propria password;
-  - La nuova password viene sostituita alla precedente e salvata.
+  - Il campo "N risultati" mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin/User:
-    + decide di modificare la propria password;
-    + inserisce la nuova password;
-    + conferma la nuova password;
-    + conferma la sua scelta confermando il salvataggio della nuova password nel sistema;
-    + nega la sua scelta tramite il processo di annullamento dell'operazione.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili.
   - Sistema:
-    + prende a conoscenza l'intenzione dell'utente di modificare la propria password;
-    + modifica l'interfaccia per permettere all'utente di inserire la nuova password ed aggiungendo l'opzione di conferma della modifica dell'password;
-    + se la nuova password viene confermata, sostituisce la vecchia password con la nuova password all'interno del sistema e la salva;
-    + se la nuova password non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -629,7 +635,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 
 #pagebreak()
-===== UC6.1.1 - Ricerca "prodotti per cliente"
+===== UC6.1.2 - Ricerca "prodotti per cliente"
 
   *Attori:*
   - Admin;
@@ -639,20 +645,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente decide di fare una ricerca e compila i campi necessari;
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC7.2).
+  - L'utente visualizza i risultati della ricerca (UC6.2).
   *Scenario principale:*
   - Admin/User:
     + sceglie di cercare i migliori prodotti per il cliente selezionato;
-    + decide il numero di raccomandazioni che vuole ricevere (top5, top 10).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC7.1.1);
-    + mostra al utente i risultati della sua ricerca (UC7.2/UC16).
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
 #pagebreak()
-===== UC6.1.2 - Ricerca "clienti per prodotti"
+===== UC6.1.3 - Ricerca "clienti per prodotti"
 
   *Attori:*
   - Admin;
@@ -662,20 +667,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente decide di fare una ricerca e compila i campi necessari;
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC7.2).
+  - L'utente visualizza i risultati della ricerca (UC6.2).
   *Scenario principale:*
   - Admin/User:
     + sceglie di cercare i migliori clienti per il prodotto selezionato;
-    + decide il numero di raccomandazioni che vuole ricevere (top5, top 10).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC7.1.1);
-    + mostra al utente i risultati della sua ricerca (UC7.2/UC16).
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
 #pagebreak()
-===== UC6.1.3 - Ricerca per "cronologia"
+===== UC6.1.4 - Ricerca per "cronologia"
 
   *Attori:*
   - Admin;
@@ -685,19 +689,61 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente decide di fare una ricerca e compila i campi necessari;
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC7.2).
+  - L'utente visualizza i risultati della ricerca (UC6.2).
   *Scenario principale:*
   - Admin/User:
     + sceglie di effettuare nuovamente una precedente ricerca;
     + utilizza la cronologia per compilare i campi di ricerca in automatico.
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC7.1.1);
-    + mostra al utente i risultati della sua ricerca (UC7.2/UC16).
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+#pagebreak()
+
+===== UC6.1.6 - Top 5
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari;
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide il numero di raccomandazioni che vuole ricevere (Top 5).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
-= FINO A QUI
+#pagebreak()
+
+===== UC6.1.7 - Top 10
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari;
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide il numero di raccomandazioni che vuole ricevere (Top 10).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
 #pagebreak()
 
 ==== UC6.2 - Visualizzazione lista risultati
@@ -1735,22 +1781,81 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #figure(
   image("/imgs/Uml/UC11.2.1.png", width: 60%),
   caption: [
-    Sotto-UC UC13
+    Visualizzazione dettagli singola raccomandazione
   ],
 )
 
-= DA FARE
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente sta visualizzando la lista delle raccomandazioni utili.
+*Postcondizioni:*
+- L'utente osserva un risultato singolo delle raccomandazioni.
+*Scenario principale:*
+- Admin/User:
+  + osserva un risultato della lista tra i vari mostrati.
+*Generalizzazioni:*
+- Attori:
+  + Admin --> User.
 
-
-===== App UC11.2.1
+#pagebreak()
+===== Approfondimento specificità UC11.2.1
 #figure(
   image("/imgs/Uml/UC11.2.1app.png", width: 60%),
   caption: [
-    Sotto-UC UC13
+    Approfondimento specificità UC11.2.1 - Visualizzazione singolo elemento
   ],
 )
 
-= DA FARE
++ *UC11.2.1.1 - Visualizzazione "ID" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza l'ID del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+
++ *UC11.2.1.2 - Visualizzazione "ID" cliente*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del cliente che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza l'ID del cliente che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
++ *UC11.2.1.3 - Visualizzazione "Score"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Postcondizioni:*
+  - L'utente visualizza lo score della raccomandazione che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza lo score della raccomandazione che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
 === UC12 - Visualizzazione vista "Cronologia Ricerche"
@@ -1809,12 +1914,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 
 #pagebreak()
-==== Approfondimento specificità 12.1
+==== Approfondimento specificità UC12.1
 
 #figure(
   image("/imgs/Uml/UC12.1app.png", width: 80%),
   caption: [
-    Approfondimento specificità 12.1 - Completamento input
+    Approfondimento specificità UC12.1 - Completamento input
   ],
 )
 + *UC12.1.1.1 - Scelta input "Data"*
