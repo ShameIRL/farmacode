@@ -8,8 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.2.0", "2024-01-01", p.passarella, "", "Correzione UC da 9.1 a 11.2.1.4",
-    "1.1.0", "2024-02-22", p.rosson, p.passarella, "Correzione e miglioramento introduzione e UC da 1 a 9",
+    "1.1.0", "2024-03-03", p.bomben + "\n" + p.passarella + "\n" + p.rosson, "", "Correzione e miglioramento introduzione e UC",
     "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
     "0.7.1", "2024-01-14", p.bomben, p.rosson, "Tracciamento requisiti - fonte",
     "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
@@ -226,238 +225,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se il sistema rileva le credenziali come non corrette, mostra il messaggio di errore di login.
 
 #pagebreak()
-
-=== UC4 - Visualizzazione "Menù" delle funzionalità
+=== UC4 - Visualizzazione "Profilo Utente"
 #figure(
-  image("/imgs/Uml/UC4.png", width: 55%),
-  caption: [
-    Visualizzazione "Menù" delle funzionalità
-  ],
-)
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
-- L'utente è stato reindirizzato correttamente dal sistema.
-*Postcondizioni:*
-- L'utente visualizza le opzioni del menù relative alla sua categoria;
-- L'utente decide se selezionare o meno una delle opzioni disponibili.
-*Scenario principale:*
-- Admin/User:
-    + seleziona il bottone del menù nell'header per visualizzarne il contenuto;
-    + visualizza i bottoni interni al menù legati alle funzionalità del sito;
-    + decide se selezionare o meno una delle funzionalità disponibili (Admin/User: UC8, UC10, UC12, UC13; Admin: UC14, UC15).
-- Sistema:
-    + mostra all'utente i bottoni relativi alle funzionalità della sua categoria;
-    + mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-*Generalizzazioni:*
-- Attori:
-  + Admin --> User.
-- Use Case:
-  + UC4.1 - Visualizzazione singola funzionalità.
-#pagebreak()
-
-==== UC4.1 - Visualizzazione singola funzionalità
-#figure(
-  image("/imgs/Uml/UC4.1.png", width: 55%),
-  caption: [
-    Visualizzazione singola funzionalità
-  ],
-)
-
-*Attori:*
-- Admin;
-- User.
-*Precondizioni:*
-- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
-- L'utente è stato reindirizzato correttamente dal sistema;
-- L'utente sta visualizzando il menù delle funionalità.
-*Postcondizioni:*
-- L'utente visualizza una delle opzioni del menù relative alla sua categoria;
-- L'utente decide se selezionare o meno l'opzione.
-*Scenario principale:*
-- Admin/User:
-    + seleziona il bottone del menù nell'header per visualizzarne il contenuto;
-    + visualizza i bottoni interni al menù legati alle funzionalità del sito;
-    + decide se selezionare o meno la funzionalità in esame (Admin/User: UC8, UC10, UC12, UC13; Admin: UC14, UC15).
-- Sistema:
-    + mostra all'utente i bottoni relativi alle funzionalità della sua categoria;
-    + mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-*Generalizzazioni:*
-- Attori:
-  + Admin --> User.
-
-// ==== UC5.1 - Visualizzazione funzionalità Admin/User
-// #figure(
-//   image("/imgs/Uml/UC5.1.png", width: 80%),
-//   caption: [
-//     Visualizzazione funzionalità Admin/User
-//   ],
-// )
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù.
-// *Postcondizioni:*
-// - L'utente visualizza le opzioni del menù condivise dalle categorie Admin e User;
-// - L'utente decide se selezionare o meno una delle opzioni disponibili.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-//   - decide se selezionare o meno una delle funzionalità disponibili (UC8, UC10, UC12, UC13).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-// *Generalizzazioni:*
-// - Attori:
-//   - Admin --> User.
-// - Use Case:
-//   - UC5.1.1 - Selezione opzione "Ricerca"
-//   - UC5.1.2 - Selezione opzione "Catalogo Prodotti"
-//   - UC5.1.3 - Selezione opzione "Lista Clienti"
-//   - UC5.1.4 - Selezione opzione "Vista Statistiche mensili"
-
-// #pagebreak()
-// ==== Generalizzazioni UC5.1
-// #align(left, text(11pt)[*UC5.1.1 - Selezione opzione "Ricerca"*])
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
-// *Postcondizioni:*
-// - L'utente viene reindirizzato correttamente.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza le opzioni del menù condivise dalle categorie Admin e User;
-//   - seleziona l'opzione "Ricerca";
-//   - viene reindirizzato correttamente (UC8).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-
-// #align(left, text(11pt)[*UC5.1.2 - Selezione opzione "Catalogo Prodotti"*])
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
-// *Postcondizioni:*
-// - L'utente viene reindirizzato correttamente.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza le opzioni del menù condivise dalle categorie Admin e User;
-//   - seleziona l'opzione "Catalogo Prodotti";
-//   - viene reindirizzato correttamente (UC10).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-
-// #pagebreak()
-// #align(left, text(11pt)[*UC5.1.3 - Selezione opzione "Lista Clienti"*])
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
-// *Postcondizioni:*
-// - L'utente viene reindirizzato correttamente.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza le opzioni del menù condivise dalle categorie Admin e User;
-//   - seleziona l'opzione "Lista Clienti";
-//   - viene reindirizzato correttamente (UC12).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-
-// #align(left, text(11pt)[*UC5.1.4 - Selezione opzione "Vista Statistiche mensili"*])
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
-// *Postcondizioni:*
-// - L'utente viene reindirizzato correttamente.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza le opzioni del menù condivise dalle categorie Admin e User;
-//   - seleziona l'opzione "Vista Statistiche mensili";
-//   - viene reindirizzato correttamente (UC13).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-
-// #pagebreak()
-// ==== UC5.2 - Visualizzazione funzionalità Admin
-// #figure(
-//   image("/imgs/Uml/UC5.2.png", width: 80%),
-//   caption: [
-//     Visualizzazione funzionalità Admin
-//   ],
-// )
-// *Attori:*
-// - Admin.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù;
-// - L'utente fa parte della categoria Admin.
-// *Postcondizioni:*
-// - L'utente visualizza le opzioni del menù della categoria Admin;
-// - L'utente decide se selezionare o meno una delle opzioni disponibili.
-// *Scenario principale:*
-// - Admin:
-//   - visualizza i bottoni interni al menù legati alle funzionalità del sito;
-//   - decide se selezionare o meno una delle funzionalità disponibili (UC14, UC15).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità della categoria Admin;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-// *Generalizzazioni:*
-// - Use Case:
-//   - UC5.2.1 - Selezione opzione "Cronologia Ricerce"
-//   - UC5.2.2 - Selezione opzione "Cronologia Feedback"
-
-// #pagebreak()
-// ==== Generalizzazioni UC5.2
-// #align(left, text(11pt)[*UC5.2.1 - Selezione opzione "Cronologia Ricerce"*])
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
-// *Postcondizioni:*
-// - L'utente viene reindirizzato correttamente.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza le opzioni del menù condivise dalle categorie Admin e User;
-//   - seleziona l'opzione "Cronologia Ricerche";
-//   - viene reindirizzato correttamente (UC14).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-
-// #align(left, text(11pt)[*UC5.2.2 - Selezione opzione "Cronologia Feedback"*])
-// *Attori:*
-// - Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando le opzioni del menù condivise dalle categorie Admin e User;
-// *Postcondizioni:*
-// - L'utente viene reindirizzato correttamente.
-// *Scenario principale:*
-// - Admin/User:
-//   - visualizza le opzioni del menù condivise dalle categorie Admin e User;
-//   - seleziona l'opzione "Cronologia Feedback";
-//   - viene reindirizzato correttamente (UC15).
-// - Sistema:
-//   - mostra all'utente i bottoni relativi alle funzionalità condivise dalle categorie Admin e User;
-//   - mostra nella vista principale della webapp la funzionalità selezionata dall'utente.
-
-#pagebreak()
-=== UC5 - Visualizzazione "Profilo Utente"
-#figure(
-  image("/imgs/Uml/UC5.png", width: 60%),
+  image("/imgs/Uml/UC4.png", width: 60%),
   caption: [
     Visualizzazione "Profilo Utente"
   ],
@@ -473,25 +243,20 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Scenario principale:*
 - Admin/User:
   + seleziona il bottone del profilo utente nella pagina principale per visualizzarne il contenuto;
-  + visualizza i dati utente (UC5.1);
-  + decide se modificare i dati modificabili, ovvero email e password (UC5.2).
+  + visualizza i dati utente (UC4.1);
+  + decide se modificare i dati modificabili, ovvero email e password (UC4.2).
 - Sistema:
   + verifica che utente sta richiedendo di visualizzare il proprio profilo tramite cookies di sessione;
-  + mostra all'utente i suoi dati, permettendogli di visualizzare le sue informazioni (UC5.1);
-  + fornisce all'utente la possibilità di modificare alcuni dati non strettamente legati ad esso, ovvero password ed email (UC5.2).
+  + mostra all'utente i suoi dati, permettendogli di visualizzare le sue informazioni (UC4.1);
+  + fornisce all'utente la possibilità di modificare alcuni dati non strettamente legati ad esso, ovvero password ed email (UC4.2).
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC5.1 - Visualizzazione dati utente;
-  + UC5.2 - Modifica dati utente.
-
-// da cambiare il diagramma, vanno divisi i sotto UC
 
 #pagebreak()
-==== UC5.1 - Visualizzazione dati utente
+==== UC4.1 - Visualizzazione dati utente
 #figure(
-  image("/imgs/Uml/UC5.1.png", width: 55%),
+  image("/imgs/Uml/UC4.1.png", width: 55%),
   caption: [
     Visualizzazione dati utente
   ],
@@ -505,29 +270,24 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza i propri dati utente.
 *Scenario principale:*
 - Admin/User:
-  + visualizza i dati utente in chiaro, ovvero anagrafica, email e username (UC5.1.1, UC5.1.2, UC5.1.3);
-  + decide se visualizzare i dati nascosti, ovvero la password (UC5.1.4).
+  + visualizza i dati utente in chiaro, ovvero anagrafica, email e username (UC4.1.1, UC4.1.2, UC4.1.3);
+  + decide se visualizzare i dati nascosti, ovvero la password (UC4.1.4).
 - Sistema:
-  + mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC5.1.1, UC5.1.2, UC5.1.3);
-  + se richiesto mostra all'utente i dati nascosti, ovvero la password (UC5.1.4).
+  + mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC4.1.1, UC4.1.2, UC4.1.3);
+  + se richiesto mostra all'utente i dati nascosti, ovvero la password (UC4.1.4).
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC5.1.1 - Visualizzazione anagrafica;
-  + UC5.1.2 - Visualizzazione email;
-  + UC5.1.3 - Visualizzazione username;
-  + UC5.1.4 - Visualizzazione password.
 
 #pagebreak()
-==== Approfondimento specificità UC5.1
+==== Approfondimento specificità UC4.1
 #figure(
-  image("/imgs/Uml/UC5.1gen.png", width: 55%),
+  image("/imgs/Uml/UC4.1app.png", width: 55%),
   caption: [
-    Approfondimento specificità UC5.1 - Visualizzazione dati utente
+    Approfondimento specificità UC4.1 - Visualizzazione dati utente
   ],
 )
-+ *UC5.1.1 - Visualizzazione anagrafica*
++ *UC4.1.1 - Visualizzazione anagrafica*
 
   *Attori:*
   - Admin;
@@ -541,8 +301,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza la propria anagrafica, ovvero nome, cognome e data di nascita.
   - Sistema:
     + mostra all'utente i suoi dati anagrafici in chiaro, ovvero nome, cognome e data di nascita.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC5.1.2 - Visualizzazione email*
++ *UC4.1.2 - Visualizzazione email*
 
   *Attori:*
   - Admin;
@@ -556,8 +319,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza la propria email.
   - Sistema:
     + mostra all'utente la sua email in chiaro.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC5.1.3 - Visualizzazione username*
++ *UC4.1.3 - Visualizzazione username*
 
   *Attori:*
   - Admin;
@@ -571,8 +337,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza il proprio username.
   - Sistema:
     + mostra all'utente il suo username in chiaro.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC5.1.4 - Visualizzazione password*
++ *UC4.1.4 - Visualizzazione password*
 
   *Attori:*
   - Admin;
@@ -592,11 +361,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente la sua password nascosta;
     + prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
     + mostra all'utente la sua password in chiaro.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-==== UC5.2 - Modifica dati utente
+==== UC4.2 - Modifica dati utente
 #figure(
-  image("/imgs/Uml/UC5.2.png", width: 70%),
+  image("/imgs/Uml/UC4.2.png", width: 70%),
   caption: [
     Modifica dati utente
   ],
@@ -612,34 +384,31 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - I nuovi dati vengono sostituiti ai precedenti e salvati.
 *Scenario principale:*
 - Admin/User:
-  + decide di modificare i propri dati modificabili, ovvero email (UC5.2.1) e password (UC5.2.2);
+  + decide di modificare i propri dati modificabili, ovvero email (UC4.2.1) e password (UC4.2.2);
   + inserisce i nuovi dati che vuole sostituire ai precedenti;
   + conferma i nuovi dati che vuole sostituire ai precedenti;
   + conferma la sua scelta confermando il salvataggio dei nuovi dati nel sistema;
   + nega la sua scelta tramite il processo di annullamento dell'operazione.
 - Sistema:
-  + prende a conoscenza l'intenzione dell'utente di modificare i propri dati modificabili, ovvero email (UC5.2.1) e password (UC5.2.2);
+  + prende a conoscenza l'intenzione dell'utente di modificare i propri dati modificabili, ovvero email (UC4.2.1) e password (UC4.2.2);
   + modifica l'interfaccia per permettere all'utente di inserire i nuovi dati ed aggiungendo l'opzione di conferma della modifica dei dati;
   + se i nuovi dati vengono confermati, sostituisce i vecchi dati con i nuovi dati all'interno del sistema e li salva;
   + se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente.
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC5.2.1 - Modifica email;
-  + UC5.2.2 - Modifica password.
 
 #pagebreak()
-==== Approfondimento specificità UC5.2
+==== Approfondimento specificità UC4.2
 
 #figure(
-  image("/imgs/Uml/UC5.2gen.png", width: 60%),
+  image("/imgs/Uml/UC4.2app.png", width: 60%),
   caption: [
-    Approfondimento specificità UC5.2 - Modifica dati utente
+    Approfondimento specificità UC4.2 - Modifica dati utente
   ],
 )
 
-+ *UC5.2.1 - Modifica email*
++ *UC4.2.1 - Modifica email*
 
   *Attori:*
   - Admin;
@@ -662,8 +431,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + modifica l'interfaccia per permettere all'utente di inserire la nuova email ed aggiungendo l'opzione di conferma della modifica dell'email;
     + se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
     + se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC5.2.2 - Modifica password*
++ *UC4.2.2 - Modifica password*
 
   *Attori:*
   - Admin;
@@ -686,11 +458,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + modifica l'interfaccia per permettere all'utente di inserire la nuova password ed aggiungendo l'opzione di conferma della modifica dell'password;
     + se la nuova password viene confermata, sostituisce la vecchia password con la nuova password all'interno del sistema e la salva;
     + se la nuova password non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-=== UC6 - Logout
+=== UC5 - Logout
 #figure(
-  image("/imgs/Uml/UC6.png", width: 55%),
+  image("/imgs/Uml/UC5.png", width: 55%),
   caption: [
     Logout
   ],
@@ -716,9 +491,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-=== UC7 - Visualizzazione vista "Ricerca"
+=== UC6 - Visualizzazione vista "Ricerca"
 #figure(
-  image("/imgs/Uml/UC7.png", width: 70%),
+  image("/imgs/Uml/UC6.png", width: 70%),
   caption: [
     Visualizzazione vista "Ricerca"
   ],
@@ -735,24 +510,21 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di "Ricerca".
 *Scenario principale:*
 - Admin/User:
-  + seleziona il bottone relativo alla funzionalità di "Ricerca" nel menù (UC4);
-  + decide se effettuare una ricerca (UC7.1);
-  + visualizza i risultati della ricerca (UC7.2).
+  + seleziona la funzionalità di "Ricerca" nel menù
+  + decide se effettuare una ricerca (UC6.1);
+  + visualizza i risultati della ricerca (UC6.2).
 - Sistema:
   + mostra all'utente la funzionalità di ricerca;
-  + fornisce all'utente la possibilità di effettuare una ricerca (UC7.1) e di visualizzarne i risultati (UC7.2).
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC6.1) e di visualizzarne i risultati (UC6.2).
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC7.1 - Ricerca per vista "Ricerca";
-  + UC7.2 - Visualizzazione lista risultati.
 
 #pagebreak()
 
-==== UC7.1 - Ricerca per vista "Ricerca"
+==== UC6.1 - Ricerca per vista "Ricerca"
 #figure(
-  image("/imgs/Uml/UC7.1.png", width: 70%),
+  image("/imgs/Uml/UC6.1.png", width: 70%),
   caption: [
     Ricerca per vista "Ricerca"
   ],
@@ -762,19 +534,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - User.
 *Precondizioni:*
 - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-- L'utente decide di fare una ricerca e compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC7.1.1, UC7.1.2, UC7.1.3);
+- L'utente decide di fare una ricerca e compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5);
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC7.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC6.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC7.1.1, UC7.1.2, UC7.1.3);
+  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5);
   + avvia la ricerca;
-  + visualizza i risultati della ricerca (UC7.2/UC16).
+  + visualizza i risultati della ricerca (UC6.2/UC14).
 - Sistema:
-  + se l'utente seleziona una ricerca dalla cronologia (UC7.1.3), modifica i campi della ricerca in modo pertinente;
-  + memorizza i dati inseriti nei campi della barra di ricerca (UC7.1);
+  + se l'utente seleziona una ricerca dalla cronologia (UC6.1.4), modifica i campi della ricerca in modo pertinente;
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
   + riceve tramite API una risposta dal software;
   + mostra a schermo i risultati della ricerca.
@@ -782,21 +554,82 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Attori:
   + Admin --> User.
 - Use Case:
-  + UC7.1.1 - Ricerca "prodotti per cliente";
-  + UC7.1.2 - Ricerca "clienti per prodotto";
-  + UC7.1.3 - Ricerca per "cronologia".
 
+= DA FARE
 #pagebreak()
-==== Approfondimento specificità UC7.1
+==== Approfondimento specificità UC6.1
 
 #figure(
-  image("/imgs/Uml/UC7.1gen.png", width: 80%),
+  image("/imgs/Uml/UC6.1app.png", width: 80%),
   caption: [
-    Approfondimento specificità UC7.1 - Ricerca per vista "Ricerca" 
+    Approfondimento specificità UC6.1 - Ricerca per vista "Ricerca" 
   ],
 )
 
-+ *UC7.1.1 - Ricerca "prodotti per cliente"*
++ *UC6.1.1 - Scelta Topic*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+  - L'utente decide di modificare la propria email.
+  *Postcondizioni:*
+  - L'utente modifica la propria email;
+  - La nuova email viene sostituita alla precedente e salvata.
+  *Scenario principale:*
+  - Admin/User:
+    + decide di modificare la propria email;
+    + inserisce la nuova email;
+    + conferma la nuova email;
+    + conferma la sua scelta confermando il salvataggio della nuova email nel sistema;
+    + nega la sua scelta tramite il processo di annullamento dell'operazione.
+  - Sistema:
+    + prende a conoscenza l'intenzione dell'utente di modificare la propria email;
+    + modifica l'interfaccia per permettere all'utente di inserire la nuova email ed aggiungendo l'opzione di conferma della modifica dell'email;
+    + se la nuova email viene confermata, sostituisce la vecchia email con la nuova email all'interno del sistema e la salva;
+    + se la nuova email non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+  - User Case:
+    + UC6.1.2 Ricerca "prodotti per cliente"
+    + UC6.1.3 Ricerca "clienti per prodotto"
+    + UC6.1.4 Ricerca per "cronologia"
+
++ *UC6.1.2 - Scelta N risultati*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando nella pagina principale la vista "Profilo Utente";
+  - L'utente decide di modificare la propria password.
+  *Postcondizioni:*
+  - L'utente modifica la propria password;
+  - La nuova password viene sostituita alla precedente e salvata.
+  *Scenario principale:*
+  - Admin/User:
+    + decide di modificare la propria password;
+    + inserisce la nuova password;
+    + conferma la nuova password;
+    + conferma la sua scelta confermando il salvataggio della nuova password nel sistema;
+    + nega la sua scelta tramite il processo di annullamento dell'operazione.
+  - Sistema:
+    + prende a conoscenza l'intenzione dell'utente di modificare la propria password;
+    + modifica l'interfaccia per permettere all'utente di inserire la nuova password ed aggiungendo l'opzione di conferma della modifica dell'password;
+    + se la nuova password viene confermata, sostituisce la vecchia password con la nuova password all'interno del sistema e la salva;
+    + se la nuova password non viene confermata, la scarta e mostra di nuovo l'interfaccia precedente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+  - User Case:
+    + UC6.1.6 Top 5
+    + UC6.1.7 Top 10
+
+
+#pagebreak()
+===== UC6.1.1 - Ricerca "prodotti per cliente"
 
   *Attori:*
   - Admin;
@@ -818,117 +651,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-// #align(left, text(11pt)[*Sotto-UC UC8.1.1 *]) 
-// #figure(
-//   image("/imgs/Uml/UC8.1.1_gen.png", width: 80%),
-//   caption: [
-//     Sotto-UC UC8.1.1 
-//   ],
-// )
-// + *UC8.1.1.1 - Scelta input "Topic"*
-
-//   *Attori:*
-//   - Admin;
-//   - User.
-//   *Precondizioni:*
-//   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-//   - L'utente sta scegliendo un'opzione per l'input topic.
-//   *Postcondizioni:*
-//   - Il campo topic mostra l'opzione scelta dall'utente.
-//   *Scenario principale:*
-//   - Admin/User:
-//     - visualizza un'opzione di default per l'input topic;
-//     - seleziona l'opzione di default per modificarla;
-//     - visualizza le opzioni possibili per l'input topic;
-//     - sceglie una delle opzioni possibili per l'input topic.
-//   - Sistema:
-//     - mostra all'utente un'opzione di default per l'input topic;
-//     - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input topic;
-//     - mostra all'utente le opzioni possibili per l'input topic;
-//     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-//     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-// #pagebreak()
-// + *UC8.1.1.2 - Completamento input "Nome Topic"*
-
-//   *Attori:*
-//   - Admin;
-//   - User.
-//   *Precondizioni:*
-//   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-//   - L'utente sta scegliendo un'opzione per l'input nome topic.
-//   *Postcondizioni:*
-//   - Il campo nome topic mostra l'opzione scelta dall'utente.
-//   *Scenario principale:*
-//   - Admin/User:
-//     - visualizza un'opzione di default per l'input topic;
-//     - seleziona l'opzione di default per modificarla;
-//     - inizia a compilare il campo con l'opzione che vuole selezionare;
-//     - visualizza le opzioni possibili per l'input topic;
-//     - visualizza suggerimenti di autocompletamento per l'input nome topic;
-//     - sceglie una delle opzioni possibili per l'input topic.
-//   - Sistema:
-//     - mostra all'utente un'opzione di default per l'input topic;
-//     - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input topic;
-//     - prende a conoscenza i caratteri inseriti dall'utente;
-//     - contatta tramite API il software che fornisce le opzioni possibili;
-//     - riceve tramite API una risposta con le opzioni possibili dal software;
-//     - mostra all'utente le opzioni possibili per l'input nome topic;
-//     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-//     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-// + *UC8.1.1.3 - Scelta input "Top N"*
-
-//   *Attori:*
-//   - Admin;
-//   - User.
-//   *Precondizioni:*
-//   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-//   - L'utente sta scegliendo un'opzione per l'input top n.
-//   *Postcondizioni:*
-//   - Il campo top n mostra l'opzione scelta dall'utente.
-//   *Scenario principale:*
-//   - Admin/User:
-//     - visualizza un'opzione di default per l'input top n;
-//     - seleziona l'opzione di default per modificarla;
-//     - visualizza le opzioni possibili per l'input top n;
-//     - sceglie una delle opzioni possibili per l'input top n.
-// #pagebreak()
-//   - Sistema:
-//     - mostra all'utente un'opzione di default per l'input top n;
-//     - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input top n;
-//     - mostra all'utente le opzioni possibili per l'input top n;
-//     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-//     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-// + *UC8.1.1.4 - Selezione input "Cronologia"* 
-
-//   *Attori:*
-//   - Admin;
-//   - User.
-//   *Precondizioni:*
-//   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-//   - L'utente sta scegliendo un'opzione per l'input cronologia.
-//   *Postcondizioni:*
-//   - Il campo cronologia mostra l'opzione scelta dall'utente;
-//   - I campi topic (UC8.1.1.1), nome topic (UC8.1.1.2) e top n (UC8.1.1.3) mostrano le opzioni contenute nella cronologia.
-//   *Scenario principale:*
-//   - Admin/User:
-//     - visualizza un'opzione di default per l'input cronologia;
-//     - seleziona l'opzione di default per modificarla;
-//     - visualizza le opzioni possibili per l'input cronologia;
-//     - sceglie una delle opzioni possibili per l'input cronologia.
-//   - Sistema:
-//     - mostra all'utente un'opzione di default per l'input cronologia;
-//     - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input cronologia;
-//     - contatta tramite API il software che fornisce le opzioni possibili;
-//     - riceve tramite API una risposta con le opzioni possibili dal software;
-//     - mostra all'utente le opzioni possibili per l'input cronologia;
-//     - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente, modificando anche i campi topic (UC8.1.1.1), nome topic (UC8.1.1.2) e top n (UC8.1.1.3);
-//     - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
-// #pagebreak()
-+ *UC7.1.2 - Ricerca "clienti per prodotti"*
+#pagebreak()
+===== UC6.1.2 - Ricerca "clienti per prodotti"
 
   *Attori:*
   - Admin;
@@ -950,9 +674,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-
-
-+ *UC7.1.3 - Ricerca per "cronologia"*
+#pagebreak()
+===== UC6.1.3 - Ricerca per "cronologia"
 
   *Attori:*
   - Admin;
@@ -974,11 +697,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
+= FINO A QUI
 #pagebreak()
 
-==== UC7.2 - Visualizzazione lista risultati
+==== UC6.2 - Visualizzazione lista risultati
 #figure(
-  image("/imgs/Uml/UC7.2.png", width: 80%),
+  image("/imgs/Uml/UC6.2.png", width: 80%),
   caption: [
     Visualizzazione lista risultati
   ],
@@ -987,33 +711,31 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente ha effettuato una ricerca attraverso la barra di ricerca (UC7.1).
+- L'utente ha effettuato una ricerca attraverso la barra di ricerca (UC6.1).
 *Postcondizioni:*
 - L'utente visualizza i risultati della sua ricerca.
 
 *Scenario principale:*
 - Admin/User:
   + visualizza i risultati della ricerca effettuata;
-  + decide se lasciare un feedback (UC8).
+  + decide se lasciare un feedback (UC7).
 - Sistema:
   + mostra i risultati della ricerca effettuata dall'utente all'utente stesso;
 *Estensioni:*
-- UC16 - Errore di ricerca.
+- UC14 - Errore di ricerca.
 
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC7.2.1 - Visualizzazione dettagli singolo "Risultato".
 
 #pagebreak()
 
-==== Approfondimento specificità UC7.2
+===== UC6.2.1 - Visualizzazione singolo risultato
 
 #figure(
-  image("/imgs/Uml/UC7.2.1.png", width: 65%),
+  image("/imgs/Uml/UC6.2.1.png", width: 65%),
   caption: [
-    Approfondimento specificità UC7.2 - Visualizzazione vista risultati
+    Visualizzazione singolo risultato
   ],
 )
 *Attori:*
@@ -1029,20 +751,16 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC7.2.1.1 - Visualizzazione "ID" risultato;
-  + UC7.2.1.2 - Visualizzazione "Nome" risultato;
-  + UC7.2.1.3 - Visualizzazione "Score" risultato.
 
 #pagebreak()
-==== Approfondimento specificità UC7.2.1
+===== Approfondimento specificità UC6.2.1
 #figure(
-  image("/imgs/Uml/UC7.2.1gen.png", width: 70%),
+  image("/imgs/Uml/UC6.2.1app.png", width: 70%),
   caption: [
-    Approfondimento specificità UC7.2.1 - Visualizzazione dettagli singolo risultato
+    Approfondimento specificità UC6.2.1 - Visualizzazione dettagli singolo risultato
   ],
 )
-+ *UC7.2.1.1 - Visualizzazione "ID" risultato*
++ *UC6.2.1.1 - Visualizzazione "ID" risultato*
 
   *Attori:*
   - Admin;
@@ -1054,9 +772,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza l'ID del risultato che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 
-+ *UC7.2.1.2 - Visualizzazione "Nome" risultato*
++ *UC6.2.1.2 - Visualizzazione "Nome" risultato*
 
   *Attori:*
   - Admin;
@@ -1068,8 +789,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza il nome del risultato che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC7.2.1.3 - Visualizzazione "Score" risultato*
++ *UC6.2.1.3 - Visualizzazione "Score" risultato*
 
   *Attori:*
   - Admin;
@@ -1081,11 +805,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza lo score del risultato che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-=== UC8 - Inserimento "Feedback"
+=== UC7 - Inserimento "Feedback"
 #figure(
-  image("/imgs/Uml/UC8.png", width: 60%),
+  image("/imgs/Uml/UC7.png", width: 60%),
   caption: [
     Inserimento "Feedback"
   ],
@@ -1100,24 +827,22 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Il sistema salva il feedback fornito dall'utente.
 *Scenario principale:*
 - Admin/User:
-  + completa gli input necessari all'inserimento di un feedback (UC9.1, UC9.2);
+  + completa gli input necessari all'inserimento di un feedback (UC7.1, UC7.2);
   + conferma l'inserimento del feedback.
 - Sistema: 
-  + memorizza i dati inseriti negli input necessari all'inserimento di un feedback (UC9.1, UC9.2);
+  + memorizza i dati inseriti negli input necessari all'inserimento di un feedback (UC7.1, UC7.2);
   + se l'utente conferma l'intenzione di inserire il feedback, salva i dati inseriti nel database;
   + se l'utente non conferma l'intenzione di inserire il feedback, termina la visualizzazione della funzionalità di feedback.
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC8.1 - Inserimento "Valutazione";
-  + UC8.2 - Inserimento "Commento".
+
 
 #pagebreak()
-==== UC8.1 - Inserimento "Valutazione"
+==== UC7.1 - Inserimento "Valutazione"
 
 #figure(
-  image("/imgs/Uml/UC8.1.png", width: 60%),
+  image("/imgs/Uml/UC7.1.png", width: 60%),
   caption: [
     Inserimento "Valutazione"
   ],
@@ -1141,12 +866,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + permette all'utente di compilare il campo con un nuovo dato;
     + se l'utente compila il campo con un nuovo dato, verifica che sia nel formato corretto e memorizza il nuovo dato inserito e lo mostra all'utente;
     + se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
-  
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 #pagebreak()
 
-==== UC8.2 - Inserimento "Commento"
+==== UC7.2 - Inserimento "Commento"
 #figure(
-  image("/imgs/Uml/UC8.2.png", width: 60%),
+  image("/imgs/Uml/UC7.2.png", width: 60%),
   caption: [
     Inserimento "Commento"
   ],
@@ -1170,83 +897,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + permette all'utente di compilare il campo con un nuovo dato;
     + se l'utente compila il campo con un nuovo dato,  memorizza il nuovo dato inserito e lo mostra all'utente;
     + se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
-
-// #pagebreak()
-// ==== Sotto-UC UC9.1
-// #figure(
-//   image("/imgs/Uml/UC9.1_gen.png", width: 65%),
-//   caption: [
-//     Sotto-UC UC9.1
-//   ],
-// )
-// + *UC9.1.1 - Completamento input "Valutazione"*
-
-//   *Attori:*
-//   - Admin;
-//   - User.
-//   *Precondizioni:*
-//   - L'utente sta visualizzando la funzionalità di inserimento feedback;
-//   - L'utente sta completando il campo valutazione.
-//   *Postcondizioni:*
-//   - Il campo valutazione mostra il completamento effettuato dall'utente.
-//   *Scenario principale:*
-//   - Admin/User:
-//     - visualizza un dato di default per il campo valutazione;
-//     - seleziona il dato di default per modificarlo;
-//     - compila il campo con il dato che vuole inserire.
-//   - Sistema: 
-//     - mostra all'utente un dato di default;
-//     - prende a conoscenza l'intenzione dell'utente di voler campiare il dato per il campo valutazione;
-//     - permette all'utente di compilare il campo con un nuovo dato;
-//     - se l'utente compila il campo con un nuovo dato, verifica che sia nel formato corretto e memorizza il nuovo dato inserito e lo mostra all'utente;
-//     - se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
-
-// #pagebreak()
-// + *UC9.1.2 - Completamento input "Commento"*
-
-//   *Attori:*
-//   - Admin;
-//   - User.
-//   *Precondizioni:*
-//   - L'utente sta visualizzando la funzionalità di inserimento feedback;
-//   - L'utente sta completando il campo commento.
-//   *Postcondizioni:*
-//   - Il campo commento mostra il completamento effettuato dall'utente.
-//   *Scenario principale:*
-//   - Admin/User:
-//     - visualizza un dato di default per il campo commento;
-//     - seleziona il dato di default per modificarlo;
-//     - compila il campo con il dato che vuole inserire.
-//   - Sistema: 
-//     - mostra all'utente un dato di default;
-//     - prende a conoscenza l'intenzione dell'utente di voler campiare il dato per il campo commento;
-//     - permette all'utente di compilare il campo con un nuovo dato;
-//     - se l'utente compila il campo con un nuovo dato,  memorizza il nuovo dato inserito e lo mostra all'utente;
-//     - se l'utente non compila il campo con un nuovo dato, prende a conoscenza la decisione e mostra il dato precedentemente presente.
-
-// ==== UC9.2 - Conferma inserimento feedback
-// *Attori:*
-//  Admin;
-// - User.
-// *Precondizioni:*
-// - L'utente sta visualizzando la funzionalità di inserimento feedback;
-// - L'utente ha compilato i campi necessari all'inserimento di un feedback (UC9.1.1, UC9.1.2).
-// *Postcondizioni:*
-// - Il sistema salva il feedback e lo comunica ai software dedicati.
-// *Scenario principale:*
-// - Admin/User:
-//   - interagisce con il bottone di conferma inserimento feedback.
-// - Sistema:
-//   - prende a conoscenza l'intenzione di inserire il feedback dell'utente;
-//   - verifica siano stati inseriti i dati necessari;
-//   - salva i dati necessari comunicandoli ai software dedicati tramite API;
-//   - chiude la funzionalità di inserimento feedback.
-
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-=== UC9 - Visualizzazione vista "Catalogo Prodotti"
+=== UC8 - Visualizzazione vista "Catalogo Prodotti"
 #figure(
-  image("/imgs/Uml/UC9.png", width: 60%),
+  image("/imgs/Uml/UC8.png", width: 60%),
   caption: [
     Visualizzazione vista "Catalogo Prodotti"
   ],
@@ -1264,25 +922,23 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di "Catalgo Prodotti".
 *Scenario principale:*
 - Admin/User:
-  + seleziona il bottone relativo alla funzionalità  di "Catalogo Prodotti" nel menù (UC4);
-  + visualizza il catalago dei prodotti (UC9.2);
-  + decide se effettuare una ricerca (UC9.1);
-  + nel caso abbia effettuato una ricerca (UC9.1) visualizza il catalogo filtrato in base ai parametri (UC9.2).
+  + seleziona la funzionalità di "Catalogo Prodotti" nel menù;
+  + visualizza il catalago dei prodotti (UC8.2);
+  + decide se effettuare una ricerca (UC8.1);
+  + nel caso abbia effettuato una ricerca (UC8.1) visualizza il catalogo filtrato in base ai parametri (UC8.2).
 - Sistema:
   + mostra all'utente la funzionalità di catalogo prodotti;
-  + fornisce all'utente la possibilità di effettuare visualizzare il catalogo dei prodotti (UC9.2) e di visualizzarne eventualmente effettuarne un filtraggio tramite la ricerca (UC9.1).
+  + fornisce all'utente la possibilità di effettuare visualizzare il catalogo dei prodotti (UC8.2) e di visualizzarne eventualmente effettuarne un filtraggio tramite la ricerca (UC8.1).
 *Generalizzazioni:*
 - Attori:
   - Admin --> User.
-- Use Case:
-  - UC9.1 - Ricerca per vista "Catalogo Prodotti";
-  - UC9.2 - Visualizzazione lista prodotti.
+
 
 #pagebreak()
-==== UC9.1 - Ricerca per vista "Catalogo Prodotti"
+==== UC8.1 - Ricerca per vista "Catalogo Prodotti"
 
 #figure(
-  image("/imgs/Uml/UC9.1.png", width: 70%),
+  image("/imgs/Uml/UC8.1.png", width: 70%),
   caption: [
     Ricerca per vista "Catalogo Prodotti"
   ],
@@ -1295,39 +951,35 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC9.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC8.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC9.1.1, UC9.1.2, UC9.1.3, UC9.1.4);
+  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC8.1.1, UC8.1.2, UC8.1.3, UC8.1.4);
   + avvia la ricerca;
-  + visualizza i risultati della ricerca (UC9.2/UC16).
+  + visualizza i risultati della ricerca (UC8.2/UC14).
 - Sistema:
-  + memorizza i dati inseriti nei campi della barra di ricerca (UC9.1);
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC8.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
   + riceve tramite API una risposta dal software;
   + mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC9.1.1 - Ricerca per "Codice Prodotto";
-  + UC9.1.2 - Ricerca per "Linea Commericale";
-  + UC9.1.3 - Ricerca per "Settore Commerciale";
-  + UC9.1.4 - Ricerca per "Marca Prodotto".
+
   
 
 #pagebreak()
-==== Approfondimento specificità UC9.1
+==== Approfondimento specificità UC8.1
 
 #figure(
-  image("/imgs/Uml/UC9.1gen.png", width: 60%),
+  image("/imgs/Uml/UC8.1app.png", width: 60%),
   caption: [
-    Approfondimento specificità UC9.1 - Ricerca per vista "Catalogo Prodotti"
+    Approfondimento specificità UC8.1 - Ricerca per vista "Catalogo Prodotti"
   ],
 )
 
-+ *UC9.1.1 - Ricerca per "Codice Prodotto"*
++ *UC8.1.1 - Ricerca per "Codice Prodotto"*
 
   *Attori:*
   - Admin;
@@ -1354,8 +1006,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC9.1.2 - Ricerca per "Linea Commerciale"*
++ *UC8.1.2 - Ricerca per "Linea Commerciale"*
 
   *Attori:*
   - Admin;
@@ -1377,8 +1032,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente le opzioni possibili;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC9.1.3 - Ricerca per "Settore Commerciale"*
++ *UC8.1.3 - Ricerca per "Settore Commerciale"*
 
   *Attori:*
   - Admin;
@@ -1405,8 +1063,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC9.1.4 - Ricerca per "Marca Prodotto"*
++ *UC8.1.4 - Ricerca per "Marca Prodotto"*
 
   *Attori:*
   - Admin;
@@ -1433,15 +1094,17 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
-
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 // sei arrivato fino a qui
 
 #pagebreak()
-==== UC9.2 - Visualizzazione lista prodotti
+==== UC8.2 - Visualizzazione lista prodotti
 
 #figure(
-  image("/imgs/Uml/UC9.2.png", width: 80%),
+  image("/imgs/Uml/UC8.2.png", width: 80%),
   caption: [
     Visualizzazione lista prodotti
   ],
@@ -1454,7 +1117,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Catalogo prodotti".
 *Postcondizioni:*
 - L'utente visualizza la lista dei prodotti;
-- Nel caso l'utente abbia effettuato una ricerca (UC9.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC8.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin/User:
   + visualizza la lista dei prodotti.
@@ -1463,21 +1126,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + mostra la lista dei prodotti;
   + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC16 - Errore di ricerca.
+- UC14 - Errore di ricerca.
 
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC9.2.1 - Visualizzazione dettagli singolo "Prodotto".
 
 #pagebreak()
-==== Approfondimento specificità UC9.2
+===== UC8.2.1 - Visualizzazione dettagli singolo "prodotto"
 
 #figure(
-  image("/imgs/Uml/UC9.2.1.png", width: 65%),
+  image("/imgs/Uml/UC8.2.1.png", width: 65%),
   caption: [
-    Approfondimento specificità UC9.2 - Visualizzazione vista prodotti
+    Visualizzazione dettagli singolo "prodotto"
   ],
 )
 *Attori:*
@@ -1493,22 +1154,17 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC9.2.1.1 - Visualizzazione "Immagine" prodotto;
-  + UC9.2.1.2 - Visualizzazione "ID" prodotto;
-  + UC9.2.1.3 - Visualizzazione "Nome" prodotto;
-  + UC9.2.1.4 - Visualizzazione bottone "Dettagli prodotto";
 
 #pagebreak()
-===== Approfondimento specificità UC9.2.1
+===== Approfondimento specificità UC8.2.1
 
 #figure(
-  image("/imgs/Uml/UC9.2.1gen.png", width: 70%),
+  image("/imgs/Uml/UC8.2.1app.png", width: 70%),
   caption: [
-    Approfondimento specificità UC9.2.1 - Visualizzazione dettagli singolo prodotto
+    Approfondimento specificità UC8.2.1 - Visualizzazione dettagli singolo prodotto
   ],
 )
-+ *UC9.2.1.1 - Visualizzazione "Immagine" prodotto*
++ *UC8.2.1.1 - Visualizzazione "Immagine" prodotto*
 
   *Attori:*
   - Admin;
@@ -1520,8 +1176,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza l'immagine del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC9.2.1.2 - Visualizzazione "ID" prodotto*
++ *UC8.2.1.2 - Visualizzazione "ID" prodotto*
 
   *Attori:*
   - Admin;
@@ -1533,8 +1192,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza l'ID del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC9.2.1.3 - Visualizzazione "Nome" prodotto*
++ *UC8.2.1.3 - Visualizzazione "Nome" prodotto*
 
   *Attori:*
   - Admin;
@@ -1546,24 +1208,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza il nome del prodotto che sta osservando.
-
-+ *UC9.2.1.4 - Visualizzazione bottone "Dettagli prodotto"*
-
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente osserva un prodotto singolo della sua ricerca.
-  *Postcondizioni:*
-  - L'utente visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
-  *Scenario principale:*
-  - Admin/User:
-    + visualizza il bottone di dettagli prodotto del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-=== UC10 - Visualizzazione "Dettagli prodotto"
+=== UC9 - Visualizzazione "Dettagli prodotto"
 #figure(
-  image("/imgs/Uml/UC10.png", width: 80%),
+  image("/imgs/Uml/UC9.png", width: 80%),
   caption: [
     Visualizzazione "Dettagli prodotto"
   ],
@@ -1572,7 +1224,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente ha interagito con il bottone "Dettagli prodotto" (UC9.2.1.4) di uno dei prodotti disponibili nella vista di catalogo prodotti (UC9);
+- L'utente ha interagito con il bottone "Dettagli prodotto" di uno dei prodotti disponibili nella vista di catalogo prodotti (UC8);
 - L'utente sta visualizzando i dettagli del prodotto.
 *Postcondizioni:*
 - Il sistema mostra i dettagli del corrispondente prodotto all'utente.
@@ -1584,24 +1236,16 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC10.1 - Visualizzazione "Immagine" prodotto;
-  + UC10.2 - Visualizzazione "ID" prodotto;
-  + UC10.3 - Visualizzazione "Nome" prodotto;
-  + UC10.4 - Visualizzazione "Linea Commerciale" prodotto;
-  + UC10.5 - Visualizzazione "Settore Commerciale" prodotto;
-  + UC10.6 - Visualizzazione "Marca" prodotto;
-  + UC10.7 - Visualizzazione "Provenienza" prodotto;
 
 #pagebreak()
-==== Approfondimento specificità UC10
+=== Approfondimento specificità UC9
 #figure(
-  image("/imgs/Uml/UC10gen.png", width: 80%),
+  image("/imgs/Uml/UC9app.png", width: 80%),
   caption: [
-    Approfondimento specificità UC10 - Visualizzazione "Dettagli prodotto"
+    Approfondimento specificità UC9 - Visualizzazione "Dettagli prodotto"
   ],
 )
-+ *UC10.1 - Visualizzazione "Immagine" prodotto*
++ *UC9.1 - Visualizzazione "Immagine" prodotto*
 
   *Attori:*
   - Admin;
@@ -1613,8 +1257,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza l'immagine del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC10.2 - Visualizzazione "ID" prodotto*
++ *UC9.2 - Visualizzazione "ID" prodotto*
 
   *Attori:*
   - Admin;
@@ -1626,8 +1273,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza l'ID del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC10.3 - Visualizzazione "Nome" prodotto*
++ *UC9.3 - Visualizzazione "Nome" prodotto*
 
   *Attori:*
   - Admin;
@@ -1639,8 +1289,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza il nome del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC10.4 - Visualizzazione "Linea Commerciale" prodotto*
++ *UC9.4 - Visualizzazione "Linea Commerciale" prodotto*
 
   *Attori:*
   - Admin;
@@ -1652,8 +1305,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza la linea commerciale del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC10.5 - Visualizzazione "Settore Commerciale" prodotto*
++ *UC9.5 - Visualizzazione "Settore Commerciale" prodotto*
 
   *Attori:*
   - Admin;
@@ -1665,8 +1321,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza il settore commerciale del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC10.6 - Visualizzazione "Marca" prodotto*
++ *UC9.6 - Visualizzazione "Marca" prodotto*
 
   *Attori:*
   - Admin;
@@ -1678,8 +1337,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza la marca del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC10.7 - Visualizzazione "Provenienza" prodotto*
++ *UC9.7 - Visualizzazione "Provenienza" prodotto*
 
   *Attori:*
   - Admin;
@@ -1691,12 +1353,15 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza la provenienza del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-=== UC11 - Visualizzazione vista "Lista Clienti"
+=== UC10 - Visualizzazione vista "Lista Clienti"
 
 #figure(
-  image("/imgs/Uml/UC11.png", width: 80%),
+  image("/imgs/Uml/UC10.png", width: 80%),
   caption: [
     Visualizzazione vista "Lista Clienti"
   ],
@@ -1713,26 +1378,23 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di lista clienti.
 *Scenario principale:*
 - Admin/User:
-  + seleziona il bottone relativo alla funzionalità di lista clienti nel menù (UC4);
-  + visualizza la lista dei clienti (UC11.2).
-  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC11.1);
-  + nel caso abbia effettuato una ricerca (UC11.1) visualizza la lista filtrata in base ai parametri (UC11.2)
+  + seleziona la funzionalità di lista clienti nel menù;
+  + visualizza la lista dei clienti (UC10.2).
+  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC10.1);
+  + nel caso abbia effettuato una ricerca (UC10.1) visualizza la lista filtrata in base ai parametri (UC10.2)
 - Sistema:
   + mostra all'utente la funzionalità di lista clienti;
-  + fornisce all'utente la possibilità di effettuare una ricerca (UC11.1) e di visualizzarne i risultati;
-  + mostra all'utente la lista dei clienti (UC11.2).
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC10.1) e di visualizzarne i risultati;
+  + mostra all'utente la lista dei clienti (UC10.2).
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC12.1 - Ricerca per vista "Lista Clienti";
-  + UC12.2 - Visualizzazione lista clienti.
 
 #pagebreak()
-==== UC11.1 - Ricerca per vista "Lista Clienti";
+==== UC10.1 - Ricerca per vista "Lista Clienti";
 
 #figure(
-  image("/imgs/Uml/UC11.1.png", width: 80%),
+  image("/imgs/Uml/UC10.1.png", width: 80%),
   caption: [
     Ricerca per vista "Lista Clienti"
   ],
@@ -1745,36 +1407,32 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC10.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  + compila i campi presenti nella barra di ricerca (UC11.1.1, UC11.1.2, UC11.1.3);
+  + compila i campi presenti nella barra di ricerca (UC10.1.1, UC10.1.2, UC10.1.3);
   + avvia la ricerca;
-  + visualizza i risultati della ricerca (UC11.2/UC16).
+  + visualizza i risultati della ricerca (UC10.2/UC14).
 - Sistema:
-  + memorizza i dati inseriti nei campi della barra di ricerca (UC11.1);
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC10.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
   + riceve tramite API una risposta dal software;
   + mostra a schermo i risultati della ricerca.
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC11.1.1 - Completamento input "Nome";
-  + UC11.1.2 - Completamento input "Cognome";
-  + UC11.1.3 - Selezione input "Provincia";
 
 #pagebreak()
-==== Approfondimento specificità UC11.1
+==== Approfondimento specificità UC10.1
 
 #figure(
-  image("/imgs/Uml/UC11.1gen.png", width: 80%),
+  image("/imgs/Uml/UC10.1app.png", width: 80%),
   caption: [
-    Approfondimento specificità UC11.1 - Ricerca per vista "Lista Clienti"
+    Approfondimento specificità UC10.1 - Ricerca per vista "Lista Clienti"
   ],
 )
-+ *UC11.1.1 - Completamento input "Nome"*
++ *UC10.1.1 - Completamento input "Nome"*
 
   *Attori:*
   - Admin;
@@ -1801,8 +1459,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC11.1.2 - Completamento input "Cognome"*
++ *UC10.1.2 - Completamento input "Cognome"*
 
   *Attori:*
   - Admin;
@@ -1829,8 +1490,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC11.1.3 - Selezione input "Provincia"*
++ *UC10.1.3 - Selezione input "Provincia"*
 
   *Attori:*
   - Admin;
@@ -1846,18 +1510,21 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + seleziona l'opzione di default per modificarla;
     + visualizza le opzioni possibili per l'input;
     + sceglie una delle opzioni possibili per l'input.
-#pagebreak()
   - Sistema:
     + mostra all'utente un'opzione di default per l'input;
     + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
     + mostra all'utente le opzioni possibili;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-==== UC11.2 - Visualizzazione lista clienti
+#pagebreak()
+==== UC10.2 - Visualizzazione lista clienti
 
 #figure(
-  image("/imgs/Uml/UC11.2.png", width: 65%),
+  image("/imgs/Uml/UC10.2.png", width: 65%),
   caption: [
     Visualizzazione lista clienti
   ],
@@ -1870,7 +1537,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Lista clienti".
 *Postcondizioni:*
 - L'utente visualizza la lista dei clienti;
-- Nel caso l'utente abbia effettuato una ricerca (UC11.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC10.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin/User:
   + visualizza la lista dei clienti;
@@ -1879,21 +1546,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + mostra la lista dei clienti;
   + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC16 - Errore di ricerca.
+- UC14 - Errore di ricerca.
 
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC11.2.1 - Visualizzazione dettagli singolo "Cliente".
 
 #pagebreak()
-==== Approfondimento specificità UC11.2
+===== UC10.2.1
 
 #figure(
-  image("/imgs/Uml/UC11.2.1.png", width: 65%),
+  image("/imgs/Uml/UC10.2.1.png", width: 65%),
   caption: [
-    Approfondimento specificità UC11.2 - Visualizzazione lista clienti
+    Visualizzazione dettagli singolo "cliente"
   ],
 )
 *Attori:*
@@ -1909,22 +1574,17 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
-- Use Case:
-  + UC11.2.1.1 - Visualizzazione "ID" cliente;
-  + UC11.2.1.2 - Visualizzazione "Nome" cliente;
-  + UC11.2.1.1 - Visualizzazione "Cognome" cliente;
-  + UC11.2.1.4 - Visualizzazione "Provincia" cliente;
 
 #pagebreak()
-==== Approfondimento specificità 11.2.1
+===== Approfondimento specificità 10.2.1
 
 #figure(
-  image("/imgs/Uml/UC11.2.1gen.png", width: 70%),
+  image("/imgs/Uml/UC10.2.1app.png", width: 70%),
   caption: [
-    Approfondimento specificità 11.2.1 - Visualizzazione dettagli singolo "Cliente"
+    Approfondimento specificità 10.2.1 - Visualizzazione dettagli singolo "Cliente"
   ],
 )
-+ *UC11.2.1.1 - Visualizzazione "ID" cliente*
++ *UC10.2.1.1 - Visualizzazione "ID" cliente*
 
   *Attori:*
   - Admin;
@@ -1936,8 +1596,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza l'ID del cliente che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC11.2.1.2 - Visualizzazione "Nome" cliente*
++ *UC10.2.1.2 - Visualizzazione "Nome" cliente*
 
   *Attori:*
   - Admin;
@@ -1949,8 +1612,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza il nome del cliente che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC11.2.1.3 - Visualizzazione "Cognome" cliente*
++ *UC10.2.1.3 - Visualizzazione "Cognome" cliente*
 
   *Attori:*
   - Admin;
@@ -1962,8 +1628,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza il cognome del cliente che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
-+ *UC11.2.1.4 - Visualizzazione "Provincia" cliente*
++ *UC10.2.1.4 - Visualizzazione "Provincia" cliente*
 
   *Attori:*
   - Admin;
@@ -1975,15 +1644,15 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin/User:
     + visualizza la provincia del cliente che sta osservando.
-
-//FINO A QUI
-// questo caso d'uso (il 13) andrà definito meglio più avanti ma così può andare penso
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
 
 #pagebreak()
-=== UC13 - Visualizzazione vista "Statistiche Mensili"
+=== UC11 - Visualizzazione vista "Statistiche Mensili"
 
 #figure(
-  image("/imgs/Uml/UC13.png", width: 65%),
+  image("/imgs/Uml/UC11.png", width: 65%),
   caption: [
     Visualizzazione vista "Statistiche Mensili"
   ],
@@ -1997,78 +1666,96 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente ha aperto il menù contenente le varie funzionalità del sito;
 - L'utente ha selezionato la funzionalità di vista statistiche mensili.
 *Postcondizioni:*
-- L'utente visualizza nella vista principale della pagina la funzionalità di vista statistiche mensili.
+- L'utente visualizza nella vista principale della pagina la funzionalità "statistiche mensili".
 *Scenario principale:*
 - Admin/User:
-  - seleziona il bottone relativo alla funzionalità di vista statistiche mensili nel menù (UC5);
-  - visualizza il contenuto delle vista di statistiche mensili (UC13.1/UC13.2).
+  + seleziona la funzionalità di vista statistiche mensili nel menù;
+  + visualizza il contenuto delle vista di statistiche mensili (UC11.1/UC11.2).
 - Sistema:
-  - mostra all'utente la funzionalità di vista statistiche mensili;
+  + mostra all'utente la funzionalità di vista statistiche mensili;
+  + fornisce la possibilità di visualizzare  il grafico delle statistiche (UC11.1) e di visualizzare le raccomandazioni utili (UC11.2).
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
-- Use CAse:
-  - UC13.1 - Visualizzazione "Grafico"
-  - UC13.2 - Visualizzazione "Raccomandazioni utili"
+  + Admin --> User.
 
 #pagebreak()
-==== Sotto-UC UC13
+
+
+==== UC11.1 - Visualizzazione "Grafico"
 #figure(
-  image("/imgs/Uml/UC13_gen.png", width: 60%),
+  image("/imgs/Uml/UC11.1.png", width: 60%),
+  caption: [
+    Visualizzazione "Grafico"
+  ],
+)
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista statistiche mensili.
+  *Postcondizioni:*
+  - L'utente visualizza il grafico corrente della vista.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza il grafico del mese corrente;
+    + visualizza gli assi del grafico, "giorni" per le x, "raccomandazioni utili" per le y;
+    + visualizza la rappresentazione dei dati nel grafico come "grafico combinato".
+  - Sistema:
+    + renderizza e mostra il grafico all'utente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+==== UC11.2 - Visualizzazione "Raccomandazioni utili"
+#figure(
+  image("/imgs/Uml/UC11.2.png", width: 60%),
+  caption: [
+    Visualizzazione "Raccomandazioni utili"
+  ],
+)
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista statistiche mensili.
+  *Postcondizioni:*
+  - L'utente visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
+  - Sistema:
+    + renderizza e mostra il grafico all'utente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+===== UC11.2.1 - Visualizzazione dettagli singola raccomandazione
+#figure(
+  image("/imgs/Uml/UC11.2.1.png", width: 60%),
   caption: [
     Sotto-UC UC13
   ],
 )
 
-+ *UC13.1 - Visualizzazione "Grafico"*
+= DA FARE
 
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta visualizzando la vista statistiche mensili (UC13).
-  *Postcondizioni:*
-  - L'utente visualizza il grafico corrente della vista.
-  *Scenario principale:*
-  - Admin/User:
-    - visualizza il grafico del mese corrente;
-    - visualizza gli assi del grafico, "giorni" (tempo) per le x, "raccomandazioni utili" (ovvero le raccomandazioni che si sono rivelate corrette) per le y;
-    - visualizza la rappresentazione dei dati nel grafico come "grafico combinato".
-  - Sistema:
-    - renderizza e mostra il grafico all'utente.
 
-+ *UC13.2 - Visualizzazione "Raccomandazioni utili"*
+===== App UC11.2.1
+#figure(
+  image("/imgs/Uml/UC11.2.1app.png", width: 60%),
+  caption: [
+    Sotto-UC UC13
+  ],
+)
 
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta visualizzando la vista statistiche mensili (UC13).
-  *Postcondizioni:*
-  - L'utente visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
-  *Scenario principale:*
-  - Admin/User:
-    - visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
-  - Sistema:
-    - renderizza e mostra il grafico all'utente.
-
-// stavo pensando che forse possiamo evitare di metterla e ipotizzare che il sistema degli utenti sia gestito internamente dalla rete aziendale, che forse ha anche più senso. Mi spiego: i dipendendti dell'azienda avranno sicuramente già degli account, e quindi un gestore di questi ultimi. Si può pensare di aggiungere più avanti.
-// === UC14 - Visualizzazione "Gestione Utenti"
-// ==== UC14.1 - Ricerca per vista "Gestione Utenti"
-// ===== UC14.1.1 - Compilazione campi ricerca
-// ===== Sotto-UC UC14.1.1
-// ===== UC14.1.2 - Avvio ricerca
-// ==== UC14.2 - Visualizzazione "Lista utenti"
-// ===== UC14.2.1 - Visualizzazione dettagli singolo "Utente"
-// ===== Sotto-UC UC14.2.1
-
-// === UC15 Creazione nuovo utente
-// === UC16 Eliminazione "Utente"
+= DA FARE
 
 #pagebreak()
-=== UC14 - Visualizzazione vista "Cronologia Ricerche"
+=== UC12 - Visualizzazione vista "Cronologia Ricerche"
 #figure(
-  image("/imgs/Uml/UC14.png", width: 80%),
+  image("/imgs/Uml/UC12.png", width: 80%),
   caption: [
     Visualizzazione vista "Cronologia Ricerche"
   ],
@@ -2084,22 +1771,18 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di cronologia ricerche.
 *Scenario principale:*
 - Admin:
-  - seleziona il bottone relativo alla funzionalità di cronologia ricerche nel menù (UC5);
-  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC14.1);
-  - visualizza la lista delle ricerche (UC14.2).
+  + seleziona la funzionalità di cronologia ricerche nel menù;
+  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC12.1);
+  + visualizza la lista delle ricerche (UC12.2).
 - Sistema:
-  - mostra all'utente la funzionalità di cronologia ricerche;
-  - fornisce all'utente la possibilità di effettuare una ricerca (UC14.1) e di visualizzarne i risultati;
-  - mostra all'utente la lista delle ricerche (UC14.2).
-*Generalizzazioni:*
-- Use Case:
-  - UC14.1 - Ricerca per vista "Cronologia Ricerche";
-  - UC14.2 - Visualizzazione lista ricerche.
+  + mostra all'utente la funzionalità di cronologia ricerche;
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
+  + mostra all'utente la lista delle ricerche (UC12.2).
 
 #pagebreak()
-==== UC14.1 - Ricerca per vista "Cronologia Ricerche"
+==== UC12.1 - Ricerca per vista "Cronologia Ricerche"
 #figure(
-  image("/imgs/Uml/UC14.1.png", width: 80%),
+  image("/imgs/Uml/UC12.1.png", width: 80%),
   caption: [
     Ricerca per vista "Cronologia Ricerche"
   ],
@@ -2111,54 +1794,30 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC14.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin:
-  - compila i campi presenti nella barra di ricerca (UC14.1.1);
-  - avvia la ricerca (UC14.1.2);
-  - visualizza i risultati della ricerca (UC14.2/UC16).
+  + compila i campi presenti nella barra di ricerca (UC12.1.1);
+  + avvia la ricerca (UC12.1.2);
+  + visualizza i risultati della ricerca (UC12.2/UC14).
 - Sistema:
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC14.1.1);
-  - contatta tramite API il software che fornisce i risultati della ricerca;
-  - riceve tramite API una risposta dal software;
-  - mostra a schermo i risultati della ricerca.
-*Generalizzazioni:*
-- Use Case:
-  - UC14.1.1 - Compilazione campi ricerca.
-  - UC14.1.2 - Avvio ricerca.
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
+  + contatta tramite API il software che fornisce i risultati della ricerca;
+  + riceve tramite API una risposta dal software;
+  + mostra a schermo i risultati della ricerca.
+
 
 #pagebreak()
-==== Generalizzazioni UC14.1
-#align(left, text(11pt)[*UC14.1.1 - Compilazione campi ricerca*])
-
-*Attori:*
-- Admin;
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Cronologia Ricerche" nella pagina principale;
-- L'utente decide di fare una ricerca e compila i campi necessari;
-*Postcondizioni:*
-- L'utente ha compilato correttamente i campi di ricerca;
-*Scenario principale:*
-- Admin:
-  - compila i campi presenti nella barra di ricerca (UC14.1.1).
-- Sistema:
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC14.1.1).
-*Generalizzazioni:*
-- Use Case:
-  - UC14.1.1.1 - Scelta input "Data";
-  - UC14.1.1.2 - Completamento input "Username";
-
-#pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC14.1.1*])
+==== Approfondimento specificità 12.1
 
 #figure(
-  image("/imgs/Uml/UC14.1.1_gen.png", width: 80%),
+  image("/imgs/Uml/UC12.1app.png", width: 80%),
   caption: [
-    Sotto-UC UC14.1.1 
+    Approfondimento specificità 12.1 - Completamento input
   ],
 )
-+ *UC14.1.1.1 - Scelta input "Data"*
++ *UC12.1.1.1 - Scelta input "Data"*
 
   *Attori:*
   - Admin;
@@ -2169,19 +1828,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo data mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - visualizza le opzioni possibili per l'input;
-    - sceglie una delle opzioni possibili per l'input.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + visualizza le opzioni possibili per l'input;
+    + sceglie una delle opzioni possibili per l'input.
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    - mostra all'utente le opzioni possibili per l'input;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
 #pagebreak()
-+ *UC14.1.1.2 - Completamento input "Username"*
++ *UC1.1.1.2 - Completamento input "Username"*
 
   *Attori:*
   - Admin;
@@ -2192,44 +1851,25 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo username mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - inizia a compilare il campo con l'opzione che vuole selezionare;
-    - visualizza le opzioni possibili per l'input;
-    - visualizza suggerimenti di autocompletamento per l'input;
-    - sceglie una delle opzioni possibili per l'input.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili per l'input.
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    - prende a conoscenza i caratteri inseriti dall'utente;
-    - contatta tramite API il software che fornisce le opzioni possibili;
-    - riceve tramite API una risposta con le opzioni possibili dal software;
-    - mostra all'utente le opzioni possibili per l'input;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-#align(left, text(11pt)[*UC14.1.2 - Avvio ricerca*])
-
-*Attori:*
-- Admin;
-*Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente ha compilato i campi della barra di ricerca (UC14.1.1.1, UC14.1.1.2).
-*Postcondizioni:*
-- Il sistema estrapola i dati dalla barra di ricerca;
-- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
-*Scenario principale:*
-- Admin:
-  - interagisce con il pulsante di avvio ricerca.
-- Sistema:
-  - estrapola i dati dalla barra di ricerca;
-  - contatta il software dedicato con i dati estrapolati tramite API;
-  - riceve una risposta tramite API dal software dedicato;
-  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC14.2).
-
-==== UC14.2 - Visualizzazione lista ricerche
+==== UC12.2 - Visualizzazione lista ricerche
 #figure(
-  image("/imgs/Uml/UC14.2.png", width: 65%),
+  image("/imgs/Uml/UC12.2.png", width: 65%),
   caption: [
     Visualizzazione lista ricerche
   ],
@@ -2240,26 +1880,23 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Cronologia Ricerche".
 *Postcondizioni:*
 - L'utente visualizza la lista delle ricerche;
-- Nel caso l'utente abbia effettuato una ricerca (UC14.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC12.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin:
-  - visualizza la lista delle ricerche;
-  - visualizza i risultati della ricerca effettuata.
+  + visualizza la lista delle ricerche;
+  + visualizza i risultati della ricerca effettuata.
 - Sistema:
-  - mostra la lista delle ricerche;
-  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+  + mostra la lista delle ricerche;
+  + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC16 - Errore di ricerca.
-*Generalizzazioni:*
-- Use Case:
-  - UC14.2.1 - Visualizzazione dettagli singola "Ricerca".
+- UC14 - Errore di ricerca.
+
 
 #pagebreak()
-==== Generalizzazioni UC14.2
-#align(left, text(11pt)[*UC14.2.1 - Visualizzazione dettagli singola "Ricerca"*])
+===== UC12.2.1 Visualizzazione dettagli singola "Ricerca"
 
 #figure(
-  image("/imgs/Uml/UC14.2.1.png", width: 65%),
+  image("/imgs/Uml/UC12.2.1.png", width: 65%),
   caption: [
     Visualizzazione dettagli singola "Ricerca"
   ],
@@ -2272,23 +1909,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente osserva un singolo elemento della lista.
 *Scenario principale:*
 - Admin:
-  - osserva una ricerca della lista tra i vari mostrati.
-*Generalizzazioni:*
-- Use Case:
-  - UC14.2.1.1 - Visualizzazione "Data" ricerca;
-  - UC14.2.1.2 - Visualizzazione "Username" utente ricerca;
-  - UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca.
+  + osserva una ricerca della lista tra i vari mostrati.
+
 
 #pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC14.2.1*])
+===== Approfondimento specificità UC12.2.1
 
 #figure(
-  image("/imgs/Uml/UC14.2.1_gen.png", width: 70%),
+  image("/imgs/Uml/UC12.2.1app.png", width: 70%),
   caption: [
-    Sotto-UC UC14.2.1 
+    Approfondimento specificità UC12.2.1 - Visualizzazione ricerca
   ],
 )
-+ *UC14.2.1.1 - Visualizzazione "Data" ricerca*
++ *UC12.2.1.1 - Visualizzazione "Data" ricerca*
 
   *Attori:*
   - Admin.
@@ -2298,9 +1931,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza la data del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    - visualizza la data del risultato che sta osservando.
+    + visualizza la data del risultato che sta osservando.
 
-+ *UC14.2.1.2 - Visualizzazione "Username" utente ricerca*
++ *UC12.2.1.2 - Visualizzazione "Username" utente ricerca*
 
   *Attori:*
   - Admin.
@@ -2310,10 +1943,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza lo username utente del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    - visualizza lo username utente del risultato che sta osservando.
+    + visualizza lo username utente del risultato che sta osservando.
 
 #pagebreak()
-+ *UC14.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
++ *UC12.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
 
   *Attori:*
   - Admin.
@@ -2323,12 +1956,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza lo score del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    - visualizza i criteri di ricerca (Sotto-UC UC8.1.1) del risultato che sta osservando.
+    + visualizza i criteri di ricerca (Sotto-UC UC8.1.1) del risultato che sta osservando.
 
 #pagebreak()
-=== UC15 - Visualizzazione vista "Cronologia Feedback"
+=== UC13 - Visualizzazione vista "Cronologia Feedback"
 #figure(
-  image("/imgs/Uml/UC15.png", width: 80%),
+  image("/imgs/Uml/UC13.png", width: 80%),
   caption: [
     Visualizzazione vista "Cronologia Feedback"
   ],
@@ -2344,22 +1977,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di cronologia feedback.
 *Scenario principale:*
 - Admin:
-  - seleziona il bottone relativo alla funzionalità di cronologia feedback nel menù (UC5);
-  - decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC15.1);
-  - visualizza la lista dei feedback (UC15.2).
+  + seleziona la funzionalità di cronologia feedback nel menù;
+  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC13.1);
+  + visualizza la lista dei feedback (UC13.2).
 - Sistema:
-  - mostra all'utente la funzionalità di cronologia feedback;
-  - fornisce all'utente la possibilità di effettuare una ricerca (UC15.1) e di visualizzarne i risultati;
-  - mostra all'utente la lista dei feedback (UC15.2).
-*Generalizzazioni:*
-- Use Case:
-  - UC15.1 - Ricerca per vista "Cronologia Feedback";
-  - UC15.2 - Visualizzazione lista feedback.
+  + mostra all'utente la funzionalità di cronologia feedback;
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC13.1) e di visualizzarne i risultati;
+  + mostra all'utente la lista dei feedback (UC13.2).
+
 
 #pagebreak()
-==== UC15.1 - Ricerca per vista "Cronologia Feedback"
+==== UC13.1 - Ricerca per vista "Cronologia Feedback"
 #figure(
-  image("/imgs/Uml/UC15.1.png", width: 80%),
+  image("/imgs/Uml/UC13.1.png", width: 80%),
   caption: [
     Ricerca per vista "Cronologia Feedback"
   ],
@@ -2371,54 +2001,31 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC15.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC16) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC13.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin:
-  - compila i campi presenti nella barra di ricerca (UC15.1.1);
-  - avvia la ricerca (UC15.1.2);
-  - visualizza i risultati della ricerca (UC15.2/UC16).
+  + compila i campi presenti nella barra di ricerca (UC13.1.1);
+  + avvia la ricerca (UC13.1.2);
+  + visualizza i risultati della ricerca (UC13.2/UC14).
 - Sistema:
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC15.1.1);
-  - contatta tramite API il software che fornisce i risultati della ricerca;
-  - riceve tramite API una risposta dal software;
-  - mostra a schermo i risultati della ricerca.
-*Generalizzazioni:*
-- Use Case:
-  - UC15.1.1 - Compilazione campi ricerca.
-  - UC15.1.2 - Avvio ricerca.
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC13.1.1);
+  + contatta tramite API il software che fornisce i risultati della ricerca;
+  + riceve tramite API una risposta dal software;
+  + mostra a schermo i risultati della ricerca.
 
 #pagebreak()
-==== Generalizzazioni UC15.1
-#align(left, text(11pt)[*UC15.1.1 - Compilazione campi ricerca*])
 
-*Attori:*
-- Admin;
-*Precondizioni:*
-- L'utente sta visualizzando la vista "Cronologia Feedback" nella pagina principale;
-- L'utente decide di fare una ricerca e compila i campi necessari;
-*Postcondizioni:*
-- L'utente ha compilato correttamente i campi di ricerca;
-*Scenario principale:*
-- Admin:
-  - compila i campi presenti nella barra di ricerca (UC15.1.1).
-- Sistema:
-  - memorizza i dati inseriti nei campi della barra di ricerca (UC15.1.1).
-*Generalizzazioni:*
-- Use Case:
-  - UC15.1.1.1 - Scelta input "Data";
-  - UC15.1.1.2 - Completamento input "Username utente";
+==== Approfondimento specificità UC13.1
 
-#pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC15.1.1*])
 
 #figure(
-  image("/imgs/Uml/UC15.1.1_gen.png", width: 80%),
+  image("/imgs/Uml/UC13.1app.png", width: 80%),
   caption: [
-    Sotto-UC UC15.1.1 
+    Approfondimento specificità UC13.1 - Completamento input
   ],
 )
-+ *UC15.1.1.1 - Scelta input "Data"*
++ *UC13.1.1.1 - Scelta input "Data"*
 
   *Attori:*
   - Admin;
@@ -2429,19 +2036,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo data mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - visualizza le opzioni possibili per l'input;
-    - sceglie una delle opzioni possibili per l'input.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + visualizza le opzioni possibili per l'input;
+    + sceglie una delle opzioni possibili per l'input.
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    - mostra all'utente le opzioni possibili per l'input;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
 #pagebreak()
-+ *UC15.1.1.2 - Completamento input "Username"*
++ *UC13.1.1.2 - Completamento input "Username"*
 
   *Attori:*
   - Admin;
@@ -2452,46 +2059,28 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Il campo username mostra l'opzione scelta dall'utente.
   *Scenario principale:*
   - Admin:
-    - visualizza un'opzione di default per l'input;
-    - seleziona l'opzione di default per modificarla;
-    - inizia a compilare il campo con l'opzione che vuole selezionare;
-    - visualizza le opzioni possibili per l'input;
-    - visualizza suggerimenti di autocompletamento per l'input;
-    - sceglie una delle opzioni possibili per l'input.
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili per l'input.
   - Sistema:
-    - mostra all'utente un'opzione di default per l'input;
-    - prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    - prende a conoscenza i caratteri inseriti dall'utente;
-    - contatta tramite API il software che fornisce le opzioni possibili;
-    - riceve tramite API una risposta con le opzioni possibili dal software;
-    - mostra all'utente le opzioni possibili per l'input;
-    - se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    - se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-#align(left, text(11pt)[*UC15.1.2 - Avvio ricerca*])
-
-*Attori:*
-- Admin;
-*Precondizioni:*
-- L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-- L'utente ha compilato i campi della barra di ricerca (UC15.1.1.1, UC15.1.1.2).
-*Postcondizioni:*
-- Il sistema estrapola i dati dalla barra di ricerca;
-- Il sistema contatta il software dedicato con i dati estrapolati tramite API.
-*Scenario principale:*
-- Admin:
-  - interagisce con il pulsante di avvio ricerca.
-- Sistema:
-  - estrapola i dati dalla barra di ricerca;
-  - contatta il software dedicato con i dati estrapolati tramite API;
-  - riceve una risposta tramite API dal software dedicato;
-  - mostra i risultati della risposta nella visualizzazione dei risultati di ricerca (UC15.2).
-
-==== UC15.2 - Visualizzazione lista feedback
+#pagebreak()
+==== UC13.2 - Visualizzazione lista feedback
 #figure(
-  image("/imgs/Uml/UC15.2.png", width: 65%),
+  image("/imgs/Uml/UC13.2.png", width: 65%),
   caption: [
-    Visualizzazione dettagli singolo item
+    Visualizzazione lista feedback
   ],
 )
 *Attori:*
@@ -2500,26 +2089,23 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Cronologia Feedbak".
 *Postcondizioni:*
 - L'utente visualizza la lista dei feedback;
-- Nel caso l'utente abbia effettuato una ricerca (UC15.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC13.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin:
-  - visualizza la lista dei feedback;
-  - visualizza i risultati della ricerca effettuata.
+  + visualizza la lista dei feedback;
+  + visualizza i risultati della ricerca effettuata.
 - Sistema:
-  - mostra la lista dei feedback;
-  - mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
+  + mostra la lista dei feedback;
+  + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC16 - Errore di ricerca.
-*Generalizzazioni:*
-- Use Case:
-  - UC15.2.1 - Visualizzazione dettagli singolo "Feedback".
+- UC14 - Errore di ricerca.
+
 
 #pagebreak()
-==== Generalizzazioni UC15.2
-#align(left, text(11pt)[*UC15.2.1 - Visualizzazione dettagli singolo "Feedback"*])
+===== UC13.2.1 Visualizzazione dettagli singolo "Feedback"
 
 #figure(
-  image("/imgs/Uml/UC15.2.1.png", width: 65%),
+  image("/imgs/Uml/UC13.2.1.png", width: 65%),
   caption: [
     Visualizzazione dettagli singolo "Feedback"
   ],
@@ -2532,23 +2118,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente osserva un singolo elemento della lista.
 *Scenario principale:*
 - Admin:
-  - osserva un feedback della lista tra i vari mostrati.
-*Generalizzazioni:*
-- Use Case:
-  - UC15.2.1.1 - Visualizzazione "Data" feedback;
-  - UC15.2.1.2 - Visualizzazione "Username" utente feedback;
-  - UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback.
+  + osserva un feedback della lista tra i vari mostrati.
+
 
 #pagebreak()
-#align(left, text(11pt)[*Sotto-UC UC15.2.1*])
+===== Approfondimento specificità UC13.2.1
 
 #figure(
-  image("/imgs/Uml/UC15.2.1_gen.png", width: 70%),
+  image("/imgs/Uml/UC13.2.1app.png", width: 70%),
   caption: [
-    Sotto-UC UC15.2.1 
+    Approfondimento specificità UC13.2.1 - Visualizzazione elemento 
   ],
 )
-+ *UC15.2.1.1 - Visualizzazione "Data" feedback*
++ *UC13.2.1.1 - Visualizzazione "Data" feedback*
 
   *Attori:*
   - Admin.
@@ -2558,9 +2140,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza la data del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    - visualizza la data del risultato che sta osservando.
+    + visualizza la data del risultato che sta osservando.
 
-+ *UC15.2.1.2 - Visualizzazione "Username" utente feedback*
++ *UC13.2.1.2 - Visualizzazione "Username" utente feedback*
 
   *Attori:*
   - Admin.
@@ -2570,10 +2152,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza lo username utente del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    - visualizza lo username utente del risultato che sta osservando.
+    + visualizza lo username utente del risultato che sta osservando.
 
 #pagebreak()
-+ *UC15.2.1.3 - Visualizzazione "Contenuto del feedback" feedback*
++ *UC13.2.1.3 - Visualizzazione "Contenuto del feedback" feedback*
 
   *Attori:*
   - Admin.
@@ -2583,25 +2165,25 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente visualizza lo score del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    - visualizza il contenuto del feedback (Sotto-UC UC9.1) del risultato che sta osservando.
+    + visualizza il contenuto del feedback (Sotto-UC UC9.1) del risultato che sta osservando.
 
 #pagebreak()
-=== UC16 - Errore di ricerca
+=== UC14 - Errore di ricerca
 
 *Attori:*
 - Admin;
 - User.
 *Precondizioni:*
-- L'utente ha effettutato una ricerca (UC8.1, UC10.1, UC12.1, UC14.1, UC15.1) non andata a buon fine;
+- L'utente ha effettutato una ricerca (UC6.2, UC8.2, UC10.2, UC12.2, UC13.1) non andata a buon fine;
 - Nella lista che andrà visualizzata non è presente alcun risultato.
 *Postcondizioni:*
 - L'utente visualizza un messaggio informativo.
 *Scenario principale:*
 - Admin/User:
-  - visualizza un messaggio informativo.
+  + visualizza un messaggio informativo.
 - Sistema:
-  - controlla la presenza di risultati;
-  - decide di mostrare il messaggio informativo.
+  + controlla la presenza di risultati;
+  + decide di mostrare il messaggio informativo.
 
 //E' da esprimere come funzionalità? Non è "solo contorno" ?
 // === UC17 - Visualizzazione informazioni azienda
