@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.3.0", "2024-02.26", p.pandolfo, "", "Stesura sprint 13",
     "1.2.0", "2024-02.26", p.bomben, p.rosson, "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
     "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
@@ -2268,7 +2269,8 @@ Il rischio preventivato non si è verificato, in quanto non ci sono stati altri 
 Il principale problema riscontrato è stata l'integrazione dei test.
 
 === Retrospettiva
-
+Lo sprint #13 è costato meno di quanto preventivato, con qualche differenza rispetto alle ore preventivate, in particolare sono state necessarie 3 ore in più tra programmatore e progettista, risparmiando però per quanto riguarda amministratore ed analista.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 
 
