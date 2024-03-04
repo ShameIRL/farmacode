@@ -2337,8 +2337,8 @@ riportate indicano:
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
   [ROF 1], [L'utente per potere accedere all'applicazione deve autenticarsi all'interno del sistema.], [UC1],
-  [R0F 2], [L'utente deve fornire la propria email personale, nel campo email, per procedere con l'autenticazione nella pagina di Login.], [UC1.1],
-  [R0F 3], [L'utente deve fornire la propria password, nel campo password, per procedere con l'autenticazione nella pagina di Login.], [UC1.2],
+  [ROF 2], [L'utente deve fornire la propria email personale, nel campo email, per procedere con l'autenticazione nella pagina di Login.], [UC1.1],
+  [ROF 3], [L'utente deve fornire la propria password, nel campo password, per procedere con l'autenticazione nella pagina di Login.], [UC1.2],
   [RDF 4], [Nel caso il sito sia in manutenzione è necessario che l'utente riceva un messaggio che esplicità l'impossibilità di usare l'applicazione.], [UC2],
   [RDF 5], [Nel caso l'autenticazione fallisse, è necessario che l'utente riceva un messaggio con dettagli che ne indicano il motivo.], [UC3],
   [ROF 6], [L'utente, una volta autenticato, deve poter accedere alla funzione "Profilo Utente" nella schermata principale.], [UC4],
@@ -2378,7 +2378,8 @@ riportate indicano:
   [RDF 40], [L'utente una volta entrato nella sezione "Cronologia feedback", deve poter effettuare una ricerca e visualizzarne i risultati.], [UC13.1,\ UC13.2],
   [RDF 41], [L'utente che ha scelto di effettuare una ricerca, deve compilare i campi "Data" e "Username".], [UC13.1.1,\ UC13.1.2],
   [RDF 42], [L'utente che effettutato una ricerca e ne visualizza i risultati, deve poter visualizzare la data, l'username e il contenuto del feedback riguardanti la cronologia del feedback.], [UC13.2.1,\ UC13.2.1.1,\ UC13.2.1.2,\ UC13.2.1.3],
-
+  [RDF 43], [L'utente, una volta autenticato, deve poter accedere alla funzione "Carica dataset" e caricare un dataset esterno all'interno dell'applicazione.], [Verbale interno],
+  [RDF 44], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [Verbale interno],
   
 )
 #align(center)[Tabella 1: Requisiti funzionali]
@@ -2400,17 +2401,20 @@ Le sigle sotto riportate possono essere così classificate:
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
   [ROQ 1],
-  [Progettazione architetturale e tecnologie utilizzate],
+  [Occorre realizzare un documento di analisi dei requisiti con all'interno i diagrammi dei casi d'uso (UC).],
   [Capitolato],
   [ROQ 2],
-  [Schema di progettazione della base di dati],
+  [Occorre realizzare uno schema di progettazione della base di dati utilizzata in forma di diagramma.],
   [Capitolato],
   [ROQ 3],
-  [Codice prodotto in formato sorgente reso disponibile tramite repo pubblici],
+  [Occorre realizzare il codice del prodotto in formato sorgente reso disponibile tramite repo pubblica.],
   [Capitolato],
   [ROQ 4],
-  [Documentazione descrittiva del sistema di raccomandazione implementato],
+  [Documentazione descrittiva del sistema di raccomandazione implementato.],
   [Capitolato],
+  [ROQ 5], [Occorre realizzare un documento denominato "Manuale utente" per l'applicazione.], [Capitolato],
+  [ROQ 6], [Occorre seguire e rispettare le norme definite nel documento "Norme di Progetto" durante lo sviluppo del prodotto.], [Interno],
+  [ROQ 7], [Occorre realizzare un documento che descriva il sistema di raccomandazione implementato.], [Capitolato],
 )
 #align(center)[Tabella 2: Requisiti di qualità]
 
@@ -2430,45 +2434,40 @@ Le sigle sotto riportate possono essere così classificate:
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
   [ROV 1],
-  [Database relazionale sviluppato con MySQL],
+  [Per la persistenza dati dovrà essere utilizzato un database relazionale sviluppato con MySQL.],
   [Capitolato],
   [RDV 2],
-  [Sistema di raccomandazione sviluppato con Surprise (libreria in python)],
+  [Per lo sviluppo del sistema di raccomandazione dovrà essere utilizzato Python con la relativa libreria Surprise.],
   [Capitolato],
   [ROV 3],
-  [Visualizzazione e gestione dei feedback UI tramite piattaforma web-based],
+  [La visualizzazione e la gestione dei feedback dovrà essere possbile all'interno dell'applicazione.], //perchè non andava bene prima?
   [Capitolato],
   [RDV 4],
-  [Strategie di raccomandazione con algoritmi Matrix Factorization o K-Nearest Neighbors],
+  [Per le strategie di raccomandazione dovranno essere utilizzati algoritmi di predizione come Matrix Factorization o K-Nearest Neighbors.],
   [Capitolato],
   [ROV 5],
-  [Sistema di feedback],
+  [L'applicazione dovrà avere tassativamente un sistema di feedback delle raccomandazioni mostrate, i feedback potranno essere negativi o positivi.],
   [Capitolato],
   [ROV 6],
-  [Modalità di implementazione del sistema collaborative filtering e content-based filtering],
+  [Il sistema di raccomandazione dell'applicazione dovrà avere come modalità di implementazione o il collaborative filtering o il content-based filtering.],
   [Capitolato],
   [ROV 7],
   [Misurazione prestazioni del modello utilizzando i dati presenti nel test set e delle metriche (precision e recall)],
   [Capitolato],
   [RDV 8],
-  [Utilizzo del framework React per il front-end dell'applicazione],
+  [L'applicazione come tecnologia front-end dovrà utilizzare il framework React.],
   [Verbale interno],
   [RDV 9],
-  [Utilizzo di Node.js per il front-end dell'applicazione],
+  [L'applicazione dovrà utilizzare un'API per l'interazione fra webapp (interfaccia) e algoritmo di raccomandazione (componente logica).],
   [Verbale interno],
-  //forse va scritto meglio?
   [RDV 10],
-  [Utilizzo e creazione di API per l'interazione fra webapp e algoritmo di raccomandazione],
+  [L'applicazione dovrà utilizzare un'API per l'interazione fra webapp (interfaccia) e il database (persistenza dati).],
   [Verbale interno],
   [RDV 11],
-  [Utilizzo e creazione di API per l'interazione fra webapp e il database],
+  [Lo sviluppo dell'applicazione e l'ambiente di lavoro dovrà usare la piattaforma Docker.], //DA MIGLIORARE
   [Verbale interno],
   [RDV 12],
-  [Utilizzo della piattaforma Docker per la gestione dell'ambiente di sviluppo],
-  [Verbale interno],
-  //va bene messo qui?
-  [RDV 13],
-  [Possibile approccio multi-thread o multi-modello per la gestione dell'attesa in caso di interrogazione durante l'addestramento del modello],
+  [Per la gestione delle attese in caso di interrogazione del sistema di raccomandazione durante l'addestramento del dataset, dovrà essere implementato un approccio multi-thread del modello.], //DA MIGLIORARE
   [Verbale Esterno],
 )
 #align(center)[Tabella 3: Requisi di vincolo]
@@ -2520,40 +2519,48 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   columns: (1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Funzionali*],[],
-  [UC1, UC1.1, UC1.2], [ROF 1],
-  [UC2], [RDF 2],
-  [UC3], [RDF 3],
-  [UC4, UC4.1, UC4.2], [RDF 4],
-  [UC5], [ROF 5],
-  [UC5, UC5.1, UC5.1.1], [ROF 6],
-  [UC5, UC5.1, UC5.1.2], [ROF 7],
-  [UC5, UC5.1, UC5.1.3], [ROF 8],
-  [UC5, UC5.1, UC5.1.4], [ROF 9],
-  [UC5, UC5.2, UC5.2.1, UC5.2.2], [RDF 10],
-  [UC6, UC6.1, UC6.1.1, UC6.1.2, UC6.1.3, UC6.1.4], [ROF 11],
-  [UC6.2 UC6.2.1, UC6.2.2], [ROF 12],
-  [UC7], [ROF 13],
-  [UC8, UC8.1, UC8.1.1, UC8.1.2], [ROF 14],
-  [UC8.1.1.1], [ROF 15],
-  [UC8.1.1.3], [ROF 16],
-  [UC8.2, UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4], [ROF 17],
-  [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2], [ROF 18],
-  [UC10, UC10.2, UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC10.2.1.3, UC10.2.1.4], [ROF 19],
-  [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC10.1.2], [RDF 20],
-  [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7], [RDF 21],
-  [UC12, UC12.2], [ROF 22],
-  [UC12.1, UC12.1.1, UC12.1.1.1, UC12.1.1.2, UC12.1.1.3, UC12.1.2], [RDF 23],
-  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4], [RDF 24],
-  [UC13, UC13.1, UC13.2], [RDF 25],
-  [UC14, UC14.2], [RDF 26],
-  [UC14.1, UC14.1.1, UC14.1.1.1, UC14.1.1.2, UC14.1.2], [RDF 27],
-  [UC14.2.1, UC14.2.1.1, UC14.2.1.2, UC14.2.1.3], [RDF 28],
-  [UC15, UC15.2], [RDF 29],
-  [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2], [RDF 30],
-  [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3], [RDF 31],
-  [UC16], [RDF 32],
-  [Verbale Interno], [RDF 33],
-  [Verbale Interno], [RDF 34],
+  [UC1], [ROF 1],
+  [UC1.1], [ROF 2],
+  [UC1.2], [ROF 3],
+  [UC2], [RDF 4],
+  [UC3], [RDF 5],
+  [UC4], [ROF 6],
+  [UC4.1, UC4.2], [ROF 7],
+  [UC4.1.1, UC4.1.2, UC4.1.3, UC4.1.4], [ROF 8],
+  [UC4.2.1, UC4.2.2], [ROF 9],
+  [UC5], [ROF 10],
+  [UC6], [ROF 11],
+  [UC6.1, UC6.2], [ROF 12],
+  [UC6.1.1, UC6.1.5], [ROF 13],
+  [UC6.1.2, UC6.1.3], [ROF 14],
+  [UC6.1.4], [RDF 15],
+  [UC6.1.6, UC6.1.7], [RDF 16],
+  [UC6.2.1, UC6.2.1.1, UC6.2.1.2, UC6.2.1.3], [ROF 17],
+  [UC14], [RDF 18],
+  [UC7], [ROF 19],
+  [UC7.1, UC7.2], [ROF 20],
+  [UC8], [RDF 21],
+  [UC8.1, UC8.2], [RDF 22],
+  [UC8.1.1, UC8.1.2, UC8.1.3, UC8.1.4], [RDF 23],
+  [UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3], [RDF 24],
+  [UC9], [RDF 25],
+  [UC9.1, UC9.2, UC9.3, UC9.4, UC9.5, UC9.6, UC9.7], [RDF 26],
+  [UC10], [RDF 27],
+  [UC10.1, UC10.2], [RDF 28],
+  [UC10.1.1, UC10.1.2, UC10.1.3], [RDF 29],
+  [UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC10.2.1.3, UC10.2.1.4], [RDF 30],
+  [UC11], [RDF 31],
+  [UC11.1, UC11.2], [RDF 32],
+  [UC11.1], [RDF 33],
+  [UC11.2.1, UC11.2.1.1, UC11.2.1.2, UC11.2.1.3], [RDF 34],
+  [UC12], [RDF 35],
+  [UC12.1, UC12.2], [RDF 36],
+  [UC12.1.1, UC12.1.2], [RDF 37],
+  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3], [RDF 38],
+  [UC13], [RDF 39],
+  [UC13.1, UC13.2], [RDF 40],
+  [UC13.1.1, UC13.1.2], [RDF 41],
+  [UC13.2.1, UC13.2.1.1, UC13.2.1.2, UC13.2.1.3], [RDF 42],
 )
 #align(center)[Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali]
 
@@ -2565,6 +2572,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Capitolato],[ROQ 2],
   [Capitolato],[ROQ 3],
   [Capitolato],[ROQ 4],
+  [Capitolato], [ROQ 5],
+  [Interno], [ROQ 6],
+  [Capitolato], [ROQ 7],
 )
 #align(center)[Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità]
 
@@ -2575,9 +2585,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*di Vincolo*],[],
   [Capitolato],[ROV 1],
-  [Capitolato],[ROV 2],
+  [Capitolato],[RDV 2],
   [Capitolato],[ROV 3],
-  [Capitolato],[ROV 4],
+  [Capitolato],[RDV 4],
   [Capitolato],[ROV 5],
   [Capitolato],[ROV 6],
   [Capitolato],[ROV 7],
@@ -2585,91 +2595,10 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Verbale Interno],[RDV 9],
   [Verbale Interno],[RDV 10],
   [Verbale Interno],[RDV 11],
-  [Verbale Interno],[RDV 12],
-  [Verbale Esterno],[RDV 13],           
+  [Verbale Interno],[RDV 12],          
 )
 #align(center)[Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo]
 
-=== Requisiti - Fonte
-
-#table(
-  columns: (1fr, 1fr),
-  [*Requisito*],[*Fonte*]
-)
-
-#table(
-  columns: (1fr, 1fr),
-    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Funzionali*],[],
-  [ROF 1], [UC1, UC1.1, UC1.2],
-  [RDF 2], [UC2],
-  [RDF 3], [UC3],
-  [RDF 4], [UC4, UC4.1, UC4.2],
-  [RDF 5], [UC5],
-  [ROF 6], [UC5, UC5.1, UC5.1.1],
-  [ROF 7], [UC5, UC5.1, UC5.1.2],
-  [ROF 8], [UC5, UC5.1, UC5.1.3],
-  [ROF 9], [UC5, UC5.1, UC5.1.4],
-  [RDF 10], [UC5, UC5.2, UC5.2.1, UC5.2.2],
-  [ROF 11], [UC6, UC6.1, UC6.1.1, UC6.1.2, UC6.1.4, UC6.1.4],
-  [ROF 12], [UC6.2, UC6.2.1, UC6.2.2],
-  [ROF 13], [UC7],
-  [ROF 14], [UC8, UC8.1, UC8.1.1, UC8.1.2],
-  [ROF 15], [UC8.1.1.1],
-  [ROF 16], [UC8.1.1.3],
-  [ROF 17], [UC8.2, UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4],
-  [ROF 18], [UC9, UC9.1, UC9.1.1, UC9.1.2, UC9.2],
-  [ROF 19], [UC10, UC10.2, UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC10.2.1.3, UC19.2.1.4],
-  [RDF 20], [UC10.1, UC10.1.1, UC10.1.1.1, UC10.1.1.2, UC10.1.1.3, UC10.1.1.4, UC1O.1.2],
-  [RDF 21], [UC11, UC11.1, UC11.2, UC11.3, UC11.4, UC11.5, UC11.6, UC11.7],
-  [ROF 22], [UC12, UC12.2],
-  [RDF 23], [UC12.1, UC12.11, UC12.1.1.1, UC12.1.1.2, UC12.1.1.3, UC12.1.2],
-  [RDF 24], [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4],
-  [RDF 25], [UC13, UC13.1, UC13.2],
-  [RDF 26], [UC14, UC14.2],
-  [RDF 27], [UC14.1, UC14.1.1, UC14.1.1.1, UC14.1.1.2, UC14.1.2],
-  [RDF 28], [UC14.2.1, UC14.2.1.1, UC14.2.1.2, UC14.2.1.3],
-  [RDF 29], [UC15, UC15.2],
-  [RDF 30], [UC15.1, UC15.1.1, UC15.1.1.1, UC15.1.1.2, UC15.1.2],
-  [RDF 31], [UC15.2.1, UC15.2.1.1, UC15.2.1.2, UC15.2.1.3],
-  [RDF 32], [UC16],
-  [RDF 33], [Verbale Interno],
-  [RDF 34], [Verbale Interno],
-  
-)
-#align(center)[Tabella 7: Requisito - Fonte. Tracciamento requisiti funzionali]
-
-#table(
-  columns: (1fr, 1fr),
-    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*di Qualità*],[],
-  [ROQ 1], [Capitolato],
-  [ROQ 2], [Capitolato],
-  [ROQ 3], [Capitolato],
-  [ROQ 4], [Capitolato],
-)
-#align(center)[Tabella 8: Requisito - Fonte. Tracciamento requisiti di qualità]
-
-
-#table(
-  columns: (1fr, 1fr),
-    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*di Vincolo*],[],
-  [ROV 1], [Capitolato],
-  [ROV 2], [Capitolato],
-  [ROV 3], [Capitolato],
-  [ROV 4], [Capitolato],
-  [ROV 5], [Capitolato],
-  [ROV 6], [Capitolato],
-  [ROV 7], [Capitolato],
-  [RDV 8], [Verbale Interno],
-  [RDV 9], [Verbale Interno],
-  [RDV 10], [Verbale Interno],
-  [RDV 11], [Verbale Interno],
-  [RDV 12], [Verbale Interno],
-  [RDV 13], [Verbale Interno],
-)
-#align(center)[Tabella 9: Requisito - Fonte. Tracciamento requisiti di vincolo]
 #pagebreak()
 
 == Riepilogo
@@ -2678,83 +2607,80 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   columns: (1fr, 1fr, 1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Tipologia*],[*Obbligatorio*], [*Desiderabile*],[*Complessivo*],
-  [Funzionale],[15],[19],[34],
-  [di Qualità],[4],[/],[4],
-  [di Vincolo],[5],[8],[13],
+  [Funzionale],[15],[27],[42],
+  [di Qualità],[7],[/],[7],
+  [di Vincolo],[5],[7],[12],
   
 )
 #table(
   columns: (1fr, auto,),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Totale*],[*51*],
+  [*Totale*],[*76*],
 )
-#align(center)[Tabella 10: Riepilogo requisiti]
+#align(center)[Tabella 7: Riepilogo requisiti]
 #pagebreak()
 
 
 = Elenco delle immagini
 
-- Immagine 1: Login
-- Immagine 2: Inserimento email 
-- Immagine 3: Inserimento password
-- Immagine 4: Avviso normativa sui Cookies 
-- Immagine 5: Visualizzazione "Menù" delle funzionalità
-- Immagine 6: Visualizzazione funzionalità Admin/User
-- Immagine 7: Visualizzazione funzionalità Admin
-- Immagine 8: Visualizzazione "Profilo Utente"
-- Immagine 9: Visualizzazionedati utente
-- Immagine 10: Sotto-UC UC6.1
-- Immagine 11: Modifica dati utente
-- Immagine 12: Logout
-- Immagine 13: Visualizzazione vista "Ricerca"
-- Immagine 14: Ricerca per vista "Ricerca"
-- Immagine 15: Sotto-UC UC8.1.1
-- Immagine 16: Visualizzazione lista risultati
-- Immagine 17: Visualizzazione dettagli singolo "Risultato"
-- Immagine 18: Sotto-UC UC8.2.1
-- Immagine 19: Inserimento "Feedback"
-- Immagine 20: Sotto-UC UC9.1
-- Immagine 21: Visualizzazione vista "Catalogo Prodotti"
-- Immagine 22: Ricerca per vista "Catalogo Prodotti"
-- Immagine 23: Sotto-UC UC10.1.1
-- Immagine 24: Visualizzazione lista prodotti
-- Immagine 25: Visualizzazione informazioni singolo "Prodotto"
-- Immagine 26: Sotto-UC UC10.2.1
-- Immagine 27: Visualizzazione dettaglio "Prodotto"
-- Immagine 28: Sotto-UC UC11
-- Immagine 29: Visualizzazione vista "Lista Clienti"
-- Immagine 30: Ricerca per vista "Lista Clienti"
-- Immagine 31: Sotto-UC UC12.1.1
-- Immagine 32: Visualizzazione lista clienti
-- Immagine 33: Visualizzazione dettagli singolo "Cliente"
-- Immagine 34: Sotto-UC UC12.2.1
-- Immagine 35: Visualizzazione vista "Statistiche Mensili"
-- Immagine 36: Sotto-UC UC13
-- Immagine 37: Visualizzazione vista "Cronologia Ricerche"
-- Immagine 38: Ricerca per vista "Cronologia Ricerche"
-- Immagine 39: Sotto-UC UC14.1.1
-- Immagine 40: Visualizzazione lista ricerche
-- Immagine 41: Visualizzazione dettagli singola "Ricerca"
-- Immagine 42: Sotto-UC UC14.2.1
-- Immagine 43: Visualizzazione vista "Cronologia Feedback"
-- Immagine 44: Ricerca per vista "Cronologia Feedback"
-- Immagine 45: Sotto-UC UC15.1.1
-- Immagine 46: Visualizzazione dettagli singolo item
-- Immagine 47: Visualizzazione dettagli singolo "Feedback"
-- Immagine 48: Sotto-UC UC15.2.1
-
+- Immagine 1: Login;
+- Immagine 2: Inserimento username;
+- Immagine 3: Inserimento password;
+- Immagine 4: Visualizzazione “Profilo Utente”;
+- Immagine 5: Visualizzazione dati utente;
+- Immagine 6: Approfondimento specificità UC4.1 - Visualizzazione dati utente;
+- Immagine 7: Modifica dati utente;
+- Immagine 8: Approfondimento specificità UC4.2 - Modifica dati utente;
+- Immagine 9: Logout;
+- Immagine 10: Visualizzazione vista “Ricerca”;
+- Immagine 11: Ricerca per vista “Ricerca”;
+- Immagine 12: Approfondimento specificità UC6.1 - Ricerca per vista “Ricerca”;
+- Immagine 13: Visualizzazione lista risultati;
+- Immagine 14: Visualizzazione singolo risultato;
+- Immagine 15: Approfondimento specificità UC6.2.1 - Visualizzazione dettagli singolo risultato;
+- Immagine 16: Inserimento “Feedback”;
+- Immagine 17: Inserimento “Valutazione”;
+- Immagine 18: Inserimento “Commento”;
+- Immagine 19: Visualizzazione vista “Catalogo Prodotti”;
+- Immagine 20: Ricerca per vista “Catalogo Prodotti”;
+- Immagine 21: Approfondimento specificità UC8.1 - Ricerca per vista “Catalogo Prodotti”;
+- Immagine 22: Visualizzazione lista prodotti;
+- Immagine 23: Visualizzazione dettagli singolo “prodotto”;
+- Immagine 24: Approfondimento specificità UC8.2.1 - Visualizzazione dettagli singolo prodotto;
+- Immagine 25: Visualizzazione “Dettagli prodotto”;
+- Immagine 26: Approfondimento specificità UC9 - Visualizzazione “Dettagli prodotto”;
+- Immagine 27: Visualizzazione vista “Lista Clienti”;
+- Immagine 28: Ricerca per vista “Lista Clienti”;
+- Immagine 29: Approfondimento specificità UC10.1 - Ricerca per vista “Lista Clienti”;
+- Immagine 30: Visualizzazione lista clienti;
+- Immagine 31: Visualizzazione dettagli singolo “cliente”;
+- Immagine 32: Approfondimento specificità 10.2.1 - Visualizzazione dettagli singolo “Cliente”;
+- Immagine 33: Visualizzazione vista “Statistiche Mensili”;
+- Immagine 34: Visualizzazione “Grafico”;
+- Immagine 35: Visualizzazione “Raccomandazioni utili”;
+- Immagine 36: Visualizzazione dettagli singola raccomandazione;
+- Immagine 37: Approfondimento specificità UC11.2.1 - Visualizzazione singolo elemento;
+- Immagine 38: Visualizzazione vista “Cronologia Ricerche”;
+- Immagine 39: Ricerca per vista “Cronologia Ricerche”;
+- Immagine 40: Approfondimento specificità UC12.1 - Completamento input;
+- Immagine 41: Visualizzazione lista ricerche;
+- Immagine 42: Visualizzazione dettagli singola “Ricerca”;
+- Immagine 43: Approfondimento specificità UC12.2.1 - Visualizzazione ricerca;
+- Immagine 44: Visualizzazione vista “Cronologia Feedback”;
+- Immagine 45: Ricerca per vista “Cronologia Feedback”;
+- Immagine 46: Approfondimento specificità UC13.1 - Completamento input;
+- Immagine 47: Visualizzazione lista feedback;
+- Immagine 48: Visualizzazione dettagli singolo “Feedback”;
+- Immagine 49: Approfondimento specificità UC13.2.1 - Visualizzazione elemento.
 
 #pagebreak()
 = Elenco delle tabelle
 
-- Tabella 1: Requisiti funzionali
-- Tabella 2: Requisiti di qualità
-- Tabella 3: Requisiti di vincolo
-- Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali
-- Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità
-- Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo
-- Tabella 7: Requisito - Fonte. Tracciamento requisiti funzionali
-- Tabella 8: Requisito - Fonte. Tracciamento requisiti di qualità
-- Tabella 9: Requisito - Fonte. Tracciamento requisiti di vincolo
-- Tabella 10: Riepilogo requisiti
+- Tabella 1: Requisiti funzionali;
+- Tabella 2: Requisiti di qualità;
+- Tabella 3: Requisiti di vincolo;
+- Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali;
+- Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità;
+- Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo;
+- Tabella 7: Riepilogo requisiti.
 
