@@ -2224,7 +2224,7 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [Favaron R.], [], [], [], [], [4], [],
   [Pandolfo M.], [4], [], [], [], [], [],
   [Passarella A.], [], [], [1 #red("+1")], [], [], [4],
-  [Rosson L.], [], [], [], [1 #red("+1")], [], [4 #red("+1")],
+  [Rosson L.], [], [], [1 #red("+1")], [], [], [4 #red("+1")],
 )
 ])
 #align(center)[Tabella 66: consuntivo orario sprint.13.]
