@@ -72,6 +72,12 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
 - T11 - Verifica e validazione: analisti dinamica (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
+- ISO/IEC 9126\
+  https://en.wikipedia.org/wiki/ISO/IEC_9126;
+- ISO/IEC 12207:1995\
+  https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf;
+- ISO/IEC 90003\
+  https://cdn.standards.iteh.ai/samples/35867/36860aa4caba4c84b26051db576456d3/ISO-IEC-90003-2004.pdf;
 
 #pagebreak()
 
