@@ -9,8 +9,8 @@
 
   ),
   changelog: (
-    "1.3.0", "2024-02-28", p.favaron, "", "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
-    "1.2.0", "2024-02-28", p.favaron, "", "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
+    "1.2.0", "2024-02-29", p.favaron, "", "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
+    "1.1.1", "2024-02-28", p.favaron, "", "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
     "1.1.0", "2024-02-27", p.favaron, "", "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
     "1.0.0", "2024-02-13", p.rosson, p.baggio, "Verifica e revisone del documento",
     "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
@@ -520,7 +520,7 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
 
     - Pié pagina, separato dal contenuto con un'interlinea, caratterizzato da:
         - Logo e Nome del gruppo (sulla sinistra);
-        - Numero di pagina (sulla destra) nel seguente formato: pagina [n] / [numero di pagine totali]..
+        - Numero di pagina (sulla destra) nel seguente formato: pagina [n] / [numero di pagine totali].
 
 ==== Verbali
 I verbali differiscono in quanto a struttura rispetto ai documenti di progetto. La pagina iniziale, il registro modifiche, l'indice e pié pagina sono sempre presenti anche in questi documenti.\ 
@@ -530,7 +530,7 @@ Vanno rispettate le seguenti sezioni:
         - Ora;
         - Partecipanti;
         - Partecipante esterno;
-        - Mezzo tramite.;
+        - Mezzo tramite.
     - Oggetto, descrizione in breve dei temi trattati durante il meeting;
     - Sintesi, descrizione corposa di ciò che si è discusso durante il meeting.
     Inoltre i verbali esterni dovranno avere un'ultima sezione dedicata alla firma del partecipante esterno e relativa data così da confermare e validate il documento.
@@ -539,7 +539,7 @@ Vanno rispettate le seguenti sezioni:
     - Durata e partecipanti, semplice elenco di informazioni:
         - Ora;
         - Partecipanti;
-        - Mezzo tramite.;
+        - Mezzo tramite.
     - Temi trattati, descrizione in breve dei temi trattati durante il meeting;
     - Sintesi, descrizione corposa di ciò che si è discusso durante il meeting;
     - Obiettivi fissata, tabella che descrive e traccia, attraverso il numero di issue, gli obiettivi prefissati durante il meeting.
@@ -997,7 +997,7 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
     Le comunicazioni interne sono quelle coinvolgenti solo il team, o alcuni dei suoi membri, avvengono tramite mezzi quali:
     
     -- #glossario("Telegram"): 
-    App di messaggistica istantanea utilizzata apiamente. È stato creato una chat di gruppo e viene utilizzata per comunicazioni di tipo più breve e repentino. Solitamente viene utilizzato per stilare un semplice ordine del giorno e per organizzare gli incontri interni del team. Inoltre, sempre trammite Telegram, avvengono comunicazione in privato, quindi che interessano solo alcune parti del gruppo, così da gestire in maniera più regolare ed efficace il flusso di comunicazione interno.
+    App di messaggistica istantanea utilizzata ampiamente. È stata creata una chat di gruppo che viene utilizzata per comunicazioni più brevi e di tipo repentino. Solitamente viene utilizzato per stilare un semplice ordine del giorno e per organizzare gli incontri interni del team. Inoltre, sempre trammite Telegram, avvengono comunicazione in privato, che interessano quindi solo alcune parti del gruppo, così da gestire in maniera più regolare ed efficace il flusso di comunicazione interno.
 
     -- #glossario("Discord"): 
     Piattaforma VoIP, messaggistica istantanea e distribuzione digitale. È stato creato un server di gruppo suddiviso in vari canali.\
