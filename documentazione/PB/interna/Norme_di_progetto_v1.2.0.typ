@@ -9,9 +9,9 @@
 
   ),
   changelog: (
-    "1.2.0", "2024-02-29", p.favaron, "", "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
-    "1.1.1", "2024-02-28", p.favaron, "", "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
-    "1.1.0", "2024-02-27", p.favaron, "", "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
+    "1.2.0", "2024-02-29", p.favaron, p.bomben, "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
+    "1.1.1", "2024-02-28", p.favaron, p.bomben, "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
+    "1.1.0", "2024-02-27", p.favaron, p.bomben, "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
     "1.0.0", "2024-02-13", p.rosson, p.baggio, "Verifica e revisone del documento",
     "0.14.0", "2024-02-04", p.pandolfo, p.bomben, "Aggiunta sezione metriche per la qualità",
     "0.13.0", "2024-01-14", p.baggio + "\n" + p.rosson, p.bomben, "Apportate alcune migliorie e correzioni sezione 3.1",
