@@ -8,7 +8,9 @@
     p.cardin,
   ),
   changelog: (
-    "1.3.0", "2024-02.26", p.pandolfo, "", "Stesura sprint 13",
+    "1.3.2", "2024-03.06", p.favaron, "", "Correzione elenco immagini e tabelle",
+    "1.3.1", "2024-03.06", p.favaron, "", "Correzione colori tabella consultivi",
+    "1.3.0", "2024-02.26", p.pandolfo, p.favaron, "Stesura sprint 13",
     "1.2.0", "2024-02.26", p.bomben, p.rosson, "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
     "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
@@ -1615,9 +1617,9 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
   columns: (auto,)*7,
   align: center,
   [*SPRINT 9*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [2 #red("+1")], [], [], [], [],
+  [Baggio M.], [], [2 #red("(+1)")], [], [], [], [],
   [Bomben F.], [], [], [], [], [2], [],
-  [Carraro A.], [], [0 #red("+2")], [], [2 #green("-1")], [], [],
+  [Carraro A.], [], [0 #red("(+2)")], [], [2 #green("(-1)")], [], [],
   [Favaron R.], [3], [], [], [], [], [],
   [Pandolfo M.], [], [], [], [], [3], [],
   [Passarella A.], [], [2], [], [], [], [],
@@ -1889,7 +1891,7 @@ nd.
   [Rosson L.], [], [], [], [2], [2], [],
 )
 ])
-#align(center)[Tabella 50: preventivo orario sprint.11.]
+#align(center)[Tabella 54: preventivo orario sprint.11.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1906,7 +1908,7 @@ nd.
   [Bilancio], [], [], [], [], [], [*€7420,00*],
 )
 ])
-#align(center)[Tabella 51: preventivo costi sprint.11.]
+#align(center)[Tabella 55: preventivo costi sprint.11.]
 
 #align(left,
 figure(
@@ -1930,14 +1932,14 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
   [*SPRINT 11*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Baggio M.], [], [4], [], [], [], [],
   [Bomben F.], [], [], [], [3], [], [],
-  [Carraro A.], [3], [], [], [], [2 #red("+1")], [],
-  [Favaron R.], [], [], [], [3 #red("+1")], [], [],
-  [Pandolfo M.], [], [4 #red("+1")], [], [], [], [],
+  [Carraro A.], [3], [], [], [], [2 #red("(+1)")], [],
+  [Favaron R.], [], [], [], [3 #red("(+1)")], [], [],
+  [Pandolfo M.], [], [4 #red("(+1)")], [], [], [], [],
   [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [], [], [2], [2 #red("+1")], [],
+  [Rosson L.], [], [], [], [2], [2 #red("(+1)")], [],
 )
 ])
-#align(center)[Tabella 52: consuntivo orario sprint.11.]
+#align(center)[Tabella 56: consuntivo orario sprint.11.]
 
 #align(center, text(0.85em)[
 #table(
@@ -1954,7 +1956,7 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
   [Bilancio], [], [], [], [], [], [#red("€7395,00")],
 )
 ])
-#align(center)[Tabella 53: consuntivo costi sprint.11.]
+#align(center)[Tabella 57: consuntivo costi sprint.11.]
 
 #grid(
   columns: (1fr, auto),
@@ -1976,6 +1978,96 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
 - Spiegazione:
 Durante questo sprint il gruppo si e'concentrato molto sul preparare i documenti per la seconda parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io. Come da preventivo una parte del gruppo, una volta svolta la revisione di progetto, ha iniziato i lavori di progettazione.
 
+
+== Globale - RTB
+
+- Premessa:
+La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. I preventivi di progetto sono aggiornati seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitare i preventivi, come avviene per la pianificazione, a due sprint nel futuro, in modo che risultino realistici ed affidabili.
+
+=== Preventivo Candidatura
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Candidatura*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [10], [5], [36], [5], [20], [19],
+  [Bomben F.], [10], [5], [36], [5], [20], [19],
+  [Carraro A.], [10], [5], [36], [5], [20], [19],
+  [Favaron R.], [10], [5], [36], [5], [20], [19],
+  [Pandolfo M.], [10], [5], [36], [5], [20], [19],
+  [Passarella A.], [10], [5], [36], [5], [20], [19],
+  [Rosson L.], [10], [5], [36], [5], [20], [19],
+)
+])
+#align(center)[Tabella 58: Preventivo candidatura.]
+
+=== Consuntivo Effettivo
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Effettivo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [1], [5], [7], [#red("10")], [13], [0],
+  [Bomben F.], [3], [#red("7")], [3], [#red("9")], [10], [0],
+  [Carraro A.], [4], [4], [5], [#red("9")], [10], [0],
+  [Favaron R.], [7], [4], [12], [#red("8")], [10], [0],
+  [Pandolfo M.], [4], [5], [3], [#red("10")], [12], [0],
+  [Passarella A.], [6], [4], [3], [#red("11")], [9], [0],
+  [Rosson L.], [7], [#red("8")], [2], [#red("8")], [10], [0],
+)
+])
+#align(center)[Tabella 59: Consuntivo effettivo.]
+
+- Spiegazione:
+Come evidente dall'andamento delle attività, le ore inizialmente pianificate per svolgere l'analisi dei requisiti e per il ruolo di Amministratore si sono rivelate insufficienti. Di fronte a questa constatazione, il gruppo ha preso la decisione di rivedere le stime effettuate in fase di candidatura, mantenendo tuttavia l'impegno a non aumentare i costi complessivi del progetto, conformemente alle disposizioni normative stabilite. Riteniamo questo adattamento necessario per garantire una pianificazione più accurata e per affrontare le esigenze effettive delle attività future, senza impattare negativamente sul bilancio complessivo del progetto. Segue la nuova ridistribuzione oraria:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Nuovo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [10], [8], [30], [12], [22], [12],
+  [Bomben F.], [10], [8], [30], [12], [22], [12],
+  [Carraro A.], [10], [8], [30], [12], [22], [12],
+  [Favaron R.], [10], [8], [30], [12], [22], [12],
+  [Pandolfo M.], [10], [8], [30], [12], [22], [12],
+  [Passarella A.], [10], [8], [30], [12], [22], [12],
+  [Rosson L.], [10], [8], [30], [12], [22], [12],
+)
+])
+#align(center)[Tabella 60: Nuova distribuzione oraria.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*Costi*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [70], [56], [210], [84], [154], [84],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€2100,00], [€1400,00], [€3150,00], [€1680,00], [€2100,00], [€2100,00],
+  [Totale], [], [], [], [], [], [#green("€12530,00")], 
+)
+])
+#align(center)[Tabella 61: Nuovo preventivo.]
+
+- Spiegazione:
+Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024. La decisione di spostare la data di consegna è stata influenzata dall'andamento del progetto e dai ritardi accumulati durante e in seguito al periodo di festività invernali. Durante questo periodo, la produttività del gruppo è diminuita, causando ritardi nell'avanzamento delle attività. Di conseguenza, è stato necessario posticipare la data di consegna per assicurare la qualità e il completamento del lavoro entro i nuovi termini previsti.
+
+
+
+
 == PB - sprint.12
 - Periodo: 2024/02/19 - 2024/02/27 
 
@@ -1994,6 +2086,13 @@ Durante questo sprint il gruppo si e'concentrato molto sul preparare i documenti
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
 - Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#12.png", height: 230pt, width: auto),
+  caption: [sprint.12]
+  )
+  
+)
 
 === Pianificazione
 Durante lo scorso periodo la milestone di RTB è stata conclusa, è stata quindi completata e revisionata tutta la documentazione al versionamento v1.0.0.\
@@ -2025,13 +2124,13 @@ Abbiamo preventivato questo rischio specifico a causa del cambio tecnologico per
   [Baggio M.], [], [], [], [], [3], [],
   [Bomben F.], [4], [], [], [], [1], [],
   [Carraro A.], [], [2], [], [4], [], [],
-  [Favaron R.], [], [4], [], [2], [], [],
+  [Favaron R.], [], [4], [2], [], [], [],
   [Pandolfo M.], [], [], [], [], [], [4],
   [Passarella A.], [], [], [], [], [], [4],
   [Rosson L.], [], [3], [], [], [3], [],
 )
 ])
-#align(center)[Tabella 60: preventivo orario sprint.12.]
+#align(center)[Tabella 62: preventivo orario sprint.12.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2045,10 +2144,10 @@ Abbiamo preventivato questo rischio specifico a causa del cambio tecnologico per
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€120,00], [€225,00], [€30,00], [€80,00], [€105,00], [€200,00],
   [Totale], [], [], [], [], [], [€760,00], 
-  [Bilancio], [], [], [], [], [], [*€7375,00*],
+  [Bilancio], [], [], [], [], [], [*€6635,00*],
 )
 ])
-#align(center)[Tabella 61: preventivo costi sprint.12.]
+#align(center)[Tabella 63: preventivo costi sprint.12.]
 
 #align(left,
 figure(
@@ -2074,16 +2173,16 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 12*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [3 #green(-1)], [],
+  [Baggio M.], [], [], [], [], [3 #green("(-1)")], [],
   [Bomben F.], [4], [], [], [], [1], [],
-  [Carraro A.], [], [2 #red("+1")], [], [4 #green(-1)], [], [],
+  [Carraro A.], [], [2 #red("(+1)")], [], [4 #green("(-1)")], [], [],
   [Favaron R.], [], [4], [2], [], [], [],
   [Pandolfo M.], [], [], [], [], [], [4],
   [Passarella A.], [], [], [], [], [], [4],
-  [Rosson L.], [], [3 #red("+1")], [], [], [3 #green(-1)], [],
+  [Rosson L.], [], [3 #red("(+1)")], [], [], [3 #green("(-1)")], [],
 )
 ])
-#align(center)[Tabella 62: consuntivo orario sprint.12.]
+#align(center)[Tabella 64: consuntivo orario sprint.12.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2097,10 +2196,10 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€120,00], [#red("€275,00")], [€30,00], [#green("€60,00")], [#green("€75,00")], [€200,00],
   [Totale], [], [], [], [], [], [€760,00], 
-  [Bilancio], [], [], [], [], [], [*€7375,00*],
+  [Bilancio], [], [], [], [], [], [*€6635,00*],
 )
 ])
-#align(center)[Tabella 63: consuntivo costi sprint.12.]
+#align(center)[Tabella 65: consuntivo costi sprint.12.]
 
 #grid(
   columns: (1fr, auto),
@@ -2130,7 +2229,7 @@ Lo sprint\#12 è costato esattamente quanto preventivato, anche se non con le st
 Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretutto, l'andamento positivo e maggiormente produttivo fa ben sperare per i successivi sprint in maniera da recuperare il ritardo creatosi precedentemente.  
 
 == PB - sprint.13
-- Periodo: 2024/02/27 - 2024/TBD 
+- Periodo: 2024/02/27 - 2024/03/05 
 
 - Issues: \
   -- Modifica e correzione dei documenti;\
@@ -2145,6 +2244,13 @@ Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretut
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
 - Gantt view:
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#13.png", height: 230pt, width: auto),
+  caption: [sprint.13]
+  )
+  
+)
 
 === Pianificazione
 In questo sprint si è deciso di continuare ad apportaremiglioramenti alla documentazione, come la riscrittura di alcuni capitoli e un miglioramento alla struttura generale di alcuni documenti.
@@ -2178,7 +2284,7 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [Rosson L.], [], [], [1], [], [], [4],
 )
 ])
-#align(center)[Tabella 64: preventivo orario sprint.13.]
+#align(center)[Tabella 66: preventivo orario sprint.13.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2192,10 +2298,10 @@ Abbiamo preventivato questo rischio specifico a causa della continuazione del ca
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€120,00], [€175,00], [€30,00], [€80,00], [€120,00], [€200,00],
   [Totale], [], [], [], [], [], [€725,00], 
-  [Bilancio], [], [], [], [], [], [*7370,00*],
+  [Bilancio], [], [], [], [], [], [*€5910,00*],
 )
 ])
-#align(center)[Tabella 65: preventivo costi sprint.13.]
+#align(center)[Tabella 67: preventivo costi sprint.13.]
 
 #align(left,
 figure(
@@ -2219,16 +2325,16 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (auto,)*7,
   align: center,
   [*SPRINT 13*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [2], [], [4 #green("-1")], [], [],
-  [Bomben F.], [], [5 #green("-1")], [], [], [], [],
-  [Carraro A.], [], [], [], [], [4 #green("-1")], [],
+  [Baggio M.], [], [2], [], [4 #green("(-1)")], [], [],
+  [Bomben F.], [], [5 #green("(-1)")], [], [], [], [],
+  [Carraro A.], [], [], [], [], [4 #green("(-1)")], [],
   [Favaron R.], [], [], [], [], [4], [],
   [Pandolfo M.], [4], [], [], [], [], [],
-  [Passarella A.], [], [], [1 #red("+1")], [], [], [4],
-  [Rosson L.], [], [], [1 #red("+1")], [], [], [4 #red("+1")],
+  [Passarella A.], [], [], [1 #red("(+1)")], [], [], [4],
+  [Rosson L.], [], [], [1 #red("(+1)")], [], [], [4 #red("(+1)")],
 )
 ])
-#align(center)[Tabella 66: consuntivo orario sprint.13.]
+#align(center)[Tabella 68: consuntivo orario sprint.13.]
 
 #align(center, text(0.85em)[
 #table(
@@ -2242,10 +2348,10 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€120,00], [#green("€150,00")], [#red("€60,00")], [#green("€60,00")], [#green("€105,00")], [#red("€225,00")],
   [Totale], [], [], [], [], [], [#green("€720,00")], 
-  [Bilancio], [], [], [], [], [], [#green("€7375,00")],
+  [Bilancio], [], [], [], [], [], [#green("€5915,00")],
 )
 ])
-#align(center)[Tabella 67: consuntivo costi sprint.13.]
+#align(center)[Tabella 69: consuntivo costi sprint.13.]
 
 #grid(
   columns: (1fr, auto),
@@ -2275,128 +2381,50 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 
 
 
-== Globale
-
-- Premessa:
-La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adegua a quanto stabilito nel documento "Regolamento progetto didattico", garantendo una distribuzione equa nel rispetto delle regole esterne, ed interne al gruppo. I preventivi di progetto sono aggiornati seguendo un approccio JiT (just in time), beneficiando di un cruscotto migliore ed aggiornato. Si è quindi deciso di limitare i preventivi, come avviene per la pianificazione, a due sprint nel futuro, in modo che risultino realistici ed affidabili.
-
-=== Preventivo Candidatura
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*Candidatura*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [10], [5], [36], [5], [20], [19],
-  [Bomben F.], [10], [5], [36], [5], [20], [19],
-  [Carraro A.], [10], [5], [36], [5], [20], [19],
-  [Favaron R.], [10], [5], [36], [5], [20], [19],
-  [Pandolfo M.], [10], [5], [36], [5], [20], [19],
-  [Passarella A.], [10], [5], [36], [5], [20], [19],
-  [Rosson L.], [10], [5], [36], [5], [20], [19],
-)
-])
-#align(center)[Tabella 54: Preventivo candidatura.]
-
-=== Consuntivo Effettivo
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*Effettivo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [1], [5], [7], [#red("10")], [13], [0],
-  [Bomben F.], [3], [#red("7")], [3], [#red("9")], [10], [0],
-  [Carraro A.], [4], [4], [5], [#red("9")], [10], [0],
-  [Favaron R.], [7], [4], [12], [#red("8")], [10], [0],
-  [Pandolfo M.], [4], [5], [3], [#red("10")], [12], [0],
-  [Passarella A.], [6], [4], [3], [#red("11")], [9], [0],
-  [Rosson L.], [7], [#red("8")], [2], [#red("8")], [10], [0],
-)
-])
-#align(center)[Tabella 55: Consuntivo effettivo.]
-
-- Spiegazione:
-Come evidente dall'andamento delle attività, le ore inizialmente pianificate per svolgere l'analisi dei requisiti e per il ruolo di Amministratore si sono rivelate insufficienti. Di fronte a questa constatazione, il gruppo ha preso la decisione di rivedere le stime effettuate in fase di candidatura, mantenendo tuttavia l'impegno a non aumentare i costi complessivi del progetto, conformemente alle disposizioni normative stabilite. Riteniamo questo adattamento necessario per garantire una pianificazione più accurata e per affrontare le esigenze effettive delle attività future, senza impattare negativamente sul bilancio complessivo del progetto. Segue la nuova ridistribuzione oraria:
-
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*Nuovo*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [10], [8], [30], [12], [22], [12],
-  [Bomben F.], [10], [8], [30], [12], [22], [12],
-  [Carraro A.], [10], [8], [30], [12], [22], [12],
-  [Favaron R.], [10], [8], [30], [12], [22], [12],
-  [Pandolfo M.], [10], [8], [30], [12], [22], [12],
-  [Passarella A.], [10], [8], [30], [12], [22], [12],
-  [Rosson L.], [10], [8], [30], [12], [22], [12],
-)
-])
-#align(center)[Tabella 56: Nuova distribuzione oraria.]
-
-#align(center, text(0.85em)[
-#table(
-  fill: (col, row) => 
-    if row == 0 and col == 0 { rgb("#c33435") }
-    else if calc.odd(row) { luma(230) } else { white },
-  columns: (auto,)*7,
-  align: center,
-  [*Costi*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [70], [56], [210], [84], [154], [84],
-  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€2100,00], [€1400,00], [€3150,00], [€1680,00], [€2100,00], [€2100,00],
-  [Totale], [], [], [], [], [], [#green("€12530,00")], 
-)
-])
-#align(center)[Tabella 57: Nuovo preventivo.]
-
-- Spiegazione:
-Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024. La decisione di spostare la data di consegna è stata influenzata dall'andamento del progetto e dai ritardi accumulati durante e in seguito al periodo di festività invernali. Durante questo periodo, la produttività del gruppo è diminuita, causando ritardi nell'avanzamento delle attività. Di conseguenza, è stato necessario posticipare la data di consegna per assicurare la qualità e il completamento del lavoro entro i nuovi termini previsti.
 
 #pagebreak()
 
 = Elenco delle immagini
 - Immagine 1: sprint.1
-- Immagine 2: sprint.2
-- Immagine 3: sprint.3
-- Immagine 4: sprint.4
-- Immagine 5: sprint.5
-- Immagine 6: sprint.6
-- Immagine 7: sprint.7
-- Immagine 8: sprint.8
-- Immagine 9: sprint.9
-- Immagine 10: sprint.10
-- Immagine 11: preventivi/sprint.1
-- Immagine 12: bilancio/sprint.1
-- Immagine 13: preventivi/sprint.2
-- Immagine 14: bilancio/sprint.2
-- Immagine 15: preventivi/sprint.3
-- Immagine 16: bilancio/sprint.3
-- Immagine 17: preventivi/sprint.4
-- Immagine 18: bilancio/sprint.4
-- Immagine 19: preventivi/sprint.5
-- Immagine 20: bilancio/sprint.5
-- Immagine 21: preventivi/sprint.6
-- Immagine 22: bilancio/sprint.6
-- Immagine 23: preventivi/sprint.7
-- Immagine 24: bilancio/sprint.7
-- Immagine 25: preventivi/sprint.8
-- Immagine 26: bilancio/sprint.8
-- Immagine 27: preventivi/sprint.9
-- Immagine 28: bilancio/sprint.9
+- Immagine 2: preventivi/sprint.1
+- Immagine 3: bilancio/sprint.1
+- Immagine 4: sprint.2
+- Immagine 5: preventivi/sprint.2
+- Immagine 6: bilancio/sprint.2
+- Immagine 7: sprint.3
+- Immagine 8: preventivi/sprint.3
+- Immagine 9: bilancio/sprint.3
+- Immagine 10: sprint.4
+- Immagine 11: preventivi/sprint.4
+- Immagine 12: bilancio/sprint.4
+- Immagine 13: sprint.5
+- Immagine 14: preventivi/sprint.5
+- Immagine 15: bilancio/sprint.5
+- Immagine 16: sprint.6
+- Immagine 17: preventivi/sprint.6
+- Immagine 18: bilancio/sprint.6
+- Immagine 19: sprint.7
+- Immagine 20: preventivi/sprint.7
+- Immagine 21: bilancio/sprint.7
+- Immagine 22: sprint.8
+- Immagine 23: preventivi/sprint.8
+- Immagine 24: bilancio/sprint.8
+- Immagine 25: sprint.9
+- Immagine 26: preventivi/sprint.9
+- Immagine 27: bilancio/sprint.9
+- Immagine 28: sprint.10
 - Immagine 29: preventivi/sprint.10
 - Immagine 30: bilancio/sprint.10
-- Immagine 31: preventivi/sprint.11
-- Immagine 32: preventivi/sprint.12
-
+- Immagine 31: sprint.11
+- Immagine 32: preventivi/sprint.11
+- Immagine 33: bilancio/sprint.11
+- Immagine 34: sprint.12
+- Immagine 35: preventivi/sprint.12
+- Immagine 36: bilancio/sprint.12
+- Immagine 37: sprint.13
+- Immagine 38: preventivi/sprint.13
+- Immagine 39: bilancio/sprint.13
+- Immagine 40: 
 
 #pagebreak()
 
@@ -2454,12 +2482,22 @@ Si ricorda che il costo totale preventivato in fase di candidatura era pari a �
 - Tabella 51: preventivo costo sprint.10
 - Tabella 52: consuntivo orario sprint.10
 - Tabella 53: consuntivo costo sprint.10
-- Tabella 54: Preventivo candidatura
-- Tabella 55: Consuntivo effettivo
-- Tabella 56: Nuova distribuzione oraria
-- Tabella 57: Nuovo preventivo
-- Tabella 58: preventivo orario sprint.11
-- Tabella 59: preventivo costo sprint.11
-- Tabella 60: preventivo orario sprint.12
-- Tabella 61: preventivo costo sprint.12
+- Tabella 54: preventivo orario sprint.11
+- Tabella 55: preventivo costo sprint.11
+- Tabella 56: consuntivo orario sprint.11
+- Tabella 57: consuntivo costo sprint.11
+- Tabella 58: Preventivo candidatura
+- Tabella 59: Consuntivo effettivo
+- Tabella 60: Nuova distribuzione oraria
+- Tabella 61: Nuovo preventivo
+- Tabella 62: preventivo orario sprint.12
+- Tabella 63: preventivo costo sprint.12
+- Tabella 64: consuntivo orario sprint.12
+- Tabella 65: consuntivo costo sprint.12
+- Tabella 66: preventivo orario sprint.13
+- Tabella 67: preventivo costo sprint.13
+- Tabella 68: consuntivo costo sprint.13
+- Tabella 69: consuntivo costo sprint.13
+- Tabella 70: 
+- Tabella 71: 
 
