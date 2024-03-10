@@ -8,8 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.2.0", "2024-03-04", p.bomben, "", "Correzione e miglioramento requisiti",
-    "1.1.0", "2024-03-03", p.bomben + "\n" + p.passarella + "\n" + p.rosson, "", "Correzione e miglioramento introduzione e UC",
+    "1.2.0", "2024-03-04", p.bomben, p.carraro, "Correzione e miglioramento requisiti",
+    "1.1.0", "2024-03-03", p.bomben + "\n" + p.passarella + "\n" + p.rosson, p.carraro, "Correzione e miglioramento introduzione e UC",
     "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
     "0.7.1", "2024-01-14", p.bomben, p.rosson, "Tracciamento requisiti - fonte",
     "0.7.0", "2024-01-11", p.bomben, p.favaron, "Nuova stesura definitiva requisiti e tracciamento",
@@ -80,14 +80,14 @@ Lo scopo finale del progetto è la realizzazione di un sistema di raccomandazion
 == Funzionalità del prodotto
 Il prodotto interagisce con gli utenti utilizzatori suggerendo loro i migliori prodotti destinati ad un singolo cliente dell'azienda che fa uso del software, oppure in modo speculare dato un acquirente abituale, quali sono i top n articoli che potrebbero interessargli.\
 Le funzionalità chiave del prodotto sono:\
-- accesso alla web app con un account tramite login;
+- Accesso alla web app con un account tramite login;
 // - creazione di nuovi account operatore da parte dell'utente amministratore;
-- visualizzazione di prodotti e clienti;
-- ricerca di raccomandazioni in ambe le direzioni;
-- filtraggio e visulizzazione di prodotti e clienti in base a vari paramentri;
-- creazione di feedback e valutazioni delle risposte del sistema di raccomandazione;
-- visualizzazione di statistiche relative all'utilizzo del prodotto;
-- visualizzazione di cronologie utili a figure amministrative.
+- Visualizzazione di prodotti e clienti;
+- Ricerca di raccomandazioni in ambe le direzioni;
+- Filtraggio e visulizzazione di prodotti e clienti in base a vari paramentri;
+- Creazione di feedback e valutazioni delle risposte del sistema di raccomandazione;
+- Visualizzazione di statistiche relative all'utilizzo del prodotto;
+- Visualizzazione di cronologie utili a figure amministrative.
 
 
 == Utenti e caratteristiche
@@ -99,10 +99,10 @@ L'utente standar, corrispondente ad uno degli operatori del settore marketing e/
 
 = Casi d'uso
 
-== Obiettivi
+*Obiettivi*\
 Questa sezione è dedicata all'identificazione e alla dettagliata descrizione di tutti i casi d'uso emersi dall'analisi condotta dal nostro gruppo in relazione al capitolato d'appalto proposto. Il nostro obiettivo è individuare chiaramente gli attori coinvolti, seguendo la gerarchia precedentemente definita, e le possibili funzionalità che potrebbero emergere da questa analisi. Il processo di identificazione degli attori seguirà una struttura gerarchica predefinita, mentre le potenziali funzionalità saranno categorizzate e descritte in modo da fornire una panoramica esaustiva del contesto operativo del progetto.
 
-== Attori
+*Attori*\
 Il sistema dispone di tre attori:
 - Admin;
 - User;
@@ -112,9 +112,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-== Definizione casi d'uso
 
-=== UC1 - Login
+== UC1 - Login
 #figure(
   image("/imgs/Uml/UC1.png", width: 80%),
   caption: [
@@ -147,7 +146,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-==== UC1.1 - Inserimento username
+=== UC1.1 - Inserimento username
 #figure(
   image("/imgs/Uml/UC1.1.png", width: 55%),
   caption: [
@@ -162,7 +161,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente inserisce correttamente il proprio username, precedentemente memorizzato nel sistema, per l'autenticazione.
 *Scenario principale:*
 - Utente non autenticato:
-    - inserisce il proprio username nel campo username.
+    + inserisce il proprio username nel campo username.
 - Sistema:
     + verifica che lo username inserito sia nel formato corretto, se non è corretto mostra un messaggio di errore per informare l'utente dell'incorrettezza (UC3);
     + verifica la correttezza dell'username;
@@ -170,7 +169,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-==== UC1.2 - Inserimento password
+=== UC1.2 - Inserimento password
 #figure(
   image("/imgs/Uml/UC1.2.png", width: 55%),
   caption: [
@@ -192,7 +191,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + prosegue con l'autenticazione dell'utente utilizzando la password inserita.
 
 #pagebreak()
-=== UC2 - Visualizzazione alert di manutenzione
+== UC2 - Visualizzazione alert di manutenzione
 *Attori:*
 - Utente non autenticato.
 *Precondizioni:*
@@ -207,7 +206,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + verifica lo stato dei servizi;
     + mostra l'alert informativo.
 
-=== UC3 - Visualizzazione errore di login
+== UC3 - Visualizzazione errore di login
 *Attori:*
 - Utente non autenticato.
 *Precondizioni:*
@@ -226,7 +225,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se il sistema rileva le credenziali come non corrette, mostra il messaggio di errore di login.
 
 #pagebreak()
-=== UC4 - Visualizzazione "Profilo Utente"
+== UC4 - Visualizzazione "Profilo Utente"
 #figure(
   image("/imgs/Uml/UC4.png", width: 60%),
   caption: [
@@ -255,7 +254,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-==== UC4.1 - Visualizzazione dati utente
+=== UC4.1 - Visualizzazione dati utente
 #figure(
   image("/imgs/Uml/UC4.1.png", width: 55%),
   caption: [
@@ -281,7 +280,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-==== Approfondimento specificità UC4.1
+=== Approfondimento specificità UC4.1
 #figure(
   image("/imgs/Uml/UC4.1app.png", width: 55%),
   caption: [
@@ -363,11 +362,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
     + mostra all'utente la sua password in chiaro.
   *Generalizzazioni:*
-  - Attori:
-    + Admin --> User.
+  - Attori: 1. Admin --> User.
 
 #pagebreak()
-==== UC4.2 - Modifica dati utente
+=== UC4.2 - Modifica dati utente
 #figure(
   image("/imgs/Uml/UC4.2.png", width: 70%),
   caption: [
@@ -400,7 +398,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-==== Approfondimento specificità UC4.2
+=== Approfondimento specificità UC4.2
 
 #figure(
   image("/imgs/Uml/UC4.2app.png", width: 60%),
@@ -464,7 +462,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-=== UC5 - Logout
+== UC5 - Logout
 #figure(
   image("/imgs/Uml/UC5.png", width: 55%),
   caption: [
@@ -492,7 +490,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-=== UC6 - Visualizzazione vista "Ricerca"
+== UC6 - Visualizzazione vista "Ricerca"
 #figure(
   image("/imgs/Uml/UC6.png", width: 70%),
   caption: [
@@ -511,7 +509,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza nella vista principale della pagina la funzionalità di "Ricerca".
 *Scenario principale:*
 - Admin/User:
-  + seleziona la funzionalità di "Ricerca" nel menù
+  + seleziona la funzionalità di "Ricerca" nel menù;
   + decide se effettuare una ricerca (UC6.1);
   + visualizza i risultati della ricerca (UC6.2).
 - Sistema:
@@ -523,7 +521,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-==== UC6.1 - Ricerca per vista "Ricerca"
+=== UC6.1 - Ricerca per vista "Ricerca"
 #figure(
   image("/imgs/Uml/UC6.1.png", width: 70%),
   caption: [
@@ -556,7 +554,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-==== Approfondimento specificità UC6.1
+=== Approfondimento specificità UC6.1
 
 #figure(
   image("/imgs/Uml/UC6.1app.png", width: 80%),
@@ -566,7 +564,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 )
 
 + *UC6.1.1 - Scelta Topic*
-
   *Attori:*
   - Admin;
   - User.
@@ -584,24 +581,22 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza suggerimenti di autocompletamento per l'input;
     + sceglie una delle opzioni possibili.
   - Sistema:
-   + mostra all'utente un'opzione di default per l'input;
+    + mostra all'utente un'opzione di default per l'input;
     + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
     + prende a conoscenza i caratteri inseriti dall'utente;
     + contatta tramite API il software che fornisce le opzioni possibili;
     + riceve tramite API una risposta con le opzioni possibili dal software;
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili. 
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.  
   *Generalizzazioni:*
-  - Attori:
-    + Admin --> User.
+  - Attori: 1. Admin --> User.
   - User Case:
-    + UC6.1.2 Ricerca "prodotti per cliente"
-    + UC6.1.3 Ricerca "clienti per prodotto"
-    + UC6.1.4 Ricerca per "cronologia"
+    + UC6.1.2 Ricerca "prodotti per cliente";
+    + UC6.1.3 Ricerca "clienti per prodotto";
+    + UC6.1.4 Ricerca per "cronologia".
 
 + *UC6.1.5 - Scelta N risultati*
-
   *Attori:*
   - Admin;
   - User.
@@ -631,13 +626,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
   - User Case:
-    + UC6.1.6 Top 5
-    + UC6.1.7 Top 10
+    + UC6.1.6 Top 5;
+    + UC6.1.7 Top 10.
 
-
-#pagebreak()
-===== UC6.1.2 - Ricerca "prodotti per cliente"
-
++ UC6.1.2 - Ricerca "prodotti per cliente"
   *Attori:*
   - Admin;
   - User.
@@ -657,21 +649,19 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-#pagebreak()
-===== UC6.1.3 - Ricerca "clienti per prodotti"
-
++ UC6.1.3 - Ricerca "clienti per prodotti"
   *Attori:*
   - Admin;
   - User.
   *Precondizioni:*
   - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-  - L'utente decide di fare una ricerca e compila i campi necessari;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
   - L'utente visualizza i risultati della ricerca (UC6.2).
   *Scenario principale:*
   - Admin/User:
-    + sceglie di cercare i migliori clienti per il prodotto selezionato;
+    + sceglie di cercare i migliori clienti per il prodotto selezionato.
   - Sistema:
     + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
     + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
@@ -679,15 +669,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-#pagebreak()
-===== UC6.1.4 - Ricerca per "cronologia"
-
++ UC6.1.4 - Ricerca per "cronologia"
   *Attori:*
   - Admin;
   - User.
   *Precondizioni:*
   - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-  - L'utente decide di fare una ricerca e compila i campi necessari;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
   - L'utente visualizza i risultati della ricerca (UC6.2).
@@ -701,15 +689,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-#pagebreak()
 
-===== UC6.1.6 - Top 5
++ UC6.1.6 - Top 5
   *Attori:*
   - Admin;
   - User.
   *Precondizioni:*
   - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-  - L'utente decide di fare una ricerca e compila i campi necessari;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
   - L'utente visualizza i risultati della ricerca (UC6.2).
@@ -723,15 +710,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-#pagebreak()
-
-===== UC6.1.7 - Top 10
++ UC6.1.7 - Top 10
   *Attori:*
   - Admin;
   - User.
   *Precondizioni:*
   - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-  - L'utente decide di fare una ricerca e compila i campi necessari;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
   - L'utente visualizza i risultati della ricerca (UC6.2).
@@ -747,7 +732,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-==== UC6.2 - Visualizzazione lista risultati
+=== UC6.2 - Visualizzazione lista risultati
 #figure(
   image("/imgs/Uml/UC6.2.png", width: 80%),
   caption: [
@@ -767,7 +752,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + visualizza i risultati della ricerca effettuata;
   + decide se lasciare un feedback (UC7).
 - Sistema:
-  + mostra i risultati della ricerca effettuata dall'utente all'utente stesso;
+  + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
 - UC14 - Errore di ricerca.
 
@@ -777,7 +762,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-===== UC6.2.1 - Visualizzazione singolo risultato
+=== Approfondimento specificità UC6.2
++ UC6.2.1 - Visualizzazione singolo risultato
 
 #figure(
   image("/imgs/Uml/UC6.2.1.png", width: 65%),
@@ -800,7 +786,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-===== Approfondimento specificità UC6.2.1
+=== Approfondimento specificità UC6.2.1
 #figure(
   image("/imgs/Uml/UC6.2.1app.png", width: 70%),
   caption: [
@@ -822,7 +808,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-
 
 + *UC6.2.1.2 - Visualizzazione "Nome" risultato*
 
@@ -857,7 +842,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-=== UC7 - Inserimento "Feedback"
+== UC7 - Inserimento "Feedback"
 #figure(
   image("/imgs/Uml/UC7.png", width: 60%),
   caption: [
@@ -886,7 +871,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 
 #pagebreak()
-==== UC7.1 - Inserimento "Valutazione"
+=== UC7.1 - Inserimento "Valutazione"
 
 #figure(
   image("/imgs/Uml/UC7.1.png", width: 60%),
@@ -918,7 +903,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 #pagebreak()
 
-==== UC7.2 - Inserimento "Commento"
+=== UC7.2 - Inserimento "Commento"
 #figure(
   image("/imgs/Uml/UC7.2.png", width: 60%),
   caption: [
@@ -949,7 +934,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-=== UC8 - Visualizzazione vista "Catalogo Prodotti"
+== UC8 - Visualizzazione vista "Catalogo Prodotti"
 #figure(
   image("/imgs/Uml/UC8.png", width: 60%),
   caption: [
@@ -978,11 +963,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + fornisce all'utente la possibilità di effettuare visualizzare il catalogo dei prodotti (UC8.2) e di visualizzarne eventualmente effettuarne un filtraggio tramite la ricerca (UC8.1).
 *Generalizzazioni:*
 - Attori:
-  - Admin --> User.
+  + Admin --> User.
 
 
 #pagebreak()
-==== UC8.1 - Ricerca per vista "Catalogo Prodotti"
+=== UC8.1 - Ricerca per vista "Catalogo Prodotti"
 
 #figure(
   image("/imgs/Uml/UC8.1.png", width: 70%),
@@ -1014,10 +999,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Attori:
   + Admin --> User.
 
-  
-
 #pagebreak()
-==== Approfondimento specificità UC8.1
+=== Approfondimento specificità UC8.1
 
 #figure(
   image("/imgs/Uml/UC8.1app.png", width: 60%),
@@ -1145,10 +1128,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-// sei arrivato fino a qui
-
 #pagebreak()
-==== UC8.2 - Visualizzazione lista prodotti
+=== UC8.2 - Visualizzazione lista prodotti
 
 #figure(
   image("/imgs/Uml/UC8.2.png", width: 80%),
@@ -1167,8 +1148,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Nel caso l'utente abbia effettuato una ricerca (UC8.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin/User:
-  + visualizza la lista dei prodotti.
-  + visualizza i risultati della ricerca effettuata;
+  + visualizza la lista dei prodotti;
+  + visualizza i risultati della ricerca effettuata.
 - Sistema:
   + mostra la lista dei prodotti;
   + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
@@ -1180,7 +1161,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-===== UC8.2.1 - Visualizzazione dettagli singolo "prodotto"
+=== Approfondimento specificità UC8.2 
++ UC8.2.1 - Visualizzazione dettagli singolo "prodotto"
 
 #figure(
   image("/imgs/Uml/UC8.2.1.png", width: 65%),
@@ -1203,7 +1185,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-===== Approfondimento specificità UC8.2.1
+=== Approfondimento specificità UC8.2.1
 
 #figure(
   image("/imgs/Uml/UC8.2.1app.png", width: 70%),
@@ -1260,7 +1242,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-=== UC9 - Visualizzazione "Dettagli prodotto"
+== UC9 - Visualizzazione "Dettagli prodotto"
 #figure(
   image("/imgs/Uml/UC9.png", width: 80%),
   caption: [
@@ -1405,7 +1387,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-=== UC10 - Visualizzazione vista "Lista Clienti"
+== UC10 - Visualizzazione vista "Lista Clienti"
 
 #figure(
   image("/imgs/Uml/UC10.png", width: 80%),
@@ -1426,9 +1408,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Scenario principale:*
 - Admin/User:
   + seleziona la funzionalità di lista clienti nel menù;
-  + visualizza la lista dei clienti (UC10.2).
+  + visualizza la lista dei clienti (UC10.2);
   + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC10.1);
-  + nel caso abbia effettuato una ricerca (UC10.1) visualizza la lista filtrata in base ai parametri (UC10.2)
+  + nel caso abbia effettuato una ricerca (UC10.1) visualizza la lista filtrata in base ai parametri (UC10.2).
 - Sistema:
   + mostra all'utente la funzionalità di lista clienti;
   + fornisce all'utente la possibilità di effettuare una ricerca (UC10.1) e di visualizzarne i risultati;
@@ -1438,7 +1420,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-==== UC10.1 - Ricerca per vista "Lista Clienti";
+=== UC10.1 - Ricerca per vista "Lista Clienti";
 
 #figure(
   image("/imgs/Uml/UC10.1.png", width: 80%),
@@ -1471,7 +1453,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-==== Approfondimento specificità UC10.1
+=== Approfondimento specificità UC10.1
 
 #figure(
   image("/imgs/Uml/UC10.1app.png", width: 80%),
@@ -1568,7 +1550,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-==== UC10.2 - Visualizzazione lista clienti
+=== UC10.2 - Visualizzazione lista clienti
 
 #figure(
   image("/imgs/Uml/UC10.2.png", width: 65%),
@@ -1600,7 +1582,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-===== UC10.2.1
+=== Approfondimento specificità UC10.2
++ UC10.2.1
 
 #figure(
   image("/imgs/Uml/UC10.2.1.png", width: 65%),
@@ -1623,7 +1606,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-===== Approfondimento specificità 10.2.1
+=== Approfondimento specificità 10.2.1
 
 #figure(
   image("/imgs/Uml/UC10.2.1app.png", width: 70%),
@@ -1696,7 +1679,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-=== UC11 - Visualizzazione vista "Statistiche Mensili"
+== UC11 - Visualizzazione vista "Statistiche Mensili"
 
 #figure(
   image("/imgs/Uml/UC11.png", width: 65%),
@@ -1728,7 +1711,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 
 
-==== UC11.1 - Visualizzazione "Grafico"
+=== UC11.1 - Visualizzazione "Grafico"
 #figure(
   image("/imgs/Uml/UC11.1.png", width: 60%),
   caption: [
@@ -1754,7 +1737,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-==== UC11.2 - Visualizzazione "Raccomandazioni utili"
+=== UC11.2 - Visualizzazione "Raccomandazioni utili"
 #figure(
   image("/imgs/Uml/UC11.2.png", width: 60%),
   caption: [
@@ -1778,7 +1761,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-===== UC11.2.1 - Visualizzazione dettagli singola raccomandazione
+=== Approfondimento specificità UC11.2
++ UC11.2.1 - Visualizzazione dettagli singola raccomandazione
 #figure(
   image("/imgs/Uml/UC11.2.1.png", width: 60%),
   caption: [
@@ -1801,7 +1785,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + Admin --> User.
 
 #pagebreak()
-===== Approfondimento specificità UC11.2.1
+=== Approfondimento specificità UC11.2.1
 #figure(
   image("/imgs/Uml/UC11.2.1app.png", width: 60%),
   caption: [
@@ -1858,8 +1842,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-#pagebreak()
-=== UC12 - Visualizzazione vista "Cronologia Ricerche"
+== UC12 - Visualizzazione vista "Cronologia Ricerche"
 #figure(
   image("/imgs/Uml/UC12.png", width: 80%),
   caption: [
@@ -1885,8 +1868,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
   + mostra all'utente la lista delle ricerche (UC12.2).
 
-#pagebreak()
-==== UC12.1 - Ricerca per vista "Cronologia Ricerche"
+=== UC12.1 - Ricerca per vista "Cronologia Ricerche"
 #figure(
   image("/imgs/Uml/UC12.1.png", width: 80%),
   caption: [
@@ -1915,7 +1897,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 
 #pagebreak()
-==== Approfondimento specificità UC12.1
+=== Approfondimento specificità UC12.1
 
 #figure(
   image("/imgs/Uml/UC12.1app.png", width: 80%),
@@ -1945,8 +1927,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-#pagebreak()
-+ *UC1.1.1.2 - Completamento input "Username"*
++ *UC1.1.1.2 - Completaento input "Username"*
 
   *Attori:*
   - Admin;
@@ -1973,7 +1954,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-==== UC12.2 - Visualizzazione lista ricerche
+
+=== UC12.2 - Visualizzazione lista ricerche
 #figure(
   image("/imgs/Uml/UC12.2.png", width: 65%),
   caption: [
@@ -1997,9 +1979,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Estensioni:*
 - UC14 - Errore di ricerca.
 
-
-#pagebreak()
-===== UC12.2.1 Visualizzazione dettagli singola "Ricerca"
+=== Approfondimento specificità uc12.2
++ UC12.2.1 Visualizzazione dettagli singola "Ricerca"
 
 #figure(
   image("/imgs/Uml/UC12.2.1.png", width: 65%),
@@ -2017,9 +1998,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Admin:
   + osserva una ricerca della lista tra i vari mostrati.
 
-
-#pagebreak()
-===== Approfondimento specificità UC12.2.1
+=== Approfondimento specificità UC12.2.1
 
 #figure(
   image("/imgs/Uml/UC12.2.1app.png", width: 70%),
@@ -2051,7 +2030,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza lo username utente del risultato che sta osservando.
 
-#pagebreak()
 + *UC12.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
 
   *Attori:*
@@ -2065,7 +2043,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza i criteri di ricerca (Sotto-UC UC8.1.1) del risultato che sta osservando.
 
 #pagebreak()
-=== UC13 - Visualizzazione vista "Cronologia Feedback"
+== UC13 - Visualizzazione vista "Cronologia Feedback"
 #figure(
   image("/imgs/Uml/UC13.png", width: 80%),
   caption: [
@@ -2091,9 +2069,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + fornisce all'utente la possibilità di effettuare una ricerca (UC13.1) e di visualizzarne i risultati;
   + mostra all'utente la lista dei feedback (UC13.2).
 
-
 #pagebreak()
-==== UC13.1 - Ricerca per vista "Cronologia Feedback"
+=== UC13.1 - Ricerca per vista "Cronologia Feedback"
 #figure(
   image("/imgs/Uml/UC13.1.png", width: 80%),
   caption: [
@@ -2122,8 +2099,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 #pagebreak()
 
-==== Approfondimento specificità UC13.1
-
+=== Approfondimento specificità UC13.1
 
 #figure(
   image("/imgs/Uml/UC13.1app.png", width: 80%),
@@ -2153,7 +2129,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-#pagebreak()
 + *UC13.1.1.2 - Completamento input "Username"*
 
   *Attori:*
@@ -2181,8 +2156,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
 
-#pagebreak()
-==== UC13.2 - Visualizzazione lista feedback
+=== UC13.2 - Visualizzazione lista feedback
 #figure(
   image("/imgs/Uml/UC13.2.png", width: 65%),
   caption: [
@@ -2206,9 +2180,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Estensioni:*
 - UC14 - Errore di ricerca.
 
-
-#pagebreak()
-===== UC13.2.1 Visualizzazione dettagli singolo "Feedback"
+=== Approfondimento UC13.2
++ UC13.2.1 Visualizzazione dettagli singolo "Feedback"
 
 #figure(
   image("/imgs/Uml/UC13.2.1.png", width: 65%),
@@ -2226,10 +2199,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Admin:
   + osserva un feedback della lista tra i vari mostrati.
 
-
-#pagebreak()
-===== Approfondimento specificità UC13.2.1
-
+=== Approfondimento specificità UC13.2.1
 #figure(
   image("/imgs/Uml/UC13.2.1app.png", width: 70%),
   caption: [
@@ -2260,7 +2230,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza lo username utente del risultato che sta osservando.
 
-#pagebreak()
 + *UC13.2.1.3 - Visualizzazione "Contenuto del feedback" feedback*
 
   *Attori:*
@@ -2274,7 +2243,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza il contenuto del feedback (Sotto-UC UC9.1) del risultato che sta osservando.
 
 #pagebreak()
-=== UC14 - Errore di ricerca
+== UC14 - Errore di ricerca
 
 *Attori:*
 - Admin;
@@ -2384,7 +2353,6 @@ riportate indicano:
 )
 #align(center)[Tabella 1: Requisiti funzionali]
 
-#pagebreak()
 == Requisiti di qualità
 
 I requisiti di qualità descrivono come un sistema deve essere, o
@@ -2418,6 +2386,7 @@ Le sigle sotto riportate possono essere così classificate:
 )
 #align(center)[Tabella 2: Requisiti di qualità]
 
+#pagebreak()
 == Requisiti di vincolo
 
 I requisiti di vincolo descrivono i limiti e le restrizioni che un sistema
@@ -2484,7 +2453,7 @@ Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica
 
   Per quanto riguarda l'algoritmo utilizzato per la predizione delle raccomandazioni e la sua gestione, in seguito ad un attenta analisi e discussione congiunta con il proponente, sono sorti i seguenti requisiti:
   
-  + Le misurazioni di prestazioni del modello utilizzando i dati presenti nel test set e delle metriche precision e recall devono essere ritenibili dal proponente congrui e soddisfacenti.
+  + Le misurazioni di prestazioni del modello utilizzando i dati presenti nel test set e delle metriche precision e recall devono essere ritenibili dal proponente congrui e soddisfacenti;
   + Come requisito opzionale: possibili misurazioni di performance in multithreading, se utilizzato come approccio.
 
 - Interfaccia utente:
@@ -2495,14 +2464,13 @@ Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica
 // forse da definire meglio una volta che avremo l'hosting, possibili domande da fare a gianluca.
   Il sistema, in accordo con il proponente, si poggerà sulla rete dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.  
 
-#pagebreak()
 === Requisiti di sicurezza
 
 Analogamente a quanto riportato qui sopra, molti aspetti legati alla sicurezza del sistema dipenderanno, e saranno in parte risolti dai sistemi implementati nella rete aziendale su cui si poggia il prodotto.
 
 Internamente, i requisiti di sicurezza trovati e definiti sono:
 // da specificare che tipo di crittografia magari. es:RSA :RE (aspetterei di implementare)
-+ Crittografia dei dati degli utenti in ingresso, quali password e identificativo.
++ Crittografia dei dati degli utenti in ingresso, quali password e identificativo;
 // ha senso ritenerlo di sicurezza? :RE (secondo me si)
 + Presenza di allert informativo sulle normative dei cookie utilizzati dalla web-app.
 // si può aggiungere il banner per la manutenzione del sito qui?
@@ -2599,8 +2567,6 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 )
 #align(center)[Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo]
 
-#pagebreak()
-
 == Riepilogo
 
 #table(
@@ -2673,7 +2639,6 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 - Immagine 48: Visualizzazione dettagli singolo “Feedback”;
 - Immagine 49: Approfondimento specificità UC13.2.1 - Visualizzazione elemento.
 
-#pagebreak()
 = Elenco delle tabelle
 
 - Tabella 1: Requisiti funzionali;
