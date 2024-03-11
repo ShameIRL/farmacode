@@ -8,10 +8,11 @@
     p.cardin,
   ),
   changelog: (
-    "1.3.2", "2024-03.06", p.favaron, "", "Correzione elenco immagini e tabelle",
-    "1.3.1", "2024-03.06", p.favaron, "", "Correzione colori tabella consultivi",
-    "1.3.0", "2024-02.26", p.pandolfo, p.favaron, "Stesura sprint 13",
-    "1.2.0", "2024-02.26", p.bomben, p.rosson, "Stesura sprint 12",
+    "1.4.0", "2024-03-11", p.favaron, "", "Stesura sprint 14",
+    "1.3.2", "2024-03-06", p.favaron, "", "Correzione elenco immagini e tabelle",
+    "1.3.1", "2024-03-06", p.favaron, "", "Correzione colori tabella consultivi",
+    "1.3.0", "2024-02-26", p.pandolfo, p.favaron, "Stesura sprint 13",
+    "1.2.0", "2024-02-26", p.bomben, p.rosson, "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
     "1.0.1", "2024-02-21", p.carraro, p.bomben, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.pandolfo, p.carraro, "Verifica del documento",
@@ -2253,7 +2254,7 @@ figure(
 )
 
 === Pianificazione
-In questo sprint si è deciso di continuare ad apportaremiglioramenti alla documentazione, come la riscrittura di alcuni capitoli e un miglioramento alla struttura generale di alcuni documenti.
+In questo sprint si è deciso di continuare ad apportare miglioramenti alla documentazione, come la riscrittura di alcuni capitoli e un miglioramento alla struttura generale di alcuni documenti.
 I documenti interessati riguardano:
 - Analisi dei Requisiti: prevediamo di continuare a migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi apportando le correzioni suggerite ove necessario;\
 - Norme di Progetto: Migliorare la struttura del file apportando piccole correzioni ove richiesto;\
@@ -2379,6 +2380,293 @@ Lo sprint #13 è costato meno di quanto preventivato, con qualche differenza ris
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 
+== PB - sprint.14
+- Periodo: 2024/03/05 - 2024/03/12 
+
+- Issues: \
+  -- Modifica e correzione dei documenti;\
+  -- Miglioramento della repo relativa al MVP e integrazione primi test;\
+  -- Continuare studio e scelta dei design pattern.
+- Task:\
+  -- Miglioramento contenuti e modellazione "Analisi dei Requisiti";\
+  -- Stesura documento "Manuale utente";\
+  -- Stesura documento "Specifiche tecniche";\
+  -- Continuare a ragionare sull'utilizzo e l'implementazione dei design pattern;\
+  -- Continuare a migliorare l'integrazione dei test e automatizzare il più possibile la repo dedicata al codice;
+  -- Stesura del Verbale interno del 2024/03/04;\
+  -- Revisionare e verificare quanto prodotto durante lo sprint.\
+
+- Gantt view:
+/*
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#14.png", height: 230pt, width: auto),
+  caption: [sprint.14]
+  )
+)
+*/
+
+=== Pianificazione
+In questo sprint si è deciso di continuare ad apportare miglioramenti alla documentazione e prima stesura di quelli nuovi.\
+I documenti interessati riguardano:
+- Analisi dei Requisiti: prevediamo di continuare a migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi apportando le correzioni suggerite ove necessario;
+- Manuale utente: prima stesura delle sezioni relative all'introduzione al documento;
+- Specifica tecnica: prima stesura del documento.
+Oltre ai documenti abbiamo pianificato di migliorare l'automatizzazione dei test e la gestione dell'intera repository che andrà ad ospitare il codice.\
+Infine abbiamo deciso di continuare lo studio e l'individuazione e scelta di design pattern per il nostro prodotto.
+
+=== Rischi attesi
+Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
+- #link(<rtecnologici>)[RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso]. 
+Abbiamo preventivato questo rischio specifico a causa delle modifiche relative ai test automatici e alla repository.
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 14*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [5], [], [], [], [], [1],
+  [Bomben F.], [], [], [], [], [2], [3],
+  [Carraro A.], [], [], [], [], [], [4],
+  [Favaron R.], [], [], [], [], [], [3],
+  [Pandolfo M.], [], [], [4], [], [], [2],
+  [Passarella A.], [], [1], [], [], [2], [],
+  [Rosson L.], [], [], [4], [], [], [],
+)
+])
+#align(center)[Tabella 70: preventivo orario sprint.14.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 14*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [5], [1], [8], [0], [4], [13],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€150,00], [€25,00], [€120,00], [€0,00], [€60,00], [€325,00],
+  [Totale], [], [], [], [], [], [€680,00], 
+  [Bilancio], [], [], [], [], [], [*€5235,00*],
+)
+])
+#align(center)[Tabella 71: preventivo costi sprint.14.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#14.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.14]
+  )
+)
+
+- Spiegazione:
+La prospettiva per questo sprint è quella di ultimare l'Analisi dei requisiti e iniziare la stesura dei nuovi documenti.\
+Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
+
+=== Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 14*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [5], [], [], [], [], [1],
+  [Bomben F.], [], [], [], [], [2], [3 #red("(+1)")],
+  [Carraro A.], [], [], [], [], [], [4 #red("(+1)")],
+  [Favaron R.], [], [], [], [], [], [3 #red("(+1)")],
+  [Pandolfo M.], [], [], [4 #green("(-1)")], [], [], [2 #red("(+1)")],
+  [Passarella A.], [], [1 #red("(+1)")], [], [], [2], [],
+  [Rosson L.], [], [], [4], [], [], [],
+)
+])
+#align(center)[Tabella 72: consuntivo orario sprint.14.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 14*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [5], [2], [7], [0], [4], [17],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [#red("€50,00")], [#green("€105,00")], [€0,00], [€60,00], [#red("€425,00")],
+  [Totale], [], [], [], [], [], [#red("€790,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€5125,00")],
+)
+])
+#align(center)[Tabella 73: consuntivo costi sprint.14.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#14.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.14],
+  ),
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    []
+  )
+)
+
+=== Rischi incontrati e mitigazioni
+Il rischio preventivato non si è verificato, in quanto non ci sono stati altri problemi nel miglioramento dei test autopmatici e alla repository.\
+
+=== Retrospettiva
+Lo sprint #14 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo progettista. L'attività è risultata impegnativa e sono state necesarie 4 ore totali in più spalmate su vari membri del gruppo.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
+
+
+== PB - sprint.15
+- Periodo: 2024/03/12 - 2024/03/19
+
+- Issues: \
+  -- Continuare studio e scelta dei design pattern;\
+  -- Sviluppo ...
+- Task:\
+  -- ;\
+  -- ;\
+  -- ;\
+  -- ;\
+  -- ;\
+  -- ;\
+  -- Revisionare e verificare quanto prodotto durante lo sprint.\
+
+- Gantt view:
+/*
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#15.png", height: 230pt, width: auto),
+  caption: [sprint.15]
+  )
+)
+*/
+
+=== Pianificazione
+
+=== Rischi attesi
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 15*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [], [4],
+  [Bomben F.], [], [], [2], [], [], [4],
+  [Carraro A.], [], [], [2], [], [], [3],
+  [Favaron R.], [], [], [], [], [2], [3],
+  [Pandolfo M.], [], [], [4], [], [1], [],
+  [Passarella A.], [4], [], [1], [], [2], [],
+  [Rosson L.], [], [], [4], [], [], [],
+)
+])
+#align(center)[Tabella 74: preventivo orario sprint.15.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 15*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [4], [0], [13], [0], [5], [14],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [€0,00], [€195,00], [€0,00], [€75,00], [€350,00],
+  [Totale], [], [], [], [], [], [€740,00], 
+  [Bilancio], [], [], [], [], [], [*€4385,00*],
+)
+])
+#align(center)[Tabella 75: preventivo costi sprint.15.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#15.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.15]
+  )
+)
+
+- Spiegazione:
+
+=== Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 15*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [], [], [], [],
+  [Bomben F.], [], [], [], [], [], [],
+  [Carraro A.], [], [], [], [], [], [],
+  [Favaron R.], [], [], [], [], [], [],
+  [Pandolfo M.], [], [], [], [], [], [],
+  [Passarella A.], [], [], [], [], [], [],
+  [Rosson L.], [], [], [], [], [], [],
+)
+])
+#align(center)[Tabella 76: consuntivo orario sprint.15.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 15*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [], [], [], [], [], [],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€120,00], [#red("€50,00")], [#green("€105,00")], [€0,00], [€60,00], [#red("€425,00")],
+  [Totale], [], [], [], [], [], [#red("€790,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€5125,00")],
+)
+])
+#align(center)[Tabella 77: consuntivo costi sprint.15.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  /*
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#15.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.15],
+  ),
+  */
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    []
+  )
+)
+
+=== Rischi incontrati e mitigazioni
+
+=== Retrospettiva
+
 
 
 
@@ -2424,7 +2712,12 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Immagine 37: sprint.13
 - Immagine 38: preventivi/sprint.13
 - Immagine 39: bilancio/sprint.13
-- Immagine 40: 
+- Immagine 40: sprint.14
+- Immagine 41: preventivi/sprint.14
+- Immagine 42: bilancio/sprint.14
+- Immagine 43: sprint.15
+- Immagine 44: preventivi/sprint.15
+- Immagine 45: bilancio/sprint.15
 
 #pagebreak()
 
@@ -2498,6 +2791,12 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Tabella 67: preventivo costo sprint.13
 - Tabella 68: consuntivo costo sprint.13
 - Tabella 69: consuntivo costo sprint.13
-- Tabella 70: 
-- Tabella 71: 
+- Tabella 70: preventivo orario sprint.14
+- Tabella 71: preventivo costo sprint.14
+- Tabella 72: consuntivo costo sprint.14
+- Tabella 73: consuntivo costo sprint.14
+- Tabella 74: preventivo orario sprint.15
+- Tabella 75: preventivo costo sprint.15
+- Tabella 76: consuntivo costo sprint.15
+- Tabella 77: consuntivo costo sprint.15
 
