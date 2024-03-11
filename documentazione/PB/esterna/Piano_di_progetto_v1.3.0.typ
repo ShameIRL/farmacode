@@ -9,8 +9,8 @@
   ),
   changelog: (
     "1.4.0", "2024-03-11", p.favaron, "", "Stesura sprint 14",
-    "1.3.2", "2024-03-06", p.favaron, "", "Correzione elenco immagini e tabelle",
-    "1.3.1", "2024-03-06", p.favaron, "", "Correzione colori tabella consultivi",
+    "1.3.2", "2024-03-06", p.favaron, p.carraro, "Correzione elenco immagini e tabelle",
+    "1.3.1", "2024-03-06", p.favaron, p.carraro, "Correzione colori tabella consultivi",
     "1.3.0", "2024-02-26", p.pandolfo, p.favaron, "Stesura sprint 13",
     "1.2.0", "2024-02-26", p.bomben, p.rosson, "Stesura sprint 12",
     "1.1.0", "2024-02-21", p.carraro, p.bomben, "Sistemazione Analisi dei rischi e Stesura sprint 11",
