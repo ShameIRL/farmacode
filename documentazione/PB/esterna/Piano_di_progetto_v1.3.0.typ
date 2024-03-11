@@ -2397,14 +2397,12 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
 - Gantt view:
-/*
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#14.png", height: 230pt, width: auto),
   caption: [sprint.14]
   )
 )
-*/
 
 === Pianificazione
 In questo sprint si è deciso di continuare ad apportare miglioramenti alla documentazione e prima stesura di quelli nuovi.\
