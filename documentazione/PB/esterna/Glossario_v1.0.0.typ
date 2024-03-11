@@ -30,76 +30,76 @@ facilmente terminologie.
 = A
 
 
-#text(size: 15pt)[*Algoritmo*]
+#text(size: 13pt)[*Algoritmo*]\
 Un algoritmo è una sequenza finita di operazioni (dette anche istruzioni) che consente di risolvere tutti i quesiti di una stessa classe. Un algoritmo è finito, deterministico, non ambiguo e generale.
 
-#text(sze: 15pt)[* Algoritmo di Apprendimento Automatico*]
+#text(size: 13pt)[* Algoritmo di Apprendimento Automatico*]\
 Questo tipo di algoritmo è specializzato nell'effettuare predizioni o nel riconoscere pattern partendo da una serie di dati iniziali, nell'algoritmo non viene specificata nessuna azione per effettuare ciò, tuttavia viene fornito ad esso un grande quantitativo di dati che permette facilmente di scoprire pattern, correlazioni ed altri dettagli.
 
-#text(sze: 15pt)[*Analisi dei Requisiti*]
+#text(size: 13pt)[*Analisi dei Requisiti*]\
 Processo di raccolta, analisi e definizione delle necessità e delle aspettative degli utenti finali, degli stakeholder e del sistema nel suo complesso. Questo processo si concentra sulla comprensione approfondita delle funzionalità, delle prestazioni e dei vincoli del sistema software da sviluppare. L'obiettivo principale dell'analisi dei requisiti è identificare e documentare in modo accurato e completo ciò che il software deve fare per soddisfare le esigenze degli utenti e raggiungere gli obiettivi del progetto.
 
-#text(sze: 15pt)[* API*]
+#text(size: 13pt)[* API*]\
 Un'Application Programming Interface (API), rappresenta un insieme di regole e definizioni che consente a un software di interagire con altri software. Le API sono quindi un collegamento tra un'applicazione che invia una richiesta e l'applicazione che invia la risposta.
 
-#text(sze: 15pt)[* Apprendimento automatico*]
+#text(size: 13pt)[* Apprendimento automatico*]\
 L'Apprendimento Automatico è una branca dell'intelligenza artificiale che utilizza metodi statistici per migliorare la performance di un algoritmo nell'identificare pattern nei dati. In questa variante della programmazione tradizionale, una macchina si predispone l'abilità di apprendere qualcosa da una serie di dati in maniera autonoma, senza un grosso quantitativo di istruzioni esplicite.
 
-#text(sze: 15pt)[* Artefatto*]
+#text(size: 13pt)[* Artefatto*]\
 Nel contesto dello sviluppo software, il termine artefatto si riferisce a un risultato intermedio generato durante il processo di sviluppo del software. Gli artefatti sono documenti, codice sorgente o altri elementi che fungono da risultati intermedi di varie attività nel ciclo di vita del software. 
 
 #pagebreak()
 
 = B
 
-#text(sze: 15pt)[* Best practices*]
+#text(size: 13pt)[* Best practices*]\
 Le "best practices" nello sviluppo software sono metodologie che, attraverso l'esperienza e la sperimentazione, sono stati identificati come modi efficaci e raccomandati di affrontare determinati problemi o compiti nel processo di sviluppo del software. Queste pratiche sono considerate migliori (best) perché hanno dimostrato di portare a risultati di alta qualità, facilitando la manutenzione del codice e promuovendo una migliore collaborazione nel team di sviluppo.
 
 
 = C
 
-#text(sze: 15pt)[* Capitolato*]
+#text(size: 13pt)[* Capitolato*]\
 Documento privato tra chi commissiona il lavoro e il gruppo (ditta) che lo esegue, in cui viene esposto un problema che il proponente necessita di risolvere e specifica le norme e vari vincoli da rispettare per lo sviluppo
 del specifico prodotto software.
 
-#text(sze: 15pt)[* Casi d'uso*]
+#text(size: 13pt)[* Casi d'uso*]\
 Un caso d'uso è una descrizione dettagliata di come un utente (attore) interagisce con l'applicazione per il compimento di un attività specifica. E' uno strumento utilizzato nel contesto dello sviluppo software per individuare i requisiti funzionali del prodotto e per fornire una visuale chiara delle interazioni che possono avvenire all'interno dell'applicazione.
 
-#text(sze: 15pt)[* Context switch*]
+#text(size: 13pt)[* Context switch*]\
 Nel contesto di un team di sviluppo software, il termine "context switch" si riferisce al cambiamento focus di un membro di progetto da un compito o una responsabilità ad un'altra.
 
 
-#text(sze: 15pt)[* Continuous Deployment*]
+#text(size: 13pt)[* Continuous Deployment*]\
 La Continuous Deployment (CD) è una pratica di sviluppo del software che estende il concetto di Continuous Integration (CI). 
 La Continuous Deployment va oltre, automatizzando anche il processo di distribuzione del software in ambienti di produzione.
 
-#text(sze: 15pt)[* Continuous Integration*]
+#text(size: 13pt)[* Continuous Integration*]\
 La Continuous Integration (CI) è una pratica di sviluppo del software che mira a migliorare la qualità del codice sorgente attraverso l'integrazione frequente dei cambiamenti nel repository principale.
 
-#text(sze: 15pt)[* Cruscotto*]
+#text(size: 13pt)[* Cruscotto*]\
 Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce una panoramica sintetica ed immediata riguardanti lo stato delle attività di progetto. Evolve in modo dinamico all'avanzare del progetto e permette a chi lo consulta di avere una visione chiara e intuitiva permettendo di prendere decisioni in modo tempestivo.  
 
 #pagebreak()
 = D
 
-#text(sze: 15pt)[* Diagrams.net*]
+#text(size: 13pt)[* Diagrams.net*]\
 Applicazione open-source online per la creazione di diagrammi e disegni tecnici. Offre una vasta gamma di strumenti per la creazione di diagrammi, tra cui diagrammi di flusso, diagrammi UML e molto altro ancora.
 
-#text(sze: 15pt)[* Discord*]
+#text(size: 13pt)[* Discord*]\
 Discord è una piattaforma VoIP (Voice over IP: tecnologia che rende possibile effettuare una conversazione sfruttando una connessione internet), messaggistica istantanea e distribuzione digitale progettata per la comunicazione.
 
-#text(sze: 15pt)[* Dipendenza*]
+#text(size: 13pt)[* Dipendenza*]\
 Una dipendenza è definibile come un legame esistente tra due o piû componenti di un'applicazione per cui il funzionamento di una parte "dipende", appunto, dalla natura e dalla presenza delle altre parti, con la conseguenza che una modifica in una parte può generare side effects in altre componenti dell'applicazione.
 
-#text(sze: 15pt)[* Design*]
+#text(size: 13pt)[* Design*]\
 La progettazione è una fase del ciclo di vita del software (che precede la codifica) in cui sulla base della specifica dei requisiti prodotta dall'analisi, il progetto definisce come tali requisiti saranno soddisfatti, entrando nel merito della struttura che dovrà essere data al sistema software che deve essere realizzato. 
 
-#text(sze: 15pt)[* Docker*]
+#text(size: 13pt)[* Docker*]\
 Docker è un software progettato per eseguire processi informatici in ambienti isolabili, minimali e facilmente distribuibili chiamati container, con l'obiettivo di semplificare i processi di deployment di applicazioni software.
 
 = E
 
-#text(sze: 15pt)[* E-commerce*]
+#text(size: 13pt)[* E-commerce*]\
 Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio Elettronico", si riferisce dunque alle attività di commercio che vengono svolte attraverso modalità elettroniche, prevalentemente attraverso l'utilizzo di internet e software. Oltre che esclusivamente alle attività di commercio esso si può riferire anche in senso lato ad attività di comunicazione e di gestione delle attività che avvengono attraverso modalità elettroniche.
 
 #pagebreak()
@@ -107,58 +107,58 @@ Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio 
 
 = G
 
-#text(sze: 15pt)[* Git*]
+#text(size: 13pt)[* Git*]\
 Git è un software per il controllo di versione distribuito utilizzabile da interfaccia a riga di comando.
 
-#text(sze: 15pt)[* GitHub*]
+#text(size: 13pt)[* GitHub*]\
 GitHub è un servizio di hosting per progetti software. Il sito è principalmente utilizzato da sviluppatori che caricano il codice sorgente di programmi e lo rendono scaricabile e migliorabile da altre persone. Questi ultimi possono interagire con gli sviluppatori tramite un sistema per inviare segnalazione di bug o funzionalità (issue tracker), un sistema per copiare il software in una versione modificabile (fork), un sistema per proporre modifiche agli sviluppatori originali (pull request) e un sistema di discussione legato al codice del repository.
 
-#text(sze: 15pt)[* Glossario*]
+#text(size: 13pt)[* Glossario*]\
 Elenco organizzato di termini tecnici, acronimi e definizioni utilizzati nel contesto del progetto. Questo documento fornisce una chiara comprensione dei concetti e dei linguaggi specifici impiegati nel progetto, aiutando a ridurre ambiguità e fraintendimenti tra i membri del team e gli stakeholder.
 
-#text(sze: 15pt)[* Google Drive*]
+#text(size: 13pt)[* Google Drive*]\
 Google Drive è un servizio di cloud e di sincronizzazione. Esso permette dunque di caricare file su un cloud e di sincronizzarli tra più dispositivi e più utenti in tempo reale. Offre anche varie tipologie di app con capacità sia online che offline.
 
-#text(sze: 15pt)[* Google Meet*]
+#text(size: 13pt)[* Google Meet*]\
 Google Meet è un'applicazione di teleconferenza. Per uso desktop, è un prodotto software di tipo SaaS cioè un servizio usufruibile mediante browser, senza richiedere client installati, richiede tuttavia un account Google per avviare le chiamate.
 
 = H
 
 = I
 
-#text(sze: 15pt)[* Intelligenza Artificiale (sigla: IA)*]
+#text(size: 13pt)[* Intelligenza Artificiale (sigla: IA)*]\
 L'intelligenza artificiale è una disciplina che studia come realizzare sistemi informatici in grado di simulare il pensiero umano. Sistemi basati su di essa hanno dunque l'abilità di mostrare capacità umane quali il ragionamento, l'apprendimento, la pianificazione e la creatività. 
 
-#text(sze: 15pt)[* Issues Tracking System*]
+#text(size: 13pt)[* Issues Tracking System*]\
 Un Issues Tracking System è uno strumento progettato per gestire e monitorare le problematiche riscontrate durante lo sviluppo del progetto, non solo in ambito software. Il sistema fornisce un modo sistematico per segnalare, monitorare e risolvere i problemi rilevati durante il ciclo di vita del prodotto.
 
 = J
 
 = K
 
-#text(sze: 15pt)[* Keynote*]
+#text(size: 13pt)[* Keynote*]\
 Un software di presentazione sviluppato da Apple, progettato per consentire agli utenti di creare presentazioni di alta qualità con facilità, utilizzando una varietà di strumenti per la progettazione e la personalizzazione.
 
 = L
 
 = M
 
-#text(sze: 15pt)[* Minimum Viable Product*]
+#text(size: 13pt)[* Minimum Viable Product*]\
 Il Minimum Viable Product (MVP) è una versione ridotta del prodotto, la quale incorpora solo funzioni essenziali per soddisfare le esigenze base. Viene utilizzato per rilasciare un prodotto come test e ricevere feedback dall'utenza per migliorare poi il prodotto finito con tutte le funzionalità.
 
-#text(sze: 15pt)[* Modello di Apprendimento Automatico*]
+#text(size: 13pt)[* Modello di Apprendimento Automatico*]\
 Un modello di apprendimento automatico è un programma che viene utilizzato per riconoscere pattern in insiemi di dati o per eseguire predizioni dato un insieme di dati iniziale. Un modello si ottiene effettuando il processo di addestramento su un algoritmo di apprendimento automatico.
 
-#text(sze: 15pt)[* Metrica per la valutazione quantitativa*]
+#text(size: 13pt)[* Metrica per la valutazione quantitativa*]\
 Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
 punto di vista tecnico che documentale. 
 
 = N
 
-#text(sze: 15pt)[* Norme di Progetto*]
+#text(size: 13pt)[* Norme di Progetto*]\
 Insieme di linee guida, procedure e regole stabilite per regolare e standardizzare l'approccio, il processo e l'output del lavoro all'interno del progetto. Queste norme possono riguardare diversi aspetti del progetto, come la gestione del codice, la documentazione, la comunicazione e la gestione dei rischi. L'obiettivo delle norme di progetto è promuovere la coerenza, la qualità e l'efficienza nel processo di sviluppo del software, consentendo al team di lavorare in modo più efficace e collaborativo.
 
-#text(sze: 15pt)[* Numpy*]
+#text(size: 13pt)[* Numpy*]\
 Libreria open-source per il linguaggio di programmazione Python, che aggiunge supporto per array e matrici multidimensionali, insieme a una vasta collezione di funzioni matematiche di alto livello per operare su questi array.
 
 #pagebreak()
@@ -166,34 +166,34 @@ Libreria open-source per il linguaggio di programmazione Python, che aggiunge su
 
 = P
 
-#text(sze: 15pt)[* Pandas *]
+#text(size: 13pt)[* Pandas *]\
 Libreria open-source per il linguaggio di programmazione Python che offre strutture dati e strumenti per la manipolazione e l'analisi di dati in forma di tabelle, chiamate DataFrame. È una delle librerie più utilizzate per l'elaborazione dei dati in Python.
 
-#text(sze: 15pt)[* Pair programming*]
+#text(size: 13pt)[* Pair programming*]\
 Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
 
-#text(sze: 15pt)[* Parser*]
+#text(size: 13pt)[* Parser*]\
 Programma che analizza un file, verificandone la correttezza sintattica rispetto a una data grammatica, viene utilizzato in ambiti come il parsing del linguaggio naturale, l'analisi del codice sorgente e la manipolazione di dati strutturati.
 
-#text(sze: 15pt)[* PHP*]
+#text(size: 13pt)[* PHP*]\
 Linguaggio di scripting utilizzato per lo sviluppo di applicazioni web dinamiche. Ha una sintassi simile a C ed è facilmente integrabile con HTML e supporta una vasta gamma di database.
 
-#text(sze: 15pt)[* Piano di Qualifica*]
+#text(size: 13pt)[* Piano di Qualifica*]\
 Documento che stabilisce gli obiettivi, le strategie e le procedure per garantire la qualità del software. Include test, risorse, metriche di qualità e gestione dei difetti, e serve per assicurare che il software soddisfi gli standard richiesti.
 
-#text(sze: 15pt)[* Product Baseline*]
+#text(size: 13pt)[* Product Baseline*]\
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
-#text(sze: 15pt)[* Proof of Concept*]
+#text(size: 13pt)[* Proof of Concept*]\
 Una versione preliminare di un'applicazione o di una soluzione software che viene sviluppata per dimostrare la fattibilità tecnica di un'idea o di un concetto, viene utilizzata per testare rapidamente l'efficacia di un approccio, identificare eventuali limitazioni delle tecnologie scelte e valutare se l'idea può essere realizzata in modo pratico.
 
-#text(sze: 15pt)[* Processo*]
+#text(size: 13pt)[* Processo*]\
 Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
 
 #pagebreak()
 = Q
 
-#text(sze: 15pt)[* Qualità*]
+#text(size: 13pt)[* Qualità*]\
 Insieme delle caratteristiche di un'entità, che ne determinano la capacità di
 soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodotto software in termini di qualità:
 - Intrinseca: conformità ai requisiti, idoneità all’uso;
@@ -203,63 +203,63 @@ soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodott
 
 = R
 
-#text(sze: 15pt)[* React*]
+#text(size: 13pt)[* React*]\
 Libreria JavaScript open-source utilizzata principalmente per la creazione di interfacce utente (UI) interattive e dinamiche per applicazioni web e mobile. È nota per la sua architettura dichiarativa e basata su componenti, che consente agli sviluppatori di costruire UI complesse dividendo l'interfaccia in componenti riutilizzabili.
 
 
 = S
 
-#text(sze: 15pt)[* Set di Training*]
+#text(size: 13pt)[* Set di Training*]\
 Questo set è un insieme di dati (estrapolato da un insieme più grande) ai quali può essere associata una risposta. Questi dati vengono utilizzati nell'ambito dell'apprendimento automatico per addestrare un modello predittivo capace di determinare il valore-obiettivo per nuovi esempi. La qualità del training effettuato con questi dati sarà valutata nella fase di verifica con il set di verifica.
 
-#text(sze: 15pt)[* Set di Validazione *]
+#text(size: 13pt)[* Set di Validazione *]\
 Questo set è un insieme di dati (estrapolato da un insieme più grande). Questi dati vengono utilizzati nell'ambito dell'apprendimento automatico dopo la fase di addestramento e di verifica di un modello predittivo per verificare la qualità dell'addestramento stesso.
 
-#text(sze: 15pt)[* Set di Verifica*]
+#text(size: 13pt)[* Set di Verifica*]\
 Questo set è un insieme di dati (estrapolato da un insieme più grande). Questi dati vengono utilizzati nell'ambito dell'apprendimento automatico per valutare un modello addestrato.
 
-#text(sze: 15pt)[* Sistema di raccomandazione*]
+#text(size: 13pt)[* Sistema di raccomandazione*]\
 Un sistema di raccomandazione o motore di raccomandazione è un software di filtraggio dei contenuti che
 crea delle raccomandazioni personalizzate specifiche per l’utente così da aiutarlo nelle sue scelte. Viene utilizzato per diversi prodotti, come libri, musica, film, video, notizie e social media.
 
-#text(sze: 15pt)[* Stakeholder*]
+#text(size: 13pt)[* Stakeholder*]\
 Letteralmente "portatore di interesse", rappresenta l'insieme di coloro i quali hanno influenza sul prodotto, sul progetto e sui processi, come ad esempio committente e fornitore.
 
 #pagebreak()
-#text(sze: 15pt)[* Surprise*]
+#text(size: 13pt)[* Surprise*]\
 Una libreria Python specificamente progettata per la costruzione e l'analisi di sistemi di raccomandazione. Si concentra principalmente sulle raccomandazioni basate su valutazioni esplicite, come voti o valutazioni numeriche date dagli utenti a determinati elementi.
 
-#text(sze: 15pt)[* SVD (Singular Value Decomposition)*]
+#text(size: 13pt)[* SVD (Singular Value Decomposition)*]\
 Una tecnica matematica che scompone una matrice in tre parti: due matrici ortogonali e una matrice diagonale contenente i valori singolari. È ampiamente utilizzata nel machine learning e nei sistemi di raccomandazione per ridurre la dimensionalità dei dati, identificare pattern nascosti e generare raccomandazioni personalizzate.
 
 = T
 
-#text(sze: 15pt)[* Telegram*]
+#text(size: 13pt)[* Telegram*]\
 Telegram è un servizio di messaggistica istantanea e broadcasting basato su cloud. Permette di creare gruppi e comunicare all'interno di essi.
 
-#text(sze: 15pt)[* Test Driven Development*]
+#text(size: 13pt)[* Test Driven Development*]\
 Il Test Driven Development (TDD) è un modello per lo sviluppo software che prevede la stesura di test automatici prima dell'implementazione del codice che poi deve essere sottoposta ai test. In questo modello lo sviluppo del software è orientato esclusivamente all'obiettivo di passare i test precedentemente predisposti.
 
-#text(sze: 15pt)[* Typst*]
+#text(size: 13pt)[* Typst*]\
 Typst è un sistema di composizione tipografica basato su markup. È progettato per essere un'alternativa sia agli strumenti avanzati come LaTeX sia agli strumenti più semplici come Word e Google Docs.
 
 = U
 
 = V
 
-#text(sze: 15pt)[* Verbale*]
+#text(size: 13pt)[* Verbale*]\
 Documento che riporta in modo dettagliato gli argomenti discussi e le decisioni prese. Questo documento è essenziale per registrare e documentare le attività svolte durante la riunione, consentendo ai partecipanti di avere un riferimento chiaro e completo delle discussioni e delle decisioni prese.
 
 #pagebreak()
 = W
 
-#text(sze: 15pt)[* Way of working*]
+#text(size: 13pt)[* Way of working*]\
 Letterealmente "modo di lavorare",  si riferisce al metodo, alle procedure e alle pratiche adottate dal team di sviluppo per gestire, organizzare e completare il lavoro assegnato. 
 
-#text(sze: 15pt)[* Web app*]
+#text(size: 13pt)[* Web app*]\
 Una web application (web app) è un'applicazione software progettata per essere utilizzata attraverso un browser web su un dispositivo Internet. A differenza delle applicazioni desktop tradizionali, le web app non richiedono un download o un'installazione separata, poiché vengono eseguite direttamente all'interno di un browser.
 
-#text(sze: 15pt)[* Workshop*]
+#text(size: 13pt)[* Workshop*]\
 Un workshop interno costituisce un evento appositamente organizzato per agevolare la condivisione e il trasferimento di conoscenze e competenze tra i membri del gruppo. Durante questa sessione, i partecipanti più esperti svolgono il ruolo di formatori, condividendo le proprie competenze, esperienze e conoscenze con coloro che necessitano acquisirle.
 
 = X
@@ -268,6 +268,6 @@ Un workshop interno costituisce un evento appositamente organizzato per agevolar
 
 = Z
 
-#text(sze: 15pt)[* Zoom*]
+#text(size: 13pt)[* Zoom*]\
 Zoom è un'applicazione VoIP (Voice over IP: tecnologia che rende possibile effettuare una conversazione sfruttando una connessione internet), di teleconferenza e di messaggistica istantanea. Si può usufruire sia tramite browser, sia tramite client, richiede tuttavia un account Zoom per avviare le chiamate.
 
