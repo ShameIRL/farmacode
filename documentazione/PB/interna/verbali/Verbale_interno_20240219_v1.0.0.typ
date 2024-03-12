@@ -66,7 +66,7 @@ table(
 table(
   columns: (auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Ruolo*],[*Nome e cognome*],
+  [*Ruolo*],[*Cognome e nome*],
   [Responsabile],[#p.bomben],
   [Analista],[#p.favaron],
   [Amministratore],[#p.carraro],
