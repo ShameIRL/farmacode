@@ -51,12 +51,13 @@ table(
   columns: (auto, auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Interessa*],[*Obiettivo*],[*Issue n°*],
-  [Analisi dei Requisiti],[Continuare il miglioramento dei contenuti e la modellazione], [\#174],
-  [Manuale utente],[Continuazione stesura del documento],[\#175],
-  [Specifica tecnica],[Continuazione stesura del documento], [\#176],
+  [Piano di progetto],[Aggiornare documento], [\#174],
+  [Piano di qualifica],[Aggiornare documento], [\#175],
+  [Manuale utente],[Continuazione stesura del documento],[\#176],
+  [Specifica tecnica],[Continuazione stesura del documento], [\#177],
   [Test e Automazioni],[Continuare l'integrazione dei test],[\#172],
   [Design],[Continuare a ragionare sull'utilizzo e l'implementazione di design pattern],[\#173],
-  [Sviluppo],[Sistemazione Wide&Deep],[\#177]
+  [Sviluppo],[Sistemazione Wide&Deep],[\#178]
 ),center)
 
 = Nuova distribuzione ruolisitca
