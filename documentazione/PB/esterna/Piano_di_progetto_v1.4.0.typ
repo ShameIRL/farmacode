@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.4.0", "2024-03-11", p.favaron, "", "Stesura sprint 14",
+    "1.4.0", "2024-03-11", p.favaron, p.passarella, "Stesura sprint 14",
     "1.3.2", "2024-03-06", p.favaron, p.carraro, "Correzione elenco immagini e tabelle",
     "1.3.1", "2024-03-06", p.favaron, p.carraro, "Correzione colori tabella consultivi",
     "1.3.0", "2024-02-26", p.pandolfo, p.favaron, "Stesura sprint 13",
@@ -2392,7 +2392,7 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
   -- Stesura documento "Manuale utente";\
   -- Stesura documento "Specifiche tecniche";\
   -- Continuare a ragionare sull'utilizzo e l'implementazione dei design pattern;\
-  -- Continuare a migliorare l'integrazione dei test e automatizzare il più possibile la repo dedicata al codice;
+  -- Continuare a migliorare l'integrazione dei test e automatizzare il più possibile la repo dedicata al codice;\
   -- Stesura del Verbale interno del 2024/03/04;\
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
@@ -2405,13 +2405,13 @@ figure(
 )
 
 === Pianificazione
-In questo sprint si è deciso di continuare ad apportare miglioramenti alla documentazione e prima stesura di quelli nuovi.\
+In questo sprint si è deciso di continuare ad apportare miglioramenti alla documentazione e iniziare la prima stesura di quelli nuovi.\
 I documenti interessati riguardano:
 - Analisi dei Requisiti: prevediamo di continuare a migliorare la formulazione dei requisiti, i contenuti e la modellazione di essi apportando le correzioni suggerite ove necessario;
 - Manuale utente: prima stesura delle sezioni relative all'introduzione al documento;
 - Specifica tecnica: prima stesura del documento.
 Oltre ai documenti abbiamo pianificato di migliorare l'automatizzazione dei test e la gestione dell'intera repository che andrà ad ospitare il codice.\
-Infine abbiamo deciso di continuare lo studio e l'individuazione e scelta di design pattern per il nostro prodotto.
+Infine abbiamo deciso di continuare lo studio, l'individuazione e la scelta di design pattern per il nostro prodotto.
 
 === Rischi attesi
 Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
@@ -2517,7 +2517,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    []
+    [0,86]
   )
 )
 
