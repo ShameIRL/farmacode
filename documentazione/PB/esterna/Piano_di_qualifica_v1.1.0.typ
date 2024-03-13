@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.1.0", "2024-02-27", p.carraro, "", "Ristrutturazione documento",
+    "1.1.0", "2024-02-27", p.carraro, p.passarella, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.favaron, p.pandolfo, "Verifica del documento",
     "0.10.1", "2024-02-09", p.bomben, p.rosson, "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
     "0.10.0", "2024-02-05", p.rosson, p.bomben, "Aggiunti grafici e aggiornato sezione metriche",
@@ -977,7 +977,7 @@ Valori negativi di SV indicano che il progetto, in quel determinato istante, è 
 Il valore del lavoro effettivamente completato è inferiore a quanto pianificato. 
 Sebbene quindi il progetto stia risparmiando denaro rispetto al budget (CV positivo), potrebbe esserci stata una sottoperformance nella realizzazione delle attività pianificate (SV negativo). \
 Inizialmente i valori di CV e SV registarti mostrano un uso minore di risorse monetarie rispetto a quanto preventivato e un avanzamento corretto del progetto secondo la pianificazione.\
-A partire dallo sprint 6 i valori di CV e SV indica una situazione ben diversa da quella registrata in precedenza: il valore negativo di SV indica un ritardo rispetto a quanto preventivato. Questo rallentamento di produttività durante lo  viene dettato dalla pausa natalizia e dalla sessione di esami.\
+A partire dallo sprint 6 i valori di CV e SV indica una situazione ben diversa da quella registrata in precedenza: il valore negativo di SV indica un ritardo rispetto a quanto preventivato. Questo rallentamento di produttività viene dettato dalla pausa natalizia e dalla sessione di esami.\
 A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista.
 
 #pagebreak()
