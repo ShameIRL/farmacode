@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-02-23", p.favaron , "", "Stesura del verbale",
+    "1.0.0", "2024-02-23", p.favaron , p.passarella, "Stesura del verbale",
   ),
 )
 
