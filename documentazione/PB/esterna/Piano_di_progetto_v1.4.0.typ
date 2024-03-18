@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.5.0", "2024-03-18", p.passarella, "", "Stesura sprint 15",
     "1.4.0", "2024-03-11", p.favaron, p.passarella, "Stesura sprint 14",
     "1.3.2", "2024-03-06", p.favaron, p.carraro, "Correzione elenco immagini e tabelle",
     "1.3.1", "2024-03-06", p.favaron, p.carraro, "Correzione colori tabella consultivi",
@@ -2533,30 +2534,41 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Periodo: 2024/03/12 - 2024/03/19
 
 - Issues: \
-  -- Continuare studio e scelta dei design pattern;\
-  -- Sviluppo ...
+  -- Continuazione documenti;\
+  -- Sistemazione Wide&Deep;\
+  -- Continuare studio, scelta e implementazione dei design pattern.
 - Task:\
-  -- ;\
-  -- ;\
-  -- ;\
-  -- ;\
-  -- ;\
-  -- ;\
+  -- Sistemazione Wide&Deep;\
+  -- Continuazione stesura del file "Specifica tecnica";\
+  -- Continuazione stesura del file "Manuale utente";\
+  -- Aggiornamento file "Piano di qualifica";\
+  -- Aggiornare file "Piano di progetto";\
+  -- Continuare a ragionare sull'utilizzo e l'implementazione di design pattern;\
+  -- Continuazione integrazione test automatici;\
+  -- Revisione del file "Verbale interno del 2024/04/12";\
+  -- Stesura del file "Verbale interno 11/03/2024";\
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
 - Gantt view:
-/*
+
 #align(left,
 figure(
   image("/imgs/gantt_views/sprint#15.png", height: 230pt, width: auto),
   caption: [sprint.15]
   )
 )
-*/
+
 
 === Pianificazione
+In questo sprint si è deciso di continuare la stesura dei nuovi documenti.\
+I documenti interessati sono: manuale utente e specifica tecnica.\
+Abbiamo pianificato, inoltre, di continuare l'implementazione dei test e la sistemazione del Wide&Deep.\
+Infine abbiamo deciso di continuare lo studio, l'individuazione e l'implementazione di design pattern per il nostro prodotto.
 
 === Rischi attesi
+Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
+- #link(<rtecnologici>)[RT1 - Incompatibilità tra diverse tecnologie o componenti software].
+Abbiamo preventivato questo rischio specifico a causa dell'implementazione del Wide&Deep.
 
 === Preventivo:
 #align(center, text(0.85em)[
@@ -2603,6 +2615,8 @@ figure(
 )
 
 - Spiegazione:
+La prospettiva per questo sprint è quella di impostre il Wide&Deep, continuare con l'implementaIone dei test e continuare la stesura dei nuovi documenti.\
+Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
 
 === Consunitvo:
 
@@ -2614,13 +2628,13 @@ figure(
   columns: (auto,)*7,
   align: center,
   [*SPRINT 15*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [], [], [], [],
-  [Bomben F.], [], [], [], [], [], [],
-  [Carraro A.], [], [], [], [], [], [],
-  [Favaron R.], [], [], [], [], [], [],
-  [Pandolfo M.], [], [], [], [], [], [],
-  [Passarella A.], [], [], [], [], [], [],
-  [Rosson L.], [], [], [], [], [], [],
+  [Baggio M.], [], [], [], [], [], [4 #red("(+1)")],
+  [Bomben F.], [], [], [2 #red("(+1)")], [], [], [4],
+  [Carraro A.], [], [], [2 #red("(+1)")], [], [], [3],
+  [Favaron R.], [], [], [], [], [2], [3 #red("(+1)")],
+  [Pandolfo M.], [], [], [4 #red("(+1)")], [], [1], [],
+  [Passarella A.], [4 #green("(-1)")], [], [1 #red("(+1)")], [], [2], [],
+  [Rosson L.], [], [], [4 #red("(+1)")], [], [], [],
 )
 ])
 #align(center)[Tabella 76: consuntivo orario sprint.15.]
@@ -2633,11 +2647,11 @@ figure(
   columns: (auto,)*7,
   align: center,
   [*SPRINT 15*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [], [], [], [], [], [],
+  [Totale Ore], [3], [0], [18], [0], [5], [16],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€120,00], [#red("€50,00")], [#green("€105,00")], [€0,00], [€60,00], [#red("€425,00")],
-  [Totale], [], [], [], [], [], [#red("€790,00")], 
-  [Bilancio], [], [], [], [], [], [#red("€5125,00")],
+  [Costo], [#green("€90,00")], [€0,00], [#red("€270,00")], [€0,00], [€75,00], [#red("€400,00")],
+  [Totale], [], [], [], [], [], [#red("€835,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€4290,00")],
 )
 ])
 #align(center)[Tabella 77: consuntivo costi sprint.15.]
@@ -2645,25 +2659,28 @@ figure(
 #grid(
   columns: (1fr, auto),
   rows: (auto),
-  /*
+  
   figure(
   image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#15.png", height: 30%, width: auto),
   caption: [bilancio/sprint.15],
   ),
-  */
+  
   table(
     fill: (col, row) => 
       if calc.odd(row) { luma(230) } else { white },
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    []
+    [0,89]
   )
 )
 
 === Rischi incontrati e mitigazioni
+Il rischio preventivato non si è verificato, in quanto è stato possibile implementare il Wide&Deep.\
 
 === Retrospettiva
+Lo sprint #15 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata impegnativa e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 
 
