@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.1.0", "2024-03-01", p.favaron, "", "Struttura iniziale del documento",
+    "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
+    "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
   ),
 )
 
@@ -65,26 +66,133 @@ https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
 */
 #pagebreak()
 = Tecnologie
+Questa sezione serve a fornire una panoramica generale sulle tecnologie adottate per il progetto.\
+Vengono riportate sottoforma di tabelle le diverse tecnologie, sia per la codifica che per l'analisi e il test del codice. Ogni tabella è formata da tre colonne che riportanto:
+- La tecnologia utilizzata (il nome del linguaggio/framework/strumento);
+- La descrizione del ruolo che la tecnologia ha avuto all'interno del progetto;
+- La versione della tecnologia usata.
+
 
 == Tecnologie per la codifica
+Le tecnologie per la codifica del progetto riguardano i vari linguaggi utilizzati per la scrittura del codice, le librerie e framework adottate per facilitare l'implementazione delle funzionalità e gli strumenti utilizzati per la gestione della codifica del progetto.\
+La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbiamo cercato di capire i vantaggi che avrebbero potuto portare al progetto.
 
 === Linguaggi
+#table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Linguaggi*]),
+  [HTML],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],[5],
+  [CSS],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],[3],
+  [JavaScript],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],[TD],
+  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[],
+  [SQL],[Linguaggio di interrogazione per la creazione e gestione del database.],[TD],
+  )
+  #align(center)[Tabella 1: Linguaggi]
 
-=== Librerie e framework
+  === Librerie e framework
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Librerie e framework*]),
+  [Pandas],[Libreria per Python utilizzata per],[TD],
+  [Surprise],[Libreria per Python utilizzata per],[TD],
+  [React.js],[Libreria di JavaScript che sfrutta compnenti ],[TD],
+  [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[TD],
+  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito.],[TD],
+  [NumPy],[Libreria per Python utilizzata per],[TD],
+  [Tailwind CSS],[Framework per css che sfrutta ],[],
+  )
+  #align(center)[Tabella 2: Librerie e framework]
 
-=== Strumenti e servizi
+
+  === Strumenti e servizi
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Strumenti e servizi*]),
+  [MySQL],[RDBMS per la creazione e gestione dei database in SQL.],[TD],
+  [Node.js],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],[TD],
+  [NPM],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],[TD],
+  [VS Code],[IDE di programmazione gratuito ricco estensioni esterne.],[TD],
+  [Docker],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],[TD],
+  [Git],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],[TD],
+  [Anaconda],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],[TD],
+
+)
+#align(center)[Tabella 3: Strumenti e servizi]
+
 
 == Tecnologie per l'analisi del codice
 
 === Analisi statica
 
+#table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Analisi statica*]),
+  [],[],[],
+  [],[],[],
+
+)
+#align(center)[Tabella 4: Analisi statica]
+
 === Analisi dinamica
+
+#table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Analisi dinamica*]),
+  [],[],[],
+  [],[],[],
+)
+#align(center)[Tabella 5: Analisi dinamica]
 
 == Tecnologie per il testing
 
 === Linguaggi
+#table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Linguaggi testing*]),
+  [],[],[],
+  [],[],[],
+
+)
+#align(center)[Tabella 6: Linguaggi testing]
 
 === Librerie e framework
+
+#table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Tecnologia*], [*Descrizione*], [*Versione*],
+  table.cell(colspan: 3, [*Librerie e framework testing*]),
+  [],[],[],
+  [],[],[],
+
+)
+#align(center)[Tabella 7: Librerie e framework testing]
 
 #pagebreak()
 = Architettura
