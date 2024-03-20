@@ -196,7 +196,18 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 
 #pagebreak()
 = Architettura
-//non c'è una struttura generale. bisogna capire come volgiamo suddividere noi
+
+== Architettura Front-end
+
+=== Pagine generali
+
+==== Login
+#figure(
+  image("/imgs/diagramma_classi/Login.png", width: auto),
+  caption: [Login]
+)
+
+== Architettura Back-end
 
 
 #pagebreak()
