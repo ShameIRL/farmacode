@@ -164,38 +164,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 )
 #align(center)[Tabella 5: Analisi dinamica]
 
-== Tecnologie per il testing
 
-=== Linguaggi
-#table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Linguaggi testing*]),
-  [],[],[],
-  [],[],[],
-
-)
-#align(center)[Tabella 6: Linguaggi testing]
-
-=== Librerie e framework
-
-#table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Librerie e framework testing*]),
-  [],[],[],
-  [],[],[],
-
-)
-#align(center)[Tabella 7: Librerie e framework testing]
-
-#pagebreak()
 = Architettura
 
 == Architettura Front-end
