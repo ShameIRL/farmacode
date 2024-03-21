@@ -143,8 +143,8 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Analisi statica*]),
-  [],[],[],
-  [],[],[],
+  [Ruff], [Strumento per l'analisi statica del codice Python, individua errori, \ violazioni delle convenzioni di codifica e altri problemi nel codice sorgente, ], [0.3.3],
+  [ESLint], [Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, \ che aiuta a individuare gli errori di codice e le pratiche non ottimali], [8.57.0],
 
 )
 #align(center)[Tabella 4: Analisi statica]
@@ -158,8 +158,9 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Analisi dinamica*]),
-  [],[],[],
-  [],[],[],
+  [Pytest], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali], [8.0.x],
+  [Jest],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono. ],[29.7.x],
+  [GitHub Action],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software ], [/],
 )
 #align(center)[Tabella 5: Analisi dinamica]
 
