@@ -88,7 +88,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [HTML],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],[5],
   [CSS],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],[3],
   [JavaScript],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],[TD],
-  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[],
+  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[3.11.5],
   [SQL],[Linguaggio di interrogazione per la creazione e gestione del database.],[TD],
   )
   #align(center)[Tabella 1: Linguaggi]
@@ -107,7 +107,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[TD],
   [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito.],[TD],
   [NumPy],[Libreria per Python utilizzata per],[TD],
-  [Tailwind CSS],[Framework per css che sfrutta ],[],
+  [Tailwind CSS],[Framework per css che sfrutta ],[3],
   )
   #align(center)[Tabella 2: Librerie e framework]
 
