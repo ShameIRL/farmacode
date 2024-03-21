@@ -177,6 +177,24 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   caption: [Login]
 )
 
+==== Ricerca
+#figure(
+  image("/imgs/diagramma_classi/Ricerca.png", width: auto),
+  caption: [Ricerca]
+)
+
+==== Clienti
+#figure(
+  image("/imgs/diagramma_classi/Clienti.png", width: auto),
+  caption: [Clienti]
+)
+
+==== Prodotti
+#figure(
+  image("/imgs/diagramma_classi/Prodotti.png", width: auto),
+  caption: [Prodotti]
+)
+
 == Architettura Back-end
 
 
