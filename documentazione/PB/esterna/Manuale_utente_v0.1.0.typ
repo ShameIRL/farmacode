@@ -1,3 +1,6 @@
+//TO-DO
+// - Cambiare username pagina profilo
+// - Aggiornare descrizione pagine dopo modifiche mvp
 #import "/template/big_docs.typ": *
 
 #show: project.with(
@@ -8,31 +11,14 @@
     p.cardin,
   ),
   changelog: (
-    "0.1.0", "2024-03-02", p.favaron, "", "Struttura iniziale del documento",
+    "0.2.0", "2024-03-22", p.carraro, "", "Struttura sezione 4",
+    "0.1.0", "2024-03-02", p.favaron, p.carraro, "Struttura iniziale del documento",
   ),
 )
 
 = Introduzione
 
 == Scopo del documento
-Il documento riguardante l'analisi dei requisiti è un elemento di fondamentale importanza per i progetti di sviluppo software che voglio rispettare i massimi standard di qualità definiti dall'insegnamento dell'ingegneria del software. \
-Il presente documento ha lo scopo di fornire una descrizione dettagliata e più precisa possibile riguardanti le linee di massima del prodotto, che comprende i requisiti, così detti, obbligatori, desiderati e opzionali che vanno a rispondere alle necessità del proponente.\
-Si specializza sull'analisi dei bisogni dell'utente utilizzatore esaminati dallo studio del capitolato e durante i vari incontri con l'azienda proponente volti a tale scopo.\
-Le richieste del proponente sono, dunque, raccolte e ben identificate nel seguente documento; inoltre, sono classificate secondo le categorie standard di requisiti funzionali, di qualità e di vincolo.\
-L'analisi dei requisiti compone la pietra portante della progettazione di un sistema software, in quanto esplicita le funzionalità che il prodotto finale deve offrire. È essenziale per i programmatori usufruire di tale documento per assimilare a pieno le necessità dei proponenti di progetto per poi trovare la soluzione che più si sposa a soddisfare le esigenze proposte.\
-Il documento seguente deve essere il più completo e specifico possibile così da garantire requisiti corretti e che riscoprano tutti gli scenari plausibili per limitare i rischi di progetto ed evitare di inciampare in errori e ritardi che si traducono in costi maggiori.\
-È utile definire una precisa e formale rappresentazione grafica dei requisiti e degli attori in gioco grazie ai diagrammi dei casi d'uso, così da facilitare la comprensione a tutti.\
-
-=== Struttura logica casi d’uso
-I casi d'uso descritti in questo documento hanno una precisa struttura logica descritta dal seguente modello:
-- Titolo: Titolo del caso d'uso;
-- Figura;
-- Attori coinvolti: Il soggetto che esegue una determinata azione;
-- Precondizioni: Lo stato del sistema prima del caso d'uso;
-- Postcondizioni: Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
-- Scenario principale: Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati;
-- Estensioni (se presenti): Possibili estensioni derivanti dal caso d'uso;
-- Generalizzazioni (se presenti): Generalizzazioni di attori e casi d'uso.
 
 == Scopo del prodotto
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda utilizzatrice del prodotto finale; suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali.\
@@ -86,17 +72,156 @@ https://farmacodeunipd.github.io/documentazione/PB/esterna/Glossario_v2.0.0.pdf.
 
 #pagebreak()
 = Istruzioni all'uso
+Il sistema di raccomandazione permette l'interazione con l'utente tramite una semplice ed intuitiva interfaccia web. Nonostante la semplicita' per garantire facilita' di utilizzo e manutenzione si e' dicesi di dividere interfaccia in piu' pagine accessibili tramite un menu'.
+Di seguito ci sara' un' illustrazione delle varie pagine e spiegazione delle funzionalita' in esse, dell'interfaccia di conseguenza.
 
-// sezioni che definiamo volta per volta. metto qualche esempio grossolano
 == Login
+#figure(
+  image("/imgs/screenshots_mvp/login.png", width: 80%),
+  caption: [
+    Pagina login
+  ]
+)
+All'avvio dell'interfaccia la prima pagina che si presenta e' quella di Login, ovvero la pagina che permette di riconoscere l'utilizzatore del servizio.
+In particola ogni utente dovra' inserire le proprio credenziali, username e password, per poi accedere con la pressione del bottone "Accedi".
 
-== Aggiunta nuovo account
+La presenza dell'occhio alla fine del box di inseriemento della password garantisce riservatezza nel momento di login.\ Di default la password risultera' censurata, con la pressione dell'occhio si potra' vedere la password in chiaro, una convenzione presente in molti siti con accesso controllato.
+
+=== Errore Login
+#figure(
+  image("/imgs/screenshots_mvp/login_error.png", width: 80%),
+  caption: [
+    Errore login
+  ]
+)
+
+In caso di errore nel login verra' mostrato un messaggio di errore in rosso, in quel caso basta correggere la o le credenziali sbagliate e riprovare l'accesso.
 
 == Ricerca
+#figure(
+  image("/imgs/screenshots_mvp/ricerca.png", width: 80%),
+  caption: [
+    Pagine ricerca
+  ]
+)
 
+La prima pagina visualizzata dopo il login e la prima presente nel menu' e' la pagina di ricerca. \ In questa pagina avviene la ricerca della raccomandazione secondo i criteri richiesti, questi criteri andranno immessi nella barra di ricerca.\
+Di seguito un maggior dettaglio sulla selezione di questi criteri.
+
+=== Selezione topic
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  caption: [
+    Selezione topic nella ricerca
+  ]
+)
+Il primo criterio per la ricerca e' il topic, ovvero la scelta se eseguire la ricerca per clienti o per prodotti. \ Nel primo caso la ricerca fornira' un elenco di N prodotti raccomandati per il cliente scelto, nel secondo caso un elenco di N clienti a cui raccomandare il prodotto scelto.\
+Di seguito maggior dettaglio sulla selezione di cliente o prodotto su cui fare la raccomandazione.
+
+=== Selezione specifica
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneSpecifica.png", width: 80%),
+  caption: [
+    Selezione specifica nel Topic
+  ]
+)
+Successiva alla selezione del topic sara' necessario selezionare l'elemento specifico su cui fare la raccomandazione: un cliente nel caso il topic fosse clienti e un prodotto nel caso di prodotti.\
+Una volta selezionata la box di selezione si aprira' una tendina in cui sara' possibile ricercare l'elemento oppure sara' possibile scorrere per trovare l'elmento da selezionare.
+Di seguito maggior dettaglio sull'ultima selezione, la selezione del numero N di elmenti da visualizzare nella raccomandazione.
+
+=== Selezione N
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  caption: [
+    Selezione N nella ricerca
+  ]
+)
+Come precedentemente anticipato l'ultima selezione riguarda il numero N di elementi da visualizzare nella raccomandazione.\
+In particolare e' possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da raccomandare.
+
+=== Risultato ricerca
+#figure(
+  image("/imgs/screenshots_mvp/risultatoRicerca.png", width: 80%),
+  caption: [
+    Risultato ricerca
+  ]
+)
+Infine dopo la pressione del bottone Ricerca verra' visualizzata una tabella con gli elementi raccomandati.\
+Ogni elemento oltre all'ID e descrizione presenza una grado di raccomandazione a stelle, 5 stesse colorate rappresente il massimo grado di raccomandazione, 0 stelle colorate rappresenta il minimo.\
+E' possibile scorrere la tabella tramite rotela del mouse o frecce direzionali della tastira nel caso gli elementi non fossero tutti visibili.
+
+== Clienti
+#figure(
+  image("/imgs/screenshots_mvp/clienti.png", width: 80%),
+  caption: [
+    Pagina elenco clienti
+  ]
+)
+La seconda pagina presente nel menu' e' la pagina Clienti. \ In questa pagina e' possibile visualizzare un elenco di tutti i clienti, essendo il numero elevato e' possibilile effettuare una ricerca rapida tramite, tramite l'apposita finestra in alto a destra.\ Inoltre, a seconda dell'utilizzatore e' possibile visualizzare con lunghezza variabile, 25 o 50 o 75 o 100, andando a selezionarla tramite l'apposita finestra in basso a destra. \
+
+== Prodotti
+#figure(
+  image("/imgs/screenshots_mvp/prodotti.png", width: 80%),
+  caption: [
+    Pagina elenco prodotti
+  ]
+)
+La terza pagina presente nel menu' e' la pagina Prodotti. Questa pagina e' completamente analoga alla precedente pagina Clienti, infatti offre la possibilita' di vedere la lista di prodotti presenti, effettuare una ricerca e visualizzare un diverso numero di elementi nella lista.
+
+== Profilo
+#figure(
+  image("/imgs/screenshots_mvp/profilo.png", width: 80%),
+  caption: [
+    Pagina profilo
+  ]
+)
+La quarta e ultima pagina presente nel menu' e' la pagina Profilo.\
+Questa pagina presenta le informazioni dell'utente che sta utilizzando l'interfaccia web e offre la possibilita' di andare a modificare i dati email e password.\
+In seguito maggiori dettagli su queste due funzionali.
+
+=== Modifica email
+#figure(
+  image("/imgs/screenshots_mvp/modificaEmail.png", width: 80%),
+  caption: [
+    Modifica email
+  ]
+)
+Tramite la pressione del bottone azzurro con la matina si ha la possibilita' di andare a modificare il campo Email dell'utente, successivamente si puo' salvare l'informazione tramite il bottone verde con la scritta "Salva" oppure annullare l'operazione con il bottone rosso con la croce sopra.
+
+=== Modifica password
+#figure(
+  image("/imgs/screenshots_mvp/modificaPassword.png", width: 80%),
+  caption: [
+    Modifica password
+  ]
+)
+La modifica password avviene in maniera analoga alla modifica del campo Email, quindi il bottone azzurro con la matita da' la possibilita' di modificare il campo, il bottone verde salvarlo e quello rosso annullare l'operazione.
+
+== Logout
+#figure(
+  image("/imgs/screenshots_mvp/logout.png", width: 80%),
+  caption: [
+    Logout
+  ]
+)
+Infine nel menu' e' presente un'icona di logout, alla sua pressione l'utente verra' disconnesso dall'applicazione e verra' riportato nella pagina iniziale di login.
 
 #pagebreak()
 = Elenco delle immagini
+
+- Immagine 1: Pagina login;
+- Immagine 2: Errore login;
+- Immagine 3: Pagina riceca;
+- Immagine 4: Selezione Topic nella ricerca;
+- Immagine 5: Selezione specifica nel Topic;
+- Immagine 6: Selezione N nella ricerca;
+- Immagine 7: Risultato ricerca;
+- Immagine 8: Pagina elenco clienti;
+- Immagine 9: Pagina elenco prodotti;
+- Immagine 10: Pagina profilo;
+- Immagine 11: Modifica email;
+- Immagine 13: Modifica password;
+- Immagine 14: Logout.
 
 #pagebreak()
 = Elenco delle tabelle
