@@ -263,7 +263,7 @@ Descriviamo più nel dettaglio questa composizione:
   + la data di nascita;
   + una mail univoca;        
   + una password;
-  + l'informazione sull'essere un amministratore o meno.   ????????
+  + l'informazione sull'essere un amministratore o meno.
 
 - *prov*, rappresentante le provincie italiane, comprensiva di:
   + il codice identificativo univoco della provincia;
