@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
     "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
   ),
@@ -58,12 +59,18 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 === Riferimenti informativi
     //da mettere riferimenti relativi alle slide di cardin e qualcosa trovato sul web
-/*
-- T5 - Analisi dei requisiti (slide del corso di Ingegneria del Software)\
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf;
-- P2 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
-*/
+
+- I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
+- Progettazione: I pattern architetturali (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf
+- Verifica e validazione: analisi statica (T10) (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf
+- Verifica e validazione: analisi dinamica aka testing (T11) (slide del corso di Ingegneria del Software)\
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf
+- Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
+  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf
+
 #pagebreak()
 = Tecnologie
 Questa sezione serve a fornire una panoramica generale sulle tecnologie adottate per il progetto.\
