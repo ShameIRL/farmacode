@@ -88,7 +88,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [HTML],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],[5],
   [CSS],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],[3],
   [JavaScript],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],[TD],
-  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[],
+  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[3.11.5],
   [SQL],[Linguaggio di interrogazione per la creazione e gestione del database.],[TD],
   )
   #align(center)[Tabella 1: Linguaggi]
@@ -101,13 +101,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Librerie e framework*]),
-  [Pandas],[Libreria per Python utilizzata per],[TD],
-  [Surprise],[Libreria per Python utilizzata per],[TD],
-  [React.js],[Libreria di JavaScript che sfrutta compnenti ],[TD],
+  [Pandas],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],[TD],
+  [Surprise],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],[TD],
+  [React.js],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],[TD],
   [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[TD],
-  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito.],[TD],
-  [NumPy],[Libreria per Python utilizzata per],[TD],
-  [Tailwind CSS],[Framework per css che sfrutta ],[],
+  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito],[TD],
+  [NumPy],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],[TD],
+  [Tailwind CSS],[Framework per css utilizzato per lo sviluppo di interfacce utente.],[3],
   )
   #align(center)[Tabella 2: Librerie e framework]
 
@@ -143,8 +143,8 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Analisi statica*]),
-  [],[],[],
-  [],[],[],
+  [Ruff], [Strumento per l'analisi statica del codice Python, individua errori, \ violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], [0.3.3],
+  [ESLint], [Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, \ che aiuta a individuare gli errori di codice e le pratiche non ottimali.], [8.57.0],
 
 )
 #align(center)[Tabella 4: Analisi statica]
@@ -158,43 +158,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Analisi dinamica*]),
-  [],[],[],
-  [],[],[],
+  [Pytest], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali], [8.0.x],
+  [Jest],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],[29.7.x],
+  [GitHub Action],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], [/],
 )
 #align(center)[Tabella 5: Analisi dinamica]
 
-== Tecnologie per il testing
 
-=== Linguaggi
-#table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Linguaggi testing*]),
-  [],[],[],
-  [],[],[],
-
-)
-#align(center)[Tabella 6: Linguaggi testing]
-
-=== Librerie e framework
-
-#table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Librerie e framework testing*]),
-  [],[],[],
-  [],[],[],
-
-)
-#align(center)[Tabella 7: Librerie e framework testing]
-
-#pagebreak()
 = Architettura
 
 == Architettura Front-end
@@ -205,6 +175,24 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 #figure(
   image("/imgs/diagramma_classi/Login.png", width: auto),
   caption: [Login]
+)
+
+==== Ricerca
+#figure(
+  image("/imgs/diagramma_classi/Ricerca.png", width: auto),
+  caption: [Ricerca]
+)
+
+==== Clienti
+#figure(
+  image("/imgs/diagramma_classi/Clienti.png", width: auto),
+  caption: [Clienti]
+)
+
+==== Prodotti
+#figure(
+  image("/imgs/diagramma_classi/Prodotti.png", width: auto),
+  caption: [Prodotti]
 )
 
 == Architettura Back-end
