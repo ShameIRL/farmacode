@@ -319,7 +319,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
 - /items/:id : \ Ritorna le informazioni di uno specifico prodotto.
 
-- /prodotti : \  Ritorna la lista completa dei prodotti con tutte le informazioni.
+- /prodotti : \  Ritorna la lista completa dei prodotti con tutte le informazioni, ordinata in base al codice.
 
 - /prodotti/lineecommerciali : \ Ritorna la lista delle linee commerciali.
 
@@ -329,7 +329,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
 - /prodotti/sottofamigliecommerciali : \ Ritorna la lista delle sottofamiglie commerciali.
 
-- /clienti : \ Ritorna la lista completa dei clienti.
+- /clienti : \ Ritorna la lista completa dei clienti ordinata in base al codice.
 
 - /clienti/province : \ Ritorna la lista delle province.
 
