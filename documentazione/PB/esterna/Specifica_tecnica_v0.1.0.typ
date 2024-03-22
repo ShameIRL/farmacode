@@ -249,6 +249,67 @@ Allo scopo di rendere il tutto più chiaro possibile, a seguito di ongi diagramm
 
 
 == Architettura Back-end
+=== Introduzione
+
+===  Schema base di dati
+
+In questa sezione, viene presentato lo schema di base di dati realizzato con MySQL, relativo all'architettura back-end del servizio descritto.
+Descriviamo più nel dettaglio questa composizione:
+
+- *ute*, rappresentante i singoli utenti, comprensiva di:
+  + un username univoco;
+  + il nome dell'utente;
+  + il cognome;          
+  + la data di nascita;
+  + una mail univoca;        
+  + una password;
+  + l'informazione sull'essere un amministratore o meno.   ????????
+
+- *prov*, rappresentante le provincie italiane, comprensiva di:
+  + il codice identificativo univoco della provincia;
+  + il nome della provincia.
+
+- *anacli*, rappresentante i clienti, comprensiva di: 
+  + un codice identificativo univoco;
+  + la ragione sociale;
+  + il codice della provincia di appartenenza (chiave esterna).   ??????
+
+- *linee_comm*, rappresentante la linea dei prodotti, comprensiva di: 
+  + un codice identificativo univoco;
+  + la linea del prodotto. 
+
+- *settori_comm*, rappresentante il settore dei prodotti, comprensiva di: 
+  + un codice identificativo univoco;
+  + il settore  del prodotto.
+
+- *famiglie_comm*, rappresentante le famiglie dei prodotti, comprensiva di:
+  + un codice identificativo univoco;
+  + la famiglia del prodotto.
+
+- *sottofamiglie_comm*, rappresentante la sottofamiglia dei prodotti, comprensiva di:
+  + un codice identificativo univoco;
+  + la sottofamiglia del prodotto.
+
+- *anaart*, rappresentante i singoli prodotti, comprensiva di: 
+  + un codice identificativo univoco;
+  + la descrizione dell'articolo;
+  + la linea del prodotto (chiave esterna);
+  + il settore del prodotto (chiave esterna);
+  + la famiglia del prodotto (chiave esterna);
+  + la sottofamiglia del prodotto (chiave esterna).
+
+=== Design Pattern utilizzati
+
+=== Documentazione API
+La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
+delineando brevemente le operazioni disponibili e i dati accessibili. Una descrizione dettagliata della loro struttura 
+è disponibile nel documento "Manuale Sviluppatore v.1.0.0"; questo permette agli sviluppatori interessati di 
+comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
+manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
+
+==== Chiamate GET
+
+
 
 
 #pagebreak()
