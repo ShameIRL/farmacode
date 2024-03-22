@@ -298,6 +298,15 @@ Descriviamo più nel dettaglio questa composizione:
   + la famiglia del prodotto (chiave esterna);
   + la sottofamiglia del prodotto (chiave esterna).
 
+=== Design Pattern utilizzati
+
+=== Documentazione API
+La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
+delineando brevemente le operazioni disponibili e i dati accessibili. Una descrizione dettagliata della loro struttura 
+è disponibile nel documento "Manuale Sviluppatore v.1.0.0"; questo permette agli sviluppatori interessati di 
+comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
+manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
+
 
 #pagebreak()
 = Stato requisiti funzionali
