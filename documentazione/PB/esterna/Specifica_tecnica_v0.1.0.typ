@@ -308,7 +308,8 @@ comprendere appieno il software e di implementare nuove funzionalità in modo au
 manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
 
 ==== Chiamate GET
-
+- /login/:use: 
+Ritorna i dati di login di uno specifico utente.
 
 
 
