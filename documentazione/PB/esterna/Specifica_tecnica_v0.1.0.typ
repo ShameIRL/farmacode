@@ -309,7 +309,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
 ==== Chiamate GET
 
-- */login/:use :* \
+- */login/:use :* 
 Ritorna i dati di login di uno specifico utente.
 
 
