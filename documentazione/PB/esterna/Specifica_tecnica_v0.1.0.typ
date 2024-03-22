@@ -307,6 +307,11 @@ delineando brevemente le operazioni disponibili e i dati accessibili. Una descri
 comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
 manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
 
+==== Chiamate GET
+
+- */login/:use :* \
+Ritorna i dati di login di uno specifico utente.
+
 
 #pagebreak()
 = Stato requisiti funzionali
