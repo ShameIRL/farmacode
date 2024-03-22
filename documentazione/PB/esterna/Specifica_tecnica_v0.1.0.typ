@@ -298,53 +298,6 @@ Descriviamo più nel dettaglio questa composizione:
   + la famiglia del prodotto (chiave esterna);
   + la sottofamiglia del prodotto (chiave esterna).
 
-=== Design Pattern utilizzati
-
-=== Documentazione API
-La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
-delineando brevemente le operazioni disponibili e i dati accessibili. Una descrizione dettagliata della loro struttura 
-è disponibile nel documento "Manuale Sviluppatore v.1.0.0"; questo permette agli sviluppatori interessati di 
-comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
-manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
-
-==== Chiamate GET
-
-- */login/:use :* \
-Ritorna i dati di login di uno specifico utente
-
-- */users :* \
-Ritorna la lista completa dei clienti
-
-- */users/:id :* \
-Ritorna le informazioni di uno specifico cliente
-
-- */items :* \
-Ritorna la lista completa dei prodotti
-
-- */items/:id :* \
-Ritorna le informazioni di uno specifico prodotto
-
-- */categoriaProdotti :* \
-??????????????????????????????????????????????????????????????????????
-
-- */categoriaClienti :* \
-??????????????????????????????????????????????????????????????????????
-
-- */clienti/provincia :* \
-Ritorna i clienti di una determinata provincia
-
-- */userana/:use :*
-Ritorna i dati anagrafici di uno specifico utente
-
-
-==== Chiamate PUT
-
-- */userana/:use/email :*
-Aggiorna la mail di uno specifico utente
-
-- */userana/:use/password :*
-Aggiorna la password di uno specifico utente
-
 
 #pagebreak()
 = Stato requisiti funzionali
