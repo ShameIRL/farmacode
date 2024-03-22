@@ -164,12 +164,31 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 )
 #align(center)[Tabella 5: Analisi dinamica]
 
+#pagebreak()
+
 
 = Architettura
 
-== Architettura Front-end
+Il gruppo, durante la fase di progettazione, ha decisio di adottare un'architettura a microservizi.\ La scelta di questa precisa architettura è ricaduta per la natura ben separata dei ruoli delle varie componenti del progetto. Per questo motivo la comunicazione tra i vari servizi avviene tramite API Rest, sviluppate sia in Python con Flask che in JavaScript attraverso la libreria Express.
+Abbiamo quindi deciso di dividere nel seguente modo il sistema:
+- Fron-end, la parte di presentazione del sistema, che rappresenta l'interfaccia utente a cui l'utente può accedervi attraverso il browser. La parte client è stata sviluppata tramite HTML, CSS e JavaScript con la libreria React;
+// DA FARE MEGLIO
+- Back-end, la parte logica del progetto che sfruttando API Rest, creano interazione tra il Database e l'algoritmo in maniera che comunichino correttamente e riescano a recuperare tutti i dati necessari.
 
-=== Pagine generali
+== Architettura Front-end 
+// DA FARE MEGLIO
+L'architettura front-end del prodotto sfrutta alcuni dei design pattern più comuni della libreria React, rimodellati in base alle esigenze della specifica situazione e del progetto.\ Abbiamo cercato, per quanto possibile, di separare il più possibile i compiti tra le varie componenti, per semplificare e gestire al meglio i vari stati dell'applicazione.
+
+
+=== Diagramma delle classi
+In questa sezione vengono descritte le varie pagine attraverso la convenzione UML per la rappresenta delle classi.\
+Alcune di queste pagine avranno delle componenti usate all'interno di esse, per evitare ridondanza, la descrizione delle pagine e la descrizione delle componenti saranno separate, in questo modo il diagramma sarà più semplice da leggere evitando un eccessivo caos.\
+Allo scopo di rendere il tutto più chiaro possibile, a seguito di ongi diagramma ci sarà una breve spiegazione sulla funzionalità della pagina/componente.
+// ABBIAMO IMPLEMENTATO DEI TIPI NOSTRI?
+
+
+
+=== Pagine
 
 ==== Login
 #figure(
@@ -212,7 +231,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 ==== Header
 #figure(
   image("/imgs/diagramma_classi/Header.png", width: auto),
-  caption: [Filtri]
+  caption: [Header]
+)
+
+==== Results
+#figure(
+  image("/imgs/diagramma_classi/Results.png", width: auto),
+  caption: [Results]
 )
 
 
