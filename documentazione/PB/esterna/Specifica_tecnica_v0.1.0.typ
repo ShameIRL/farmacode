@@ -195,6 +195,27 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   caption: [Prodotti]
 )
 
+==== Profilo
+#figure(
+  image("/imgs/diagramma_classi/Profilo.png", width: auto),
+  caption: [Profilo]
+)
+
+=== Componenti
+
+==== Filtri
+#figure(
+  image("/imgs/diagramma_classi/Filtri.png", width: auto),
+  caption: [Filtri]
+)
+
+==== Header
+#figure(
+  image("/imgs/diagramma_classi/Header.png", width: auto),
+  caption: [Filtri]
+)
+
+
 == Architettura Back-end
 
 
