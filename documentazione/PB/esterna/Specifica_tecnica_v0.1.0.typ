@@ -315,15 +315,23 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
 - /users/:id : \ Ritorna le informazioni di uno specifico cliente.
 
-- /items : \ Ritorna la lista completa dei prodotti.
+- /items : \ Ritorna la lista completa dei prodotti con codice articolo e descrizione.
 
 - /items/:id : \ Ritorna le informazioni di uno specifico prodotto.
 
-- /categoriaProdotti : \ Ritorna ?
+- /prodotti : \  Ritorna la lista completa dei prodotti con tutte le informazioni.
 
-- /categoriaClienti : \ Ritorna ?
+- /prodotti/lineecommerciali : \ Ritorna la lista delle linee commerciali.
 
-- /clienti/provincia : \ Ritorna i clienti di una determinata provincia.
+- /prodotti/settoricommerciali : \ Ritorna la lista dei settori commerciali.
+
+- /prodotti/famigliecommerciali : \ Ritorna la lista delle famiglie commerciali.
+
+- /prodotti/sottofamigliecommerciali : \ Ritorna la lista delle sottofamiglie commerciali.
+
+- /clienti : \ Ritorna la lista completa dei clienti.
+
+- /clienti/province : \ Ritorna la lista delle province.
 
 - /userana/:use : \ Ritorna i dati anagrafici di uno specifico utente.
 
@@ -333,7 +341,6 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 - /userana/:use/email : \ Aggiorna la mail di uno specifico utente.
 
 - /userana/:use/password : \ Aggiorna la password di uno specifico utente.
-
 
 
 #pagebreak()
