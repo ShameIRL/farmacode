@@ -11,7 +11,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.2.0", "2024-03-22", p.carraro, "", "Struttura sezione 4",
+    "0.3.0", "2024-03-25", p.passarella, "", "Struttura sezione 1.1 e 2",
+    "0.2.0", "2024-03-22", p.carraro, p.passarella, "Struttura sezione 4",
     "0.1.0", "2024-03-02", p.favaron, p.carraro, "Struttura iniziale del documento",
   ),
 )
@@ -19,6 +20,7 @@
 = Introduzione
 
 == Scopo del documento
+Lo scopo del documento è quello di fornire all'utente le istruzioni per l'utilizzo, l'installazione e il corretto funzionamento dell'applicazione. In particolare sono presenti i requisiti necessari, una guida all'installazione in locale e le istruzioni all'uso comprese di screenshot guidati che illustrano le funzionalità dell'applicazione.
 
 == Scopo del prodotto
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda utilizzatrice del prodotto finale; suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali.\
@@ -56,12 +58,50 @@ https://farmacodeunipd.github.io/documentazione/PB/esterna/Glossario_v2.0.0.pdf.
 
 #pagebreak()
 = Requisiti
-// ha senso dividere così tanto per il nostro progetto?
+Nella presente sezione si indicano i requisiti minimi richiesti per eseguire l'applicazione, delineando le specifiche necessarie per configurare l'ambiente di sviluppo del progetto.\
+
 == Requisiti di sistema
+Per poter eseguire l'applicazione è necessaria l'installazione dei seguenti software.
+#table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Componente*], [*Versione*], [*Riferimenti per il download*],
+  [Docker],[26.0.0],[https://www.docker.com/products/docker-desktop/],
+  
+)
+#align(center)[Tabella 1: Requisiti di sistema]
 
 == Requisiti hardware
+In mancanza di specifiche hardware fornite da capitolato o progetto, i seguenti requisiti sono da considerarsi come sufficenti per un utilizzo scorrevole dell'applicazione.
+#table(
+  columns: (50%, 50%),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Componente*], [*Requisito*],
+  [Processore],[2,3 GHz dual-core],
+  [Memoria],[8GB DDR3],
+  [Connessione internet],[Stabile e capace di supportare le esigenze di traffico dell'applicazione],
+)
+#align(center)[Tabella 2: Requisiti hardware]
 
 == Requisiti software
+Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano i browser sui quali è stata testata l'app e le loro versioni.
+#table(
+  columns: (50%, 50%),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Browser*], [*Versione*],
+  [Google Chrome],[123.0],
+  [Microsoft Edge],[110.0],
+  [Firefox],[124.0],
+  [Opera],[108.0],
+  [Safari],[17.4],
+)
+#align(center)[Tabella 3: Requisiti software]
 
 #pagebreak()
 = Installazione
@@ -72,8 +112,8 @@ https://farmacodeunipd.github.io/documentazione/PB/esterna/Glossario_v2.0.0.pdf.
 
 #pagebreak()
 = Istruzioni all'uso
-Il sistema di raccomandazione permette l'interazione con l'utente tramite una semplice ed intuitiva interfaccia web. Nonostante la semplicita' per garantire facilita' di utilizzo e manutenzione si e' dicesi di dividere interfaccia in piu' pagine accessibili tramite un menu'.
-Di seguito ci sara' un' illustrazione delle varie pagine e spiegazione delle funzionalita' in esse, dell'interfaccia di conseguenza.
+Il sistema di raccomandazione permette l'interazione con l'utente tramite una semplice ed intuitiva interfaccia web. Nonostante la semplicita' per garantire facilità di utilizzo e manutenzione si è dicesi di dividere interfaccia in più pagine accessibili tramite un menù.
+Di seguito ci sarà un'illustrazione delle varie pagine e spiegazione delle funzionalità in esse e, di conseguenza, dell'interfaccia.
 
 == Login
 #figure(
@@ -82,10 +122,10 @@ Di seguito ci sara' un' illustrazione delle varie pagine e spiegazione delle fun
     Pagina login
   ]
 )
-All'avvio dell'interfaccia la prima pagina che si presenta e' quella di Login, ovvero la pagina che permette di riconoscere l'utilizzatore del servizio.
-In particola ogni utente dovra' inserire le proprio credenziali, username e password, per poi accedere con la pressione del bottone "Accedi".
+All'avvio dell'interfaccia la prima pagina che si presenta è quella di Login, ovvero la pagina che permette di riconoscere l'utilizzatore del servizio.
+In particola ogni utente dovrà inserire le proprio credenziali, username e password, per poi accedere con la pressione del bottone "Accedi".
 
-La presenza dell'occhio alla fine del box di inseriemento della password garantisce riservatezza nel momento di login.\ Di default la password risultera' censurata, con la pressione dell'occhio si potra' vedere la password in chiaro, una convenzione presente in molti siti con accesso controllato.
+La presenza dell'occhio alla fine del box di inseriemento della password garantisce riservatezza nel momento di login.\ Di default la password risulterà censurata, con la pressione dell'occhio si potrà vedere la password in chiaro, una convenzione presente in molti siti con accesso controllato.
 
 === Errore Login
 #figure(
@@ -95,7 +135,7 @@ La presenza dell'occhio alla fine del box di inseriemento della password garanti
   ]
 )
 
-In caso di errore nel login verra' mostrato un messaggio di errore in rosso, in quel caso basta correggere la o le credenziali sbagliate e riprovare l'accesso.
+In caso di errore nel login verrà mostrato un messaggio di errore in rosso, in quel caso basta correggere la o le credenziali sbagliate e riprovare l'accesso.
 
 == Ricerca
 #figure(
@@ -105,7 +145,7 @@ In caso di errore nel login verra' mostrato un messaggio di errore in rosso, in 
   ]
 )
 
-La prima pagina visualizzata dopo il login e la prima presente nel menu' e' la pagina di ricerca. \ In questa pagina avviene la ricerca della raccomandazione secondo i criteri richiesti, questi criteri andranno immessi nella barra di ricerca.\
+La prima pagina visualizzata dopo il login e la prima presente nel menù è la pagina di ricerca. \ In questa pagina avviene la ricerca della raccomandazione secondo i criteri richiesti, questi criteri andranno immessi nella barra di ricerca.\
 Di seguito un maggior dettaglio sulla selezione di questi criteri.
 
 === Selezione topic
@@ -115,7 +155,7 @@ Di seguito un maggior dettaglio sulla selezione di questi criteri.
     Selezione topic nella ricerca
   ]
 )
-Il primo criterio per la ricerca e' il topic, ovvero la scelta se eseguire la ricerca per clienti o per prodotti. \ Nel primo caso la ricerca fornira' un elenco di N prodotti raccomandati per il cliente scelto, nel secondo caso un elenco di N clienti a cui raccomandare il prodotto scelto.\
+Il primo criterio per la ricerca è il topic, ovvero la scelta se eseguire la ricerca per clienti o per prodotti. \ Nel primo caso la ricerca fornirà un elenco di N prodotti raccomandati per il cliente scelto, nel secondo caso un elenco di N clienti a cui raccomandare il prodotto scelto.\
 Di seguito maggior dettaglio sulla selezione di cliente o prodotto su cui fare la raccomandazione.
 
 === Selezione specifica
@@ -125,8 +165,8 @@ Di seguito maggior dettaglio sulla selezione di cliente o prodotto su cui fare l
     Selezione specifica nel Topic
   ]
 )
-Successiva alla selezione del topic sara' necessario selezionare l'elemento specifico su cui fare la raccomandazione: un cliente nel caso il topic fosse clienti e un prodotto nel caso di prodotti.\
-Una volta selezionata la box di selezione si aprira' una tendina in cui sara' possibile ricercare l'elemento oppure sara' possibile scorrere per trovare l'elmento da selezionare.
+Successiva alla selezione del topic sarà necessario selezionare l'elemento specifico su cui fare la raccomandazione: un cliente nel caso il topic fosse clienti e un prodotto nel caso di prodotti.\
+Una volta selezionata la box di selezione si aprirà una tendina in cui sarà possibile ricercare l'elemento oppure sarà possibile scorrere per trovare l'elmento da selezionare.
 Di seguito maggior dettaglio sull'ultima selezione, la selezione del numero N di elmenti da visualizzare nella raccomandazione.
 
 === Selezione N
@@ -137,7 +177,7 @@ Di seguito maggior dettaglio sull'ultima selezione, la selezione del numero N di
   ]
 )
 Come precedentemente anticipato l'ultima selezione riguarda il numero N di elementi da visualizzare nella raccomandazione.\
-In particolare e' possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da raccomandare.
+In particolare è possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da raccomandare.
 
 === Risultato ricerca
 #figure(
@@ -146,9 +186,9 @@ In particolare e' possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da 
     Risultato ricerca
   ]
 )
-Infine dopo la pressione del bottone Ricerca verra' visualizzata una tabella con gli elementi raccomandati.\
+Infine dopo la pressione del bottone Ricerca verrà visualizzata una tabella con gli elementi raccomandati.\
 Ogni elemento oltre all'ID e descrizione presenza una grado di raccomandazione a stelle, 5 stesse colorate rappresente il massimo grado di raccomandazione, 0 stelle colorate rappresenta il minimo.\
-E' possibile scorrere la tabella tramite rotela del mouse o frecce direzionali della tastira nel caso gli elementi non fossero tutti visibili.
+È possibile scorrere la tabella tramite rotela del mouse o frecce direzionali della tastira nel caso gli elementi non fossero tutti visibili.
 
 == Clienti
 #figure(
@@ -157,7 +197,7 @@ E' possibile scorrere la tabella tramite rotela del mouse o frecce direzionali d
     Pagina elenco clienti
   ]
 )
-La seconda pagina presente nel menu' e' la pagina Clienti. \ In questa pagina e' possibile visualizzare un elenco di tutti i clienti, essendo il numero elevato e' possibilile effettuare una ricerca rapida tramite, tramite l'apposita finestra in alto a destra.\ Inoltre, a seconda dell'utilizzatore e' possibile visualizzare con lunghezza variabile, 25 o 50 o 75 o 100, andando a selezionarla tramite l'apposita finestra in basso a destra. \
+La seconda pagina presente nel menù è la pagina Clienti. \ In questa pagina è possibile visualizzare un elenco di tutti i clienti, essendo il numero elevato è possibilile effettuare una ricerca rapida tramite, tramite l'apposita finestra in alto a destra.\ Inoltre, a seconda dell'utilizzatore è possibile visualizzare con lunghezza variabile, 25 o 50 o 75 o 100, andando a selezionarla tramite l'apposita finestra in basso a destra. \
 
 == Prodotti
 #figure(
@@ -166,7 +206,7 @@ La seconda pagina presente nel menu' e' la pagina Clienti. \ In questa pagina e'
     Pagina elenco prodotti
   ]
 )
-La terza pagina presente nel menu' e' la pagina Prodotti. Questa pagina e' completamente analoga alla precedente pagina Clienti, infatti offre la possibilita' di vedere la lista di prodotti presenti, effettuare una ricerca e visualizzare un diverso numero di elementi nella lista.
+La terza pagina presente nel menù è la pagina Prodotti. Questa pagina è completamente analoga alla precedente pagina Clienti, infatti offre la possibilità di vedere la lista di prodotti presenti, effettuare una ricerca e visualizzare un diverso numero di elementi nella lista.
 
 == Profilo
 #figure(
@@ -175,8 +215,8 @@ La terza pagina presente nel menu' e' la pagina Prodotti. Questa pagina e' compl
     Pagina profilo
   ]
 )
-La quarta e ultima pagina presente nel menu' e' la pagina Profilo.\
-Questa pagina presenta le informazioni dell'utente che sta utilizzando l'interfaccia web e offre la possibilita' di andare a modificare i dati email e password.\
+La quarta e ultima pagina presente nel menù è la pagina Profilo.\
+Questa pagina presenta le informazioni dell'utente che sta utilizzando l'interfaccia web e offre la possibilità di andare a modificare i dati email e password.\
 In seguito maggiori dettagli su queste due funzionali.
 
 === Modifica email
@@ -186,7 +226,7 @@ In seguito maggiori dettagli su queste due funzionali.
     Modifica email
   ]
 )
-Tramite la pressione del bottone azzurro con la matina si ha la possibilita' di andare a modificare il campo Email dell'utente, successivamente si puo' salvare l'informazione tramite il bottone verde con la scritta "Salva" oppure annullare l'operazione con il bottone rosso con la croce sopra.
+Tramite la pressione del bottone azzurro con la matina si ha la possibilità di andare a modificare il campo Email dell'utente, successivamente si può salvare l'informazione tramite il bottone verde con la scritta "Salva" oppure annullare l'operazione con il bottone rosso con la croce sopra.
 
 === Modifica password
 #figure(
@@ -195,7 +235,7 @@ Tramite la pressione del bottone azzurro con la matina si ha la possibilita' di 
     Modifica password
   ]
 )
-La modifica password avviene in maniera analoga alla modifica del campo Email, quindi il bottone azzurro con la matita da' la possibilita' di modificare il campo, il bottone verde salvarlo e quello rosso annullare l'operazione.
+La modifica password avviene in maniera analoga alla modifica del campo Email, quindi il bottone azzurro con la matita dà la possibilità di modificare il campo, il bottone verde salvarlo e quello rosso annullare l'operazione.
 
 == Logout
 #figure(
@@ -204,7 +244,7 @@ La modifica password avviene in maniera analoga alla modifica del campo Email, q
     Logout
   ]
 )
-Infine nel menu' e' presente un'icona di logout, alla sua pressione l'utente verra' disconnesso dall'applicazione e verra' riportato nella pagina iniziale di login.
+Infine nel menù è presente un'icona di logout, alla sua pressione l'utente verrà disconnesso dall'applicazione e verrà riportato nella pagina iniziale di login.
 
 #pagebreak()
 = Elenco delle immagini
