@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.5.0", "2024-03-18", p.passarella, "", "Stesura sprint 15",
+    "1.6.0", "2024-03-22", p.rosson, "", "Stesura sprint 16",
+    "1.5.0", "2024-03-18", p.passarella, p.rosson, "Stesura sprint 15",
     "1.4.0", "2024-03-11", p.favaron, p.passarella, "Stesura sprint 14",
     "1.3.2", "2024-03-06", p.favaron, p.carraro, "Correzione elenco immagini e tabelle",
     "1.3.1", "2024-03-06", p.favaron, p.carraro, "Correzione colori tabella consultivi",
@@ -2518,7 +2519,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    [0,86]
+    [1,00]
   )
 )
 
@@ -2545,7 +2546,7 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
   -- Aggiornare file "Piano di progetto";\
   -- Continuare a ragionare sull'utilizzo e l'implementazione di design pattern;\
   -- Continuazione integrazione test automatici;\
-  -- Revisione del file "Verbale interno del 2024/04/12";\
+  -- Revisione del file "Verbale interno del 2024/03/04";\
   -- Stesura del file "Verbale interno 11/03/2024";\
   -- Revisionare e verificare quanto prodotto durante lo sprint.\
 
@@ -2671,7 +2672,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    [0,89]
+    [0,97]
   )
 )
 
@@ -2682,7 +2683,157 @@ Il rischio preventivato non si è verificato, in quanto è stato possibile imple
 Lo sprint #15 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata impegnativa e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
+== PB - sprint.16
+- Periodo: 2024/03/19 - 2024/03/26
 
+- Issues: \
+  -- Continuazione documenti;\
+  -- Integrazione nuovo algoritmo;\
+  -- Deploy test.
+- Task:\
+  -- Integrazione nuovo algoritmo;\
+  -- Continuazione stesura del file "Specifica tecnica";\
+  -- Continuazione stesura del file "Manuale utente";\
+  -- Aggiornamento file "Piano di qualifica";\
+  -- Aggiornare file "Piano di progetto";\
+  -- Continuazione integrazione test automatici;\
+  -- Revisione del file "Verbale interno del 2024/03/11";\
+  -- Stesura del file "Verbale interno 18/03/2024";\
+  -- Deploy test;\
+  -- Revisionare e verificare quanto prodotto durante lo sprint.\
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#16.png", height: 230pt, width: auto),
+  caption: [sprint.16]
+  )
+)
+
+
+=== Pianificazione
+In questo sprint si è deciso di continuare la stesura dei nuovi documenti.\
+I documenti interessati sono: manuale utente e specifica tecnica.\
+Abbiamo pianificato, inoltre, di continuare l'implementazione dei test e l'integrazione del Wide&Deep.\
+Infine abbiamo deciso di fare un test di deploy del nostro prodotto sulla VM fornitaci dall'azienda.
+
+=== Rischi attesi
+Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
+- #link(<rtecnologici>)[RT1 - Incompatibilità tra diverse tecnologie o componenti software].
+Abbiamo preventivato questo rischio specifico a causa dell'integrazione del Wide&Deep e della preparazione al deploy del prodotto.
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [5], [], [1], [],
+  [Bomben F.], [], [], [5], [], [2], [1],
+  [Carraro A.], [], [], [5], [], [1], [],
+  [Favaron R.], [], [], [4], [], [1], [],
+  [Pandolfo M.], [], [], [5], [], [2], [],
+  [Passarella A.], [], [], [5], [], [2], [],
+  [Rosson L.], [3], [], [], [], [], [2],
+)
+])
+#align(center)[Tabella 78: preventivo orario sprint.16.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [0], [29], [0], [9], [3],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€0,00], [€435,00], [€0,00], [€135,00], [€75,00],
+  [Totale], [], [], [], [], [], [€735,00], 
+  [Bilancio], [], [], [], [], [], [*€3495,00*],
+)
+])
+#align(center)[Tabella 79: preventivo costi sprint.16.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#16.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.16]
+  )
+)
+
+- Spiegazione:
+La prospettiva per questo sprint è quella di integrare in modo definitivo il Wide&Deep, continuare con l'implementaIone dei test e continuare la stesura dei nuovi documenti.\
+Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
+
+=== Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [5], [], [1 #red("(+1)")], [],
+  [Bomben F.], [], [], [5 #red("(+1)")], [], [2], [1],
+  [Carraro A.], [], [], [5 #red("(+1)")], [], [1], [],
+  [Favaron R.], [], [], [4], [], [1], [],
+  [Pandolfo M.], [], [], [5], [], [2], [],
+  [Passarella A.], [], [], [5 #red("(+1)")], [], [2], [],
+  [Rosson L.], [3], [], [], [], [], [2],
+)
+])
+#align(center)[Tabella 80: consuntivo orario sprint.16.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [0], [32], [0], [10], [3],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€0,00], [#red("€480,00")], [€0,00], [#red("€150,00")], [€75,00],
+  [Totale], [], [], [], [], [], [#red("€795,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€3495,00")],
+)
+])
+#align(center)[Tabella 81: consuntivo costi sprint.16.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#16.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.16],
+  ),
+  
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    [0,99]
+  )
+)
+
+=== Rischi incontrati e mitigazioni
+In questo sprint sono sorte due difficoltà principali, legate strettamente al rischio preventivato. La prima riguarda il deploy in VM del prodotto, installare tutti iß servizi necessari ha infatti previsto più sforzi di quelli previsiti inizialmente. La seconda rigaurda l'implementazione e integrazione del nuovo algoritmo. Attenersi infatti al obiettivo prefissatoci in fase di desing ha richiesto del tempo in più a causa di problemi di compatibilità tra le varie librerie.
+
+=== Retrospettiva
+Lo sprint #16 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata impegnativa e sono state necesarie 3 ore totali in più spalmate su vari membri del gruppo.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 
 #pagebreak()
@@ -2733,6 +2884,9 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Immagine 43: sprint.15
 - Immagine 44: preventivi/sprint.15
 - Immagine 45: bilancio/sprint.15
+- Immagine 46: sprint.16
+- Immagine 47: preventivi/sprint.16
+- Immagine 48: bilancio/sprint.16
 
 #pagebreak()
 
@@ -2814,4 +2968,8 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Tabella 75: preventivo costo sprint.15
 - Tabella 76: consuntivo costo sprint.15
 - Tabella 77: consuntivo costo sprint.15
+- Tabella 78: preventivo orario sprint.16
+- Tabella 79: preventivo costo sprint.16
+- Tabella 80: consuntivo costo sprint.16
+- Tabella 81: consuntivo costo sprint.16
 

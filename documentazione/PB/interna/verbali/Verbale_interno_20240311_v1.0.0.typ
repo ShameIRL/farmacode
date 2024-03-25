@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-03-11", p.passarella, "", "Stesura del verbale",
+    "1.0.0", "2024-03-11", p.passarella, p.rosson, "Stesura del verbale",
   ),
 )
 
@@ -41,7 +41,8 @@ Sono state riscontrate delle difficoltà nell'implementazione del wide&deep, ed 
 È stato svolto un lavoro preliminare della modellazione del software e dell'algoritmo, inoltre si è parlato della gestione dei test.\
 Successivamente è stato presentato un repo per lo sviluppo dell'MVP con relativa spiegazione di come utilizzarlo al meglio tramite le github action.\
 Si è parlato anche dell'importanza di stabilire delle deadline più precise dato lo scarso tempo rimasto.\
-Infine, si è decisa la distribuzione dei ruoli per il prossimo sprint e di organizzare un colloquio con il professor Cardin per la modellazione. 
+Inoltre, a causa dei rallentamenti e dubbi per quanto riguarda l'attività di progettazione, è stata riconsiderata l'idea di tenere un colloquio con il #p.cardin nel breve periodo.
+Infine, si è decisa la distribuzione dei ruoli per il prossimo sprint. 
 #pagebreak()
 
 = Obiettivi fissati
