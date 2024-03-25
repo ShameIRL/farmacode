@@ -108,12 +108,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Librerie e framework*]),
-  [Pandas],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],[TD],
-  [Surprise],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],[TD],
-  [React.js],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],[TD],
-  [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[TD],
-  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito],[TD],
-  [NumPy],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],[TD],
+  [Pandas],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],[2.1.1],
+  [Surprise],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],[1.1.3],
+  [React.js],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],[18.2.0],
+  [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[10.5.1],
+  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito],[4.18.2],
+  [Flask],[],[],
+  [NumPy],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],[1.26.0],
   [Tailwind CSS],[Framework per css utilizzato per lo sviluppo di interfacce utente.],[3],
   )
   #align(center)[Tabella 2: Librerie e framework]
@@ -127,9 +128,9 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Strumenti e servizi*]),
-  [MySQL],[RDBMS per la creazione e gestione dei database in SQL.],[TD],
-  [Node.js],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],[TD],
-  [NPM],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],[TD],
+  [MySQL],[RDBMS per la creazione e gestione dei database in SQL.],[2.18.1],
+  [Node.js],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],[18.16.1],
+  [NPM],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],[9.5.1],
   [VS Code],[IDE di programmazione gratuito ricco estensioni esterne.],[TD],
   [Docker],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],[TD],
   [Git],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],[TD],
@@ -203,17 +204,27 @@ Allo scopo di rendere il tutto più chiaro possibile, a seguito di ongi diagramm
   caption: [Login]
 )
 
+La pagina Login è composta da tre diverse componenti, implementate sfruttando la suite PrimeReact.\
+E' composta da un _InputText_, usato per ricevere il dato username per effettuare il login, il componente _Password_ per l'immissione della password ed infine _Button_, utilizzato per inviare tutte le informazioni compilate nel form e effettuare concretamente il login per accedere alla pagina principale.
+
 ==== Ricerca
 #figure(
   image("/imgs/diagramma_classi/Ricerca.png", width: auto),
   caption: [Ricerca]
 )
 
+La pagina di ricerca è il core del progetto, in questa pagina si fanno le ricerche per le raccomandazioni in base ai criteri di scelta (prodotto per clienti o cliente per prodotti).\
+La componente _Filter_ è quella che va a impostare la query per il recupero, una volta impostata correttamente, dei risultati di raccomandazione del modello. Quindi in base a come viene impostati i vari criteri del filtro, cambia anche la query al database.\
+_Results_ invece si occupa di mostrare i dati recuperati, renderizzandoli a schermo all'interno di una tabella. La grandezza della tabella e direttamente correlata al numero di risultati che l'utente ha impostato in _Filters_.
+
 ==== Clienti
 #figure(
   image("/imgs/diagramma_classi/Clienti.png", width: auto),
   caption: [Clienti]
 )
+
+Clienti è una pagina consultiva, dove vengono visualizzati tutti i clienti memorizzati nel database.\
+E' divisa nella parte superiore da un insieme di filtri per cercare nello specifico un cliente per i diversi
 
 ==== Prodotti
 #figure(
@@ -380,8 +391,8 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [RDF 24], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'immagine, l'ID e il nome del prodotto.], [],
   [RDF 25], [L'utente che ha visualizzato i risultati della ricerca, può visualizzare i dettagli di un prodotto, cliccando sul bottone a finaco delle riga della ricerca.], [],
   [RDF 26], [L'utente se decide di visualizzare i dettagli di un prodotto, deve poter vedere l'immagine, l'ID, il nome, la liena commerciale, il settore commerciale, la marca e la provenienza del prodotto.], [],
-  [RDF 27], [L'utente, una volta autenticato, deve poter accedere alla funzione "Lista clienti" nella pagina principale del sitoe.], [],
-  [RDF 28], [L'utente una volta entrato nella sezione "Lista clienti", deve poter effettuare una ricerca e visualizzarne i risultati.], [],
+  [RDF 27], [L'utente, una volta autenticato, deve poter accedere alla funzione "Lista clienti" nella pagina principale del sito.], [Soddisfatto],
+  [RDF 28], [L'utente una volta entrato nella sezione "Lista clienti", deve poter effettuare una ricerca e visualizzarne i risultati.], [Soddisfatto],
   [RDF 29], [L'utente che ha scelto di effettuare una ricerca, deve compilare i campi Nome, Cognome e Provincia.], [],
   [RDF 30], [L'utente che effettutato una ricerca e ne visualizza i risultati, deve poter visualizzare l'ID, il nome, il cognome e la provincia del cliente], [],
   [RDF 31], [L'utente, una volta autenticato, deve poter accedere alla funzione "Statistiche mensili" nella pagina principale del sito.], [],
