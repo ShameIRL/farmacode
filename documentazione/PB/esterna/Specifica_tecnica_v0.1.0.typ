@@ -262,7 +262,7 @@ E' divisa nella parte superiore da un insieme di filtri per cercare nello specif
 == Architettura Back-end
 === Introduzione
 
-===  Schema base di dati
+===  Schema base di dati (AGGIUNGERE TABELLA FEEDBACK)
 
 In questa sezione, viene presentato lo schema di base di dati realizzato con MySQL, relativo all'architettura back-end del servizio descritto.
 Descriviamo più nel dettaglio questa composizione:
@@ -318,7 +318,7 @@ delineando brevemente le operazioni disponibili e i dati accessibili. Una descri
 comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
 manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
 
-==== Chiamate GET
+==== Chiamate GET (CONTROLLARE SE CI SONO NUOVE CHIAMATE)
 
 - /login/:use :  \ Ritorna i dati di login di uno specifico utente.
 
