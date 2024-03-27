@@ -565,6 +565,65 @@ Questa sezione del documento è dedicata al testing, parte fondamentale per la c
 - Test di sistema: prevede le verifica dell'interno sistema, andando a verificare che tutte le componenti funzionino correttamente tra di loro;
 - Test di accettazione: prevede la verifica del software con il committente. Devono essere quindi soddisfatti tutti i requisiti obbligatori, di vincolo, di qualità e di prestazione concordati e accettati con il proponente. Il superamento di questo test permette il rilascio del prodotto finale.
 
+/* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO */
+=== Test di unità
+INTRODUZIONE DA SCRIVERE
+
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (35mm, 85mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice Test*], [*Descrizione*], [*Stato test*],
+  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina Clienti], [],
+  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Login], [],
+  [TU], [Si verifica che il componente Form di login sia renderizzato correttamente nella pagina Login], [],
+  [TU], [Si verifica che la funzione validate() esegua correttamente la validazione dei campi di input nel form di Login], [],
+  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina "PaginaNonTrovata"], [],
+  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Prodotti], [],
+  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Profilo], [],
+  [TU], [Si verifica che il componente Results venga renderizzato correttamente per user], [],
+  [TU], [Si verifica che il componente Results venga renderizzato correttamente per item], [],
+  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina di Ricerca], [],
+  [TU], [Si verifica che la funzione topN_1UserNItem restituisca quanto atteso], [],
+)
+#align(center)[Tabella 11: Test di unità]
+
+== Test di integrazione 
+INTRODUZIONE DA SCRIVERE
+
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (35mm, 85mm, 35mm),
+   inset: (
+    x: 5pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*Codice Test*], [*Descrizione*], [*Stato test*],
+  [TI], [Si verifica che il login funzioni correttamente quando vengono inseriti dei dati di autenticazione corretti, reindirizzando alla pagina principale], [],
+  [TI], [Si verifica che la chiamata per verificare se il server è in esecuzione funzioni correttamente], [],
+  [TI], [Si verifica che il recupero dati necessari al login funzioni correttamente, restituendo un errore in caso l'utente non esista], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista degli utenti restituisca una lista di utenti], [],
+  [TI], [Si verifica che la chiamata per il recupero dei dati di un singolo utente funzioni correttamente, restituendo un errore se questo non esiste], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista degli articoli restituisca una lista di articoli], [],
+  [TI], [Si verifica che la chiamata per il recupero dei dati di un singolo articolo funzioni correttamente, restituendo un errore se questo non esiste], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista dei prodotti in dettaglio restituisca una lista di prodotti in dettaglio], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista delle linee commerciali restituisca una lista di linee commerciali], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista delle settori commerciali restituisca una lista di settori commerciali], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista delle famiglie commerciali restituisca una lista di famiglie commerciali], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista delle sottofamiglie commerciali restituisca una lista di sottofamiglie commerciali], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista dei clienti restituisca una lista di clienti], [],
+  [TI], [Si verifica che la chiamata per il recupero della lista delle provincie restituisca una lista di provincie], [],
+  [TI], [Si verifica che l'aggiornamento dell'email di un utente funzioni correttamente, restituendo un errore altrimenti], [],
+  [TI], [Si verifica che l'aggiornamento della password di un utente funzioni correttamente, restituendo un errore altrimenti], [],
+  [TI], [Si verifica che l'API risponda correttamente ad una ricerca utente e che la struttura dei dati nella risposta sia conforme alle aspettative], [],
+)
+#align(center)[Tabella 12: Test di integrazione]
+
 === Test di accettazione
 I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode in presenza del proponente. In quella occasione si è quindi mostrata l'efficienza e la completezza del prodotto, /* qua boh, nel senso si può specificare che era il POC? */in modo da poter avviare l'attività di validazione.
 
@@ -612,7 +671,7 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
     [TA19.1], [Verificare la corretta visualizzazione dei risultati], [ND],
   [TA20], [Verificare la corretta visualizzazione di "Errore di ricerca"], [ND],
 )
-#align(center)[Tabella 11: Test di accettazione]
+#align(center)[Tabella 13: Test di accettazione]
 
 ==== Tracciamento test di accettazione
 #align(center)[
@@ -660,7 +719,7 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
   [TA20], [UC16],
 )
 ]
-#align(center)[Tabella 12: Tracciamento test di accettazione]
+#align(center)[Tabella 14: Tracciamento test di accettazione]
 
 === Test e tracciamento di sistema
 I test di sistema hanno il compito di verificare la completezza del progetto, vengono quindi testati i requisiti precedentemente accordati e scritti nel documento Analisi dei Requisiti. Questo tipo di test è stato fatto dai componenti del gruppo nella maniera più metodica possibile.
@@ -675,26 +734,26 @@ Di seguito una tabella con il codice del test, la descrizione, il risultato e il
   ),
   align: left,
   [*Codice\ Test*], [*Descrizione*], [*Risultato Test*], [*Codice\ Requisito*],
-  [TS01], [Verificare la corretta visualizzazione della pagina principale], [Passato], [ROF 14,\ ROF 5],
-  [TS02], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [ND], [ROF 1s],
-  [TS03], [Verificare la corretta visualizzazione di eventuale dell'alert di manutenzione.], [ND], [RDF 2],
-  [TS04], [Verificare la corretta visualizzazione  della normativa cookie.], [ND], [RDF 3],
-  [TS05], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [ND], [RDF 4],
+  [TS01], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [ND], [ROF 1],
+  [TS02], [Verificare la corretta visualizzazione di eventuale dell'alert di manutenzione.], [ND], [RDF 2],
+  [TS03], [Verificare la corretta visualizzazione  della normativa cookie.], [ND], [RDF 3],
+  [TS04], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [ND], [RDF 4],
+  [TS05], [Verificare la corretta visualizzazione della pagina principale], [Passato], [ROF 5,\ ROF 14],
   [TS06], [Verificare la corretta visualizzazione e funzione della funzionalità di ricerca per la raccomandazione.], [Passato], [ROF 6,\ ROF 14,\ ROF 15,\ ROF 16,\ ROF 17],
-  [TS07], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [ND], [ROF 18],
-  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [ND], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
-  [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [ND], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
-  [TS10], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [ND], [RDF 9,\ RDF 25],
-  [TS11], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [ND], [RDF 10,],
-  [TS11.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 26,\ RDF 27,\ RDF 28],
-  [TS11.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 29,\ RDF 30,\ RDF 31],
-  [TS12], [Verificare la corretta visualizzazione della pagine dei dati personali.], [ND], [ROF 11],
-  [TS12.1], [Verificare che l'utente possa cambiare la sua email e password.], [ND], [ROF 12],
-  [TS13], [Verificare la possibilità di eseguire il Logout.], [ND], [ROF 13],
+  [TS07], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [ND], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
+  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [ND], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
+  [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [ND], [RDF 9,\ RDF 25],
+  [TS10], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [ND], [RDF 10],
+  [TS10.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 26,\ RDF 27,\ RDF 28],
+  [TS10.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 29,\ RDF 30,\ RDF 31],
+  [TS11], [Verificare la corretta visualizzazione della pagine dei dati personali.], [ND], [ROF 11],
+  [TS11.1], [Verificare che l'utente possa cambiare la sua email e password.], [ND], [ROF 12],
+  [TS12], [Verificare la possibilità di eseguire il Logout.], [ND], [ROF 13],
+  [TS13], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [ND], [ROF 18],
   [TS14], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [ND], [RDF 32],
   
 )
-#align(center)[Tabella 13: Test e tracciamento di sistema]
+#align(center)[Tabella 15: Test e tracciamento di sistema]
 
 #pagebreak()
 
@@ -716,7 +775,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [Mancanza di conoscenze delle tecnologie necessarie allo sviluppo da parte del gruppo], [RP1], [Implementazione di workshop da parte dei membri del gruppo più esperti e studio personale della tecnologia], 
 
 )
-#align(center)[Tabella 14: Valutazione tecnologica]
+#align(center)[Tabella 16: Valutazione tecnologica]
 
 == Valutazione organizzativa e personale
 #table(
@@ -734,7 +793,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [Difficoltà iniziali della gestione dei ruoli e dei carichi di lavoro.], [ROI2], [Aggiustamenti nei successivi sprint grazie all'esperienza acquisita dallo sprint precedente e alla comunicazione dei membri.],
   //lasciamo o è da infami? 
 )
-#align(center)[Tabella 15: Valutazione organizzativa e personale]
+#align(center)[Tabella 17: Valutazione organizzativa e personale]
 
 == Valutazione sui ruoli
 #table(
@@ -754,7 +813,7 @@ Le valutazioni vengono delineate sulle categorie presenti nel file [Piano di Pro
   [], [Progettista], [Interazione algoritmo, api, database e webapp.], [Studio individuale dei membri del gruppo e interpretazione capitolato d'appalto],
   */
 )
-#align(center)[Tabella 16: Valutazione sui ruoli]
+#align(center)[Tabella 18: Valutazione sui ruoli]
 
 #pagebreak()
 
@@ -800,7 +859,7 @@ Un intervallo ideale si aggira fra i 40 e 60.
   [Norme di progetto], [56],
 )
 ]
-#align(center)[Tabella 17: Indice di Gulpease dei documenti]
+#align(center)[Tabella 19: Indice di Gulpease dei documenti]
 
 #align(left,
 figure(
@@ -840,7 +899,7 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 [12763],[13059],[13010]
 )
 ]
-#align(center)[Tabella 18: EAC da sprint 1 a 12]
+#align(center)[Tabella 20: EAC da sprint 1 a 12]
 
 #align(left,
 figure(
@@ -884,7 +943,7 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 [7913],[7574],[6765],
 )
 ]
-#align(center)[Tabella 19: AC e ETC da sprint 1 a 12]
+#align(center)[Tabella 21: AC e ETC da sprint 1 a 12]
 
 #align(left,
 figure(
@@ -928,7 +987,7 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 [5152],[5538,4],[6182,4]
 )
 ]
-#align(center)[Tabella 20: EV e PV da sprint 1 a 12]
+#align(center)[Tabella 22: EV e PV da sprint 1 a 12]
 
 #align(left,
 figure(
@@ -961,7 +1020,7 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
   [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0]
 )
 ]
-#align(center)[Tabella 21: CV e SV da sprint 1 a 12]
+#align(center)[Tabella 23: CV e SV da sprint 1 a 12]
 
 #align(left,
 figure(
@@ -1000,14 +1059,16 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 - Tabella 8: Metriche processi primari
 - Tabella 9: Metriche processi di supporto
 - Tabella 10: Metriche processi organizzativi
-- Tabella 11: Test di accettazione
-- Tabella 12: Tracciamento test di accettazione
-- Tabella 13: Test e tracciamento di sistema
-- Tabella 14: Valutazione tecnologica
-- Tabella 15: Valutazione organizzativa e personale
-- Tabella 16: Valutazione sui ruoli
-- Tabella 17: Indice di Gulpease dei documenti
-- Tabella 18: EAC da sprint 1 a 12
-- Tabella 19: AC e ETC da sprint 1 a 12
-- Tabella 20: EV e PV da sprint 1 a 12
-- Tabella 21: CV e SV da sprint 1 a 12
+- Tabella 11: Test di unità
+- Tabella 12: Test di integrazione
+- Tabella 13: Test di accettazione
+- Tabella 14: Tracciamento test di accettazione
+- Tabella 15: Test e tracciamento di sistema
+- Tabella 16: Valutazione tecnologica
+- Tabella 17: Valutazione organizzativa e personale
+- Tabella 18: Valutazione sui ruoli
+- Tabella 19: Indice di Gulpease dei documenti
+- Tabella 20: EAC da sprint 1 a 12
+- Tabella 21: AC e ETC da sprint 1 a 12
+- Tabella 22: EV e PV da sprint 1 a 12
+- Tabella 23: CV e SV da sprint 1 a 12
