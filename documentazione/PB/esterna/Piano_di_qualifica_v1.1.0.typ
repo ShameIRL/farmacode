@@ -565,7 +565,7 @@ Questa sezione del documento è dedicata al testing, parte fondamentale per la c
 - Test di sistema: prevede le verifica dell'interno sistema, andando a verificare che tutte le componenti funzionino correttamente tra di loro;
 - Test di accettazione: prevede la verifica del software con il committente. Devono essere quindi soddisfatti tutti i requisiti obbligatori, di vincolo, di qualità e di prestazione concordati e accettati con il proponente. Il superamento di questo test permette il rilascio del prodotto finale.
 
-/* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO
+/* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO */
 === Test di unità
 INTRODUZIONE DA SCRIVERE
 
