@@ -743,7 +743,7 @@ Di seguito una tabella con il codice del test, la descrizione, il risultato e il
   [TS07], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [ND], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
   [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [ND], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
   [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [ND], [RDF 9,\ RDF 25],
-  [TS10], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [ND], [RDF 10,]
+  [TS10], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [ND], [RDF 10],
   [TS10.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 26,\ RDF 27,\ RDF 28],
   [TS10.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 29,\ RDF 30,\ RDF 31],
   [TS11], [Verificare la corretta visualizzazione della pagine dei dati personali.], [ND], [ROF 11],
