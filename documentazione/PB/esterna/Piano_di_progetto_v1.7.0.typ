@@ -2830,7 +2830,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
 )
 
 === Rischi incontrati e mitigazioni
-In questo sprint sono sorte due difficoltà principali, legate strettamente al rischio preventivato. La prima riguarda il deploy in VM del prodotto, installare tutti i servizi necessari ha infatti previsto più sforzi di quelli previsiti inizialmente. La seconda rigaurda l'implementazione e integrazione del nuovo algoritmo. Attenersi infatti al obiettivo prefissatoci in fase di desing ha richiesto del tempo in più a causa di problemi di compatibilità tra le varie librerie.
+In questo sprint sono sorte due difficoltà principali, legate strettamente al rischio preventivato. La prima riguarda il deploy in VM del prodotto, installare tutti i servizi necessari ha infatti previsto più sforzi di quelli previsiti inizialmente. La seconda riguarda l'implementazione e integrazione del nuovo algoritmo. Attenersi infatti al obiettivo prefissatoci in fase di desing ha richiesto del tempo in più a causa di problemi di compatibilità tra le varie librerie.
 
 === Retrospettiva
 Lo sprint #16 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata impegnativa e sono state necesarie 3 ore totali in più spalmate su vari membri del gruppo.\
@@ -2977,11 +2977,11 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
 )
 
 === Rischi incontrati e mitigazioni
-In questo sprint sono sorte due difficoltà principali, legate strettamente al rischio preventivato. La prima riguarda il deploy in VM del prodotto, installare tutti iß servizi necessari ha infatti previsto più sforzi di quelli previsiti inizialmente. La seconda rigaurda l'implementazione e integrazione del nuovo algoritmo. Attenersi infatti al obiettivo prefissatoci in fase di desing ha richiesto del tempo in più a causa di problemi di compatibilità tra le varie librerie.
+In questo sprint non sono sorte difficolta' importanti.
 
 === Retrospettiva
-Lo sprint #16 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata impegnativa e sono state necesarie 3 ore totali in più spalmate su vari membri del gruppo.\
-Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint.
+Lo sprint #17 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
+Il team, inoltre, si e' recato presso l'azienda proponente per una visita in giornata, durante le quale e' stato mostrato quanto svolto finora per l'MVP.
 
 #pagebreak()
 
