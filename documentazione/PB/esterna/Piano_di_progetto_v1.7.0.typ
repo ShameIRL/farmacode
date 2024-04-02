@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.7.0", "2024-03-28", p.carraro, "", "Stesura sprint 17",
+    "1.8.0", "2024-04-08", p.favaron, "", "Stesura sprint 18",
+    "1.7.0", "2024-04-01", p.carraro, p.favaron, "Stesura sprint 17",
     "1.6.0", "2024-03-22", p.rosson, p.carraro, "Stesura sprint 16",
     "1.5.0", "2024-03-18", p.passarella, p.rosson, "Stesura sprint 15",
     "1.4.0", "2024-03-11", p.favaron, p.passarella, "Stesura sprint 14",
@@ -2869,7 +2870,7 @@ In questo sprint si è deciso di concentrare le risorse nell'implementare i test
 Con l'avvicinarsi della data di revisione il gruppo sta iniziando a preparare la stessa, documenti e MVP.
 
 === Rischi attesi
-Durante questo sprint non sone previsti grandi rischi.
+Durante questo sprint non sono previsti grandi rischi.
 
 === Preventivo:
 #align(center, text(0.85em)[
@@ -2898,7 +2899,7 @@ Durante questo sprint non sone previsti grandi rischi.
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [3], [0], [32], [0], [10], [2],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€90,00], [€0,00], [€480,00], [€0,00], [€150,00], [€50,00],
@@ -2928,7 +2929,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Baggio M.], [], [], [5 #red("(+1)")], [], [2], [],
   [Bomben F.], [], [], [5 #red("(+1)")], [], [2], [],
   [Carraro A.], [3], [], [4 #red("(+1)")], [], [], [],
@@ -2947,7 +2948,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*7,
   align: center,
-  [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
   [Totale Ore], [3], [0], [37], [0], [10], [3],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
   [Costo], [€90,00], [€0,00], [#red("€555,00")], [€0,00], [€150,00], [€50,00],
@@ -2977,11 +2978,161 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
 )
 
 === Rischi incontrati e mitigazioni
-In questo sprint non sono sorte difficolta' importanti.
+In questo sprint non sono sorte difficoltà importanti.
 
 === Retrospettiva
 Lo sprint #17 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
-Il team, inoltre, si e' recato presso l'azienda proponente per una visita in giornata, durante le quale e' stato mostrato quanto svolto finora per l'MVP.
+Il team, inoltre, si è recato presso l'azienda proponente per una visita in giornata, durante le quale e' stato mostrato quanto svolto finora per l'MVP.
+
+
+== PB - sprint.18
+- Periodo: 2024/04/02 - 2024/04/08
+
+- Issues: \
+  -- Continuazione documenti;\
+  -- Integrazione sezione feedback;\
+  -- Integrazione test.
+- Task:\
+  -- Aggiornamento file "Piano di qualifica";\
+  -- Aggiornare file "Piano di progetto";\
+  -- Continuazione integrazione test automatici;\
+  -- Stesura del file "Verbale interno 2024/04/02";\
+  -- Revisione del file "Verbale interno del 2024/04/02";\
+  -- Integrazione sezione di feedback;\
+  -- Integrazione scelta algoritmo;\
+  -- Revisionare e verificare quanto prodotto durante lo sprint.\
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#17.png", height: 230pt, width: auto),
+  caption: [sprint.18]
+  )
+)
+
+
+=== Pianificazione
+In questo sprint si è deciso di concentrare le risorse nell'implementare i test automatici e la sezione dedicata al feedback della ricerca. Inoltre è in programma di sviluppare la selezione dell'algoritmo di ricerca.\
+Con l'avvicinarsi della data di revisione il gruppo sta iniziando a preparare la stessa, documenti e MVP.
+
+=== Rischi attesi
+Durante questo sprint non sono previsti grandi rischi.
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [6], [], [2], [],
+  [Bomben F.], [], [], [6], [], [1], [],
+  [Carraro A.], [], [], [5], [], [1], [],
+  [Favaron R.], [3], [], [3], [], [1], [],
+  [Pandolfo M.], [], [], [4], [], [2], [],
+  [Passarella A.], [], [], [5], [], [2], [],
+  [Rosson L.], [], [], [5], [], [1], [],
+)
+])
+#align(center)[Tabella 86: preventivo orario sprint.18.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [0], [34], [0], [10], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€0,00], [€510,00], [€0,00], [€150,00], [€0,00],
+  [Totale], [], [], [], [], [], [€750,00], 
+  [Bilancio], [], [], [], [], [], [*€1900,00*],
+)
+])
+#align(center)[Tabella 87: preventivo costi sprint.18.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#18.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.18]
+  )
+)
+
+- Spiegazione:
+La prospettiva per questo sprint è quella di continaure l'integrazione dei test automatici, l'implemetazione della sesione di feedback di ricerca e selezione dell'algoritmo.\
+Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle task assegnate.
+
+=== Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [6 #red("(+1)")], [], [2], [],
+  [Bomben F.], [], [], [6 #red("(+1)")], [], [1 #red("(+1)")], [],
+  [Carraro A.], [], [], [5 #red("(+1)")], [], [1 #red("(+1)")], [],
+  [Favaron R.], [3], [], [3], [], [1], [],
+  [Pandolfo M.], [], [], [4 #red("(+1)")], [], [2], [],
+  [Passarella A.], [], [], [5 #red("(+1)")], [], [2], [],
+  [Rosson L.], [], [], [5], [], [1 #red("(+1)")], [],
+)
+])
+#align(center)[Tabella 88: consuntivo orario sprint.18.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [0], [39], [0], [13], [3],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€90,00], [€0,00], [#red("€585,00")], [€0,00], [€195,00], [€0,00],
+  [Totale], [], [], [], [], [], [#red("€870,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€1780,00")],
+)
+])
+#align(center)[Tabella 89: consuntivo costi sprint.18.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#18.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.18],
+  ),
+  
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    []
+  )
+)
+
+=== Rischi incontrati e mitigazioni
+In questo sprint non sono sorte difficoltà importanti.
+
+=== Retrospettiva
+Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
+
+
+
 
 #pagebreak()
 
@@ -3037,6 +3188,9 @@ Il team, inoltre, si e' recato presso l'azienda proponente per una visita in gio
 - Immagine 49: sprint.17
 - Immagine 50: preventivi/sprint.17
 - Immagine 51: bilancio/sprint.17
+- Immagine 52: sprint.18
+- Immagine 53: preventivi/sprint.18
+- Immagine 54: bilancio/sprint.18
 
 #pagebreak()
 
@@ -3126,3 +3280,7 @@ Il team, inoltre, si e' recato presso l'azienda proponente per una visita in gio
 - Tabella 83: preventivo costo sprint.17
 - Tabella 84: consuntivo costo sprint.17
 - Tabella 85: consuntivo costo sprint.17
+- Tabella 86: preventivo orario sprint.18
+- Tabella 87: preventivo costo sprint.18
+- Tabella 88: consuntivo costo sprint.18
+- Tabella 89: consuntivo costo sprint.18
