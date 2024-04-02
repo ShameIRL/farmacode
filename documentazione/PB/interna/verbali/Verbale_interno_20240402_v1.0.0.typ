@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-03-27", p.carraro, p.favaron, "Stesura del verbale",
+    "1.0.0", "2024-04-02", p.favaron, "", "Stesura del verbale",
   ),
 )
 
@@ -33,16 +33,14 @@
 
 = Temi trattati
 - Analisi di quanto svolto nello sprint precedente;
-- Casi d'uso e algoritmo di raccomandazione;
-- Colloquio con Cardin e successivo PB;
-- Visita in azienda;
+- Incontro avvenuto in sede aziendale Ergon informatica;
 - Apertura nuovo sprint e turnazione ruoli.
 
 = Sintesi
-Il meeting è iniziato con una breve analisi e confronto su quanto svolto nello sprint precedente, seguito da alcuni chiarimenti su alcuni casi d'uso da implementare.\
+Il meeting è iniziato con una breve analisi e confronto su quanto svolto nello sprint precedente. Il focus principale è stato la buona riuscita dell'integrazione del nuovo algoritmo di raccomandazione basato sulle reti neurali con il resto dell'applicazione. \
 I programmatori hanno illustrato quanto svolto e hanno aggiornato il gruppo su come procedere nello sviluppo.\
-Il gruppo ha iniziato a pensare alla revisione PB, proponendo un colloquio con il professore Cardin per alcuni chiarimenti.\
-Successivamente il gruppo si è messo d'accordo per organizzare la visita in azienda il giorno seguente.\
+Si è parlato in breve della visita da parte di alcuni membri del team di progetto in sede di Ergon Informatica.
+Il gruppo ha iniziato a pensare alla revisione PB e l'obiettivo è quello di raggiungere, al ternine del nuovo sprint, un livello vicino alla conclusione di progetto.\
 Infine, si è decisa la distribuzione dei ruoli per il prossimo sprint, e la tabella di marcia per periodo a venire. 
 #pagebreak()
 
@@ -53,10 +51,14 @@ table(
   columns: (auto, auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Interessa*],[*Obiettivo*],[*Issue n°*],
-  [Piano di progetto],[Aggiornare documento], [\#191],
-  [Piano di qualifica],[Aggiornare documento], [\#192],
-  [Test e Automazioni],[Continuare l'integrazione dei test],[\#193],
-  [Sviluppo],[Integrazione algoritmo],[\#194],
+  [Piano di progetto],[Aggiornare documento], [\#200],
+  [Piano di qualifica],[Aggiornare documento], [\#201],
+  [Analisi dei requisiti],[Aggiornare documento], [\#202],
+  [Manuale utente],[Aggiornare documento], [\#199],
+  [Specifica tecnica],[Aggiornare documento], [\#1998],
+  [Test e Automazioni],[Continuare l'integrazione dei test],[\#197],
+  [Sviluppo feedback],[Sezione di feedback di ricerca],[\#203],
+  [Sviluppo scelta algoritmo],[Sezione di selezione dell'algoritmo di ricerca],[\#204],
 ),center)
 
 = Nuova distribuzione ruolisitca
@@ -65,10 +67,10 @@ table(
   columns: (auto, auto),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Ruolo*],[*Cognome e nome*],
-  [Responsabile],[#p.carraro],
+  [Responsabile],[#p.favaron],
   [Programmatore],[#p.baggio],
   [Programmatore],[#p.bomben],
-  [Progettista],[#p.favaron],
+  [Programmatore],[#p.carraro],
   [Verificatore],[#p.pandolfo],
   [Programmatore],[#p.passarella],
   [Programmatore],[#p.rosson],

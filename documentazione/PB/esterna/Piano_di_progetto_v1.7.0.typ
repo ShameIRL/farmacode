@@ -2995,6 +2995,9 @@ Il team, inoltre, si è recato presso l'azienda proponente per una visita in gio
 - Task:\
   -- Aggiornamento file "Piano di qualifica";\
   -- Aggiornare file "Piano di progetto";\
+  -- Aggiornare file "Analisi dei requisiti";\
+  -- Aggiornare file "Manuale utente";\
+  -- Aggiornare file "Specifica tecnica";\
   -- Continuazione integrazione test automatici;\
   -- Stesura del file "Verbale interno 2024/04/02";\
   -- Revisione del file "Verbale interno del 2024/04/02";\
