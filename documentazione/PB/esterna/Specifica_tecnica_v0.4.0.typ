@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
     "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
     "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
