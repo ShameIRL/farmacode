@@ -572,6 +572,9 @@ INTRODUZIONE DA SCRIVERE
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, 85mm, 35mm),
+  #table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (35mm, 85mm, 35mm),
    inset: (
     x: 5pt,
     y: 10pt,
@@ -579,18 +582,20 @@ INTRODUZIONE DA SCRIVERE
   align: center,
   [*Codice Test*], [*Descrizione*], [*Stato test*],
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina Clienti], [],
+  [TU], [Si verifica che il componente Filter sia renderizzato correttamente nella pagina di Ricerca], [],
+  [TU], [Si verifica che il pulsante di ricerca sia disabilitato quando non ci sono dati utente o articolo], [],
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Login], [],
   [TU], [Si verifica che il componente Form di login sia renderizzato correttamente nella pagina Login], [],
   [TU], [Si verifica che la funzione validate() esegua correttamente la validazione dei campi di input nel form di Login], [],
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina "PaginaNonTrovata"], [],
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Prodotti], [],
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Profilo], [],
+  [TU], [Si verifica che i dati utente vengano stampati correttamente nella pagina Profilo], [],
   [TU], [Si verifica che il componente Results venga renderizzato correttamente per user], [],
   [TU], [Si verifica che il componente Results venga renderizzato correttamente per item], [],
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina di Ricerca], [],
   [TU], [Si verifica che la funzione topN_1UserNItem restituisca quanto atteso], [],
 )
-#align(center)[Tabella 11: Test di unità]
 
 == Test di integrazione 
 INTRODUZIONE DA SCRIVERE
@@ -604,6 +609,9 @@ INTRODUZIONE DA SCRIVERE
   ),
   align: center,
   [*Codice Test*], [*Descrizione*], [*Stato test*],
+  [TI], [Si verifica che il pulsante di ricerca sia abilitato dopo la selezione dei filtri utente o articolo], [],
+  [TI], [Si verifica che il recupero dati per i filtri utente funzioni correttamente], [],
+  [TI], [Si verifica che il recupero dati per i filtri articolo funzioni correttamente], [],
   [TI], [Si verifica che il login funzioni correttamente quando vengono inseriti dei dati di autenticazione corretti, reindirizzando alla pagina principale], [],
   [TI], [Si verifica che la chiamata per verificare se il server è in esecuzione funzioni correttamente], [],
   [TI], [Si verifica che il recupero dati necessari al login funzioni correttamente, restituendo un errore in caso l'utente non esista], [],
