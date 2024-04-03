@@ -596,6 +596,7 @@ INTRODUZIONE DA SCRIVERE
   [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina di Ricerca], [],
   [TU], [Si verifica che la funzione topN_1UserNItem restituisca quanto atteso], [],
 )
+#align(center)[Tabella 11: Test di unità]
 
 == Test di integrazione 
 INTRODUZIONE DA SCRIVERE
