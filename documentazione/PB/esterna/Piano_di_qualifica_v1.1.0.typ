@@ -572,9 +572,6 @@ INTRODUZIONE DA SCRIVERE
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (35mm, 85mm, 35mm),
-  #table(
-      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (35mm, 85mm, 35mm),
    inset: (
     x: 5pt,
     y: 10pt,
