@@ -1,3 +1,20 @@
+//2.1.1) "Descrizione e scopo" serve??
+//2.1.3) Documentazione fornita: aggiungere nuovi documenti?
+//2.1.4) Strumenti: aggiungere nuovi strumenti usati per PB?
+//2.2.3) Ultima frase: "studi ... raccolti in un relativo documento" sarebbe?
+// utile inserire 2.2.4, progettazione PB o MVP??
+//2.2.4) -> bozza architettura, non mi sembra sensata la prima frase.
+//  2.4) Manutenzione da rivedere in toto per me. 2.4.3 e 2.4.4 non sviluppate.
+//3.1.7) paragafro struttura dei verbali va rivisto?
+//3.1.8) aggiunta documenti?
+//3.1.9) aggiunta documenti?
+//3.2.3) Repository, qui si parlo di uno, ma noi ne abbiamo molti, che si fa?
+// "aggiungere" 3.2.4) dove si parla di repository codice?
+//3.2.3.2) va li' sotto? Gestione configurazione -> repository -> procedura di redazione/revisione/manutenzione ???
+//3.3.4) andrebbe messa descrizione.
+//3.4.1) 3.5.1) 3.6.1) hanno senso??
+
+
 #import "/template/big_docs.typ": *
 
 #show: project.with(
@@ -9,6 +26,8 @@
 
   ),
   changelog: (
+    "1.4.0", "2024-04-04", p.carraro, "", "Aggiunte MVP: git actions e altro",
+    "1.3.0", "2024-04-03", p.carraro, "", "Ristrutturazione documento",
     "1.2.0", "2024-02-29", p.favaron, p.bomben, "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
     "1.1.1", "2024-02-28", p.favaron, p.bomben, "Migliorie a sezioni 3.1.5, 3.1.5.1, 4.1.3.2",
     "1.1.0", "2024-02-27", p.favaron, p.bomben, "Migliorie a sezioni 1.5, 2.1.2, 2.1.3, 2.1.4, 3.1.7",
@@ -39,12 +58,9 @@
 Questo documento è stato creato per identificare le #glossario("best practices") di progetto e per stabilire la #glossario("way of working"), ovvero una metodologia di lavoro chiara, nel corso dell'attività produttiva. L'obiettivo è garantire una gestione omogenea e coesa del lavoro. Per facilitare il monitoraggio del progresso e consentire un approccio incrementale è consentito apportare modifiche e aggiornamenti alle pratiche successivamente descritte, in modo di addattarsi a nuove attività e/o strumenti di lavoro, il tutto viene registrato nello storico delle modifiche del documento.
 
 == Scopo del prodotto
-Al giorno d'oggi l'ambito degli #glossario("e-commerce") si sta sempre più espandendo ed evolvendo. La presenza di negozi virtuali permette di accedere a molti dati legati agli acquisti, alle preferenze ed al comportamento degli utenti. Questi dati se analizzati propriamente permettono di prevedere preferenze e comportamenti futuri degli utenti, dando spazio ad operazioni di marketing mirate.
-
+Al giorno d'oggi l'ambito degli #glossario("e-commerce") si sta sempre più espandendo ed evolvendo. La presenza di negozi virtuali permette di accedere a molti dati legati agli acquisti, alle preferenze ed al comportamento degli utenti. Questi dati se analizzati propriamente permettono di prevedere preferenze e comportamenti futuri degli utenti, dando spazio ad operazioni di marketing mirate.\
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda, utilizzatrice del prodotto finale, suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali, cercando i migliori clienti target a cui indirizzare determinati prodotti.\
-
 L'appicazione è sviluppata sotto forma di #glossario("webapp") per la sua comodità, favorendo così l'accesso e la fruizioneda diversi dispositivi, sistemi o browser.\
-
 Dall'interfaccia utente del sistema software sarà possibile selezionare uno specifico cliente e visualizzare i prodotti da lui acquistati e quelli che il sistema ha individuato come raccomandati. Inoltre selezionato un articolo o un insieme di articoli il sistema suggerisce a quali clienti proporli, selezionandoli in base a quanto probabile siano interessati per i prodotti analizzati. I vari prodotti possono essere filtrati per categoria così da facilitare ricerche e restringere il campo di soluzione.\
 Ogni risultato restituito dal sistema di raccomandazione è classificabile tramite un feedback così da poter eventualmente correggere il tiro dell'#glossario("algoritmo") che ha fornito l'esito della suggerimento.\
 L'utente amministratore ha la possibilità di creare ulteriori account per eventuali operatori che necessitano di utilizzare l'applicativo.\
@@ -66,14 +82,14 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 
 === Riferimenti informativi
-
+*Documentazione delle principali tecnologie utilizzate*
 - Documentazione GitHub\
     https://docs.github.com/en;
 
 - Documentazione Typst\
     https://typst.app/docs/;
 
-==== Slide corso di ingegneria del software
+*Slide corso di ingegneria del software*
 - T2 - Processi di ciclo di vita\
     https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf;
 
@@ -95,7 +111,7 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 - P2 - Diagrammi dei casi d'uso\
     https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 
-==== Slide corso Metodi e Tecnologie per lo Sviluppo Software
+*Slide corso Metodi e Tecnologie per lo Sviluppo Software*\
 Le seguenti dispense sono relative all'anno accademico 2022/2023.
 - 2 - Issue Tracking System\
     https://stem.elearning.unipd.it/pluginfile.php/478029/mod_resource/content/0/2-IssueTrackingSystem_22_23_libre.pdf;
@@ -119,11 +135,8 @@ Le seguenti dispense sono relative all'anno accademico 2022/2023.
 == Fornitura
 
 === Descrizione e Scopo /** descrizione di questa sezione */
-
-In questa sezione sono elencate tutte le norme che il gruppo è tenuto ad osservare e rispettare per garantire il mantenimento di un rapporto utile e il più trasparente possibile con il proponente e i committenti per l'intera durata del progetto.
-
-Il processo di fornitura definisce l'insieme di attività, compiti e risorse necessari al fornitore per portare a termine con successo il progetto. Il suo obiettivo principale è tracciare e descrivere le attività svolte dai membri del team di sviluppo. Questo tracciamento consente di valutare il lavoro completato, quantificare ciò che ancora deve essere realizzato e confrontare gli avanzamenti con le richieste del proponente, fornendo così una "istantanea" costante dello stato dei lavori e del bilancio di progetto.
-
+In questa sezione sono elencate tutte le norme che il gruppo è tenuto ad osservare e rispettare per garantire il mantenimento di un rapporto utile e il più trasparente possibile con il proponente e i committenti per l'intera durata del progetto.\
+Il processo di fornitura definisce l'insieme di attività, compiti e risorse necessari al fornitore per portare a termine con successo il progetto. Il suo obiettivo principale è tracciare e descrivere le attività svolte dai membri del team di sviluppo. Questo tracciamento consente di valutare il lavoro completato, quantificare ciò che ancora deve essere realizzato e confrontare gli avanzamenti con le richieste del proponente, fornendo così una "istantanea" costante dello stato dei lavori e del bilancio di progetto.\
 Durante questa fase, il gruppo è tenuto a stabilire i contatti con il proponente e a definire i requisiti per il #glossario("MVP") (Minimum Viable Product) da concordare con quest'ultimo, basandosi su tempistiche, costi e importanza (intesa come incidenza sulla qualità del prodotto).
 
 === Rapporti con il proponente
@@ -185,8 +198,10 @@ Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura
 == Sviluppo
 
 === Descrizione e Scopo/** descrizione di questa sezione */
-In questa sezione del documento, vengono definite le linee guida e le norme essenziali atte a dirigere le attività di sviluppo in modo accurato e uniforme. L'obiettivo principale è garantire una coerenza completa nei metodi utilizzati, mirando al contempo a promuovere il raggiungimento di una qualità superiore nel prodotto finale. Questa sezione svolge un ruolo cruciale nel plasmare il processo di sviluppo, fornendo una struttura chiara e definita per le operazioni, che permette di mantenere standard solidi in tutte le fasi del ciclo di vita del progetto. La sua importanza sta nel contribuire alla creazione di un ambiente di lavoro orientato al raggiungimento di un risultato finale che soddisfi le aspettative e rispetti gli standard predefiniti.
-
+In questa sezione del documento, vengono definite le linee guida e le norme essenziali atte a dirigere le attività di sviluppo in modo accurato e uniforme.\
+L'obiettivo principale è garantire una coerenza completa nei metodi utilizzati, mirando al contempo a promuovere il raggiungimento di una qualità superiore nel prodotto finale.\
+Questa sezione svolge un ruolo cruciale nel plasmare il processo di sviluppo, fornendo una struttura chiara e definita per le operazioni, che permette di mantenere standard solidi in tutte le fasi del ciclo di vita del progetto.\
+La sua importanza sta nel contribuire alla creazione di un ambiente di lavoro orientato al raggiungimento di un risultato finale che soddisfi le aspettative e rispetti gli standard predefiniti.\
 Il processo di sviluppo di un prodotto software è suddivisibile come segue:
 - Analisi dei requisiti;
 - Design architetturale;
@@ -196,16 +211,13 @@ Il processo di sviluppo di un prodotto software è suddivisibile come segue:
 
 === Analisi dei requisiti /** descrizione analisi requisiti di sistema e di software */
 
-Il processo di analisi dei requisiti si colloca come prima fase dello sviluppo software, un momento cruciale in cui è imperativo delineare con precisione e robustezza gli scenari dei casi d'uso e le relative necessità o requisiti del sistema. Questa fase è di fondamentale importanza, perché implica la comprensione approfondita delle richieste degli utenti e degli #glossario("stakeholder"), offrendo una base solida per il progresso del ciclo di sviluppo.
-
-Nel corso dell'analisi dei requisiti, il focus è posto sull'identificazione, la documentazione e la comprensione esaustiva delle funzionalità necessarie che il sistema dovrà incorporare.
-
+Il processo di analisi dei requisiti si colloca come prima fase dello sviluppo software, un momento cruciale in cui è imperativo delineare con precisione e robustezza gli scenari dei casi d'uso e le relative necessità o requisiti del sistema. Questa fase è di fondamentale importanza, perché implica la comprensione approfondita delle richieste degli utenti e degli #glossario("stakeholder"), offrendo una base solida per il progresso del ciclo di sviluppo.\
+Nel corso dell'analisi dei requisiti, il focus è posto sull'identificazione, la documentazione e la comprensione esaustiva delle funzionalità necessarie che il sistema dovrà incorporare.\
 Inoltre, durante l'analisi dei requisiti, è essenziale stabilire una comunicazione efficace con il proponente, al fine di garantire che tutte le prospettive e le esigenze rilevanti siano adeguatamente considerate.
 
-==== Casi d'uso <useCase>
+*Casi d'uso <useCase>*
 
-I #glossario("Casi d'uso") rappresentano azioni o sequenze di azioni collocabili in specifici scenari, caratterizzate da una richiesta e da una risposta. La loro definizione e realizzazione deve seguire gli standard imposti dal linguaggio UML, ed alcune regole interne al progetto.
-
+I #glossario("Casi d'uso") rappresentano azioni o sequenze di azioni collocabili in specifici scenari, caratterizzate da una richiesta e da una risposta. La loro definizione e realizzazione deve seguire gli standard imposti dal linguaggio UML, ed alcune regole interne al progetto.\
 Ogni caso d'uso deve essere così composto:
 - identificazione e nomenclatura:
     il formato concordato è il seguente:
@@ -219,7 +231,7 @@ Ogni caso d'uso deve essere così composto:
 - estensioni (se presenti): in questa sezione vanno elencate eventuali estensioni, nel caso ci possano essere degli scenari alternativi;
 - generalizzazioni (se presenti): in questa sezione vanno specificati ed elencati i possibili sotto casi d'uso, e la presenza o meno di una generalizzazione tra gli attori coinvolti.
 
-===== Linee guida interne
+*Linee guida interne*
 - *Attore:*
     #figure(
     image("/imgs/Uml/attore.png", width: 8%),
@@ -282,16 +294,16 @@ Ogni caso d'uso deve essere così composto:
         + Sotto-UC:
             Se si sceglie di specificare meglio una funzionalità non tramite generalizzazioni ma tramite Sotto-UC, la funzionalità deve rimanere invariata nei Sotto-UC (Ad esempio: "Visualizzazione oggetto" scomposto in: "Visualizzazione nome oggetto", ...). Utilizzare i sotto-UC coincide con l'AND logico;
 
-        + Generalizzazione attori:
-            #figure(
-            image("/imgs/Uml/genAttori.png", width: 5%),
-            caption: [
-                Generalizzazione attori
-            ],
-            )
-            La generalizzazione tra attori serve per evidenziare ed identificare le funzionalità, ovvero i casi d'uso, disponibili per l'attore "A", che sono anche utilizzabili dall'attore "B" (non vale il viceversa).
+    + Generalizzazione attori:
+        #figure(
+        image("/imgs/Uml/genAttori.png", width: 5%),
+        caption: [
+            Generalizzazione attori
+        ],
+        )
+        La generalizzazione tra attori serve per evidenziare ed identificare le funzionalità, ovvero i casi d'uso, disponibili per l'attore "A", che sono anche utilizzabili dall'attore "B" (non vale il viceversa).
 
-==== Requisiti
+*Requisiti*\
 I requisiti devono possedere un identificativo, composto come segue:
 #align("R[Importanza][Tipologia] X", center)
 Dove:
@@ -340,12 +352,13 @@ Dove:
     I requisiti di sicurezza delineano le misure di sicurezza e i comportamenti attesi per proteggere il sistema da minacce esterne o interne.
 
 === Progettazine
-L'attività di progettazione segue ed utilizza la fase di analisi dei requisiti per definire ancor più struttura, vincoli e specifiche tecniche del prodotto software in oggetto. La fase di progettazione mira inoltre a facilitare definizione, suddivisione e quindi pianificazione delle attività di codifica del prodotto, beneficiando, se eseguita in modo corretto e vantaggioso, il ciclo di vita del software.
-La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti, analizzati nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto. Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
+L'attività di progettazione segue ed utilizza la fase di analisi dei requisiti per definire ancor più struttura, vincoli e specifiche tecniche del prodotto software in oggetto.\
+La fase di progettazione mira inoltre a facilitare definizione, suddivisione e quindi pianificazione delle attività di codifica del prodotto, beneficiando, se eseguita in modo corretto e vantaggioso, il ciclo di vita del software.\
+La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti, analizzati nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto.\ 
+Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
 
-==== RTB
-===== Bozza di Architettura:
-    
+=== Progettazioen PoC
+*Bozza di Architettura*\
 Le scelte concordate per la realizzazione del PoC sono le seguenti:
 il prodotto è suddivisibile in 5 Layer principali:
 
@@ -354,29 +367,27 @@ il prodotto è suddivisibile in 5 Layer principali:
 - Livello di Logica: è formato dalle #glossario("API") che permetteranno la comunicazione tra Webapp ed algoritmo, e dalla gestione di quest'utlime tramite script PHP;
 - Livello di Presentazione: è composto dalla Webapp, che permetterà di utilizzare il prodotto al utente finale.
 
-===== Algoritmo di raccomandazione:
+*Algoritmo di raccomandazione*\
 L'approccio concordato con il proponente, per quanto riguarda l'algoritmo di raccomandazione, prevede l'adozione di una strategia singolare basata su ratings espliciti, lasciando la possibilità di esplorare un approccio misto durante lo sviluppo della versione di MVP del prodotto.\ Confrontandoci con il proponente si è deciso di utilizzare la libreria #glossario("Surprise") di python, la quale contiene e permette di usare vari algoritmi di predizioni, moduli di predizione e vari modelli di allenamento. Al seguito di vari test di performance si è deciso di utilizzare come algoritmo l'algoritmo di predizione #glossario("SVD") (Singular Value Decomposition), il quale non richiede nessun modulo di predizione.\ Per quanto riguarda il modello di allenamento, si è invece scelto di utilizzare il KFold, un semplice iteratore che si basa sulla cross-validation.\ I dati forniti erano grezzi per questo, prima di farli elaborare dallo script, si è dovuto strutturarli nel seguente modo sensato: abbiamo creato un file .csv contenente solo tuple di tipo "Utente;Oggetto;Rating", dove il rating è il prodotto della manipolazione del numero di volte le quali un oggetto è stato comprato da un utente. Per non penalizzare troppo oggetti comprati meno volte o agevolare troppo pochi prodotti acquistati un numero considerevole di volte, abbiamo trattato il valore di rating come argomento di un logaritmo.
 
-===== Tecnologie scelte:
+*Tecnologie scelte*\
 Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
-- *Configurazione:*
+- Configurazione:
     + #glossario("Docker"), per la gestione della configurazione;
-- *Livello Dati:*
+- Livello Dati:
     + Mysql per il datatbase;
-- *Livello Elaborazione:*
+- Livello Elaborazione:
     + Python, come linguaggio per il sistema di raccomandazioni;
-    + Come librerie: #glossario("numpy"), surprise e #glossario("pandas"). 
-- *Livello di Logica:*
+    + #glossario("Numpy"), surprise e #glossario("pandas"), come librerie. 
+- Livello di Logica:
     + #glossario("PHP"). 
-- *Livello di Presentazione:*
+- Livello di Presentazione:
     + #glossario("React").
 // vanno elencate le tecnologie scelte
-===== Programmazione e verifica del software /** descrizione processo di coding e test software */
-In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.
-
+*Programmazione e verifica del software*\ /** descrizione processo di coding e test software */
+In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.\
 - Linguaggi e ambiente:\
     Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a seconda di esigenze e vincoli, imposti sia dal capitolato che dal proponente. Se ne riporta qui sotto un elenco per una più facile consultazione:
-
     + Python, per l'agortimo di raccomandazione, e uso di sue svariate librerie come surprise, panda e numpy;
     + Mysql per la realizzazione del database relazionale;
     + Php per il backend della webapp;
@@ -391,7 +402,7 @@ In questa sezione sono raccolte tutte le norme e regole che i programmatori in c
         Si è deciso di appoggiarsi a ruff, un sistema automatico di formattazione e analisi statica del codice. Esso è integrato nella repository tramite una GitHub action.
 
 - Lunghezza e complessità:\
-    Le funzioni e i metodi integrati nel codice del prodotto devono aderire rigorosamente agli standard di qualità stabiliti nel contesto del progetto. La filosofia che ogni membro del team si impegna ad adottare si concentra sull'incoraggiare il riuso del codice, sulla facilità del suo mantenimento e sull'ottimizzazione delle prestazioni.
+    Le funzioni e i metodi integrati nel codice del prodotto devono aderire rigorosamente agli standard di qualità stabiliti nel contesto del progetto. La filosofia che ogni membro del team si impegna ad adottare si concentra sull'incoraggiare il riuso del codice, sulla facilità del suo mantenimento e sull'ottimizzazione delle prestazioni.\
     Segue un elenco dei principali principi guida:
 
     + Riuso del Codice: Ogni componente del gruppo è incoraggiato a sviluppare funzioni e metodi modulari che possano essere riutilizzati in diverse parti del progetto, sfavorendo la duplicazione del codice, e facilitando la manutenzione e la gestione delle funzionalità comuni.
@@ -402,13 +413,14 @@ In questa sezione sono raccolte tutte le norme e regole che i programmatori in c
 
     + Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
 
-===== Integrazione /** descrizione processo di integrazione di sistema e software */
-La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. Il team si impegna fin da subito nell'integrare le varie componenti del prodotto, in modo solido e al contempo elastico, in modo che quanto esplorato durante la produzione del PoC possa essere utile una volta inziati i lavori sul prodotto di MVP. 
+*Integrazione*\ /** descrizione processo di integrazione di sistema e software */
+La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. Il team si impegna fin da subito nell'integrare le varie componenti del prodotto, in modo solido e al contempo elastico, in modo che quanto esplorato durante la produzione del PoC possa essere utile una volta inziati i lavori sul prodotto di MVP.
+
 
 == Gestione operativa
-=== Descrizione e Scopo /** descrizione di questa sezione */
-Questa sezione fornirà dettagli sull'installazione del software come i requisiti di sistema e le procedure necessarie per eseguire correttamente il prodotto. Inoltre illustrerà una guida all'utilizzo, esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.
 
+=== Descrizione e Scopo /** descrizione di questa sezione */
+Questa sezione fornirà dettagli sull'installazione del software come i requisiti di sistema e le procedure necessarie per eseguire correttamente il prodotto. Inoltre illustrerà una guida all'utilizzo, esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.\
 Per quanto riguarda il PoC si rimanda al relativo README.md disponibile nel repository.
 
 === Utilizzo operativo /** descrizione di installazione, erogazione e utilizzo del prodotto */
@@ -439,7 +451,7 @@ Durante le successive implementazioni del software di progetto verranno descritt
 La documentazione software è l'insieme di informazioni, raccolte testualmente, volte allo scopo di spiegare a quali funzionalità assolve un software, come è strutturato, implementato e come lo si utilizza. Nel contesto del team di sviluppo, la gestione efficace dei processi e delle attività è essenziale per agevolare il lavoro dei membri del team. La tracciabilità e la documentazione dettagliata di ogni fase del progetto sono fondamentali per semplificare le operazioni quotidiane e per facilitare la manutenzione del software nel tempo. Questa pratica non solo contribuisce a garantire una maggiore coerenza e coesione all'interno del team, ma anche a migliorare complessivamente la qualità del risultato finale.\
 È bene quindi che vengano definite delle regole chiare e concise utili per la stesura di un documento, da seguire durante tutto il ciclo di vita del progetto allo scopo di garantire maggiore comprensione. 
 
-=== Documentation as Code
+=== Strategia "Documentation as Code"
 Durate l'intero svolgimento di progetto abbiamo adottato la strategia ``` Documentation as Code``` che cosnsiste nel gestire la documentazione dell'intero progetto come se fosse il codice sorgente. Questa metodologia di lavoro ha i seguenti aspetti chiave:
 - Versionamento;
 - Collaborazione;
@@ -497,7 +509,7 @@ Il ciclo di vista di un documento segue i seguenti stati:
     - Elenchi puntati: Gli elenchi puntati vengono creati tramite la tabulazione rispetto alla sezione presente, seguita dal trattino corto "-" o da un "+", spaziati dal nome dell'elemento (rispettivamente rapresentanti un elenco puntato, o un elenco numerato). La definizione dell'elemento segue il nome e separata da i due punti e uno spazio ": ". \ La definizione termina con un punto e virgola ";" così da separare i vari elementi, fatta eccezione per l'ultimo, la cui definizione termina con un punto ".".\ L'uso di quale tipologia di elenco utilizzare (puntato o numerato) è lasciato a propria discrezione.
 /** da ampliare in caso di aggiunte */
 
-=== Struttura <docStructure>
+=== Struttura documenti <docStructure>
 I documenti ufficiali hanno una struttura precisa e comune che deve essere rigorosamente rispettata per i motivi citati nella descrizione.
 
     - Prima pagina, sempre composta dal template esclusivo del team, caratterizzata da:
@@ -522,7 +534,7 @@ I documenti ufficiali hanno una struttura precisa e comune che deve essere rigor
         - Logo e Nome del gruppo (sulla sinistra);
         - Numero di pagina (sulla destra) nel seguente formato: pagina [n] / [numero di pagine totali].
 
-==== Verbali
+*Struttura dei Verbali*\
 I verbali differiscono in quanto a struttura rispetto ai documenti di progetto. La pagina iniziale, il registro modifiche, l'indice e pié pagina sono sempre presenti anche in questi documenti.\ 
 Vanno rispettate le seguenti sezioni:
 - *Verbali esterni*:
@@ -545,7 +557,7 @@ Vanno rispettate le seguenti sezioni:
     - Obiettivi fissata, tabella che descrive e traccia, attraverso il numero di issue, gli obiettivi prefissati durante il meeting.
     Inoltre i verbali interni, relativi all'inizio di un nuovo sprint, dovranno possedere una sezione "Nuova distribuzione ruolistica" contenente una tabella (Ruolo, Nome e cognome) riportante i ruoli per il prossimo periodo.
 
-=== Caratterizzazione
+=== Caratterizzazione dei documenti
     - Formali: Sono i documenti che andranno a formare la documentazione software del prodotto. In quanto tali sono sottoposti a versionamento, a processi di verifica e approvazione. Essi comprendono documenti interni, utili quindi ai membri del team di sviluppo, ed esterni, destinati a proponente e committente. 
  
       Complessivamente ne fanno parte:
@@ -568,7 +580,7 @@ Vanno rispettate le seguenti sezioni:
 === Contenuti
 In questa sezione vengono elencati i contenuti dei vari file di progetto.\ Verrà in seguito descritta la parte di introduzione, comune fra i vari documenti, e successivamente una descrione più accurata per ogni documento.
 
-==== Introduzione
+*Introduzione*\
 Ogni documento ha come prima sezione quella di introduzione, tale sezione serve per introdurre il documento al lettore e sarà composta dalle seguenti sotto sezioni:
     - *Scopo del documento*;
     - *Scopo del prodotto*: questa parte spiega lo scopo del nostro prodotto software;
@@ -576,21 +588,21 @@ Ogni documento ha come prima sezione quella di introduzione, tale sezione serve 
     - *Maturità e miglioramti*;
     - *Riferimenti*.
 
-==== Analisi dei Requisiti <analisiDeiRequisiti>
+*Analisi dei Requisiti*<analisiDeiRequisiti>\
 Il documento ``` Analisi dei Requisiti``` va strutturato nel seguente modo:
     - *Descrizione*: sezione che descrive brevemente il prodotto software, il suo obiettivo, le funzionalità e gli utenti;
     - *Casi d'uso*: sezione che identifica e descrive in maniera approfondita i casi d'uso del prodotto.\ Ogni caso d'uso e sottocasi d'uso vanno rappresentati con il relativo diagramma UML, gli attori, le precondizioni, le postcondizioni, lo scenario principale,le estensione e le generalizzazioni (quest'ultime due, se presenti). Nella #link(<useCase>)[sezione seguente] è possibile consultare nel dettaglio le norme e le modalità con i quali vengono descritti i cari casi d'uso;
     - *Requisiti*: sezione che elenca e descrive tutte le richieste e vincoli definiti dal proponente o dedotti dal team di progetto durante un meeting. Ogni requisito è caratterizzato da una descrizione e da un caso d'uso annesso. I requisiti possono essere obbligatori, desiderabili o opzionali, inoltre si fa la distinzione tra requisiti funzionali, di qualità, d'ambiente, di performance e di sicurezza;
     - *Elenchi*: questa sezione deve comprendere gli elenchi delle immagini e delle tabelle utilizzate all'interno del documento.
 
-==== Piano di Progetto <pianoDiProgetto>
+*Piano di Progetto*\ <pianoDiProgetto>
 Il documento ``` Piano di Progetto``` va strutturato nel seguento modo:
     - *Analisi dei rischi*: sezione nella quale di definiscono e analizzano i potenziali rischi che si possono incontrare e influenzare così il successo del progetto. \ I rischi vanno divisi in rischi personali (RP), rischi organizzativi interni ed esterni (ROI/ROE), rischi tecnologici/software (RT). Ogni rischio è caratterizzato da una propria descrizione, un grado di rischio (occorenza), la propria pericolosità, da una serie di precauzioni prese a priori, dal rilevamento e da un piano di contingenza; 
     - *Pianificazione*: sezione che definisce periodi/sprint con le relative attività da svolgere, relative risporse e scadenze da rispoettare. Per ogni sprint vengono definiti i ruili di ogni componente e una stima delle ore rischieste per poter portare a compimento le attività pianificate. In particolare vanno inseriti i metodi di lavoro, la gestione delle comunicazioni, la suddivisione delle attività e distibusione dei ruoli;
     - *Preventivo*: sezione che fornisce una stima e ripartizioni delle ore produttive di ogni membro del team andando così a definire la durata necessaria per completare le attività di periodo e il relativo costo. Per semplicità di lettura si utilizzeranno tabelle e grafici;
     - *Consultivo*: sezione che analizza la ripartizione oraria effettiva in relazione a quella preventivata con relativo impatto sui costi. Viene anche fatta una analisi retrospettiva andando a definire eventuali cambiamenti nel metodo di lavoro e/o nella pianificazione delle attività da svolgere. Per semplicità di lettura si utilizzeranno tabelle e grafici.
 
-==== Piano di Qualifica <pianoDiQualifica>
+*Piano di Qualifica*\ <pianoDiQualifica>
 Il documento ``` Piano di Qualifica``` va strutturato nel seguente modo:
     - *Qualità del prodotto*: sezione in cui va strutturata la modilità e le metriche di valutazione del prodotto software, in particolare l'architettura, la documentazione e la qualità del software;
     - *Qualità di processo*: sezione in cui va strutturata la modalità e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
@@ -598,13 +610,13 @@ Il documento ``` Piano di Qualifica``` va strutturato nel seguente modo:
     - *Miglioramenti*: sezione in cui vanno indicati i miglioramenti possibili del prodotto e dei processi;
     - *Controllo delle metriche*: sezione che funge da #glossario("cruscotto") per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
 
-==== Norme di Progetto
+*Norme di Progetto*\
 Il documento ``` Norme di Progetto``` va strutturato nel seguento modo:
     - *Processi Primari*: sezione in cui vanno descritti i processi primari tra cui fornitura, sviluppo, gestione operativa e manutenzione;
     - *Processi di supporto*: sezione in cui vanno descritti i processi di supporto tra cui documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
     - *Processi organizzativi*: sezione in cui vanno descritti i processi organizzativi tra cui gestione dei processi, gestione ruolistica e gestione delle comunicazioni, seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
 
-==== Glossario <glossario>
+*Glossario*\ <glossario>
 Il documento ``` Glossario``` va strutturato nel seguento modo:\
 Le sezioni suddividono il documento in ordine alfabetico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
 
@@ -618,9 +630,8 @@ Il concetto di "gestione della configurazione" abbraccia tutte le pratiche essen
 === Versionamento <versionamento>/** spiegazione di come è strutturato e come avviene il versionamento dei documenti */
   
 Il versionamento è una procedura fondamentale per la gestione di un progetto. Oltre a tracciare i cambiamenti di ogni #glossario("artefatto"),
-documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori e conflitti. Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
-Ogni documento oltre a essere dotato di un changelog è identificato da un numero di versione così composto:
-
+documento o sorgente che sia, permette il rispristino di quest'ultimo ad una sua fase precedente rendendo molto più semplice la gestione di errori e conflitti.\
+Il un numero di versione è così composto:
 #align(center, "vX.Y.Z")
 
 dove :
@@ -633,27 +644,40 @@ Ad ogni versione corrispode uno stato del documento revisionato.
 
 /* ha senso metterlo qui? o in una sezione "automazioni" */
 
-==== Lato documentazione
-Nella documentazione è possibile aggiornare la versione andando semplicemente ad aggiungere un nuovo record nella sezione di changelog del rispettivo file sorgente. Qui sotto un esempio:
-
-    ```
+*Lato documentazione*\
+Il changelog o "registro delle modifiche", strettamente collegato al concetto di versionamento, espone al lettore, il ciclo di vita dell'artefatto, le modifiche effettuate, le problematiche sorte e infine anche la distribuzione dei lavori tra i componenti del team di sviluppo. \
+Nella documentazione è possibile aggiornare la versione andando semplicemente ad aggiungere un nuovo record nella sezione di changelog del rispettivo file sorgente.\ 
+Qui sotto un esempio:
+```
 changelog: (
 
     "0.5.0", "2023-11-21", p.baggio, p.carraro, "Stesura sezione 3.2",
     "0.4.0", "2023-11-20", p.passarella, p.carraro, "Stesura sezione 3.1",
     
 )
-
 ```
-La prima persona inserita identifica chi ha svolto le modifiche sul documento, mentre la seconda, chi ne ha revisionato il contenuto.
-
+La prima persona inserita identifica chi ha svolto le modifiche sul documento, mentre la seconda, chi ne ha revisionato il contenuto.\
 Una volta fatto, la compilazione automatica, attuata grazie ad una github action realizzata ad hoc insieme alle funzionalità di scripting che fornisce typst, andrà a creare effettivamente la tabella del registro delle modifiche con all'interno tutte le informazioni specificate e richieste. Si noti che _p_  ("people") è una variabile d'ambiente contenente tutti i nominativi dei componenti del gruppo di lavoro e di ulteriori nominativi utili e ripetuti molteplici volte nel corso del progetto.
 
-==== Lato software
-Per quanto riuarda il software il versionamento verrà completamente gestito da github, usufruendo dei suoi vari servizi, come ad esempio releases automatiche e github action.
-//parte sulla possibile integrazione di un versionamento automatico
+*Lato software*\
+Lato softwawre è possibile aggiornare la versione andando ad eseguire un commint con uno specifico messaggio.\ 
+Qui sotto un esempio:
+```
+    git add .
+    git commit --allow-empty -m " version-mid "
+    git push
+```
+In particolare, se si vuole creare una nuova release e quindi modificare il numero di versione bisogna includere nel proprio messaggio di commit (l'ultimo prima di aver aperto la pull request) l'apposita sintassi:
+- "... version-major" andrà a modificare il digit più significativo (es: v0.0.0 -> v.1.0.0);
+- "... version-mid" andrà a modificare il digit di mezzo (es: v0.0.0 -> v.0.1.0);
+- "... version-minor" andrà a modificare il digit meno significativo (es: v0.0.0 -> v.0.0.1).
 
-=== Repository /** spiegazione dello strumento usato per la repo (github) e descrizione della struttura (immagine) */
+Quando si vuole creare una nuova release basta aprire una pull request verso il branch main. Una volta terminati i check della action, la nuova release verrà creata in automatico.\
+
+Il versionamento del prodotto è eseguito in modo automatico tramite l'uso di GitHub Action realizzate appositamente. Ogni versione è corredata da una breve descrizione stilata anch'essa in modo automatico trasformando i messaggi di commit registrati durante lo sviluppo di quella determinata versione, in un vero e proprio registro delle modifiche (contenente ad esempio l'aggiunta di nuove feature, la risoluzione di problematiche e/o migliorie e modifiche più generiche).
+
+
+=== Repository Documentazione /** spiegazione dello strumento usato per la repo (github) e descrizione della struttura (immagine) */
 
 Per la gestione della configurazione e versionamento il progetto si poggia sul uso di un repository Github.
 Qui sotto un link alla documentazione ufficiale:
@@ -662,7 +686,7 @@ Qui sotto un link alla documentazione ufficiale:
     Github Docs.
 ]
 
-==== Struttura
+*Struttura*\
 L'attuale struttura del repository è suddivisa in 3 branch:
 
 - main;
@@ -692,10 +716,9 @@ Qui sotto un link al repository, e alla pagina di presentazione:
     Pagina di presentazione.
 ]
 
-==== Procedura di redazione/revisione/manutenzione
+*Procedura di redazione/revisione/manutenzione*\
 Come appreso dalla sezione precedente, il branch sources è quello relativo alla produzione della documentazione di progetto. Questo ramo contiene quindi i file Typst (.typ) necessari per la stesura e modifica del documento.\ 
-I seguenti passaggi descrivono le operazioni da effettuare per poter effettuare le operazioni menzionate:
-
+I seguenti passaggi descrivono le operazioni da effettuare per poter effettuare le operazioni menzionate:\
     Consigliamo l'utilizzo dei seguenti programmi e strumenti:
         - Visual Studio Code (Download disponibile #link("https://code.visualstudio.com/")[qui]);
         - Typst Preview: estensione di Visual Studio Code (Extension ID: mgt19937.typst-preview).
@@ -738,7 +761,42 @@ I seguenti passaggi descrivono le operazioni da effettuare per poter effettuare 
     Ora potrebbe essere necessario risolvere eventuali conflitti e al termine rieffettuare le operazione al passaggio #link(<prev>)[precedente].
     //da fare meglio il link?????
 
-== Accertamento della qualità 
+=== Docker (Integrazione)
+L'integrazione delle varie componenti del prodotto è gestito interamente tramite l'uso di alcuni container docker realizzati ad hoc. L'utilizzo di docker facilità inoltre il rilascio del software, sul repository sono infatti disponibili tutte le versione delle immagini per poter ricreare i container in qualsiasi ambiente. Il progetto si suddivide in 4 container differenti:
+
+- db (container adibito al database);
+- python-api (container adibito alle api che espongo l'algotirmo di raccomandazione);
+- express (container adibito alle api che permettono la comunicazione tra db e web-app);
+- react-app (container adibito all'hosting del client web).
+
+=== Local testing
+Per eseguire i test localmente nelle propria macchina basta seguire le seguenti istruzioni:\
+Prima di tutto bisogna azionare il container Docker:
+```
+    docker-compose up
+```
+E' possibile anche reperire l'ultima versione delle immagini dal repository del progetto, per velocizzare così il processo:
+```
+    docker pull ghcr.io/farmacodeunipd/mvp/mvp_db:latest
+    docker pull ghcr.io/farmacodeunipd/mvp/mvp_python-api:latest
+    docker pull ghcr.io/farmacodeunipd/mvp/mvp_react-app:latest
+    docker pull ghcr.io/farmacodeunipd/mvp/mvp_express:latest
+```
+Una volta che il container e tutte le sue immagini hanno concluso il loro avvio, sarà possibili testare i vari servizi con i rispettivi comandi:
+- Python-api (Algoritmo e relative API):
+```
+    docker-compose up
+```
+- React-app (Client web):
+```
+    docker exec mvp-react-app-1 npm test
+```
+- Express (API per la connesione tra db e client):
+```    
+    docker exec mvp-express-1 npm test
+```
+
+== Qualifica
 
 === Descrizione e Scopo /** descrizione di come avviene l'accertamento della qualità */
 
@@ -747,15 +805,12 @@ Le attività messe in atto per garantirne la qualità sono:
 - Rispettare e comprendere le necessità del proponente, sia in termini di quantità che di qualità, in modo da rilasciare un prodotto il più possibile fedele all'idea del cliente;
 - Seguire il piano di qualifica per lo sviluppo del progetto, in modo da rientrare nei termini pattuiti, di tempo e di costo.
 
-== Qualifica
-
-=== Verifica /** descrizione di come avviene la verifica ed i vari tipi di analisi */
+=== Testing/** descrizione di come avviene la verifica ed i vari tipi di analisi */
 
 La verifica è un processo fondamentale per la valutazione di un prodotto software. Questa attività si svolge nel corso della fase di sviluppo con l'obiettivo di individuare difetti e guasti fin dalla fase iniziale del ciclo di vita del prodotto, garantendo simultaneamente il massimo rispetto dei requisiti imposti dal cliente.
 \ Essa rappresenta un elemento cruciale per garantire la qualità e la conformità del software alle specifiche stabilite. Attraverso metodologie di testing, analisi del codice e altre tecniche di valutazione, si mira a identificare e correggere tempestivamente eventuali anomalie. Ciò non solo contribuisce a prevenire la diffusione di difetti nelle fasi successive, ma assicura anche che il prodotto finale soddisfi le aspettative del cliente.
 
-==== Analisi statica
-
+*Analisi statica*\
 La verifica statica, così chiamata poichè non richiede l'esecuzione del prodotto, consiste nell'individuazione e correzione di eventuali problematiche che riguardano convenzioni o metriche stabilite. L'analisi statica riguarda sia il codice del software che la stesura dei documenti allegati. Essa può essere effettuata manualmente, o grazie all'utilizzo di strumenti per l'automazione.\
 Esistono inoltre due modalità differenti per la verifica tramite analisi statica:
 - Walkthrought: viene utilizzato nel momento in cui non si sappia dove viene riscontrata la problematica e consiste in una lettura più ampia scorrendo nella sua interezza il documento/codice per trovare l'errore. Questo metodo è sicuramente molto efficace ma anche molto dispendioso in termini di risorse;
@@ -767,10 +822,13 @@ Conscio di quanto appena descritto, il gruppo ha deciso di ripiegare sul utilizz
     Per quanto riguarda la sintassi e correttezza dei file .typ, il gruppo si affida agli strumenti di correzione automatica integrati nel editor predisposto per la stesura dei documenti. Per quanto riguarda invece i controlli sulla correttezza della grammatica e ortografia della lingua italiana, dopo aver testato diversi strumenti di "spell checking" integrabili nel editor, il team ha deciso di attenersi ad un controllo manuale, sicuramente più dispendioso, ma anche più affidabile ed efficace.
  
 - Codice:
-    A proposito del codice, il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice.
+    A proposito del codice, il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice.\
 
-==== Analisi dinamica
+Per quanto rigurda l'analisi statica del codice sono stati integrati strumenti automatici quali:
+    - Ruff (per il codice realizzato in python);
+    - ESLint (per il codice realizzato in js e react)
 
+*Analisi dinamica*\
 L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento. Questo processo dinamico è complementare all'analisi statica, che si concentra sulla revisione del codice sorgente senza eseguirlo. Insieme, l'analisi dinamica e statica costituiscono una strategia completa per la verifica e la validazione del software durante il suo sviluppo e oltre.\
 
 - Documentazione:
@@ -796,7 +854,11 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
     + Test di accettazionne:
         I test di accettazione rappresentano la fase finale del processo di testing software, sono volti a verificarne la conformità rispetto ai requisiti specificati e a ottenere l'approvazione da parte degli stakeholder, inclusi clienti e utenti finali. Questi test sono eseguiti per assicurare che il software soddisfi le aspettative e sia pronto per un possibile rilascio.
 
-==== Struttura dei test
+Per la realizzazione e integrazione dei test (dinamici) automatici sono stati individuati e scelti questi due servizi:
+- Pytest (per la relaizzazione dei test del codice realizzato in python);
+- Jest (per la realizzazione dei test del codice realizzato in js e react).
+
+*Struttura dei test*
 
 Tutti i test andrannò definiti nella seguente modalità:
 
@@ -835,9 +897,353 @@ Affinché ogni test sia ripetibile e fornito con precisione, è essenziale speci
     Indicare che funzionalità mira a coprire il test in esame, specificandone requisiti funzionali rispetto l'utente finale.
  
 === Validazione /** descrizione di come avviene la validazione */
-
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
-Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.
+Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.\
+
+*Code coverage*
+#figure(
+    image("/imgs/sunburst_graph.png", width: 35%),
+    caption: [
+        Sunburst graph
+    ],
+)
+Il cerchio centrale rappresenta il progetto nella sua totalità, spostandosi verso l'esterno ci sono le directory, e infine, i singoli file. La grandezza e il colore di ogni "slice" (o spicchio) rappresenta rispettivamente il numero di statements e il coverage.
+
+=== GitHub Action
+/*Qui ci andrebbe una descrizione*/
+*linting.yml*
+```
+name: Python and React/JS application
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - '**.py'
+      - '**.js'
+      - '**.jsx'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python 3.11.5
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11.5"
+      - name: Install dependencies
+        run: |
+          pip install ruff
+          npm install eslint eslint-plugin-react
+          npx eslint . --fix
+      - name: Lint with Ruff (Python)
+        run: |
+          ruff check . --fix
+          ruff format .
+      - name: Lint with ESLint (React/JS)
+        run: |
+          npx eslint . --fix
+```
+- Trigger:\
+    Il workflow è configurato per essere attivato ogni volta che viene effettuato un push sul ramo "develop" e quando vengono apportate modifiche ai file con estensione .py, .js o .jsx.
+- Steps:
+    - Checkout del codice: Questo passaggio utilizza l'azione ```actions/checkout@v4``` per ottenere una copia del repository;
+    - Configurazione di Python 3.11.5: Viene utilizzata l'azione ```actions/setup-python@v4``` per configurare l'ambiente Python con la versione 3.11.5;
+    - Installazione delle dipendenze: In questo passaggio vengono installati i pacchetti necessari sia per Python che per JavaScript. Per Python, viene utilizzato pip install ruff per installare Ruff, mentre per JavaScript vengono utilizzati npm install eslint eslint-plugin-react per installare ESLint e il plugin per React. Successivamente, viene eseguito npx eslint . --fix per correggere eventuali problemi di stile nel codice JavaScript;
+    - Analisi statica con Ruff (Python): Viene eseguita un'analisi statica del codice Python utilizzando Ruff. I comandi ruff check . --fix e ruff format . vengono utilizzati per controllare e formattare il codice Python;
+    - Analisi statica con ESLint (React/JS): Infine, viene eseguita un'analisi statica del codice React/JS utilizzando ESLint tramite il comando npx eslint . --fix. Questo passaggio controlla e corregge eventuali problemi di stile nel codice JavaScript e React.
+- In sintesi:\
+    questo workflow si occupa di controllare la qualità del codice Python e JavaScript/React attraverso analisi statiche e correzioni automatiche dei problemi di stile.
+
+*test-and-release.yml*
+```
+name: Docker Image Release
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set Git user
+        run: |
+          git config --global user.name "farmacodeunipd"
+          git config --global user.email "farmacode.swe.unipd@gmail.com"
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Fetch Tags
+        run: git fetch --tags
+
+      - name: Get Version
+        id: versioning
+        run: |
+          if [[ $(git tag) ]]; then
+            LAST_TAG=$(git tag --sort=-v:refname | head -n1)
+            echo "::set-output name=last_tag::$LAST_TAG"
+          else
+            LAST_TAG="v0.0.0"
+            git tag $LAST_TAG
+            git push --tags
+          fi
+
+          echo "Last Tag: $LAST_TAG"
+
+          IFS='.' read -ra VERSION_PARTS <<< "$LAST_TAG"
+          MAJOR="${VERSION_PARTS[0]#v}"
+          MID="${VERSION_PARTS[1]}"
+          MINOR="${VERSION_PARTS[2]}"
+
+          echo $(git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD))
+
+          if git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-major"; then
+            echo "Version Major Detected"
+            ((MAJOR+=1))
+            MID=0
+            MINOR=0
+          elif git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-mid"; then
+            echo "Version Mid Detected"
+            ((MID+=1))
+            MINOR=0
+          elif git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-minor"; then
+            echo "Version Minor Detected"
+            ((MINOR+=1))
+          fi
+
+          echo "creating new version ..."
+
+          UPDATED_VERSION="v${MAJOR}.${MID}.${MINOR}"
+          echo "Updated Version: $UPDATED_VERSION"
+          echo "::set-output name=updated_version::$UPDATED_VERSION"
+          
+        env:
+          GITHUB_SHA: ${{ github.sha }}
+
+      - name: Log in to GitHub Packages
+        run: echo "${{ secrets.PAT }}" | docker login docker.pkg.github.com -u farmacodeunipd --password-stdin
+
+      - name: Set up Docker Compose
+        run: docker-compose up -d
+
+      - name: Run tests and stop if they do not pass
+        run: |
+          ci_env=$(bash <(curl -s https://codecov.io/env))
+          docker exec $ci_env mvp_python-api_1 pytest tests/test_algo.py --cov=. --cov-report=xml:/tests/coverage.xml --verbose
+          docker exec $ci_env mvp_react-app_1 npm test
+          docker exec $ci_env mvp_express_1 npm test
+        continue-on-error: false
+
+      - name: Copy coverage reports
+        run: |
+          docker cp mvp_python-api_1:/tests/coverage.xml ./coverage-python-api.xml
+          docker cp mvp_react-app_1:/client/coverage/coverage-final.json ./coverage-react.json
+          docker cp mvp_express_1:/express/coverage/coverage-final.json ./coverage-express.json
+
+      - name: Stop and remove Docker containers
+        run: docker-compose down
+
+      - name: Upload Python API coverage report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage-python-api.xml
+          flags: python-api
+          name: codecov-python-api
+
+      - name: Upload React application coverage report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage-react.json
+          flags: react-app
+          name: codecov-react-app
+
+      - name: Upload Express coverage report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage-express.json
+          flags: express
+          name: codecov-express
+
+      - name: Push Docker images
+        run: |
+          docker images
+          IMAGES=("mvp_db" "mvp_python-api" "mvp_react-app" "mvp_express")
+          for IMAGE in "${IMAGES[@]}"; do
+            # Controllo se l'immagine è stata modificata confrontando l'hash SHA locale con quello remoto
+            LOCAL_SHA=$(docker inspect --format='{{index .RepoDigests 0}}' $IMAGE)
+            REMOTE_SHA=$(docker run --rm docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }} sha256sum /)
+            
+            if [ "$LOCAL_SHA" != "$REMOTE_SHA" ]; then
+              # L'immagine è stata modificata, la etichetto e la pusho
+              docker tag $IMAGE docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }}
+              docker push docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }}
+              
+              docker tag $IMAGE docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:latest
+              docker push docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:latest
+            else
+              echo "L'immagine $IMAGE non è stata modificata. Salto il push."
+            fi
+          done
+          
+      - name: Check if release already exists
+        id: check_release
+        run: |
+          VERSION="${{ steps.versioning.outputs.updated_version }}"
+          echo "Checking release for version ${VERSION}"
+          response=$(curl -s -o /dev/null -I -w "%{http_code}" https://api.github.com/repos/farmacodeunipd/mvp/releases/tags/${VERSION})
+          echo "Response code: $response"
+          if [[ $response -eq 200 ]]; then
+            echo "Release already exists for version ${VERSION}"
+            echo "::set-output name=release_exists::true"
+          else
+            echo "Release does not exist for version ${VERSION}"
+            echo "::set-output name=release_exists::false"
+          fi
+
+      - name: Get Commit Messages Since Last Release
+        id: commit_messages
+        run: |
+          LAST_RELEASE_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+          COMMIT_MESSAGES=$(git log --pretty=format:"- %s" $LAST_RELEASE_TAG..HEAD --no-merges)
+          echo "::set-output name=commit_messages::$COMMIT_MESSAGES"
+
+      - name: Create GitHub Release
+        if: steps.check_release.outputs.release_exists != 'true'
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.versioning.outputs.updated_version }}
+          release_name: Release ${{ steps.versioning.outputs.updated_version }}
+          body: |
+            Release ${{ steps.versioning.outputs.updated_version }}
+
+            Changes since last release (commit messages):
+            ${{ steps.commit_messages.outputs.commit_messages }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+
+```
+- Trigger:\ 
+    Il workflow viene attivato ad ogni pull request aperta verso il ramo principale, main.
+
+- Steps:
+    - Imposta l'utente Git: Configura l'utente Git globale utilizzando il nome utente e l'email forniti;
+    - Checkout del repository: Esegue il checkout del codice del repository per eseguire le azioni successive;
+    - Imposta Docker Buildx: Configura Docker Buildx, un plugin Docker CLI per estendere le capacità di build;
+    - Recupera i tag: Recupera i tag dal repository;
+    - Ottieni la versione: Determina la versione aggiornata basata sull'ultimo tag e sui commit. Se viene trovata una specifica parola chiave nel messaggio del commit (version-major, version-mid o version-minor), incrementa la parte di versione corrispondente;
+    - Accedi a GitHub Packages: Effettua l'accesso al registro Docker di GitHub Packages per caricare le immagini Docker;
+    - Imposta Docker Compose: Configura Docker Compose per gestire più container Docker;
+    - Esegui i test e interrompi se non passano: Esegue i test per diversi servizi (API Python, app React, Express) all'interno dei container Docker. Il workflow si interrompe se i test non passano;
+    - Copia i report di copertura: Copia i report di copertura generati dai test dai container Docker alla macchina locale;
+    - Carica i report di copertura su Codecov: Carica i report di copertura su Codecov per ciascun servizio (API Python, app React, Express);
+    - Carica le immagini Docker: Etichetta le immagini Docker con la versione aggiornata e le carica nel registro Docker di GitHub Packages;
+    - Interrompi e rimuovi i container Docker: Interrompe e rimuove i container Docker creati da Docker Compose;
+    - Controlla se il rilascio esiste già: Verifica se esiste già un rilascio per la versione aggiornata su GitHub;
+    - Crea la descrizio del rilascio: Reperisce tutti i messaggi di commit avvenuti tra la precedente versione e la creazione di quella corrente, per allegarli come descrizione del rilascio;
+    - Crea il rilascio GitHub: Crea un nuovo rilascio su GitHub se non esiste già per la versione aggiornata.
+- In sintesi:\
+    Questo workflow automatizza il versioning, i test e il processo di rilascio delle immagini Docker, garantendo rilasci consistenti e affidabili per il progetto.
+
+*coverage-main.yml*
+```
+name: Codecoverage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  codecoverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set Git user
+        run: |
+          git config --global user.name "farmacodeunipd"
+          git config --global user.email "farmacode.swe.unipd@gmail.com"
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Set up Docker Compose
+        run: docker-compose up -d
+
+      - name: Run tests and stop if they do not pass
+        run: |
+          ci_env=$(bash <(curl -s https://codecov.io/env))
+          docker exec $ci_env mvp_python-api_1 pytest tests/test_algo.py --cov=. --cov-report=xml:/tests/coverage.xml --verbose
+          docker exec $ci_env mvp_react-app_1 npm test
+          docker exec $ci_env mvp_express_1 npm test
+        continue-on-error: false
+
+      - name: Copy coverage reports
+        run: |
+          docker cp mvp_python-api_1:/tests/coverage.xml ./coverage-python-api.xml
+          docker cp mvp_react-app_1:/client/coverage/coverage-final.json ./coverage-react.json
+          docker cp mvp_express_1:/express/coverage/coverage-final.json ./coverage-express.json
+
+      - name: Stop and remove Docker containers
+        run: docker-compose down
+
+      - name: Upload Python API coverage report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage-python-api.xml
+          flags: python-api
+          name: codecov-python-api
+
+      - name: Upload React application coverage report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage-react.json
+          flags: react-app
+          name: codecov-react-app
+
+      - name: Upload Express coverage report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage-express.json
+          flags: express
+          name: codecov-express
+```
+- Trigger:\ 
+    Il workflow viene attivato ad ogni push sul ramo principale, main.
+
+- Steps:\
+    - Set Git user: Configura il nome e l'email dell'utente Git per le operazioni successive;
+    - Checkout repository: Ottiene una copia del repository;
+    - Set up Docker Buildx: Configura Docker Buildx, uno strumento per la compilazione di immagini Docker multi-architettura;
+    - Set up Docker Compose: Avvia i container Docker necessari per l'esecuzione dei test;
+    - Run tests and stop if they do not pass: Esegue i test per ciascun componente dell'applicazione (Python, React, Express) all'interno dei rispettivi container Docker. Se i test non superano, l'esecuzione del workflow si interrompe;
+    - Copy coverage reports: Copia i report di copertura generati all'interno dei container Docker nei file locali del repository;
+    - Stop and remove Docker containers: Interrompe e rimuove i container Docker utilizzati per l'esecuzione dei test;
+    - Upload Python API coverage report to Codecov: Carica il report di copertura del codice per l'API Python su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
+    - Upload React application coverage report to Codecov: Carica il report di copertura del codice per l'applicazione React su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
+    - Upload Express coverage report to Codecov: Carica il report di copertura del codice per l'applicazione Express su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
+- In sintesi:\
+    Includere la generazione di report anche per il branch principale (main) è fondamentale poiché fornisce un valore significativo. Ogni volta che viene aperta una pull request, Codecov potrà analizzare e confrontare le coperture del codice tra il branch in sviluppo e il branch principale. Questo fornisce dati preziosi che aiutano a valutare l'impatto delle modifiche proposte e a garantire che il codice integrato mantenga o migliori la copertura del codice già presente nel branch principale. Questo processo contribuisce a mantenere elevati standard di qualità del software e favorisce una migliore comprensione delle modifiche introdotte.
 
 == Revisioni congiunte con il cliente
 
@@ -868,7 +1274,7 @@ Il nostro gruppo per risolvere problematiche verificate durante lo sviluppo del 
 - Risoluzione del problema;
 - Comunicazione e aggiornamento documentazione.
 
-==== Registrazione del problema
+*Registrazione del problema*\
 Ogni problema identificato deve essere accuratamente registrato nel sistema di tracciamento dei problemi (ITS). 
 Questo sistema consente di inserire informazioni dettagliate, tra cui:
 - Descrizione: breve descrizione, in maniera da far capire il problema che si è riscontarto;
@@ -877,15 +1283,15 @@ Questo sistema consente di inserire informazioni dettagliate, tra cui:
 - Data: indica la data in cui è stata aperta la issue;
 - Label: indica di cosa si deve occupare la persona preposta, quindi se il problema coinvolge la documentazione o codice.
 
-==== Valutazione del problema
+*Valutazione del problema*\
 La valutazione del problema è una fase che precede la risoluzione e prevede un attenta valutazione da parte del gruppo. 
 Questa fase rigurda prettamente problematiche riguardanti il codice la cui discussione avviene attraverso meeting interni. 
 Durante gli incontri si toccano tre temi principali: la causa, l'impatto e il rischio.
 
-==== Risoluzione del problema
+*Risoluzione del problema*\
 Una volta valutato il problema, sarà la persona incaricata a risolverlo, comunicando tramite il ITS lo stato di avanzamento della risoluzione del problema e sfruttando la strategia valutata precedentemente.
 
-==== Comunicazione e aggiornamento documentazione
+*Comunicazione e aggiornamento documentazione*\
 Durante il processo di gestione del problema, è fondamentale mantenere una comunicazione trasparente con il proponente. 
 Questo include la creazione di report periodici sullo stato dei problemi e meeting di aggiornamento.\
 Deve inoltre, se necessario, essere aggiornata la documentazione in maniera da mantenere una coerenza tra software e documenti.
@@ -939,12 +1345,9 @@ La suddivisione in ruoli segue le norme definite nel "Regolamento progetto didat
 )
 #align(center)[Tabella 1: Ruoli e responsabilità.]
 
-Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità, ovviamente senza venire meno alle pratiche di tracciabilità adottate normalmente dal team.
-
-La loro assegnazione viene gestita dal Responsabile di progetto corrente, il quale confrontandosi con gli altri componenti del gruppo, va a stabilire una rotazione conforme al regolamento. Ogni membro del team dovrà infatti ricoprire ogni carica almeno una volta.
-
+Si noti come i ruoli possano svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità, ovviamente senza venire meno alle pratiche di tracciabilità adottate normalmente dal team.\
+La loro assegnazione viene gestita dal Responsabile di progetto corrente, il quale confrontandosi con gli altri componenti del gruppo, va a stabilire una rotazione conforme al regolamento. Ogni membro del team dovrà infatti ricoprire ogni carica almeno una volta.\
 Segue una descrizione più dettagliata per alcuni ruoli, perchè ritenuti più complessi, e rispettive mansioni:
-
 - Responsabile di progetto:
     
     Il Responsabile si occupa oltre alle attività già sopra elencate, di:
@@ -966,7 +1369,7 @@ Segue una descrizione più dettagliata per alcuni ruoli, perchè ritenuti più c
     + Dare feedback completi e chiari a chi ha prodotto il lavoro successivamente revisionato;
     + Assicurare che la qualità di quanto prodotto sia conforme agli standard imposti.
 
-==== Gestione dei "cold start"
+=== Gestione dei "cold start"
 Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle situazioni di "cold start", il team si impegna ad adottare le seguenti pratiche:
 
 - Documentazione dettaglita:
@@ -981,16 +1384,12 @@ Al fine di evitare rallentamenti durante il corso del progetto, dovuti a delle s
 
     Le rotazioni dei ruoli, quando ritenute necessarie, avverranno in modo graduale. Ciò consentirà a coloro che hanno già sviluppato una certa dimestichezza in un determinato ambito, di supportare chi si avvicina a quel ruolo per la prima volta. In pratica, questa modalità di rotazione riflette l'approccio XP, emulando la pratica del #glossario("pair programming").
 
-=== Gestione degli incontri e delle comunicazioni/** descrizione della gestione di incontri interni ed esterni */
-
-==== Reperibilità dei membri
-Ogni membro del gruppo si impegna ad essere reperibile per riunioni sincrone durante la settimana, dal lunedì al giovedì, nel pomeriggio, il venerdì durante la mattinata. In caso di impossibilità di partecipare alle riunioni nelle date stabilite, è obbligatorio informare tempestivamente il Responsabile di progetto. Inoltre, la disponibilità può essere estesa anche durante il weekend in casi di necessità, solitamente preferendo la domenica al sabato.
-
-Durante il corso di uno sprint ogni mebro è libero di gestire le proprie attività di progetto in modo asincrono, a meno che esse non richiedano la collaborazione di più componenti. Ogni membro si assume responsabilmente la gestione di impegni accademici e personali, rispettando le scadenze imposte dal relativo sprint.
-
+=== Reperibilità dei membri
+Ogni membro del gruppo si impegna ad essere reperibile per riunioni sincrone durante la settimana, dal lunedì al giovedì, nel pomeriggio, il venerdì durante la mattinata. In caso di impossibilità di partecipare alle riunioni nelle date stabilite, è obbligatorio informare tempestivamente il Responsabile di progetto. Inoltre, la disponibilità può essere estesa anche durante il weekend in casi di necessità, solitamente preferendo la domenica al sabato.\
+Durante il corso di uno sprint ogni mebro è libero di gestire le proprie attività di progetto in modo asincrono, a meno che esse non richiedano la collaborazione di più componenti. Ogni membro si assume responsabilmente la gestione di impegni accademici e personali, rispettando le scadenze imposte dal relativo sprint.\
 Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni componente, il team ha a disposizione un file "Google Fogli" dove sono visualizzabili le proprie disponibilità giornaliere (inserite all'inizio del progetto), dove nel eventualità, è possibile segnare altri impegni inderogabili e sorti in un secondo momento.
 
-==== Comunicazioni <comunicazioni>
+=== Comunicazioni <comunicazioni>
 
 - *Interne* 
 
@@ -1019,7 +1418,7 @@ Per facilitare l'assegnazione delle attività in relazione agli impegni di ogni 
 
     -- Zoom: Usato per le comunicazioni in videoconferenza con proponente e committenti. I meeting sono concordati in precedenza tramite e-mail.
 
-==== Incontri o Meetings: <incontri>
+=== Incontri o Meetings: <incontri>
 
 - *Interni*
 
@@ -1059,9 +1458,7 @@ Per questioni di efficenza e praticità si è concordato di adoperare Discord co
 
         nd.
 
-=== Gestione dell'organizzazione /** descrizione di come viene gestita l'organizzazione interna (sprint, etc.) */
-
-==== Metodologia e pratiche
+=== Gestione dell'organizzazione: metodologia e pratiche
 In modo da migliorare la collaborazione e una migliore gestione del ritmo di avanzamento dei lavori, il team ha preso la decisione di adottare un approccio agile nello sviluppo del progetto, ispirandosi a framework e metodologie ben consolidati come Scrum e XP, ampiamente utilizzati in contesti lavorativi reali.
 
 La filosofia che sottende le strategie di tipo agile è incentrata sull'adozione di pratiche di #glossario("Continuous Integration/Continuous Deployment") (CI/CD).
@@ -1092,7 +1489,7 @@ Questa scelta mira a fornire diversi vantaggi e valori aggiunti:
 L'adozione di pratiche CI/CD si inserisce in questo contesto, contribuendo a garantire una integrazione continua del codice e una distribuzione continua delle nuove funzionalità, riducendo al minimo rischi e migliorando la qualità del software. Questo approccio agile mira a fornire al team una struttura dinamica e flessibile per affrontare le sfide e rispondere alle esigenze del progetto in modo efficiente e tempestivo.
  
 
-==== Milestone e Sprint
+=== Gestione Milestone e Sprint
 Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il team, sempre rifacendosi ad un approccio di tipo agile, ha definito conseguentemente queste ultime.
 
 - Milestone: 
@@ -1106,7 +1503,7 @@ Le tempistiche del periodo di progetto sono scandite da milestone e sprint. Il t
 
 La loro definizione e collocazione temporale è definita nel documento "Piano di progetto", redatto dal responsabile di progetto.
 
-==== Gestione di attività e Issue
+=== Gestione di attività e Issue
 Per una migliore gestione delle attività di progetto vengono suddivise in due categorie differenti:
 
 - Issues:
@@ -1183,21 +1580,16 @@ Infine le issue devono avere un nome significativo e possedere una descrizione d
         ```
 - Standard issue template: titolo e descrizione libera.
 
-Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni nuovo sprint. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso;
-
+Assegnazione: Le issue vengono assegnate in modo da rispettare la configurazione ruolistica corrente. Il responsabile si occupa di svolgere questo compito al inizio di un ogni nuovo sprint. Per favorire una gestione più decentralizzata delle responsabilità, ogni componente del team si occuperà di gestire le proprie issue nella board di progetto predisposta all'uso;\
 Completamento: L'attività viene completata dalla persona incaricata, per poi essere spostata nello stato "ReadyToReview" nella rispettiva board di progetto, in modo da notificarne la revisione.
-Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone;
-
+Successivamente verrà chiusa attraverso l'apposita funzionalità di chiusura delle issue in GitHub da chi ne svolge la revisone;\
 Verifica: Chi ne è incaricato procede a verificare quanto svolto utilizzando strumenti automatici o meno, a seconda di quanto prodotto (Documentazione, codice, ...). Nel caso in cui il verificatore non sia soddisfatto del lavoro svolto e vi siano grandi modifiche impossibili da apportare da quest ultimo, informerà l'autore e il Responsabile. L'autore dovrà quindi ritornare su quanto fatto e apportare le modifiche suggerite dal verificatore. Una volta finito con esito positivo il processo di verifica, il verificatore procederà chiduendo sia la issue relativa all'attività corrisponendete, che la issue relativa alla verifica di tale attività.\
-Si noti che è stato scelto di avere una issue specifica per la verifica, per rendere ai verificatori più facile organizzare e pianificare il proprio lavoro al inizio di ogni sprint;
-
+Si noti che è stato scelto di avere una issue specifica per la verifica, per rendere ai verificatori più facile organizzare e pianificare il proprio lavoro al inizio di ogni sprint;\
 Accettazione: Dopo la conferma positiva da parte del Verificatore, a ridosso della fine di ogni sprint, il Responsabile effettua un controllo aggiuntivo, procedendo quindi a chiudere l'issue di approvazione corrispondente e a eseguire il merge nel branch principale di presentazione.\
-Le singole attività vengono valutate in base alla loro dimensione e alla pianificazione definita, considerando sia il carico di lavoro che le responsabilità associate.
-
-\
+Le singole attività vengono valutate in base alla loro dimensione e alla pianificazione definita, considerando sia il carico di lavoro che le responsabilità associate.\
 Una più dettagliata descrizione della gestione delle board di progetto è visionabile nel prossimo sotto-paragrafo.
 
-==== Gestione delle dashboard / Github views.
+=== Gestione delle dashboard / Github views
 Per una migliore gestione e visualizzazione delle attività di progetto, le issue devono, al momento della loro creazione, essere "linkate" al rispettivo Github Project (RTB, PB). Per ogni Project sono state predisposte due view differenti:
 
 - Kanban:
@@ -1207,13 +1599,11 @@ Per una migliore gestione e visualizzazione delle attività di progetto, le issu
     + In progress: in questa sezione vi sono tutte le issue il cui svolgimento sta avanzando;
     + ReadyToReview: questa colonna è adibita alle attività necessitanti una revisione;
     + Done: qui si trovano tutte le issue completate.
-
     Al fine di un utilizzo utile della board ogni membro del gruppo è tenuto a gestire le proprie attività di progetto e a tenere sotto controllo la Project view in modo da avere sempre una visione dello stato si avanzamento dello sprint;
 
 - Gantt:
 
-    A differenza di quella precedente, mira a fornire una rappresentazione calendarizzata delle attività di progetto. Ogni issue viene collocata temporalmente in base alla sua data di "presa a carico" (ovvero nel momento in cui il suo stato cambia da todo a in progress) come inizio e alla sua data di completamento (inclusa la revisione) come fine. Questo approccio consente una visione più chiara e strutturata delle tempistiche di ciascuna attività.
-
+    A differenza di quella precedente, mira a fornire una rappresentazione calendarizzata delle attività di progetto. Ogni issue viene collocata temporalmente in base alla sua data di "presa a carico" (ovvero nel momento in cui il suo stato cambia da todo a in progress) come inizio e alla sua data di completamento (inclusa la revisione) come fine. Questo approccio consente una visione più chiara e strutturata delle tempistiche di ciascuna attività.\
     Per una comprensione ancora più approfondita dell'insieme, la board viene suddivisa in milestone, consentendo la visualizzazione singola di ciascuna di esse. Questa suddivisione facilita il monitoraggio e la gestione specifica di ciascun obiettivo intermedio, migliorando ulteriormente la chiarezza e la gestione del progetto nel suo complesso.
 
 
@@ -1407,9 +1797,7 @@ viene calcolato attraverso il numero di frasi e lettere ed il risultato è un va
 - Immagine 4: Estensione
 - Immagine 5: Generalizzazione caso d'uso
 - Immagine 6: Generalizzazione attori
-
-#pagebreak()
+- Immagine 7: Sunburst graph
 
 = Elenco delle tabelle
 - Tabella 1: Ruoli e responsabilità
-
