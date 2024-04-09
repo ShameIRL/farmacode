@@ -1,6 +1,5 @@
 //TO-DO
 // - Cambiare username pagina profilo
-//
 // - Aggiornare descrizione pagine dopo modifiche mvp
 #import "/template/big_docs.typ": *
 
