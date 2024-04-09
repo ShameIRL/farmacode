@@ -1766,7 +1766,170 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
+== UC11 - Visualizzazione vista "Statistiche Mensili"
 
+#figure(
+  image("/imgs/Uml/UC11.png", width: 65%),
+  caption: [
+    Visualizzazione vista "Statistiche Mensili"
+  ],
+)
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
+- L'utente è stato reindirizzato correttamente dal sistema;
+- L'utente ha aperto il menù contenente le varie funzionalità del sito;
+- L'utente ha selezionato la funzionalità di vista statistiche mensili.
+*Postcondizioni:*
+- L'utente visualizza nella vista principale della pagina la funzionalità "statistiche mensili".
+*Scenario principale:*
+- Admin/User:
+  + seleziona la funzionalità di vista statistiche mensili nel menù;
+  + visualizza il contenuto delle vista di statistiche mensili (UC11.1/UC11.2).
+- Sistema:
+  + mostra all'utente la funzionalità di vista statistiche mensili;
+  + fornisce la possibilità di visualizzare  il grafico delle statistiche (UC11.1) e di visualizzare le raccomandazioni utili (UC11.2).
+*Generalizzazioni:*
+- Attori:
+  + Admin --> User.
+
+#pagebreak()
+
+
+=== UC11.1 - Visualizzazione "Grafico"
+#figure(
+  image("/imgs/Uml/UC11.1.png", width: 60%),
+  caption: [
+    Visualizzazione "Grafico"
+  ],
+)
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista statistiche mensili.
+  *Postcondizioni:*
+  - L'utente visualizza il grafico corrente della vista.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza il grafico del mese corrente;
+    + visualizza gli assi del grafico, "giorni" per le x, "raccomandazioni utili" per le y;
+    + visualizza la rappresentazione dei dati nel grafico come "grafico combinato".
+  - Sistema:
+    + renderizza e mostra il grafico all'utente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+=== UC11.2 - Visualizzazione "Raccomandazioni utili"
+#figure(
+  image("/imgs/Uml/UC11.2.png", width: 60%),
+  caption: [
+    Visualizzazione "Raccomandazioni utili"
+  ],
+)
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista statistiche mensili.
+  *Postcondizioni:*
+  - L'utente visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza il dato di "raccomandazioni utili" per il mese corrente della vista.
+  - Sistema:
+    + renderizza e mostra il grafico all'utente.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+=== Approfondimento specificità UC11.2
+#figure(
+  image("/imgs/Uml/UC11.2.1.png", width: 60%),
+  caption: [
+    Visualizzazione dettagli singola raccomandazione
+  ],
+)
+
++ *UC11.2.1 - Visualizzazione dettagli singola raccomandazione*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la lista delle raccomandazioni utili.
+  *Postcondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Scenario principale:*
+  - Admin/User:
+    + osserva un risultato della lista tra i vari mostrati.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+#pagebreak()
+=== Approfondimento specificità UC11.2.1
+#figure(
+  image("/imgs/Uml/UC11.2.1app.png", width: 60%),
+  caption: [
+    Approfondimento specificità UC11.2.1 - Visualizzazione singolo elemento
+  ],
+)
+
++ *UC11.2.1.1 - Visualizzazione "ID" prodotto*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del prodotto che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza l'ID del prodotto che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+
++ *UC11.2.1.2 - Visualizzazione "ID" cliente*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID del cliente che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza l'ID del cliente che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
++ *UC11.2.1.3 - Visualizzazione "Score"*
+
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo delle raccomandazioni.
+  *Postcondizioni:*
+  - L'utente visualizza lo score della raccomandazione che sta osservando.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza lo score della raccomandazione che sta osservando.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
+#pagebreak()
 == UC12 - Visualizzazione vista "Cronologia Ricerche"
 #figure(
   image("/imgs/Uml/UC12.png", width: 80%),
@@ -2573,4 +2736,3 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 - Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità;
 - Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo;
 - Tabella 7: Riepilogo requisiti.
-
