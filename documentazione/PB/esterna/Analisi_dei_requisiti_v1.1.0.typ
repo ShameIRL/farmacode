@@ -698,6 +698,46 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
++ *UC6.1.6 - SVD*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide l'algoritmo che vuole usare per la ricerca (SVD).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
++ *UC6.1.7 - NN*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide l'algoritmo che vuole usare per la ricerca (NN).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
 + *UC6.1.9 - Top 5*\
   *Attori:*
   - Admin;
