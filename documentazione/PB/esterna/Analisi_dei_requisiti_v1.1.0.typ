@@ -506,14 +506,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - User.
 *Precondizioni:*
 - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-- L'utente decide di fare una ricerca e compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5);
+- L'utente decide di fare una ricerca e compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5, UC6.1.8);
 - L'utente avvia la ricerca.
 *Postcondizioni:*
 - L'utente visualizza i risultati della ricerca (UC6.2) in caso essa sia andata a buon fine;
 - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5);
+  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5, UC6.1.8);
   + avvia la ricerca;
   + visualizza i risultati della ricerca (UC6.2/UC14).
 - Sistema:
@@ -568,6 +568,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + UC6.1.2 Ricerca "prodotti per cliente";
     + UC6.1.3 Ricerca "clienti per prodotto";
     + UC6.1.4 Ricerca per "cronologia".
+
 
 + *UC6.1.5 - Scelta Algoritmo*\
   *Attori:*
