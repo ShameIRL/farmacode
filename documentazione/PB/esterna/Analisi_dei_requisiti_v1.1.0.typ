@@ -1765,8 +1765,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-#pagebreak()
 
+#pagebreak()
 == UC12 - Visualizzazione vista "Cronologia Ricerche"
 #figure(
   image("/imgs/Uml/UC12.png", width: 80%),
