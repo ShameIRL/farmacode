@@ -530,7 +530,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC6.1
 
 #figure(
-  image("/imgs/Uml/UC6.1 app.png", width: 80%),
+  image("/imgs/Uml/UC6.1app.png", width: 80%),
   caption: [
     Approfondimento specificità UC6.1 - Ricerca per vista "Ricerca" 
   ],
