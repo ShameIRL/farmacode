@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
     "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
     "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
@@ -113,10 +114,12 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [React.js],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],[18.2.0],
   [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[10.5.1],
   [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito],[4.18.2],
-  [Flask],[],[],
+  [Flask],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP],[3.0.x],
   [NumPy],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],[1.26.0],
-  [Tailwind CSS],[Framework per css utilizzato per lo sviluppo di interfacce utente.],[3],
-  )
+  [PyTorch],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],[2.2.2],
+  [Tailwind CSS],[Framework per css utilizzato per lo sviluppo di interfacce utente.],[3.4.1],
+  [Axios], [Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server], [1.6.8]
+)
   #align(center)[Tabella 2: Librerie e framework]
 
 
@@ -151,8 +154,8 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Analisi statica*]),
-  [Ruff], [Strumento per l'analisi statica del codice Python, individua errori, \ violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], [0.3.3],
-  [ESLint], [Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, \ che aiuta a individuare gli errori di codice e le pratiche non ottimali.], [8.57.0],
+  [Ruff], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], [0.3.3],
+  [ESLint], [Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], [8.57.0],
 
 )
 #align(center)[Tabella 4: Analisi statica]
@@ -167,7 +170,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   table.cell(colspan: 3, [*Analisi dinamica*]),
   [Pytest], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali], [8.0.x],
-  [Jest],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],[29.7.x],
+  [Jest],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],[27.5.1],
   [GitHub Action],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], [/],
 )
 #align(center)[Tabella 5: Analisi dinamica]
