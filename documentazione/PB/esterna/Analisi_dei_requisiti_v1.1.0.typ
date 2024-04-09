@@ -271,7 +271,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + decide se visualizzare i dati nascosti, ovvero la password (UC4.1.4).
 - Sistema:
   + mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC4.1.1, UC4.1.2, UC4.1.3);
-  + se richiesto mostra all'utente i dati nascosti, ovvero la password (UC4.1.4).
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
@@ -337,29 +336,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-
-+ *UC4.1.4 - Visualizzazione password*
-
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta visualizzando la vista "Profilo Utente" nella pagina principale;
-  - L'utente decide di visualizzare la propria password in chiaro;
-  - L'utente visualizza la propria password nascosta.
-  *Postcondizioni:*
-  - L'utente visualizza la propria password in chiaro.
-  *Scenario principale:*
-  - Admin/User:
-    + visualizza la propria password nascosta;
-    + decide di visualizzare la propria password in chiaro;
-    + visualizza la propria password in chiaro.
-  - Sistema:
-    + mostra all'utente la sua password nascosta;
-    + prende a conoscenza l'intenzione dell'utente di visualizzare la password in chiaro;
-    + mostra all'utente la sua password in chiaro.
-  *Generalizzazioni:*
-  - Attori: 1. Admin --> User.
 
 #pagebreak()
 === UC4.2 - Modifica dati utente
