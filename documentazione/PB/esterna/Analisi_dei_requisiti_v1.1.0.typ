@@ -1766,7 +1766,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-== UC11 - Visualizzazione vista "Statistiche Mensili"
+/* == UC11 - Visualizzazione vista "Statistiche Mensili"
 
 #figure(
   image("/imgs/Uml/UC11.png", width: 65%),
@@ -1927,7 +1927,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza lo score della raccomandazione che sta osservando.
   *Generalizzazioni:*
   - Attori:
-    + Admin --> User.
+    + Admin --> User.  */
 
 #pagebreak()
 == UC12 - Visualizzazione vista "Cronologia Ricerche"
