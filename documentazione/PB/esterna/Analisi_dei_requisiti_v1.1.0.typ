@@ -513,7 +513,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin/User:
-  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5, UC6.1.8);
+  + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5, UC6.1.9);
   + avvia la ricerca;
   + visualizza i risultati della ricerca (UC6.2/UC14).
 - Sistema:
@@ -567,9 +567,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
   - User Case:
     + UC6.1.2 SVD;
-    + UC6.1.3 NN.
+    + UC6.1.3 NN;
+    + UC6.1.4 Training Algoritmo.
 
-+ *UC6.1.4 - Scelta Topic*\
+
++ *UC6.1.5 - Scelta Topic*\
   *Attori:*
   - Admin;
   - User.
@@ -598,12 +600,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori: 1. Admin --> User.
   - User Case:
-    + UC6.1.5 Ricerca "prodotti per cliente";
-    + UC6.1.6 Ricerca "clienti per prodotto";
-    + UC6.1.7 Ricerca per "cronologia".
+    + UC6.1.6 Ricerca "prodotti per cliente";
+    + UC6.1.7 Ricerca "clienti per prodotto";
+    + UC6.1.8 Ricerca per "cronologia".
 
 
-+ *UC6.1.8 - Scelta N risultati*\
++ *UC6.1.9 - Scelta N risultati*\
   *Attori:*
   - Admin;
   - User.
@@ -633,9 +635,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
   - User Case:
-    + UC6.1.9 Top 5;
-    + UC6.1.10 Top 10.
-    + UC6.1.11 Top 20.
+    + UC6.1.10 Top 5;
+    + UC6.1.11 Top 10.
+    + UC6.1.12 Top 20.
 
 + *UC6.1.2 - SVD*\
   *Attori:*
@@ -676,6 +678,26 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
+
++ *UC6.1.4 - Training Algoritmo*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto un algoritmo con cui fare il training.
+  *Postcondizioni:*
+  - Viene effettuato il training dell'algoritmo selezionato.
+  *Scenario principale:*
+  - Admin/User:
+    + seleziona l'opzione per effettuare il training;
+    + conferma la  volontà di voler effettuare il training.
+  - Sistema:
+    + chiede all'utente se è sicuro di voler avviare il training;
+    + se l'utente sceglie di avviare il training effettua il training e successivamente da un messaggio di successo;
+    + se l'utente sceglie di non voler avviare il training chiude il pop-up e non avvia il training.
+  *Generalizzazioni:*
+  - Attori: 1. Admin --> User.
 
 + *UC6.1.5 - Ricerca "prodotti per cliente"*\
   *Attori:*
