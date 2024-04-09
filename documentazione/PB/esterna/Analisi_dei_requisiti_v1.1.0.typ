@@ -569,7 +569,41 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + UC6.1.3 Ricerca "clienti per prodotto";
     + UC6.1.4 Ricerca per "cronologia".
 
-+ *UC6.1.5 - Scelta N risultati*\
++ *UC6.1.5 - Scelta Algoritmo*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input "Algoritmo".
+  *Postcondizioni:*
+  - Il campo "Algoritmo" mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili.
+  - Sistema:
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+  - User Case:
+    + UC6.1.6 SVD;
+    + UC6.1.7 NN.
+
+
++ *UC6.1.8 - Scelta N risultati*\
   *Attori:*
   - Admin;
   - User.
