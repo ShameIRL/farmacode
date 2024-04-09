@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.8.1", "2024-04-09", p.favaron, "", "Corretto ore sprint 17, 18",
     "1.8.0", "2024-04-08", p.favaron, "", "Stesura sprint 18",
     "1.7.0", "2024-04-01", p.carraro, p.favaron, "Stesura sprint 17",
     "1.6.0", "2024-03-22", p.rosson, p.carraro, "Stesura sprint 16",
@@ -2734,12 +2735,12 @@ Abbiamo preventivato questo rischio specifico a causa dell'integrazione del Wide
   columns: (auto,)*7,
   align: center,
   [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [5], [], [1], [],
-  [Bomben F.], [], [], [5], [], [2], [1],
-  [Carraro A.], [], [], [5], [], [1], [],
-  [Favaron R.], [], [], [4], [], [1], [],
-  [Pandolfo M.], [], [], [5], [], [2], [],
-  [Passarella A.], [], [], [5], [], [2], [],
+  [Baggio M.], [], [], [4], [], [1], [],
+  [Bomben F.], [], [], [4], [], [1], [1],
+  [Carraro A.], [], [], [4], [], [1], [],
+  [Favaron R.], [], [], [4], [], [1], [1],
+  [Pandolfo M.], [], [], [5], [], [1], [],
+  [Passarella A.], [], [], [5], [], [1], [],
   [Rosson L.], [3], [], [], [], [], [2],
 )
 ])
@@ -2753,11 +2754,11 @@ Abbiamo preventivato questo rischio specifico a causa dell'integrazione del Wide
   columns: (auto,)*7,
   align: center,
   [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [29], [0], [9], [3],
+  [Totale Ore], [3], [0], [26], [0], [6], [4],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [€435,00], [€0,00], [€135,00], [€75,00],
-  [Totale], [], [], [], [], [], [€735,00], 
-  [Bilancio], [], [], [], [], [], [*€3495,00*],
+  [Costo], [€90,00], [€0,00], [€390,00], [€0,00], [€90,00], [€100,00],
+  [Totale], [], [], [], [], [], [€670,00], 
+  [Bilancio], [], [], [], [], [], [*€3620,00*],
 )
 ])
 #align(center)[Tabella 79: preventivo costi sprint.16.]
@@ -2783,12 +2784,12 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
   columns: (auto,)*7,
   align: center,
   [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [5], [], [1 #red("(+1)")], [],
-  [Bomben F.], [], [], [5 #red("(+1)")], [], [2], [1],
-  [Carraro A.], [], [], [5 #red("(+1)")], [], [1], [],
-  [Favaron R.], [], [], [4], [], [1], [],
-  [Pandolfo M.], [], [], [5], [], [2], [],
-  [Passarella A.], [], [], [5 #red("(+1)")], [], [2], [],
+  [Baggio M.], [], [], [4], [], [1 #red("(+1)")], [],
+  [Bomben F.], [], [], [4 #red("(+1)")], [], [1], [1],
+  [Carraro A.], [], [], [4 #red("(+1)")], [], [1], [],
+  [Favaron R.], [], [], [4], [], [1], [1],
+  [Pandolfo M.], [], [], [5], [], [1], [],
+  [Passarella A.], [], [], [5 #red("(+1)")], [], [1], [],
   [Rosson L.], [3], [], [], [], [], [2],
 )
 ])
@@ -2802,11 +2803,11 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
   columns: (auto,)*7,
   align: center,
   [*SPRINT 16*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [32], [0], [10], [3],
+  [Totale Ore], [3], [0], [29], [0], [7], [3],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [#red("€480,00")], [€0,00], [#red("€150,00")], [€75,00],
-  [Totale], [], [], [], [], [], [#red("€795,00")], 
-  [Bilancio], [], [], [], [], [], [#red("€3495,00")],
+  [Costo], [€90,00], [€0,00], [#red("€435,00")], [€0,00], [#red("€105,00")], [€100,00],
+  [Totale], [], [], [], [], [], [#red("€730,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€3560,00")],
 )
 ])
 #align(center)[Tabella 81: consuntivo costi sprint.16.]
@@ -2881,13 +2882,13 @@ Durante questo sprint non sono previsti grandi rischi.
   columns: (auto,)*7,
   align: center,
   [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [5], [], [2], [],
+  [Baggio M.], [], [], [5], [], [1], [],
   [Bomben F.], [], [], [5], [], [2], [],
   [Carraro A.], [3], [], [4], [], [], [],
   [Favaron R.], [], [], [4], [], [1], [1],
-  [Pandolfo M.], [], [], [4], [], [2], [1],
-  [Passarella A.], [], [], [5], [], [2], [],
-  [Rosson L.], [], [], [5], [], [1], [],
+  [Pandolfo M.], [], [], [4], [], [1], [1],
+  [Passarella A.], [], [], [4], [], [1], [],
+  [Rosson L.], [], [], [4], [], [1], [],
 )
 ])
 #align(center)[Tabella 82: preventivo orario sprint.17.]
@@ -2900,11 +2901,11 @@ Durante questo sprint non sono previsti grandi rischi.
   columns: (auto,)*7,
   align: center,
   [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [32], [0], [10], [2],
+  [Totale Ore], [3], [0], [30], [0], [7], [2],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [€480,00], [€0,00], [€150,00], [€50,00],
-  [Totale], [], [], [], [], [], [€770,00], 
-  [Bilancio], [], [], [], [], [], [*€2725,00*],
+  [Costo], [€90,00], [€0,00], [€450,00], [€0,00], [€105,00], [€50,00],
+  [Totale], [], [], [], [], [], [€695,00], 
+  [Bilancio], [], [], [], [], [], [*€2865,00*],
 )
 ])
 #align(center)[Tabella 83: preventivo costi sprint.17.]
@@ -2930,13 +2931,13 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
   columns: (auto,)*7,
   align: center,
   [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [5 #red("(+1)")], [], [2], [],
+  [Baggio M.], [], [], [5 #red("(+1)")], [], [1], [],
   [Bomben F.], [], [], [5 #red("(+1)")], [], [2], [],
   [Carraro A.], [3], [], [4 #red("(+1)")], [], [], [],
   [Favaron R.], [], [], [4], [], [1], [1],
-  [Pandolfo M.], [], [], [4], [], [2], [1],
-  [Passarella A.], [], [], [5 #red("(+1)")], [], [2], [],
-  [Rosson L.], [], [], [5 #red("(+1)")], [], [1], [],
+  [Pandolfo M.], [], [], [4], [], [1], [1],
+  [Passarella A.], [], [], [4 #red("(+1)")], [], [1], [],
+  [Rosson L.], [], [], [4 #red("(+1)")], [], [1], [],
 )
 ])
 #align(center)[Tabella 84: consuntivo orario sprint.17.]
@@ -2949,11 +2950,11 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
   columns: (auto,)*7,
   align: center,
   [*SPRINT 17*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [37], [0], [10], [3],
+  [Totale Ore], [3], [0], [35], [0], [7], [2],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [#red("€555,00")], [€0,00], [€150,00], [€50,00],
-  [Totale], [], [], [], [], [], [#red("€845,00")], 
-  [Bilancio], [], [], [], [], [], [#red("€2650,00")],
+  [Costo], [€90,00], [€0,00], [#red("€525,00")], [€0,00], [€105,00], [€50,00],
+  [Totale], [], [], [], [], [], [#red("€770,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€2790,00")],
 )
 ])
 #align(center)[Tabella 85: consuntivo costi sprint.17.]
@@ -3009,7 +3010,7 @@ Il team, inoltre, si è recato presso l'azienda proponente per una visita in gio
 
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#17.png", height: 230pt, width: auto),
+  image("/imgs/gantt_views/sprint#18.png", height: 230pt, width: auto),
   caption: [sprint.18]
   )
 )
@@ -3031,13 +3032,13 @@ Durante questo sprint non sono previsti grandi rischi.
   columns: (auto,)*7,
   align: center,
   [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [6], [], [2], [],
-  [Bomben F.], [], [], [6], [], [1], [],
-  [Carraro A.], [], [], [5], [], [1], [],
+  [Baggio M.], [], [], [4], [], [2], [],
+  [Bomben F.], [], [], [4], [], [1], [],
+  [Carraro A.], [], [], [4], [], [1], [],
   [Favaron R.], [3], [], [3], [], [1], [],
   [Pandolfo M.], [], [], [4], [], [2], [],
-  [Passarella A.], [], [], [5], [], [2], [],
-  [Rosson L.], [], [], [5], [], [1], [],
+  [Passarella A.], [], [], [4], [], [2], [],
+  [Rosson L.], [], [], [4], [], [1], [],
 )
 ])
 #align(center)[Tabella 86: preventivo orario sprint.18.]
@@ -3050,11 +3051,11 @@ Durante questo sprint non sono previsti grandi rischi.
   columns: (auto,)*7,
   align: center,
   [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [34], [0], [10], [0],
+  [Totale Ore], [3], [0], [27], [0], [10], [0],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [€510,00], [€0,00], [€150,00], [€0,00],
-  [Totale], [], [], [], [], [], [€750,00], 
-  [Bilancio], [], [], [], [], [], [*€1900,00*],
+  [Costo], [€90,00], [€0,00], [€405,00], [€0,00], [€150,00], [€0,00],
+  [Totale], [], [], [], [], [], [€645,00], 
+  [Bilancio], [], [], [], [], [], [*€2145,00*],
 )
 ])
 #align(center)[Tabella 87: preventivo costi sprint.18.]
@@ -3080,13 +3081,13 @@ Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle tas
   columns: (auto,)*7,
   align: center,
   [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Baggio M.], [], [], [6 #red("(+1)")], [], [2], [],
-  [Bomben F.], [], [], [6 #red("(+1)")], [], [1 #red("(+1)")], [],
-  [Carraro A.], [], [], [5 #red("(+1)")], [], [1 #red("(+1)")], [],
+  [Baggio M.], [], [], [4 #red("(+1)")], [], [2], [],
+  [Bomben F.], [], [], [4 #red("(+1)")], [], [1 #red("(+1)")], [],
+  [Carraro A.], [], [], [4 #red("(+1)")], [], [1 #red("(+1)")], [],
   [Favaron R.], [3], [], [3], [], [1], [],
   [Pandolfo M.], [], [], [4 #red("(+1)")], [], [2], [],
-  [Passarella A.], [], [], [5 #red("(+1)")], [], [2], [],
-  [Rosson L.], [], [], [5], [], [1 #red("(+1)")], [],
+  [Passarella A.], [], [], [4 #red("(+1)")], [], [2], [],
+  [Rosson L.], [], [], [4], [], [1 #red("(+1)")], [],
 )
 ])
 #align(center)[Tabella 88: consuntivo orario sprint.18.]
@@ -3099,11 +3100,11 @@ Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle tas
   columns: (auto,)*7,
   align: center,
   [*SPRINT 18*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
-  [Totale Ore], [3], [0], [39], [0], [13], [3],
+  [Totale Ore], [3], [0], [32], [0], [13], [0],
   [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
-  [Costo], [€90,00], [€0,00], [#red("€585,00")], [€0,00], [€195,00], [€0,00],
-  [Totale], [], [], [], [], [], [#red("€870,00")], 
-  [Bilancio], [], [], [], [], [], [#red("€1780,00")],
+  [Costo], [€90,00], [€0,00], [#red("€480,00")], [€0,00], [#red("€195,00")], [€0,00],
+  [Totale], [], [], [], [], [], [#red("€765,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€2025,00")],
 )
 ])
 #align(center)[Tabella 89: consuntivo costi sprint.18.]
@@ -3128,7 +3129,7 @@ Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle tas
 )
 
 === Rischi incontrati e mitigazioni
-In questo sprint non sono sorte difficoltà importanti.
+In questo sprint è sorta una difficoltà inattesa: il container docker che gestisce l'intero sistema che stiamo progettando ha dato dei problemi, rendendo inizialmente impossibile poter continuare con lo sviluppo per i componenti del gruppo con un computer con sistema operativo Windows. Dopo varie ore utilizzate per scovare il problema, abbiamo notato che docker scaricava versioni diverse di una stessa dipendenza su diversi sistemi operativi. Siamo riusciti quindi a risolvere il problema andando ad esplicitare la corretta versione da scaricare così da evitare gli errori.
 
 === Retrospettiva
 Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
