@@ -599,8 +599,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
   - User Case:
-    + UC6.1.6 Top 5;
-    + UC6.1.7 Top 10.
+    + UC6.1.9 Top 5;
+    + UC6.1.10 Top 10.
+    + UC6.1.11 Top 20.
 
 + *UC6.1.2 - Ricerca "prodotti per cliente"*\
   *Attori:*
@@ -663,7 +664,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.6 - Top 5*\
++ *UC6.1.9 - Top 5*\
   *Attori:*
   - Admin;
   - User.
@@ -677,13 +678,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin/User:
     + decide il numero di raccomandazioni che vuole ricevere (Top 5).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.8);
     + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.7 - Top 10*\
++ *UC6.1.10 - Top 10*\
   *Attori:*
   - Admin;
   - User.
@@ -697,7 +698,27 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin/User:
     + decide il numero di raccomandazioni che vuole ricevere (Top 10).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.8);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
++ *UC6.1.11 - Top 20*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide il numero di raccomandazioni che vuole ricevere (Top 20).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.8);
     + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
