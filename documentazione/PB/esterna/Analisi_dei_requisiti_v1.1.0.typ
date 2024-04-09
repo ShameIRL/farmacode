@@ -536,41 +536,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   ],
 )
 
-+ *UC6.1.1 - Scelta Topic*\
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-  - L'utente sta scegliendo un'opzione per l'input "Topic".
-  *Postcondizioni:*
-  - Il campo "Topic" mostra l'opzione scelta dall'utente.
-  *Scenario principale:*
-  - Admin/User:
-    + visualizza un'opzione di default per l'input;
-    + seleziona l'opzione di default per modificarla;
-    + inizia a compilare il campo con l'opzione che vuole selezionare;
-    + visualizza le opzioni possibili per l'input;
-    + visualizza suggerimenti di autocompletamento per l'input;
-    + sceglie una delle opzioni possibili.
-  - Sistema:
-    + mostra all'utente un'opzione di default per l'input;
-    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
-    + prende a conoscenza i caratteri inseriti dall'utente;
-    + contatta tramite API il software che fornisce le opzioni possibili;
-    + riceve tramite API una risposta con le opzioni possibili dal software;
-    + mostra all'utente le opzioni possibili per l'input;
-    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.  
-  *Generalizzazioni:*
-  - Attori: 1. Admin --> User.
-  - User Case:
-    + UC6.1.2 Ricerca "prodotti per cliente";
-    + UC6.1.3 Ricerca "clienti per prodotto";
-    + UC6.1.4 Ricerca per "cronologia".
-
-
-+ *UC6.1.5 - Scelta Algoritmo*\
++ *UC6.1.1 - Scelta Algoritmo*\
   *Attori:*
   - Admin;
   - User.
@@ -600,8 +566,41 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
   - User Case:
-    + UC6.1.6 SVD;
-    + UC6.1.7 NN.
+    + UC6.1.2 SVD;
+    + UC6.1.3 NN.
+
++ *UC6.1.4 - Scelta Topic*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente sta scegliendo un'opzione per l'input "Topic".
+  *Postcondizioni:*
+  - Il campo "Topic" mostra l'opzione scelta dall'utente.
+  *Scenario principale:*
+  - Admin/User:
+    + visualizza un'opzione di default per l'input;
+    + seleziona l'opzione di default per modificarla;
+    + inizia a compilare il campo con l'opzione che vuole selezionare;
+    + visualizza le opzioni possibili per l'input;
+    + visualizza suggerimenti di autocompletamento per l'input;
+    + sceglie una delle opzioni possibili.
+  - Sistema:
+    + mostra all'utente un'opzione di default per l'input;
+    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
+    + prende a conoscenza i caratteri inseriti dall'utente;
+    + contatta tramite API il software che fornisce le opzioni possibili;
+    + riceve tramite API una risposta con le opzioni possibili dal software;
+    + mostra all'utente le opzioni possibili per l'input;
+    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
+    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.  
+  *Generalizzazioni:*
+  - Attori: 1. Admin --> User.
+  - User Case:
+    + UC6.1.5 Ricerca "prodotti per cliente";
+    + UC6.1.6 Ricerca "clienti per prodotto";
+    + UC6.1.7 Ricerca per "cronologia".
 
 
 + *UC6.1.8 - Scelta N risultati*\
@@ -638,7 +637,47 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + UC6.1.10 Top 10.
     + UC6.1.11 Top 20.
 
-+ *UC6.1.2 - Ricerca "prodotti per cliente"*\
++ *UC6.1.2 - SVD*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide l'algoritmo che vuole usare per la ricerca (SVD).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
++ *UC6.1.3 - NN*\
+  *Attori:*
+  - Admin;
+  - User.
+  *Precondizioni:*
+  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
+  - L'utente decide di fare una ricerca e compila i campi necessari.
+  *Postcondizioni:*
+  - L'utente ha compilato correttamente i campi di ricerca;
+  - L'utente visualizza i risultati della ricerca (UC6.2).
+  *Scenario principale:*
+  - Admin/User:
+    + decide l'algoritmo che vuole usare per la ricerca (NN).
+  - Sistema:
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+  *Generalizzazioni:*
+  - Attori:
+    + Admin --> User.
+
++ *UC6.1.5 - Ricerca "prodotti per cliente"*\
   *Attori:*
   - Admin;
   - User.
@@ -652,13 +691,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin/User:
     + sceglie di cercare i migliori prodotti per il cliente selezionato;
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.4);
     + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.3 - Ricerca "clienti per prodotti"*\
++ *UC6.1.6 - Ricerca "clienti per prodotti"*\
   *Attori:*
   - Admin;
   - User.
@@ -672,13 +711,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin/User:
     + sceglie di cercare i migliori clienti per il prodotto selezionato.
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.4);
     + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.4 - Ricerca per "cronologia"*\
++ *UC6.1.7 - Ricerca per "cronologia"*\
   *Attori:*
   - Admin;
   - User.
@@ -693,51 +732,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + sceglie di effettuare nuovamente una precedente ricerca;
     + utilizza la cronologia per compilare i campi di ricerca in automatico.
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.4);
     + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.6 - SVD*\
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-  - L'utente decide di fare una ricerca e compila i campi necessari.
-  *Postcondizioni:*
-  - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
-  *Scenario principale:*
-  - Admin/User:
-    + decide l'algoritmo che vuole usare per la ricerca (SVD).
-  - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
-  *Generalizzazioni:*
-  - Attori:
-    + Admin --> User.
-
-+ *UC6.1.7 - NN*\
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente sta visualizzando la vista "Ricerca" nella pagina principale;
-  - L'utente decide di fare una ricerca e compila i campi necessari.
-  *Postcondizioni:*
-  - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
-  *Scenario principale:*
-  - Admin/User:
-    + decide l'algoritmo che vuole usare per la ricerca (NN).
-  - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.5);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
-  *Generalizzazioni:*
-  - Attori:
-    + Admin --> User.
 
 + *UC6.1.9 - Top 5*\
   *Attori:*
