@@ -1766,7 +1766,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + Admin --> User.
 
 #pagebreak()
-== UC12 - Visualizzazione vista "Cronologia Ricerche"
+== UC11 - Visualizzazione vista "Cronologia Ricerche"
 #figure(
   image("/imgs/Uml/UC12.png", width: 80%),
   caption: [
@@ -1784,14 +1784,14 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Scenario principale:*
 - Admin:
   + seleziona la funzionalità di cronologia ricerche nel menù;
-  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC12.1);
-  + visualizza la lista delle ricerche (UC12.2).
+  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC11.1);
+  + visualizza la lista delle ricerche (UC11.2).
 - Sistema:
   + mostra all'utente la funzionalità di cronologia ricerche;
-  + fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
-  + mostra all'utente la lista delle ricerche (UC12.2).
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC11.1) e di visualizzarne i risultati;
+  + mostra all'utente la lista delle ricerche (UC11.2).
 
-=== UC12.1 - Ricerca per vista "Cronologia Ricerche"
+=== UC11.1 - Ricerca per vista "Cronologia Ricerche"
 #figure(
   image("/imgs/Uml/UC12.1.png", width: 80%),
   caption: [
@@ -1805,13 +1805,13 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin:
-  + compila i campi presenti nella barra di ricerca (UC12.1.1);
+  + compila i campi presenti nella barra di ricerca (UC11.1.1);
   + avvia la ricerca;
-  + visualizza i risultati della ricerca (UC12.2/UC14).
+  + visualizza i risultati della ricerca (UC11.2/UC13).
 - Sistema:
   + memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
@@ -1827,7 +1827,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   ],
 )
 
-+ *UC12.1.1.1 - Completamento input "Ricerca"*
++ *UC11.1.1.1 - Completamento input "Ricerca"*
 
   *Attori:*
   - Admin;
@@ -1835,8 +1835,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi richiesti;
   - L'utente sta compilando il campo di ricerca generale.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + compila il campo ricerca;;
@@ -1845,7 +1845,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente ii risultati della ricerca man mano che il campo di ricerca viene compilato (?????).
 
 
-+ *UC12.1.1.2 - Filtro "Data"*
++ *UC11.1.1.2 - Filtro "Data"*
 
   *Attori:*
   - Admin;
@@ -1853,12 +1853,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
   - L'utente ha scelto l'opzione di filtraggio per data.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per data;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
     + digita la data;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1868,7 +1868,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro data.
 
-+ *UC12.1.1.3 - Filtro "Utente"*
++ *UC11.1.1.3 - Filtro "Utente"*
 
   *Attori:*
   - Admin;
@@ -1876,12 +1876,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
   - L'utente ha scelto l'opzione di filtraggio per utente.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per utente;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
     + digita il nome utente;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1891,7 +1891,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro utente.
 
- *UC12.1.1.4 - Filtro "Algoritmo"*
+ *UC11.1.1.4 - Filtro "Algoritmo"*
 
   *Attori:*
   - Admin;
@@ -1899,12 +1899,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
   - L'utente ha scelto l'opzione di filtraggio per algoritmo.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per algoritmo;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
     + digita il nome dell'algoritmo;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1914,7 +1914,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro algoritmo.
 
- *UC12.1.1.5 - Filtro "Topic"*
+ *UC11.1.1.5 - Filtro "Topic"*
 
   *Attori:*
   - Admin;
@@ -1922,12 +1922,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
   - L'utente ha scelto l'opzione di filtraggio per topic.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per topic;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
     + digita il topic;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1937,7 +1937,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro topic.
 
- *UC12.1.1.6 - Filtro "Codice Cliente/Prodotto"*
+ *UC11.1.1.6 - Filtro "Codice Cliente/Prodotto"*
 
   *Attori:*
   - Admin;
@@ -1945,12 +1945,12 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
   - L'utente ha scelto l'opzione di filtraggio per codice cliente/prodotto.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per codice cliente/prodotto;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
     + digita il codice cliente/prodotto;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1961,7 +1961,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro codice cliente/prodotto.
 
 
- *UC12.1.1.7 - Filtro "Top"*
+ *UC11.1.1.7 - Filtro "Top"*
 
   *Attori:*
   - Admin;
@@ -1969,8 +1969,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
   - L'utente ha scelto l'opzione di filtraggio per top.
   *Postcondizioni:*
-  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
-  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  - L'utente visualizza i risultati della ricerca (UC11.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per top;
@@ -1981,6 +1981,24 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + mostra all'utente un pop-up per la ricerca;
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro top.
+
+ *UC11.1.1.8 - Selezione corrispondenza*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto un'opzione di filtraggio.
+  *Postcondizioni:*
+  - L'utente ha selezionato un tipo di corrispondenza con cui confrontare ciò che scrive alla cronologia.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione per cambiare il tipo di corrispondenza;
+    + seleziona dal menù a tendina una delle opzioni di default.
+  - Sistema:
+    + mostra all'utente un menù a tendina con i tipi di corrispondenza;
+    + aggiorna l'opzione  di corrispondenza in uso.
+
 
 #pagebreak()
 === UC12.2 - Visualizzazione lista ricerche
