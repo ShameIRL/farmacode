@@ -2064,7 +2064,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza la data del risultato che sta osservando.
 
-+ *UC11.2.1.2 - Visualizzazione "Username" utente ricerca*
++ *UC11.2.1.2 - Visualizzazione "Utente"  ricerca*
 
   *Attori:*
   - Admin.
@@ -2076,17 +2076,53 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza lo username utente del risultato che sta osservando.
 
-+ *UC11.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
++ *UC11.2.1.3 - Visualizzazione "Algoritmo"  ricerca*
 
   *Attori:*
   - Admin.
   *Precondizioni:*
   - L'utente osserva un risultato singolo della sua ricerca.
   *Postcondizioni:*
-  - L'utente visualizza lo score del risultato che sta osservando.
+  - L'utente visualizza l'algoritmo del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    + visualizza i criteri di ricerca (Sotto-UC UC8.1.1) del risultato che sta osservando.
+    + visualizza l'algoritmo del risultato che sta osservando.
+
++ *UC11.2.1.4 - Visualizzazione "Topic"  ricerca*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il topic del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    + visualizza il topic del risultato che sta osservando.
+
++ *UC11.2.1.5 - Visualizzazione "Codice cliente/prodotto"  ricerca*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il codice cliente/prodotto del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    + visualizza il codice cliente/prodotto del risultato che sta osservando.
+
++ *UC11.2.1.4 - Visualizzazione "Top"  ricerca*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza il top n del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    + visualizza il top n del risultato che sta osservando.
 
 #pagebreak()
 == UC13 - Visualizzazione vista "Cronologia Feedback"
