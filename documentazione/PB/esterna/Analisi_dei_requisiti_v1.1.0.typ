@@ -1768,7 +1768,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 == UC11 - Visualizzazione vista "Cronologia Ricerche"
 #figure(
-  image("/imgs/Uml/UC12.png", width: 80%),
+  image("/imgs/Uml/UC11.png", width: 80%),
   caption: [
     Visualizzazione vista "Cronologia Ricerche"
   ],
@@ -1793,7 +1793,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 === UC11.1 - Ricerca per vista "Cronologia Ricerche"
 #figure(
-  image("/imgs/Uml/UC12.1.png", width: 80%),
+  image("/imgs/Uml/UC11.1.png", width: 80%),
   caption: [
     Ricerca per vista "Cronologia Ricerche"
   ],
@@ -1821,7 +1821,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC12.1
 
 #figure(
-  image("/imgs/Uml/UC12.1app.png", width: 80%),
+  image("/imgs/Uml/UC11.1app.png", width: 80%),
   caption: [
     Approfondimento specificità UC12.1 - Completamento input
   ],
@@ -2001,9 +2001,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 
 #pagebreak()
-=== UC12.2 - Visualizzazione lista ricerche
+=== UC11.2 - Visualizzazione lista ricerche
 #figure(
-  image("/imgs/Uml/UC12.2.png", width: 65%),
+  image("/imgs/Uml/UC11.2.png", width: 65%),
   caption: [
     Visualizzazione lista ricerche
   ],
@@ -2014,7 +2014,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente visualizza correttamente la vista "Cronologia Ricerche".
 *Postcondizioni:*
 - L'utente visualizza la lista delle ricerche;
-- Nel caso l'utente abbia effettuato una ricerca (UC12.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC11.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin:
   + visualizza la lista delle ricerche;
@@ -2023,17 +2023,17 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + mostra la lista delle ricerche;
   + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC14 - Errore di ricerca.
+- UC13 - Errore di ricerca.
 
 === Approfondimento specificità uc12.2
 #figure(
-  image("/imgs/Uml/UC12.2.1.png", width: 65%),
+  image("/imgs/Uml/UC11.2.1.png", width: 65%),
   caption: [
     Visualizzazione dettagli singola "Ricerca"
   ],
 )
 
-+ *UC12.2.1 Visualizzazione dettagli singola "Ricerca"*\
++ *UC11.2.1 Visualizzazione dettagli singola "Ricerca"*\
   *Attori:*
   - Admin;
   *Precondizioni:*
@@ -2044,15 +2044,15 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + osserva una ricerca della lista tra i vari mostrati.
 
-=== Approfondimento specificità UC12.2.1
+=== Approfondimento specificità UC11.2.1
 
 #figure(
-  image("/imgs/Uml/UC12.2.1app.png", width: 70%),
+  image("/imgs/Uml/UC11.2.1app.png", width: 70%),
   caption: [
-    Approfondimento specificità UC12.2.1 - Visualizzazione ricerca
+    Approfondimento specificità UC11.2.1 - Visualizzazione ricerca
   ],
 )
-+ *UC12.2.1.1 - Visualizzazione "Data" ricerca*
++ *UC11.2.1.1 - Visualizzazione "Data" ricerca*
 
   *Attori:*
   - Admin.
@@ -2064,7 +2064,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza la data del risultato che sta osservando.
 
-+ *UC12.2.1.2 - Visualizzazione "Username" utente ricerca*
++ *UC11.2.1.2 - Visualizzazione "Username" utente ricerca*
 
   *Attori:*
   - Admin.
@@ -2076,7 +2076,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza lo username utente del risultato che sta osservando.
 
-+ *UC12.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
++ *UC11.2.1.3 - Visualizzazione "Criteri di ricerca" ricerca*
 
   *Attori:*
   - Admin.
