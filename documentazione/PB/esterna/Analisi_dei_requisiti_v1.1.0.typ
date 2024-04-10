@@ -1778,7 +1778,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Precondizioni:*
 - L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
 - L'utente è stato reindirizzato correttamente dal sistema;
-- L'utente ha aperto il menù contenente le varie funzionalità del sito;
 - L'utente ha selezionato la funzionalità di cronologia ricerche dal menù.
 *Postcondizioni:*
 - L'utente visualizza nella vista principale della pagina la funzionalità di cronologia ricerche.
@@ -1811,7 +1810,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Scenario principale:*
 - Admin:
   + compila i campi presenti nella barra di ricerca (UC12.1.1);
-  + avvia la ricerca (UC12.1.2);
+  + avvia la ricerca;
   + visualizza i risultati della ricerca (UC12.2/UC14).
 - Sistema:
   + memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
@@ -1827,54 +1826,161 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     Approfondimento specificità UC12.1 - Completamento input
   ],
 )
-+ *UC12.1.1.1 - Scelta input "Data"*
+
++ *UC12.1.1.1 - Completamento input "Ricerca"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi richiesti;
+  - L'utente sta compilando il campo di ricerca generale.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + compila il campo ricerca;;
+    + visualizza i risulltati della ricerca.
+  - Sistema:
+    + mostra all'utente ii risultati della ricerca man mano che il campo di ricerca viene compilato (?????).
+
+
++ *UC12.1.1.2 - Filtro "Data"*
 
   *Attori:*
   - Admin;
   *Precondizioni:*
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-  - L'utente sta scegliendo un'opzione per l'input data.
+  - L'utente ha scelto l'opzione di filtraggio per data.
   *Postcondizioni:*
-  - Il campo data mostra l'opzione scelta dall'utente.
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
-    + visualizza un'opzione di default per l'input;
-    + seleziona l'opzione di default per modificarla;
-    + visualizza le opzioni possibili per l'input;
-    + sceglie una delle opzioni possibili per l'input.
+    + seleziona l'opzione dii filtraggio per data;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + digita la data;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
   - Sistema:
-    + mostra all'utente un'opzione di default per l'input;
-    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    + mostra all'utente le opzioni possibili per l'input;
-    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro data.
 
-+ *UC1.1.1.2 - Completaento input "Username"*
++ *UC12.1.1.3 - Filtro "Utente"*
 
   *Attori:*
   - Admin;
   *Precondizioni:*
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-  - L'utente sta scegliendo un'opzione per l'input username.
+  - L'utente ha scelto l'opzione di filtraggio per utente.
   *Postcondizioni:*
-  - Il campo username mostra l'opzione scelta dall'utente.
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
-    + visualizza un'opzione di default per l'input;
-    + seleziona l'opzione di default per modificarla;
-    + inizia a compilare il campo con l'opzione che vuole selezionare;
-    + visualizza le opzioni possibili per l'input;
-    + visualizza suggerimenti di autocompletamento per l'input;
-    + sceglie una delle opzioni possibili per l'input.
+    + seleziona l'opzione dii filtraggio per utente;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + digita il nome utente;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
   - Sistema:
-    + mostra all'utente un'opzione di default per l'input;
-    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    + prende a conoscenza i caratteri inseriti dall'utente;
-    + contatta tramite API il software che fornisce le opzioni possibili;
-    + riceve tramite API una risposta con le opzioni possibili dal software;
-    + mostra all'utente le opzioni possibili per l'input;
-    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro utente.
+
+ *UC12.1.1.4 - Filtro "Algoritmo"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per algoritmo.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione dii filtraggio per algoritmo;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + digita il nome dell'algoritmo;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro algoritmo.
+
+ *UC12.1.1.5 - Filtro "Topic"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per topic.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione dii filtraggio per topic;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + digita il topic;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro topic.
+
+ *UC12.1.1.6 - Filtro "Codice Cliente/Prodotto"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per codice cliente/prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione dii filtraggio per codice cliente/prodotto;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole;
+    + digita il codice cliente/prodotto;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro codice cliente/prodotto.
+
+
+ *UC12.1.1.7 - Filtro "Top"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per top.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione dii filtraggio per top;
+    + digita il numero della ricerca top;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro top.
 
 #pagebreak()
 === UC12.2 - Visualizzazione lista ricerche
