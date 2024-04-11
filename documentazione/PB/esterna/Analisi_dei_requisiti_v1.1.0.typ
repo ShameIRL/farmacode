@@ -1840,7 +1840,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin:
     + compila il campo ricerca;;
-    + visualizza i risulltati della ricerca.
+    + visualizza i risultati della ricerca.
   - Sistema:
     + mostra all'utente ii risultati della ricerca man mano che il campo di ricerca viene compilato.
 
