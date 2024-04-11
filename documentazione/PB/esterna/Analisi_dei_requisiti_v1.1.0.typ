@@ -1813,21 +1813,21 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + avvia la ricerca;
   + visualizza i risultati della ricerca (UC11.2/UC13).
 - Sistema:
-  + memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC11.1.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
   + riceve tramite API una risposta dal software;
   + mostra a schermo i risultati della ricerca.
 
-=== Approfondimento specificità UC12.1
+=== Approfondimento specificità UC11.1
 
 #figure(
   image("/imgs/Uml/UC11.1app.png", width: 80%),
   caption: [
-    Approfondimento specificità UC12.1 - Completamento input
+    Approfondimento specificità UC11.1 - Completamento input
   ],
 )
 
-+ *UC11.1.1.1 - Completamento input "Ricerca"*
++ *UC11.1.1 - Completamento input "Ricerca"*
 
   *Attori:*
   - Admin;
@@ -1842,10 +1842,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + compila il campo ricerca;;
     + visualizza i risulltati della ricerca.
   - Sistema:
-    + mostra all'utente ii risultati della ricerca man mano che il campo di ricerca viene compilato (?????).
+    + mostra all'utente ii risultati della ricerca man mano che il campo di ricerca viene compilato.
 
 
-+ *UC11.1.1.2 - Filtro "Data"*
++ *UC11.1.2 - Filtro "Data"*
 
   *Attori:*
   - Admin;
@@ -1858,7 +1858,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per data;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.8);
     + digita la data;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1868,7 +1868,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro data.
 
-+ *UC11.1.1.3 - Filtro "Utente"*
++ *UC11.1.3 - Filtro "Utente"*
 
   *Attori:*
   - Admin;
@@ -1881,7 +1881,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per utente;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.8);
     + digita il nome utente;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1891,7 +1891,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro utente.
 
- *UC11.1.1.4 - Filtro "Algoritmo"*
+ *UC11.1.4 - Filtro "Algoritmo"*
 
   *Attori:*
   - Admin;
@@ -1904,7 +1904,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per algoritmo;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.8);
     + digita il nome dell'algoritmo;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1914,7 +1914,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro algoritmo.
 
- *UC11.1.1.5 - Filtro "Topic"*
+ *UC11.1.5 - Filtro "Topic"*
 
   *Attori:*
   - Admin;
@@ -1927,7 +1927,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per topic;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.8);
     + digita il topic;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1937,7 +1937,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro topic.
 
- *UC11.1.1.6 - Filtro "Codice Cliente/Prodotto"*
+ *UC11.1.6 - Filtro "Codice Cliente/Prodotto"*
 
   *Attori:*
   - Admin;
@@ -1950,7 +1950,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Scenario principale:*
   - Admin:
     + seleziona l'opzione dii filtraggio per codice cliente/prodotto;
-    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.1.8);
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC11.1.8);
     + digita il codice cliente/prodotto;
     + seleziona l'opzione apply se vuole effettuare il filtraggio;
     + altrimenti seleziona l'opzione clear.
@@ -1961,7 +1961,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro codice cliente/prodotto.
 
 
- *UC11.1.1.7 - Filtro "Top"*
+ *UC11.1.7 - Filtro "Top"*
 
   *Attori:*
   - Admin;
@@ -1982,7 +1982,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
     + se l'utente decide di non applicare i filtri ripulisce il campo filtro top.
 
- *UC11.1.1.8 - Selezione corrispondenza*
+ *UC11.1.8 - Selezione corrispondenza*
 
   *Attori:*
   - Admin;
@@ -2025,7 +2025,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Estensioni:*
 - UC13 - Errore di ricerca.
 
-=== Approfondimento specificità uc12.2
+=== Approfondimento specificità uc11.2
 #figure(
   image("/imgs/Uml/UC11.2.1.png", width: 65%),
   caption: [
@@ -2125,9 +2125,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + visualizza il top n del risultato che sta osservando.
 
 #pagebreak()
-== UC13 - Visualizzazione vista "Cronologia Feedback"
+== UC12 - Visualizzazione vista "Cronologia Feedback"
 #figure(
-  image("/imgs/Uml/UC13.png", width: 80%),
+  image("/imgs/Uml/UC12.png", width: 80%),
   caption: [
     Visualizzazione vista "Cronologia Feedback"
   ],
@@ -2137,26 +2137,25 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Precondizioni:*
 - L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
 - L'utente è stato reindirizzato correttamente dal sistema;
-- L'utente ha aperto il menù contenente le varie funzionalità del sito;
 - L'utente ha selezionato la funzionalità di cronologia feedback dal menù.
 *Postcondizioni:*
 - L'utente visualizza nella vista principale della pagina la funzionalità di cronologia feedback.
 *Scenario principale:*
 - Admin:
   + seleziona la funzionalità di cronologia feedback nel menù;
-  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC13.1);
-  + visualizza la lista dei feedback (UC13.2).
+  + decide se effettuare una ricerca tramite i campi disponibili nella barra di ricerca (UC12.1);
+  + visualizza la lista delle ricerche (UC12.2).
 - Sistema:
   + mostra all'utente la funzionalità di cronologia feedback;
-  + fornisce all'utente la possibilità di effettuare una ricerca (UC13.1) e di visualizzarne i risultati;
-  + mostra all'utente la lista dei feedback (UC13.2).
+  + fornisce all'utente la possibilità di effettuare una ricerca (UC12.1) e di visualizzarne i risultati;
+  + mostra all'utente la lista delle ricerche (UC12.2).
 
 #pagebreak()
-=== UC13.1 - Ricerca per vista "Cronologia Feedback"
+=== UC12.1 - Ricerca per vista "Cronologia Feedback"
 #figure(
-  image("/imgs/Uml/UC13.1.png", width: 80%),
+  image("/imgs/Uml/UC12.1.png", width: 80%),
   caption: [
-    Ricerca per vista "Cronologia Feedback"
+    Ricerca per vista "Cronologia Ricerche"
   ],
 )
 *Attori:*
@@ -2166,81 +2165,187 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - L'utente decide di fare una ricerca e compila i campi necessari;
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC13.2) in caso essa sia andata a buon fine;
-- L'utente visualizza un messaggio informativo (UC14) in caso la ricerca non sia andata a buon fine.
+- L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine;
+- L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
 *Scenario principale:*
 - Admin:
-  + compila i campi presenti nella barra di ricerca (UC13.1.1);
-  + avvia la ricerca (UC13.1.2);
-  + visualizza i risultati della ricerca (UC13.2/UC14).
+  + compila i campi presenti nella barra di ricerca (UC12.1.1);
+  + avvia la ricerca;
+  + visualizza i risultati della ricerca (UC12.2/UC13).
 - Sistema:
-  + memorizza i dati inseriti nei campi della barra di ricerca (UC13.1.1);
+  + memorizza i dati inseriti nei campi della barra di ricerca (UC12.1.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
   + riceve tramite API una risposta dal software;
   + mostra a schermo i risultati della ricerca.
 
 #pagebreak()
 
-=== Approfondimento specificità UC13.1
+=== Approfondimento specificità UC.12.1
 
 #figure(
-  image("/imgs/Uml/UC13.1app.png", width: 80%),
+  image("/imgs/Uml/UC12.1app.png", width: 80%),
   caption: [
-    Approfondimento specificità UC13.1 - Completamento input
+    Approfondimento specificità UC12.1 
   ],
 )
-+ *UC13.1.1.1 - Scelta input "Data"*
+
++ *UC12.1.1 - Completamento input "Ricerca"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi richiesti;
+  - L'utente sta compilando il campo di ricerca generale.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + compila il campo ricerca;;
+    + visualizza i risultati della ricerca.
+  - Sistema:
+    + mostra all'utente ii risultati della ricerca man mano che il campo di ricerca viene compilato.
+
++ *UC12.1.2 - Filtro "Data"*
 
   *Attori:*
   - Admin;
   *Precondizioni:*
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-  - L'utente sta scegliendo un'opzione per l'input data.
+  - L'utente ha scelto l'opzione di filtraggio per data.
   *Postcondizioni:*
-  - Il campo data mostra l'opzione scelta dall'utente.
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
-    + visualizza un'opzione di default per l'input;
-    + seleziona l'opzione di default per modificarla;
-    + visualizza le opzioni possibili per l'input;
-    + sceglie una delle opzioni possibili per l'input.
+    + seleziona l'opzione dii filtraggio per data;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC12.1.7);           
+    + digita la data;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
   - Sistema:
-    + mostra all'utente un'opzione di default per l'input;
-    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    + mostra all'utente le opzioni possibili per l'input;
-    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro data.
 
-+ *UC13.1.1.2 - Completamento input "Username"*
+++ *UC12.1.3 - Filtro "Utente"*
 
   *Attori:*
   - Admin;
   *Precondizioni:*
   - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-  - L'utente sta scegliendo un'opzione per l'input username.
+  - L'utente ha scelto l'opzione di filtraggio per utente.
   *Postcondizioni:*
-  - Il campo username mostra l'opzione scelta dall'utente.
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
   *Scenario principale:*
   - Admin:
-    + visualizza un'opzione di default per l'input;
-    + seleziona l'opzione di default per modificarla;
-    + inizia a compilare il campo con l'opzione che vuole selezionare;
-    + visualizza le opzioni possibili per l'input;
-    + visualizza suggerimenti di autocompletamento per l'input;
-    + sceglie una delle opzioni possibili per l'input.
+    + seleziona l'opzione dii filtraggio per utente;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC12.1.7);                
+    + digita il nome utente;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
   - Sistema:
-    + mostra all'utente un'opzione di default per l'input;
-    + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione per l'input;
-    + prende a conoscenza i caratteri inseriti dall'utente;
-    + contatta tramite API il software che fornisce le opzioni possibili;
-    + riceve tramite API una risposta con le opzioni possibili dal software;
-    + mostra all'utente le opzioni possibili per l'input;
-    + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
-    + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro utente.
 
-=== UC13.2 - Visualizzazione lista feedback
+
+++ *UC12.1.4 - Filtro "ID Cliente"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per ID Cliente.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione di filtraggio per ID Cliente;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC12.1.7);              
+    + digita l'ID Cliente;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro ID Cliente.
+
+
+++ *UC12.1.5 - Filtro "ID Prodotto"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per ID Prodotto.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione di filtraggio per ID Prodotto;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC12.1.7);                 
+    + digita l'ID Prodotto;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro ID Prodotto.
+
+
+ *UC12.1.6 - Filtro "Algoritmo"*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto l'opzione di filtraggio per algoritmo.
+  *Postcondizioni:*
+  - L'utente visualizza i risultati della ricerca (UC12.2) in caso essa sia andata a buon fine.
+  - L'utente visualizza un messaggio informativo (UC13) in caso la ricerca non sia andata a buon fine.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione dii filtraggio per algoritmo;
+    + seleziona tra le opzioni di default quella che meglio rappresenta il tipo di corrispondenza che vuole(UC12.1.7);              
+    + digita il nome dell'algoritmo;
+    + seleziona l'opzione apply se vuole effettuare il filtraggio;
+    + altrimenti seleziona l'opzione clear.
+  - Sistema:
+    + mostra all'utente un pop-up per la ricerca;
+    + mostra le opzioni di default per la corrispondenza;
+    + se l'utente decide di appilicare il filtro mostra all'utente i risultati del filtraggio;
+    + se l'utente decide di non applicare i filtri ripulisce il campo filtro algoritmo.
+
+ *UC12.1.7 - Selezione corrispondenza*
+
+  *Attori:*
+  - Admin;
+  *Precondizioni:*
+  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
+  - L'utente ha scelto un'opzione di filtraggio.
+  *Postcondizioni:*
+  - L'utente ha selezionato un tipo di corrispondenza con cui confrontare ciò che scrive alla cronologia feedback.
+  *Scenario principale:*
+  - Admin:
+    + seleziona l'opzione per cambiare il tipo di corrispondenza;
+    + seleziona dal menù a tendina una delle opzioni di default.
+  - Sistema:
+    + mostra all'utente un menù a tendina con i tipi di corrispondenza;
+    + aggiorna l'opzione  di corrispondenza in uso.
+
+#pagebreak()
+
+=== UC12.2 - Visualizzazione lista feedback
 #figure(
-  image("/imgs/Uml/UC13.2.png", width: 65%),
+  image("/imgs/Uml/UC12.2.png", width: 65%),
   caption: [
     Visualizzazione lista feedback
   ],
@@ -2248,10 +2353,10 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Attori:*
 - Admin;
 *Precondizioni:*
-- L'utente visualizza correttamente la vista "Cronologia Feedbak".
+- L'utente visualizza correttamente la vista "Cronologia Feedback".
 *Postcondizioni:*
 - L'utente visualizza la lista dei feedback;
-- Nel caso l'utente abbia effettuato una ricerca (UC13.1), ne visualizza i risultati.
+- Nel caso l'utente abbia effettuato una ricerca (UC12.1), ne visualizza i risultati.
 *Scenario principale:*
 - Admin:
   + visualizza la lista dei feedback;
@@ -2260,17 +2365,17 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + mostra la lista dei feedback;
   + mostra i risultati della ricerca effettuata dall'utente all'utente stesso.
 *Estensioni:*
-- UC14 - Errore di ricerca.
+- UC13 - Errore di ricerca.
 
-=== Approfondimento UC13.2
+=== Approfondimento UC12.2
 #figure(
-  image("/imgs/Uml/UC13.2.1.png", width: 65%),
+  image("/imgs/Uml/UC12.2.1.png", width: 65%),
   caption: [
     Visualizzazione dettagli singolo "Feedback"
   ],
 )
 
-+ UC13.2.1 Visualizzazione dettagli singolo "Feedback"
++ UC12.2.1 Visualizzazione dettagli singolo "Feedback"
 *Attori:*
 - Admin;
 *Precondizioni:*
@@ -2281,14 +2386,15 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Admin:
   + osserva un feedback della lista tra i vari mostrati.
 
-=== Approfondimento specificità UC13.2.1
+=== Approfondimento specificità UC12.2.1
 #figure(
-  image("/imgs/Uml/UC13.2.1app.png", width: 70%),
+  image("/imgs/Uml/UC12.2.1app.png", width: 70%),
   caption: [
-    Approfondimento specificità UC13.2.1 - Visualizzazione elemento 
+    Approfondimento specificità UC12.2.1
   ],
 )
-+ *UC13.2.1.1 - Visualizzazione "Data" feedback*
+
++ *UC12.2.1.1 - Visualizzazione "Data" feedback*
 
   *Attori:*
   - Admin.
@@ -2300,7 +2406,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza la data del risultato che sta osservando.
 
-+ *UC13.2.1.2 - Visualizzazione "Username" utente feedback*
+
++ *UC12.2.1.2 - Visualizzazione "Utente" feedback*
 
   *Attori:*
   - Admin.
@@ -2312,17 +2419,61 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Admin:
     + visualizza lo username utente del risultato che sta osservando.
 
-+ *UC13.2.1.3 - Visualizzazione "Contenuto del feedback" feedback*
++ *UC12.2.1.3 - Visualizzazione "ID cliente"  feedback*
 
   *Attori:*
   - Admin.
   *Precondizioni:*
   - L'utente osserva un risultato singolo della sua ricerca.
   *Postcondizioni:*
-  - L'utente visualizza lo score del risultato che sta osservando.
+  - L'utente visualizza l'ID cliente del risultato che sta osservando.
   *Scenario principale:*
   - Admin:
-    + visualizza il contenuto del feedback (Sotto-UC UC9.1) del risultato che sta osservando.
+    + visualizza l'ID cliente del risultato che sta osservando.
+
+
++ *UC12.2.1.4 - Visualizzazione "ID Prodotto"  feedback*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza l'ID prodotto del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    + visualizza l'ID prodotto del risultato che sta osservando.
+
+
++ *UC12.2.1.5 - Visualizzazione "Algoritmo"  feedback*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente visualizza l'algoritmo del risultato che sta osservando.
+  *Scenario principale:*
+  - Admin:
+    + visualizza l'algoritmo del risultato che sta osservando.
+
+
++ *UC12.2.1.6 - Elimina feedback*
+
+  *Attori:*
+  - Admin.
+  *Precondizioni:*
+  - L'utente osserva un risultato singolo della sua ricerca.
+  *Postcondizioni:*
+  - L'utente elimina il feedback che sta visualizzando.
+  *Scenario principale:*
+  - Admin:
+    + Seleziona l'opzione di eliminazione feedback;
+    + Seleziona l'opzione di conferma di eliminazione feedback.
+  - Sistema:
+    + Chiede conferma sull'eliminazione del feedback;
+    + Elimina il feedback selezionato.
+
 
 #pagebreak()
 == UC14 - Errore di ricerca
