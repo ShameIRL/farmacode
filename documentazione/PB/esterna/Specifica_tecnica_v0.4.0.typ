@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.0", "2024-04-14", p.passarella, "", "Stesura documentazione API",
     "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
     "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
     "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
@@ -321,41 +322,591 @@ delineando brevemente le operazioni disponibili e i dati accessibili. Una descri
 comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
 manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
 
-==== Chiamate GET (CONTROLLARE SE CI SONO NUOVE CHIAMATE)
+==== Chiamate GET
 
-- /login/:use :  \ Ritorna i dati di login di uno specifico utente.
++ /
+  - *Descrizione:* \
+    Verifica se il server è in esecuzione.
 
-- /users : \ Ritorna la lista completa dei clienti.
+  - *Parametri:* \
+    Nessuno.
 
-- /users/:id : \ Ritorna le informazioni di uno specifico cliente.
+  - *Ritorno:* \
+    Stringa "Server is running!".
 
-- /items : \ Ritorna la lista completa dei prodotti con codice articolo e descrizione.
+  - *Codici di stato HTTP:*
+  #table(
+    columns: (auto, auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+    inset: 10pt,
+    align: center,
+    [*Esito*], [*HTTP*], [*Descrizione*],
+    [Positivo],[200: OK],[La richiesta è stata elaborata correttamente.],
+  )
+  #align(center)[Tabella 6: Esito della richiesta di verifica dello stato del server.]
 
-- /items/:id : \ Ritorna le informazioni di uno specifico prodotto.
++ /login/:use : 
+  - *Descrizione:* \
+    Ritorna i dati di login di uno specifico utente.
 
-- /prodotti : \  Ritorna la lista completa dei prodotti con tutte le informazioni, ordinata in base al codice.
+  - *Parametri:* \
+    - :use (parametro nella URL): Il nome utente dell'utente che sta tentando di effettuare l'accesso.
 
-- /prodotti/lineecommerciali : \ Ritorna la lista delle linee commerciali.
+  - *Ritorno:* \
+    Informazioni di login per l'utente.
 
-- /prodotti/settoricommerciali : \ Ritorna la lista dei settori commerciali.
+  - *Codici di stato HTTP:*
 
-- /prodotti/famigliecommerciali : \ Ritorna la lista delle famiglie commerciali.
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La richiesta è stata elaborata correttamente.],
+  [Negativo],[404: Not Found],[L'utente non è stato trovato.],
+  [Errore],[500: Internal Server Error],[Errore durante il recupero delle informazioni di login.],
+  )
 
-- /prodotti/sottofamigliecommerciali : \ Ritorna la lista delle sottofamiglie commerciali.
+  #align(center)[Tabella 7: Esito della richiesta di login dell'utente.]
 
-- /clienti : \ Ritorna la lista completa dei clienti ordinata in base al codice.
++ /users : 
+  - *Descrizione:*\
+    Ritorna la lista completa degli utenti.
 
-- /clienti/province : \ Ritorna la lista delle province.
+  - *Parametri:*\
+    Nessuno.
 
-- /userana/:use : \ Ritorna i dati anagrafici di uno specifico utente.
+  - *Ritorno:*\
+    La risposta conterrà la lista completa degli utenti registrati nel sistema.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista degli utenti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista degli utenti.],
+  )
+
+  #align(center)[Tabella 8: Esito della richiesta di recupero della lista degli utenti.]
+
++ /users/:id :
+  - *Descrizione:*\
+    Recupera le informazioni dell'utente corrispondente all'ID specificato.
+
+  - *Parametri:*\
+    - :id (parametro nella URL): ID dell'utente.
+
+  - *Ritorno:*\
+    Le informazioni dell'utente corrispondente all'ID specificato.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[Le informazioni dell'utente sono state recuperate con successo.],
+  [Errore],[404: Not Found],[L'utente specificato non è stato trovato.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle informazioni dell'utente.],
+  )
+
+  #align(center)[Tabella 9: Esito della richiesta di recupero delle informazioni dell'utente.]
+
++ /items :
+  - *Descrizione:*\
+    Ritorna la lista completa dei prodotti con codice articolo e descrizione.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    La lista degli articoli.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista degli articoli è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista degli articoli.],
+  )
+
+  #align(center)[Tabella 10: Esito della richiesta di recupero della lista degli articoli.]
+
++ /items/:id :
+  - *Descrizione:*\
+    Ritorna le informazioni di uno specifico prodotto.
+
+  - *Parametri:*\
+    - :id (parametro nella URL): ID dell'articolo.
+
+  - *Ritorno:*\
+    Le informazioni dell'articolo corrispondente all'ID specificato.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[Le informazioni dell'articolo sono state recuperate con successo.],
+  [Errore],[404: Not Found],[L'articolo specificato non è stato trovato.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle informazioni dell'articolo.],
+  )
+
+  #align(center)[Tabella 11: Esito della richiesta di recupero delle informazioni dell'articolo.]
+
++ /prodotti :
+  - *Descrizione:*\
+    Ritorna la lista completa dei prodotti con tutte le informazioni, ordinata in base al codice.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    La lista dei prodotti.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista dei prodotti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista dei prodotti.],
+  )
+
+  #align(center)[Tabella 12: Esito della richiesta di recupero della lista dei prodotti.]
+
++ /prodotti/lineecommerciali :
+  - *Descrizione:*\
+    Recupera la lista completa delle linee commerciali dei prodotti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente tutte le linee commerciali dei prodotti presenti nel sistema.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista delle linee commerciali dei prodotti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle linee commerciali dei prodotti.],
+  )
+
+  #align(center)[Tabella 13: Esito della richiesta di recupero delle linee commerciali dei prodotti.]
+
++ /prodotti/settoricommerciali :
+  - *Descrizione:*\
+    Recupera la lista completa dei settori commerciali dei prodotti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente tutti i settori commerciali dei prodotti presenti nel sistema.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista dei settori commerciali dei prodotti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei settori commerciali dei prodotti.],
+  )
+
+  #align(center)[Tabella 14: Esito della richiesta di recupero dei settori commerciali dei prodotti.]
+
++ /prodotti/famigliecommerciali :
+  - *Descrizione:*\
+    Recupera la lista completa delle famiglie commerciali dei prodotti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente tutte le famiglie commerciali dei prodotti presenti nel sistema.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista delle famiglie commerciali dei prodotti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle famiglie commerciali dei prodotti.],
+  )
+
+  #align(center)[Tabella 15: Esito della richiesta di recupero delle famiglie commerciali dei prodotti.]
+
++ /prodotti/sottofamigliecommerciali :
+  - *Descrizione:*\
+    Recupera la lista completa delle sottofamiglie commerciali dei prodotti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente tutte le sottofamiglie commerciali dei prodotti presenti nel sistema.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista delle sottofamiglie commerciali dei prodotti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle sottofamiglie commerciali dei prodotti.],
+  )
+
+  #align(center)[Tabella 16: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti.]
+
++ /clienti :
+  - *Descrizione:*\
+    Ritorna la lista completa dei clienti ordinata in base al codice.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente tutti i clienti presenti nel sistema, insieme ai dettagli del relativo fornitore.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista dei clienti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati dei clienti.],
+  )
+
+  #align(center)[Tabella 17: Esito della richiesta di recupero dei clienti.]
+
++ /clienti/province :
+  - *Descrizione:*\
+    Recupera la lista completa delle province dei clienti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente tutte le province dei clienti presenti nel sistema.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista delle province dei clienti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle province dei clienti.],
+  )
+
+  #align(center)[Tabella 18: Esito della richiesta di recupero delle province dei clienti.]
+
++ /cronologia :
+  - *Descrizione:*\
+    Recupera la cronologia delle attività degli utenti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente la cronologia delle attività degli utenti, ordinata in base alla data cronologica in ordine crescente.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La cronologia delle attività degli utenti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della cronologia delle attività degli utenti.],
+  )
+
+  #align(center)[Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti.]
+
++ /feedback :
+  - *Descrizione:*\
+    Recupera la lista dei feedback degli ordini dei clienti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente i feedback degli ordini dei clienti, ordinati in base alla data del feedback in ordine decrescente.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista dei feedback degli ordini dei clienti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei feedback degli ordini dei clienti.],
+  )
+
+  #align(center)[Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
 
 
 ==== Chiamate PUT
 
-- /userana/:use/email : \ Aggiorna la mail di uno specifico utente.
++ /cronologia/new :
+  - *Descrizione:*\
+    Aggiunge una nuova voce alla cronologia delle attività degli utenti.
 
-- /userana/:use/password : \ Aggiorna la password di uno specifico utente.
+  - *Parametri:*\
+    - user (string): L'utente che ha eseguito l'attività.
+    - algo (string): L'algoritmo utilizzato per l'attività.
+    - topic (string): Il topic dell'attività.
+    - cod_ric (string): Il codice relativo all'attività.
+    - top_sel (string): Il top selezionato per l'attività.
 
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La nuova voce è stata inserita con successo nella cronologia delle attività degli utenti.],
+  [Errore],[400: Bad Request],[Uno o più parametri richiesti sono mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento della nuova voce nella cronologia delle attività degli utenti.],
+  )
+
+  #align(center)[Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
+
++ /feedback/newUser :
+  - *Descrizione:*\
+    Aggiunge un nuovo feedback per un ordine di un cliente.
+
+  - *Parametri:*\
+    - user (string): L'utente che ha fornito il feedback.
+    - id (string): L'identificatore dell'articolo associato al feedback.
+    - idRic (string): L'identificatore dell'ordine cliente associato al feedback.
+    - algoType (string): Il tipo di algoritmo utilizzato.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[Il nuovo feedback è stato inserito con successo per l'ordine del cliente.],
+  [Errore],[400: Bad Request],[Uno o più parametri richiesti sono mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'ordine del cliente.],
+  )
+
+  #align(center)[Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
+
++ /feedback/newItem :
+  - *Descrizione:*\
+    Aggiunge un nuovo feedback per un articolo.
+
+  - *Parametri:*\
+    - user (string): L'utente che ha fornito il feedback.
+    - id (string): L'identificatore dell'ordine cliente associato al feedback.
+    - idRic (string): L'identificatore dell'articolo associato al feedback.
+    - algoType (string): Il tipo di algoritmo utilizzato.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[Il nuovo feedback è stato inserito con successo per l'articolo.],
+  [Errore],[400: Bad Request],[Uno o più parametri richiesti sono mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'articolo.],
+  )
+
+  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
+
++ /feedback/delFeed :
+  - *Descrizione:*\
+    Elimina un feedback specifico.
+
+  - *Parametri:*\
+    - id_feed (string): L'identificatore del feedback da eliminare.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[Il feedback è stato eliminato con successo.],
+  [Errore],[400: Bad Request],[Il parametro id_feed è mancante o non valido.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'eliminazione del feedback.],
+  )
+
+  #align(center)[Tabella 24: Esito della richiesta di eliminazione di un feedback.]
+
++ /userana/:use :
+  - *Descrizione:*\
+    Recupera i dettagli di un utente specifico usando il suo identificatore unico.
+
+  - *Parametri:*
+    - use (string): L'identificatore dell'utente da cercare.
+
+  - *Ritorno:*
+    Se l'utente è trovato, la risposta sarà un array JSON contenente un oggetto con i dettagli dell'utente.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[I dettagli dell'utente sono restituiti correttamente.],
+  [Errore],[404: Not Found],[L'utente con l'ID specificato non è stato trovato.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati.],
+  )
+
+  #align(center)[Tabella 25: Esito della richiesta di dettagli di un utente.]
+
++ /userana/:use/email :
+  - *Descrizione:*\
+    Aggiorna l'indirizzo email di un utente specifico.
+
+  - *Parametri:*
+    - use (string): L'identificatore univoco dell'utente.
+    - newEmail (string, nel corpo della richiesta): Il nuovo indirizzo email da assegnare all'utente.
+
+  - *Ritorno:*
+    Restituisce un messaggio di successo se l'email è stata aggiornata correttamente.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[L'indirizzo email dell'utente è stato aggiornato con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, manca l'indirizzo email nel corpo della richiesta.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento dell'indirizzo email.],
+  )
+
+  #align(center)[Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente.]
+
++ /userana/:use/password :
+  - *Descrizione:*\
+    Aggiorna la password di un utente specifico.
+
+  - *Parametri:*
+    - use (string): L'identificatore univoco dell'utente.
+    - newPassword (string, nel corpo della richiesta): La nuova password da assegnare all'utente.
+
+  - *Ritorno:*
+    Restituisce un messaggio di successo se la password è stata aggiornata correttamente.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La password dell'utente è stata aggiornata con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, manca la nuova password nel corpo della richiesta.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento della password.],
+  )
+
+  #align(center)[Tabella 27: Esito dell'aggiornamento della password di un utente.]
+
+
+==== Chiamate Route
+
++ /train/:algo :\
+  - *Descrizione:*\
+    Avvia l'addestramento del modello machine learning basato sull'algoritmo specificato.
+
+  - *Parametri:*\
+        algo (string): L'identificatore dell'algoritmo di machine learning da addestrare. I valori accettati sono "SVD" o "NN".
+
+  - *Ritorno:*\
+    Restituisce un messaggio di successo se l'addestramento è completato correttamente.
+
+  - *Codici di stato HTTP:*
+    #table(
+    columns: (auto, auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+    inset: 10pt,
+    align: center,
+    [Esito], [HTTP], [Descrizione],
+    [Positivo],[200: OK],[L'addestramento dell'algoritmo è stato completato con successo.],
+    [Errore],[400: Bad Request],[Errore nella richiesta, algoritmo non specificato o non valido.],
+    [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'addestramento dell'algoritmo.],
+    )
+
+#align(center)[Tabella 28: Esito dell'addestramento di un algoritmo di machine learning.]
+
++ /search/:algo/:oggetto/:id/:n :
+  - *Descrizione:*\
+    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
+
+  - *Parametri:*
+    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
+    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
+    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
+    - n (string): Il numero di risultati da restituire.
+
+  - *Ritorno:*
+    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
+  )
+
+  #align(center)[Tabella 29: Esito della ricerca utilizzando un algoritmo specifico.]
 
 #pagebreak()
 = Stato requisiti funzionali
@@ -414,7 +965,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [RDF 44], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [],
 
 )
-#align(center)[Tabella 1: Requisiti funzionali]
+#align(center)[Tabella 28: Requisiti funzionali]
 
 == Grafico requisiti funzionali
 
@@ -423,4 +974,33 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
 #pagebreak()
 = Elenco delle tabelle
-
+- Tabella 1: Linguaggi
+- Tabella 2: Librerie e framework
+- Tabella 3: Strumenti e servizi
+- Tabella 4: Analisi statica
+- Tabella 5: Analisi dinamica
+- Tabella 6: Esito della richiesta di verifica dello stato del server
+- Tabella 7: Esito della richiesta di login dell'utente
+- Tabella 8: Esito della richiesta di recupero della lista degli utenti
+- Tabella 9: Esito della richiesta di recupero delle informazioni dell'utente
+- Tabella 10: Esito della richiesta di recupero della lista degli articoli
+- Tabella 11: Esito della richiesta di recupero delle informazioni dell'articolo
+- Tabella 12: Esito della richiesta di recupero della lista dei prodotti
+- Tabella 13: Esito della richiesta di recupero delle linee commerciali dei prodotti
+- Tabella 14: Esito della richiesta di recupero dei settori commerciali dei prodotti
+- Tabella 15: Esito della richiesta di recupero delle famiglie commerciali dei prodotti
+- Tabella 16: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti
+- Tabella 17: Esito della richiesta di recupero dei clienti
+- Tabella 18: Esito della richiesta di recupero delle provincie dei clienti
+- Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti
+- Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti
+- Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
+- Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
+- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
+- Tabella 24: Esito della richiesta di eliminazione di un feedback
+- Tabella 25: Esito della richiesta di dettagli di un utente
+- Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente
+- Tabella 27: Esito dell'aggiornamento della password di un utente
+- Tabella 28: Esito dell'addestramento di un algoritmo di machine learning
+- Tabella 29: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 30: Requisiti funzionali
