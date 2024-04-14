@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.5.0", "2024-04-14", p.passarella, "", "Stesura documentazione API",
     "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
     "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
     "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
@@ -342,7 +343,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
     [*Esito*], [*HTTP*], [*Descrizione*],
     [Positivo],[200: OK],[La richiesta è stata elaborata correttamente.],
   )
-  #align(center)[Tabella 1: Esito della richiesta di verifica dello stato del server.]
+  #align(center)[Tabella 6: Esito della richiesta di verifica dello stato del server.]
 
 + /login/:use : 
   - *Descrizione:* \
@@ -367,7 +368,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Errore durante il recupero delle informazioni di login.],
   )
 
-  #align(center)[Tabella 2: Esito della richiesta di login dell'utente.]
+  #align(center)[Tabella 7: Esito della richiesta di login dell'utente.]
 
 + /users : 
   - *Descrizione:*\
@@ -390,7 +391,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista degli utenti.],
   )
 
-  #align(center)[Tabella 3: Esito della richiesta di recupero della lista degli utenti.]
+  #align(center)[Tabella 8: Esito della richiesta di recupero della lista degli utenti.]
 
 + /users/:id :
   - *Descrizione:*\
@@ -414,7 +415,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle informazioni dell'utente.],
   )
 
-  #align(center)[Tabella 4: Esito della richiesta di recupero delle informazioni dell'utente.]
+  #align(center)[Tabella 9: Esito della richiesta di recupero delle informazioni dell'utente.]
 
 + /items :
   - *Descrizione:*\
@@ -437,7 +438,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista degli articoli.],
   )
 
-  #align(center)[Tabella 5: Esito della richiesta di recupero della lista degli articoli.]
+  #align(center)[Tabella 10: Esito della richiesta di recupero della lista degli articoli.]
 
 + /items/:id :
   - *Descrizione:*\
@@ -461,7 +462,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle informazioni dell'articolo.],
   )
 
-  #align(center)[Tabella 6: Esito della richiesta di recupero delle informazioni dell'articolo.]
+  #align(center)[Tabella 11: Esito della richiesta di recupero delle informazioni dell'articolo.]
 
 + /prodotti :
   - *Descrizione:*\
@@ -484,7 +485,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista dei prodotti.],
   )
 
-  #align(center)[Tabella 7: Esito della richiesta di recupero della lista dei prodotti.]
+  #align(center)[Tabella 12: Esito della richiesta di recupero della lista dei prodotti.]
 
 + /prodotti/lineecommerciali :
   - *Descrizione:*\
@@ -507,7 +508,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle linee commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 8: Esito della richiesta di recupero delle linee commerciali dei prodotti.]
+  #align(center)[Tabella 13: Esito della richiesta di recupero delle linee commerciali dei prodotti.]
 
 + /prodotti/settoricommerciali :
   - *Descrizione:*\
@@ -530,7 +531,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei settori commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 9: Esito della richiesta di recupero dei settori commerciali dei prodotti.]
+  #align(center)[Tabella 14: Esito della richiesta di recupero dei settori commerciali dei prodotti.]
 
 + /prodotti/famigliecommerciali :
   - *Descrizione:*\
@@ -553,7 +554,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle famiglie commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 10: Esito della richiesta di recupero delle famiglie commerciali dei prodotti.]
+  #align(center)[Tabella 15: Esito della richiesta di recupero delle famiglie commerciali dei prodotti.]
 
 + /prodotti/sottofamigliecommerciali :
   - *Descrizione:*\
@@ -576,7 +577,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle sottofamiglie commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 11: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti.]
+  #align(center)[Tabella 16: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti.]
 
 + /clienti :
   - *Descrizione:*\
@@ -599,7 +600,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati dei clienti.],
   )
 
-  #align(center)[Tabella 12: Esito della richiesta di recupero dei clienti.]
+  #align(center)[Tabella 17: Esito della richiesta di recupero dei clienti.]
 
 + /clienti/province :
   - *Descrizione:*\
@@ -622,7 +623,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle province dei clienti.],
   )
 
-  #align(center)[Tabella 13: Esito della richiesta di recupero delle province dei clienti.]
+  #align(center)[Tabella 18: Esito della richiesta di recupero delle province dei clienti.]
 
 + /cronologia :
   - *Descrizione:*\
@@ -645,7 +646,33 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 14: Esito della richiesta di recupero della cronologia delle attività degli utenti.]
+  #align(center)[Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti.]
+
++ /feedback :
+  - *Descrizione:*\
+    Recupera la lista dei feedback degli ordini dei clienti.
+
+  - *Parametri:*\
+    Nessuno.
+
+  - *Ritorno:*\
+    Se la richiesta ha successo, la risposta sarà un array JSON contenente i feedback degli ordini dei clienti, ordinati in base alla data del feedback in ordine decrescente.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La lista dei feedback degli ordini dei clienti è stata recuperata con successo.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei feedback degli ordini dei clienti.],
+  )
+
+  #align(center)[Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
+
+
+==== Chiamate PUT
 
 + /cronologia/new :
   - *Descrizione:*\
@@ -673,33 +700,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento della nuova voce nella cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 15: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
-
-+ /feedback :
-  - *Descrizione:*\
-    Recupera la lista dei feedback degli ordini dei clienti.
-
-  - *Parametri:*\
-    Nessuno.
-
-  - *Ritorno:*\
-    Se la richiesta ha successo, la risposta sarà un array JSON contenente i feedback degli ordini dei clienti, ordinati in base alla data del feedback in ordine decrescente.
-
-  - *Codici di stato HTTP:*
-  #table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [Esito], [HTTP], [Descrizione],
-  [Positivo],[200: OK],[La lista dei feedback degli ordini dei clienti è stata recuperata con successo.],
-  [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei feedback degli ordini dei clienti.],
-  )
-
-  #align(center)[Tabella 16: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
-
-
-==== Chiamate PUT
+  #align(center)[Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
 
 + /feedback/newUser :
   - *Descrizione:*\
@@ -726,7 +727,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'ordine del cliente.],
   )
 
-  #align(center)[Tabella 17: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
+  #align(center)[Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
 
 + /feedback/newItem :
   - *Descrizione:*\
@@ -753,7 +754,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'articolo.],
   )
 
-  #align(center)[Tabella 18: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
+  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
 
 + /feedback/delFeed :
   - *Descrizione:*\
@@ -777,7 +778,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'eliminazione del feedback.],
   )
 
-  #align(center)[Tabella 19: Esito della richiesta di eliminazione di un feedback.]
+  #align(center)[Tabella 24: Esito della richiesta di eliminazione di un feedback.]
 
 + /userana/:use :
   - *Descrizione:*\
@@ -801,7 +802,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati.],
   )
 
-  #align(center)[Tabella 20: Esito della richiesta di dettagli di un utente.]
+  #align(center)[Tabella 25: Esito della richiesta di dettagli di un utente.]
 
 + /userana/:use/email :
   - *Descrizione:*\
@@ -826,7 +827,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento dell'indirizzo email.],
   )
 
-  #align(center)[Tabella 21: Esito dell'aggiornamento dell'indirizzo email di un utente.]
+  #align(center)[Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente.]
 
 + /userana/:use/password :
   - *Descrizione:*\
@@ -851,7 +852,61 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento della password.],
   )
 
-  #align(center)[Tabella 22: Esito dell'aggiornamento della password di un utente.]
+  #align(center)[Tabella 27: Esito dell'aggiornamento della password di un utente.]
+
+
+==== Chiamate Route
+
++ /train/:algo :\
+  - *Descrizione:*\
+    Avvia l'addestramento del modello machine learning basato sull'algoritmo specificato.
+
+  - *Parametri:*\
+        algo (string): L'identificatore dell'algoritmo di machine learning da addestrare. I valori accettati sono "SVD" o "NN".
+
+  - *Ritorno:*\
+    Restituisce un messaggio di successo se l'addestramento è completato correttamente.
+
+  - *Codici di stato HTTP:*
+    #table(
+    columns: (auto, auto, auto),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+    inset: 10pt,
+    align: center,
+    [Esito], [HTTP], [Descrizione],
+    [Positivo],[200: OK],[L'addestramento dell'algoritmo è stato completato con successo.],
+    [Errore],[400: Bad Request],[Errore nella richiesta, algoritmo non specificato o non valido.],
+    [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'addestramento dell'algoritmo.],
+    )
+
+#align(center)[Tabella 28: Esito dell'addestramento di un algoritmo di machine learning.]
+
++ /search/:algo/:oggetto/:id/:n :
+  - *Descrizione:*\
+    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
+
+  - *Parametri:*
+    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
+    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
+    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
+    - n (string): Il numero di risultati da restituire.
+
+  - *Ritorno:*
+    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
+  )
+
+  #align(center)[Tabella 29: Esito della ricerca utilizzando un algoritmo specifico.]
 
 #pagebreak()
 = Stato requisiti funzionali
@@ -910,7 +965,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [RDF 44], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [],
 
 )
-#align(center)[Tabella 1: Requisiti funzionali]
+#align(center)[Tabella 28: Requisiti funzionali]
 
 == Grafico requisiti funzionali
 
@@ -919,4 +974,33 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
 #pagebreak()
 = Elenco delle tabelle
-
+- Tabella 1: Linguaggi
+- Tabella 2: Librerie e framework
+- Tabella 3: Strumenti e servizi
+- Tabella 4: Analisi statica
+- Tabella 5: Analisi dinamica
+- Tabella 6: Esito della richiesta di verifica dello stato del server
+- Tabella 7: Esito della richiesta di login dell'utente
+- Tabella 8: Esito della richiesta di recupero della lista degli utenti
+- Tabella 9: Esito della richiesta di recupero delle informazioni dell'utente
+- Tabella 10: Esito della richiesta di recupero della lista degli articoli
+- Tabella 11: Esito della richiesta di recupero delle informazioni dell'articolo
+- Tabella 12: Esito della richiesta di recupero della lista dei prodotti
+- Tabella 13: Esito della richiesta di recupero delle linee commerciali dei prodotti
+- Tabella 14: Esito della richiesta di recupero dei settori commerciali dei prodotti
+- Tabella 15: Esito della richiesta di recupero delle famiglie commerciali dei prodotti
+- Tabella 16: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti
+- Tabella 17: Esito della richiesta di recupero dei clienti
+- Tabella 18: Esito della richiesta di recupero delle provincie dei clienti
+- Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti
+- Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti
+- Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
+- Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
+- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
+- Tabella 24: Esito della richiesta di eliminazione di un feedback
+- Tabella 25: Esito della richiesta di dettagli di un utente
+- Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente
+- Tabella 27: Esito dell'aggiornamento della password di un utente
+- Tabella 28: Esito dell'addestramento di un algoritmo di machine learning
+- Tabella 29: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 30: Requisiti funzionali
