@@ -313,7 +313,58 @@ Descriviamo più nel dettaglio questa composizione:
   + la famiglia del prodotto (chiave esterna);
   + la sottofamiglia del prodotto (chiave esterna).
 
-=== Design Pattern utilizzati
+=== Algoritmo di raccomandazione
+==== Diagramma delle classi
+#figure(
+  image("/imgs/diagramma_classi/Algo.png", width: auto),
+  caption: [Diagramma algoritmo (totale)]
+)
+*Descrizione:* \
+
+*Pattern:* \
+
+==== Componenti:
+===== Preprocessor
+#figure(
+  image("/imgs/diagramma_classi/Preprocessor.png", width: auto),
+  caption: [Results]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== FileInfo
+#figure(
+  image("/imgs/diagramma_classi/FileInfo.png", width: auto),
+  caption: [FileInfo]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== Model
+#figure(
+  image("/imgs/diagramma_classi/Model.png", width: auto),
+  caption: [Model]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== Operator
+#figure(
+  image("/imgs/diagramma_classi/Operator.png", width: auto),
+  caption: [Operator]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== Librerie esterne
+
+*Descrizione:* \
+
+*Metodi:* \
 
 === Documentazione API
 La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
