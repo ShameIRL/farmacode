@@ -195,12 +195,49 @@ L'architettura front-end del prodotto sfrutta alcuni dei design pattern più com
 === Diagramma delle classi
 In questa sezione vengono descritte le varie pagine attraverso la convenzione UML per la rappresenta delle classi.\
 Alcune di queste pagine avranno delle componenti usate all'interno di esse, per evitare ridondanza, la descrizione delle pagine e la descrizione delle componenti saranno separate, in questo modo il diagramma sarà più semplice da leggere evitando un eccessivo caos.\
-Allo scopo di rendere il tutto più chiaro possibile, a seguito di ongi diagramma ci sarà una breve spiegazione sulla funzionalità della pagina/componente.
+Allo scopo di rendere il tutto più chiaro possibile, a seguito di ogni diagramma ci sarà una breve spiegazione sulla funzionalità della pagina/componente.
+Inoltre abbiamo preso dalla libreria PrimeReact i seguenti componenti:
+- Password;
+- InputText;
+- Button;
+- Multiselect;
+- DataTable;
+- Column;
+- Dialog;
+- Divider;
+- Dropdown;
+- MenuBar;
+- Rating.
+Di tali componenti non ci saranno diagrammi delle classi poiche' importati da una librei esterna.
+
 // ABBIAMO IMPLEMENTATO DEI TIPI NOSTRI?
 
-
-
 === Pagine
+
+==== Clienti
+#figure(
+  image("/imgs/diagramma_classi/Clienti.png", width: auto),
+  caption: [Clienti]
+)
+Clienti è una pagina consultiva, dove vengono visualizzati tutti i clienti memorizzati nel database.\
+È composta da una sezione header dove è possibile filtrare i clienti e da una tabella in cui si possono colsultare i clienti.
+
+==== Cronologia
+#figure(
+  image("/imgs/diagramma_classi/Cronologia.png", width: auto),
+  caption: [Cronologia]
+)
+Cronologia è una pagina consultiva, dove viene visualizzata la cronologia delle ricerche o raccomandazioni.\
+È composta da una sezione header contentente un _InputText_ per ricerche nella pagina e da una tabella in cui poter visualizzare e ulteriormente filtrare la ricerca.
+
+==== Feedback
+#figure(
+  image("/imgs/diagramma_classi/Feedback.png", width: auto),
+  caption: [Feedback]
+)
+Feedback è una pagina consultiva, dove vengono visualizzati i feedback.\
+È composta da una sezione header contentente un _InputText_ per ricerche nella pagina, un _Button_ per andare a cancella eventuali filtri e un _Button_ per andare ad eliminare il feedback. 
+Inoltre e' presente una tabella in cui poter visualizzare e ulteriormente filtrare i feedback.
 
 ==== Login
 #figure(
@@ -208,39 +245,44 @@ Allo scopo di rendere il tutto più chiaro possibile, a seguito di ongi diagramm
   caption: [Login]
 )
 
-La pagina Login è composta da tre diverse componenti, implementate sfruttando la suite PrimeReact.\
-E' composta da un _InputText_, usato per ricevere il dato username per effettuare il login, il componente _Password_ per l'immissione della password ed infine _Button_, utilizzato per inviare tutte le informazioni compilate nel form e effettuare concretamente il login per accedere alla pagina principale.
+login è la pagina di accesso al sito.\
+E' composta da un _InputText_, usato per ricevere il dato username per effettuare il login, il componente _Password_ per l'immissione della password. Infine _Button_, utilizzato per inviare tutte le informazioni compilate nel form e effettuare concretamente il login per accedere alla pagina principale.\
+È l'unica pagina a non avere ne' header ne' footer che la compongano.
 
-==== Ricerca
+==== Pagina Non Trovata
 #figure(
-  image("/imgs/diagramma_classi/Ricerca.png", width: auto),
-  caption: [Ricerca]
+  image("/imgs/diagramma_classi/PaginaNonTrovata.png", width: auto),
+  caption: [Pagina Non Trovata]
 )
-
-La pagina di ricerca è il core del progetto, in questa pagina si fanno le ricerche per le raccomandazioni in base ai criteri di scelta (prodotto per clienti o cliente per prodotti).\
-La componente _Filter_ è quella che va a impostare la query per il recupero, una volta impostata correttamente, dei risultati di raccomandazione del modello. Quindi in base a come viene impostati i vari criteri del filtro, cambia anche la query al database.\
-_Results_ invece si occupa di mostrare i dati recuperati, renderizzandoli a schermo all'interno di una tabella. La grandezza della tabella e direttamente correlata al numero di risultati che l'utente ha impostato in _Filters_.
-
-==== Clienti
-#figure(
-  image("/imgs/diagramma_classi/Clienti.png", width: auto),
-  caption: [Clienti]
-)
-
-Clienti è una pagina consultiva, dove vengono visualizzati tutti i clienti memorizzati nel database.\
-E' divisa nella parte superiore da un insieme di filtri per cercare nello specifico un cliente per i diversi
+PaginaNonTrovata e' la pagina visualizzata in caso di errore nella navigazione.\
+È composta da un _Button_ che permette di tornare alla pagina Ricerca.
+In questa pagina è presente solo il footer.
 
 ==== Prodotti
 #figure(
   image("/imgs/diagramma_classi/Prodotti.png", width: auto),
   caption: [Prodotti]
 )
+Prodotti è una pagina molto analoga a Clienti, dove vengono visualizzati tutti i prodotti presenti nel Database.\
+È composta da un header con un _InputText_ per effettuare una ricerca e un _Button_ per cancellare filtri applicati. Nella parte sottostante è possibile visualizzare, ed ulteriormente filtrare, tutti i prodotti grazie ad una tabella.\
+Inoltre premendo sopra un prodotto grazie al componente _Dialog_ si potranno visualizzare i dettagli in una finestra separata.
 
 ==== Profilo
 #figure(
   image("/imgs/diagramma_classi/Profilo.png", width: auto),
   caption: [Profilo]
 )
+Profilo è la pagina in cui visualizzare e modificare le informazioni dell'utente.\
+È composta da una serie di _InputText_ in cui visualizzare e modificare le informazioni oltre a _Button_ per confermare o meno le modifiche.
+
+==== Ricerca
+#figure(
+  image("/imgs/diagramma_classi/Ricerca.png", width: auto),
+  caption: [Ricerca]
+)
+La pagina di ricerca è il core del progetto, in questa pagina si fanno le ricerche per le raccomandazioni in base ai criteri di scelta (prodotto per clienti o cliente per prodotti).\
+La componente _Filter_ è quella che va a impostare la query per il recupero, una volta impostata correttamente, dei risultati di raccomandazione del modello. Quindi in base a come viene impostati i vari criteri del filtro, cambia anche la query al database.\
+_Results_ invece si occupa di mostrare i dati recuperati, renderizzandoli a schermo all'interno di una tabella. La grandezza della tabella e direttamente correlata al numero di risultati che l'utente ha impostato in _Filters_.
 
 === Componenti
 
@@ -249,19 +291,38 @@ E' divisa nella parte superiore da un insieme di filtri per cercare nello specif
   image("/imgs/diagramma_classi/Filtri.png", width: auto),
   caption: [Filtri]
 )
+Filtri è la componente per gestire il filtri nella pagina di Riceca.\
+È composta da una serie di _Dropdown_ per selezionare opzioni di ricerca e _Button_ per confermare le scelte. Inoltre presenta una finestra di Dialogo per gestire il training.
+
+==== Footer
+#figure(
+  image("/imgs/diagramma_classi/Footer.png", width: auto),
+  caption: [Footer]
+)
+Footer è la componente che contiene informazioni sul progetto: l'anno di sviluppo, il proponente e un riferimento al gruppo di lavoro.\
 
 ==== Header
 #figure(
   image("/imgs/diagramma_classi/Header.png", width: auto),
   caption: [Header]
 )
+La componente Header contiene il menù di navigazione.\
+È semplicemente composta da _MenuBar_, importato da PrimeReact, per visualizzare tutte le voci del menù.
+
+==== No Results
+#figure(
+  image("/imgs/diagramma_classi/NoResults.png", width: auto),
+  caption: [No Results]
+)
+NoResults è una semplice componente richiamata in caso di ricerca senza risultati o ricerca non effettuata.
 
 ==== Results
 #figure(
   image("/imgs/diagramma_classi/Results.png", width: auto),
   caption: [Results]
 )
-
+La componente Results viene utilizzata per visualizzare i sultati della raccomandazione.\
+È composta da una tabella in cui visualizzare e filtrare il risultato della raccomandazione, inoltre di ogni elemente è possibile visualizzare ulteriori dettagli grazie ad una finestra di dialogo visualizzabile con la pressione su uno specifico elemento.
 
 == Architettura Back-end
 === Introduzione
