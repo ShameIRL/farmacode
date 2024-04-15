@@ -339,8 +339,23 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [Results]
 )
 *Descrizione:* \
+La classe Preprocessor è una classe astratta che fornisce un'interfaccia per processare dati in diversi modi. È progettata per essere una classe base da cui ereditano altre classi che implementano metodi specifici di preprocessing. La struttura di base della classe è progettata per essere flessibile e consentire l'estensione per gestire diversi tipi di dati e metodi di preprocessing.
+Le classi SVD_Preprocessor e NN_Preprocessor estendono la classe Preprocessor, ereditano infatti le funzionalità di base e forniscono implementazioni specifiche per il preprocessing dei dati utilizzando due diversi approcci, rispettivamente il metodo Singular Value Decomposition (SVD) e neural network (NN).
+La classe PreprocessorContext infine utilizza Preprocessor come parte del suo funzionamento. Essa fornisce un "contesto" per il preprocessing dei dati, consentendo di cambiare facilmente il tipo di preprocessing senza dover modificare il codice che lo utilizza.
 
 *Metodi:* \
+- Preprocessor:
+  + 'retrieve_file' : Un metodo astratto che prende un cursore SQL, il nome di una tabella e un percorso per un file CSV. Esegue una query SQL per estrarre i dati dalla tabella e scrive i risultati in un file CSV;
+  + 'process_file' : Un metodo astratto che prende un percorso del file di input e un percorso del file di output. È responsabile di processare il file di input in base alle esigenze specifiche dell'algoritmo e salvarlo nel file di output;
+  + 'prepare_feedback' : Un  metodo astratto simile a process_file, ma specificamente progettato per preparare i dati di feedback.
+
+- PreprocessorContext:
+  + 'set_preprocessor' : Imposta il preprocessor da utilizzare;
+  + 'process_file' : Prende un percorso del file di input e un percorso del file di output. Utilizza il preprocessor impostato per elaborare il file di input e salvarlo nel file di output;
+  + 'prepare_feedback' : Simile a process_file, ma specifico per preparare i dati di feedback.
+  
+  I metodi di SVD_Preprocessor e NN_Preprocessor sono semplicemente delle implementazione dei metodi di Preprocessor, rispettivamente per Singular Value Decomposition (SVD) e neural network (NN).
+
 
 ===== FileInfo
 #figure(
@@ -348,8 +363,17 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [FileInfo]
 )
 *Descrizione:* \
+La classe FileInfo fornisce un'astrazione di base per caricare dati da file, indipendentemente dal loro scopo specifico, offrendo funzionalità di base come l'apertura e la lettura dei file. Le sottoclassi SVD_FileInfo e NN_FileInfo ereditano dalla classe astratta, fornendo implementazioni specifiche per il loro scopo, preparando, organizzando ed interpretando i dati, rispettivamente, per l'analisi SVD o per l'addestramento di neural network.
 
 *Metodi:* \
+- BaseFileInfo: 
+  + 'load_data' : Un metodo astratto per il caricamento dei dati da file.
+
+- 'NN_FileInfo' :
+  + 'load_data' : Implementazione di 'load_data' di BaseFileInfo, carica i dati dal dataset generale specificato nel percorso dataset_path utilizzando pandas, restituisce i dati sotto forma di DataFrame, utile per modelli di rete neurale che richiedono dati in formato tabellare per l'addestramento.
+
+- 'SVD_FileInfo' :
+  + 'load_data' : Implementazione di 'load_data' di BaseFileInfo,  carica i dati dal file di dati specificato nel percorso file_path utilizzando pandas, definisce una scala di valutazione dei dati utilizzando il modulo Reader e carica i dati in un oggetto Dataset, selezionando solo le colonne specificate, questo è utile per modelli basati su decomposizione singolare che operano su dati in formato tabellare.
 
 ===== Model
 #figure(
@@ -357,8 +381,35 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [Model]
 )
 *Descrizione:* \
+La classe BaseModel è una classe astratta che definisce i metodi per caricare, salvare e allenare i modelli. SVD_Model è una classe che estende BaseModel, è progettata specificamente per modelli basati su decomposizione ai valori singoli (SVD) e gestisce il caricamento, il salvataggio e l'addestramento di un modello SVD utilizzando la libreria Surprise in Python. NN_Model, invece, è un'altra classe che estende BaseModel, ma è orientata verso modelli di raccomandazione basati su reti neurali. Questa classe utilizza PyTorch per definire, addestrare e salvare modelli neurali; essa implementa la logica per gestire il caricamento e il salvataggio dei pre-elaboratori, la definizione dell'architettura del modello, il caricamento e il salvataggio del modello stesso e il suo addestramento. Infine, ModelContext agisce come un mediatore che connette queste classi di modelli con il mondo esterno. Astrae i dettagli specifici del trattamento del modello e fornisce un'interfaccia unificata per il caricamento, il salvataggio e l'addestramento dei modelli e delega le operazioni effettive alla classe di modello appropriata (SVD_Model o NN_Model) in base all'operatore di modello fornito.
 
 *Metodi:* \
+- BaseModel:
+  + 'load_model' : Metodo astratto responsabile del caricamento di un modello;
+  + 'save_model' : Metodo astratto responsabile del salvataggio di un modello;
+  + 'train_model' : Metodo astratto responsabile dell'addestramento di un modello.
+
+- SVD_Model:
+  + 'load_model' : Implementazione di 'load_model' di BaseModel, carica un modello da un file se esiste, altrimenti inizializza un modello SVD;
+  + 'save_model' : Implementazione di 'load_model' di BaseModel, salva il modello in un file;
+  + 'train_model' : Implementazione di 'load_model' di BaseModel, carica i dati, carica o inizializza il modello SVD e, se il file del modello non esiste, esegue il training del modello sui dati caricati. Successivamente, salva il modello addestrato.
+
+- NN_Model:
+  + 'save_preprocessors': Salva i preprocessori in file;
+  + 'define_model' : Definisce l'architettura del modello di rete neurale;
+  + 'load_model' : Implementazione di 'load_model' di BaseModel, carica un modello pre-addestrato e i preprocessori se esistono, altrimenti definisce il modello;
+  + 'save_model': Implementazione di 'load_model' di BaseModel, salva il modello e il suo dizionario di stato in file;
+  + 'train_model': Implementazione di 'load_model' di BaseModel, carica o definisce il modello NN, e se il file del modello non esiste, esegue il training del modello utilizzando i dati preprocessati. Successivamente, salva il modello addestrato.
+
+- ModelContext: 
+  + 'set_model_info' : Questo metodo consente di impostare le informazioni sul modello (model_info) dell'oggetto ModelContext. Accetta un argomento model_info, che viene quindi assegnato all'attributo model_info;
+  + 'set_model_operator' : Simile a set_model_info, questo metodo consente di impostare l'operatore di modello (model_operator) dell'oggetto ModelContext. Accetta un argomento model_operator, che viene quindi assegnato all'attributo model_operator;
+  + 'process_data' : Questo metodo permette di elaborare i dati attraverso le informazioni sul modello. Accetta un argomento data rappresentante i dati da elaborare. Utilizza l'attributo model_info per chiamare il metodo load_data, per caricare i dati nel modello;
+  + 'load_model' : Metodo responsabile del caricamento di un modello;
+  + 'save_model' : Metodo responsabile del salvataggio di un modello;
+  + 'train_model' : Metodo responsabile dell'addestramento di un modello;
+  + 'topN_1UserNItem' : Questo metodo restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Simile a topN_1UserNItem, ma restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
 
 ===== Operator
 #figure(
@@ -366,8 +417,38 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [Operator]
 )
 *Descrizione:* \
+La classe BaseOperator è una classe astratta che definisce un'interfaccia comune per gli operatori specifici dei modelli di raccomandazione. 
+Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; forniscono implementazioni specifiche per due diversi operatori di modelli, uno basato su reti neurali (NN) e l'altro basato su svd (Singular Value Decomposition). Infine, ModelContext agisce come un mediatore che connette queste classi di modelli con il mondo esterno. Astrae i dettagli specifici del trattamento del modello e fornisce un'interfaccia unificata per il caricamento, il salvataggio e l'addestramento dei modelli e delega le operazioni effettive alla classe di modello appropriata (SVD_Model o NN_Model) in base all'operatore di modello fornito.
 
 *Metodi:* \
+- BaseOperator: 
+  + 'ratings_float2int' : metodo astratto che si occupa di convertire i rating previsti da valori float a valori interi;
+  + 'apply_feedback' : metodo astratto che si occupa di applicare il feedback ricevuto (su utenti o elementi) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : metodo astratto che restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : metodo astratto che restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+
+- NN_Operator: 
+  + 'ratings_float2int' : Implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare;
+  + 'apply_feedback' :  Implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o elementi) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : Implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+
+- SVD_Operator: 
+  + 'ratings_float2int' : Implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare;
+  + 'apply_feedback' :  Implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o elementi) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : Implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+
+  - ModelContext: 
+  + 'set_model_info' : Questo metodo consente di impostare le informazioni sul modello (model_info) dell'oggetto ModelContext. Accetta un argomento model_info, che viene quindi assegnato all'attributo model_info;
+  + 'set_model_operator' : Simile a set_model_info, questo metodo consente di impostare l'operatore di modello (model_operator) dell'oggetto ModelContext. Accetta un argomento model_operator, che viene quindi assegnato all'attributo model_operator;
+  + 'process_data' : Questo metodo permette di elaborare i dati attraverso le informazioni sul modello. Accetta un argomento data rappresentante i dati da elaborare. Utilizza l'attributo model_info per chiamare il metodo load_data, per caricare i dati nel modello;
+  + 'load_model' : Metodo responsabile del caricamento di un modello;
+  + 'save_model' : Metodo responsabile del salvataggio di un modello;
+  + 'train_model' : Metodo responsabile dell'addestramento di un modello;
+  + 'topN_1UserNItem' : Questo metodo restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Simile a topN_1UserNItem, ma restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+  
 
 ===== Librerie esterne
 
