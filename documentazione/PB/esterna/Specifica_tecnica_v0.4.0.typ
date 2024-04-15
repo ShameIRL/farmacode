@@ -330,8 +330,23 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [Results]
 )
 *Descrizione:* \
+La classe Preprocessor è una classe astratta che fornisce un'interfaccia per processare dati in diversi modi. È progettata per essere una classe base da cui ereditano altre classi che implementano metodi specifici di preprocessing. La struttura di base della classe è progettata per essere flessibile e consentire l'estensione per gestire diversi tipi di dati e metodi di preprocessing.
+Le classi SVD_Preprocessor e NN_Preprocessor estendono la classe Preprocessor, ereditano infatti le funzionalità di base e forniscono implementazioni specifiche per il preprocessing dei dati utilizzando due diversi approcci, rispettivamente il metodo Singular Value Decomposition (SVD) e neural network (NN).
+La classe PreprocessorContext infine utilizza Preprocessor come parte del suo funzionamento. Essa fornisce un "contesto" per il preprocessing dei dati, consentendo di cambiare facilmente il tipo di preprocessing senza dover modificare il codice che lo utilizza.
 
 *Metodi:* \
+- Preprocessor:
+  + 'retrieve_file' : Un metodo astratto che prende un cursore SQL, il nome di una tabella e un percorso per un file CSV. Esegue una query SQL per estrarre i dati dalla tabella e scrive i risultati in un file CSV;
+  + 'process_file' : Un metodo astratto che prende un percorso del file di input e un percorso del file di output. È responsabile di processare il file di input in base alle esigenze specifiche dell'algoritmo e salvarlo nel file di output;
+  + 'prepare_feedback' : Un  metodo astratto simile a process_file, ma specificamente progettato per preparare i dati di feedback.
+
+- PreprocessorContext:
+  + 'set_preprocessor' : Imposta il preprocessor da utilizzare;
+  + 'process_file' : Prende un percorso del file di input e un percorso del file di output. Utilizza il preprocessor impostato per elaborare il file di input e salvarlo nel file di output;
+  + 'prepare_feedback' : Simile a process_file, ma specifico per preparare i dati di feedback.
+  
+  I metodi di SVD_Preprocessor e NN_Preprocessor sono semplicemente delle implementazione dei metodi di Preprocessor, rispettivamente per Singular Value Decomposition (SVD) e neural network (NN).
+
 
 ===== FileInfo
 #figure(
@@ -339,8 +354,17 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [FileInfo]
 )
 *Descrizione:* \
+La classe FileInfo fornisce un'astrazione di base per caricare dati da file, indipendentemente dal loro scopo specifico, offrendo funzionalità di base come l'apertura e la lettura dei file. Le sottoclassi SVD_FileInfo e NN_FileInfo ereditano dalla classe astratta, fornendo implementazioni specifiche per il loro scopo, preparando, organizzando ed interpretando i dati, rispettivamente, per l'analisi SVD o per l'addestramento di neural network.
 
 *Metodi:* \
+- BaseFileInfo: 
+  + 'load_data' : Un metodo astratto per il caricamento dei dati da file.
+
+- 'NN_FileInfo' :
+  + 'load_data' : Implementazione di 'load_data' di BaseFileInfo, carica i dati dal dataset generale specificato nel percorso dataset_path utilizzando pandas, restituisce i dati sotto forma di DataFrame, utile per modelli di rete neurale che richiedono dati in formato tabellare per l'addestramento.
+
+  - 'NN_FileInfo' :
+  + 'load_data' : Implementazione di 'load_data' di BaseFileInfo,  carica i dati dal file di dati specificato nel percorso file_path utilizzando pandas, definisce una scala di valutazione dei dati utilizzando il modulo Reader e carica i dati in un oggetto Dataset, selezionando solo le colonne specificate, questo è utile per modelli basati su decomposizione singolare che operano su dati in formato tabellare.
 
 ===== Model
 #figure(
