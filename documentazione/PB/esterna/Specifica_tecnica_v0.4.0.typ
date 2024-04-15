@@ -363,7 +363,7 @@ La classe FileInfo fornisce un'astrazione di base per caricare dati da file, ind
 - 'NN_FileInfo' :
   + 'load_data' : Implementazione di 'load_data' di BaseFileInfo, carica i dati dal dataset generale specificato nel percorso dataset_path utilizzando pandas, restituisce i dati sotto forma di DataFrame, utile per modelli di rete neurale che richiedono dati in formato tabellare per l'addestramento.
 
-  - 'NN_FileInfo' :
+- 'SVD_FileInfo' :
   + 'load_data' : Implementazione di 'load_data' di BaseFileInfo,  carica i dati dal file di dati specificato nel percorso file_path utilizzando pandas, definisce una scala di valutazione dei dati utilizzando il modulo Reader e carica i dati in un oggetto Dataset, selezionando solo le colonne specificate, questo è utile per modelli basati su decomposizione singolare che operano su dati in formato tabellare.
 
 ===== Model
