@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.9.0", "2024-04-15", p.baggio, "", "Stesura sprint 19",
     "1.8.1", "2024-04-09", p.favaron, "", "Corretto ore sprint 17, 18",
     "1.8.0", "2024-04-08", p.favaron, "", "Stesura sprint 18",
     "1.7.0", "2024-04-01", p.carraro, p.favaron, "Stesura sprint 17",
@@ -3136,6 +3137,153 @@ Lo sprint #18 è costato di più di quanto preventivato ed in particolare la dif
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 
+== PB - sprint.19
+- Periodo: 2024/04/09 - 2024/04/15
+
+- Issues: \
+  -- Continuazione documenti;\
+  -- Integrazione pagina feedback;\
+  -- Integrazione pagina cronologia;\
+  -- Integrazione test.
+- Task:\
+  -- Aggiornare file "Specifica tecnica";\
+  -- Continuazione integrazione test automatici;\
+  -- Stesura del file "Verbale interno 2024/04/09";\
+  -- Revisione del file "Verbale interno del 2024/04/09";\
+  -- Integrazione pagina feedback;\
+  -- Integrazione pagina cronologia;\
+  -- Revisionare e verificare quanto prodotto durante lo sprint.\
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#19.png", height: 230pt, width: auto),
+  caption: [sprint.19]
+  )
+)
+
+
+=== Pianificazione
+In questo sprint si è deciso di concentrare le risorse nell'implementare i test automatici e sviluppare la pagina relativa al feedback e quella relativa alla cronologia delle ricerche.\
+Con l'avvicinarsi della data di revisione il gruppo sta iniziando a preparare la stessa, documenti e MVP.
+
+=== Rischi attesi
+Durante questo sprint non sono previsti grandi rischi.
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 19*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [4], [], [4], [], [1], [],
+  [Bomben F.], [], [], [4], [], [1], [],
+  [Carraro A.], [], [], [4], [], [1], [],
+  [Favaron R.], [], [], [4], [], [1], [],
+  [Pandolfo M.], [], [], [4], [], [2], [],
+  [Passarella A.], [], [], [4], [], [1], [],
+  [Rosson L.], [], [], [4], [], [1], [],
+)
+])
+#align(center)[Tabella 90: preventivo orario sprint.19.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 19*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [4], [0], [28], [0], [8], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€1200,00], [€0,00], [€420,00], [€0,00], [€120,00], [€0,00],
+  [Totale], [], [], [], [], [], [€660,00], 
+  [Bilancio], [], [], [], [], [], [*€1365,00*],
+)
+])
+#align(center)[Tabella 91: preventivo costi sprint.19.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#19.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.19]
+  )
+)
+
+- Spiegazione:
+La prospettiva per questo sprint è quella di continaure l'integrazione dei test automatici, l'implemetazione della pagina di feedback di ricerca e della pagina relativa alla cronologia.\
+Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle task assegnate.
+
+=== Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 19*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [4 #green("(-1)")], [], [4 #red("(+1)")], [], [1 #red("(+1)")], [],
+  [Bomben F.], [], [], [4], [], [1 #red("(+1)")], [],
+  [Carraro A.], [], [], [4], [], [1 #red("(+1)")], [],
+  [Favaron R.], [], [], [4], [], [1 #red("(+1)")], [],
+  [Pandolfo M.], [], [], [4], [], [2], [],
+  [Passarella A.], [], [], [4], [], [1 #red("(+1)")], [],
+  [Rosson L.], [], [], [4 #red("(+1)")], [], [1], [],
+)
+])
+#align(center)[Tabella 92: consuntivo orario sprint.19.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 19*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [3], [0], [30], [0], [13], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#green("€90,00")], [€0,00], [#red("€450,00")], [€0,00], [#red("€195,00")], [€0,00],
+  [Totale], [], [], [], [], [], [#red("€735,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€1290,00")],
+)
+])
+#align(center)[Tabella 93: consuntivo costi sprint.19.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#19.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.19],
+  ),
+  
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    []
+  )
+)
+
+=== Rischi incontrati e mitigazioni
+In questo sprint non sono sorte difficoltà importanti.
+
+=== Retrospettiva
+Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo verificatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
+
+
 
 
 #pagebreak()
@@ -3195,6 +3343,9 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Immagine 52: sprint.18
 - Immagine 53: preventivi/sprint.18
 - Immagine 54: bilancio/sprint.18
+- Immagine 55: sprint.19
+- Immagine 56: preventivi/sprint.19
+- Immagine 57: bilancio/sprint.19
 
 #pagebreak()
 
@@ -3288,3 +3439,7 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Tabella 87: preventivo costo sprint.18
 - Tabella 88: consuntivo costo sprint.18
 - Tabella 89: consuntivo costo sprint.18
+- Tabella 90: preventivo orario sprint.19
+- Tabella 91: preventivo costo sprint.19
+- Tabella 92: consuntivo costo sprint.19
+- Tabella 93: consuntivo costo sprint.19

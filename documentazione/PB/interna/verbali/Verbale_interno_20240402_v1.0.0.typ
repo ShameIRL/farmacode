@@ -1,7 +1,7 @@
 #import "/template/verbals.typ": *
 
 #show: project.with(
-  title: "Verbale interno del meeting in data 2024/03/25",
+  title: "Verbale interno del meeting in data 2024/04/02",
   recipients: (
     
   ),
@@ -40,7 +40,7 @@
 Il meeting è iniziato con una breve analisi e confronto su quanto svolto nello sprint precedente. Il focus principale è stato la buona riuscita dell'integrazione del nuovo algoritmo di raccomandazione basato sulle reti neurali con il resto dell'applicazione. \
 I programmatori hanno illustrato quanto svolto e hanno aggiornato il gruppo su come procedere nello sviluppo.\
 Si è parlato in breve della visita da parte di alcuni membri del team di progetto in sede di Ergon Informatica.
-Il gruppo ha iniziato a pensare alla revisione PB e l'obiettivo è quello di raggiungere, al ternine del nuovo sprint, un livello vicino alla conclusione di progetto.\
+Il gruppo ha iniziato a pensare alla revisione PB e l'obiettivo è quello di raggiungere, al termine del nuovo sprint, un livello vicino alla conclusione di progetto.\
 Infine, si è decisa la distribuzione dei ruoli per il prossimo sprint, e la tabella di marcia per periodo a venire. 
 #pagebreak()
 
