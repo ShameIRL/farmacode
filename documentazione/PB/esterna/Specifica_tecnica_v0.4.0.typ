@@ -181,13 +181,202 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 
 = Architettura
 
-Il gruppo, durante la fase di progettazione, ha decisio di adottare un'architettura a microservizi.\ La scelta di questa precisa architettura è ricaduta per la natura ben separata dei ruoli delle varie componenti del progetto. Per questo motivo la comunicazione tra i vari servizi avviene tramite API Rest, sviluppate sia in Python con Flask che in JavaScript attraverso la libreria Express.
-Abbiamo quindi deciso di dividere nel seguente modo il sistema:
-- Fron-end, la parte di presentazione del sistema, che rappresenta l'interfaccia utente a cui l'utente può accedervi attraverso il browser. La parte client è stata sviluppata tramite HTML, CSS e JavaScript con la libreria React;
-// DA FARE MEGLIO
-- Back-end, la parte logica del progetto che sfruttando API Rest, creano interazione tra il Database e l'algoritmo in maniera che comunichino correttamente e riescano a recuperare tutti i dati necessari.
+*Premessa:*
+Come menzionato nei documenti "Norme di Progetto" e "Piano di Qualifica", il gruppo ha deciso di utilizzare in ambito progettuale un approccio top-down, del quale si riportano brevemente i punti di forza individuati:
+Visione d'insieme: Questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza.
 
-== Architettura Front-end 
+- Struttura modulare: La progettazione top-down favorisce la suddivisione del progetto in moduli o componenti più piccoli, semplificando così lo sviluppo e la gestione del software;
+
+- Facilità di gestione del cambiamento: Poiché i dettagli sono definiti solo dopo che l'architettura generale è stata stabilita, è più facile apportare modifiche durante le fasi iniziali del progetto senza dover ridisegnare completamente il sistema;
+
+- Riduzione della complessità: Concentrandosi sui concetti fondamentali e sulla logica generale, la progettazione top-down aiuta a ridurre la complessità del progetto, rendendo più facile la comprensione e la manutenzione del software;
+
+- Collaborazione efficace: La divisione del progetto in moduli facilita la collaborazione tra i membri del team, consentendo a ciascuno di lavorare su parti specifiche del progetto in modo indipendente;
+
+- Testabilità: La suddivisione del sistema in moduli facilita l'individuazione e l'isolamento dei bug, semplificando il processo di testing e debug;
+
+- Scalabilità: Una volta definita l'architettura generale, è più semplice scalare il sistema aggiungendo nuovi moduli o migliorando quelli esistenti senza dover riprogettare l'intero sistema. 
+== Docker e Containerizzazione 
+Nonostante non rientrasse nei requisiti obbligatori espressi dal propronente, il gruppo ha deciso di adottare i vari servizi che Docker fornisce per la gestione dell'infrastruttura del prodotto.
+I vantaggi che quest'ultimo offre hanno indotto facilmente alla scelta: 
+
+- Isolamento: offre un'isolamento leggero e portatile delle applicazioni tramite i container, consentendo loro di essere eseguiti in ambienti virtualizzati senza il peso delle macchine virtuali tradizionali. Questo significa che le applicazioni possono essere eseguite in modo consistente su qualsiasi ambiente, sia esso locale, in cloud o in ambienti di produzione.
+
+- Velocità di distribuzione: I container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite.
+
+- Scalabilità: Docker consente di scalare facilmente le applicazioni orizzontalmente, aggiungendo istanze dei container in risposta a picchi di carico. Questo facilita la gestione della disponibilità e delle prestazioni delle applicazioni in ambienti di produzione ad alta intensità di traffico.
+
+- Ambienti consistenti: Utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti.
+
+- Gestione semplificata: Docker fornisce strumenti potenti per la gestione dei contenitori, inclusi Docker Compose per la definizione e l'esecuzione di applicazioni multi-contenitore.
+
+Nel sorgente del progetto è possibile ispezionare un file docker-compose.yml, il quale contiene la suddivisione in container del progetto. Inoltre nelle relative working directory è possibile visionare i vari Dockerfile contenti le specifiche e dipendenze di ogni container.
+Sono state ideate e containerizzate quattro componenti principali:
+
++ DB: container che rappresenta e istanzia il database contente il dataset complessivo del intero progetto. Con dati utili sia all'interfaccia del prodotto, sia alla componente di logica composta dall'algoritmo di raccomandazione;
+
++ Python-api: container che contiene l'algoritmo di raccomandazione, e le API, realizzate in Flask, per la comunicazione con le altre componenti.
+
++ Express: rappresenta le API utili all'interconnessione tra database ed interfaccia utente.
+
++ React-app: questo container contiene l'applicazione Reatc e quindi l'interfaccia grafica del prodotto.
+
+#figure(
+  image("/imgs/diagramma_classi/Docker.png", width: auto),
+  caption: [Docker environment]
+)
+
+
+== Pattern architetturali - Architettura a Microservizi
+
+L'architettura a microservizi presenta caratteristiche e crismi che si discostanto da quella meno recente ma comunque valida, monolitica. Quest'ultima è stata il paradigma dominante per lo sviluppo software per molti anni, soprattutto nelle prime fasi dello sviluppo di applicazioni web e enterprise.
+
+In un'applicazione monolitica, l'intera applicazione è sviluppata, implementata e distribuita come un'unica entità. Tutte le funzionalità sono solitamente raggruppate all'interno di un singolo codice sorgente e eseguite all'interno di un unico processo.
+
+Un'applicazione basata su microservizi è composta invece, come deducibile dalla nomenclatura, da molti piccoli servizi, ciascuno dei quali si occupa di una funzionalità specifica. Questi sono alcuni degli aspetti chiave che la contraddistinguono:
+
+- Decomposizione modulare: L'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente.
+
+- Indipendenza dei servizi: Ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione.
+
+- Comunicazione tramite API: I microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente.
+
+- Scalabilità e resilienza: Poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce.
+
+- Gestione dei dati: Ogni microservizio può avere il proprio database, adatto alle sue esigenze specifiche. Questo favorisce una maggiore flessibilità nella scelta dei tipi di database e nella gestione dei dati.
+
+Alcuni contro, che solitamente la caratterizzano sono invece: 
+
+- Complessità della gestione: Gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato.
+
+- Overhead di comunicazione: Poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione.
+
+- Complessità dello sviluppo: Lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata.
+
+- Consistenza dei dati: Con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti.
+
+- Test e debugging: Testare e debuggare un sistema basato su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché è necessario considerare le interazioni tra i diversi servizi e la loro integrazione complessiva.
+
+Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo sviluppo del prodotto pensando anche ad un possibile futuro Deployment.\  La scelta di questa precisa architettura è derivata dalla natura ben separata e predefinita dei ruoli delle varie componenti del progetto, nonché dai numerosi pregi e benefici che ne derivano (come sopra elencati). Abbiamo pianificato di suddividere il sistema nel seguente modo:
+
+- *Persistence logic*: Composta dal database MySQL contenente l'intero dataset utile alle altre partizioni del prodotto.
+
+- *Business logic*: Formata dall'algortimo di raccomandazione, o meglio, dall'infrastruttura di classi che lo compongono.
+
+- *Application logic*: Composta dall'interfaccia utente realizzata con React e JavaScript.
+
+Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc.
+
+// - Fron-end, la parte di presentazione del sistema, che rappresenta l'interfaccia utente a cui l'utente può accedervi attraverso il browser. La parte client è stata sviluppata tramite HTML, CSS e JavaScript con la libreria React;
+// // DA FARE MEGLIO
+// - Back-end, la parte logica del progetto che sfruttando API Rest, creano interazione tra il Database e l'algoritmo in maniera che comunichino correttamente e riescano a recuperare tutti i dati necessari.
+
+== Persistence Logic
+===  Schema base di dati (AGGIUNGERE TABELLA FEEDBACK)
+
+In questa sezione, viene presentato lo schema di base di dati realizzato con MySQL, relativo all'architettura back-end del servizio descritto.
+Descriviamo più nel dettaglio questa composizione:
+
+- *ute*, rappresentante i singoli utenti, comprensiva di:
+  + un username univoco;
+  + il nome dell'utente;
+  + il cognome;          
+  + la data di nascita;
+  + una mail univoca;        
+  + una password;
+  + l'informazione sull'essere un amministratore o meno.
+
+- *prov*, rappresentante le provincie italiane, comprensiva di:
+  + il codice identificativo univoco della provincia;
+  + il nome della provincia.
+
+- *anacli*, rappresentante i clienti, comprensiva di: 
+  + un codice identificativo univoco;
+  + la ragione sociale;
+  + il codice della provincia di appartenenza (chiave esterna).   ??????
+
+- *linee_comm*, rappresentante la linea dei prodotti, comprensiva di: 
+  + un codice identificativo univoco;
+  + la linea del prodotto. 
+
+- *settori_comm*, rappresentante il settore dei prodotti, comprensiva di: 
+  + un codice identificativo univoco;
+  + il settore  del prodotto.
+
+- *famiglie_comm*, rappresentante le famiglie dei prodotti, comprensiva di:
+  + un codice identificativo univoco;
+  + la famiglia del prodotto.
+
+- *sottofamiglie_comm*, rappresentante la sottofamiglia dei prodotti, comprensiva di:
+  + un codice identificativo univoco;
+  + la sottofamiglia del prodotto.
+
+- *anaart*, rappresentante i singoli prodotti, comprensiva di: 
+  + un codice identificativo univoco;
+  + la descrizione dell'articolo;
+  + la linea del prodotto (chiave esterna);
+  + il settore del prodotto (chiave esterna);
+  + la famiglia del prodotto (chiave esterna);
+  + la sottofamiglia del prodotto (chiave esterna).
+
+== Business Logic
+
+=== Introduzione
+
+==== Diagramma delle classi
+#figure(
+  image("/imgs/diagramma_classi/Algo.png", width: auto),
+  caption: [Diagramma algoritmo (totale)]
+)
+*Descrizione:* \
+
+*Pattern:* \
+
+==== Componenti:
+===== Preprocessor
+#figure(
+  image("/imgs/diagramma_classi/Preprocessor.png", width: auto),
+  caption: [Results]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== FileInfo
+#figure(
+  image("/imgs/diagramma_classi/FileInfo.png", width: auto),
+  caption: [FileInfo]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== Model
+#figure(
+  image("/imgs/diagramma_classi/Model.png", width: auto),
+  caption: [Model]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== Operator
+#figure(
+  image("/imgs/diagramma_classi/Operator.png", width: auto),
+  caption: [Operator]
+)
+*Descrizione:* \
+
+*Metodi:* \
+
+===== Librerie esterne
+
+*Descrizione:* \
+
+*Metodi:* \
+
+
+== Application Logic
 // DA FARE MEGLIO
 L'architettura front-end del prodotto sfrutta alcuni dei design pattern più comuni della libreria React, rimodellati in base alle esigenze della specifica situazione e del progetto.\ Abbiamo cercato, per quanto possibile, di separare il più possibile i compiti tra le varie componenti, per semplificare e gestire al meglio i vari stati dell'applicazione.
 
@@ -261,110 +450,6 @@ E' divisa nella parte superiore da un insieme di filtri per cercare nello specif
   image("/imgs/diagramma_classi/Results.png", width: auto),
   caption: [Results]
 )
-
-
-== Architettura Back-end
-=== Introduzione
-
-===  Schema base di dati (AGGIUNGERE TABELLA FEEDBACK)
-
-In questa sezione, viene presentato lo schema di base di dati realizzato con MySQL, relativo all'architettura back-end del servizio descritto.
-Descriviamo più nel dettaglio questa composizione:
-
-- *ute*, rappresentante i singoli utenti, comprensiva di:
-  + un username univoco;
-  + il nome dell'utente;
-  + il cognome;          
-  + la data di nascita;
-  + una mail univoca;        
-  + una password;
-  + l'informazione sull'essere un amministratore o meno.
-
-- *prov*, rappresentante le provincie italiane, comprensiva di:
-  + il codice identificativo univoco della provincia;
-  + il nome della provincia.
-
-- *anacli*, rappresentante i clienti, comprensiva di: 
-  + un codice identificativo univoco;
-  + la ragione sociale;
-  + il codice della provincia di appartenenza (chiave esterna).   ??????
-
-- *linee_comm*, rappresentante la linea dei prodotti, comprensiva di: 
-  + un codice identificativo univoco;
-  + la linea del prodotto. 
-
-- *settori_comm*, rappresentante il settore dei prodotti, comprensiva di: 
-  + un codice identificativo univoco;
-  + il settore  del prodotto.
-
-- *famiglie_comm*, rappresentante le famiglie dei prodotti, comprensiva di:
-  + un codice identificativo univoco;
-  + la famiglia del prodotto.
-
-- *sottofamiglie_comm*, rappresentante la sottofamiglia dei prodotti, comprensiva di:
-  + un codice identificativo univoco;
-  + la sottofamiglia del prodotto.
-
-- *anaart*, rappresentante i singoli prodotti, comprensiva di: 
-  + un codice identificativo univoco;
-  + la descrizione dell'articolo;
-  + la linea del prodotto (chiave esterna);
-  + il settore del prodotto (chiave esterna);
-  + la famiglia del prodotto (chiave esterna);
-  + la sottofamiglia del prodotto (chiave esterna).
-
-=== Algoritmo di raccomandazione
-==== Diagramma delle classi
-#figure(
-  image("/imgs/diagramma_classi/Algo.png", width: auto),
-  caption: [Diagramma algoritmo (totale)]
-)
-*Descrizione:* \
-
-*Pattern:* \
-
-==== Componenti:
-===== Preprocessor
-#figure(
-  image("/imgs/diagramma_classi/Preprocessor.png", width: auto),
-  caption: [Results]
-)
-*Descrizione:* \
-
-*Metodi:* \
-
-===== FileInfo
-#figure(
-  image("/imgs/diagramma_classi/FileInfo.png", width: auto),
-  caption: [FileInfo]
-)
-*Descrizione:* \
-
-*Metodi:* \
-
-===== Model
-#figure(
-  image("/imgs/diagramma_classi/Model.png", width: auto),
-  caption: [Model]
-)
-*Descrizione:* \
-
-*Metodi:* \
-
-===== Operator
-#figure(
-  image("/imgs/diagramma_classi/Operator.png", width: auto),
-  caption: [Operator]
-)
-*Descrizione:* \
-
-*Metodi:* \
-
-===== Librerie esterne
-
-*Descrizione:* \
-
-*Metodi:* \
 
 === Documentazione API
 La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
