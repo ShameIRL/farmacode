@@ -372,8 +372,35 @@ La classe FileInfo fornisce un'astrazione di base per caricare dati da file, ind
   caption: [Model]
 )
 *Descrizione:* \
+La classe BaseModel è una classe astratta che definisce i metodi per caricare, salvare e allenare i modelli. SVD_Model è una classe che estende BaseModel, è progettata specificamente per modelli basati su decomposizione ai valori singoli (SVD) e gestisce il caricamento, il salvataggio e l'addestramento di un modello SVD utilizzando la libreria Surprise in Python. NN_Model, invece, è un'altra classe che estende BaseModel, ma è orientata verso modelli di raccomandazione basati su reti neurali. Questa classe utilizza PyTorch per definire, addestrare e salvare modelli neurali; essa implementa la logica per gestire il caricamento e il salvataggio dei pre-elaboratori, la definizione dell'architettura del modello, il caricamento e il salvataggio del modello stesso e il suo addestramento. Infine, ModelContext agisce come un mediatore che connette queste classi di modelli con il mondo esterno. Astrae i dettagli specifici del trattamento del modello e fornisce un'interfaccia unificata per il caricamento, il salvataggio e l'addestramento dei modelli e delega le operazioni effettive alla classe di modello appropriata (SVD_Model o NN_Model) in base all'operatore di modello fornito.
 
 *Metodi:* \
+- BaseModel:
+  + 'load_model' : Metodo astratto responsabile del caricamento di un modello;
+  + 'save_model' : Metodo astratto responsabile del salvataggio di un modello;
+  + 'train_model' : Metodo astratto responsabile dell'addestramento di un modello.
+
+- SVD_Model:
+  + 'load_model' : Implementazione di 'load_model' di BaseModel, carica un modello da un file se esiste, altrimenti inizializza un modello SVD;
+  + 'save_model' : Implementazione di 'load_model' di BaseModel, salva il modello in un file;
+  + 'train_model' : Implementazione di 'load_model' di BaseModel, carica i dati, carica o inizializza il modello SVD e, se il file del modello non esiste, esegue il training del modello sui dati caricati. Successivamente, salva il modello addestrato.
+
+- NN_Model:
+  + 'save_preprocessors': Salva i preprocessori in file;
+  + 'define_model' : Definisce l'architettura del modello di rete neurale;
+  + 'load_model' : Implementazione di 'load_model' di BaseModel, carica un modello pre-addestrato e i preprocessori se esistono, altrimenti definisce il modello;
+  + 'save_model': Implementazione di 'load_model' di BaseModel, salva il modello e il suo dizionario di stato in file;
+  + 'train_model': Implementazione di 'load_model' di BaseModel, carica o definisce il modello NN, e se il file del modello non esiste, esegue il training del modello utilizzando i dati preprocessati. Successivamente, salva il modello addestrato.
+
+- ModelContext: 
+  + 'set_model_info' : Questo metodo consente di impostare le informazioni sul modello (model_info) dell'oggetto ModelContext. Accetta un argomento model_info, che viene quindi assegnato all'attributo model_info;
+  + 'set_model_operator' : Simile a set_model_info, questo metodo consente di impostare l'operatore di modello (model_operator) dell'oggetto ModelContext. Accetta un argomento model_operator, che viene quindi assegnato all'attributo model_operator;
+  + 'process_data' : Questo metodo permette di elaborare i dati attraverso le informazioni sul modello. Accetta un argomento data rappresentante i dati da elaborare. Utilizza l'attributo model_info per chiamare il metodo load_data, per caricare i dati nel modello;
+  + 'load_model' : Metodo responsabile del caricamento di un modello;
+  + 'save_model' : Metodo responsabile del salvataggio di un modello;
+  + 'train_model' : Metodo responsabile dell'addestramento di un modello;
+  + 'topN_1UserNItem' : Questo metodo restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Simile a topN_1UserNItem, ma restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
 
 ===== Operator
 #figure(
@@ -381,8 +408,38 @@ La classe FileInfo fornisce un'astrazione di base per caricare dati da file, ind
   caption: [Operator]
 )
 *Descrizione:* \
+La classe BaseOperator è una classe astratta che definisce un'interfaccia comune per gli operatori specifici dei modelli di raccomandazione. 
+Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; forniscono implementazioni specifiche per due diversi operatori di modelli, uno basato su reti neurali (NN) e l'altro basato su svd (Singular Value Decomposition). Infine, ModelContext agisce come un mediatore che connette queste classi di modelli con il mondo esterno. Astrae i dettagli specifici del trattamento del modello e fornisce un'interfaccia unificata per il caricamento, il salvataggio e l'addestramento dei modelli e delega le operazioni effettive alla classe di modello appropriata (SVD_Model o NN_Model) in base all'operatore di modello fornito.
 
 *Metodi:* \
+- BaseOperator: 
+  + 'ratings_float2int' : metodo astratto che si occupa di convertire i rating previsti da valori float a valori interi;
+  + 'apply_feedback' : metodo astratto che si occupa di applicare il feedback ricevuto (su utenti o elementi) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : metodo astratto che restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : metodo astratto che restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+
+- NN_Operator: 
+  + 'ratings_float2int' : Implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare;
+  + 'apply_feedback' :  Implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o elementi) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : Implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+
+- SVD_Operator: 
+  + 'ratings_float2int' : Implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare;
+  + 'apply_feedback' :  Implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o elementi) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : Implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+
+  - ModelContext: 
+  + 'set_model_info' : Questo metodo consente di impostare le informazioni sul modello (model_info) dell'oggetto ModelContext. Accetta un argomento model_info, che viene quindi assegnato all'attributo model_info;
+  + 'set_model_operator' : Simile a set_model_info, questo metodo consente di impostare l'operatore di modello (model_operator) dell'oggetto ModelContext. Accetta un argomento model_operator, che viene quindi assegnato all'attributo model_operator;
+  + 'process_data' : Questo metodo permette di elaborare i dati attraverso le informazioni sul modello. Accetta un argomento data rappresentante i dati da elaborare. Utilizza l'attributo model_info per chiamare il metodo load_data, per caricare i dati nel modello;
+  + 'load_model' : Metodo responsabile del caricamento di un modello;
+  + 'save_model' : Metodo responsabile del salvataggio di un modello;
+  + 'train_model' : Metodo responsabile dell'addestramento di un modello;
+  + 'topN_1UserNItem' : Questo metodo restituisce i migliori N elementi per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : Simile a topN_1UserNItem, ma restituisce i migliori N utenti per un dato elemento in base alle previsioni del modello.
+  
 
 ===== Librerie esterne
 
