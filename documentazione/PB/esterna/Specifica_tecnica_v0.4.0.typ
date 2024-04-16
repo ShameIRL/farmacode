@@ -378,7 +378,7 @@ Descriviamo più nel dettaglio questa composizione:
   [cod_sott_comm],[VARCHAR(2)],[PRIMARY KEY],[Il codice della sottofamiglia commerciale], 
   [sott_comm],[VARCHAR(40)],[],[La descrizione della sottofamiglia commerciale],
 )
-#align(center)[Tabella 11: Tabella sottofamiglie_comm]
+#align(center)[Tabella 12: Tabella sottofamiglie_comm]
 
 #table(
   columns: (auto, auto, auto, auto),
@@ -396,7 +396,7 @@ Descriviamo più nel dettaglio questa composizione:
   [cod_sott_comm],[VARCHAR(2)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE SET NULL],[Il codice della sottofamiglia commerciale], 
   [image_path],[VARCHAR(255)],[],[Il percorso dell'immagine del prodotto],
 )
-#align(center)[Tabella 12: Tabella anaart]
+#align(center)[Tabella 13: Tabella anaart]
 
 #table(
   columns: (auto, auto, auto, auto),
@@ -411,7 +411,7 @@ Descriviamo più nel dettaglio questa composizione:
   [data_ord],[DATE],[PRIMARY KEY],[La data dell'ordine],
   [qta_ordinata],[FLOAT],[PRIMARY KEY],[La quantità di prodotto ordinata],
 )
-#align(center)[Tabella 13: Tabella ordclidet]
+#align(center)[Tabella 14: Tabella ordclidet]
 
 #table(
   columns: (auto, auto, auto, auto),
@@ -429,7 +429,7 @@ Descriviamo più nel dettaglio questa composizione:
   [sel_top],[VARCHAR(2)],[NOT NULL],[Il numero di top risultati],
   [dat_cro],[DATETIME],[DEFAULT NOW()],[La data della ricerca],
 )
-#align(center)[Tabella 14: Tabella cronologia]
+#align(center)[Tabella 15: Tabella cronologia]
 
 #table(
   columns: (auto, auto, auto, auto),
@@ -447,7 +447,7 @@ Descriviamo più nel dettaglio questa composizione:
   [algo],[VARCHAR(10)],[NOT NULL],[L'algoritmo utilizzato nella ricerca relativa],
   [rating],[INT],[NOT NULL\ DEFAULT 1],[Il rating del feedback],
 )
-#align(center)[Tabella 14: Tabella ordclidet_feedback]
+#align(center)[Tabella 16: Tabella ordclidet_feedback]
 
 === Query e indicizzazione
 Si riportano qui sotto alcune delle query, principalmente quelle che riteniamo essere più interessanti, eseguite:
@@ -779,7 +779,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     [*Esito*], [*HTTP*], [*Descrizione*],
     [Positivo],[200: OK],[La richiesta è stata elaborata correttamente.],
   )
-  #align(center)[Tabella 6: Esito della richiesta di verifica dello stato del server.]
+  #align(center)[Tabella 17: Esito della richiesta di verifica dello stato del server.]
 
 + /login/:use : 
   - *Descrizione:* \
@@ -804,7 +804,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Errore durante il recupero delle informazioni di login.],
   )
 
-  #align(center)[Tabella 7: Esito della richiesta di login dell'utente.]
+  #align(center)[Tabella 18: Esito della richiesta di login dell'utente.]
 
 + /users : 
   - *Descrizione:*\
@@ -827,7 +827,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista degli utenti.],
   )
 
-  #align(center)[Tabella 8: Esito della richiesta di recupero della lista degli utenti.]
+  #align(center)[Tabella 19: Esito della richiesta di recupero della lista degli utenti.]
 
 + /users/:id :
   - *Descrizione:*\
@@ -851,7 +851,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle informazioni dell'utente.],
   )
 
-  #align(center)[Tabella 9: Esito della richiesta di recupero delle informazioni dell'utente.]
+  #align(center)[Tabella 20: Esito della richiesta di recupero delle informazioni dell'utente.]
 
 + /items :
   - *Descrizione:*\
@@ -874,7 +874,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista degli articoli.],
   )
 
-  #align(center)[Tabella 10: Esito della richiesta di recupero della lista degli articoli.]
+  #align(center)[Tabella 21: Esito della richiesta di recupero della lista degli articoli.]
 
 + /items/:id :
   - *Descrizione:*\
@@ -898,7 +898,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle informazioni dell'articolo.],
   )
 
-  #align(center)[Tabella 11: Esito della richiesta di recupero delle informazioni dell'articolo.]
+  #align(center)[Tabella 22: Esito della richiesta di recupero delle informazioni dell'articolo.]
 
 + /prodotti :
   - *Descrizione:*\
@@ -921,7 +921,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della lista dei prodotti.],
   )
 
-  #align(center)[Tabella 12: Esito della richiesta di recupero della lista dei prodotti.]
+  #align(center)[Tabella 23: Esito della richiesta di recupero della lista dei prodotti.]
 
 + /prodotti/lineecommerciali :
   - *Descrizione:*\
@@ -944,7 +944,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle linee commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 13: Esito della richiesta di recupero delle linee commerciali dei prodotti.]
+  #align(center)[Tabella 24: Esito della richiesta di recupero delle linee commerciali dei prodotti.]
 
 + /prodotti/settoricommerciali :
   - *Descrizione:*\
@@ -967,7 +967,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei settori commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 14: Esito della richiesta di recupero dei settori commerciali dei prodotti.]
+  #align(center)[Tabella 25: Esito della richiesta di recupero dei settori commerciali dei prodotti.]
 
 + /prodotti/famigliecommerciali :
   - *Descrizione:*\
@@ -990,7 +990,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle famiglie commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 15: Esito della richiesta di recupero delle famiglie commerciali dei prodotti.]
+  #align(center)[Tabella 26: Esito della richiesta di recupero delle famiglie commerciali dei prodotti.]
 
 + /prodotti/sottofamigliecommerciali :
   - *Descrizione:*\
@@ -1013,7 +1013,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle sottofamiglie commerciali dei prodotti.],
   )
 
-  #align(center)[Tabella 16: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti.]
+  #align(center)[Tabella 27: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti.]
 
 + /clienti :
   - *Descrizione:*\
@@ -1036,7 +1036,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati dei clienti.],
   )
 
-  #align(center)[Tabella 17: Esito della richiesta di recupero dei clienti.]
+  #align(center)[Tabella 28: Esito della richiesta di recupero dei clienti.]
 
 + /clienti/province :
   - *Descrizione:*\
@@ -1059,7 +1059,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero delle province dei clienti.],
   )
 
-  #align(center)[Tabella 18: Esito della richiesta di recupero delle province dei clienti.]
+  #align(center)[Tabella 29: Esito della richiesta di recupero delle province dei clienti.]
 
 + /cronologia :
   - *Descrizione:*\
@@ -1082,7 +1082,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero della cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti.]
+  #align(center)[Tabella 30: Esito della richiesta di recupero della cronologia delle attività degli utenti.]
 
 + /feedback :
   - *Descrizione:*\
@@ -1105,7 +1105,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei feedback degli ordini dei clienti.],
   )
 
-  #align(center)[Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
+  #align(center)[Tabella 31: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
 
 + /search/:algo/:oggetto/:id/:n :
   - *Descrizione:*\
@@ -1132,7 +1132,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
   )
 
-  #align(center)[Tabella 21: Esito della ricerca utilizzando un algoritmo specifico.]
+  #align(center)[Tabella 32: Esito della ricerca utilizzando un algoritmo specifico.]
 
 ==== Chiamate PUT
 
@@ -1162,7 +1162,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento della nuova voce nella cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
+  #align(center)[Tabella 33: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
 
 + /feedback/newUser :
   - *Descrizione:*\
@@ -1189,7 +1189,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'ordine del cliente.],
   )
 
-  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
+  #align(center)[Tabella 34: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
 
 + /feedback/newItem :
   - *Descrizione:*\
@@ -1216,7 +1216,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'articolo.],
   )
 
-  #align(center)[Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
+  #align(center)[Tabella 35: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
 
 + /feedback/delFeed :
   - *Descrizione:*\
@@ -1240,7 +1240,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'eliminazione del feedback.],
   )
 
-  #align(center)[Tabella 25: Esito della richiesta di eliminazione di un feedback.]
+  #align(center)[Tabella 36: Esito della richiesta di eliminazione di un feedback.]
 
 + /userana/:use :
   - *Descrizione:*\
@@ -1264,7 +1264,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati.],
   )
 
-  #align(center)[Tabella 26: Esito della richiesta di dettagli di un utente.]
+  #align(center)[Tabella 37: Esito della richiesta di dettagli di un utente.]
 
 + /userana/:use/email :
   - *Descrizione:*\
@@ -1289,7 +1289,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento dell'indirizzo email.],
   )
 
-  #align(center)[Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente.]
+  #align(center)[Tabella 38: Esito dell'aggiornamento dell'indirizzo email di un utente.]
 
 + /userana/:use/password :
   - *Descrizione:*\
@@ -1314,7 +1314,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento della password.],
   )
 
-  #align(center)[Tabella 28: Esito dell'aggiornamento della password di un utente.]
+  #align(center)[Tabella 39: Esito dell'aggiornamento della password di un utente.]
 
 ==== Chiamate POST
 
@@ -1340,7 +1340,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'addestramento dell'algoritmo.],
     )
 
-  #align(center)[Tabella 29: Esito dell'addestramento di un algoritmo di machine learning.]
+  #align(center)[Tabella 40: Esito dell'addestramento di un algoritmo di machine learning.]
 
 #pagebreak()
 = Stato requisiti funzionali
@@ -1399,7 +1399,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [RDF 44], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [],
 
 )
-#align(center)[Tabella 28: Requisiti funzionali]
+#align(center)[Tabella 41: Requisiti funzionali]
 
 == Grafico requisiti funzionali
 
@@ -1413,28 +1413,39 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
 - Tabella 3: Strumenti e servizi
 - Tabella 4: Analisi statica
 - Tabella 5: Analisi dinamica
-- Tabella 6: Esito della richiesta di verifica dello stato del server
-- Tabella 7: Esito della richiesta di login dell'utente
-- Tabella 8: Esito della richiesta di recupero della lista degli utenti
-- Tabella 9: Esito della richiesta di recupero delle informazioni dell'utente
-- Tabella 10: Esito della richiesta di recupero della lista degli articoli
-- Tabella 11: Esito della richiesta di recupero delle informazioni dell'articolo
-- Tabella 12: Esito della richiesta di recupero della lista dei prodotti
-- Tabella 13: Esito della richiesta di recupero delle linee commerciali dei prodotti
-- Tabella 14: Esito della richiesta di recupero dei settori commerciali dei prodotti
-- Tabella 15: Esito della richiesta di recupero delle famiglie commerciali dei prodotti
-- Tabella 16: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti
-- Tabella 17: Esito della richiesta di recupero dei clienti
-- Tabella 18: Esito della richiesta di recupero delle provincie dei clienti
-- Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti
-- Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti
-- Tabella 21: Esito della ricerca utilizzando un algoritmo specifico
-- Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
-- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
-- Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
-- Tabella 25: Esito della richiesta di eliminazione di un feedback
-- Tabella 26: Esito della richiesta di dettagli di un utente
-- Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente
-- Tabella 28: Esito dell'aggiornamento della password di un utente
-- Tabella 29: Esito dell'addestramento di un algoritmo di machine learning
-- Tabella 30: Requisiti funzionali
+- Tabella 6: Tabella ute
+- Tabella 7: Tabella tabprov
+- Tabella 8: Tabella anacli
+- Tabella 9: Tabella linee_comm
+- Tabella 10: Tabella settori_comm
+- Tabella 11: Tabella famiglie_comm
+- Tabella 12: Tabella sottofamiglie_comm
+- Tabella 13: Tabella anaart
+- Tabella 14: Tabella ordclidet
+- Tabella 15: Tabella cronologia
+- Tabella 16: Tabella ordclidet_feedback
+- Tabella 17: Esito della richiesta di verifica dello stato del server
+- Tabella 18: Esito della richiesta di login dell'utente
+- Tabella 19: Esito della richiesta di recupero della lista degli utenti
+- Tabella 20: Esito della richiesta di recupero delle informazioni dell'utente
+- Tabella 21: Esito della richiesta di recupero della lista degli articoli
+- Tabella 22: Esito della richiesta di recupero delle informazioni dell'articolo
+- Tabella 23: Esito della richiesta di recupero della lista dei prodotti
+- Tabella 24: Esito della richiesta di recupero delle linee commerciali dei prodotti
+- Tabella 25: Esito della richiesta di recupero dei settori commerciali dei prodotti
+- Tabella 26: Esito della richiesta di recupero delle famiglie commerciali dei prodotti
+- Tabella 27: Esito della richiesta di recupero delle sottofamiglie commerciali dei prodotti
+- Tabella 28: Esito della richiesta di recupero dei clienti
+- Tabella 29: Esito della richiesta di recupero delle provincie dei clienti
+- Tabella 30: Esito della richiesta di recupero della cronologia delle attività degli utenti
+- Tabella 31: Esito della richiesta di recupero dei feedback degli ordini dei clienti
+- Tabella 32: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 33: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
+- Tabella 34: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
+- Tabella 35: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
+- Tabella 36: Esito della richiesta di eliminazione di un feedback
+- Tabella 37: Esito della richiesta di dettagli di un utente
+- Tabella 38: Esito dell'aggiornamento dell'indirizzo email di un utente
+- Tabella 39: Esito dell'aggiornamento della password di un utente
+- Tabella 40: Esito dell'addestramento di un algoritmo di machine learning
+- Tabella 41: Requisiti funzionali
