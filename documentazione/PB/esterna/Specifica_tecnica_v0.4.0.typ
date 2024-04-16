@@ -613,11 +613,7 @@ La componente Results viene utilizzata per visualizzare i sultati della raccoman
 È composta da una tabella in cui visualizzare e filtrare il risultato della raccomandazione, inoltre di ogni elemente è possibile visualizzare ulteriori dettagli grazie ad una finestra di dialogo visualizzabile con la pressione su uno specifico elemento.
 
 === Documentazione API
-La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
-delineando brevemente le operazioni disponibili e i dati accessibili. Una descrizione dettagliata della loro struttura 
-è disponibile nel documento "Manuale Sviluppatore v.1.0.0"; questo permette agli sviluppatori interessati di 
-comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
-manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
+
 
 ==== Chiamate GET
 
@@ -968,6 +964,32 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
   #align(center)[Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
 
++ /search/:algo/:oggetto/:id/:n :
+  - *Descrizione:*\
+    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
+
+  - *Parametri:*
+    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
+    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
+    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
+    - n (string): Il numero di risultati da restituire.
+
+  - *Ritorno:*
+    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
+  )
+
+  #align(center)[Tabella 21: Esito della ricerca utilizzando un algoritmo specifico.]
 
 ==== Chiamate PUT
 
@@ -997,7 +1019,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento della nuova voce nella cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
+  #align(center)[Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
 
 + /feedback/newUser :
   - *Descrizione:*\
@@ -1024,7 +1046,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'ordine del cliente.],
   )
 
-  #align(center)[Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
+  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
 
 + /feedback/newItem :
   - *Descrizione:*\
@@ -1051,7 +1073,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'articolo.],
   )
 
-  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
+  #align(center)[Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
 
 + /feedback/delFeed :
   - *Descrizione:*\
@@ -1075,7 +1097,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'eliminazione del feedback.],
   )
 
-  #align(center)[Tabella 24: Esito della richiesta di eliminazione di un feedback.]
+  #align(center)[Tabella 25: Esito della richiesta di eliminazione di un feedback.]
 
 + /userana/:use :
   - *Descrizione:*\
@@ -1099,7 +1121,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati.],
   )
 
-  #align(center)[Tabella 25: Esito della richiesta di dettagli di un utente.]
+  #align(center)[Tabella 26: Esito della richiesta di dettagli di un utente.]
 
 + /userana/:use/email :
   - *Descrizione:*\
@@ -1124,7 +1146,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento dell'indirizzo email.],
   )
 
-  #align(center)[Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente.]
+  #align(center)[Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente.]
 
 + /userana/:use/password :
   - *Descrizione:*\
@@ -1149,10 +1171,9 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento della password.],
   )
 
-  #align(center)[Tabella 27: Esito dell'aggiornamento della password di un utente.]
+  #align(center)[Tabella 28: Esito dell'aggiornamento della password di un utente.]
 
-
-==== Chiamate Route
+==== Chiamate POST
 
 + /train/:algo :\
   - *Descrizione:*\
@@ -1176,34 +1197,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
     [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'addestramento dell'algoritmo.],
     )
 
-#align(center)[Tabella 28: Esito dell'addestramento di un algoritmo di machine learning.]
-
-+ /search/:algo/:oggetto/:id/:n :
-  - *Descrizione:*\
-    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
-
-  - *Parametri:*
-    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
-    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
-    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
-    - n (string): Il numero di risultati da restituire.
-
-  - *Ritorno:*
-    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
-
-  - *Codici di stato HTTP:*
-  #table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [Esito], [HTTP], [Descrizione],
-  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
-  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
-  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
-  )
-
-  #align(center)[Tabella 29: Esito della ricerca utilizzando un algoritmo specifico.]
+  #align(center)[Tabella 29: Esito dell'addestramento di un algoritmo di machine learning.]
 
 #pagebreak()
 = Stato requisiti funzionali
@@ -1291,13 +1285,13 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 - Tabella 18: Esito della richiesta di recupero delle provincie dei clienti
 - Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti
 - Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti
-- Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
-- Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
-- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
-- Tabella 24: Esito della richiesta di eliminazione di un feedback
-- Tabella 25: Esito della richiesta di dettagli di un utente
-- Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente
-- Tabella 27: Esito dell'aggiornamento della password di un utente
-- Tabella 28: Esito dell'addestramento di un algoritmo di machine learning
-- Tabella 29: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 21: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
+- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
+- Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
+- Tabella 25: Esito della richiesta di eliminazione di un feedback
+- Tabella 26: Esito della richiesta di dettagli di un utente
+- Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente
+- Tabella 28: Esito dell'aggiornamento della password di un utente
+- Tabella 29: Esito dell'addestramento di un algoritmo di machine learning
 - Tabella 30: Requisiti funzionali
