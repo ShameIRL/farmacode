@@ -283,71 +283,171 @@ Il database che funge da Persistence Logic per il nostro prodotto è stato ideat
 
 Descriviamo più nel dettaglio questa composizione:
 
-- *ute*, rappresentante i singoli utenti, comprensiva di:
-  + un username univoco (chiave primaria);
-  + il nome dell'utente;
-  + il cognome;          
-  + la data di nascita;
-  + una mail univoca;        
-  + una password;
-  + l'informazione sull'essere un amministratore o meno.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*ute*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta i singoli utenti utilizzatori del prodotto]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [use_ute],[VARCHAR(64)],[PRIMARY KEY],[L'username dell'utente], 
+  [nom_ute],[VARCHAR(64)],[NOT NULL],[Il nome dell'utente],
+  [dat_ute],[DATE],[NOT NULL],[La data di nascita dell'utente],
+  [mai_ute],[VARCHAR(64)],[NOT NULL\ UNIQUE],[La mail dell'utente],
+  [pas_ute],[VARCHAR(64)],[NOT NULL],[La password criptata dell'utente],
+  [amm_ute],[BOOLEAN],[DEFAULT FALSE],[Informazione se l'utente ha i permessi di amministratore],
+)
+#align(center)[Tabella 6: Tabella ute]
 
-- *tabprov*, rappresentante le provincie italiane, comprensiva di:
-  + il codice identificativo univoco della provincia (chiave primaria);
-  + il nome della provincia.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*tabprov*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta le provincie dei clienti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_prov],[VARCHAR(2)],[PRIMARY KEY],[Il codice della provincia, intesa come sigla], 
+  [des_prov],[VARCHAR(40)],[],[La descrizione della provincia, intesa come nome],
+  
+)
+#align(center)[Tabella 7: Tabella tabprov]
 
-- *anacli*, rappresentante i clienti, comprensiva di: 
-  + un codice identificativo univoco (chiave primaria);
-  + la ragione sociale;
-  + il codice della provincia di appartenenza (chiave esterna).
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*anacli*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta i clienti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_cli],[INT],[PRIMARY KEY],[Il codice del cliente],
+  [rag_soc],[VARCHAR(80)],[],[La ragione sociale del cliente],
+  [cod_prov],[VARCHAR(2)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE SET NULL],[Il codice della provincia, intesa come sigla], 
+)
+#align(center)[Tabella 8: Tabella anacli]
 
-- *linee_comm*, rappresentante la linea dei prodotti, comprensiva di: 
-  + un codice identificativo univoco (chiave primaria);
-  + la linea del prodotto. 
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*linee_comm*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta le linee commerciali dei prodotti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_linea_comm],[VARCHAR(2)],[PRIMARY KEY],[Il codice della linea commerciale], 
+  [linea_comm],[VARCHAR(40)],[],[La descrizione della linea commerciale],
+)
+#align(center)[Tabella 9: Tabella linee_comm]
 
-- *settori_comm*, rappresentante il settore dei prodotti, comprensiva di: 
-  + un codice identificativo univoco (chiave primaria);
-  + il settore del prodotto.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*settori_comm*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta i settori commerciali dei prodotti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_sett_comm],[VARCHAR(2)],[PRIMARY KEY],[Il codice del settore commerciale], 
+  [sett_comm],[VARCHAR(40)],[],[La descrizione del settore commerciale],
+)
+#align(center)[Tabella 10: Tabella settori_comm]
 
-- *famiglie_comm*, rappresentante le famiglie dei prodotti, comprensiva di:
-  + un codice identificativo univoco (chiave primaria);
-  + la famiglia del prodotto.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*famiglie_comm*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta le famiglie commerciali dei prodotti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_fam_comm],[VARCHAR(2)],[PRIMARY KEY],[Il codice della famiglia commerciale], 
+  [fam_comm],[VARCHAR(40)],[],[La descrizione della famiglia commerciale],
+)
+#align(center)[Tabella 11: Tabella famiglie_comm]
 
-- *sottofamiglie_comm*, rappresentante la sottofamiglia dei prodotti, comprensiva di:
-  + un codice identificativo univoco (chiave primaria);
-  + la sottofamiglia del prodotto.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*sottofamiglie_comm*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta le sottofamiglie commerciali dei prodotti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_sott_comm],[VARCHAR(2)],[PRIMARY KEY],[Il codice della sottofamiglia commerciale], 
+  [sott_comm],[VARCHAR(40)],[],[La descrizione della sottofamiglia commerciale],
+)
+#align(center)[Tabella 11: Tabella sottofamiglie_comm]
 
-- *anaart*, rappresentante i singoli prodotti, comprensiva di: 
-  + un codice identificativo univoco (chiave primaria);
-  + la descrizione dell'articolo;
-  + la linea del prodotto (chiave esterna);
-  + il settore del prodotto (chiave esterna);
-  + la famiglia del prodotto (chiave esterna);
-  + la sottofamiglia del prodotto (chiave esterna).
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*anaart*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta i singoli prodotti]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_art],[VARCHAR(13)],[PRIMARY KEY],[Il codice del prodotto],
+  [des_art],[VARCHAR(255)],[],[La descrizione del prodotto],
+  [cod_linea_comm],[VARCHAR(2)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE SET NULL],[Il codice della linea commerciale],
+  [cod_sett_comm],[VARCHAR(2)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE SET NULL],[Il codice del settore commerciale],
+  [cod_fam_comm],[VARCHAR(2)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE SET NULL],[Il codice della famiglia commerciale],
+  [cod_sott_comm],[VARCHAR(2)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE SET NULL],[Il codice della sottofamiglia commerciale], 
+  [image_path],[VARCHAR(255)],[],[Il percorso dell'immagine del prodotto],
+)
+#align(center)[Tabella 12: Tabella anaart]
 
-- *ordclidet*, rappresentante i singoli ordini, comprensiva di: 
-  + un codice del clienti (chiave primaria) (chiave esterna);
-  + un codice del prodotto (chiave primaria) (chiave esterna);
-  + la data in qui è stato effettuato l'ordine (chiave primaria) 
-  + la quantità ordinata (chiave primaria).
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*ordclidet*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta i singoli ordini]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [cod_cli],[INT],[PRIMARY KEY\ FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE CASCADE],[Il codice del cliente che ha effettuato l'ordine],
+  [cod_art],[VARCHAR(13)],[PRIMARY KEY\ FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE CASCADE],[Il codice del prodotto appartenente all'ordine],
+  [data_ord],[DATE],[PRIMARY KEY],[La data dell'ordine],
+  [qta_ordinata],[FLOAT],[PRIMARY KEY],[La quantità di prodotto ordinata],
+)
+#align(center)[Tabella 13: Tabella ordclidet]
 
-- *cronologia*, rappresentante le singole ricerche, comprensiva di: 
-  + un codice identificativo univoco (chiave primaria) ;
-  + l'username dell'utente che ha effettuato la ricerca (chiave esterna);
-  + la tipologia di algoritmo utilizzato;
-  + il topic della ricerca;
-  + il codice del prodotto/cliente ricercato;
-  + l' N selezionato nel opzione top N;
-  + la data in cui è stata effettuata la ricerca.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*cronologia*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta le singole ricerche effettuatuate da un utente]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [id],[INT],[PRIMARY KEY\ AUTO_INCREMENT],[L'indentificativo di una ricerca],
+  [user],[VARCHAR(64)],[NOT NULL\ FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE CASCADE],[L'utente che ha effettuato la ricerca],
+  [algo],[VARCHAR(10)],[NOT NULL],[L'algoritmo utilizzato nella ricerca],
+  [topic],[VARCHAR(10)],[NOT NULL],[Il topic della ricerca, inteso come ricerca per cliente o prodotto],
+  [cor_ric],[VARCHAR(13)],[NOT NULL],[Il codice ricercato],
+  [sel_top],[VARCHAR(2)],[NOT NULL],[Il numero di top risultati],
+  [dat_cro],[DATETIME],[DEFAULT NOW()],[La data della ricerca],
+)
+#align(center)[Tabella 14: Tabella cronologia]
 
-- *ordclidet_feedback*, rappresentante i singoli prodotti, comprensiva di: 
-  + un codice identificativo univoco (chiave primaria) ;
-  + la data in cui è stato inserito il feedback;
-  + l'username dell'utente che ha inserito il feedback (chiave esterna);
-  + il codice cliente relativo (chiave esterna);
-  + il codice prodotto relativo (chiave esterna);
-  + il tipo di algoritmo relativo;
-  + il rating/voto del feedback.
+#table(
+  columns: (auto, auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  table.cell(colspan: 4, [*ordclidet_feedback*]),
+  table.cell(colspan: 4, align: left, [*Descrizione*: Rappresenta il singolo feedback relativo ad un singolo risultato di ricerca]),
+  [*Nome*], [*Tipo*], [*Proprietà*], [*Descrizione*],
+  [id],[INT],[PRIMARY KEY\ AUTO_INCREMENT],[L'indentificativo di un feedback],
+  [dat_fed],[DATETIME],[DEFAULT NOW()],[La data del feedback],
+  [user],[VARCHAR(64)],[NOT NULL\ FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE CASCADE],[L'utente che ha effettuato il feedback],
+  [cod_cli],[INT],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE CASCADE],[Il codice del cliente relativo],
+  [cod_art],[VARCHAR(13)],[FOREIGN KEY\ ON UPDATE CASCADE\ ON DELETE CASCADE],[Il codice del prodotto relativo],
+  [algo],[VARCHAR(10)],[NOT NULL],[L'algoritmo utilizzato nella ricerca relativa],
+  [rating],[INT],[NOT NULL\ DEFAULT 1],[Il rating del feedback],
+)
+#align(center)[Tabella 14: Tabella ordclidet_feedback]
 
 === Query 
 
