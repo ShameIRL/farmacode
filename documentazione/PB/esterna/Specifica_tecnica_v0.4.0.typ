@@ -186,7 +186,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 
 *Premessa:*
 Come menzionato nei documenti "Norme di Progetto" e "Piano di Qualifica", il gruppo ha deciso di utilizzare in ambito progettuale un approccio top-down, del quale si riportano brevemente i punti di forza individuati:
-Visione d'insieme: Questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza.
+- Visione d'insieme: Questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza; 
 
 - Struttura modulare: La progettazione top-down favorisce la suddivisione del progetto in moduli o componenti più piccoli, semplificando così lo sviluppo e la gestione del software;
 
@@ -203,13 +203,13 @@ Visione d'insieme: Questo approccio consente di avere una visione completa del p
 Nonostante non rientrasse nei requisiti obbligatori espressi dal propronente, il gruppo ha deciso di adottare i vari servizi che Docker fornisce per la gestione dell'infrastruttura del prodotto.
 I vantaggi che quest'ultimo offre hanno indotto facilmente alla scelta: 
 
-- Isolamento: offre un'isolamento leggero e portatile delle applicazioni tramite i container, consentendo loro di essere eseguiti in ambienti virtualizzati senza il peso delle macchine virtuali tradizionali. Questo significa che le applicazioni possono essere eseguite in modo consistente su qualsiasi ambiente, sia esso locale, in cloud o in ambienti di produzione.
+- Isolamento: offre un'isolamento leggero e portatile delle applicazioni tramite i container, consentendo loro di essere eseguiti in ambienti virtualizzati senza il peso delle macchine virtuali tradizionali. Questo significa che le applicazioni possono essere eseguite in modo consistente su qualsiasi ambiente, sia esso locale, in cloud o in ambienti di produzione;
 
-- Velocità di distribuzione: I container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite.
+- Velocità di distribuzione: I container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite;
 
-- Scalabilità: Docker consente di scalare facilmente le applicazioni orizzontalmente, aggiungendo istanze dei container in risposta a picchi di carico. Questo facilita la gestione della disponibilità e delle prestazioni delle applicazioni in ambienti di produzione ad alta intensità di traffico.
+- Scalabilità: Docker consente di scalare facilmente le applicazioni orizzontalmente, aggiungendo istanze dei container in risposta a picchi di carico. Questo facilita la gestione della disponibilità e delle prestazioni delle applicazioni in ambienti di produzione ad alta intensità di traffico;
 
-- Ambienti consistenti: Utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti.
+- Ambienti consistenti: Utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti;
 
 - Gestione semplificata: Docker fornisce strumenti potenti per la gestione dei contenitori, inclusi Docker Compose per la definizione e l'esecuzione di applicazioni multi-contenitore.
 
@@ -218,11 +218,11 @@ Sono state ideate e containerizzate quattro componenti principali:
 
 + DB: container che rappresenta e istanzia il database contente il dataset complessivo del intero progetto. Con dati utili sia all'interfaccia del prodotto, sia alla componente di logica composta dall'algoritmo di raccomandazione;
 
-+ Python-api: container che contiene l'algoritmo di raccomandazione, e le API, realizzate in Flask, per la comunicazione con le altre componenti.
++ Python-api: container che contiene l'algoritmo di raccomandazione, e le API, realizzate in Flask, per la comunicazione con le altre componenti;
 
-+ Express: rappresenta le API utili all'interconnessione tra database ed interfaccia utente.
++ Express: rappresenta le API utili all'interconnessione tra database ed interfaccia utente;
 
-+ React-app: questo container contiene l'applicazione Reatc e quindi l'interfaccia grafica del prodotto.
++ React-app: questo container contiene l'applicazione React e quindi l'interfaccia grafica del prodotto.
 
 #figure(
   image("/imgs/diagramma_classi/Docker.png", width: auto),
@@ -237,25 +237,25 @@ In un'applicazione monolitica, l'intera applicazione è sviluppata, implementata
 
 Un'applicazione basata su microservizi è composta invece, come deducibile dalla nomenclatura, da molti piccoli servizi, ciascuno dei quali si occupa di una funzionalità specifica. Questi sono alcuni degli aspetti chiave che la contraddistinguono:
 
-- Decomposizione modulare: L'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente.
+- Decomposizione modulare: L'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente;
 
-- Indipendenza dei servizi: Ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione.
+- Indipendenza dei servizi: Ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione;
 
-- Comunicazione tramite API: I microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente.
+- Comunicazione tramite API: I microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente;
 
-- Scalabilità e resilienza: Poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce.
+- Scalabilità e resilienza: Poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce;
 
 - Gestione dei dati: Ogni microservizio può avere il proprio database, adatto alle sue esigenze specifiche. Questo favorisce una maggiore flessibilità nella scelta dei tipi di database e nella gestione dei dati.
 
 Alcuni contro, che solitamente la caratterizzano sono invece: 
 
-- Complessità della gestione: Gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato.
+- Complessità della gestione: Gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato;
 
-- Overhead di comunicazione: Poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione.
+- Overhead di comunicazione: Poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione;
 
-- Complessità dello sviluppo: Lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata.
+- Complessità dello sviluppo: Lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata;
 
-- Consistenza dei dati: Con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti.
+- Consistenza dei dati: Con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti;
 
 - Test e debugging: Testare e debuggare un sistema basato su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché è necessario considerare le interazioni tra i diversi servizi e la loro integrazione complessiva.
 
