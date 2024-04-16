@@ -264,7 +264,7 @@ Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo s
 
 - *Application logic*: Composta dall'interfaccia utente realizzata con React e JavaScript.
 
-Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc.
+Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc (descritte con maggiore dettaglio nella sezione apposita).
 
 == Persistence Logic
 === Introduzione
@@ -346,11 +346,49 @@ Descriviamo più nel dettaglio questa composizione:
   + il tipo di algoritmo relativo;
   + il rating/voto del feedback.
 
-=== Query 
+=== Query e indicizzazione
+Si riportano qui sotto alcune delle query, principalmente quelle che riteniamo essere più interessanti, eseguite:
+
+- Selezione di tutti i prodotti in ordine di codice (e relative caratteristiche):
+``` SELECT * FROM anaart LEFT JOIN linee_comm ON anaart.cod_linea_comm = linee_comm.cod_linea_comm LEFT JOIN settori_comm ON anaart.cod_sett_comm = settori_comm.cod_sett_comm LEFT JOIN famiglie_comm ON anaart.cod_fam_comm = famiglie_comm.cod_fam_comm LEFT JOIN sottofamiglie_comm ON anaart.cod_sott_comm = sottofamiglie_comm.cod_sott_comm ORDER BY cod_art ```;
+
+- Selezione di tutti i clienti in ordine di codice (e relative caratteristiche):
+``` SELECT * FROM anacli LEFT JOIN tabprov ON anacli.cod_prov = tabprov.cod_prov ORDER BY cod_cli ``` ;
+
+- Selezione di tutti i feedback (ordinati in modo inverso rispetto alla data di inserimento): 
+``` SELECT id, dat_fed, user, cod_cli, cod_art, algo FROM ordclidet_feedback ORDER BY dat_fed ASC ```;
+
+- Selezione di tutte le ricerche (ordinata in modo inverso rispetto alla data di ricerca):
+``` SELECT user, algo, topic, cod_ric, sel_top, dat_cro FROM cronologia ORDER BY dat_cro ASC ```;
+
+- Inserimento di una nuova ricerca nella tabella cronologia:
+``` INSERT INTO cronologia (user, algo, topic, cod_ric, sel_top) VALUES (?,?,?,?,?) ``` .
+
+Inoltre sono stati previsti degli indici per l'indicizzazione ed ottimizzaione delle operazioni:
+
+- ``` CREATE INDEX idx_cod_prov ON anacli(cod_prov); ```
+
+- ``` CREATE INDEX idx_cod_linea_comm ON anaart(cod_linea_comm); ```
+
+- ``` CREATE INDEX idx_cod_sett_comm ON anaart(cod_sett_comm);```
+
+- ``` CREATE INDEX idx_cod_fam_comm ON anaart(cod_fam_comm);```
+
+- ``` CREATE INDEX idx_cod_sott_comm ON anaart(cod_sott_comm);```
+
+- ``` CREATE INDEX idx_cod_cli ON ordclidet(cod_cli);```
+
+- ``` CREATE INDEX idx_cod_art ON ordclidet(cod_art);```
+
+- ``` CREATE INDEX idx_user ON cronologia(user);```
+
+- ``` CREATE INDEX idx_dat_cro ON cronologia(dat_cro).```
+
 
 == Business Logic
 
 === Introduzione
+In questa sezione è possibile visionare tutte le scelte attuate durante la fase di progettazione e successivo sviluppo relative al codice che compone la Business logic del prodotto.
 
 ==== Diagramma delle classi
 #figure(
@@ -358,8 +396,10 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [Diagramma algoritmo (totale)]
 )
 *Descrizione:* \
+Nel diagramma sopra riportato è possibile esaminare in modo esaustivo la struttura di classi che costituisce la Business Logic del prodotto. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. Python offre una vasta gamma di strumenti per organizzare il codice in moduli e classi, promuovendo una suddivisione logica delle funzionalità del sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo sviluppato una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
 
 *Pattern:* \
+Strategy: pattern che permette di definire una famiglia di algoritmi interscambiabili.
 
 ==== Componenti:
 ===== Preprocessor
@@ -468,16 +508,13 @@ Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; 
   
 
 ===== Librerie esterne
-
 *Descrizione:* \
+Per l'implementazione dei due algoritmi di raccomandazioni presenti sono state utilizzate due librerie di python già citate all'interno del documento. Per quanto riguarda l'algoritmo SVD è stata utilizzata la libreria Surprise individuata fin da subito dal proponente. L'implementazione della rete neurale si è invece poggiata su una sotto libreria di PyTorch, una delle librerie più conosciute nell'ambito, denominanta widedeep.
 
-*Metodi:* \
-
+Riportiamo i link alla documentazione ufficiale:
 
 == Application Logic
-// DA FARE MEGLIO
-L'architettura front-end del prodotto sfrutta alcuni dei design pattern più comuni della libreria React, rimodellati in base alle esigenze della specifica situazione e del progetto.\ Abbiamo cercato, per quanto possibile, di separare il più possibile i compiti tra le varie componenti, per semplificare e gestire al meglio i vari stati dell'applicazione.
-
+In questa sezione è possibile visionare tutte le scelte attuate durante la fase di progettazione e successivo sviluppo relative al codice che compone l'Application Logic del prodotto.
 
 === Diagramma delle classi
 In questa sezione vengono descritte le varie pagine attraverso la convenzione UML per la rappresenta delle classi.\
