@@ -2563,42 +2563,47 @@ riportate indicano:
   [ROF 7], [L'utente, una volta entrato nella sezione "Profilo Utente", deve poter visualizzare i dati utente o modificarli.], [UC4.1, \ UC4.2],
   [ROF 8], [L'utente che ha scelto di visulizzare i "dati utente" deve visulizzare, l'anagrafica, l'email, l'username e la password.], [UC4.1.1,\ UC4.1.2,\ UC4.1.3,\ UC4.1.4],
   [ROF 9], [L'utente che ha scelto di modificare i dati utente, deve poter modificare l'email e la password.], [UC4.2.1,\ UC4.2.2],
-  [ROF 10], [L'utente, una volta autenticato, deve poter effettuare il Logout tramite il pulsante presente nella pagina principale del sito.], [UC5],
-  [ROF 11], [L'utente, una volta autenticato, deve poter accedere alla funzione "Ricerca" nella pagina principale del sito.], [UC6],
-  [ROF 12], [L'utente una volta entrato nella sezione "Ricerca", deve poter effettuare una ricerca, filtrarne i risultati, visualizzarne i risultati e eseguire il training dell'algoritmo.], [UC6.1,\ UC6.2, \ UC6.3, \ UC6.4],
-  [ROF 13], [L'utente che ha scelto di effettuare una ricerca, deve compilare tutti i campi per effettuarla e poter visualizzare i risultati.], [UC6.1.1,\ UC6.1.5],
-  [RDF 14], [L'utente che compila la scelta dell'algoritmo, può scegliere tra SVD e NN.],[UC6.1.1, UC6.1.2, UC6.1.3],
-  [ROF 15], [L'utente che compila la scelta del topic della ricerca, può scegliere tra prodotto per cliente o cliente per prodotto, per poi compilare i successivi campi.], [UC6.1.5,\ UC6.1.6,\ UC6.1.7],
-  [ROF 16], [L'utente che compila la scelta degli "N risultati", può scegliere tra i 5 migliori risultati (Top 5), tra i migliori 10 (Top 10) o i migliori 20 (Top 20).], [UC6.1.8,\ UC6.1.9,\ UC6.1.10],
-  [RDF 17], [L'utente che ha eseguito la ricerca, può filtrarne i risultati delle colonne con i risultati.], [UC6.2.1 \ UC6.2.2],
-  [ROF 18], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'ID, il nome e lo score assegnato alla raccomandazione.], [UC6.3.1,\ UC6.3.1.1,\ UC6.3.1.2,\ UC6.3.1.3],
-  [RDF 19], [L'utente può decidere se avviare un training del modello tramite il pulsante Training nella barra di ricerca], [UC6.4],
-  [RDF 20], [Nel caso un'utente cercasse di eseguire una ricerca con l'algortimo in training, deve visualizzare un messaggio di avviso.], [UC15],
-  [RDF 21], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 23, RDF 29, RDF 37, RDF 41.], [UC14],
-  [ROF 22], [L'utente che ha visualizzato i risultati della ricerca, deve poter inserire un feedback delle raccomandazioni mostrate.], [UC7],
-  [RDF 23], [L'utente, una volta autenticato, deve poter accedere alla funzione "Catalogo Prodotti" nella pagina principale del sito.], [UC8],
-  [RDF 24], [L'utente una volta entrato nella sezione "Catalogo Prodotti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC8.1,\ UC8.2],
-  [RDF 25], [L'utente che ha scelto di effetuare un fltraggio può compilare i campi filtri che desidera.], [UC8.1.1,\ UC8.1.2,\ UC8.1.3,\ UC8.1.4 \ UC8.1.5 \ UC8.1.6],
-  [RDF 26], [L'utente che ha effettuato un filtraggio e non, deve poter visualizzare tutti i campi della tabella con i risultati: Codice Articolo, Descrizione Articolo, Linea commerciale, Settore commerciale, Famiglia commersciale e Sotto-famiglia commerciale.], [UC8.2.1,\ UC8.2.1.1,\ UC8.2.1.2,\ UC8.2.1.3 \ UC8.2.1.4 \ UC8.2.1.5 \ UC8.2.1.6],
-  [RDF 27], [L'utente che ha visualizzato i risultati della ricerca, può visualizzare i dettagli di un prodotto, cliccando sulla riga corrispondente al prodotto che vuole visualizzare i dettagli.], [UC9],
-  [RDF 28], [L'utente se decide di visualizzare i dettagli di un prodotto, deve poter vedere il Codice e descrizione articolo, immagine articolo, Codice e descrizione Linea commerciale, Codice e descrizione Settore commerciale, Codice e descrizione Famiglia commerciale e Codice e descrizione Sotto-famiglia commerciale.], [UC9.1, UC9.2,\ UC9.3, UC9.4,\ UC9.5, UC9.6,\ UC9.7, UC9.8 \ UC9.9, UC9.10\ UC9.11],
-  [RDF 29], [L'utente, una volta autenticato, deve poter accedere alla funzione "Lista clienti" nella pagina principale del sito.], [UC10],
-  [RDF 30], [L'utente una volta entrato nella sezione "Lista clienti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC10.1,\ UC10.2],
-  [RDF 31], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Codice cliente, Ragione sociale e Provincia.], [UC10.1.1,\ UC10.1.2,\ UC10.1.3],
-  [RDF 32], [L'utente che effettutato un filtraggio e non, deve poter visualizzare il Codice cliente, la Ragione sociale e la provincia del cliente], [UC10.2.1, UC10.2.1.1,\ UC10.2.1.2, UC10.2.1.3],
-  [RDF 33], [L'utente, una volta autenticato, deve poter accedere alla funzione "Cronologia" nella pagina principale del sito.], [UC11],
-  [RDF 34], [L'utente una volta entrato nella sezione "Cronologia", deve poter effettuare una filtraggio e visualizzarne i risultati.], [UC11.1,\ UC11.2],
-  [RDF 35], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Data, Utente, Algoritmo, Topic, Codice Cliente/Prodotto e Top.], [UC11.1.1, UC11.1.2\ UC11.1.3, UC11.1.4\ UC11.1.5, UC11.1.6],
-  [RDF 36], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente l'algoritmo, il topic, il codice Cliente/Prodotto e il top.], [UC11.2.1, UC11.2.1.1,\ UC11.2.1.2, UC11.2.1.3\ UC11.2.1.4, UC11.2.1.5, UC11.2.1.6],
-  [RDF 37], [L'utente, una volta autenticato, deve poter accedere alla funzione "Feedback" nella pagina principale del sito.], [UC12],
-  [RDF 38], [L'utente una volta entrato nella sezione "Feedback", può effettuare un filtraggio e visualizzarne i risultati.], [UC12.1,\ UC12.2],
-  [RDF 39], [L'utente che ha scelto di effettuare un filtraggio, deve compilare i campi Data, Utente, ID Cliente, ID Prodotto, Algoritmo.], [UC12.1.1, UC12.1.2\ UC12.1.3, UC12.1.4\ UC12.1.5],
-  [RDF 40], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente, l'ID cliente, l'ID prodotto e l'algoritmo del Feedback], [UC12.2.1, UC12.2.1.1,\ UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5],
-  [RDF 41], [L'utente, una volta autenticato, deve poter accedere alla funzione "Carica dataset" e caricare un dataset esterno all'interno dell'applicazione.], [Verbale interno],
-  [RDF 42], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [Verbale interno],
-  [RDF 43], [L'utente, una volta autenticato, deve poter visualizzare la funzione statistiche mensili nel menù principale.], [Verbale interno],
-  [RDF 44],[L'utente una volta dentro la funzionalità statistiche mensili, deve poterne visualizzare il grafico e le raccomandazioni più attendibili.],[Verbale interno],
-  [RDF 45],[L'utente se vuole effettuare una ricerca tramite la vista "Ricerca", la può effettuare tramite la cronologia delle ricerche precedenti.],[Verbale interno],
+  [ROF 10], [L'utente inserisce la nuova email nel campo email, per procedere a modificare i dati.], [UC4.2.1],
+  [ROF 11], [L'utente inserisce la nuova password nel campo password, per procedere a modificare i dati.], [UC4.2.2],
+  [ROF 12], [L'utente, una volta autenticato, deve poter effettuare il Logout tramite il pulsante presente nella pagina principale del sito.], [UC5],
+  [ROF 13], [L'utente, una volta autenticato, deve poter accedere alla funzione "Ricerca" nella pagina principale del sito.], [UC6],
+  [ROF 14], [L'utente una volta entrato nella sezione "Ricerca", deve poter effettuare una ricerca, filtrarne i risultati, visualizzarne i risultati e eseguire il training dell'algoritmo.], [UC6.1,\ UC6.2, \ UC6.3, \ UC6.4],
+  [ROF 15], [L'utente che ha scelto di effettuare una ricerca, deve compilare tutti i campi per effettuarla e poter visualizzare i risultati.], [UC6.1.1,\ UC6.1.5],
+  [RDF 16], [L'utente che compila la scelta dell'algoritmo, può scegliere tra SVD e NN.],[UC6.1.1, UC6.1.2, UC6.1.3],
+  [ROF 17], [L'utente che compila la scelta del topic della ricerca, può scegliere tra prodotto per cliente o cliente per prodotto, per poi compilare i successivi campi.], [UC6.1.5,\ UC6.1.6,\ UC6.1.7],
+  [ROF 18], [L'utente che compila la scelta degli "N risultati", può scegliere tra i 5 migliori risultati (Top 5), tra i migliori 10 (Top 10) o i migliori 20 (Top 20).], [UC6.1.8,\ UC6.1.9,\ UC6.1.10],
+  [RDF 19], [L'utente che ha eseguito la ricerca, può filtrarne i risultati delle colonne con i risultati.], [UC6.2.1 \ UC6.2.2],
+  [ROF 20], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'ID, il nome e lo score assegnato alla raccomandazione.], [UC6.3.1,\ UC6.3.1.1,\ UC6.3.1.2,\ UC6.3.1.3],
+  [RDF 21], [L'utente può decidere se avviare un training del modello tramite il pulsante Training nella barra di ricerca], [UC6.4],
+  [RDF 22], [Nel caso un'utente cercasse di eseguire una ricerca con l'algortimo in training, deve visualizzare un messaggio di avviso.], [UC15],
+  [RDF 23], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 23, RDF 29, RDF 37, RDF 41.], [UC14],
+  [ROF 24], [L'utente che ha visualizzato i risultati della ricerca, deve poter inserire un feedback delle raccomandazioni mostrate.], [UC7],
+  [RDF 25], [L'utente, una volta autenticato, deve poter accedere alla funzione "Catalogo Prodotti" nella pagina principale del sito.], [UC8],
+  [RDF 26], [L'utente una volta entrato nella sezione "Catalogo Prodotti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC8.1,\ UC8.2],
+  [RDF 27], [L'utente che ha scelto di effetuare un fltraggio può compilare i campi filtri che desidera.], [UC8.1.1,\ UC8.1.2,\ UC8.1.3,\ UC8.1.4 \ UC8.1.5 \ UC8.1.6],
+  [RDF 28], [L'utente che ha effettuato un filtraggio e non, deve poter visualizzare tutti i campi della tabella con i risultati: Codice Articolo, Descrizione Articolo, Linea commerciale, Settore commerciale, Famiglia commersciale e Sotto-famiglia commerciale.], [UC8.2.1,\ UC8.2.1.1,\ UC8.2.1.2,\ UC8.2.1.3 \ UC8.2.1.4 \ UC8.2.1.5 \ UC8.2.1.6],
+  [RDF 29], [L'utente che ha visualizzato i risultati della ricerca, può visualizzare i dettagli di un prodotto, cliccando sulla riga corrispondente al prodotto che vuole visualizzare i dettagli.], [UC9],
+  [RDF 30], [L'utente se decide di visualizzare i dettagli di un prodotto, deve poter vedere il Codice e descrizione articolo, immagine articolo, Codice e descrizione Linea commerciale, Codice e descrizione Settore commerciale, Codice e descrizione Famiglia commerciale e Codice e descrizione Sotto-famiglia commerciale.], [UC9.1, UC9.2,\ UC9.3, UC9.4,\ UC9.5, UC9.6,\ UC9.7, UC9.8 \ UC9.9, UC9.10\ UC9.11],
+  [RDF 31], [L'utente, una volta autenticato, deve poter accedere alla funzione "Lista clienti" nella pagina principale del sito.], [UC10],
+  [RDF 32], [L'utente una volta entrato nella sezione "Lista clienti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC10.1,\ UC10.2],
+  [RDF 33], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Codice cliente, Ragione sociale e Provincia.], [UC10.1.1,\ UC10.1.2,\ UC10.1.3],
+  [RDF 34], [L'utente che effettutato un filtraggio e non, deve poter visualizzare il Codice cliente, la Ragione sociale e la provincia del cliente], [UC10.2.1, UC10.2.1.1,\ UC10.2.1.2, UC10.2.1.3],
+  [RDF 35], [L'utente, una volta autenticato, deve poter accedere alla funzione "Cronologia" nella pagina principale del sito.], [UC11],
+  [RDF 36], [L'utente una volta entrato nella sezione "Cronologia", deve poter effettuare una filtraggio e visualizzarne i risultati.], [UC11.1,\ UC11.2],
+  [RDF 37], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Data, Utente, Algoritmo, Topic, Codice Cliente/Prodotto e Top.], [UC11.1.1, UC11.1.2\ UC11.1.3, UC11.1.4\ UC11.1.5, UC11.1.6],
+  [RDF 38], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente l'algoritmo, il topic, il codice Cliente/Prodotto e il top.], [UC11.2.1, UC11.2.1.1,\ UC11.2.1.2, UC11.2.1.3\ UC11.2.1.4, UC11.2.1.5, UC11.2.1.6],
+  [RDF 39], [L'utente, una volta autenticato, deve poter accedere alla funzione "Feedback" nella pagina principale del sito.], [UC12],
+  [RDF 40], [L'utente una volta entrato nella sezione "Feedback", può effettuare un filtraggio e visualizzarne i risultati.], [UC12.1,\ UC12.2],
+  [RDF 41], [L'utente che ha scelto di effettuare un filtraggio, deve compilare i campi Data, Utente, ID Cliente, ID Prodotto, Algoritmo.], [UC12.1.1, UC12.1.2\ UC12.1.3, UC12.1.4\ UC12.1.5],
+  [RDF 42], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente, l'ID cliente, l'ID prodotto e l'algoritmo del Feedback], [UC12.2.1, UC12.2.1.1,\ UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5],
+  [RDF 43], [L'utente, una volta autenticato, deve poter accedere alla funzione "Carica dataset" e caricare un dataset esterno all'interno dell'applicazione.], [Verbale interno],
+  [RDF 44], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [Verbale interno],
+  [RDF 45], [L'utente, una volta autenticato, deve poter visualizzare la funzione statistiche mensili nel menù principale.], [Verbale interno],
+  [RDF 46],[L'utente una volta dentro la funzionalità statistiche mensili, deve poterne visualizzare il grafico e le raccomandazioni più attendibili.],[Verbale interno],
+  [RDF 47], [L'utente se visualizza il grafico, deve vedere sull'asse delle x le vendite mensili e sull'asse delle y le raccomandazioni proposte.], [Verbale iterno],
+  [RDF 48], [L'utente se vsualizza le raccomandazioni più attendibili, deve poter vedere l'ID Cliente, l'ID prodotto della raccomandazione.], [Verbale interno],
+  [RDF 49],[L'utente se vuole effettuare una ricerca tramite la vista "Ricerca", la può effettuare tramite la cronologia delle ricerche precedenti.],[Verbale interno],
+  [RDF 50], [L'utente se esegue una ricerca tramite la cronologia deve selezionare la riga con la ricerca all'interno delle cronologia.], [Verbale interno],
 )
 #align(center)[Tabella 1: Requisiti funzionali]
 
@@ -2632,6 +2637,7 @@ Le sigle sotto riportate possono essere così classificate:
   [ROQ 5], [Occorre realizzare un documento denominato "Manuale utente" per l'applicazione.], [Capitolato],
   [ROQ 6], [Occorre seguire e rispettare le norme definite nel documento "Norme di Progetto" durante lo sviluppo del prodotto.], [Interno],
   [ROQ 7], [Occorre realizzare un documento che descriva il sistema di raccomandazione implementato.], [Capitolato],
+  [ROQ 8], [Occorre realizzare un documento denominato "Specifica tecnica" con all'interno i diagrammi delle classi e la spiegazione dell'architettura.], [Capitolato]
 )
 #align(center)[Tabella 2: Requisiti di qualità]
 
@@ -2664,7 +2670,7 @@ Le sigle sotto riportate possono essere così classificate:
   [Per le strategie di raccomandazione dovranno essere utilizzati algoritmi di predizione come Matrix Factorization o K-Nearest Neighbors.],
   [Capitolato],
   [ROV 5],
-  [L'applicazione dovrà avere tassativamente un sistema di feedback delle raccomandazioni mostrate, i feedback potranno essere negativi o positivi.],
+  [L'applicazione dovrà avere tassativamente un sistema di feedback delle raccomandazioni mostrate, i feedback saranno solo negativi.],
   [Capitolato],
   [ROV 6],
   [Il sistema di raccomandazione dell'applicazione dovrà avere come modalità di implementazione o il collaborative filtering o il content-based filtering.],
@@ -2711,23 +2717,40 @@ Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica
   In questo ambiente i requisiti prestazionali possono essere
   influenzati da diverse variabili esterne indipendenti dalla qualità del prodotto.
 // forse da definire meglio una volta che avremo l'hosting, possibili domande da fare a gianluca.
-  Il sistema, in accordo con il proponente, si poggerà sulla rete dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.  
+  Il sistema, in accordo con il proponente, si poggerà sulla rete dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.\
+  Nonostante questo abbiamo fissato dei Requisiti desiderabili testati sulle nostre macchine che soddisfassero le idee del proponente.
+
+#table(
+  columns: (22mm, auto, 35mm),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Codice*], [*Descrizione*], [*Fonti*],
+  [RPD 1], [Il risultato delle raccomandazioni deve essere visibile all'utente entro 10 secondi dall'avvio della ricerca.], [Verbale esterno],
+  [RPD 2], [Il training dell'algoritmo SVD o NN non deve avere una durata complessiva maggiore dei 15 minuti.], [Verbale esterno],
+)
+#align(center)[Tabella 4: Requisi di performance]
 
 === Requisiti di sicurezza
 
 Analogamente a quanto riportato qui sopra, molti aspetti legati alla sicurezza del sistema dipenderanno, e saranno in parte risolti dai sistemi implementati nella rete aziendale su cui si poggia il prodotto.
 
-Internamente, i requisiti di sicurezza trovati e definiti sono:
-// da specificare che tipo di crittografia magari. es:RSA :RE (aspetterei di implementare)
-+ Crittografia dei dati degli utenti in ingresso, quali password e identificativo;
-// ha senso ritenerlo di sicurezza? :RE (secondo me si)
-+ Presenza di allert informativo sulle normative dei cookie utilizzati dalla web-app.
-// si può aggiungere il banner per la manutenzione del sito qui?
+Abbiamo deciso comunque di implementare qualche accorgimento per la sicurezza dei dati nel nostro prodotto.
+#table(
+  columns: (22mm, auto, 35mm),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [*Codice*], [*Descrizione*], [*Fonti*],
+  [RSD 1], [Le password degli utenti devono essere criptati tramite hash SHA-256 per mantenere i dati in sicurezza nel database.], [Verbale esterno],
+)
+#align(center)[Tabella 5: Requisi di sicurezza]
 
+#pagebreak()
 == Tracciamento
 Il tracciamento consente di mantenere una connessione tra i requisiti e le diverse fasi del ciclo di vita del software. Permettendo di reperire i requisiti con facilità aiuta a garantire che ogni elemento del sistema software, come le funzionalità o le caratteristiche, sia allineato e coerente con i requisiti specificati durante l'analisi.
 
-#pagebreak()
+
 === Fonte - Requisiti
 #table(
   columns: (1fr, 1fr),
@@ -2746,44 +2769,49 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [UC4.1, UC4.2], [ROF 7],
   [UC4.1.1, UC4.1.2, UC4.1.3, UC4.1.4], [ROF 8],
   [UC4.2.1, UC4.2.2], [ROF 9],
-  [UC5], [ROF 10],
-  [UC6], [ROF 11],
-  [UC6.1, UC6.2, UC6.3, UC6.4], [ROF 12],
-  [UC6.1.1, UC6.1.5], [ROF 13],
-  [UC6.1.1, UC6.1.2, UC6.1.3], [RDF 14],
-  [UC6.1.5, UC6.1.6, UC6.1.7], [ROF 15],
-  [UC6.1.8, UC6.1.9, UC6.1.10], [ROF 16],
-  [UC6.2.1, UC6.2.2], [RDF 17],
-  [UC6.3.1, UC6.3.1.1, UC6.3.1.2, UC6.3.1.3], [ROF 18],
-  [UC6.4], [RDF 19],
-  [UC15], [RDF 20],
-  [UC14], [RDF 21],
-  [UC7], [R0F 22],
-  [UC8], [RDF 23],
-  [UC8.1, UC8.2], [RDF 24],
-  [UC8.1.1, UC8.1.2, UC8.1.3, UC8.1.4, UC8.1.5, UC8.1.6], [RDF 25],
-  [UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4, UC8.2.1.5, UC8.2.1.6], [RDF 26],
-  [UC9], [RDF 27],
-  [UC9.1, UC9.2, UC9.2, UC9.4, UC9.5, UC9.6, UC9.7, UC9.9, UC9.10, UC9.11], [RDF 28],
-  [UC10], [RDF 29],
-  [UC10.1, UC10.2], [RDF 30],
-  [UC10.1.1, UC10.1.2, UC10.1.3], [RDF 31],
-  [UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC1O.2.1.3], [RDF 32],
-  [UC11], [RDF 33],
-  [UC11.1, UC11.2], [RDF 34],
-  [UC11.1.1, UC11.1.2, UC11.1.3, UC11.1.4, UC11.1.5], [RDF 35],
-  [UC11.2.1, UC11.2.1.1, UC11.2.1.2, UC11.2.1.3, UC11.2.1.4, UC11.2.1.5, UC11.2.1.6], [RDF 36],
-  [UC12], [RDF 37],
-  [UC12.1, UC12.2], [RDF 38],
-  [UC12.1.1, UC12.1.2, UC12.1.3, UC12.1.4, UC12.1.5], [RDF 39],
-  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5], [RDF 40],
-  [Verbale interno], [RDF 41],
-  [Verbale interno], [RDF 42],
+  [UC4.2.1],[ROF 10],
+  [UC4.2.2],[ROF 11],
+  [UC5], [ROF 12],
+  [UC6], [ROF 13],
+  [UC6.1, UC6.2, UC6.3, UC6.4], [ROF 14],
+  [UC6.1.1, UC6.1.5], [ROF 15],
+  [UC6.1.1, UC6.1.2, UC6.1.3], [RDF 16],
+  [UC6.1.5, UC6.1.6, UC6.1.7], [ROF 17],
+  [UC6.1.8, UC6.1.9, UC6.1.10], [ROF 18],
+  [UC6.2.1, UC6.2.2], [RDF 19],
+  [UC6.3.1, UC6.3.1.1, UC6.3.1.2, UC6.3.1.3], [ROF 20],
+  [UC6.4], [RDF 21],
+  [UC15], [RDF 22],
+  [UC14], [RDF 23],
+  [UC7], [R0F 24],
+  [UC8], [RDF 25],
+  [UC8.1, UC8.2], [RDF 26],
+  [UC8.1.1, UC8.1.2, UC8.1.3, UC8.1.4, UC8.1.5, UC8.1.6], [RDF 27],
+  [UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4, UC8.2.1.5, UC8.2.1.6], [RDF 28],
+  [UC9], [RDF 29],
+  [UC9.1, UC9.2, UC9.2, UC9.4, UC9.5, UC9.6, UC9.7, UC9.9, UC9.10, UC9.11], [RDF 30],
+  [UC10], [RDF 31],
+  [UC10.1, UC10.2], [RDF 32],
+  [UC10.1.1, UC10.1.2, UC10.1.3], [RDF 33],
+  [UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC1O.2.1.3], [RDF 34],
+  [UC11], [RDF 35],
+  [UC11.1, UC11.2], [RDF 36],
+  [UC11.1.1, UC11.1.2, UC11.1.3, UC11.1.4, UC11.1.5], [RDF 37],
+  [UC11.2.1, UC11.2.1.1, UC11.2.1.2, UC11.2.1.3, UC11.2.1.4, UC11.2.1.5, UC11.2.1.6], [RDF 38],
+  [UC12], [RDF 39],
+  [UC12.1, UC12.2], [RDF 40],
+  [UC12.1.1, UC12.1.2, UC12.1.3, UC12.1.4, UC12.1.5], [RDF 41],
+  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5], [RDF 42],
   [Verbale interno], [RDF 43],
   [Verbale interno], [RDF 44],
   [Verbale interno], [RDF 45],
+  [Verbale interno], [RDF 46],
+  [Verbale interno], [RDF 47],
+  [Verbale interno], [RDF 48],
+  [Verbale interno], [RDF 49],
+  [Verbale interno], [RDF 50],
 )
-#align(center)[Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali]
+#align(center)[Tabella 6: Fonte - Requisito. Tracciamento requisiti funzionali]
 
 #table(
   columns: (1fr, 1fr),
@@ -2797,7 +2825,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Interno], [ROQ 6],
   [Capitolato], [ROQ 7],
 )
-#align(center)[Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità]
+#align(center)[Tabella 7: Fonte - Requisito. Tracciamento requisiti di qualità]
 
 
 
@@ -2818,7 +2846,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [Verbale Interno],[RDV 11],
   [Verbale Interno],[RDV 12],          
 )
-#align(center)[Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo]
+#align(center)[Tabella 8: Fonte - Requisito. Tracciamento requisiti di vincolo]
 
 #pagebreak()
 == Riepilogo
@@ -2827,17 +2855,19 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   columns: (1fr, 1fr, 1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Tipologia*],[*Obbligatorio*], [*Desiderabile*],[*Complessivo*],
-  [Funzionale],[15],[30],[45],
+  [Funzionale],[17],[33],[50],
   [di Qualità],[7],[/],[7],
   [di Vincolo],[5],[7],[12],
+  [di Performance], [/], [2], [2],
+  [di Sicurezza], [/], [1], [1],
   
 )
 #table(
   columns: (1fr, auto,),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Totale*],[*64*],
+  [*Totale*],[*72*],
 )
-#align(center)[Tabella 7: Riepilogo requisiti]
+#align(center)[Tabella 9: Riepilogo requisiti]
 #pagebreak()
 
 
@@ -2896,7 +2926,9 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 - Tabella 1: Requisiti funzionali;
 - Tabella 2: Requisiti di qualità;
 - Tabella 3: Requisiti di vincolo;
-- Tabella 4: Fonte - Requisito. Tracciamento requisiti funzionali;
-- Tabella 5: Fonte - Requisito. Tracciamento requisiti di qualità;
-- Tabella 6: Fonte - Requisito. Tracciamento requisiti di vincolo;
-- Tabella 7: Riepilogo requisiti.
+- Tabella 3: Requisiti di performance;
+- Tabella 3: Requisiti di sicurezza;
+- Tabella 6: Fonte - Requisito. Tracciamento requisiti funzionali;
+- Tabella 7: Fonte - Requisito. Tracciamento requisiti di qualità;
+- Tabella 8: Fonte - Requisito. Tracciamento requisiti di vincolo;
+- Tabella 9: Riepilogo requisiti.

@@ -226,7 +226,6 @@ Sono state ideate e containerizzate quattro componenti principali:
   caption: [Docker environment]
 )
 
-
 == Pattern architetturali - Architettura a Microservizi
 
 L'architettura a microservizi presenta caratteristiche e crismi che si discostanto da quella meno recente ma comunque valida, monolitica. Quest'ultima è stata il paradigma dominante per lo sviluppo software per molti anni, soprattutto nelle prime fasi dello sviluppo di applicazioni web e enterprise.
