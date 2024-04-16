@@ -613,7 +613,13 @@ La componente Results viene utilizzata per visualizzare i sultati della raccoman
 È composta da una tabella in cui visualizzare e filtrare il risultato della raccomandazione, inoltre di ogni elemente è possibile visualizzare ulteriori dettagli grazie ad una finestra di dialogo visualizzabile con la pressione su uno specifico elemento.
 
 === Documentazione API
+Per il nostro progetto abbiamo utilizzato diversi tipi di API:
+  - Per metodi GET con Express
+  - Per metodi GET con Flask (python)
+  - Per metodi PUT con Express
+  - Per metodi POST con Flask (python)
 
+  L'utilizzo di Flask e le relative API riguardano la parte dell'algoritmo, training (POST) e ricerca (GET), mentre la parte di Express riguarda l'interfaccia web. 
 
 ==== Chiamate GET
 
