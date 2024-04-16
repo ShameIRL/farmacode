@@ -267,7 +267,7 @@ Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo s
 
 - *Application logic*: Composta dall'interfaccia utente realizzata con React e JavaScript.
 
-Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc.
+Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc (descritte con maggiore dettaglio nella sezione apposita).
 
 == Persistence Logic
 === Introduzione
@@ -449,11 +449,49 @@ Descriviamo più nel dettaglio questa composizione:
 )
 #align(center)[Tabella 14: Tabella ordclidet_feedback]
 
-=== Query 
+=== Query e indicizzazione
+Si riportano qui sotto alcune delle query, principalmente quelle che riteniamo essere più interessanti, eseguite:
+
+- Selezione di tutti i prodotti in ordine di codice (e relative caratteristiche):
+``` SELECT * FROM anaart LEFT JOIN linee_comm ON anaart.cod_linea_comm = linee_comm.cod_linea_comm LEFT JOIN settori_comm ON anaart.cod_sett_comm = settori_comm.cod_sett_comm LEFT JOIN famiglie_comm ON anaart.cod_fam_comm = famiglie_comm.cod_fam_comm LEFT JOIN sottofamiglie_comm ON anaart.cod_sott_comm = sottofamiglie_comm.cod_sott_comm ORDER BY cod_art ```;
+
+- Selezione di tutti i clienti in ordine di codice (e relative caratteristiche):
+``` SELECT * FROM anacli LEFT JOIN tabprov ON anacli.cod_prov = tabprov.cod_prov ORDER BY cod_cli ``` ;
+
+- Selezione di tutti i feedback (ordinati in modo inverso rispetto alla data di inserimento): 
+``` SELECT id, dat_fed, user, cod_cli, cod_art, algo FROM ordclidet_feedback ORDER BY dat_fed ASC ```;
+
+- Selezione di tutte le ricerche (ordinata in modo inverso rispetto alla data di ricerca):
+``` SELECT user, algo, topic, cod_ric, sel_top, dat_cro FROM cronologia ORDER BY dat_cro ASC ```;
+
+- Inserimento di una nuova ricerca nella tabella cronologia:
+``` INSERT INTO cronologia (user, algo, topic, cod_ric, sel_top) VALUES (?,?,?,?,?) ``` .
+
+Inoltre sono stati previsti degli indici per l'indicizzazione ed ottimizzaione delle operazioni:
+
+- ``` CREATE INDEX idx_cod_prov ON anacli(cod_prov); ```
+
+- ``` CREATE INDEX idx_cod_linea_comm ON anaart(cod_linea_comm); ```
+
+- ``` CREATE INDEX idx_cod_sett_comm ON anaart(cod_sett_comm);```
+
+- ``` CREATE INDEX idx_cod_fam_comm ON anaart(cod_fam_comm);```
+
+- ``` CREATE INDEX idx_cod_sott_comm ON anaart(cod_sott_comm);```
+
+- ``` CREATE INDEX idx_cod_cli ON ordclidet(cod_cli);```
+
+- ``` CREATE INDEX idx_cod_art ON ordclidet(cod_art);```
+
+- ``` CREATE INDEX idx_user ON cronologia(user);```
+
+- ``` CREATE INDEX idx_dat_cro ON cronologia(dat_cro).```
+
 
 == Business Logic
 
 === Introduzione
+In questa sezione è possibile visionare tutte le scelte attuate durante la fase di progettazione e successivo sviluppo relative al codice che compone la Business logic del prodotto.
 
 ==== Diagramma delle classi
 #figure(
@@ -461,8 +499,10 @@ Descriviamo più nel dettaglio questa composizione:
   caption: [Diagramma algoritmo (totale)]
 )
 *Descrizione:* \
+Nel diagramma sopra riportato è possibile esaminare in modo esaustivo la struttura di classi che costituisce la Business Logic del prodotto. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. Python offre una vasta gamma di strumenti per organizzare il codice in moduli e classi, promuovendo una suddivisione logica delle funzionalità del sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo sviluppato una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
 
 *Pattern:* \
+Strategy: pattern che permette di definire una famiglia di algoritmi interscambiabili.
 
 ==== Componenti:
 ===== Preprocessor
@@ -571,16 +611,13 @@ Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; 
   
 
 ===== Librerie esterne
-
 *Descrizione:* \
+Per l'implementazione dei due algoritmi di raccomandazioni presenti sono state utilizzate due librerie di python già citate all'interno del documento. Per quanto riguarda l'algoritmo SVD è stata utilizzata la libreria Surprise individuata fin da subito dal proponente. L'implementazione della rete neurale si è invece poggiata su una sotto libreria di PyTorch, una delle librerie più conosciute nell'ambito, denominanta widedeep.
 
-*Metodi:* \
-
+Riportiamo i link alla documentazione ufficiale:
 
 == Application Logic
-// DA FARE MEGLIO
-L'architettura front-end del prodotto sfrutta alcuni dei design pattern più comuni della libreria React, rimodellati in base alle esigenze della specifica situazione e del progetto.\ Abbiamo cercato, per quanto possibile, di separare il più possibile i compiti tra le varie componenti, per semplificare e gestire al meglio i vari stati dell'applicazione.
-
+In questa sezione è possibile visionare tutte le scelte attuate durante la fase di progettazione e successivo sviluppo relative al codice che compone l'Application Logic del prodotto.
 
 === Diagramma delle classi
 In questa sezione vengono descritte le varie pagine attraverso la convenzione UML per la rappresenta delle classi.\
@@ -713,11 +750,13 @@ La componente Results viene utilizzata per visualizzare i sultati della raccoman
 È composta da una tabella in cui visualizzare e filtrare il risultato della raccomandazione, inoltre di ogni elemente è possibile visualizzare ulteriori dettagli grazie ad una finestra di dialogo visualizzabile con la pressione su uno specifico elemento.
 
 === Documentazione API
-La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
-delineando brevemente le operazioni disponibili e i dati accessibili. Una descrizione dettagliata della loro struttura 
-è disponibile nel documento "Manuale Sviluppatore v.1.0.0"; questo permette agli sviluppatori interessati di 
-comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
-manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
+Per il nostro progetto abbiamo utilizzato diversi tipi di API:
+  - Per metodi GET con Express
+  - Per metodi GET con Flask (python)
+  - Per metodi PUT con Express
+  - Per metodi POST con Flask (python)
+
+  L'utilizzo di Flask e le relative API riguardano la parte dell'algoritmo, training (POST) e ricerca (GET), mentre la parte di Express riguarda l'interfaccia web. 
 
 ==== Chiamate GET
 
@@ -1068,6 +1107,32 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
   #align(center)[Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
 
++ /search/:algo/:oggetto/:id/:n :
+  - *Descrizione:*\
+    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
+
+  - *Parametri:*
+    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
+    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
+    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
+    - n (string): Il numero di risultati da restituire.
+
+  - *Ritorno:*
+    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
+  )
+
+  #align(center)[Tabella 21: Esito della ricerca utilizzando un algoritmo specifico.]
 
 ==== Chiamate PUT
 
@@ -1097,7 +1162,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento della nuova voce nella cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
+  #align(center)[Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
 
 + /feedback/newUser :
   - *Descrizione:*\
@@ -1124,7 +1189,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'ordine del cliente.],
   )
 
-  #align(center)[Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
+  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
 
 + /feedback/newItem :
   - *Descrizione:*\
@@ -1151,7 +1216,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'articolo.],
   )
 
-  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
+  #align(center)[Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
 
 + /feedback/delFeed :
   - *Descrizione:*\
@@ -1175,7 +1240,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'eliminazione del feedback.],
   )
 
-  #align(center)[Tabella 24: Esito della richiesta di eliminazione di un feedback.]
+  #align(center)[Tabella 25: Esito della richiesta di eliminazione di un feedback.]
 
 + /userana/:use :
   - *Descrizione:*\
@@ -1199,7 +1264,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati.],
   )
 
-  #align(center)[Tabella 25: Esito della richiesta di dettagli di un utente.]
+  #align(center)[Tabella 26: Esito della richiesta di dettagli di un utente.]
 
 + /userana/:use/email :
   - *Descrizione:*\
@@ -1224,7 +1289,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento dell'indirizzo email.],
   )
 
-  #align(center)[Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente.]
+  #align(center)[Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente.]
 
 + /userana/:use/password :
   - *Descrizione:*\
@@ -1249,10 +1314,9 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento della password.],
   )
 
-  #align(center)[Tabella 27: Esito dell'aggiornamento della password di un utente.]
+  #align(center)[Tabella 28: Esito dell'aggiornamento della password di un utente.]
 
-
-==== Chiamate Route
+==== Chiamate POST
 
 + /train/:algo :\
   - *Descrizione:*\
@@ -1276,34 +1340,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
     [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'addestramento dell'algoritmo.],
     )
 
-#align(center)[Tabella 28: Esito dell'addestramento di un algoritmo di machine learning.]
-
-+ /search/:algo/:oggetto/:id/:n :
-  - *Descrizione:*\
-    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
-
-  - *Parametri:*
-    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
-    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
-    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
-    - n (string): Il numero di risultati da restituire.
-
-  - *Ritorno:*
-    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
-
-  - *Codici di stato HTTP:*
-  #table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [Esito], [HTTP], [Descrizione],
-  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
-  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
-  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
-  )
-
-  #align(center)[Tabella 29: Esito della ricerca utilizzando un algoritmo specifico.]
+  #align(center)[Tabella 29: Esito dell'addestramento di un algoritmo di machine learning.]
 
 #pagebreak()
 = Stato requisiti funzionali
@@ -1391,13 +1428,13 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 - Tabella 18: Esito della richiesta di recupero delle provincie dei clienti
 - Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti
 - Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti
-- Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
-- Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
-- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
-- Tabella 24: Esito della richiesta di eliminazione di un feedback
-- Tabella 25: Esito della richiesta di dettagli di un utente
-- Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente
-- Tabella 27: Esito dell'aggiornamento della password di un utente
-- Tabella 28: Esito dell'addestramento di un algoritmo di machine learning
-- Tabella 29: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 21: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
+- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
+- Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
+- Tabella 25: Esito della richiesta di eliminazione di un feedback
+- Tabella 26: Esito della richiesta di dettagli di un utente
+- Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente
+- Tabella 28: Esito dell'aggiornamento della password di un utente
+- Tabella 29: Esito dell'addestramento di un algoritmo di machine learning
 - Tabella 30: Requisiti funzionali
