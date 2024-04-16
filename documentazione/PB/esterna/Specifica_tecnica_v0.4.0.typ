@@ -9,9 +9,10 @@
   ),
   changelog: (
     "0.5.0", "2024-04-14", p.passarella, "", "Stesura documentazione API",
+    "0.4.1", "2024-03-26", p.favaron, "", "Migliorie sezione Tecnologie",
     "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
     "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
-    "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
+    "0.2.0", "2024-03-20", p.bomben, p.favaron, "Stesura sezione Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
   ),
 )
@@ -63,23 +64,25 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
     //da mettere riferimenti relativi alle slide di cardin e qualcosa trovato sul web
 
 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf;
 - Progettazione: I pattern architetturali (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf
+  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf;
 - Verifica e validazione: analisi statica (T10) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
 - Verifica e validazione: analisi dinamica aka testing (T11) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
 - Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
-  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf
+  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf;
+- Documentazione Docker\
+  https://docs.docker.com/.
 
 #pagebreak()
 = Tecnologie
 Questa sezione serve a fornire una panoramica generale sulle tecnologie adottate per il progetto.\
 Vengono riportate sottoforma di tabelle le diverse tecnologie, sia per la codifica che per l'analisi e il test del codice. Ogni tabella è formata da tre colonne che riportanto:
 - La tecnologia utilizzata (il nome del linguaggio/framework/strumento);
-- La descrizione del ruolo che la tecnologia ha avuto all'interno del progetto;
-- La versione della tecnologia usata.
+- La versione della tecnologia usata;
+- La descrizione del ruolo che la tecnologia ha avuto all'interno del progetto.
 
 
 == Tecnologie per la codifica
@@ -92,13 +95,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Linguaggi*]),
-  [HTML],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],[5],
-  [CSS],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],[3],
-  [JavaScript],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],[TD],
-  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[3.11.5],
-  [SQL],[Linguaggio di interrogazione per la creazione e gestione del database.],[TD],
+  [*Tecnologia*], [*Versione*], [*Descrizione*], 
+  /*table.cell(colspan: 3, [*Linguaggi*]),*/
+  [HTML],[5],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],
+  [CSS],[3],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],
+  [JavaScript],[TD],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],
+  [Python],[3.11.5],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],
+  [SQL],[TD],[Linguaggio di interrogazione per la creazione e gestione del database.],
   )
   #align(center)[Tabella 1: Linguaggi]
 
@@ -108,18 +111,18 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Librerie e framework*]),
-  [Pandas],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],[2.1.1],
-  [Surprise],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],[1.1.3],
-  [React.js],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],[18.2.0],
-  [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[10.5.1],
-  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito],[4.18.2],
-  [Flask],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP],[3.0.x],
-  [NumPy],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],[1.26.0],
-  [PyTorch],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],[2.2.2],
-  [Tailwind CSS],[Framework per css utilizzato per lo sviluppo di interfacce utente.],[3.4.1],
-  [Axios], [Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server], [1.6.8]
+  [*Tecnologia*], [*Versione*], [*Descrizione*],
+  /*table.cell(colspan: 3, [*Librerie e framework*]),*/
+  [Pandas],[2.1.1],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],
+  [Surprise],[1.1.3],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],
+  [React.js],[18.2.0],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],
+  [PrimeReact],[10.5.1],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],
+  [Express],[4.18.2],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito, in particolare per la comunicazione tra la il front-end e il database.],
+  [Flask],[3.0.3],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP. Utilizzata per la comunicazione tra il front-end e il sistema di raccomandazione.],
+  [NumPy],[1.26.0],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],
+  [PyTorch],[2.2.2],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],
+  [Tailwind CSS],[3.4.1],[Framework per css utilizzato per lo sviluppo di interfacce utente.],
+  [Axios],[1.6.8],[Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server.], 
 )
   #align(center)[Tabella 2: Librerie e framework]
 
@@ -130,15 +133,15 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Strumenti e servizi*]),
-  [MySQL],[RDBMS per la creazione e gestione dei database in SQL.],[2.18.1],
-  [Node.js],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],[18.16.1],
-  [NPM],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],[9.5.1],
-  [VS Code],[IDE di programmazione gratuito ricco estensioni esterne.],[TD],
-  [Docker],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],[TD],
-  [Git],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],[TD],
-  [Anaconda],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],[TD],
+  [*Tecnologia*], [*Versione*], [*Descrizione*],
+  /*table.cell(colspan: 3, [*Strumenti e servizi*]),*/
+  [MySQL],[Latest],[RDBMS per la creazione e gestione dei database in SQL.],
+  [Node.js],[18.16.1],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],
+  [NPM],[9.5.1],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],
+  [VS Code],[Latest],[IDE di programmazione gratuito ricco estensioni esterne.],
+  [Docker],[Latest],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],
+  [Git],[Latest],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],
+  [Anaconda],[Latest],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],
 
 )
 #align(center)[Tabella 3: Strumenti e servizi]
@@ -153,10 +156,10 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Analisi statica*]),
-  [Ruff], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], [0.3.3],
-  [ESLint], [Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], [8.57.0],
+  [*Tecnologia*], [*Versione*], [*Descrizione*],
+  /*table.cell(colspan: 3, [*Analisi statica*]),*/
+  [Ruff],[0.3.3], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], 
+  [ESLint],[8.57.0],[Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], 
 
 )
 #align(center)[Tabella 4: Analisi statica]
@@ -169,10 +172,10 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   inset: 10pt,
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Analisi dinamica*]),
-  [Pytest], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali], [8.0.x],
-  [Jest],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],[27.5.1],
-  [GitHub Action],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], [/],
+  /*table.cell(colspan: 3, [*Analisi dinamica*]),*/
+  [Pytest],[8.0.x], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali.], 
+  [Jest],[27.5.1],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],
+  [GitHub Action],[/],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], 
 )
 #align(center)[Tabella 5: Analisi dinamica]
 
@@ -183,7 +186,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 
 *Premessa:*
 Come menzionato nei documenti "Norme di Progetto" e "Piano di Qualifica", il gruppo ha deciso di utilizzare in ambito progettuale un approccio top-down, del quale si riportano brevemente i punti di forza individuati:
-Visione d'insieme: Questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza.
+- Visione d'insieme: Questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza; 
 
 - Struttura modulare: La progettazione top-down favorisce la suddivisione del progetto in moduli o componenti più piccoli, semplificando così lo sviluppo e la gestione del software;
 
@@ -200,13 +203,13 @@ Visione d'insieme: Questo approccio consente di avere una visione completa del p
 Nonostante non rientrasse nei requisiti obbligatori espressi dal propronente, il gruppo ha deciso di adottare i vari servizi che Docker fornisce per la gestione dell'infrastruttura del prodotto.
 I vantaggi che quest'ultimo offre hanno indotto facilmente alla scelta: 
 
-- Isolamento: offre un'isolamento leggero e portatile delle applicazioni tramite i container, consentendo loro di essere eseguiti in ambienti virtualizzati senza il peso delle macchine virtuali tradizionali. Questo significa che le applicazioni possono essere eseguite in modo consistente su qualsiasi ambiente, sia esso locale, in cloud o in ambienti di produzione.
+- Isolamento: offre un'isolamento leggero e portatile delle applicazioni tramite i container, consentendo loro di essere eseguiti in ambienti virtualizzati senza il peso delle macchine virtuali tradizionali. Questo significa che le applicazioni possono essere eseguite in modo consistente su qualsiasi ambiente, sia esso locale, in cloud o in ambienti di produzione;
 
-- Velocità di distribuzione: I container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite.
+- Velocità di distribuzione: I container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite;
 
-- Scalabilità: Docker consente di scalare facilmente le applicazioni orizzontalmente, aggiungendo istanze dei container in risposta a picchi di carico. Questo facilita la gestione della disponibilità e delle prestazioni delle applicazioni in ambienti di produzione ad alta intensità di traffico.
+- Scalabilità: Docker consente di scalare facilmente le applicazioni orizzontalmente, aggiungendo istanze dei container in risposta a picchi di carico. Questo facilita la gestione della disponibilità e delle prestazioni delle applicazioni in ambienti di produzione ad alta intensità di traffico;
 
-- Ambienti consistenti: Utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti.
+- Ambienti consistenti: Utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti;
 
 - Gestione semplificata: Docker fornisce strumenti potenti per la gestione dei contenitori, inclusi Docker Compose per la definizione e l'esecuzione di applicazioni multi-contenitore.
 
@@ -215,11 +218,11 @@ Sono state ideate e containerizzate quattro componenti principali:
 
 + DB: container che rappresenta e istanzia il database contente il dataset complessivo del intero progetto. Con dati utili sia all'interfaccia del prodotto, sia alla componente di logica composta dall'algoritmo di raccomandazione;
 
-+ Python-api: container che contiene l'algoritmo di raccomandazione, e le API, realizzate in Flask, per la comunicazione con le altre componenti.
++ Python-api: container che contiene l'algoritmo di raccomandazione, e le API, realizzate in Flask, per la comunicazione con le altre componenti;
 
-+ Express: rappresenta le API utili all'interconnessione tra database ed interfaccia utente.
++ Express: rappresenta le API utili all'interconnessione tra database ed interfaccia utente;
 
-+ React-app: questo container contiene l'applicazione Reatc e quindi l'interfaccia grafica del prodotto.
++ React-app: questo container contiene l'applicazione React e quindi l'interfaccia grafica del prodotto.
 
 #figure(
   image("/imgs/diagramma_classi/Docker.png", width: auto),
@@ -234,25 +237,25 @@ In un'applicazione monolitica, l'intera applicazione è sviluppata, implementata
 
 Un'applicazione basata su microservizi è composta invece, come deducibile dalla nomenclatura, da molti piccoli servizi, ciascuno dei quali si occupa di una funzionalità specifica. Questi sono alcuni degli aspetti chiave che la contraddistinguono:
 
-- Decomposizione modulare: L'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente.
+- Decomposizione modulare: L'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente;
 
-- Indipendenza dei servizi: Ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione.
+- Indipendenza dei servizi: Ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione;
 
-- Comunicazione tramite API: I microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente.
+- Comunicazione tramite API: I microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente;
 
-- Scalabilità e resilienza: Poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce.
+- Scalabilità e resilienza: Poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce;
 
 - Gestione dei dati: Ogni microservizio può avere il proprio database, adatto alle sue esigenze specifiche. Questo favorisce una maggiore flessibilità nella scelta dei tipi di database e nella gestione dei dati.
 
 Alcuni contro, che solitamente la caratterizzano sono invece: 
 
-- Complessità della gestione: Gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato.
+- Complessità della gestione: Gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato;
 
-- Overhead di comunicazione: Poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione.
+- Overhead di comunicazione: Poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione;
 
-- Complessità dello sviluppo: Lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata.
+- Complessità dello sviluppo: Lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata;
 
-- Consistenza dei dati: Con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti.
+- Consistenza dei dati: Con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti;
 
 - Test e debugging: Testare e debuggare un sistema basato su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché è necessario considerare le interazioni tra i diversi servizi e la loro integrazione complessiva.
 
@@ -647,11 +650,13 @@ La componente Results viene utilizzata per visualizzare i sultati della raccoman
 È composta da una tabella in cui visualizzare e filtrare il risultato della raccomandazione, inoltre di ogni elemente è possibile visualizzare ulteriori dettagli grazie ad una finestra di dialogo visualizzabile con la pressione su uno specifico elemento.
 
 === Documentazione API
-La sezione seguente fornisce una panoramica delle API create dal team Farmacode per comunicare con l'applicazione,
-delineando brevemente le operazioni disponibili e i dati accessibili. Una descrizione dettagliata della loro struttura 
-è disponibile nel documento "Manuale Sviluppatore v.1.0.0"; questo permette agli sviluppatori interessati di 
-comprendere appieno il software e di implementare nuove funzionalità in modo automatizzato, senza dover interagire 
-manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illustrazione generale e indicativa delle API disponibili.
+Per il nostro progetto abbiamo utilizzato diversi tipi di API:
+  - Per metodi GET con Express
+  - Per metodi GET con Flask (python)
+  - Per metodi PUT con Express
+  - Per metodi POST con Flask (python)
+
+  L'utilizzo di Flask e le relative API riguardano la parte dell'algoritmo, training (POST) e ricerca (GET), mentre la parte di Express riguarda l'interfaccia web. 
 
 ==== Chiamate GET
 
@@ -1002,6 +1007,32 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 
   #align(center)[Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti.]
 
++ /search/:algo/:oggetto/:id/:n :
+  - *Descrizione:*\
+    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
+
+  - *Parametri:*
+    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
+    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
+    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
+    - n (string): Il numero di risultati da restituire.
+
+  - *Ritorno:*
+    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
+
+  - *Codici di stato HTTP:*
+  #table(
+  columns: (auto, auto, auto),
+  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  inset: 10pt,
+  align: center,
+  [Esito], [HTTP], [Descrizione],
+  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
+  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
+  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
+  )
+
+  #align(center)[Tabella 21: Esito della ricerca utilizzando un algoritmo specifico.]
 
 ==== Chiamate PUT
 
@@ -1031,7 +1062,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento della nuova voce nella cronologia delle attività degli utenti.],
   )
 
-  #align(center)[Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
+  #align(center)[Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti.]
 
 + /feedback/newUser :
   - *Descrizione:*\
@@ -1058,7 +1089,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'ordine del cliente.],
   )
 
-  #align(center)[Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
+  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente.]
 
 + /feedback/newItem :
   - *Descrizione:*\
@@ -1085,7 +1116,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'inserimento del nuovo feedback per l'articolo.],
   )
 
-  #align(center)[Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
+  #align(center)[Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo.]
 
 + /feedback/delFeed :
   - *Descrizione:*\
@@ -1109,7 +1140,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'eliminazione del feedback.],
   )
 
-  #align(center)[Tabella 24: Esito della richiesta di eliminazione di un feedback.]
+  #align(center)[Tabella 25: Esito della richiesta di eliminazione di un feedback.]
 
 + /userana/:use :
   - *Descrizione:*\
@@ -1133,7 +1164,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante il recupero dei dati.],
   )
 
-  #align(center)[Tabella 25: Esito della richiesta di dettagli di un utente.]
+  #align(center)[Tabella 26: Esito della richiesta di dettagli di un utente.]
 
 + /userana/:use/email :
   - *Descrizione:*\
@@ -1158,7 +1189,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento dell'indirizzo email.],
   )
 
-  #align(center)[Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente.]
+  #align(center)[Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente.]
 
 + /userana/:use/password :
   - *Descrizione:*\
@@ -1183,10 +1214,9 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
   [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'aggiornamento della password.],
   )
 
-  #align(center)[Tabella 27: Esito dell'aggiornamento della password di un utente.]
+  #align(center)[Tabella 28: Esito dell'aggiornamento della password di un utente.]
 
-
-==== Chiamate Route
+==== Chiamate POST
 
 + /train/:algo :\
   - *Descrizione:*\
@@ -1210,34 +1240,7 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
     [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'addestramento dell'algoritmo.],
     )
 
-#align(center)[Tabella 28: Esito dell'addestramento di un algoritmo di machine learning.]
-
-+ /search/:algo/:oggetto/:id/:n :
-  - *Descrizione:*\
-    Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
-
-  - *Parametri:*
-    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
-    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
-    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
-    - n (string): Il numero di risultati da restituire.
-
-  - *Ritorno:*
-    Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
-
-  - *Codici di stato HTTP:*
-  #table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [Esito], [HTTP], [Descrizione],
-  [Positivo],[200: OK],[La ricerca è stata completata con successo.],
-  [Errore],[400: Bad Request],[Errore nella richiesta, ad esempio parametri mancanti o non validi.],
-  [Errore],[500: Internal Server Error],[Si è verificato un errore durante l'esecuzione della ricerca.],
-  )
-
-  #align(center)[Tabella 29: Esito della ricerca utilizzando un algoritmo specifico.]
+  #align(center)[Tabella 29: Esito dell'addestramento di un algoritmo di machine learning.]
 
 #pagebreak()
 = Stato requisiti funzionali
@@ -1325,13 +1328,13 @@ manualmente con l'interfaccia utente. Pertanto questa sezione fornisce un'illust
 - Tabella 18: Esito della richiesta di recupero delle provincie dei clienti
 - Tabella 19: Esito della richiesta di recupero della cronologia delle attività degli utenti
 - Tabella 20: Esito della richiesta di recupero dei feedback degli ordini dei clienti
-- Tabella 21: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
-- Tabella 22: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
-- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
-- Tabella 24: Esito della richiesta di eliminazione di un feedback
-- Tabella 25: Esito della richiesta di dettagli di un utente
-- Tabella 26: Esito dell'aggiornamento dell'indirizzo email di un utente
-- Tabella 27: Esito dell'aggiornamento della password di un utente
-- Tabella 28: Esito dell'addestramento di un algoritmo di machine learning
-- Tabella 29: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 21: Esito della ricerca utilizzando un algoritmo specifico
+- Tabella 22: Esito della richiesta di inserimento di una nuova voce nella cronologia delle attività degli utenti
+- Tabella 23: Esito della richiesta di inserimento di un nuovo feedback per l'ordine del cliente
+- Tabella 24: Esito della richiesta di inserimento di un nuovo feedback per l'articolo
+- Tabella 25: Esito della richiesta di eliminazione di un feedback
+- Tabella 26: Esito della richiesta di dettagli di un utente
+- Tabella 27: Esito dell'aggiornamento dell'indirizzo email di un utente
+- Tabella 28: Esito dell'aggiornamento della password di un utente
+- Tabella 29: Esito dell'addestramento di un algoritmo di machine learning
 - Tabella 30: Requisiti funzionali
