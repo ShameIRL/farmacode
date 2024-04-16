@@ -9,9 +9,10 @@
   ),
   changelog: (
     "0.5.0", "2024-04-14", p.passarella, "", "Stesura documentazione API",
+    "0.4.1", "2024-03-26", p.favaron, "", "Migliorie sezione Tecnologie",
     "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
     "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
-    "0.2.0", "2024-03-20", p.bomben, "", "Tecnologie",
+    "0.2.0", "2024-03-20", p.bomben, p.favaron, "Stesura sezione Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
   ),
 )
@@ -63,23 +64,25 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
     //da mettere riferimenti relativi alle slide di cardin e qualcosa trovato sul web
 
 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf;
 - Progettazione: I pattern architetturali (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf
+  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf;
 - Verifica e validazione: analisi statica (T10) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
 - Verifica e validazione: analisi dinamica aka testing (T11) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
 - Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
-  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf
+  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf;
+- Documentazione Docker\
+  https://docs.docker.com/.
 
 #pagebreak()
 = Tecnologie
 Questa sezione serve a fornire una panoramica generale sulle tecnologie adottate per il progetto.\
 Vengono riportate sottoforma di tabelle le diverse tecnologie, sia per la codifica che per l'analisi e il test del codice. Ogni tabella è formata da tre colonne che riportanto:
 - La tecnologia utilizzata (il nome del linguaggio/framework/strumento);
-- La descrizione del ruolo che la tecnologia ha avuto all'interno del progetto;
-- La versione della tecnologia usata.
+- La versione della tecnologia usata;
+- La descrizione del ruolo che la tecnologia ha avuto all'interno del progetto.
 
 
 == Tecnologie per la codifica
@@ -92,13 +95,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Linguaggi*]),
-  [HTML],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],[5],
-  [CSS],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],[3],
-  [JavaScript],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],[TD],
-  [Python],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],[3.11.5],
-  [SQL],[Linguaggio di interrogazione per la creazione e gestione del database.],[TD],
+  [*Tecnologia*], [*Versione*], [*Descrizione*], 
+  /*table.cell(colspan: 3, [*Linguaggi*]),*/
+  [HTML],[5],[Linguaggio di markup utilizzato per la creazione e gestione della struttura delle pagine web. La sua funzione è quella di "scheletro" delle pagine e del contenuto in esse.],
+  [CSS],[3],[Linguaggio per la formattazione dei documenti HTML, il suo scopo è di gestire lo stile e il design del sito.],
+  [JavaScript],[TD],[Linguaggio di programmazione per la gestione degli eventi dell'utente e per la comunicazione con l'API.],
+  [Python],[3.11.5],[Linguaggio di programmazione usato per la creazione del sistema di raccomandazione.],
+  [SQL],[TD],[Linguaggio di interrogazione per la creazione e gestione del database.],
   )
   #align(center)[Tabella 1: Linguaggi]
 
@@ -108,18 +111,18 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Librerie e framework*]),
-  [Pandas],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],[2.1.1],
-  [Surprise],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],[1.1.3],
-  [React.js],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],[18.2.0],
-  [PrimeReact],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],[10.5.1],
-  [Express],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito],[4.18.2],
-  [Flask],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP],[3.0.x],
-  [NumPy],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],[1.26.0],
-  [PyTorch],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],[2.2.2],
-  [Tailwind CSS],[Framework per css utilizzato per lo sviluppo di interfacce utente.],[3.4.1],
-  [Axios], [Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server], [1.6.8]
+  [*Tecnologia*], [*Versione*], [*Descrizione*],
+  /*table.cell(colspan: 3, [*Librerie e framework*]),*/
+  [Pandas],[2.1.1],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],
+  [Surprise],[1.1.3],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],
+  [React.js],[18.2.0],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],
+  [PrimeReact],[10.5.1],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],
+  [Express],[4.18.2],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito, in particolare per la comunicazione tra la il front-end e il database.],
+  [Flask],[3.0.3],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP. Utilizzata per la comunicazione tra il front-end e il sistema di raccomandazione.],
+  [NumPy],[1.26.0],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],
+  [PyTorch],[2.2.2],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],
+  [Tailwind CSS],[3.4.1],[Framework per css utilizzato per lo sviluppo di interfacce utente.],
+  [Axios],[1.6.8],[Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server.], 
 )
   #align(center)[Tabella 2: Librerie e framework]
 
@@ -130,15 +133,15 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Strumenti e servizi*]),
-  [MySQL],[RDBMS per la creazione e gestione dei database in SQL.],[2.18.1],
-  [Node.js],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],[18.16.1],
-  [NPM],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],[9.5.1],
-  [VS Code],[IDE di programmazione gratuito ricco estensioni esterne.],[TD],
-  [Docker],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],[TD],
-  [Git],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],[TD],
-  [Anaconda],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],[TD],
+  [*Tecnologia*], [*Versione*], [*Descrizione*],
+  /*table.cell(colspan: 3, [*Strumenti e servizi*]),*/
+  [MySQL],[Latest],[RDBMS per la creazione e gestione dei database in SQL.],
+  [Node.js],[18.16.1],[Ambiente di runtime open-source per l'esecuzione di codice JavaScript lato server tramite appositi script.],
+  [NPM],[9.5.1],[Gestore di pacchetti (Node Package Manager) per JavaScript all'interno di Node.js.],
+  [VS Code],[Latest],[IDE di programmazione gratuito ricco estensioni esterne.],
+  [Docker],[Latest],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],
+  [Git],[Latest],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],
+  [Anaconda],[Latest],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],
 
 )
 #align(center)[Tabella 3: Strumenti e servizi]
@@ -153,10 +156,10 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   inset: 10pt,
   align: center,
-  [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Analisi statica*]),
-  [Ruff], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], [0.3.3],
-  [ESLint], [Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], [8.57.0],
+  [*Tecnologia*], [*Versione*], [*Descrizione*],
+  /*table.cell(colspan: 3, [*Analisi statica*]),*/
+  [Ruff],[0.3.3], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], 
+  [ESLint],[8.57.0],[Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], 
 
 )
 #align(center)[Tabella 4: Analisi statica]
@@ -169,10 +172,10 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   inset: 10pt,
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
-  table.cell(colspan: 3, [*Analisi dinamica*]),
-  [Pytest], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali], [8.0.x],
-  [Jest],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],[27.5.1],
-  [GitHub Action],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], [/],
+  /*table.cell(colspan: 3, [*Analisi dinamica*]),*/
+  [Pytest],[8.0.x], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali.], 
+  [Jest],[27.5.1],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],
+  [GitHub Action],[/],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], 
 )
 #align(center)[Tabella 5: Analisi dinamica]
 
