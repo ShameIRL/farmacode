@@ -7,6 +7,7 @@
   ),
   heading_numbers: none,
   changelog: (
+    "1.1.0", "2024-02-28", p.favaron, "", "Stesura nuove definizioni",
     "1.0.1", "2024-02-20", p.bomben, p.carraro, "Eliminazione numerica capitoli",
     "1.0.0", "2024-02-13", p.bomben, p.passarella, "Verifica del documento",
     "0.7.0", "2024-02-13", p.pandolfo, p.carraro, "Stesura nuove definizioni",
@@ -102,6 +103,9 @@ Docker è un software progettato per eseguire processi informatici in ambienti i
 #text(size: 13pt)[* E-commerce*]\
 Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio Elettronico", si riferisce dunque alle attività di commercio che vengono svolte attraverso modalità elettroniche, prevalentemente attraverso l'utilizzo di internet e software. Oltre che esclusivamente alle attività di commercio esso si può riferire anche in senso lato ad attività di comunicazione e di gestione delle attività che avvengono attraverso modalità elettroniche.
 
+#text(size: 13pt)[* Express*]\
+Express è un framework web leggero e flessibile per Node.js, progettato per semplificare lo sviluppo di applicazioni web e API. Con un'architettura semplice e intuitiva, Express offre un potente set di funzionalità per gestire il routing, le richieste HTTP e le risposte, consentendo agli sviluppatori di creare rapidamente servizi web robusti e scalabili. Grazie alla sua modularità, Express consente anche l'integrazione di middleware di terze parti per estendere le funzionalità base e adattare l'applicazione alle specifiche esigenze del progetto.
+
 #pagebreak()
 = F
 
@@ -180,6 +184,9 @@ Linguaggio di scripting utilizzato per lo sviluppo di applicazioni web dinamiche
 
 #text(size: 13pt)[* Piano di Qualifica*]\
 Documento che stabilisce gli obiettivi, le strategie e le procedure per garantire la qualità del software. Include test, risorse, metriche di qualità e gestione dei difetti, e serve per assicurare che il software soddisfi gli standard richiesti.
+
+#text(size: 13pt)[* PrimeReact*]\
+Prime React è una libreria open-source di componenti UI per React, progettata per semplificare lo sviluppo di interfacce utente responsive e moderne. Offre una vasta gamma di componenti predefiniti, come pulsanti, form, tabelle e molto altro ancora, facilitando la creazione di applicazioni web eleganti e funzionali. Essendo basata su React, Prime React si integra facilmente con il resto dell'ecosistema React e offre un'elevata personalizzazione attraverso l'uso di proprietà e stili personalizzati.
 
 #text(size: 13pt)[* Product Baseline*]\
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
