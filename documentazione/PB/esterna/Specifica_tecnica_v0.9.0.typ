@@ -45,7 +45,7 @@ L'utente amministratore avrà poi la possibilità di usufruire di altre funional
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
-La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu").
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento.
 
 == Maturità e miglioramenti
 Questo documento è stato realizzato utilizzando un approccio incrementale, con lo scopo di semplificare i cambiamenti nel tempo in base alle  reciproche esigenze decise da entrambi le parti, ovvero membri del gruppo di progetto e azienda proponente. Pertanto non può essere considerato esaustivo e completo, ma in costante miglioramento.
@@ -55,7 +55,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.2.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf; 
 - Regolamento progetto ditattico\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
 === Riferimenti informativi
@@ -227,6 +227,8 @@ Sono state ideate e containerizzate quattro componenti principali:
   caption: [Docker environment]
 )
 
+Il repository contiene inoltre le immagini di tutte le versioni del prodotto, disponibili per il download nella sezione package di GitHub.
+
 == Pattern architetturali - Architettura a Microservizi
 
 L'architettura a microservizi presenta caratteristiche e crismi che si discostanto da quella meno recente ma comunque valida, monolitica. Quest'ultima è stata il paradigma dominante per lo sviluppo software per molti anni, soprattutto nelle prime fasi dello sviluppo di applicazioni web e enterprise.
@@ -259,11 +261,11 @@ Alcuni contro, che solitamente la caratterizzano sono invece:
 
 Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo sviluppo del prodotto pensando anche ad un possibile futuro Deployment.\  La scelta di questa precisa architettura è derivata dalla natura ben separata e predefinita dei ruoli delle varie componenti del progetto, nonché dai numerosi pregi e benefici che ne derivano (come sopra elencati). Abbiamo pianificato di suddividere il sistema nel seguente modo:
 
-- *Persistence logic*: composta dal database MySQL contenente l'intero dataset utile alle altre partizioni del prodotto;
+- *Persistence logic*: Questa parte del sistema si occupa della gestione dei dati e della loro persistenza nel database MySQL. Il database contiene l'intero dataset necessario per il funzionamento delle altre parti del prodotto. La persistence logic definisce la struttura dei dati, le relazioni tra di essi e le regole di validazione dei dati. Inoltre, gestisce anche le operazioni di accesso al database, come la connessione e la gestione delle transazioni. È fondamentale che questa parte del sistema sia efficiente, affidabile e in grado di gestire grandi volumi di dati in modo sicuro.
 
-- *Business logic*: formata dall'algortimo di raccomandazione, o meglio, dall'infrastruttura di classi che lo compongono;
+- *Business logic*: Questa componente rappresenta il cuore del sistema, in quanto implementa le regole di business e la logica di elaborazione dei dati. Al centro di questa logica si trova l'algoritmo di raccomandazione, che analizza i dati presenti nel database e genera raccomandazioni personalizzate nelle varie modalità previste. L'infrastruttura di classi che compone l'algoritmo di raccomandazione definisce come vengono elaborati i dati, quali fattori vengono considerati nell'analisi e come vengono calcolate le raccomandazioni. Inoltre, questa parte del sistema gestisce eventuali operazioni di filtraggio, ordinamento o trasformazione dei dati in base alle esigenze specifiche del prodotto.
 
-- *Application logic*: composta dall'interfaccia utente realizzata con React e JavaScript.
+- *Application logic*: Questa parte del sistema gestisce l'interfaccia utente del prodotto, che è realizzata utilizzando React e JavaScript. Si occupa di presentare i dati e le funzionalità del sistema agli utenti in modo intuitivo e interattivo. Questa componente definisce la struttura e il comportamento delle pagine web inclusi layout, componenti, navigazione e gestione degli eventi utente. Utilizza le informazioni fornite dalla business logic per visualizzare i dati in modo appropriato e per consentire agli utenti di interagire con il sistema attraverso azioni come la ricerca, la selezione e l'inserimento di dati (feedback).
 
 Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc (descritte con maggiore dettaglio nella sezione apposita).
 
@@ -485,6 +487,7 @@ Inoltre sono stati previsti degli indici per l'indicizzazione ed ottimizzaione d
 
 - ``` CREATE INDEX idx_dat_cro ON cronologia(dat_cro).```
 
+Abbiamo deciso di predisporre degli indici per le tabelle di maggiori dimensioni, pensando anche a future possibili implementazioni, andandone a valutare l'integrazione o meno utilizzando il comando sql EXPLAIN, utile per ottenere informazioni sul piano di esecuzione delle varie query.
 
 == Business Logic
 
