@@ -55,7 +55,7 @@ L'utente amministratore avrà poi la possibilità di usufruire di altre funional
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
-La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu").
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento v2.0.0.
 
 == Maturità e miglioramenti
 Questo documento è stato realizzato utilizzando un approccio incrementale, con lo scopo di semplificare i cambiamenti nel tempo in base alle  reciproche esigenze decise da entrambi le parti, ovvero membri del gruppo di progetto e azienda proponente. Pertanto non può essere considerato esaustivo e completo, ma in costante miglioramento.
@@ -65,14 +65,14 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.1.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (12/12/2023);
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (10/12/2023).
 === Riferimenti informativi
 - T5 - Analisi dei requisiti (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf (01/03/2024);
 - P2 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf.
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (01/03/2024).
 
 #pagebreak()
 = Descrizione
