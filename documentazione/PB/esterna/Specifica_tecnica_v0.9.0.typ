@@ -25,24 +25,17 @@
 = Introduzione
 
 == Scopo del documento
-Il documento riguardante l'analisi dei requisiti è un elemento di fondamentale importanza per i progetti di sviluppo software che voglio rispettare i massimi standard di qualità definiti dall'insegnamento dell'ingegneria del software. \
-Il presente documento ha lo scopo di fornire una descrizione dettagliata e più precisa possibile riguardanti le linee di massima del prodotto, che comprende i requisiti, così detti, obbligatori, desiderati e opzionali che vanno a rispondere alle necessità del proponente.\
-Si specializza sull'analisi dei bisogni dell'utente utilizzatore esaminati dallo studio del capitolato e durante i vari incontri con l'azienda proponente volti a tale scopo.\
-Le richieste del proponente sono, dunque, raccolte e ben identificate nel seguente documento; inoltre, sono classificate secondo le categorie standard di requisiti funzionali, di qualità e di vincolo.\
-L'analisi dei requisiti compone la pietra portante della progettazione di un sistema software, in quanto esplicita le funzionalità che il prodotto finale deve offrire. È essenziale per i programmatori usufruire di tale documento per assimilare a pieno le necessità dei proponenti di progetto per poi trovare la soluzione che più si sposa a soddisfare le esigenze proposte.\
-Il documento seguente deve essere il più completo e specifico possibile così da garantire requisiti corretti e che riscoprano tutti gli scenari plausibili per limitare i rischi di progetto ed evitare di inciampare in errori e ritardi che si traducono in costi maggiori.\
-È utile definire una precisa e formale rappresentazione grafica dei requisiti e degli attori in gioco grazie ai diagrammi dei casi d'uso, così da facilitare la comprensione a tutti.\
+Il documento di specifica tecnica per un progetto software ha lo scopo di delineare in dettaglio tutti gli aspetti tecnici del sistema che si intende sviluppare. È essenzialmente una guida tecnica che fornisce una visione completa dell'architettura, delle tecnologie utilizzate, delle componenti e delle interazioni del sistema.\
+Innanzitutto, il documento descrive le tecnologie che verranno impiegate nel progetto. Questo può includere informazioni su linguaggi di programmazione, framework, database, librerie esterne e altri strumenti tecnologici rilevanti. Questa sezione fornisce una panoramica delle risorse tecniche necessarie per lo sviluppo del sistema.
 
-=== Struttura logica casi d’uso
-I casi d'uso descritti in questo documento hanno una precisa struttura logica descritta dal seguente modello:
-- Titolo: Titolo del caso d'uso;
-- Figura;
-- Attori coinvolti: Il soggetto che esegue una determinata azione;
-- Precondizioni: Lo stato del sistema prima del caso d'uso;
-- Postcondizioni: Lo stato del sistema dopo l'esecuzione dello scenario descritto dal caso d'uso;
-- Scenario principale: Descrizione dettagliata delle azioni svolte dall'attore durante il caso d'uso, intermedio tra le ipotesi e i risultati;
-- Estensioni (se presenti): Possibili estensioni derivanti dal caso d'uso;
-- Generalizzazioni (se presenti): Generalizzazioni di attori e casi d'uso.
+Successivamente, il documento dettaglia l'architettura del sistema, suddividendola in varie componenti logiche. La suddivisione che abbiamo prestabilito include:
+- persistence logic, che gestisce l'interazione con il database e la persistenza dei dati;
+- la business logic, che implementa le regole di business e la logica di elaborazione;
+- l'application logic, che si occupa dell'interfaccia utente e della gestione delle richieste dell'utente.
+
+Un altro aspetto importante del documento è la descrizione delle interfacce di programmazione delle applicazioni (API) utilizzate nel sistema. Le API definiscono i metodi e le operazioni che possono essere eseguite sul sistema e forniscono un modo standardizzato per la comunicazione e l'integrazione con altre applicazioni.
+Infine, il documento cataloga i requisiti funzionali coperti del sistema. Questi sono i compiti o le funzionalità che il sistema è in grado di svolgere per soddisfare le esigenze degli utenti.\
+Complessivamente, il documento di specifica tecnica è uno strumento essenziale per il team di sviluppo, fornendo una guida chiara e condivisa su come il sistema dovrebbe essere progettato e implementato. Aiuta a garantire coerenza, comprensione e conformità agli obiettivi del progetto, fornendo una base solida per il successo dello sviluppo del software. \
 
 == Scopo del prodotto
 Il progetto ha lo scopo di realizzare un #glossario("sistema di raccomandazione") con relativa interfaccia web che guidi le attività dell'azienda utilizzatrice del prodotto finale; suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali.\
