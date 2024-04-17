@@ -7,6 +7,7 @@
   ),
   heading_numbers: none,
   changelog: (
+    "1.2.0", "2024-03-09", p.rosson, "", "Stesura nuove definizioni",
     "1.1.0", "2024-02-28", p.favaron, "", "Stesura nuove definizioni",
     "1.0.1", "2024-02-20", p.bomben, p.carraro, "Eliminazione numerica capitoli",
     "1.0.0", "2024-02-13", p.bomben, p.passarella, "Verifica del documento",
@@ -48,6 +49,9 @@ L'Apprendimento Automatico è una branca dell'intelligenza artificiale che utili
 
 #text(size: 13pt)[* Artefatto*]\
 Nel contesto dello sviluppo software, il termine artefatto si riferisce a un risultato intermedio generato durante il processo di sviluppo del software. Gli artefatti sono documenti, codice sorgente o altri elementi che fungono da risultati intermedi di varie attività nel ciclo di vita del software. 
+
+#text(size: 13pt)[* Axios*]\
+Axios è una libreria JavaScript open-source utilizzata per effettuare richieste HTTP da browser e da Node.js. Grazie alla sua semplicità e alla sua sintassi intuitiva, Axios consente agli sviluppatori di comunicare facilmente con server remoti per recuperare e inviare dati. È ampiamente utilizzato per gestire chiamate API e per lavorare con servizi web, offrendo funzionalità avanzate come l'intercettazione delle richieste, la gestione automatica dei dati JSON e il supporto per i promessi, rendendo le operazioni di rete più efficienti e affidabili.
 
 #pagebreak()
 
@@ -137,6 +141,9 @@ L'intelligenza artificiale è una disciplina che studia come realizzare sistemi 
 Un Issues Tracking System è uno strumento progettato per gestire e monitorare le problematiche riscontrate durante lo sviluppo del progetto, non solo in ambito software. Il sistema fornisce un modo sistematico per segnalare, monitorare e risolvere i problemi rilevati durante il ciclo di vita del prodotto.
 
 = J
+
+#text(size: 13pt)[* Jest*]\
+Jest è un framework di testing JavaScript open-source, sviluppato da Facebook, che si concentra principalmente sul testing delle applicazioni React. Con Jest, gli sviluppatori possono scrivere test unitari, test di integrazione e test di snapshot in modo semplice e intuitivo. Offre un'ampia gamma di funzionalità, tra cui la possibilità di eseguire test in parallelo, la creazione di mock e spy per simulare il comportamento di componenti e moduli, e la generazione automatica di report dettagliati sui test eseguiti. Grazie alla sua facilità d'uso e alle sue prestazioni elevate, Jest è diventato uno degli strumenti preferiti per il testing nel mondo di sviluppo di applicazioni JavaScript e React.
 
 = K
 
