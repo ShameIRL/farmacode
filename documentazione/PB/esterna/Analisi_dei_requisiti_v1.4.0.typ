@@ -2851,7 +2851,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   columns: (1fr, 1fr, 1fr, 1fr),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Tipologia*],[*Obbligatorio*], [*Desiderabile*],[*Complessivo*],
-  [Funzionale],[17],[33],[50],
+  [Funzionale],[17],[33],[51],
   [di Qualità],[7],[/],[7],
   [di Vincolo],[5],[7],[12],
   [di Performance], [/], [2], [2],
@@ -2861,7 +2861,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 #table(
   columns: (1fr, auto,),
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  [*Totale*],[*72*],
+  [*Totale*],[*73*],
 )
 #align(center)[Tabella 11: Riepilogo requisiti]
 #pagebreak()
