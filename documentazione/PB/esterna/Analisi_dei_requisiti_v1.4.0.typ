@@ -523,14 +523,14 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
 - L'utente decide di fare una ricerca e compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5, UC6.1.8);
 - L'utente avvia la ricerca.
 *Postcondizioni:*
-- L'utente visualizza i risultati della ricerca (UC6.2) in caso essa sia andata a buon fine;
+- L'utente visualizza i risultati della ricerca (UC6.3) in caso essa sia andata a buon fine;
 - L'utente visualizza un messaggio informativo (UC14) se non ci sono corrispondenze;
 - L'utente visualizza un messaggio informativo (UC15) se il modello scelto è in training (UC6.4).
 *Scenario principale:*
 - Admin/User:
   + compila i campi necessari a seconda del tipo di ricerca che vuole effettuare (UC6.1.1, UC6.1.5, UC6.1.8);
   + avvia la ricerca;
-  + visualizza i risultati della ricerca (UC6.2/UC14).
+  + visualizza i risultati della ricerca (UC6.3/UC14).
 - Sistema:
   + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1);
   + contatta tramite API il software che fornisce i risultati della ricerca;
@@ -571,8 +571,6 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
     + mostra all'utente un'opzione di default per l'input;
     + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
     + prende a conoscenza i caratteri inseriti dall'utente;
-    + contatta tramite API il software che fornisce le opzioni possibili;
-    + riceve tramite API una risposta con le opzioni possibili dal software;
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
@@ -605,8 +603,6 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
     + mostra all'utente un'opzione di default per l'input;
     + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
     + prende a conoscenza i caratteri inseriti dall'utente;
-    + contatta tramite API il software che fornisce le opzioni possibili;
-    + riceve tramite API una risposta con le opzioni possibili dal software;
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.  
@@ -638,8 +634,6 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
     + mostra all'utente un'opzione di default per l'input;
     + prende a conoscenza l'intenzione dell'utente di voler cambiare opzione;
     + prende a conoscenza i caratteri inseriti dall'utente;
-    + contatta tramite API il software che fornisce le opzioni possibili;
-    + riceve tramite API una risposta con le opzioni possibili dal software;
     + mostra all'utente le opzioni possibili per l'input;
     + se l'utente sceglie una nuova opzione prende a conoscenza la decisione e mostra la nuova opzione scelta dall'utente al posto della precedente;
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.
@@ -660,13 +654,13 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + decide l'algoritmo che vuole usare per la ricerca (SVD).
   - Sistema:
     + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+    + mostra all'utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -680,13 +674,13 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + decide l'algoritmo che vuole usare per la ricerca (NN).
   - Sistema:
     + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.1);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+    + mostra all'utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -700,13 +694,13 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari;
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + sceglie di cercare i migliori prodotti per il cliente selezionato;
   - Sistema:
     + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.4);
-    + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
+    + mostra al utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -720,18 +714,16 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + sceglie di cercare i migliori clienti per il prodotto selezionato.
   - Sistema:
     + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.4);
-    + mostra al utente i risultati della sua ricerca (UC6.2/UC14).
+    + mostra al utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-
-
 
 
 + *UC6.1.8 - Top 5*\
@@ -743,13 +735,13 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + decide il numero di raccomandazioni che vuole ricevere (Top 5).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.8);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.7);
+    + mostra all'utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -763,13 +755,13 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + decide il numero di raccomandazioni che vuole ricevere (Top 10).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.8);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.7);
+    + mostra all'utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -783,13 +775,13 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   - L'utente decide di fare una ricerca e compila i campi necessari.
   *Postcondizioni:*
   - L'utente ha compilato correttamente i campi di ricerca;
-  - L'utente visualizza i risultati della ricerca (UC6.2).
+  - L'utente visualizza i risultati della ricerca (UC6.3).
   *Scenario principale:*
   - Admin/User:
     + decide il numero di raccomandazioni che vuole ricevere (Top 20).
   - Sistema:
-    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.8);
-    + mostra all'utente i risultati della sua ricerca (UC6.2/UC14).
+    + memorizza i dati inseriti nei campi della barra di ricerca (UC6.1.7);
+    + mostra all'utente i risultati della sua ricerca (UC6.3/UC14).
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1012,7 +1004,7 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Scenario principale:*
   - Admin/User:
     + l'utente sceglie un algoritmo a scelta tra SVD (UC6.1.2) e NN(UC6.1.3);
-    + l'utente clicca sul pulsante "Training" (UC6.1.4);
+    + l'utente clicca sul pulsante "Training";
     + l'utente aspetta che il modello finisca di essere allenato.
   - Sistema:
     + memorizza i dati scelti (UC6.1.2/UC6.1.3);
@@ -1458,10 +1450,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza l'immagine del prodotto che sta osservando.
+  - L'utente visualizza il codice articolo del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza l'immagine del prodotto che sta osservando.
+    + visualizza il codice articolo del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1474,10 +1466,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza l'ID del prodotto che sta osservando.
+  - L'utente visualizza la descrizione articolo del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza l'ID del prodotto che sta osservando.
+    + visualizza la descrizione articolo del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1490,10 +1482,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza il nome del prodotto che sta osservando.
+  - L'utente visualizza l'immagine articolo del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza il nome del prodotto che sta osservando.
+    + visualizza l'immagine articolo del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1506,10 +1498,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la linea commerciale del prodotto che sta osservando.
+  - L'utente visualizza il codice linea commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la linea commerciale del prodotto che sta osservando.
+    + visualizza il codice linea commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1522,10 +1514,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza il settore commerciale del prodotto che sta osservando.
+  - L'utente visualizza la descrizione linea commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza il settore commerciale del prodotto che sta osservando.
+    + visualizza la descrizione linea commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1538,10 +1530,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la marca del prodotto che sta osservando.
+  - L'utente visualizza il codice settore commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la marca del prodotto che sta osservando.
+    + visualizza il codice settore commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1554,10 +1546,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la provenienza del prodotto che sta osservando.
+  - L'utente visualizza la descrizione settore commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la provenienza del prodotto che sta osservando.
+    + visualizza la descrizione settore commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1570,10 +1562,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la provenienza del prodotto che sta osservando.
+  - L'utente visualizza il codice famiglia commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la provenienza del prodotto che sta osservando.
+    + visualizza il codice famiglia commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1586,10 +1578,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la provenienza del prodotto che sta osservando.
+  - L'utente visualizza la descrizione famiglia commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la provenienza del prodotto che sta osservando.
+    + visualizza la descrizione famiglia commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1602,10 +1594,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la provenienza del prodotto che sta osservando.
+  - L'utente visualizza il codice sottofamiglia commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la provenienza del prodotto che sta osservando.
+    + visualizza il codice sottofamiglia commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
@@ -1618,10 +1610,10 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Precondizioni:*
   - L'utente osserva i dettagli di un prodotto.
   *Postcondizioni:*
-  - L'utente visualizza la provenienza del prodotto che sta osservando.
+  - L'utente visualizza la descrizione sottofamiglia commerciale del prodotto che sta osservando.
   *Scenario principale:*
   - Admin/User:
-    + visualizza la provenienza del prodotto che sta osservando.
+    + visualizza la descrizione sottofamiglia commerciale del prodotto che sta osservando.
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
