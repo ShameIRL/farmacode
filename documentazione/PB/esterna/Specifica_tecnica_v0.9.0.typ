@@ -55,25 +55,25 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.2.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (12/12/2023); 
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12); 
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (12/12/2023).
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/12).
   
 === Riferimenti informativi
     //da mettere riferimenti relativi alle slide di cardin e qualcosa trovato sul web
 
 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (10/03/2024);
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (data di ultimo accesso: 2024/03/10);
 - Progettazione: I pattern architetturali (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf (22/03/2024);
+  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf (2024/03/22);
 - Verifica e validazione: analisi statica (T10) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf (02/03/2024);
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf (data di ultimo accesso: 2024/03/02);
 - Verifica e validazione: analisi dinamica aka testing (T11) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (02/03/2024);
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (data di ultimo accesso: 2024/03/02);
 - Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
-  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf (10/03/2024);
+  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf (data di ultimo accesso: 2024/03/10);
 - Documentazione Docker\
-  https://docs.docker.com/ (27/02/2024).
+  https://docs.docker.com/ (data di ultimo accesso: 2024/02/27).
 
 #pagebreak()
 = Tecnologie
@@ -1421,11 +1421,43 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
 #align(center)[Tabella 1: Requisiti funzionali]
 
 == Grafico requisiti funzionali
+#figure(
+  image("/imgs/specifiche_tecniche/rf.png", width: 80%),
+  caption: [Requsiti obbligatori funzionali soddisfatti]
+)
+
+#figure(
+  image("/imgs/specifiche_tecniche/rfo.png", width: auto),
+  caption: [Requisiti funzionali]
+)
 
 
 
 #pagebreak()
 = Elenco delle immagini
+- Figura 1: Docker environment;
+- Figura 2: ER diagram;
+- Figura 3: Diagramma algoritmo (totale);
+- Figura 4: Results;
+- Figura 5: FileInfo;
+- Figura 6: Model;
+- Figura 7: Operator;
+- Figura 8: Clienti;
+- Figura 9: Cronologia;
+- Figura 10: Feedback;
+- Figura 11: Login;
+- Figura 12: Pagina Non Trovata;
+- Figura 13: Prodotti;
+- Figura 14: Profilo;
+- Figura 15: Ricerca;
+- Figura 16: Filtri;
+- Figura 17: Footer;
+- Figura 18: Header;
+- Figura 19: No Results;
+- Figura 20: Results;
+- Figura 21: Requisiti obbligatori funzionali soddisfatti;
+- Figura 22: Requisiti funzionali.
+
 
 #pagebreak()
 = Elenco delle tabelle
