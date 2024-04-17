@@ -7,10 +7,11 @@
   ),
   heading_numbers: none,
   changelog: (
-    "1.3.1", "2024-03-14", p.carraro, "", "Aggiunti pagebreak",
-    "1.3.0", "2024-03-13", p.favaron, "", "Stesura nuove definizioni",
-    "1.2.0", "2024-03-09", p.rosson, "", "Stesura nuove definizioni",
-    "1.1.0", "2024-02-28", p.favaron, "", "Stesura nuove definizioni",
+    "1.4.0", "2024-03-20", p.bomben, p.favaron, "Aggiunti pagebreak",
+    "1.3.1", "2024-03-14", p.carraro, p.bomben, "Aggiunti pagebreak",
+    "1.3.0", "2024-03-13", p.favaron, p.bomben, "Stesura nuove definizioni",
+    "1.2.0", "2024-03-09", p.rosson, p.bomben, "Stesura nuove definizioni",
+    "1.1.0", "2024-02-28", p.favaron, p.bomben, "Stesura nuove definizioni",
     "1.0.1", "2024-02-20", p.bomben, p.carraro, "Eliminazione numerica capitoli",
     "1.0.0", "2024-02-13", p.bomben, p.passarella, "Verifica del documento",
     "0.7.0", "2024-02-13", p.pandolfo, p.carraro, "Stesura nuove definizioni",
@@ -120,6 +121,12 @@ Express è un framework web leggero e flessibile per Node.js, progettato per sem
 
 = F
 
+#text(size: 13pt)[* Flask*]\
+Flask è un framework web leggero e flessibile per Python, progettato per semplificare lo sviluppo di applicazioni web. Con una struttura semplice ed elegante, Flask offre un'ampia gamma di funzionalità per gestire il routing, i template, le richieste HTTP e le risposte, consentendo agli sviluppatori di creare rapidamente servizi web robusti e scalabili. Grazie alla sua modularità, Flask consente anche l'integrazione di estensioni per estendere le funzionalità base e adattare l'applicazione alle specifiche esigenze del progetto. È ampiamente utilizzato sia per la creazione di piccole applicazioni web che per lo sviluppo di sistemi più complessi, offrendo una base solida e flessibile per la costruzione di servizi web in Python.
+
+#text(size: 13pt)[* Firefox*]\
+Firefox è un browser web open-source sviluppato da Mozilla, noto per la sua sicurezza, privacy e personalizzazione. Basato su Gecko, offre una navigazione veloce e una vasta gamma di funzionalità. Include strumenti come Pocket per salvare e organizzare contenuti, e Container per isolare sessioni di navigazione. Firefox supporta anche un'ampia selezione di estensioni per personalizzare l'esperienza di navigazione e offre un'interfaccia intuitiva e configurabile. Grazie al suo impegno per la privacy e alla sua comunità di sviluppatori, Firefox è una scelta popolare tra gli utenti che cercano un'alternativa sicura e flessibile ai browser tradizionali.
+
 #pagebreak()
 
 = G
@@ -132,6 +139,9 @@ GitHub è un servizio di hosting per progetti software. Il sito è principalment
 
 #text(size: 13pt)[* Glossario*]\
 Elenco organizzato di termini tecnici, acronimi e definizioni utilizzati nel contesto del progetto. Questo documento fornisce una chiara comprensione dei concetti e dei linguaggi specifici impiegati nel progetto, aiutando a ridurre ambiguità e fraintendimenti tra i membri del team e gli stakeholder.
+
+#text(size: 13pt)[* Google Chrome*]\
+Google Chrome è un browser web veloce, affidabile e ricco di funzionalità, sviluppato da Google. Basato su Blink, offre una navigazione fluida e una barra degli indirizzi intuitiva. Gestisce le schede in modo avanzato e sincronizza le impostazioni tra dispositivi. Con il supporto alle estensioni, personalizza l'esperienza di navigazione. Grazie alla sua popolarità e prestazioni, è uno dei browser più utilizzati al mondo.
 
 #text(size: 13pt)[* Google Drive*]\
 Google Drive è un servizio di cloud e di sincronizzazione. Esso permette dunque di caricare file su un cloud e di sincronizzarli tra più dispositivi e più utenti in tempo reale. Offre anche varie tipologie di app con capacità sia online che offline.
@@ -175,15 +185,18 @@ Un software di presentazione sviluppato da Apple, progettato per consentire agli
 
 = M
 
+#text(size: 13pt)[* Metrica per la valutazione quantitativa*]\
+Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
+punto di vista tecnico che documentale. 
+
+#text(size: 13pt)[* Microsoft Edge*]\
+Microsoft Edge è un browser web sviluppato da Microsoft, caratterizzato da velocità, sicurezza e integrazione con il sistema operativo Windows. Basato su Chromium, offre una navigazione fluida e una vasta gamma di funzionalità. Include strumenti come Collections per organizzare contenuti, e la modalità Immersione per concentrarsi sulle pagine web. Edge supporta anche estensioni per personalizzare l'esperienza di navigazione e offre un'interfaccia pulita e intuitiva. Grazie alla sua integrazione con Windows e alle sue funzionalità avanzate, Microsoft Edge è una scelta popolare tra gli utenti di Windows.
+
 #text(size: 13pt)[* Minimum Viable Product*]\
 Il Minimum Viable Product (MVP) è una versione ridotta del prodotto, la quale incorpora solo funzioni essenziali per soddisfare le esigenze base. Viene utilizzato per rilasciare un prodotto come test e ricevere feedback dall'utenza per migliorare poi il prodotto finito con tutte le funzionalità.
 
 #text(size: 13pt)[* Modello di Apprendimento Automatico*]\
 Un modello di apprendimento automatico è un programma che viene utilizzato per riconoscere pattern in insiemi di dati o per eseguire predizioni dato un insieme di dati iniziale. Un modello si ottiene effettuando il processo di addestramento su un algoritmo di apprendimento automatico.
-
-#text(size: 13pt)[* Metrica per la valutazione quantitativa*]\
-Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
-punto di vista tecnico che documentale. 
 
 #text(size: 13pt)[* Mock*]\
 Il termine Mock si riferisce a un oggetto simulato che replica il comportamento di un oggetto reale in modo controllato e predefinito durante i test. Questi oggetti sono utilizzati principalmente nel contesto del testing unitario per sostituire componenti dipendenti non ancora disponibili o non facilmente replicabili nell’ambiente di test.
@@ -204,6 +217,9 @@ Libreria open-source per il linguaggio di programmazione Python, che aggiunge su
 
 #text(size: 13pt)[* Overleaf*]\
 Overleaf è una piattaforma online collaborativa per la scrittura, l'editing e la pubblicazione di documenti scientifici basati su LaTeX. Con Overleaf, gli autori possono scrivere documenti in LaTeX direttamente nel browser, collaborare con altri autori in tempo reale e accedere a una vasta gamma di modelli, stili e pacchetti LaTeX predefiniti. La piattaforma offre funzionalità avanzate come il controllo ortografico integrato, la compilazione automatica dei documenti e la possibilità di esportare il lavoro in diversi formati, inclusi PDF e file di testo. Grazie alla sua facilità d'uso e alla sua natura basata sul cloud, Overleaf è diventato uno strumento popolare tra gli accademici, i ricercatori e gli studenti per la creazione di documenti accademici di alta qualità in modo collaborativo e efficiente.
+
+#text(size: 13pt)[* Opera*]\
+Opera è un browser web sviluppato da Opera Software, noto per la sua velocità, innovazione e funzionalità. Basato su Blink, offre una navigazione rapida e una vasta gamma di strumenti integrati, come un blocco annunci, VPN gratuita e un sistema di risparmio energetico. Opera è conosciuto anche per le sue funzionalità uniche, come Opera Turbo per accelerare la navigazione su connessioni lente e la modalità di navigazione privata. Grazie alla sua combinazione di prestazioni e caratteristiche innovative, Opera è una scelta popolare tra gli utenti che cercano un browser versatile e affidabile.
 
 #pagebreak()
 
@@ -260,6 +276,9 @@ Libreria JavaScript open-source utilizzata principalmente per la creazione di in
 #pagebreak()
 
 = S
+
+#text(size: 13pt)[* Safari*]\
+Safari è un browser web sviluppato da Apple, noto per la sua velocità, efficienza energetica e integrazione con l'ecosistema Apple. Esclusivo per i dispositivi Apple, Safari offre una navigazione fluida e una vasta gamma di funzionalità, come la sincronizzazione tra dispositivi tramite iCloud, la visualizzazione dei siti web con risparmio energetico e la protezione avanzata della privacy. Safari è anche noto per il suo supporto agli standard web e le sue prestazioni ottimizzate per l'hardware Apple. Grazie alla sua integrazione profonda con iOS e macOS, Safari è una scelta popolare tra gli utenti di dispositivi Apple che cercano un browser veloce, sicuro e altamente integrato.
 
 #text(size: 13pt)[* Set di Training*]\
 Questo set è un insieme di dati (estrapolato da un insieme più grande) ai quali può essere associata una risposta. Questi dati vengono utilizzati nell'ambito dell'apprendimento automatico per addestrare un modello predittivo capace di determinare il valore-obiettivo per nuovi esempi. La qualità del training effettuato con questi dati sarà valutata nella fase di verifica con il set di verifica.
@@ -332,6 +351,7 @@ Un workshop interno costituisce un evento appositamente organizzato per agevolar
 = Y
 
 #pagebreak()
+
 = Z
 
 #text(size: 13pt)[* Zoom*]\

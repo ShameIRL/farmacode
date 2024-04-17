@@ -115,13 +115,13 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [Pandas],[2.1.1],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],
   [Surprise],[1.1.3],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],
   [React.js],[18.2.0],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],
-  [PrimeReact],[10.5.1],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],
-  [Express],[4.18.2],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito, in particolare per la comunicazione tra la il front-end e il database.],
-  [Flask],[3.0.3],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP. Utilizzata per la comunicazione tra il front-end e il sistema di raccomandazione.],
+  [#glossario("PrimeReact")],[10.5.1],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],
+  [#glossario("Express")],[4.18.2],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito, in particolare per la comunicazione tra la il front-end e il database.],
+  [#glossario("Flask")],[3.0.3],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP. Utilizzata per la comunicazione tra il front-end e il sistema di raccomandazione.],
   [NumPy],[1.26.0],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],
   [PyTorch],[2.2.2],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],
   [Tailwind CSS],[3.4.1],[Framework per css utilizzato per lo sviluppo di interfacce utente.],
-  [Axios],[1.6.8],[Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server.], 
+  [#glossario("Axios")],[1.6.8],[Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server.], 
 )
   #align(center)[Tabella 2: Librerie e framework]
 
@@ -172,8 +172,8 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Descrizione*], [*Versione*],
   /*table.cell(colspan: 3, [*Analisi dinamica*]),*/
-  [Pytest],[8.0.x], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali.], 
-  [Jest],[27.5.1],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],
+  [#glossario("Pytest")],[8.0.x], [Framework di test open-source per Python. Offre un'ampia gamma di funzionalità \ per la scrittura e l'esecuzione di test unitari, di integrazione funzionali.], 
+  [#glossario("Jest")],[27.5.1],  [Framework di test basato su JavaScript con funzionalità di creazione \  di mock e il testing del codice in modo asincrono.],
   [GitHub Action],[/],[Servizio di CI/CD per automatizzare il processo di build, \ test e deploy del progetto software.], 
 )
 #align(center)[Tabella 5: Analisi dinamica]
