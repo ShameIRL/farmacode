@@ -8,10 +8,10 @@
     p.cardin,
   ),
   changelog: (
-    "0.5.0", "2024-04-14", p.passarella, "", "Stesura documentazione API",
-    "0.4.1", "2024-03-26", p.favaron, "", "Migliorie sezione Tecnologie",
-    "0.4.0", "2024-03-23", p.pandolfo, "", "Prima stesura architettura Back-end",
-    "0.3.0", "2024-03-22", p.bomben, "", "Architettura Front-end",
+    "0.5.0", "2024-04-14", p.passarella, p.baggio, "Stesura documentazione API",
+    "0.4.1", "2024-03-26", p.favaron, p.baggio, "Migliorie sezione Tecnologie",
+    "0.4.0", "2024-03-23", p.pandolfo, p.baggio, "Prima stesura architettura Back-end",
+    "0.3.0", "2024-03-22", p.bomben, p.baggio, "Architettura Front-end",
     "0.2.0", "2024-03-20", p.bomben, p.favaron, "Stesura sezione Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
   ),
@@ -186,30 +186,30 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
 
 *Premessa:*
 Come menzionato nei documenti "Norme di Progetto" e "Piano di Qualifica", il gruppo ha deciso di utilizzare in ambito progettuale un approccio top-down, del quale si riportano brevemente i punti di forza individuati:
-- Visione d'insieme: Questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza; 
+- Visione d'insieme: questo approccio consente di avere una visione completa del progetto fin dall'inizio, permettendo di identificare i requisiti principali e di pianificare di conseguenza; 
 
-- Struttura modulare: La progettazione top-down favorisce la suddivisione del progetto in moduli o componenti più piccoli, semplificando così lo sviluppo e la gestione del software;
+- Struttura modulare: la progettazione top-down favorisce la suddivisione del progetto in moduli o componenti più piccoli, semplificando così lo sviluppo e la gestione del software;
 
-- Facilità di gestione del cambiamento: Poiché i dettagli sono definiti solo dopo che l'architettura generale è stata stabilita, è più facile apportare modifiche durante le fasi iniziali del progetto senza dover ridisegnare completamente il sistema;
+- Facilità di gestione del cambiamento: poiché i dettagli sono definiti solo dopo che l'architettura generale è stata stabilita, è più facile apportare modifiche durante le fasi iniziali del progetto senza dover ridisegnare completamente il sistema;
 
-- Riduzione della complessità: Concentrandosi sui concetti fondamentali e sulla logica generale, la progettazione top-down aiuta a ridurre la complessità del progetto, rendendo più facile la comprensione e la manutenzione del software;
+- Riduzione della complessità: concentrandosi sui concetti fondamentali e sulla logica generale, la progettazione top-down aiuta a ridurre la complessità del progetto, rendendo più facile la comprensione e la manutenzione del software;
 
-- Collaborazione efficace: La divisione del progetto in moduli facilita la collaborazione tra i membri del team, consentendo a ciascuno di lavorare su parti specifiche del progetto in modo indipendente;
+- Collaborazione efficace: la divisione del progetto in moduli facilita la collaborazione tra i membri del team, consentendo a ciascuno di lavorare su parti specifiche del progetto in modo indipendente;
 
-- Testabilità: La suddivisione del sistema in moduli facilita l'individuazione e l'isolamento dei bug, semplificando il processo di testing e debug;
+- Testabilità: la suddivisione del sistema in moduli facilita l'individuazione e l'isolamento dei bug, semplificando il processo di testing e debug;
 
-- Scalabilità: Una volta definita l'architettura generale, è più semplice scalare il sistema aggiungendo nuovi moduli o migliorando quelli esistenti senza dover riprogettare l'intero sistema. 
+- Scalabilità: una volta definita l'architettura generale, è più semplice scalare il sistema aggiungendo nuovi moduli o migliorando quelli esistenti senza dover riprogettare l'intero sistema. 
 == Docker e Containerizzazione 
 Nonostante non rientrasse nei requisiti obbligatori espressi dal propronente, il gruppo ha deciso di adottare i vari servizi che Docker fornisce per la gestione dell'infrastruttura del prodotto.
 I vantaggi che quest'ultimo offre hanno indotto facilmente alla scelta: 
 
 - Isolamento: offre un'isolamento leggero e portatile delle applicazioni tramite i container, consentendo loro di essere eseguiti in ambienti virtualizzati senza il peso delle macchine virtuali tradizionali. Questo significa che le applicazioni possono essere eseguite in modo consistente su qualsiasi ambiente, sia esso locale, in cloud o in ambienti di produzione;
 
-- Velocità di distribuzione: I container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite;
+- Velocità di distribuzione: i container possono essere creati e distribuiti in modo rapido e efficiente. Poiché contengono tutto ciò di cui un'applicazione ha bisogno per essere eseguita, è possibile distribuire facilmente le applicazioni senza dover preoccuparsi delle dipendenze del sistema ospite;
 
 - Scalabilità: Docker consente di scalare facilmente le applicazioni orizzontalmente, aggiungendo istanze dei container in risposta a picchi di carico. Questo facilita la gestione della disponibilità e delle prestazioni delle applicazioni in ambienti di produzione ad alta intensità di traffico;
 
-- Ambienti consistenti: Utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti;
+- Ambienti consistenti: utilizzando Docker, è possibile creare ambienti di sviluppo, test e produzione consistenti. Questo favorisce la collaborazione tra team di sviluppo e semplifica la distribuzione delle applicazioni attraverso i vari ambienti;
 
 - Gestione semplificata: Docker fornisce strumenti potenti per la gestione dei contenitori, inclusi Docker Compose per la definizione e l'esecuzione di applicazioni multi-contenitore.
 
@@ -237,35 +237,35 @@ In un'applicazione monolitica, l'intera applicazione è sviluppata, implementata
 
 Un'applicazione basata su microservizi è composta invece, come deducibile dalla nomenclatura, da molti piccoli servizi, ciascuno dei quali si occupa di una funzionalità specifica. Questi sono alcuni degli aspetti chiave che la contraddistinguono:
 
-- Decomposizione modulare: L'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente;
+- Decomposizione modulare: l'applicazione viene scomposta in moduli autonomi e indipendenti, ognuno dei quali è un microservizio. Questi servizi possono essere sviluppati, testati e distribuiti separatamente;
 
-- Indipendenza dei servizi: Ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione;
+- Indipendenza dei servizi: ogni microservizio è autosufficiente e può essere sviluppato, implementato e gestito in modo indipendente dagli altri. Ciò consente un rapido sviluppo e aggiornamento delle funzionalità senza influire sul resto dell'applicazione;
 
-- Comunicazione tramite API: I microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente;
+- Comunicazione tramite API: i microservizi comunicano tra loro attraverso interfacce di programmazione delle applicazioni (API), che possono essere sincrone o asincrone. Questo permette loro di cooperare e scambiare dati in modo efficiente;
 
-- Scalabilità e resilienza: Poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce;
+- Scalabilità e resilienza: poiché i microservizi sono distribuiti, è possibile scalare e gestire le risorse in modo indipendente per ciascun servizio. Inoltre, se un microservizio fallisce, non compromette l'intera applicazione, ma solo la parte specifica che gestisce;
 
-- Gestione dei dati: Ogni microservizio può avere il proprio database, adatto alle sue esigenze specifiche. Questo favorisce una maggiore flessibilità nella scelta dei tipi di database e nella gestione dei dati.
+- Gestione dei dati: ogni microservizio può avere il proprio database, adatto alle sue esigenze specifiche. Questo favorisce una maggiore flessibilità nella scelta dei tipi di database e nella gestione dei dati.
 
 Alcuni contro, che solitamente la caratterizzano sono invece: 
 
-- Complessità della gestione: Gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato;
+- Complessità della gestione: gestire un ecosistema di microservizi richiede una maggiore complessità rispetto a un'applicazione monolitica. È necessario gestire la distribuzione, il monitoraggio, la scalabilità e la coordinazione dei servizi in modo accurato;
 
-- Overhead di comunicazione: Poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione;
+- Overhead di comunicazione: poiché i microservizi comunicano tra loro tramite API, può verificarsi un overhead di comunicazione, specialmente in sistemi distribuiti complessi. Questo può influire sulle prestazioni complessive dell'applicazione;
 
-- Complessità dello sviluppo: Lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata;
+- Complessità dello sviluppo: lo sviluppo di un'applicazione basata su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché richiede una maggiore pianificazione e coordinazione tra i team di sviluppo. Inoltre, la gestione delle dipendenze tra i servizi può essere complicata;
 
-- Consistenza dei dati: Con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti;
+- Consistenza dei dati: con i dati distribuiti tra diversi microservizi, garantire la coerenza e l'integrità dei dati può essere un compito complesso. È necessario implementare strategie di gestione dei dati distribuiti, come transazioni distribuite o modelli di consistenza eventualmente consistenti;
 
-- Test e debugging: Testare e debuggare un sistema basato su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché è necessario considerare le interazioni tra i diversi servizi e la loro integrazione complessiva.
+- Test e debugging: testare e debuggare un sistema basato su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché è necessario considerare le interazioni tra i diversi servizi e la loro integrazione complessiva.
 
 Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo sviluppo del prodotto pensando anche ad un possibile futuro Deployment.\  La scelta di questa precisa architettura è derivata dalla natura ben separata e predefinita dei ruoli delle varie componenti del progetto, nonché dai numerosi pregi e benefici che ne derivano (come sopra elencati). Abbiamo pianificato di suddividere il sistema nel seguente modo:
 
-- *Persistence logic*: Composta dal database MySQL contenente l'intero dataset utile alle altre partizioni del prodotto.
+- *Persistence logic*: composta dal database MySQL contenente l'intero dataset utile alle altre partizioni del prodotto;
 
-- *Business logic*: Formata dall'algortimo di raccomandazione, o meglio, dall'infrastruttura di classi che lo compongono.
+- *Business logic*: formata dall'algortimo di raccomandazione, o meglio, dall'infrastruttura di classi che lo compongono;
 
-- *Application logic*: Composta dall'interfaccia utente realizzata con React e JavaScript.
+- *Application logic*: composta dall'interfaccia utente realizzata con React e JavaScript.
 
 Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc (descritte con maggiore dettaglio nella sezione apposita).
 
@@ -499,7 +499,7 @@ In questa sezione è possibile visionare tutte le scelte attuate durante la fase
   caption: [Diagramma algoritmo (totale)]
 )
 *Descrizione:* \
-Nel diagramma sopra riportato è possibile esaminare in modo esaustivo la struttura di classi che costituisce la Business Logic del prodotto. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. Python offre una vasta gamma di strumenti per organizzare il codice in moduli e classi, promuovendo una suddivisione logica delle funzionalità del sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo sviluppato una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
+Nel diagramma sopra riportato è possibile esaminare nel totale la struttura di classi che costituisce la Business Logic del prodotto, ciascun pattern verrà analizzato in dettaglio di seguito. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. Python offre una vasta gamma di strumenti per organizzare il codice in moduli e classi, promuovendo una suddivisione logica delle funzionalità del sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo sviluppato una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
 
 *Pattern:* \
 Strategy: design pattern comportamentale che consente di definire una famiglia di algoritmi, incapsularli e renderli intercambiabili. In pratica, si definiscono più algoritmi all'interno di classi separate, ciascuna delle quali rappresenta una strategia specifica. Questo pattern promuove la modularità, l'estensibilità e la manutenibilità del codice, in quanto consente di separare gli algoritmi dalle classi client e di modificare o aggiungere nuove strategie senza dover modificare il codice client.
@@ -517,14 +517,14 @@ La classe PreprocessorContext infine utilizza Preprocessor come parte del suo fu
 
 *Metodi:* \
 - Preprocessor:
-  + 'retrieve_file' : Metodo che prende in input un cursore SQL, il nome di una tabella e un percorso per un file CSV. Esegue una query SQL per estrarre i dati dalla tabella e scrivere i risultati in un file CSV;
-  + '_process_file_' : Metodo astratto che prende in input un percorso del file di input e un percorso del file di output. È responsabile di processare il file di input in base alle esigenze specifiche dell'algoritmo e salvarlo nel file di output prestabilito;
-  + '_prepare_feedback_' : Metodo astratto simile a process_file, ma specificamente progettato per preparare i dati di feedback i quali richiedono una diversa elaborazione.
+  + 'retrieve_file' : metodo che prende in input un cursore SQL, il nome di una tabella e un percorso per un file CSV. Esegue una query SQL per estrarre i dati dalla tabella e scrivere i risultati in un file CSV;
+  + '_process_file_' : metodo astratto che prende in input un percorso del file di input e un percorso del file di output. È responsabile di processare il file di input in base alle esigenze specifiche dell'algoritmo e salvarlo nel file di output prestabilito;
+  + '_prepare_feedback_' : metodo astratto simile a process_file, ma specificamente progettato per preparare i dati di feedback i quali richiedono una diversa elaborazione.
 
 - PreprocessorContext:
-  + 'set_preprocessor' : Metodo che imposta il preprocessor da utilizzare;
-  + 'process_file' : Metodo che prende in input un percorso del file di input e un percorso del file di output. Utilizza il preprocessor impostato per elaborare il file di input e salvarlo nel file di output;
-  + 'prepare_feedback' : Simile a process_file, ma specifico per preparare i dati di feedback.
+  + 'set_preprocessor' : metodo che imposta il preprocessor da utilizzare;
+  + 'process_file' : metodo che prende in input un percorso del file di input e un percorso del file di output. utilizza il preprocessor impostato per elaborare il file di input e salvarlo nel file di output;
+  + 'prepare_feedback' : simile a process_file, ma specifico per preparare i dati di feedback.
   
 ===== FileInfo
 #figure(
@@ -536,13 +536,13 @@ La classe FileInfo fornisce un'astrazione di base per caricare dati da file, ind
 
 *Metodi:* \
 - BaseFileInfo: 
-  + '_load_data_' : Metodo astratto per il caricamento dei dati da file.
+  + '_load_data_' : metodo astratto per il caricamento dei dati da file.
 
 - 'NN_FileInfo' :
-  + 'load_data' : Implementazione di '_load_data_' di BaseFileInfo, carica i dati dal dataset generale specificato nel percorso dataset_path utilizzando pandas, restituisce i dati sotto forma di DataFrame, utilmente per modelli di rete neurale che richiedono dati in formato tabellare per l'addestramento.
+  + 'load_data' : implementazione di '_load_data_' di BaseFileInfo, carica i dati dal dataset generale specificato nel percorso dataset_path utilizzando pandas, restituisce i dati sotto forma di DataFrame, utilmente per modelli di rete neurale che richiedono dati in formato tabellare per l'addestramento.
 
 - 'SVD_FileInfo' :
-  + 'load_data' : Implementazione di '_load_data_' di BaseFileInfo,  carica i dati dal file di dati specificato nel percorso file_path utilizzando pandas, definisce una scala di valutazione dei dati utilizzando il modulo Reader e carica i dati in un oggetto Dataset, selezionando solo le colonne specificate, utilmente per modelli basati su decomposizione singolare che operano su dati in formato tabellare.
+  + 'load_data' : implementazione di '_load_data_' di BaseFileInfo,  carica i dati dal file di dati specificato nel percorso file_path utilizzando pandas, definisce una scala di valutazione dei dati utilizzando il modulo Reader e carica i dati in un oggetto Dataset, selezionando solo le colonne specificate, utilmente per modelli basati su decomposizione singolare che operano su dati in formato tabellare.
 
 ===== Model
 #figure(
@@ -554,28 +554,28 @@ BaseModel è un _Interfaccia_ che definisce i metodi per caricare, salvare e all
 
 *Metodi:* \
 - BaseModel:
-  + '_load_model_' : Metodo astratto responsabile del caricamento di un modello;
-  + '_save_model_' : Metodo astratto responsabile del salvataggio di un modello;
-  + '_train_model_' : Metodo astratto responsabile dell'addestramento di un modello.
+  + '_load_model_' : metodo astratto responsabile del caricamento di un modello;
+  + '_save_model_' : metodo astratto responsabile del salvataggio di un modello;
+  + '_train_model_' : metodo astratto responsabile dell'addestramento di un modello.
 
 - SVD_Model:
-  + 'load_model' : Implementazione di 'load_model' di BaseModel, carica un modello da un file se esiste, altrimenti inizializza un modello SVD;
-  + 'save_model' : Implementazione di 'load_model' di BaseModel, salva il modello nel rispettivo file;
-  + 'train_model' : Implementazione di 'load_model' di BaseModel, carica i dati, carica o inizializza il modello SVD e, se il file del modello non esiste, esegue il training del modello sui dati caricati. Successivamente, salva il modello addestrato.
+  + 'load_model' : implementazione di 'load_model' di BaseModel, carica un modello da un file se esiste, altrimenti inizializza un modello SVD;
+  + 'save_model' : implementazione di 'load_model' di BaseModel, salva il modello nel rispettivo file;
+  + 'train_model' : implementazione di 'load_model' di BaseModel, carica i dati, carica o inizializza il modello SVD e, se il file del modello non esiste, esegue il training del modello sui dati caricati. Successivamente, salva il modello addestrato.
 
 - NN_Model:
-  + 'save_preprocessors': Salva i preprocessori in file;
-  + 'define_model' : Definisce l'architettura del modello di rete neurale;
-  + 'load_model' : Implementazione di 'load_model' di BaseModel, carica un modello pre-addestrato e i preprocessori se esistono, altrimenti definisce il modello;
-  + 'save_model': Implementazione di 'load_model' di BaseModel, salva il modello e il suo dizionario di stato in file;
-  + 'train_model': Implementazione di 'load_model' di BaseModel, carica o definisce il modello NN, e se il file del modello non esiste, esegue il training del modello utilizzando i dati preprocessati. Successivamente, salva il modello addestrato.
+  + 'save_preprocessors': salva i preprocessori in file;
+  + 'define_model' : definisce l'architettura del modello di rete neurale;
+  + 'load_model' : implementazione di 'load_model' di BaseModel, carica un modello pre-addestrato e i preprocessori se esistono, altrimenti definisce il modello;
+  + 'save_model': implementazione di 'load_model' di BaseModel, salva il modello e il suo dizionario di stato in file;
+  + 'train_model': implementazione di 'load_model' di BaseModel, carica o definisce il modello NN, e se il file del modello non esiste, esegue il training del modello utilizzando i dati preprocessati. Successivamente, salva il modello addestrato.
 
 - ModelContext: (Metodi relativi a BaseModel)
-  + 'set_model_info' : Questo metodo consente di impostare le informazioni sul modello (model_info) dell'oggetto ModelContext. Accetta un argomento model_info di tipo BaseModel, che viene quindi assegnato all'attributo model_info;
-  + 'process_data' : Questo metodo permette di elaborare i dati attraverso le informazioni sul modello. Accetta un argomento data rappresentante i dati da elaborare. Utilizza l'attributo model_info per chiamare il metodo load_data, per caricare i dati nel modello;
-  + 'load_model' : Invoca il metodo corrispettivo in base al tipo di BaseModel che contiene.
-  + 'save_model' : Invoca il metodo corrispettivo in base al tipo di BaseModel che contiene.
-  + 'train_model' : Invoca il metodo corrispettivo in base al tipo di BaseModel che contiene.
+  + 'set_model_info' : questo metodo consente di impostare le informazioni sul modello (model_info) dell'oggetto ModelContext. Accetta un argomento model_info di tipo BaseModel, che viene quindi assegnato all'attributo model_info;
+  + 'process_data' : questo metodo permette di elaborare i dati attraverso le informazioni sul modello. Accetta un argomento data rappresentante i dati da elaborare. Utilizza l'attributo model_info per chiamare il metodo load_data, per caricare i dati nel modello;
+  + 'load_model' : invoca il metodo corrispettivo in base al tipo di BaseModel che contiene.
+  + 'save_model' : invoca il metodo corrispettivo in base al tipo di BaseModel che contiene.
+  + 'train_model' : invoca il metodo corrispettivo in base al tipo di BaseModel che contiene.
 
 ===== Operator
 #figure(
@@ -594,20 +594,20 @@ Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; 
   + '_topN_1ItemNUser_' : metodo astratto che restituisce i migliori N utenti per un dato prodotto in base alle previsioni del modello.
 
 - NN_Operator: 
-  + 'ratings_float2int' : Implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare utilizzando la scala appropriata;
-  + 'apply_feedback' :  Implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o prodotti) ai rating previsti dal modello;
-  + 'topN_1UserNItem' : Implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N prodotti per un dato utente in base alle previsioni del modello (NN);
-  + 'topN_1ItemNUser' : Implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato prodotto in base alle previsioni del modello (NN).
+  + 'ratings_float2int' : implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare utilizzando la scala appropriata;
+  + 'apply_feedback' :  implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o prodotti) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N prodotti per un dato utente in base alle previsioni del modello (NN);
+  + 'topN_1ItemNUser' : implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato prodotto in base alle previsioni del modello (NN).
 
 - SVD_Operator: 
-  + 'ratings_float2int' : Implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare utilizzando la scala appropriata;
-  + 'apply_feedback' :  Implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o prodottis) ai rating previsti dal modello;
-  + 'topN_1UserNItem' : Implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N prodotti per un dato utente in base alle previsioni del modello;
-  + 'topN_1ItemNUser' : Implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato prodotto in base alle previsioni del modello.
+  + 'ratings_float2int' : implementazione di 'ratings_float2int' di BaseOperator, converte le previsioni dei rating da valori float a valori interi, utilizzando una trasformazione lineare utilizzando la scala appropriata;
+  + 'apply_feedback' :  implementazione di 'apply_feedback' di BaseOperator, applica il feedback ricevuto (su utenti o prodottis) ai rating previsti dal modello;
+  + 'topN_1UserNItem' : implementazione di 'topN_1UserNItem' di BaseOperator, restituisce i migliori N prodotti per un dato utente in base alle previsioni del modello;
+  + 'topN_1ItemNUser' : implementazione di 'topN_1ItemNUser' di BaseOperator, restituisce i migliori N utenti per un dato prodotto in base alle previsioni del modello.
 
   - ModelContext: (Metodi relativi a BaseOperator)
-  + 'topN_1UserNItem' : Invoca il metodo corrispettivo in base al tipo di BaseOperator che contiene;
-  + 'topN_1ItemNUser' : Invoca il metodo corrispettivo in base al tipo di BaseOperator che contiene.
+  + 'topN_1UserNItem' : invoca il metodo corrispettivo in base al tipo di BaseOperator che contiene;
+  + 'topN_1ItemNUser' : invoca il metodo corrispettivo in base al tipo di BaseOperator che contiene.
   
 
 ===== Librerie esterne
@@ -749,10 +749,10 @@ La componente Results viene utilizzata per visualizzare i sultati della raccoman
 
 === Documentazione API
 Per il nostro progetto abbiamo utilizzato diversi tipi di API:
-  - Per metodi GET con Express
-  - Per metodi GET con Flask (python)
-  - Per metodi PUT con Express
-  - Per metodi POST con Flask (python)
+  - Per metodi GET con Express;
+  - Per metodi GET con Flask (python);
+  - Per metodi PUT con Express;
+  - Per metodi POST con Flask (python).
 
   L'utilizzo di Flask e le relative API riguardano la parte dell'algoritmo, training (POST) e ricerca (GET), mentre la parte di Express riguarda l'interfaccia web. 
 
@@ -1110,12 +1110,12 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Esegue una ricerca utilizzando un algoritmo specificato su un oggetto specifico per un dato ID e restituisce i migliori N risultati.
 
   - *Parametri:*
-    - algo (string): L'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN".
-    - oggetto (string): L'oggetto su cui eseguire la ricerca. Può essere "user" o "item".
-    - id (string): L'identificatore univoco dell'oggetto su cui eseguire la ricerca.
-    - n (string): Il numero di risultati da restituire.
+    - algo (string): l'algoritmo utilizzato per la ricerca. I valori accettati sono "SVD" o "NN";
+    - oggetto (string): l'oggetto su cui eseguire la ricerca. Può essere "user" o "item";
+    - id (string): l'identificatore univoco dell'oggetto su cui eseguire la ricerca;
+    - n (string): il numero di risultati da restituire.
 
-  - *Ritorno:*
+  - *Ritorno:*\
     Restituisce una lista di risultati, o un messaggio di errore se si verificano problemi durante l'esecuzione della ricerca.
 
   - *Codici di stato HTTP:*
@@ -1139,11 +1139,11 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Aggiunge una nuova voce alla cronologia delle attività degli utenti.
 
   - *Parametri:*\
-    - user (string): L'utente che ha eseguito l'attività.
-    - algo (string): L'algoritmo utilizzato per l'attività.
-    - topic (string): Il topic dell'attività.
-    - cod_ric (string): Il codice relativo all'attività.
-    - top_sel (string): Il top selezionato per l'attività.
+    - user (string): l'utente che ha eseguito l'attività;
+    - algo (string): l'algoritmo utilizzato per l'attività;
+    - topic (string): il topic dell'attività;
+    - cod_ric (string): il codice relativo all'attività;
+    - top_sel (string): il top selezionato per l'attività.
 
   - *Ritorno:*\
     Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
@@ -1167,10 +1167,10 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Aggiunge un nuovo feedback per un ordine di un cliente.
 
   - *Parametri:*\
-    - user (string): L'utente che ha fornito il feedback.
-    - id (string): L'identificatore dell'articolo associato al feedback.
-    - idRic (string): L'identificatore dell'ordine cliente associato al feedback.
-    - algoType (string): Il tipo di algoritmo utilizzato.
+    - user (string): l'utente che ha fornito il feedback;
+    - id (string): l'identificatore dell'articolo associato al feedback;
+    - idRic (string): l'identificatore dell'ordine cliente associato al feedback;
+    - algoType (string): il tipo di algoritmo utilizzato.
 
   - *Ritorno:*\
     Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
@@ -1194,10 +1194,10 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Aggiunge un nuovo feedback per un articolo.
 
   - *Parametri:*\
-    - user (string): L'utente che ha fornito il feedback.
-    - id (string): L'identificatore dell'ordine cliente associato al feedback.
-    - idRic (string): L'identificatore dell'articolo associato al feedback.
-    - algoType (string): Il tipo di algoritmo utilizzato.
+    - user (string): l'utente che ha fornito il feedback;
+    - id (string): l'identificatore dell'ordine cliente associato al feedback;
+    - idRic (string): l'identificatore dell'articolo associato al feedback;
+    - algoType (string): il tipo di algoritmo utilizzato.
 
   - *Ritorno:*\
     Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
@@ -1221,7 +1221,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Elimina un feedback specifico.
 
   - *Parametri:*\
-    - id_feed (string): L'identificatore del feedback da eliminare.
+    - id_feed (string): l'identificatore del feedback da eliminare.
 
   - *Ritorno:*\
     Se la richiesta ha successo, la risposta sarà un oggetto JSON con un messaggio di successo.
@@ -1245,7 +1245,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Recupera i dettagli di un utente specifico usando il suo identificatore unico.
 
   - *Parametri:*
-    - use (string): L'identificatore dell'utente da cercare.
+    - use (string): l'identificatore dell'utente da cercare.
 
   - *Ritorno:*
     Se l'utente è trovato, la risposta sarà un array JSON contenente un oggetto con i dettagli dell'utente.
@@ -1269,8 +1269,8 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Aggiorna l'indirizzo email di un utente specifico.
 
   - *Parametri:*
-    - use (string): L'identificatore univoco dell'utente.
-    - newEmail (string, nel corpo della richiesta): Il nuovo indirizzo email da assegnare all'utente.
+    - use (string): l'identificatore univoco dell'utente;
+    - newEmail (string, nel corpo della richiesta): il nuovo indirizzo email da assegnare all'utente.
 
   - *Ritorno:*
     Restituisce un messaggio di successo se l'email è stata aggiornata correttamente.
@@ -1294,8 +1294,8 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Aggiorna la password di un utente specifico.
 
   - *Parametri:*
-    - use (string): L'identificatore univoco dell'utente.
-    - newPassword (string, nel corpo della richiesta): La nuova password da assegnare all'utente.
+    - use (string): l'identificatore univoco dell'utente;
+    - newPassword (string, nel corpo della richiesta): la nuova password da assegnare all'utente.
 
   - *Ritorno:*
     Restituisce un messaggio di successo se la password è stata aggiornata correttamente.
@@ -1321,7 +1321,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
     Avvia l'addestramento del modello machine learning basato sull'algoritmo specificato.
 
   - *Parametri:*\
-        algo (string): L'identificatore dell'algoritmo di machine learning da addestrare. I valori accettati sono "SVD" o "NN".
+        algo (string): l'identificatore dell'algoritmo di machine learning da addestrare. I valori accettati sono "SVD" o "NN".
 
   - *Ritorno:*\
     Restituisce un messaggio di successo se l'addestramento è completato correttamente.
