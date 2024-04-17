@@ -7,6 +7,7 @@
   ),
   heading_numbers: none,
   changelog: (
+    "1.3.0", "2024-03-13", p.favaron, "", "Stesura nuove definizioni",
     "1.2.0", "2024-03-09", p.rosson, "", "Stesura nuove definizioni",
     "1.1.0", "2024-02-28", p.favaron, "", "Stesura nuove definizioni",
     "1.0.1", "2024-02-20", p.bomben, p.carraro, "Eliminazione numerica capitoli",
@@ -164,6 +165,10 @@ Un modello di apprendimento automatico è un programma che viene utilizzato per 
 Tecnica di misurazione quantitativa con lo scopo di controllare e valutare il grado in cui un sistema, componente o processo possiede un certo attributo e l’accettabilità di un software, sia dal
 punto di vista tecnico che documentale. 
 
+#text(size: 13pt)[* Mock*]\
+Il termine Mock si riferisce a un oggetto simulato che replica il comportamento di un oggetto reale in modo controllato e predefinito durante i test. Questi oggetti sono utilizzati principalmente nel contesto del testing unitario per sostituire componenti dipendenti non ancora disponibili o non facilmente replicabili nell’ambiente di test.
+
+
 = N
 
 #text(size: 13pt)[* Norme di Progetto*]\
@@ -174,6 +179,9 @@ Libreria open-source per il linguaggio di programmazione Python, che aggiunge su
 
 #pagebreak()
 = O
+
+#text(size: 13pt)[* Overleaf*]\
+Overleaf è una piattaforma online collaborativa per la scrittura, l'editing e la pubblicazione di documenti scientifici basati su LaTeX. Con Overleaf, gli autori possono scrivere documenti in LaTeX direttamente nel browser, collaborare con altri autori in tempo reale e accedere a una vasta gamma di modelli, stili e pacchetti LaTeX predefiniti. La piattaforma offre funzionalità avanzate come il controllo ortografico integrato, la compilazione automatica dei documenti e la possibilità di esportare il lavoro in diversi formati, inclusi PDF e file di testo. Grazie alla sua facilità d'uso e alla sua natura basata sul cloud, Overleaf è diventato uno strumento popolare tra gli accademici, i ricercatori e gli studenti per la creazione di documenti accademici di alta qualità in modo collaborativo e efficiente.
 
 = P
 
@@ -203,6 +211,9 @@ Una versione preliminare di un'applicazione o di una soluzione software che vien
 
 #text(size: 13pt)[* Processo*]\
 Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
+
+#text(size: 13pt)[* Pytest*]\
+Pytest è un framework di testing per Python che offre un approccio semplice e potente per scrivere test efficaci. Grazie alla sua sintassi intuitiva e alla flessibilità, Pytest consente agli sviluppatori di creare test unitari, test di integrazione e test di regressione in modo rapido e efficiente. Supporta la creazione di test parametrizzati, l'utilizzo di fixture per la gestione di dati di test e l'integrazione con altri strumenti di testing e di sviluppo. Pytest si distingue per la sua facilità d'uso e la sua estensibilità, rendendolo una scelta popolare per il testing nel mondo Python.
 
 #pagebreak()
 = Q
@@ -258,6 +269,9 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 Typst è un sistema di composizione tipografica basato su markup. È progettato per essere un'alternativa sia agli strumenti avanzati come LaTeX sia agli strumenti più semplici come Word e Google Docs.
 
 = U
+
+#text(size: 13pt)[* UML*]\
+UML, acronimo di Unified Modeling Language, è un linguaggio standard utilizzato per la modellazione visuale e la progettazione di sistemi software. Fornisce un insieme di notazioni grafiche e convenzioni che consentono agli sviluppatori di rappresentare concetti, strutture e comportamenti dei sistemi in modo chiaro e comprensibile. Con UML, è possibile creare una vasta gamma di diagrammi, tra cui diagrammi dei casi d'uso, diagrammi delle classi, diagrammi di sequenza e molti altri, che aiutano a visualizzare e comunicare efficacemente le specifiche dei progetti software. UML è ampiamente utilizzato nell'ambito dello sviluppo software per migliorare la comprensione dei requisiti, facilitare la collaborazione tra team e guidare il processo di progettazione e sviluppo dei sistemi software.
 
 = V
 
