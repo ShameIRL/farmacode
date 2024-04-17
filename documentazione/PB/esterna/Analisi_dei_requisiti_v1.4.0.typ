@@ -137,8 +137,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
     + se le credenziali sono corrette, autentica l'utente con successo, tramite la creazione di cookies di sessione e reindirizzato alla pagina principale;
     + se le credenziali sono errate, mostra un messaggio di errore per informare l'utente della fallita autenticazione (UC3).
 *Estensioni:*
-- UC2 - Visualizzazione alert di manutenzione;
-- UC3 - Visualizzazione errore di login.
+- UC2 - Visualizzazione errore di login.
 *Generalizzazioni:*
 - Use Case:\
   + UC1.1 - Inserimento username;
@@ -223,16 +222,16 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - User.
 *Precondizioni:*
 - L'utente è autenticato nel sistema ed è dunque presente un cookie di sessione;
-- L'utente cerca in qualche modo di accedere a pagine per cui non ha i requisiti.
+- L'utente cerca in qualche modo di accedere a pagine per cui non ha i requisiti o non esiste.
 *Postcondizioni:*
 - L'utente visualizza la pagina di errore 404.
 *Scenario principale:*
 - User:
-  + inserisce un URL di una pagina per lui inaccessibile;
+  + inserisce un URL di una pagina per lui inaccessibile o inesistente;
   + visualizza correttamente la pagina 404.
 - Sistema:
   + verifica se l'utente ha i permessi per accedere alla pagina;
-  + se l'utente non possedesse i requisiti, renderizza e mostra correttamente la pagina di errore.
+  + se l'utente non possedesse i requisiti o cerca di accedere ad una pagina inesistente, renderizza e mostra correttamente la pagina di errore.
 
 #pagebreak()
 == UC4 - Visualizzazione "Profilo Utente"
@@ -281,9 +280,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 *Scenario principale:*
 - Admin/User:
   + visualizza i dati utente in chiaro, ovvero anagrafica, email e username (UC4.1.1, UC4.1.2, UC4.1.3);
-  + decide se visualizzare i dati nascosti, ovvero la password (UC4.1.4).
 - Sistema:
-  + mostra all'utente i suoi dati utente in chiaro, ovvero anagrafica, email e username (UC4.1.1, UC4.1.2, UC4.1.3);
+  + mostra all'utente i suoi dati, ovvero anagrafica, email e username (UC4.1.1, UC4.1.2, UC4.1.3);
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
@@ -378,7 +376,8 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + prende a conoscenza l'intenzione dell'utente di modificare i propri dati modificabili, ovvero email (UC4.2.1) e password (UC4.2.2);
   + modifica l'interfaccia per permettere all'utente di inserire i nuovi dati ed aggiungendo l'opzione di conferma della modifica dei dati;
   + se i nuovi dati vengono confermati, sostituisce i vecchi dati con i nuovi dati all'interno del sistema e li salva;
-  + se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente.
+  + se i nuovi dati non vengono confermati, li scarta e mostra di nuovo l'interfaccia precedente;
+  + se la nuova email o password non sono adeguate, mostra un messaggio di errore (UC16).
 *Generalizzazioni:*
 - Attori:
   + Admin --> User.
@@ -497,7 +496,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 - Admin/User:
   + seleziona la funzionalità di "Ricerca" nel menù;
   + decide se effettuare una ricerca (UC6.1);
-  + decide se filtrare i risultati della ricerca (UC6.2)
+  + decide se filtrare i risultati della ricerca (UC6.2);
   + visualizza i risultati della ricerca (UC6.3);
   + decide se eseguire il training di uno dei due modelli (UC6.4).
 - Sistema:
@@ -583,10 +582,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - User Case:
     + UC6.1.2 SVD;
     + UC6.1.3 NN;
-    + UC6.1.4 Training Algoritmo.
 
 
-+ *UC6.1.5 - Scelta Topic*\
++ *UC6.1.4 - Scelta Topic*\
   *Attori:*
   - Admin;
   - User.
@@ -615,11 +613,11 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori: 1. Admin --> User.
   - User Case:
-    + UC6.1.6 Ricerca "prodotti per cliente";
-    + UC6.1.7 Ricerca "clienti per prodotto".
+    + UC6.1.5 Ricerca "prodotti per cliente";
+    + UC6.1.6 Ricerca "clienti per prodotto".
 
 
-+ *UC6.1.9 - Scelta N risultati*\
++ *UC6.1.7 - Scelta N risultati*\
   *Attori:*
   - Admin;
   - User.
@@ -649,9 +647,9 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
   - User Case:
-    + UC6.1.10 Top 5;
-    + UC6.1.11 Top 10.
-    + UC6.1.12 Top 20.
+    + UC6.1.8 Top 5;
+    + UC6.1.9 Top 10.
+    + UC6.1.10 Top 20.
 
 + *UC6.1.2 - SVD*\
   *Attori:*
@@ -692,26 +690,6 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-
-+ *UC6.1.4 - Training Algoritmo*\
-  *Attori:*
-  - Admin;
-  - User.
-  *Precondizioni:*
-  - L'utente ha deciso di fare una ricerca e sta compilando i campi necessari;
-  - L'utente ha scelto un algoritmo con cui fare il training.
-  *Postcondizioni:*
-  - Viene effettuato il training dell'algoritmo selezionato.
-  *Scenario principale:*
-  - Admin/User:
-    + seleziona l'opzione per effettuare il training;
-    + conferma la  volontà di voler effettuare il training.
-  - Sistema:
-    + chiede all'utente se è sicuro di voler avviare il training;
-    + se l'utente sceglie di avviare il training effettua il training e successivamente da un messaggio di successo;
-    + se l'utente sceglie di non voler avviare il training chiude il pop-up e non avvia il training.
-  *Generalizzazioni:*
-  - Attori: 1. Admin --> User.
 
 + *UC6.1.5 - Ricerca "prodotti per cliente"*\
   *Attori:*
@@ -756,7 +734,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 
 
-+ *UC6.1.9 - Top 5*\
++ *UC6.1.8 - Top 5*\
   *Attori:*
   - Admin;
   - User.
@@ -776,7 +754,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.10 - Top 10*\
++ *UC6.1.9 - Top 10*\
   *Attori:*
   - Admin;
   - User.
@@ -796,7 +774,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   - Attori:
     + Admin --> User.
 
-+ *UC6.1.11 - Top 20*\
++ *UC6.1.10 - Top 20*\
   *Attori:*
   - Admin;
   - User.
@@ -2525,6 +2503,25 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
   + decide di mostrare il messaggio informativo.
 
 #pagebreak()
+
+== UC16 - Errore modifica dati
+
+*Attori:*
+- Admin;
+- User.
+*Precondizioni:*
+- L'utente vuole cambiare l'email o la password del suo profilo (UC4.2);
+- L'utente inserisce una mail o una password inadeguata.
+*Postcondizioni:*
+- L'utente visualizza un messaggio di errore per il cambio dei dati.
+*Scenario principale:*
+- Admin/User:
+  + visualizza un messaggio di errore.
+- Sistema:
+  + controlla che la nuova mail o password siano adeguati;
+  + decide di mostrare il messaggio di errore.
+
+#pagebreak()
 = Requisiti
 In questa sezione esponiamo i requisiti individuati durante l'attività di analisi a partire dai casi
 d'uso, dall’analisi del capitolato d’appalto e dagli incontri interni e con il proponente. Ogni
@@ -2563,47 +2560,48 @@ riportate indicano:
   [ROF 7], [L'utente, una volta entrato nella sezione "Profilo Utente", deve poter visualizzare i dati utente o modificarli.], [UC4.1, \ UC4.2],
   [ROF 8], [L'utente che ha scelto di visulizzare i "dati utente" deve visulizzare, l'anagrafica, l'email, l'username e la password.], [UC4.1.1,\ UC4.1.2,\ UC4.1.3,\ UC4.1.4],
   [ROF 9], [L'utente che ha scelto di modificare i dati utente, deve poter modificare l'email e la password.], [UC4.2.1,\ UC4.2.2],
-  [ROF 10], [L'utente inserisce la nuova email nel campo email, per procedere a modificare i dati.], [UC4.2.1],
-  [ROF 11], [L'utente inserisce la nuova password nel campo password, per procedere a modificare i dati.], [UC4.2.2],
-  [ROF 12], [L'utente, una volta autenticato, deve poter effettuare il Logout tramite il pulsante presente nella pagina principale del sito.], [UC5],
-  [ROF 13], [L'utente, una volta autenticato, deve poter accedere alla funzione "Ricerca" nella pagina principale del sito.], [UC6],
-  [ROF 14], [L'utente una volta entrato nella sezione "Ricerca", deve poter effettuare una ricerca, filtrarne i risultati, visualizzarne i risultati e eseguire il training dell'algoritmo.], [UC6.1,\ UC6.2, \ UC6.3, \ UC6.4],
-  [ROF 15], [L'utente che ha scelto di effettuare una ricerca, deve compilare tutti i campi per effettuarla e poter visualizzare i risultati.], [UC6.1.1,\ UC6.1.5],
-  [RDF 16], [L'utente che compila la scelta dell'algoritmo, può scegliere tra SVD e NN.],[UC6.1.1, UC6.1.2, UC6.1.3],
-  [ROF 17], [L'utente che compila la scelta del topic della ricerca, può scegliere tra prodotto per cliente o cliente per prodotto, per poi compilare i successivi campi.], [UC6.1.5,\ UC6.1.6,\ UC6.1.7],
-  [ROF 18], [L'utente che compila la scelta degli "N risultati", può scegliere tra i 5 migliori risultati (Top 5), tra i migliori 10 (Top 10) o i migliori 20 (Top 20).], [UC6.1.8,\ UC6.1.9,\ UC6.1.10],
-  [RDF 19], [L'utente che ha eseguito la ricerca, può filtrarne i risultati delle colonne con i risultati.], [UC6.2.1 \ UC6.2.2],
-  [ROF 20], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'ID, il nome e lo score assegnato alla raccomandazione.], [UC6.3.1,\ UC6.3.1.1,\ UC6.3.1.2,\ UC6.3.1.3],
-  [RDF 21], [L'utente può decidere se avviare un training del modello tramite il pulsante Training nella barra di ricerca], [UC6.4],
-  [RDF 22], [Nel caso un'utente cercasse di eseguire una ricerca con l'algortimo in training, deve visualizzare un messaggio di avviso.], [UC15],
-  [RDF 23], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 23, RDF 29, RDF 37, RDF 41.], [UC14],
-  [ROF 24], [L'utente che ha visualizzato i risultati della ricerca, deve poter inserire un feedback delle raccomandazioni mostrate.], [UC7],
-  [RDF 25], [L'utente, una volta autenticato, deve poter accedere alla funzione "Catalogo Prodotti" nella pagina principale del sito.], [UC8],
-  [RDF 26], [L'utente una volta entrato nella sezione "Catalogo Prodotti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC8.1,\ UC8.2],
-  [RDF 27], [L'utente che ha scelto di effetuare un fltraggio può compilare i campi filtri che desidera.], [UC8.1.1,\ UC8.1.2,\ UC8.1.3,\ UC8.1.4 \ UC8.1.5 \ UC8.1.6],
-  [RDF 28], [L'utente che ha effettuato un filtraggio e non, deve poter visualizzare tutti i campi della tabella con i risultati: Codice Articolo, Descrizione Articolo, Linea commerciale, Settore commerciale, Famiglia commersciale e Sotto-famiglia commerciale.], [UC8.2.1,\ UC8.2.1.1,\ UC8.2.1.2,\ UC8.2.1.3 \ UC8.2.1.4 \ UC8.2.1.5 \ UC8.2.1.6],
-  [RDF 29], [L'utente che ha visualizzato i risultati della ricerca, può visualizzare i dettagli di un prodotto, cliccando sulla riga corrispondente al prodotto che vuole visualizzare i dettagli.], [UC9],
-  [RDF 30], [L'utente se decide di visualizzare i dettagli di un prodotto, deve poter vedere il Codice e descrizione articolo, immagine articolo, Codice e descrizione Linea commerciale, Codice e descrizione Settore commerciale, Codice e descrizione Famiglia commerciale e Codice e descrizione Sotto-famiglia commerciale.], [UC9.1, UC9.2,\ UC9.3, UC9.4,\ UC9.5, UC9.6,\ UC9.7, UC9.8 \ UC9.9, UC9.10\ UC9.11],
-  [RDF 31], [L'utente, una volta autenticato, deve poter accedere alla funzione "Lista clienti" nella pagina principale del sito.], [UC10],
-  [RDF 32], [L'utente una volta entrato nella sezione "Lista clienti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC10.1,\ UC10.2],
-  [RDF 33], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Codice cliente, Ragione sociale e Provincia.], [UC10.1.1,\ UC10.1.2,\ UC10.1.3],
-  [RDF 34], [L'utente che effettutato un filtraggio e non, deve poter visualizzare il Codice cliente, la Ragione sociale e la provincia del cliente], [UC10.2.1, UC10.2.1.1,\ UC10.2.1.2, UC10.2.1.3],
-  [RDF 35], [L'utente, una volta autenticato, deve poter accedere alla funzione "Cronologia" nella pagina principale del sito.], [UC11],
-  [RDF 36], [L'utente una volta entrato nella sezione "Cronologia", deve poter effettuare una filtraggio e visualizzarne i risultati.], [UC11.1,\ UC11.2],
-  [RDF 37], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Data, Utente, Algoritmo, Topic, Codice Cliente/Prodotto e Top.], [UC11.1.1, UC11.1.2\ UC11.1.3, UC11.1.4\ UC11.1.5, UC11.1.6],
-  [RDF 38], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente l'algoritmo, il topic, il codice Cliente/Prodotto e il top.], [UC11.2.1, UC11.2.1.1,\ UC11.2.1.2, UC11.2.1.3\ UC11.2.1.4, UC11.2.1.5, UC11.2.1.6],
-  [RDF 39], [L'utente, una volta autenticato, deve poter accedere alla funzione "Feedback" nella pagina principale del sito.], [UC12],
-  [RDF 40], [L'utente una volta entrato nella sezione "Feedback", può effettuare un filtraggio e visualizzarne i risultati.], [UC12.1,\ UC12.2],
-  [RDF 41], [L'utente che ha scelto di effettuare un filtraggio, deve compilare i campi Data, Utente, ID Cliente, ID Prodotto, Algoritmo.], [UC12.1.1, UC12.1.2\ UC12.1.3, UC12.1.4\ UC12.1.5],
-  [RDF 42], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente, l'ID cliente, l'ID prodotto e l'algoritmo del Feedback], [UC12.2.1, UC12.2.1.1,\ UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5],
-  [RDF 43], [L'utente, una volta autenticato, deve poter accedere alla funzione "Carica dataset" e caricare un dataset esterno all'interno dell'applicazione.], [Verbale interno],
-  [RDF 44], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [Verbale interno],
-  [RDF 45], [L'utente, una volta autenticato, deve poter visualizzare la funzione statistiche mensili nel menù principale.], [Verbale interno],
-  [RDF 46],[L'utente una volta dentro la funzionalità statistiche mensili, deve poterne visualizzare il grafico e le raccomandazioni più attendibili.],[Verbale interno],
-  [RDF 47], [L'utente se visualizza il grafico, deve vedere sull'asse delle x le vendite mensili e sull'asse delle y le raccomandazioni proposte.], [Verbale iterno],
-  [RDF 48], [L'utente se vsualizza le raccomandazioni più attendibili, deve poter vedere l'ID Cliente, l'ID prodotto della raccomandazione.], [Verbale interno],
-  [RDF 49],[L'utente se vuole effettuare una ricerca tramite la vista "Ricerca", la può effettuare tramite la cronologia delle ricerche precedenti.],[Verbale interno],
-  [RDF 50], [L'utente se esegue una ricerca tramite la cronologia deve selezionare la riga con la ricerca all'interno delle cronologia.], [Verbale interno],
+  [RDF 10], [L'utente nel caso inserisca dei nuovi dati inadeguati, visualizza un messaggio di errore], [UC16],
+  [ROF 11], [L'utente inserisce la nuova email nel campo email, per procedere a modificare i dati.], [UC4.2.1],
+  [ROF 12], [L'utente inserisce la nuova password nel campo password, per procedere a modificare i dati.], [UC4.2.2],
+  [ROF 13], [L'utente, una volta autenticato, deve poter effettuare il Logout tramite il pulsante presente nella pagina principale del sito.], [UC5],
+  [ROF 14], [L'utente, una volta autenticato, deve poter accedere alla funzione "Ricerca" nella pagina principale del sito.], [UC6],
+  [ROF 15], [L'utente una volta entrato nella sezione "Ricerca", deve poter effettuare una ricerca, filtrarne i risultati, visualizzarne i risultati e eseguire il training dell'algoritmo.], [UC6.1, \ UC6.3, \ UC6.4],
+  [ROF 16], [L'utente che ha scelto di effettuare una ricerca, deve compilare tutti i campi per effettuarla e poter visualizzare i risultati.], [UC6.1.1,\ UC6.1.5],
+  [RDF 17], [L'utente che compila la scelta dell'algoritmo, può scegliere tra SVD e NN.],[UC6.1.1, UC6.1.2, UC6.1.3],
+  [ROF 18], [L'utente che compila la scelta del topic della ricerca, può scegliere tra prodotto per cliente o cliente per prodotto, per poi compilare i successivi campi.], [UC6.1.5,\ UC6.1.6,\ UC6.1.7],
+  [ROF 19], [L'utente che compila la scelta degli "N risultati", può scegliere tra i 5 migliori risultati (Top 5), tra i migliori 10 (Top 10) o i migliori 20 (Top 20).], [UC6.1.8,\ UC6.1.9,\ UC6.1.10],
+  [RDF 20], [L'utente che ha eseguito la ricerca, può filtrarne i risultati delle colonne con i risultati.], [UC6.2 \ UC6.2.1 \ UC6.2.2],
+  [ROF 21], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'ID, il nome e lo score assegnato alla raccomandazione.], [UC6.3.1,\ UC6.3.1.1,\ UC6.3.1.2,\ UC6.3.1.3],
+  [RDF 22], [L'utente può decidere se avviare un training del modello tramite il pulsante Training nella barra di ricerca], [UC6.4],
+  [RDF 23], [Nel caso un'utente cercasse di eseguire una ricerca con l'algortimo in training, deve visualizzare un messaggio di avviso.], [UC15],
+  [RDF 24], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 23, RDF 29, RDF 37, RDF 41.], [UC14],
+  [ROF 25], [L'utente che ha visualizzato i risultati della ricerca, deve poter inserire un feedback delle raccomandazioni mostrate.], [UC7],
+  [RDF 26], [L'utente, una volta autenticato, deve poter accedere alla funzione "Catalogo Prodotti" nella pagina principale del sito.], [UC8],
+  [RDF 27], [L'utente una volta entrato nella sezione "Catalogo Prodotti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC8.1,\ UC8.2],
+  [RDF 28], [L'utente che ha scelto di effetuare un fltraggio può compilare i campi filtri che desidera.], [UC8.1.1,\ UC8.1.2,\ UC8.1.3,\ UC8.1.4 \ UC8.1.5 \ UC8.1.6],
+  [RDF 29], [L'utente che ha effettuato un filtraggio e non, deve poter visualizzare tutti i campi della tabella con i risultati: Codice Articolo, Descrizione Articolo, Linea commerciale, Settore commerciale, Famiglia commersciale e Sotto-famiglia commerciale.], [UC8.2.1,\ UC8.2.1.1,\ UC8.2.1.2,\ UC8.2.1.3 \ UC8.2.1.4 \ UC8.2.1.5 \ UC8.2.1.6],
+  [RDF 30], [L'utente che ha visualizzato i risultati della ricerca, può visualizzare i dettagli di un prodotto, cliccando sulla riga corrispondente al prodotto che vuole visualizzare i dettagli.], [UC9],
+  [RDF 31], [L'utente se decide di visualizzare i dettagli di un prodotto, deve poter vedere il Codice e descrizione articolo, immagine articolo, Codice e descrizione Linea commerciale, Codice e descrizione Settore commerciale, Codice e descrizione Famiglia commerciale e Codice e descrizione Sotto-famiglia commerciale.], [UC9.1, UC9.2,\ UC9.3, UC9.4,\ UC9.5, UC9.6,\ UC9.7, UC9.8 \ UC9.9, UC9.10\ UC9.11],
+  [RDF 32], [L'utente, una volta autenticato, deve poter accedere alla funzione "Lista clienti" nella pagina principale del sito.], [UC10],
+  [RDF 33], [L'utente una volta entrato nella sezione "Lista clienti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC10.1,\ UC10.2],
+  [RDF 34], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Codice cliente, Ragione sociale e Provincia.], [UC10.1.1,\ UC10.1.2,\ UC10.1.3],
+  [RDF 35], [L'utente che effettutato un filtraggio e non, deve poter visualizzare il Codice cliente, la Ragione sociale e la provincia del cliente], [UC10.2.1, UC10.2.1.1,\ UC10.2.1.2, UC10.2.1.3],
+  [RDF 36], [L'utente, una volta autenticato, deve poter accedere alla funzione "Cronologia" nella pagina principale del sito.], [UC11],
+  [RDF 37], [L'utente una volta entrato nella sezione "Cronologia", deve poter effettuare una filtraggio e visualizzarne i risultati.], [UC11.1,\ UC11.2],
+  [RDF 38], [L'utente che ha scelto di effettuare un filtraggio, può compilare i campi Data, Utente, Algoritmo, Topic, Codice Cliente/Prodotto e Top.], [UC11.1.1, UC11.1.2\ UC11.1.3, UC11.1.4\ UC11.1.5, UC11.1.6],
+  [RDF 39], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente l'algoritmo, il topic, il codice Cliente/Prodotto e il top.], [UC11.2.1, UC11.2.1.1,\ UC11.2.1.2, UC11.2.1.3\ UC11.2.1.4, UC11.2.1.5, UC11.2.1.6],
+  [RDF 40], [L'utente, una volta autenticato, deve poter accedere alla funzione "Feedback" nella pagina principale del sito.], [UC12],
+  [RDF 41], [L'utente una volta entrato nella sezione "Feedback", può effettuare un filtraggio e visualizzarne i risultati.], [UC12.1,\ UC12.2],
+  [RDF 42], [L'utente che ha scelto di effettuare un filtraggio, deve compilare i campi Data, Utente, ID Cliente, ID Prodotto, Algoritmo.], [UC12.1.1, UC12.1.2\ UC12.1.3, UC12.1.4\ UC12.1.5],
+  [RDF 43], [L'utente che effettutato un filtraggio e non, deve poter visualizzare la data, l'utente, l'ID cliente, l'ID prodotto e l'algoritmo del Feedback], [UC12.2.1, UC12.2.1.1,\ UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5],
+  [RDF 44], [L'utente, una volta autenticato, deve poter accedere alla funzione "Carica dataset" e caricare un dataset esterno all'interno dell'applicazione.], [Verbale interno],
+  [RDF 45], [L'utente, se ha caricato un dataset esterno, dever poter avviare il training del dataset in maniera da poterlo usare per le raccomandazioni.], [Verbale interno],
+  [RDF 46], [L'utente, una volta autenticato, deve poter visualizzare la funzione statistiche mensili nel menù principale.], [Verbale interno],
+  [RDF 47],[L'utente una volta dentro la funzionalità statistiche mensili, deve poterne visualizzare il grafico e le raccomandazioni più attendibili.],[Verbale interno],
+  [RDF 48], [L'utente se visualizza il grafico, deve vedere sull'asse delle x le vendite mensili e sull'asse delle y le raccomandazioni proposte.], [Verbale iterno],
+  [RDF 49], [L'utente se vsualizza le raccomandazioni più attendibili, deve poter vedere l'ID Cliente, l'ID prodotto della raccomandazione.], [Verbale interno],
+  [RDF 50],[L'utente se vuole effettuare una ricerca tramite la vista "Ricerca", la può effettuare tramite la cronologia delle ricerche precedenti.],[Verbale interno],
+  [RDF 51], [L'utente se esegue una ricerca tramite la cronologia deve selezionare la riga con la ricerca all'interno delle cronologia.], [Verbale interno],
 )
 #align(center)[Tabella 1: Requisiti funzionali]
 
@@ -2769,47 +2767,48 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
   [UC4.1, UC4.2], [ROF 7],
   [UC4.1.1, UC4.1.2, UC4.1.3, UC4.1.4], [ROF 8],
   [UC4.2.1, UC4.2.2], [ROF 9],
-  [UC4.2.1],[ROF 10],
-  [UC4.2.2],[ROF 11],
-  [UC5], [ROF 12],
-  [UC6], [ROF 13],
-  [UC6.1, UC6.2, UC6.3, UC6.4], [ROF 14],
-  [UC6.1.1, UC6.1.5], [ROF 15],
-  [UC6.1.1, UC6.1.2, UC6.1.3], [RDF 16],
-  [UC6.1.5, UC6.1.6, UC6.1.7], [ROF 17],
-  [UC6.1.8, UC6.1.9, UC6.1.10], [ROF 18],
-  [UC6.2.1, UC6.2.2], [RDF 19],
-  [UC6.3.1, UC6.3.1.1, UC6.3.1.2, UC6.3.1.3], [ROF 20],
-  [UC6.4], [RDF 21],
-  [UC15], [RDF 22],
-  [UC14], [RDF 23],
-  [UC7], [R0F 24],
-  [UC8], [RDF 25],
-  [UC8.1, UC8.2], [RDF 26],
-  [UC8.1.1, UC8.1.2, UC8.1.3, UC8.1.4, UC8.1.5, UC8.1.6], [RDF 27],
-  [UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4, UC8.2.1.5, UC8.2.1.6], [RDF 28],
-  [UC9], [RDF 29],
-  [UC9.1, UC9.2, UC9.2, UC9.4, UC9.5, UC9.6, UC9.7, UC9.9, UC9.10, UC9.11], [RDF 30],
-  [UC10], [RDF 31],
-  [UC10.1, UC10.2], [RDF 32],
-  [UC10.1.1, UC10.1.2, UC10.1.3], [RDF 33],
-  [UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC1O.2.1.3], [RDF 34],
-  [UC11], [RDF 35],
-  [UC11.1, UC11.2], [RDF 36],
-  [UC11.1.1, UC11.1.2, UC11.1.3, UC11.1.4, UC11.1.5], [RDF 37],
-  [UC11.2.1, UC11.2.1.1, UC11.2.1.2, UC11.2.1.3, UC11.2.1.4, UC11.2.1.5, UC11.2.1.6], [RDF 38],
-  [UC12], [RDF 39],
-  [UC12.1, UC12.2], [RDF 40],
-  [UC12.1.1, UC12.1.2, UC12.1.3, UC12.1.4, UC12.1.5], [RDF 41],
-  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5], [RDF 42],
+  [UC16], [RDF 10],
+  [UC4.2.1],[ROF 11],
+  [UC4.2.2],[ROF 12],
+  [UC5], [ROF 13],
+  [UC6], [ROF 14],
+  [UC6.1, UC6.2, UC6.3, UC6.4], [ROF 15],
+  [UC6.1.1, UC6.1.5], [ROF 16],
+  [UC6.1.1, UC6.1.2, UC6.1.3], [RDF 17],
+  [UC6.1.5, UC6.1.6, UC6.1.7], [ROF 18],
+  [UC6.1.8, UC6.1.9, UC6.1.10], [ROF 19],
+  [UC6.2.1, UC6.2.2], [RDF 20],
+  [UC6.3.1, UC6.3.1.1, UC6.3.1.2, UC6.3.1.3], [ROF 21],
+  [UC6.4], [RDF 22],
+  [UC15], [RDF 23],
+  [UC14], [RDF 24],
+  [UC7], [R0F 25],
+  [UC8], [RDF 26],
+  [UC8.1, UC8.2], [RDF 27],
+  [UC8.1.1, UC8.1.2, UC8.1.3, UC8.1.4, UC8.1.5, UC8.1.6], [RDF 28],
+  [UC8.2.1, UC8.2.1.1, UC8.2.1.2, UC8.2.1.3, UC8.2.1.4, UC8.2.1.5, UC8.2.1.6], [RDF 29],
+  [UC9], [RDF 30],
+  [UC9.1, UC9.2, UC9.2, UC9.4, UC9.5, UC9.6, UC9.7, UC9.9, UC9.10, UC9.11], [RDF 31],
+  [UC10], [RDF 32],
+  [UC10.1, UC10.2], [RDF 33],
+  [UC10.1.1, UC10.1.2, UC10.1.3], [RDF 34],
+  [UC10.2.1, UC10.2.1.1, UC10.2.1.2, UC1O.2.1.3], [RDF 35],
+  [UC11], [RDF 36],
+  [UC11.1, UC11.2], [RDF 37],
+  [UC11.1.1, UC11.1.2, UC11.1.3, UC11.1.4, UC11.1.5], [RDF 38],
+  [UC11.2.1, UC11.2.1.1, UC11.2.1.2, UC11.2.1.3, UC11.2.1.4, UC11.2.1.5, UC11.2.1.6], [RDF 39],
+  [UC12], [RDF 40],
+  [UC12.1, UC12.2], [RDF 41],
+  [UC12.1.1, UC12.1.2, UC12.1.3, UC12.1.4, UC12.1.5], [RDF 42],
+  [UC12.2.1, UC12.2.1.1, UC12.2.1.2, UC12.2.1.3, UC12.2.1.4, UC12.2.1.5], [RDF 43],
   [Verbale interno], [RDF 43],
-  [Verbale interno], [RDF 44],
   [Verbale interno], [RDF 45],
   [Verbale interno], [RDF 46],
   [Verbale interno], [RDF 47],
   [Verbale interno], [RDF 48],
   [Verbale interno], [RDF 49],
   [Verbale interno], [RDF 50],
+  [Verbale interno], [RDF 51],
 )
 #align(center)[Tabella 6: Fonte - Requisito. Tracciamento requisiti funzionali]
 
