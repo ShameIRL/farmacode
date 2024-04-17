@@ -502,7 +502,7 @@ In questa sezione è possibile visionare tutte le scelte attuate durante la fase
 Nel diagramma sopra riportato è possibile esaminare in modo esaustivo la struttura di classi che costituisce la Business Logic del prodotto. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. Python offre una vasta gamma di strumenti per organizzare il codice in moduli e classi, promuovendo una suddivisione logica delle funzionalità del sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo sviluppato una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
 
 *Pattern:* \
-Strategy: pattern che permette di definire una famiglia di algoritmi interscambiabili.
+Strategy: design pattern comportamentale che consente di definire una famiglia di algoritmi, incapsularli e renderli intercambiabili. In pratica, si definiscono più algoritmi all'interno di classi separate, ciascuna delle quali rappresenta una strategia specifica. Questo pattern promuove la modularità, l'estensibilità e la manutenibilità del codice, in quanto consente di separare gli algoritmi dalle classi client e di modificare o aggiungere nuove strategie senza dover modificare il codice client.
 
 ==== Componenti:
 ===== Preprocessor
@@ -613,8 +613,6 @@ Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; 
 ===== Librerie esterne
 *Descrizione:* \
 Per l'implementazione dei due algoritmi di raccomandazioni presenti sono state utilizzate due librerie di python già citate all'interno del documento. Per quanto riguarda l'algoritmo SVD è stata utilizzata la libreria Surprise individuata fin da subito dal proponente. L'implementazione della rete neurale si è invece poggiata su una sotto libreria di PyTorch, una delle librerie più conosciute nell'ambito, denominanta widedeep.
-
-Riportiamo i link alla documentazione ufficiale:
 
 == Application Logic
 In questa sezione è possibile visionare tutte le scelte attuate durante la fase di progettazione e successivo sviluppo relative al codice che compone l'Application Logic del prodotto.
