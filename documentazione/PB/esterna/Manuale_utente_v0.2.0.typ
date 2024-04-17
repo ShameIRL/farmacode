@@ -95,11 +95,11 @@ Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano 
   inset: 10pt,
   align: center,
   [*Browser*], [*Versione*],
-  [Google Chrome],[123.0],
-  [Microsoft Edge],[110.0],
-  [Firefox],[124.0],
-  [Opera],[108.0],
-  [Safari],[17.4],
+  [#glossario("Google Chrome")],[123.0],
+  [#glossario("Microsoft Edge")],[110.0],
+  [#glossario("Firefox")],[124.0],
+  [#glossario("Opera")],[108.0],
+  [#glossario("Safari")],[17.4],
 )
 #align(center)[Tabella 3: Requisiti software]
 
