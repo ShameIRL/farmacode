@@ -8,8 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.4.0", "2024-04-12", p.bomben, "", "Integrazione e correzione UC",
-    "1.3.0", "2024-04-10", p.pandolfo, "", "Integrazione nuovi UC",
+    "1.4.0", "2024-04-12", p.bomben, p.rosson, "Integrazione e correzione UC",
+    "1.3.0", "2024-04-10", p.pandolfo, p.rosson, "Integrazione nuovi UC",
     "1.2.0", "2024-03-04", p.bomben, p.carraro, "Correzione e miglioramento requisiti",
     "1.1.0", "2024-03-03", p.bomben + "\n" + p.passarella + "\n" + p.rosson, p.carraro, "Correzione e miglioramento introduzione e UC",
     "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
@@ -88,7 +88,7 @@ Le funzionalità chiave del prodotto sono:\
 - Ricerca di raccomandazioni in ambe le direzioni;
 - Filtraggio e visulizzazione di prodotti e clienti in base a vari paramentri;
 - Creazione di feedback e valutazioni delle risposte del sistema di raccomandazione;
-- Visualizzazione di statistiche relative all'utilizzo del prodotto;
+- Possibilità di selezionare la startegia di raccomandazione tra due algoritmi differenti;
 - Visualizzazione di cronologie utili a figure amministrative.
 
 
@@ -110,7 +110,7 @@ Il sistema dispone di tre attori:
 - User;
 - Utente non autenticato.
 
-L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Admin", non ancora avente eseguito l'accesso tramite login al sistema.
+L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Admin", non ancora avente eseguito l'accesso tramite login al sistema.
 
 #pagebreak()
 == UC1 - Login
@@ -351,7 +351,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 === UC4.2 - Modifica dati utente
 #figure(
-  image("/imgs/Uml/UC4.2.png", width: 70%),
+  image("/imgs/Uml/UC4.2.png", width: 60%),
   caption: [
     Modifica dati utente
   ],
@@ -386,7 +386,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC4.2
 
 #figure(
-  image("/imgs/Uml/UC4.2app.png", width: 60%),
+  image("/imgs/Uml/UC4.2app.png", width: 50%),
   caption: [
     Approfondimento specificità UC4.2
   ],
@@ -510,7 +510,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 === UC6.1 - Ricerca per vista "Ricerca"
 #figure(
-  image("/imgs/Uml/UC6.1.png", width: 70%),
+  image("/imgs/Uml/UC6.1.png", width: 60%),
   caption: [
     Ricerca per vista "Ricerca"
   ],
@@ -797,7 +797,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 === UC6.2 - Filtri per vista "Ricerca"
 #figure(
-  image("/imgs/Uml/UC6.2.png", width: 80%),
+  image("/imgs/Uml/UC6.2.png", width: 60%),
   caption: [
     Filtri per vista "Ricerca"
   ],
@@ -914,7 +914,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 === Approfondimento specificità UC6.3
 #figure(
-  image("/imgs/Uml/UC6.3.1.png", width: 65%),
+  image("/imgs/Uml/UC6.3.1.png", width: 60%),
   caption: [
     Visualizzazione singolo risultato
   ],
@@ -938,7 +938,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 === Approfondimento specificità UC6.3.1
 #figure(
-  image("/imgs/Uml/UC6.3.1app.png", width: 70%),
+  image("/imgs/Uml/UC6.3.1app.png", width: 60%),
   caption: [
     Approfondimento specificità UC6.3.1
   ],
@@ -1088,7 +1088,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === UC8.1 - Filtri per vista "Catalogo Prodotti"
 
 #figure( 
-  image("/imgs/Uml/UC8.1.png", width: 70%),
+  image("/imgs/Uml/UC8.1.png", width: 60%),
   caption: [
     Filtri per vista "Catalogo Prodotti"
   ],
@@ -1316,7 +1316,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC8.2.1
 
 #figure(
-  image("/imgs/Uml/UC8.2.1app.png", width: 70%),
+  image("/imgs/Uml/UC8.2.1app.png", width: 60%),
   caption: [
     Approfondimento specificità UC8.2.1
   ],
@@ -1420,7 +1420,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 == UC9 - Visualizzazione "Dettagli prodotto"
 #figure(
-  image("/imgs/Uml/UC9.png", width: 80%),
+  image("/imgs/Uml/UC9.png", width: 60%),
   caption: [
     Visualizzazione "Dettagli prodotto"
   ],
@@ -1630,7 +1630,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 == UC10 - Visualizzazione vista "Lista Clienti"
 
 #figure(
-  image("/imgs/Uml/UC10.png", width: 80%),
+  image("/imgs/Uml/UC10.png", width: 60%),
   caption: [
     Visualizzazione vista "Lista Clienti"
   ],
@@ -1663,7 +1663,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === UC10.1 - Filtri per vista "Lista Clienti";
 
 #figure(
-  image("/imgs/Uml/UC10.1.png", width: 80%),
+  image("/imgs/Uml/UC10.1.png", width: 60%),
   caption: [
     Filtri per vista "Lista Clienti"
   ],
@@ -1693,7 +1693,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC10.1
 
 #figure(
-  image("/imgs/Uml/UC10.1app.png", width: 80%),
+  image("/imgs/Uml/UC10.1app.png", width: 60%),
   caption: [
     Approfondimento specificità UC10.1
   ],
@@ -1767,7 +1767,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === UC10.2 - Visualizzazione lista clienti
 
 #figure(
-  image("/imgs/Uml/UC10.2.png", width: 65%),
+  image("/imgs/Uml/UC10.2.png", width: 80%),
   caption: [
     Visualizzazione lista clienti
   ],
@@ -1878,7 +1878,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 == UC11 - Visualizzazione vista "Cronologia" 
 #figure(
-  image("/imgs/Uml/UC11.png", width: 80%),
+  image("/imgs/Uml/UC11.png", width: 60%),
   caption: [
     Visualizzazione vista "Cronologia"
   ],
@@ -1905,7 +1905,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 
 === UC11.1 - Filtri per vista "Cronologia"
 #figure(
-  image("/imgs/Uml/UC11.1.png", width: 80%),
+  image("/imgs/Uml/UC11.1.png", width: 60%),
   caption: [
     Ricerca per vista "Cronologia"
   ],
@@ -1930,7 +1930,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC11.1
 
 #figure(
-  image("/imgs/Uml/UC11.1app.png", width: 80%),
+  image("/imgs/Uml/UC11.1app.png", width: 70%),
   caption: [
     Approfondimento specificità UC11.1
   ],
@@ -2093,7 +2093,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC11.2.1
 
 #figure(
-  image("/imgs/Uml/UC11.2.1app.png", width: 70%),
+  image("/imgs/Uml/UC11.2.1app.png", width: 65%),
   caption: [
     Approfondimento specificità UC11.2.1
   ],
@@ -2173,7 +2173,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 == UC12 - Visualizzazione vista "Feedback" 
 #figure(
-  image("/imgs/Uml/UC12.png", width: 80%),
+  image("/imgs/Uml/UC12.png", width: 60%),
   caption: [
     Visualizzazione vista "Cronologia Feedback"
   ],
@@ -2201,7 +2201,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 === UC12.1 - Filtri per vista "Feedback"
 #figure(
-  image("/imgs/Uml/UC12.1.png", width: 80%),
+  image("/imgs/Uml/UC12.1.png", width: 60%),
   caption: [
     Filtri per vista "Cronologia Ricerche"
   ],
@@ -2228,7 +2228,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 === Approfondimento specificità UC.12.1
 
 #figure(
-  image("/imgs/Uml/UC12.1app.png", width: 80%),
+  image("/imgs/Uml/UC12.1app.png", width: 60%),
   caption: [
     Approfondimento specificità UC12.1 
   ],
@@ -2446,7 +2446,7 @@ L'"Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "Ad
 #pagebreak()
 == UC13 - Eliminazione Feedback
 #figure(
-  image("/imgs/Uml/UC13.png", width: 70%),
+  image("/imgs/Uml/UC13.png", width: 60%),
   caption: [
     Eliminazione Feedback
   ],
@@ -2701,19 +2701,6 @@ Il prodotto è utilizzabile tramite interfaccia web-based dedicata. Ciò implica
 // questa parte va definita meglio una volta che sapremo effettivamente come gestiamo l'hosting.
 
 === Requisiti di performance
-
-- Algoritmo di raccomandazione:
-
-  Per quanto riguarda l'algoritmo utilizzato per la predizione delle raccomandazioni e la sua gestione, in seguito ad un attenta analisi e discussione congiunta con il proponente, sono sorti i seguenti requisiti:
-  
-  + Le misurazioni di prestazioni del modello utilizzando i dati presenti nel test set e delle metriche precision e recall devono essere ritenibili dal proponente congrui e soddisfacenti;
-  + Come requisito opzionale: possibili misurazioni di performance in multithreading, se utilizzato come approccio.
-
-- Interfaccia utente:
-
-  Come già sopra citato, l'utente utilizzatore del servizio interagirà con l'applicativo attraverso il browser.
-  In questo ambiente i requisiti prestazionali possono essere
-  influenzati da diverse variabili esterne indipendenti dalla qualità del prodotto.
 // forse da definire meglio una volta che avremo l'hosting, possibili domande da fare a gianluca.
   Il sistema, in accordo con il proponente, si poggerà sulla rete dell'azienda che ne usufruirà, ciò comporta che molti valori prestazionali, come velocità di risposta e robustezza, dipenderanno principalmente dalla qualità di quest'ultima.\
   Nonostante questo abbiamo fissato dei Requisiti desiderabili testati sulle nostre macchine che soddisfassero le idee del proponente.
