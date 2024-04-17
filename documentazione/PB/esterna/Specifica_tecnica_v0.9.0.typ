@@ -8,11 +8,16 @@
     p.cardin,
   ),
   changelog: (
-    "0.5.0", "2024-04-14", p.passarella, p.baggio, "Stesura documentazione API",
-    "0.4.1", "2024-03-26", p.favaron, p.baggio, "Migliorie sezione Tecnologie",
-    "0.4.0", "2024-03-23", p.pandolfo, p.baggio, "Prima stesura architettura Back-end",
-    "0.3.0", "2024-03-22", p.bomben, p.baggio, "Architettura Front-end",
-    "0.2.0", "2024-03-20", p.bomben, p.favaron, "Stesura sezione Tecnologie",
+    "0.9.0", "2024-04-02", p.passarella, p.baggio, "Stesura documentazione API",
+    "0.8.0", "2024-04-01", p.carraro, p.favaron, "Seconda stesura sezione Front-end/Application Logic",
+    "0.7.2", "2024-03-24", p.rosson, p.pandolfo, "Correzioni sezione Persistence Logic e DB",
+    "0.7.1", "2024-03-20", p.rosson, p.pandolfo, "Aggiunta diagrammi classi",
+    "0.7.0", "2024-03-20", p.pandolfo, p.favaron, "Stesura sottosezione Componenti",
+    "0.5.0", "2024-03-16", p.rosson, p.favaron, "Seconda stesura sezione Architettura, e correzioni alla struttura del documento",
+    "0.4.1", "2024-03-12", p.favaron, p.baggio, "Migliorie sezione Tecnologie",
+    "0.4.0", "2024-03-06", p.pandolfo, p.baggio, "Prima stesura architettura Back-end",
+    "0.3.0", "2024-03-06", p.bomben, p.baggio, "Architettura Front-end",
+    "0.2.0", "2024-03-03", p.bomben, p.favaron, "Stesura sezione Tecnologie",
     "0.1.0", "2024-03-01", p.favaron, p.bomben, "Struttura iniziale del documento",
   ),
 )
@@ -499,10 +504,23 @@ In questa sezione è possibile visionare tutte le scelte attuate durante la fase
   caption: [Diagramma algoritmo (totale)]
 )
 *Descrizione:* \
-Nel diagramma sopra riportato è possibile esaminare nel totale la struttura di classi che costituisce la Business Logic del prodotto, ciascun pattern verrà analizzato in dettaglio di seguito. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. Python offre una vasta gamma di strumenti per organizzare il codice in moduli e classi, promuovendo una suddivisione logica delle funzionalità del sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo sviluppato una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
+Nel diagramma sopra riportato è possibile esaminare nel totale la struttura di classi che costituisce la Business Logic del prodotto, ciascuna "componente" verrà analizzata in dettaglio di seguito. Abbiamo deliberatamente optato per l'utilizzo di Python come linguaggio di programmazione orientato agli oggetti, implementando una struttura basata su classi. Questa scelta è stata guidata da diversi fattori che includono la volontà di garantire una maggiore modularità nel nostro sistema. L'approccio orientato agli oggetti favorisce la riusabilità del codice, consentendo la definizione di classi e metodi che possono essere riutilizzati in diverse parti del progetto. Inoltre, l'incapsulamento dei dati e dei comportamenti all'interno delle classi contribuisce a garantire l'integrità del sistema, limitando l'accesso diretto agli attributi e ai metodi. Questa progettazione modulare e organizzata facilita l'estensibilità del sistema, consentendo l'aggiunta di nuove funzionalità senza dover modificare il codice esistente. Il nostro obiettivo primario, sin dall'inizio del progetto, è stato e rimane quello di garantire flessibilità e manutenibilità nel tempo. Pertanto, anche se inizialmente non contemplato, abbiamo deciso di sviluppare una struttura in grado di accogliere e gestire più strategie e algoritmi di raccomandazione. È evidente una suddivisione in quattro principali "componenti", studiata appositamente per assicurare una chiara separazione delle diverse responsabilità e funzionalità del sistema.
 
 *Pattern:* \
-Strategy: design pattern comportamentale che consente di definire una famiglia di algoritmi, incapsularli e renderli intercambiabili. In pratica, si definiscono più algoritmi all'interno di classi separate, ciascuna delle quali rappresenta una strategia specifica. Questo pattern promuove la modularità, l'estensibilità e la manutenibilità del codice, in quanto consente di separare gli algoritmi dalle classi client e di modificare o aggiungere nuove strategie senza dover modificare il codice client.
+
+- *Dependency Injection*: design pattern utilizzato principalmente nella programmazione orientata agli oggetti per gestire le dipendenze tra gli oggetti. In breve, la dependency injection prevede che gli oggetti esterni siano responsabili di fornire le dipendenze di un oggetto anziché sia l'oggetto stesso a crearle internamente.\
+  - Constructor Injection: \
+    In questa prima casistica le dipendenze vengono dichiarate come parametri direttamente nel costruttore. Il vantaggio principale è quello di poter necessariamente creare oggetti in modo immediato, rendendoli contemporaneamente immutabili;
+  - Setter Injection: \
+    Questo approccio prevede invece la dichiarazione delle dipendenze come metodi setter. Ciò si sposa meglio con la presenza di gerarchie tra classi, permettendo una maggiore flessibilità durante l'escuzione ed una generale riduzione dell'accoppiamento.
+
+Applicazione ed uso:\
+Nel contesto del nostro progetto, la seconda derivazione di questo pattern, ci ha permesso di garantire una maggiore flessibilità tra le parti ed è principalmente per questo che è stato favorito alla sua controparte nonostante i suoi difetti. Siamo consapevoli che questo approccio possa rendere gli oggetti più soggetti a stati inconsistenti se non vengono correttamente inizializzati tramite i setter. Abbiamo quindi riposto attenzione su quest'ultimo aspetto.
+
+- *Strategy*: design pattern comportamentale che consente di definire una famiglia di algoritmi, incapsularli e renderli intercambiabili. In pratica, si definiscono più algoritmi all'interno di classi separate, ciascuna delle quali rappresenta una strategia specifica. Questo pattern promuove la modularità, l'estensibilità e la manutenibilità del codice, in quanto consente di separare gli algoritmi dalle classi client e di modificare o aggiungere nuove strategie senza dover modificare il codice di queste ultime. \
+
+Applicazione ed uso:\
+Le caratteristiche principali di questo pattern l'hanno reso il candidato ideale per applicabilità all'interno del nostro progetto. L'utilizzo di questo pattern, ed in generale l'uso dell'ereditarietà tra classi, ci hanno permesso di rendere il codice più flessibile ed estensibile, prerogative che fin da subito abbiamo fissato come fondamentali all'interno del nostro progetto.
 
 ==== Componenti:
 ===== Preprocessor
