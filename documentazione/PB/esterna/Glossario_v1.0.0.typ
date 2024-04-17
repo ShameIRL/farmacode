@@ -7,6 +7,7 @@
   ),
   heading_numbers: none,
   changelog: (
+    "1.3.1", "2024-03-14", p.carraro, "", "Aggiunti pagebreak",
     "1.3.0", "2024-03-13", p.favaron, "", "Stesura nuove definizioni",
     "1.2.0", "2024-03-09", p.rosson, "", "Stesura nuove definizioni",
     "1.1.0", "2024-02-28", p.favaron, "", "Stesura nuove definizioni",
@@ -17,7 +18,7 @@
     "0.5.0", "2024-01-14", p.baggio, p.rosson, "Stesura nuove definizioni",
     "0.4.0", "2024-01-02", p.favaron, p.rosson, "Stesura nuova definizioni",
     "0.3.0", "2023-12-12", p.bomben, p.baggio, "Stesura nuove definizioni",
-    "0.2.0", "2023-12-06", p.bomben, p.passarella, "Stesura 4.2, 4.3, 10.1",
+    "0.2.0", "2023-12-06", p.bomben, p.passarella, "Stesura nuove definizioni",
     "0.1.1", "2023-11-02", p.rosson, p.carraro, "Corretto registro delle modifiche",
     "0.1.0", "2023-11-02", p.bomben, p.carraro, "Struttura file",
   ),
@@ -61,6 +62,7 @@ Axios è una libreria JavaScript open-source utilizzata per effettuare richieste
 #text(size: 13pt)[* Best practices*]\
 Le "best practices" nello sviluppo software sono metodologie che, attraverso l'esperienza e la sperimentazione, sono stati identificati come modi efficaci e raccomandati di affrontare determinati problemi o compiti nel processo di sviluppo del software. Queste pratiche sono considerate migliori (best) perché hanno dimostrato di portare a risultati di alta qualità, facilitando la manutenzione del codice e promuovendo una migliore collaborazione nel team di sviluppo.
 
+#pagebreak()
 
 = C
 
@@ -86,6 +88,7 @@ La Continuous Integration (CI) è una pratica di sviluppo del software che mira 
 Il cruscotto, talvolta chiamato anche dashboard, è uno strumento che fornisce una panoramica sintetica ed immediata riguardanti lo stato delle attività di progetto. Evolve in modo dinamico all'avanzare del progetto e permette a chi lo consulta di avere una visione chiara e intuitiva permettendo di prendere decisioni in modo tempestivo.  
 
 #pagebreak()
+
 = D
 
 #text(size: 13pt)[* Diagrams.net*]\
@@ -103,6 +106,8 @@ La progettazione è una fase del ciclo di vita del software (che precede la codi
 #text(size: 13pt)[* Docker*]\
 Docker è un software progettato per eseguire processi informatici in ambienti isolabili, minimali e facilmente distribuibili chiamati container, con l'obiettivo di semplificare i processi di deployment di applicazioni software.
 
+#pagebreak()
+
 = E
 
 #text(size: 13pt)[* E-commerce*]\
@@ -112,7 +117,10 @@ Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio 
 Express è un framework web leggero e flessibile per Node.js, progettato per semplificare lo sviluppo di applicazioni web e API. Con un'architettura semplice e intuitiva, Express offre un potente set di funzionalità per gestire il routing, le richieste HTTP e le risposte, consentendo agli sviluppatori di creare rapidamente servizi web robusti e scalabili. Grazie alla sua modularità, Express consente anche l'integrazione di middleware di terze parti per estendere le funzionalità base e adattare l'applicazione alle specifiche esigenze del progetto.
 
 #pagebreak()
+
 = F
+
+#pagebreak()
 
 = G
 
@@ -131,7 +139,11 @@ Google Drive è un servizio di cloud e di sincronizzazione. Esso permette dunque
 #text(size: 13pt)[* Google Meet*]\
 Google Meet è un'applicazione di teleconferenza. Per uso desktop, è un prodotto software di tipo SaaS cioè un servizio usufruibile mediante browser, senza richiedere client installati, richiede tuttavia un account Google per avviare le chiamate.
 
+#pagebreak()
+
 = H
+
+#pagebreak()
 
 = I
 
@@ -141,17 +153,25 @@ L'intelligenza artificiale è una disciplina che studia come realizzare sistemi 
 #text(size: 13pt)[* Issues Tracking System*]\
 Un Issues Tracking System è uno strumento progettato per gestire e monitorare le problematiche riscontrate durante lo sviluppo del progetto, non solo in ambito software. Il sistema fornisce un modo sistematico per segnalare, monitorare e risolvere i problemi rilevati durante il ciclo di vita del prodotto.
 
+#pagebreak()
+
 = J
 
 #text(size: 13pt)[* Jest*]\
 Jest è un framework di testing JavaScript open-source, sviluppato da Facebook, che si concentra principalmente sul testing delle applicazioni React. Con Jest, gli sviluppatori possono scrivere test unitari, test di integrazione e test di snapshot in modo semplice e intuitivo. Offre un'ampia gamma di funzionalità, tra cui la possibilità di eseguire test in parallelo, la creazione di mock e spy per simulare il comportamento di componenti e moduli, e la generazione automatica di report dettagliati sui test eseguiti. Grazie alla sua facilità d'uso e alle sue prestazioni elevate, Jest è diventato uno degli strumenti preferiti per il testing nel mondo di sviluppo di applicazioni JavaScript e React.
+
+#pagebreak()
 
 = K
 
 #text(size: 13pt)[* Keynote*]\
 Un software di presentazione sviluppato da Apple, progettato per consentire agli utenti di creare presentazioni di alta qualità con facilità, utilizzando una varietà di strumenti per la progettazione e la personalizzazione.
 
+#pagebreak()
+
 = L
+
+#pagebreak()
 
 = M
 
@@ -168,6 +188,7 @@ punto di vista tecnico che documentale.
 #text(size: 13pt)[* Mock*]\
 Il termine Mock si riferisce a un oggetto simulato che replica il comportamento di un oggetto reale in modo controllato e predefinito durante i test. Questi oggetti sono utilizzati principalmente nel contesto del testing unitario per sostituire componenti dipendenti non ancora disponibili o non facilmente replicabili nell’ambiente di test.
 
+#pagebreak()
 
 = N
 
@@ -178,10 +199,13 @@ Insieme di linee guida, procedure e regole stabilite per regolare e standardizza
 Libreria open-source per il linguaggio di programmazione Python, che aggiunge supporto per array e matrici multidimensionali, insieme a una vasta collezione di funzioni matematiche di alto livello per operare su questi array.
 
 #pagebreak()
+
 = O
 
 #text(size: 13pt)[* Overleaf*]\
 Overleaf è una piattaforma online collaborativa per la scrittura, l'editing e la pubblicazione di documenti scientifici basati su LaTeX. Con Overleaf, gli autori possono scrivere documenti in LaTeX direttamente nel browser, collaborare con altri autori in tempo reale e accedere a una vasta gamma di modelli, stili e pacchetti LaTeX predefiniti. La piattaforma offre funzionalità avanzate come il controllo ortografico integrato, la compilazione automatica dei documenti e la possibilità di esportare il lavoro in diversi formati, inclusi PDF e file di testo. Grazie alla sua facilità d'uso e alla sua natura basata sul cloud, Overleaf è diventato uno strumento popolare tra gli accademici, i ricercatori e gli studenti per la creazione di documenti accademici di alta qualità in modo collaborativo e efficiente.
+
+#pagebreak()
 
 = P
 
@@ -216,6 +240,7 @@ Un insieme strutturato di attività necessarie per lo sviluppo di un sistema sof
 Pytest è un framework di testing per Python che offre un approccio semplice e potente per scrivere test efficaci. Grazie alla sua sintassi intuitiva e alla flessibilità, Pytest consente agli sviluppatori di creare test unitari, test di integrazione e test di regressione in modo rapido e efficiente. Supporta la creazione di test parametrizzati, l'utilizzo di fixture per la gestione di dati di test e l'integrazione con altri strumenti di testing e di sviluppo. Pytest si distingue per la sua facilità d'uso e la sua estensibilità, rendendolo una scelta popolare per il testing nel mondo Python.
 
 #pagebreak()
+
 = Q
 
 #text(size: 13pt)[* Qualità*]\
@@ -225,12 +250,14 @@ soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodott
 - Relativa: soddisfazione del cliente;
 - Quantitativa: misurazione oggettiva, per confronto.
 
+#pagebreak()
 
 = R
 
 #text(size: 13pt)[* React*]\
 Libreria JavaScript open-source utilizzata principalmente per la creazione di interfacce utente (UI) interattive e dinamiche per applicazioni web e mobile. È nota per la sua architettura dichiarativa e basata su componenti, che consente agli sviluppatori di costruire UI complesse dividendo l'interfaccia in componenti riutilizzabili.
 
+#pagebreak()
 
 = S
 
@@ -250,12 +277,13 @@ crea delle raccomandazioni personalizzate specifiche per l’utente così da aiu
 #text(size: 13pt)[* Stakeholder*]\
 Letteralmente "portatore di interesse", rappresenta l'insieme di coloro i quali hanno influenza sul prodotto, sul progetto e sui processi, come ad esempio committente e fornitore.
 
-#pagebreak()
 #text(size: 13pt)[* Surprise*]\
 Una libreria Python specificamente progettata per la costruzione e l'analisi di sistemi di raccomandazione. Si concentra principalmente sulle raccomandazioni basate su valutazioni esplicite, come voti o valutazioni numeriche date dagli utenti a determinati elementi.
 
 #text(size: 13pt)[* SVD (Singular Value Decomposition)*]\
 Una tecnica matematica che scompone una matrice in tre parti: due matrici ortogonali e una matrice diagonale contenente i valori singolari. È ampiamente utilizzata nel machine learning e nei sistemi di raccomandazione per ridurre la dimensionalità dei dati, identificare pattern nascosti e generare raccomandazioni personalizzate.
+
+#pagebreak()
 
 = T
 
@@ -268,10 +296,14 @@ Il Test Driven Development (TDD) è un modello per lo sviluppo software che prev
 #text(size: 13pt)[* Typst*]\
 Typst è un sistema di composizione tipografica basato su markup. È progettato per essere un'alternativa sia agli strumenti avanzati come LaTeX sia agli strumenti più semplici come Word e Google Docs.
 
+#pagebreak()
+
 = U
 
 #text(size: 13pt)[* UML*]\
 UML, acronimo di Unified Modeling Language, è un linguaggio standard utilizzato per la modellazione visuale e la progettazione di sistemi software. Fornisce un insieme di notazioni grafiche e convenzioni che consentono agli sviluppatori di rappresentare concetti, strutture e comportamenti dei sistemi in modo chiaro e comprensibile. Con UML, è possibile creare una vasta gamma di diagrammi, tra cui diagrammi dei casi d'uso, diagrammi delle classi, diagrammi di sequenza e molti altri, che aiutano a visualizzare e comunicare efficacemente le specifiche dei progetti software. UML è ampiamente utilizzato nell'ambito dello sviluppo software per migliorare la comprensione dei requisiti, facilitare la collaborazione tra team e guidare il processo di progettazione e sviluppo dei sistemi software.
+
+#pagebreak()
 
 = V
 
@@ -279,6 +311,7 @@ UML, acronimo di Unified Modeling Language, è un linguaggio standard utilizzato
 Documento che riporta in modo dettagliato gli argomenti discussi e le decisioni prese. Questo documento è essenziale per registrare e documentare le attività svolte durante la riunione, consentendo ai partecipanti di avere un riferimento chiaro e completo delle discussioni e delle decisioni prese.
 
 #pagebreak()
+
 = W
 
 #text(size: 13pt)[* Way of working*]\
@@ -290,10 +323,15 @@ Una web application (web app) è un'applicazione software progettata per essere 
 #text(size: 13pt)[* Workshop*]\
 Un workshop interno costituisce un evento appositamente organizzato per agevolare la condivisione e il trasferimento di conoscenze e competenze tra i membri del gruppo. Durante questa sessione, i partecipanti più esperti svolgono il ruolo di formatori, condividendo le proprie competenze, esperienze e conoscenze con coloro che necessitano acquisirle.
 
+#pagebreak()
+
 = X
+
+#pagebreak()
 
 = Y
 
+#pagebreak()
 = Z
 
 #text(size: 13pt)[* Zoom*]\
