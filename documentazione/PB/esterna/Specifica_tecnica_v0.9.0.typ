@@ -45,7 +45,7 @@ L'utente amministratore avrà poi la possibilità di usufruire di altre funional
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
-La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento.
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento v2.0.0.
 
 == Maturità e miglioramenti
 Questo documento è stato realizzato utilizzando un approccio incrementale, con lo scopo di semplificare i cambiamenti nel tempo in base alle  reciproche esigenze decise da entrambi le parti, ovvero membri del gruppo di progetto e azienda proponente. Pertanto non può essere considerato esaustivo e completo, ma in costante miglioramento.
@@ -55,24 +55,25 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.2.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf; 
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (12/12/2023); 
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (12/12/2023).
+  
 === Riferimenti informativi
     //da mettere riferimenti relativi alle slide di cardin e qualcosa trovato sul web
 
 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf;
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (10/03/2024);
 - Progettazione: I pattern architetturali (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf;
+  https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf (22/03/2024);
 - Verifica e validazione: analisi statica (T10) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf (02/03/2024);
 - Verifica e validazione: analisi dinamica aka testing (T11) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (02/03/2024);
 - Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
-  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf;
+  https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf (10/03/2024);
 - Documentazione Docker\
-  https://docs.docker.com/.
+  https://docs.docker.com/ (27/02/2024).
 
 #pagebreak()
 = Tecnologie
