@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.5.0", "2024-04-15", p.bomben, p.favaron, "Correzione UC",
     "1.4.0", "2024-04-12", p.bomben, p.rosson, "Integrazione e correzione UC",
     "1.3.0", "2024-04-10", p.pandolfo, p.rosson, "Integrazione nuovi UC",
     "1.2.0", "2024-03-04", p.bomben, p.carraro, "Correzione e miglioramento requisiti",
@@ -1907,7 +1908,7 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
 #figure(
   image("/imgs/Uml/UC11.1.png", width: 60%),
   caption: [
-    Ricerca per vista "Cronologia"
+    Filtro per vista "Cronologia"
   ],
 )
 *Attori:*
@@ -2175,7 +2176,7 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
 #figure(
   image("/imgs/Uml/UC12.png", width: 60%),
   caption: [
-    Visualizzazione vista "Cronologia Feedback"
+    Visualizzazione vista "Feedback"
   ],
 )
 *Attori:*
@@ -2574,7 +2575,7 @@ riportate indicano:
   [ROF 21], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'ID, il nome e lo score assegnato alla raccomandazione.], [UC6.3.1,\ UC6.3.1.1,\ UC6.3.1.2,\ UC6.3.1.3],
   [RDF 22], [L'utente può decidere se avviare un training del modello tramite il pulsante Training nella barra di ricerca], [UC6.4],
   [RDF 23], [Nel caso un'utente cercasse di eseguire una ricerca con l'algortimo in training, deve visualizzare un messaggio di avviso.], [UC15],
-  [RDF 24], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 23, RDF 29, RDF 37, RDF 41.], [UC14],
+  [RDF 24], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 29, RDF 35, RDF 39, RDF 43.], [UC14],
   [ROF 25], [L'utente che ha visualizzato i risultati della ricerca, deve poter inserire un feedback delle raccomandazioni mostrate.], [UC7],
   [RDF 26], [L'utente, una volta autenticato, deve poter accedere alla funzione "Catalogo Prodotti" nella pagina principale del sito.], [UC8],
   [RDF 27], [L'utente una volta entrato nella sezione "Catalogo Prodotti", deve poter effettuare un filtraggio e visualizzarne i risultati.], [UC8.1,\ UC8.2],
@@ -2727,7 +2728,7 @@ Abbiamo deciso comunque di implementare qualche accorgimento per la sicurezza de
   inset: 10pt,
   align: center,
   [*Codice*], [*Descrizione*], [*Fonti*],
-  [RSD 1], [Le password degli utenti devono essere criptati tramite hash SHA-256 per mantenere i dati in sicurezza nel database.], [Verbale esterno],
+  [RSD 1], [Le password degli utenti devono essere criptati tramite funzione di hash per mantenere i dati in sicurezza nel database.], [Verbale esterno],
 )
 #align(center)[Tabella 5: Requisi di sicurezza]
 
@@ -2834,6 +2835,23 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 )
 #align(center)[Tabella 8: Fonte - Requisito. Tracciamento requisiti di vincolo]
 
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*di Performance*],[],
+  [Verbale Esterno],[RPD 1],
+  [Verbale Esterno],[RPD 2],          
+)
+#align(center)[Tabella 9: Fonte - Requisito. Tracciamento requisiti di performance]
+
+#table(
+  columns: (1fr, 1fr),
+    fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  [*di Sicurezza*],[],
+  [Verbale Esterno],[RSD 1],   
+)
+#align(center)[Tabella 10: Fonte - Requisito. Tracciamento requisiti di sicurezza]
+
 #pagebreak()
 == Riepilogo
 
@@ -2853,7 +2871,7 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Totale*],[*72*],
 )
-#align(center)[Tabella 9: Riepilogo requisiti]
+#align(center)[Tabella 11: Riepilogo requisiti]
 #pagebreak()
 
 
@@ -2894,12 +2912,12 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 - Figura 33: Visualizzazione dettagli singolo “cliente”;
 - Figura 34: Approfondimento specificità 10.2.1;
 - Figura 35: Visualizzazione vista “Cronologia”;
-- Figura 36: Ricerca per vista “Cronologia”;
+- Figura 36: Filtro per vista "Cronologia";
 - Figura 37: Approfondimento specificità UC11.1;
 - Figura 38: Visualizzazione lista ricerche;
 - Figura 39: Visualizzazione dettagli singola “Ricerca”;
 - Figura 40: Approfondimento specificità UC11.2.1;
-- Figura 41: Visualizzazione vista “Cronologia Feedback”;
+- Figura 41: Visualizzazione vista "Feedback";
 - Figura 42: Filtri per vista “Cronologia Ricerche”;
 - Figura 43: Approfondimento specificità UC12.1;
 - Figura 44: Visualizzazione lista feedback;
@@ -2917,4 +2935,6 @@ Il tracciamento consente di mantenere una connessione tra i requisiti e le diver
 - Tabella 6: Fonte - Requisito. Tracciamento requisiti funzionali;
 - Tabella 7: Fonte - Requisito. Tracciamento requisiti di qualità;
 - Tabella 8: Fonte - Requisito. Tracciamento requisiti di vincolo;
-- Tabella 9: Riepilogo requisiti.
+- Tabella 9: Fonte - Requisito. Tracciamento requisiti di performance;
+- Tabella 10: Fonte - Requisito. Tracciamento requisiti di sicurezza;
+- Tabella 11: Riepilogo requisiti.
