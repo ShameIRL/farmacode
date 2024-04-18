@@ -6,6 +6,7 @@
     
   ),
   changelog: (
+                 "2.0.0", "2024-04-18", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
     "1.0.0", "2024-03-26", p.pandolfo , p.rosson, "Stesura del verbale",
   ),
 )
@@ -39,13 +40,6 @@ L'incontro si è focalizzato sulla presentazione di quanto svolto finora dal gru
 - Continuare a integrare nuovi test.
 
 #v(1.9cm)
-Con la seguente firma il proponente esterno conferma e valida il documento:
-
-#v(0.9cm)
-
-#line(
-  length: 6cm,
-  stroke: 0.5pt,
+#align(left,
+  image("/imgs/firme/18-04-2024.png", width: 75%, height: 12%),
 )
-#v(0.3cm)
-Data: 
