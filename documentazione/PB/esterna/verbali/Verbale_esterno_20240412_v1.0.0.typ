@@ -42,8 +42,8 @@ Il proponente è rimasto soddisfatto del lavoro svolto dal gruppo.
 - Piccoli fix al codice;
 - Continuare a integrare nuovi test.
 
-#v(5.9cm)
-Con la seguente firma il proponente esterno conferma e valida il documento:
+#v(4.9cm)
+Con la seguente firma il proponente esterno conferma e valida il documento e conferma di avere preso visione del lavoro svolto dal gruppo:
 
 #v(0.9cm)
 
