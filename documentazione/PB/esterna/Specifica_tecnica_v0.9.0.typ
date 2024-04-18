@@ -62,7 +62,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti informativi
     //da mettere riferimenti relativi alle slide di cardin e qualcosa trovato sul web
 
-- I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
+- I diagrammi dei casi d’uso (#glossario("UML")) (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (data di ultimo accesso: 2024/03/10);
 - Progettazione: I pattern architetturali (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf (2024/03/22);
@@ -72,7 +72,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (data di ultimo accesso: 2024/03/02);
 - Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
   https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf (data di ultimo accesso: 2024/03/10);
-- Documentazione Docker\
+- Documentazione #glossario("Docker")\
   https://docs.docker.com/ (data di ultimo accesso: 2024/02/27).
 
 #pagebreak()
@@ -112,15 +112,15 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Versione*], [*Descrizione*],
   /*table.cell(colspan: 3, [*Librerie e framework*]),*/
-  [Pandas],[2.1.1],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],
-  [Surprise],[1.1.3],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],
-  [React.js],[18.2.0],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],
+  [#glossario("Pandas")],[2.1.1],[Libreria per Python utilizzata per la manipolazione e l'analisi dei dati],
+  [#glossario("Surprise")],[1.1.3],[Libreria per Python utilizzata per semplificare lo sviluppo di sistemi di raccomandazione e valutare le prestazioni di algoritmi di filtraggio collaborativo],
+  [#glossario("React.js")],[18.2.0],[Libreria JavaScript utilizzata per semplificare lo sviluppo front-end, consentendo una gestione modulare delle componenti grafiche.],
   [#glossario("PrimeReact")],[10.5.1],[Suite per l'User Interface per React.js che utilizza componenti già definiti e ben strutturati.],
   [#glossario("Express")],[4.18.2],[Libreria di JavaScript utilizzata per lo sviluppo back-end del sito, in particolare per la comunicazione tra la il front-end e il database.],
   [#glossario("Flask")],[3.0.3],[Framework per lo sviluppo di applicazioni web in Python che fornisce strumenti per la gestione delle richieste HTTP. Utilizzata per la comunicazione tra il front-end e il sistema di raccomandazione.],
-  [NumPy],[1.26.0],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],
-  [PyTorch],[2.2.2],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],
-  [Tailwind CSS],[3.4.1],[Framework per css utilizzato per lo sviluppo di interfacce utente.],
+  [#glossario("NumPy")],[1.26.0],[Libreria per Python utilizzata per  la manipolazione di array e matrici multidimensionali.],
+  [#glossario("PyTorch")],[2.2.2],[Framework per l'apprendimento automatico basato su Python che offre tensori potenti, grafi computazionali dinamici e autograd.],
+  [#glossario("Tailwind CSS")],[3.4.1],[Framework per css utilizzato per lo sviluppo di interfacce utente.],
   [#glossario("Axios")],[1.6.8],[Libreria JavaScript utilizzata per effettuare richieste HTTP sia lato client che lato server.], 
 )
   #align(center)[Tabella 2: Librerie e framework]
@@ -140,7 +140,7 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   [VS Code],[Latest],[IDE di programmazione gratuito ricco estensioni esterne.],
   [Docker],[Latest],[Creatore di ambienti di sviluppo tramite container per la gestione delle dipendenze.],
   [Git],[Latest],[Sistema di controllo e versionamento utilizzato per la gestione del codice.],
-  [Anaconda],[Latest],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],
+  [#glossario("Anaconda")],[Latest],[Gestore e distributore per Python dei pacchetti per la gestione delle versioni.],
 
 )
 #align(center)[Tabella 3: Strumenti e servizi]
@@ -157,8 +157,8 @@ La scelta di determinate tecnologie è il risultato di ricerche nelle quali abbi
   align: center,
   [*Tecnologia*], [*Versione*], [*Descrizione*],
   /*table.cell(colspan: 3, [*Analisi statica*]),*/
-  [Ruff],[0.3.3], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], 
-  [ESLint],[8.57.0],[Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], 
+  [#glossario("Ruff")],[0.3.3], [Strumento per l'analisi statica del codice Python, individua errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente.], 
+  [#glossario("ESLint")],[8.57.0],[Strumento utilizzato per l'analisi statica del codice JavaScript e TypeScript, che aiuta a individuare gli errori di codice e le pratiche non ottimali.], 
 
 )
 #align(center)[Tabella 4: Analisi statica]

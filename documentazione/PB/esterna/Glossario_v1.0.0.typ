@@ -7,7 +7,7 @@
   ),
   heading_numbers: none,
   changelog: (
-    "1.4.0", "2024-03-20", p.bomben, p.favaron, "Aggiunti pagebreak",
+    "1.4.0", "2024-03-20", p.bomben, p.favaron, "Stesura nuove definizioni",
     "1.3.1", "2024-03-14", p.carraro, p.bomben, "Aggiunti pagebreak",
     "1.3.0", "2024-03-13", p.favaron, p.bomben, "Stesura nuove definizioni",
     "1.2.0", "2024-03-09", p.rosson, p.bomben, "Stesura nuove definizioni",
@@ -40,6 +40,9 @@ Un algoritmo è una sequenza finita di operazioni (dette anche istruzioni) che c
 
 #text(size: 13pt)[* Algoritmo di Apprendimento Automatico*]\
 Questo tipo di algoritmo è specializzato nell'effettuare predizioni o nel riconoscere pattern partendo da una serie di dati iniziali, nell'algoritmo non viene specificata nessuna azione per effettuare ciò, tuttavia viene fornito ad esso un grande quantitativo di dati che permette facilmente di scoprire pattern, correlazioni ed altri dettagli.
+
+#text(size: 13pt)[*Anaconda*]\
+Anaconda è una distribuzione open-source e gratuita di Python e R utilizzata per il data science, l'analisi dei dati e la computazione scientifica. Include un gestore di pacchetti e un ambiente di sviluppo integrato (IDE) chiamato Anaconda Navigator, che facilita l'installazione e la gestione di pacchetti e librerie Python e R. Anaconda offre anche un'ampia selezione di pacchetti pre-installati per il data science, tra cui NumPy, pandas, scikit-learn e matplotlib. Grazie alla sua facilità d'uso e alla sua vasta comunità di utenti e sviluppatori, Anaconda è diventato uno strumento popolare tra gli scienziati dei dati e gli sviluppatori che lavorano con Python e R per l'analisi e la manipolazione dei dati.
 
 #text(size: 13pt)[*Analisi dei Requisiti*]\
 Processo di raccolta, analisi e definizione delle necessità e delle aspettative degli utenti finali, degli stakeholder e del sistema nel suo complesso. Questo processo si concentra sulla comprensione approfondita delle funzionalità, delle prestazioni e dei vincoli del sistema software da sviluppare. L'obiettivo principale dell'analisi dei requisiti è identificare e documentare in modo accurato e completo ciò che il software deve fare per soddisfare le esigenze degli utenti e raggiungere gli obiettivi del progetto.
@@ -113,6 +116,9 @@ Docker è un software progettato per eseguire processi informatici in ambienti i
 
 #text(size: 13pt)[* E-commerce*]\
 Questa espressione deriva dall'inglese "Electronic Commerce", ovvero "Commercio Elettronico", si riferisce dunque alle attività di commercio che vengono svolte attraverso modalità elettroniche, prevalentemente attraverso l'utilizzo di internet e software. Oltre che esclusivamente alle attività di commercio esso si può riferire anche in senso lato ad attività di comunicazione e di gestione delle attività che avvengono attraverso modalità elettroniche.
+
+#text(size: 13pt)[* ESLint*]\
+ESLint è uno strumento open-source per l'analisi statica del codice JavaScript, utilizzato per individuare errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente. Grazie alla sua flessibilità e configurabilità, ESLint consente agli sviluppatori di definire regole personalizzate per l'analisi del proprio codice, adattandolo alle specifiche esigenze del progetto. Con una vasta gamma di regole predefinite e la possibilità di estenderne le funzionalità tramite plugin, ESLint è uno strumento potente per migliorare la qualità e la manutenibilità del codice JavaScript, aiutando gli sviluppatori a individuare e risolvere problemi durante il processo di sviluppo del software.
 
 #text(size: 13pt)[* Express*]\
 Express è un framework web leggero e flessibile per Node.js, progettato per semplificare lo sviluppo di applicazioni web e API. Con un'architettura semplice e intuitiva, Express offre un potente set di funzionalità per gestire il routing, le richieste HTTP e le risposte, consentendo agli sviluppatori di creare rapidamente servizi web robusti e scalabili. Grazie alla sua modularità, Express consente anche l'integrazione di middleware di terze parti per estendere le funzionalità base e adattare l'applicazione alle specifiche esigenze del progetto.
@@ -208,7 +214,7 @@ Il termine Mock si riferisce a un oggetto simulato che replica il comportamento 
 #text(size: 13pt)[* Norme di Progetto*]\
 Insieme di linee guida, procedure e regole stabilite per regolare e standardizzare l'approccio, il processo e l'output del lavoro all'interno del progetto. Queste norme possono riguardare diversi aspetti del progetto, come la gestione del codice, la documentazione, la comunicazione e la gestione dei rischi. L'obiettivo delle norme di progetto è promuovere la coerenza, la qualità e l'efficienza nel processo di sviluppo del software, consentendo al team di lavorare in modo più efficace e collaborativo.
 
-#text(size: 13pt)[* Numpy*]\
+#text(size: 13pt)[* NumPy*]\
 Libreria open-source per il linguaggio di programmazione Python, che aggiunge supporto per array e matrici multidimensionali, insieme a una vasta collezione di funzioni matematiche di alto livello per operare su questi array.
 
 #pagebreak()
@@ -225,11 +231,12 @@ Opera è un browser web sviluppato da Opera Software, noto per la sua velocità,
 
 = P
 
+#text(size: 13pt)[* Pair programming*]\
+Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
+
 #text(size: 13pt)[* Pandas *]\
 Libreria open-source per il linguaggio di programmazione Python che offre strutture dati e strumenti per la manipolazione e l'analisi di dati in forma di tabelle, chiamate DataFrame. È una delle librerie più utilizzate per l'elaborazione dei dati in Python.
 
-#text(size: 13pt)[* Pair programming*]\
-Il pair programming è una metodologia di sviluppo del software nella quale due programmatori lavorano insieme sulla stessa postazione di lavoro. Questa modalità di lavoro prevede quindi un figura addetta alla scrittura del codice (Driver) e una figura adibita a fornire feedback in tempo reale (Observer).
 
 #text(size: 13pt)[* Parser*]\
 Programma che analizza un file, verificandone la correttezza sintattica rispetto a una data grammatica, viene utilizzato in ambiti come il parsing del linguaggio naturale, l'analisi del codice sorgente e la manipolazione di dati strutturati.
@@ -243,17 +250,20 @@ Documento che stabilisce gli obiettivi, le strategie e le procedure per garantir
 #text(size: 13pt)[* PrimeReact*]\
 Prime React è una libreria open-source di componenti UI per React, progettata per semplificare lo sviluppo di interfacce utente responsive e moderne. Offre una vasta gamma di componenti predefiniti, come pulsanti, form, tabelle e molto altro ancora, facilitando la creazione di applicazioni web eleganti e funzionali. Essendo basata su React, Prime React si integra facilmente con il resto dell'ecosistema React e offre un'elevata personalizzazione attraverso l'uso di proprietà e stili personalizzati.
 
+#text(size: 13pt)[* Processo*]\
+Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
+
 #text(size: 13pt)[* Product Baseline*]\
 Il Product Baseline è un insieme di documenti, specifiche ed elementi che definiscono lo stato del prodotto in un determinato momento del suo ciclo di vita. Viene integrato durante la gesitone e configurazione del progetto.
 
 #text(size: 13pt)[* Proof of Concept*]\
 Una versione preliminare di un'applicazione o di una soluzione software che viene sviluppata per dimostrare la fattibilità tecnica di un'idea o di un concetto, viene utilizzata per testare rapidamente l'efficacia di un approccio, identificare eventuali limitazioni delle tecnologie scelte e valutare se l'idea può essere realizzata in modo pratico.
 
-#text(size: 13pt)[* Processo*]\
-Un insieme strutturato di attività necessarie per lo sviluppo di un sistema software.
-
 #text(size: 13pt)[* Pytest*]\
 Pytest è un framework di testing per Python che offre un approccio semplice e potente per scrivere test efficaci. Grazie alla sua sintassi intuitiva e alla flessibilità, Pytest consente agli sviluppatori di creare test unitari, test di integrazione e test di regressione in modo rapido e efficiente. Supporta la creazione di test parametrizzati, l'utilizzo di fixture per la gestione di dati di test e l'integrazione con altri strumenti di testing e di sviluppo. Pytest si distingue per la sua facilità d'uso e la sua estensibilità, rendendolo una scelta popolare per il testing nel mondo Python.
+
+#text(size: 13pt)[* PyTorch*]\
+PyTorch è una libreria open-source di machine learning e deep learning sviluppata da Facebook. È conosciuta per la sua flessibilità e facilità d'uso, offrendo un'interfaccia intuitiva per la creazione e l'addestramento di reti neurali. PyTorch offre una vasta gamma di strumenti per la costruzione e l'ottimizzazione di reti neurali, comprese funzionalità avanzate come l'autograd, che semplifica il calcolo dei gradienti durante l'addestramento dei modelli. È ampiamente utilizzato sia in ambito accademico che industriale per lo sviluppo di modelli di machine learning e deep learning, grazie alla sua scalabilità, alla sua performance e alla sua attiva comunità di sviluppatori.
 
 #pagebreak()
 
@@ -272,6 +282,9 @@ soddisfare esigenze sia espresse che implicite. Si parla di qualità del prodott
 
 #text(size: 13pt)[* React*]\
 Libreria JavaScript open-source utilizzata principalmente per la creazione di interfacce utente (UI) interattive e dinamiche per applicazioni web e mobile. È nota per la sua architettura dichiarativa e basata su componenti, che consente agli sviluppatori di costruire UI complesse dividendo l'interfaccia in componenti riutilizzabili.
+
+#text(size: 13pt)[* Ruff*]\
+Ruff è uno strumento open-source per l'analisi statica del codice Python, progettato per individuare errori, violazioni delle convenzioni di codifica e altri problemi nel codice sorgente. Grazie alla sua capacità di identificare potenziali problemi nel codice, Ruff aiuta gli sviluppatori a migliorare la qualità e la robustezza delle loro applicazioni Python, riducendo il rischio di bug e errori nel software. Con una serie di regole predefinite e la possibilità di personalizzare le impostazioni di analisi, Ruff offre un'ampia copertura nella ricerca di problemi nel codice Python, facilitando il processo di sviluppo e manutenzione del software.
 
 #pagebreak()
 
@@ -305,6 +318,9 @@ Una tecnica matematica che scompone una matrice in tre parti: due matrici ortogo
 #pagebreak()
 
 = T
+
+#text(size: 13pt)[* Tailwind CSS*]\
+Tailwind CSS è un framework CSS utilizzato per la creazione di interfacce utente moderne e reattive. Si differenzia da altri framework in quanto si basa su un approccio utility-first, che consente agli sviluppatori di creare stili personalizzati combinando classi CSS predefinite. Tailwind fornisce una vasta gamma di classi utility che coprono molte proprietà CSS comuni, consentendo agli sviluppatori di progettare rapidamente e facilmente layout flessibili e complessi. Grazie alla sua flessibilità e alla sua facilità d'uso, Tailwind CSS è diventato una scelta popolare tra gli sviluppatori web che desiderano creare interfacce utente moderne e personalizzate senza dover scrivere CSS personalizzato.
 
 #text(size: 13pt)[* Telegram*]\
 Telegram è un servizio di messaggistica istantanea e broadcasting basato su cloud. Permette di creare gruppi e comunicare all'interno di essi.

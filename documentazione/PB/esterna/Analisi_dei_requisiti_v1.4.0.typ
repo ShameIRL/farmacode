@@ -71,7 +71,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti informativi
 - T5 - Analisi dei requisiti (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf (data di ultimo accesso: 2024/03/01);
-- P2 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
+- P2 - I diagrammi dei casi d’uso (#glossario("UML")) (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (data di ultimo accesso: 2024/03/01).
 
 #pagebreak()
