@@ -9,8 +9,8 @@
   ),
   changelog: (
     "1.5.0", "2024-04-15", p.bomben, p.favaron, "Correzione UC",
-    "1.4.0", "2024-04-12", p.bomben, p.rosson, "Integrazione e correzione UC",
-    "1.3.0", "2024-04-10", p.pandolfo, p.rosson, "Integrazione nuovi UC",
+    "1.4.0", "2024-03-12", p.bomben, p.rosson, "Integrazione e correzione UC",
+    "1.3.0", "2024-03-10", p.pandolfo, p.rosson, "Integrazione nuovi UC",
     "1.2.0", "2024-03-04", p.bomben, p.carraro, "Correzione e miglioramento requisiti",
     "1.1.0", "2024-03-03", p.bomben + "\n" + p.passarella + "\n" + p.rosson, p.carraro, "Correzione e miglioramento introduzione e UC",
     "1.0.0", "2024-01-25", p.bomben, p.rosson, "Revisione e verifica",
@@ -63,16 +63,16 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 == Riferimenti
 
 === Riferimenti normativi
-- Norme di Progetto v.1.0.0;
+- Norme di Progetto v.2.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (12/12/2023);
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (10/12/2023).
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/10).
 === Riferimenti informativi
 - T5 - Analisi dei requisiti (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf (01/03/2024);
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf (data di ultimo accesso: 2024/03/01);
 - P2 - I diagrammi dei casi d’uso (UML) (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (01/03/2024).
+  https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (data di ultimo accesso: 2024/03/01).
 
 #pagebreak()
 = Descrizione
