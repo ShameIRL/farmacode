@@ -49,6 +49,18 @@ Infine il gruppo ha risposto positivamente all'invito di visitare la sede centra
 - Continue migliorie alla repository con integrazione di action per test;
 - Continuare a migliorare la progettazione con l'attesa di suggerimenti da parte del proponente.
 
+#v(3.9cm)
+Con la seguente firma il proponente esterno conferma e valida il documento:
+
+#v(0.9cm)
+
+#line(
+  length: 6cm,
+  stroke: 0.5pt,
+)
+#v(0.3cm)
+Data: 
+
 /*
 #v(4cm)
 #align(left,

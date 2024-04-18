@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-    "1.0.0", "2024-04-12", p.favaron , "", "Stesura del verbale",
+    "1.0.0", "2024-04-12", p.favaron , p.rosson, "Stesura del verbale",
   ),
 )
 
@@ -32,15 +32,28 @@
 - Mezzo tramite: Google Meet (online).
 
 = Temi trattati
-- Esposizione e presentazione del lavoro svolto.
+- Esposizione e presentazione del prodotto concluso.
 
 = Sintesi
-L'incontro si è focalizzato sulla presentazione di quanto svolto finora dal team di progetto. È stato realizzato un showcase delle funzionalità del sistema e dei sui usi.\
+L'incontro si è focalizzato sulla presentazione di quanto svolto nei precedenti giorni team di progetto. È stato realizzato uno showcase delle funzionalità del sistema e dei sui usi, focalizzandosi sulle nuove funzionalità implementate e sulle migliorie apportate in seguito al precedente meeting.\
 Il proponente è rimasto soddisfatto del lavoro svolto dal gruppo.
 
 = Obiettivi fissati
 - Piccoli fix al codice;
 - Continuare a integrare nuovi test.
+
+#v(5.9cm)
+Con la seguente firma il proponente esterno conferma e valida il documento:
+
+#v(0.9cm)
+
+#line(
+  length: 6cm,
+  stroke: 0.5pt,
+)
+#v(0.3cm)
+Data: 
+
 
 /*
 #v(4cm)

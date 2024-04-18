@@ -45,9 +45,17 @@ Inoltre l'azienda proponente ci ha invitati a visitare la loro sede centrale.
 - Concordare data e orario per il prossimo meeting;
 - Organizzare visita presso Ergon Informatica;
 
-/*
+
+
 #v(3.9cm)
-#align(left,
-  image("/imgs/firme/20-12-2023.png", width: 75%, height: 12%),
+Con la seguente firma il proponente esterno conferma e valida il documento:
+
+#v(0.9cm)
+
+#line(
+  length: 6cm,
+  stroke: 0.5pt,
 )
-*/
+#v(0.3cm)
+Data: 
+
