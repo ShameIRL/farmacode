@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "0.9.1", "2024-04-03", p.favaron,"", "Migliorie sezione Application Logic",
+    "0.9.1", "2024-04-03", p.favaron, p.baggio, "Migliorie sezione Application Logic",
     "0.9.0", "2024-04-02", p.passarella, p.baggio, "Stesura documentazione API",
     "0.8.0", "2024-04-01", p.carraro, p.favaron, "Seconda stesura sezione Front-end/Application Logic",
     "0.7.2", "2024-03-24", p.rosson, p.pandolfo, "Correzioni sezione Persistence Logic e DB",
