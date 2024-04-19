@@ -30,7 +30,8 @@ Contatti: farmacode.swe.unipd@gmail.com
 ├── assets/
 │   └── logo
 └── documentazione/
-    ├── RTB/
+    ├── RTB/...
+    ├── PB/
     │   │
     │   ├── interna/
     │   │   ├── norme_di_progetto
@@ -40,6 +41,8 @@ Contatti: farmacode.swe.unipd@gmail.com
     │       ├── glossario
     │       ├── piano_di_progetto
     │       ├── piano_di_qualifica
+    |       ├── specifica_tecnica
+    |       ├── manuale_utente
     │       └── verbali(esterni)/ ...
     └── candidatura_capitolato/ ...
 ```
