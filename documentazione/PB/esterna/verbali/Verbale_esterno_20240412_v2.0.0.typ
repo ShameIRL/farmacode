@@ -6,7 +6,7 @@
     
   ),
   changelog: (
-                 "2.0.0", "2024-04-18", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
+                     "2.0.0", "2024-04-18", "Carlesso Gianluca", p.rosson, "Firma dell'azienda",
     "1.0.0", "2024-04-12", p.favaron , p.rosson, "Stesura del verbale",
   ),
 )
@@ -36,14 +36,10 @@
 - Esposizione e presentazione del prodotto concluso.
 
 = Sintesi
-L'incontro si è focalizzato sulla presentazione di quanto svolto nei precedenti giorni team di progetto. È stato realizzato uno showcase delle funzionalità del sistema e dei sui usi, focalizzandosi sulle nuove funzionalità implementate e sulle migliorie apportate in seguito al precedente meeting.\
+L'incontro si è focalizzato sulla presentazione del progetto completato (mvp). È stato realizzato uno showcase delle funzionalità del sistema e dei sui usi, focalizzandosi sulle ultime funzionalità implementate e sulle migliorie apportate in seguito al precedente meeting.\
 Il proponente è rimasto soddisfatto del lavoro svolto dal gruppo.
 
-= Obiettivi fissati
-- Piccoli fix al codice;
-- Continuare a integrare nuovi test.
-
-#v(4.9cm)
+#v(7.9cm)
 #align(left,
-  image("/imgs/firme/18-04-2024.png", width: 75%, height: 12%),
+  image("/imgs/firme/mvp.png", width: auto, height: 13.5%),
 )
