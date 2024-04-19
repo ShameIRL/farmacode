@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "0.9.1", "2024-04-03", p.favaron,"", "Migliorie sezione Application Logic",
     "0.9.0", "2024-04-02", p.passarella, p.baggio, "Stesura documentazione API",
     "0.8.0", "2024-04-01", p.carraro, p.favaron, "Seconda stesura sezione Front-end/Application Logic",
     "0.7.2", "2024-03-24", p.rosson, p.pandolfo, "Correzioni sezione Persistence Logic e DB",
@@ -658,7 +659,8 @@ Di tali componenti non ci saranno diagrammi delle classi poiche' importati da un
   caption: [Clienti]
 )
 Clienti è una pagina consultiva, dove vengono visualizzati tutti i clienti memorizzati nel database.\
-È composta da una sezione header dove è possibile filtrare i clienti e da una tabella in cui si possono colsultare i clienti.
+È composta da un componente Header, un componente custom e comune a tutte le pagine, che funge da menu dell'applicazione ed è composto da un componente Footer custom, sempre comune a tutte le pagine.
+È inoltre presente una tabella in cui si possono colsultare i clienti ed è possibile effettuare operazioni di filtraggio dati.
 
 ==== Cronologia
 #figure(
@@ -666,7 +668,9 @@ Clienti è una pagina consultiva, dove vengono visualizzati tutti i clienti memo
   caption: [Cronologia]
 )
 Cronologia è una pagina consultiva, dove viene visualizzata la cronologia delle ricerche o raccomandazioni.\
-È composta da una sezione header contentente un _InputText_ per ricerche nella pagina e da una tabella in cui poter visualizzare e ulteriormente filtrare la ricerca.
+È composta da un componente Header, un componente custom e comune a tutte le pagine, che funge da menu dell'applicazione ed è composto da un componente Footer custom, sempre comune a tutte le pagine.
+È inoltre presente una tabella in cui si possono consultare le ricerche ed è possibile effettuare operazioni di filtraggio globali, oppure su ogni singola colonna della tabella.
+Questa pagina è visibile solo agli utenti amministratori.
 
 ==== Feedback
 #figure(
@@ -674,8 +678,10 @@ Cronologia è una pagina consultiva, dove viene visualizzata la cronologia delle
   caption: [Feedback]
 )
 Feedback è una pagina consultiva, dove vengono visualizzati i feedback.\
-È composta da una sezione header contentente un _InputText_ per ricerche nella pagina, un _Button_ per andare a cancella eventuali filtri e un _Button_ per andare ad eliminare il feedback. 
-Inoltre e' presente una tabella in cui poter visualizzare e ulteriormente filtrare i feedback.
+È composta da un componente Header, un componente custom e comune a tutte le pagine, che funge da menu dell'applicazione ed è composto da un componente Footer custom, sempre comune a tutte le pagine.
+È inoltre presente una tabella in cui si possono consultare i feedback ed è possibile effettuare operazioni di filtraggio globali, oppure su ogni singola colonna della tabella.
+Ogni feedback può essere eliminato dall'apposito _Button_, il quale, prima di procedere con l'eliminazione vera e propria, chiederà all'utente se vuole procedere con l'operazione attraverso un _Dialog_ a tale scopo.
+Questa pagina è visibile solo agli utenti amministratori.
 
 ==== Login
 #figure(
@@ -683,16 +689,16 @@ Inoltre e' presente una tabella in cui poter visualizzare e ulteriormente filtra
   caption: [Login]
 )
 
-login è la pagina di accesso al sito.\
-E' composta da un _InputText_, usato per ricevere il dato username per effettuare il login, il componente _Password_ per l'immissione della password. Infine _Button_, utilizzato per inviare tutte le informazioni compilate nel form e effettuare concretamente il login per accedere alla pagina principale.\
-È l'unica pagina a non avere ne' header ne' footer che la compongano.
+Login è la pagina di accesso al sito.\
+È composta da un _InputText_, usato per ricevere il dato username per effettuare il login, il componente _Password_ per l'immissione della password. Infine _Button_, utilizzato per inviare tutte le informazioni compilate nel form e effettuare concretamente il login per accedere alla pagina principale.\
+Questa pagina non presenta il componente custom Header.
 
 ==== Pagina Non Trovata
 #figure(
   image("/imgs/diagramma_classi/PaginaNonTrovata.png", width: auto),
   caption: [Pagina Non Trovata]
 )
-PaginaNonTrovata e' la pagina visualizzata in caso di errore nella navigazione.\
+PaginaNonTrovata è la pagina visualizzata in caso di errore nella navigazione.\
 È composta da un _Button_ che permette di tornare alla pagina Ricerca.
 In questa pagina è presente solo il footer.
 
@@ -702,8 +708,9 @@ In questa pagina è presente solo il footer.
   caption: [Prodotti]
 )
 Prodotti è una pagina molto analoga a Clienti, dove vengono visualizzati tutti i prodotti presenti nel Database.\
-È composta da un header con un _InputText_ per effettuare una ricerca e un _Button_ per cancellare filtri applicati. Nella parte sottostante è possibile visualizzare, ed ulteriormente filtrare, tutti i prodotti grazie ad una tabella.\
-Inoltre premendo sopra un prodotto grazie al componente _Dialog_ si potranno visualizzare i dettagli in una finestra separata.
+È composta da un componente Header, un componente custom e comune a tutte le pagine, che funge da menu dell'applicazione ed è composto da un componente Footer custom, sempre comune a tutte le pagine.
+È inoltre presente una tabella in cui si possono colsultare i prodotti ed è possibile effettuare operazioni di filtraggio globali, oppure su ogni singola colonna della tabella.
+Cliccando sopra un singolo prodotto verrà visualizzato il componente _Dialog_ contenente tutte le informazioni di un prodotto, compresa un'immagine se presente.
 
 ==== Profilo
 #figure(
@@ -711,26 +718,26 @@ Inoltre premendo sopra un prodotto grazie al componente _Dialog_ si potranno vis
   caption: [Profilo]
 )
 Profilo è la pagina in cui visualizzare e modificare le informazioni dell'utente.\
-È composta da una serie di _InputText_ in cui visualizzare e modificare le informazioni oltre a _Button_ per confermare o meno le modifiche.
+È composta da una serie di _InputText_ in cui visualizzare i dati dell'utente. Attraverso una combinazione di _InputText_, _Button_ e _Password_, _Button_ è possibile effettuare le modifiche ai campi email e password dell'utente.
 
 ==== Ricerca
 #figure(
   image("/imgs/diagramma_classi/Ricerca.png", width: auto),
   caption: [Ricerca]
 )
-La pagina di ricerca è il core del progetto, in questa pagina si fanno le ricerche per le raccomandazioni in base ai criteri di scelta (prodotto per clienti o cliente per prodotti).\
-La componente _Filter_ è quella che va a impostare la query per il recupero, una volta impostata correttamente, dei risultati di raccomandazione del modello. Quindi in base a come viene impostati i vari criteri del filtro, cambia anche la query al database.\
+La pagina di ricerca è il core del progetto, in questa pagina si fanno le ricerche per le raccomandazioni in base ai criteri di scelta (algoritmo di raccomandazione, topic di ricerca, cliente o prodotto specifico e numero di risultati).\
+La componente _Filter_ è quella che va a impostare la query per il recupero. Quindi in base a come viene impostati i vari criteri del filtro, cambia anche la query al database.\
 _Results_ invece si occupa di mostrare i dati recuperati, renderizzandoli a schermo all'interno di una tabella. La grandezza della tabella e direttamente correlata al numero di risultati che l'utente ha impostato in _Filters_.
 
 === Componenti
 
-==== Filtri
+==== Filter
 #figure(
   image("/imgs/diagramma_classi/Filtri.png", width: auto),
-  caption: [Filtri]
+  caption: [Filter]
 )
-Filtri è la componente per gestire il filtri nella pagina di Riceca.\
-È composta da una serie di _Dropdown_ per selezionare opzioni di ricerca e _Button_ per confermare le scelte. Inoltre presenta una finestra di Dialogo per gestire il training.
+Filter è la componente per gestire i filtri di ricerca nella pagina di Riceca.\
+È composta da una serie di _Dropdown_ per selezionare opzioni di ricerca e _Button_ per confermare le scelte. Inoltre presenta una finestra di Dialogo per gestire il training. Funzionalità disponibile solo agli utenti amministratori.
 
 ==== Footer
 #figure(
@@ -759,8 +766,8 @@ NoResults è una semplice componente richiamata in caso di ricerca senza risulta
   image("/imgs/diagramma_classi/Results.png", width: auto),
   caption: [Results]
 )
-La componente Results viene utilizzata per visualizzare i sultati della raccomandazione.\
-È composta da una tabella in cui visualizzare e filtrare il risultato della raccomandazione, inoltre di ogni elemente è possibile visualizzare ulteriori dettagli grazie ad una finestra di dialogo visualizzabile con la pressione su uno specifico elemento.
+La componente Results viene utilizzata per visualizzare i risultati della raccomandazione.\
+È composta da una tabella in cui visualizzare e filtrare i risultati della raccomandazione, inoltre per ogni risultato è possibile lasciare un feedback. Prima di andare a effettuare l'operazione, verrà chiesto all'utente una conferma tramite una finestra _Dialog_ a tale scopo.
 
 === Documentazione API
 Per il nostro progetto abbiamo utilizzato diversi tipi di API:
@@ -1450,7 +1457,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
 - Figura 13: Prodotti;
 - Figura 14: Profilo;
 - Figura 15: Ricerca;
-- Figura 16: Filtri;
+- Figura 16: Filter;
 - Figura 17: Footer;
 - Figura 18: Header;
 - Figura 19: No Results;
