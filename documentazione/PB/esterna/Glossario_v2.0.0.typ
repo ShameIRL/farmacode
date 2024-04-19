@@ -7,6 +7,7 @@
   ),
   heading_numbers: none,
   changelog: (
+    "2.0.0", "2024-04-19", p.rosson, p.bomben, "Revisione e verifica del documento",
     "1.4.0", "2024-03-20", p.bomben, p.favaron, "Stesura nuove definizioni",
     "1.3.1", "2024-03-14", p.carraro, p.bomben, "Aggiunti pagebreak",
     "1.3.0", "2024-03-13", p.favaron, p.bomben, "Stesura nuove definizioni",

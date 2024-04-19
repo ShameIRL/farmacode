@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "2.0.0", "2024-04-19", p.rosson, p.bomben, "Revisione e verifica del documento",
     "1.5.0", "2024-04-15", p.bomben, p.favaron, "Correzione UC",
     "1.4.0", "2024-03-12", p.bomben, p.rosson, "Integrazione e correzione UC",
     "1.3.0", "2024-03-10", p.pandolfo, p.rosson, "Integrazione nuovi UC",
@@ -63,7 +64,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 == Riferimenti
 
 === Riferimenti normativi
-- Norme di Progetto v.2.0.0;
+- Norme di Progetto (v.1.4.0);
 - Capitolato C2: Sistemi di raccomandazione\ 
   https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);
 - Regolamento progetto ditattico\

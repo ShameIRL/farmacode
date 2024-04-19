@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "0.9.1", "2024-04-03", p.favaron, p.baggio, "Migliorie sezione Application Logic",
+    "1.0.0", "2024-04-19", p.rosson, p.bomben, "Revisione e verifica del documento",
+    "0.9.1", "2024-04-10", p.favaron, p.baggio, "Migliorie sezione Application Logic",
     "0.9.0", "2024-04-02", p.passarella, p.baggio, "Stesura documentazione API",
     "0.8.0", "2024-04-01", p.carraro, p.favaron, "Seconda stesura sezione Front-end/Application Logic",
     "0.7.2", "2024-03-24", p.rosson, p.pandolfo, "Correzioni sezione Persistence Logic e DB",
@@ -54,7 +55,7 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 == Riferimenti
 
 === Riferimenti normativi
-- Norme di Progetto v.2.0.0;
+- Norme di Progetto (v.1.4.0);
 - Capitolato C2: Sistemi di raccomandazione\ 
   https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12); 
 - Regolamento progetto ditattico\
@@ -75,6 +76,10 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
   https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf (data di ultimo accesso: 2024/03/10);
 - Documentazione #glossario("Docker")\
   https://docs.docker.com/ (data di ultimo accesso: 2024/02/27).
+- Documentazione libreria Surprise\
+  https://surprise.readthedocs.io/en/stable/ (data di ultimo accesso: 2024/03/07)
+- Documentazione libreria WideDeep \
+  https://pytorch-widedeep.readthedocs.io/en/latest/index.html (data di ultimo accesso: 2024/03/17)
 
 #pagebreak()
 = Tecnologie
@@ -628,7 +633,10 @@ Le classi NN_Operator e SVD_Operator sono entrambe sottoclassi di BaseOperator; 
 
 ===== Librerie esterne
 *Descrizione:* \
-Per l'implementazione dei due algoritmi di raccomandazioni presenti sono state utilizzate due librerie di python già citate all'interno del documento. Per quanto riguarda l'algoritmo SVD è stata utilizzata la libreria Surprise individuata fin da subito dal proponente. L'implementazione della rete neurale si è invece poggiata su una sotto libreria di PyTorch, una delle librerie più conosciute nell'ambito, denominanta widedeep.
+Per l'implementazione dei due algoritmi di raccomandazioni presenti sono state utilizzate due librerie di python già citate all'interno del documento. Per quanto riguarda l'algoritmo SVD è stata utilizzata la libreria Surprise individuata fin da subito dal proponente. L'implementazione della rete neurale si è invece poggiata su una sotto libreria di PyTorch, una delle librerie più conosciute nell'ambito, denominanta widedeep. Lasciamo qui sotto i link alla documentazione ufficiale:
+
+- WideDeep: https://pytorch-widedeep.readthedocs.io/en/latest/index.html ;
+- Surprise: .https://surprise.readthedocs.io/en/stable/ .
 
 == Application Logic
 In questa sezione è possibile visionare tutte le scelte attuate durante la fase di progettazione e successivo sviluppo relative al codice che compone l'Application Logic del prodotto.
