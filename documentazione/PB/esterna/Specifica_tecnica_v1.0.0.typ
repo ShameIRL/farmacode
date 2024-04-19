@@ -75,11 +75,11 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - Programmazione: SOLID programming (slide del corso di Ingegneria del software)\
   https://www.math.unipd.it/~rcardin/swea/2021/SOLID%20Principles%20of%20Object-Oriented%20Design_4x4.pdf (data di ultimo accesso: 2024/03/10);
 - Documentazione #glossario("Docker")\
-  https://docs.docker.com/ (data di ultimo accesso: 2024/02/27).
+  https://docs.docker.com/ (data di ultimo accesso: 2024/02/27);
 - Documentazione libreria Surprise\
-  https://surprise.readthedocs.io/en/stable/ (data di ultimo accesso: 2024/03/07)
+  https://surprise.readthedocs.io/en/stable/ (data di ultimo accesso: 2024/03/07);
 - Documentazione libreria WideDeep \
-  https://pytorch-widedeep.readthedocs.io/en/latest/index.html (data di ultimo accesso: 2024/03/17)
+  https://pytorch-widedeep.readthedocs.io/en/latest/index.html (data di ultimo accesso: 2024/03/17).
 
 #pagebreak()
 = Tecnologie
@@ -1403,7 +1403,7 @@ Per il nostro progetto abbiamo utilizzato diversi tipi di API:
   [RDF 20], [L'utente che ha eseguito la ricerca, può filtrarne i risultati delle colonne con i risultati.], [Non soddisfatto],
   [ROF 21], [L'utente che ha effettuato una ricerca e ne visualizza i risultati, deve poter visualizzare, l'ID, il nome e lo score assegnato alla raccomandazione.], [Soddisfatto],
   [RDF 22], [L'utente può decidere se avviare un training del modello tramite il pulsante Training nella barra di ricerca], [Soddisfatto],
-  [RDF 23], [Nel caso un'utente cercasse di eseguire una ricerca con l'algortimo in training, deve visualizzare un messaggio di avviso.], [Soddisfatto],
+  [RDF 23], [Nel caso un'utente cercasse di eseguire una ricerca con l'algoritmo in training, deve visualizzare un messaggio di avviso.], [Soddisfatto],
   [RDF 24], [Nel caso la ricerca non andasse a buon fine, l'utente deve visualizzare un messaggio di errore che indica che la ricerca non è terminata correttamente.\ Il messaggio di errore deve essere mostrato in caso di errore anche per le ricerche di RDF 29, RDF 35, RDF 39, RDF 43.], [Soddisfatto],
   [ROF 25], [L'utente che ha visualizzato i risultati della ricerca, deve poter inserire un feedback delle raccomandazioni mostrate.], [Soddisfatto],
   [RDF 26], [L'utente, una volta autenticato, deve poter accedere alla funzione "Catalogo Prodotti" nella pagina principale del sito.], [Soddisfatto],
