@@ -236,7 +236,7 @@ Sono state ideate e containerizzate quattro componenti principali:
 
 Il repository contiene inoltre le immagini di tutte le versioni del prodotto, disponibili per il download nella sezione package di GitHub.
 
-== Pattern architetturali - Architettura a Microservizi
+== Pattern architetturali - monolitica o microservizi
 
 L'architettura a microservizi presenta caratteristiche e crismi che si discostanto da quella meno recente ma comunque valida, monolitica. Quest'ultima è stata il paradigma dominante per lo sviluppo software per molti anni, soprattutto nelle prime fasi dello sviluppo di applicazioni web e enterprise.
 
@@ -266,7 +266,7 @@ Alcuni contro, che solitamente la caratterizzano sono invece:
 
 - Test e debugging: testare e debuggare un sistema basato su microservizi può essere più complesso rispetto a un'applicazione monolitica, poiché è necessario considerare le interazioni tra i diversi servizi e la loro integrazione complessiva.
 
-Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo sviluppo del prodotto pensando anche ad un possibile futuro Deployment.\  La scelta di questa precisa architettura è derivata dalla natura ben separata e predefinita dei ruoli delle varie componenti del progetto, nonché dai numerosi pregi e benefici che ne derivano (come sopra elencati). Abbiamo pianificato di suddividere il sistema nel seguente modo:
+L'architettura monolitica d'altro canto, per applicazioni di piccole o medie dimensioni con un basso livello di complessità, può offrire prestazioni e manutenzione sufficientemente efficienti senza la necessità di suddividerle in servizi separati. Il gruppo ha quindi deciso tenendo bene a mente la complessità del progetto e la scarsa esperienza nell'ambiente di adottare un architettura di tipo monolitico. Abbiamo pianificato di suddividere il sistema nel seguente modo:
 
 - *Persistence logic*: Questa parte del sistema si occupa della gestione dei dati e della loro persistenza nel database MySQL. Il database contiene l'intero dataset necessario per il funzionamento delle altre parti del prodotto. La persistence logic definisce la struttura dei dati, le relazioni tra di essi e le regole di validazione dei dati. Inoltre, gestisce anche le operazioni di accesso al database, come la connessione e la gestione delle transazioni. È fondamentale che questa parte del sistema sia efficiente, affidabile e in grado di gestire grandi volumi di dati in modo sicuro.
 
@@ -274,7 +274,7 @@ Il gruppo, ha quindi decisio di adottare un'architettura a microservizi per lo s
 
 - *Application logic*: Questa parte del sistema gestisce l'interfaccia utente del prodotto, che è realizzata utilizzando React e JavaScript. Si occupa di presentare i dati e le funzionalità del sistema agli utenti in modo intuitivo e interattivo. Questa componente definisce la struttura e il comportamento delle pagine web inclusi layout, componenti, navigazione e gestione degli eventi utente. Utilizza le informazioni fornite dalla business logic per visualizzare i dati in modo appropriato e per consentire agli utenti di interagire con il sistema attraverso azioni come la ricerca, la selezione e l'inserimento di dati (feedback).
 
-Come già descritto, i vari servizi comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc (descritte con maggiore dettaglio nella sezione apposita).
+Come già descritto, le varie componenti comunicano tra loro tramite l'utilizzo di API REST realizzate ad hoc (descritte con maggiore dettaglio nella sezione apposita).
 
 == Persistence Logic
 === Introduzione
