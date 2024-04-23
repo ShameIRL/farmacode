@@ -1,6 +1,3 @@
-//TO-DO
-// - Cambiare username pagina profilo
-// - Aggiornare descrizione pagine dopo modifiche mvp
 #import "/template/big_docs.typ": *
 
 #show: project.with(
@@ -60,19 +57,6 @@ https://farmacodeunipd.github.io/documentazione/PB/esterna/Glossario_v2.0.0.pdf.
 = Requisiti
 Nella presente sezione si indicano i requisiti minimi richiesti per eseguire l'applicazione, delineando le specifiche necessarie per configurare l'ambiente di sviluppo del progetto.\
 
-== Requisiti di sistema
-Per poter eseguire l'applicazione è necessaria l'installazione dei seguenti software.
-#table(
-  columns: (auto, auto, auto),
-  fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  inset: 10pt,
-  align: center,
-  [*Componente*], [*Versione*], [*Riferimenti per il download*],
-  [Docker],[26.0.0],[https://www.docker.com/products/docker-desktop/],
-  
-)
-#align(center)[Tabella 1: Requisiti di sistema]
-
 == Requisiti hardware
 In mancanza di specifiche hardware fornite da capitolato o progetto, i seguenti requisiti sono da considerarsi come sufficenti per un utilizzo scorrevole dell'applicazione.
 #table(
@@ -106,9 +90,9 @@ Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano 
 #pagebreak()
 = Installazione
 
-== Clonazione repository
+== Descrizione
 
-== Avvio IA e server annessi
+== Avvio container Docker
 
 #pagebreak()
 = Istruzioni all'uso
