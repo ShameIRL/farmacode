@@ -185,6 +185,14 @@ In questa sezione viene presentanto un elenco contenente tutta la documentazione
 
     Documento ``` Lettera di Presentazione``` accompagna e introduce i documenti e il prodotto sowftare sviluppato in ogni fase di revisione di progetto. Illustra le risorse fornite al committente e all'azienda proponente.
 
+- *Specifica Tecnica*
+
+    Documento ``` Specifica Tecnica``` contiene tutte le scelte progettuali facenti anche da linee guida per lo sviluppo, riguardanti l'MVP da consegnare alla fine del periodo di PB.
+
+- *Guida/Manule Utente*
+
+    Documento ``` Manuale Utente``` illustra e spiega le funzionailtà del MVP realizzato dal gruppo di progetto, rivolgendosi al utenza finale, alla quale è destinato il prodotto.
+
 === Strumenti
 Segue un elenco degli strumenti utilizzati dal team per il processo di fornitura:
 - #glossario("Typst") per la stesura dei documenti ufficiali di progetto;
@@ -357,7 +365,7 @@ La fase di progettazione mira inoltre a facilitare definizione, suddivisione e q
 La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti, analizzati nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto.\ 
 Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
 
-=== Progettazioen PoC
+=== Progettazione - PoC
 *Bozza di Architettura*\
 Le scelte concordate per la realizzazione del PoC sono le seguenti:
 il prodotto è suddivisibile in 5 Layer principali:
@@ -384,7 +392,7 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
 - Livello di Presentazione:
     + #glossario("React").
 // vanno elencate le tecnologie scelte
-*Programmazione e verifica del software*\ /** descrizione processo di coding e test software */
+=== Programmazione e verifica del software - PoC\ /** descrizione processo di coding e test software */
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.\
 - Linguaggi e ambiente:\
     Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a seconda di esigenze e vincoli, imposti sia dal capitolato che dal proponente. Se ne riporta qui sotto un elenco per una più facile consultazione:
@@ -413,19 +421,41 @@ In questa sezione sono raccolte tutte le norme e regole che i programmatori in c
 
     + Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
 
-*Integrazione*\ /** descrizione processo di integrazione di sistema e software */
+=== Integrazione - Poc\ /** descrizione processo di integrazione di sistema e software */
 La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. Il team si impegna fin da subito nell'integrare le varie componenti del prodotto, in modo solido e al contempo elastico, in modo che quanto esplorato durante la produzione del PoC possa essere utile una volta inziati i lavori sul prodotto di MVP.
 
+=== Progettazione - MVP
+Questa sezione comprende solamente alcune prime informazioni utili relative all'ideazione e progettazione del MVP. Per tutte le restanti informazioni, comprese le scelte di progettazione architetturali concordate, e le linee guida da seguire, si rimanda al documento ufficiale di ``` Specifica Tecnica ``` (Specifica_tecnica_v1.0.0).
+
+*Algoritmo di raccomandazione *\
+In accordo con il proponente si è deciso di evolvere quella che potremmo definire come la business logic del prodotto andando ad integrare e migliorare strategia ed algotimo di raccomandazione.\ Per lo sviluppo del MVP previsto, è stato deciso di utilizzare un approccio misto, che potesse garantire delle performance più soddisfacenti ed un flessibilità generalmente migliore. Per fare ciò il gruppo ha individuato una nuova libreria (WideDeep, realizzata con Pytorch) che ha sottoposto al proponente. Con questo nuovo strumento sarà possibile creare una rete neurale che adotti una strategia di raccomandazione mista tra, Collaborative filtering (già esplorata con il PoC) e Contet-Based filtering. In pratica oltre a basarsi sulle preferenze dei clienti, il nuovo algoritmo considererà anche le famiglie di appartenenza dei prodotti e loro caratteristiche, così da avvicinare prodotti simili e generare raccomandazioni più efficaci ed affidabili. 
+
+*Diagramma delle Classi*\
+Per la progettazione e successiva implementazione della buisness logic del prodotto il gruppo a deciso di utilizzare Python orientato ad oggetti. Questo sia perchè da una parte le librerie utili ed in generale più utilizzate in ambito AI sono sviluppate in questo linguaggio, sia perchè abbiamo pensato che gestire il codice con una struttura a classi, oltre ad esserci più familiare, potesse garantire maggiore ordine, modularità e estensibilità.
+
+*Linee guida interne*\
+// qui da scrivere come realizzare diagrammi delle classi
+- *Attributi e Meotdi*
+// specificare come scrivere attributi e metodi: tipaggio, nomi ... includere foto
+
+- *Relazioni tra classi*
+// elencare e spiegare le varie relazioni mettendo immagini frecce
+
+- *Pattern presi in esame*
+// elencare e spiegare pattern "esaminati" (solo strategy e dependency injection)
+
+=== Programmazione e verifica del software - MVP\ 
+In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. Per quanto riguarda i princi fondamentali da seguire si rimanda a quanto già osservato durante la fase di RTB con lo sviluppo del PoC. Per maggiori informazioni riguardanti invece le tecnologie in utilizzo si rimanda al documento ufficiale di ``` Specifica Tecnica``` (Specifica_tecnica_v1.0.0).
+
+=== Integrazione - MVP\ /** descrizione processo di integrazione di sistema e software */
+Per maggiori informazioni riguardanti invece le tecnologie in utilizzo si rimanda al documento ufficiale di ``` Specifica Tecnica``` (Specifica_tecnica_v1.0.0).
 
 == Gestione operativa
 
-=== Descrizione e Scopo /** descrizione di questa sezione */
-Questa sezione fornirà dettagli sull'installazione del software come i requisiti di sistema e le procedure necessarie per eseguire correttamente il prodotto. Inoltre illustrerà una guida all'utilizzo, esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.\
+=== Descrizione e Scopo
+Lo scopo della gestione operativa è quello di esporre dettagli sull'installazione del software come i requisiti di sistema e le procedure necessarie per eseguire correttamente il prodotto. Illustrando inoltre una guida all'utilizzo, esponendo le principali funzionalità utilizzabili ed il come interagire con il sistema.\
 Per quanto riguarda il PoC si rimanda al relativo README.md disponibile nel repository.
-
-=== Utilizzo operativo /** descrizione di installazione, erogazione e utilizzo del prodotto */
-
-In questa sezione verranno descritti i processi di installazione, erogazione ed utilizzo del prodotto.
+Per quanto concerne invece l'MVP si rimanda al documento ufficiale ``` Guida/Manuale Utente``` (Manuale_utentev1.0.0).
 
 == Manutenzione
 
@@ -761,14 +791,7 @@ I seguenti passaggi descrivono le operazioni da effettuare per poter effettuare 
     Ora potrebbe essere necessario risolvere eventuali conflitti e al termine rieffettuare le operazione al passaggio #link(<prev>)[precedente].
     //da fare meglio il link?????
 
-=== Docker (Integrazione)
-L'integrazione delle varie componenti del prodotto è gestito interamente tramite l'uso di alcuni container docker realizzati ad hoc. L'utilizzo di docker facilità inoltre il rilascio del software, sul repository sono infatti disponibili tutte le versione delle immagini per poter ricreare i container in qualsiasi ambiente. Il progetto si suddivide in 4 container differenti:
-
-- db (container adibito al database);
-- python-api (container adibito alle api che espongo l'algotirmo di raccomandazione);
-- express (container adibito alle api che permettono la comunicazione tra db e web-app);
-- react-app (container adibito all'hosting del client web).
-
+// Procedura di sviluppo, testing automazioni
 === Local testing
 Per eseguire i test localmente nelle propria macchina basta seguire le seguenti istruzioni:\
 Prima di tutto bisogna azionare il container Docker:
@@ -785,12 +808,12 @@ E' possibile anche reperire l'ultima versione delle immagini dal repository del 
 Una volta che il container e tutte le sue immagini hanno concluso il loro avvio, sarà possibili testare i vari servizi con i rispettivi comandi:
 - Python-api (Algoritmo e relative API):
 ```
-    docker-compose up
-```
+    docker exec mvp-python-api-1 pytest --verbose
+```\
 - React-app (Client web):
 ```
     docker exec mvp-react-app-1 npm test
-```
+```\
 - Express (API per la connesione tra db e client):
 ```    
     docker exec mvp-express-1 npm test
@@ -822,11 +845,7 @@ Conscio di quanto appena descritto, il gruppo ha deciso di ripiegare sul utilizz
     Per quanto riguarda la sintassi e correttezza dei file .typ, il gruppo si affida agli strumenti di correzione automatica integrati nel editor predisposto per la stesura dei documenti. Per quanto riguarda invece i controlli sulla correttezza della grammatica e ortografia della lingua italiana, dopo aver testato diversi strumenti di "spell checking" integrabili nel editor, il team ha deciso di attenersi ad un controllo manuale, sicuramente più dispendioso, ma anche più affidabile ed efficace.
  
 - Codice:
-    A proposito del codice, il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice.\
-
-Per quanto rigurda l'analisi statica del codice sono stati integrati strumenti automatici quali:
-    - Ruff (per il codice realizzato in python);
-    - ESLint (per il codice realizzato in js e react)
+    A proposito del codice, il team ha deciso di utilizzare strumenti automatici di analisi statica integrati tramite action. Prima che il codice possa raggiungere il repository, esso viene infatti sottoposto a vari controlli, prettamente di tipo statico. Il gruppo ha deciso, dopo il consueto studio della tecnologia in esame, di utilizzare Ruff, un #glossario("linter") per codice Python, munito di varie funzioni e strumenti diversi. Principalmente vengono svolti controlli sull'indentazione e correttezza della sintassi del codice. Per quanto invece riguarda la parte di codice scitta in JS (JavaScript) ed in generale utilizzando il framework React, è stato individuato ESLint, uno strumento di analisi statica che permette di indiduare errori ed applicare delle regole di stile e formattazione in modo da mantenere una coerenza e correttezza generale tra tutto il codice prodotto.
 
 *Analisi dinamica*\
 L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione del prodotto, atto a identificare errori e controllare il corretto funzionamento. Questo processo dinamico è complementare all'analisi statica, che si concentra sulla revisione del codice sorgente senza eseguirlo. Insieme, l'analisi dinamica e statica costituiscono una strategia completa per la verifica e la validazione del software durante il suo sviluppo e oltre.\
@@ -857,6 +876,7 @@ L'analisi dinamica è un tipo di verifica che viene fatta grazie all'esecuzione 
 Per la realizzazione e integrazione dei test (dinamici) automatici sono stati individuati e scelti questi due servizi:
 - Pytest (per la relaizzazione dei test del codice realizzato in python);
 - Jest (per la realizzazione dei test del codice realizzato in js e react).
+Entrambi gli strumenti sono gestiti tramite GitHub Action realizzate ad hoc, così da poter scatenare i test in modo automatico proteggendo il repository da inserimenti contenti codice non valido e non correttamente testato. Maggiori informazioni sono consulatibili nella sezione che descrive il repository adibito e nel README del repository stesso.
 
 *Struttura dei test*
 
@@ -900,350 +920,350 @@ Affinché ogni test sia ripetibile e fornito con precisione, è essenziale speci
 Lo scopo della validazione è quello di confermare la qualità del prodotto software nella sua interezza, assicurando che i requisiti siano stati implementati correttamente come concordato con il proponente.\
 Perchè un file venga validato, c'è la necessità che passi i test preposti in base al suo tipo, confermando e attestando la qualità del prodotto.\
 
-*Code coverage*
-#figure(
-    image("/imgs/sunburst_graph.png", width: 35%),
-    caption: [
-        Sunburst graph
-    ],
-)
-Il cerchio centrale rappresenta il progetto nella sua totalità, spostandosi verso l'esterno ci sono le directory, e infine, i singoli file. La grandezza e il colore di ogni "slice" (o spicchio) rappresenta rispettivamente il numero di statements e il coverage.
+// *Code coverage*
+// #figure(
+//     image("/imgs/sunburst_graph.png", width: 35%),
+//     caption: [
+//         Sunburst graph
+//     ],
+// )
+// Il cerchio centrale rappresenta il progetto nella sua totalità, spostandosi verso l'esterno ci sono le directory, e infine, i singoli file. La grandezza e il colore di ogni "slice" (o spicchio) rappresenta rispettivamente il numero di statements e il coverage.
 
-=== GitHub Action
-/*Qui ci andrebbe una descrizione*/
-*linting.yml*
-```
-name: Python and React/JS application
-on:
-  push:
-    branches:
-      - develop
-    paths:
-      - '**.py'
-      - '**.js'
-      - '**.jsx'
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Set up Python 3.11.5
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11.5"
-      - name: Install dependencies
-        run: |
-          pip install ruff
-          npm install eslint eslint-plugin-react
-          npx eslint . --fix
-      - name: Lint with Ruff (Python)
-        run: |
-          ruff check . --fix
-          ruff format .
-      - name: Lint with ESLint (React/JS)
-        run: |
-          npx eslint . --fix
-```
-- Trigger:\
-    Il workflow è configurato per essere attivato ogni volta che viene effettuato un push sul ramo "develop" e quando vengono apportate modifiche ai file con estensione .py, .js o .jsx.
-- Steps:
-    - Checkout del codice: Questo passaggio utilizza l'azione ```actions/checkout@v4``` per ottenere una copia del repository;
-    - Configurazione di Python 3.11.5: Viene utilizzata l'azione ```actions/setup-python@v4``` per configurare l'ambiente Python con la versione 3.11.5;
-    - Installazione delle dipendenze: In questo passaggio vengono installati i pacchetti necessari sia per Python che per JavaScript. Per Python, viene utilizzato pip install ruff per installare Ruff, mentre per JavaScript vengono utilizzati npm install eslint eslint-plugin-react per installare ESLint e il plugin per React. Successivamente, viene eseguito npx eslint . --fix per correggere eventuali problemi di stile nel codice JavaScript;
-    - Analisi statica con Ruff (Python): Viene eseguita un'analisi statica del codice Python utilizzando Ruff. I comandi ruff check . --fix e ruff format . vengono utilizzati per controllare e formattare il codice Python;
-    - Analisi statica con ESLint (React/JS): Infine, viene eseguita un'analisi statica del codice React/JS utilizzando ESLint tramite il comando npx eslint . --fix. Questo passaggio controlla e corregge eventuali problemi di stile nel codice JavaScript e React.
-- In sintesi:\
-    questo workflow si occupa di controllare la qualità del codice Python e JavaScript/React attraverso analisi statiche e correzioni automatiche dei problemi di stile.
+// === GitHub Action
+// /*Qui ci andrebbe una descrizione*/
+// *linting.yml*
+// ```
+// name: Python and React/JS application
+// on:
+//   push:
+//     branches:
+//       - develop
+//     paths:
+//       - '**.py'
+//       - '**.js'
+//       - '**.jsx'
+// jobs:
+//   build:
+//     runs-on: ubuntu-latest
+//     steps:
+//       - name: Checkout code
+//         uses: actions/checkout@v4
+//       - name: Set up Python 3.11.5
+//         uses: actions/setup-python@v4
+//         with:
+//           python-version: "3.11.5"
+//       - name: Install dependencies
+//         run: |
+//           pip install ruff
+//           npm install eslint eslint-plugin-react
+//           npx eslint . --fix
+//       - name: Lint with Ruff (Python)
+//         run: |
+//           ruff check . --fix
+//           ruff format .
+//       - name: Lint with ESLint (React/JS)
+//         run: |
+//           npx eslint . --fix
+// ```
+// - Trigger:\
+//     Il workflow è configurato per essere attivato ogni volta che viene effettuato un push sul ramo "develop" e quando vengono apportate modifiche ai file con estensione .py, .js o .jsx.
+// - Steps:
+//     - Checkout del codice: Questo passaggio utilizza l'azione ```actions/checkout@v4``` per ottenere una copia del repository;
+//     - Configurazione di Python 3.11.5: Viene utilizzata l'azione ```actions/setup-python@v4``` per configurare l'ambiente Python con la versione 3.11.5;
+//     - Installazione delle dipendenze: In questo passaggio vengono installati i pacchetti necessari sia per Python che per JavaScript. Per Python, viene utilizzato pip install ruff per installare Ruff, mentre per JavaScript vengono utilizzati npm install eslint eslint-plugin-react per installare ESLint e il plugin per React. Successivamente, viene eseguito npx eslint . --fix per correggere eventuali problemi di stile nel codice JavaScript;
+//     - Analisi statica con Ruff (Python): Viene eseguita un'analisi statica del codice Python utilizzando Ruff. I comandi ruff check . --fix e ruff format . vengono utilizzati per controllare e formattare il codice Python;
+//     - Analisi statica con ESLint (React/JS): Infine, viene eseguita un'analisi statica del codice React/JS utilizzando ESLint tramite il comando npx eslint . --fix. Questo passaggio controlla e corregge eventuali problemi di stile nel codice JavaScript e React.
+// - In sintesi:\
+//     questo workflow si occupa di controllare la qualità del codice Python e JavaScript/React attraverso analisi statiche e correzioni automatiche dei problemi di stile.
 
-*test-and-release.yml*
-```
-name: Docker Image Release
+// *test-and-release.yml*
+// ```
+// name: Docker Image Release
 
-on:
-  pull_request:
-    branches:
-      - main
+// on:
+//   pull_request:
+//     branches:
+//       - main
 
-jobs:
-  test-and-release:
-    runs-on: ubuntu-latest
+// jobs:
+//   test-and-release:
+//     runs-on: ubuntu-latest
 
-    steps:
-      - name: Set Git user
-        run: |
-          git config --global user.name "farmacodeunipd"
-          git config --global user.email "farmacode.swe.unipd@gmail.com"
+//     steps:
+//       - name: Set Git user
+//         run: |
+//           git config --global user.name "farmacodeunipd"
+//           git config --global user.email "farmacode.swe.unipd@gmail.com"
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+//       - name: Checkout repository
+//         uses: actions/checkout@v2
+//         with:
+//           fetch-depth: 0
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+//       - name: Set up Docker Buildx
+//         uses: docker/setup-buildx-action@v1
 
-      - name: Fetch Tags
-        run: git fetch --tags
+//       - name: Fetch Tags
+//         run: git fetch --tags
 
-      - name: Get Version
-        id: versioning
-        run: |
-          if [[ $(git tag) ]]; then
-            LAST_TAG=$(git tag --sort=-v:refname | head -n1)
-            echo "::set-output name=last_tag::$LAST_TAG"
-          else
-            LAST_TAG="v0.0.0"
-            git tag $LAST_TAG
-            git push --tags
-          fi
+//       - name: Get Version
+//         id: versioning
+//         run: |
+//           if [[ $(git tag) ]]; then
+//             LAST_TAG=$(git tag --sort=-v:refname | head -n1)
+//             echo "::set-output name=last_tag::$LAST_TAG"
+//           else
+//             LAST_TAG="v0.0.0"
+//             git tag $LAST_TAG
+//             git push --tags
+//           fi
 
-          echo "Last Tag: $LAST_TAG"
+//           echo "Last Tag: $LAST_TAG"
 
-          IFS='.' read -ra VERSION_PARTS <<< "$LAST_TAG"
-          MAJOR="${VERSION_PARTS[0]#v}"
-          MID="${VERSION_PARTS[1]}"
-          MINOR="${VERSION_PARTS[2]}"
+//           IFS='.' read -ra VERSION_PARTS <<< "$LAST_TAG"
+//           MAJOR="${VERSION_PARTS[0]#v}"
+//           MID="${VERSION_PARTS[1]}"
+//           MINOR="${VERSION_PARTS[2]}"
 
-          echo $(git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD))
+//           echo $(git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD))
 
-          if git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-major"; then
-            echo "Version Major Detected"
-            ((MAJOR+=1))
-            MID=0
-            MINOR=0
-          elif git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-mid"; then
-            echo "Version Mid Detected"
-            ((MID+=1))
-            MINOR=0
-          elif git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-minor"; then
-            echo "Version Minor Detected"
-            ((MINOR+=1))
-          fi
+//           if git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-major"; then
+//             echo "Version Major Detected"
+//             ((MAJOR+=1))
+//             MID=0
+//             MINOR=0
+//           elif git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-mid"; then
+//             echo "Version Mid Detected"
+//             ((MID+=1))
+//             MINOR=0
+//           elif git log --format=%B -n 1 $(git rev-list --no-merges -n 1 HEAD) | grep -q "version-minor"; then
+//             echo "Version Minor Detected"
+//             ((MINOR+=1))
+//           fi
 
-          echo "creating new version ..."
+//           echo "creating new version ..."
 
-          UPDATED_VERSION="v${MAJOR}.${MID}.${MINOR}"
-          echo "Updated Version: $UPDATED_VERSION"
-          echo "::set-output name=updated_version::$UPDATED_VERSION"
+//           UPDATED_VERSION="v${MAJOR}.${MID}.${MINOR}"
+//           echo "Updated Version: $UPDATED_VERSION"
+//           echo "::set-output name=updated_version::$UPDATED_VERSION"
           
-        env:
-          GITHUB_SHA: ${{ github.sha }}
+//         env:
+//           GITHUB_SHA: ${{ github.sha }}
 
-      - name: Log in to GitHub Packages
-        run: echo "${{ secrets.PAT }}" | docker login docker.pkg.github.com -u farmacodeunipd --password-stdin
+//       - name: Log in to GitHub Packages
+//         run: echo "${{ secrets.PAT }}" | docker login docker.pkg.github.com -u farmacodeunipd --password-stdin
 
-      - name: Set up Docker Compose
-        run: docker-compose up -d
+//       - name: Set up Docker Compose
+//         run: docker-compose up -d
 
-      - name: Run tests and stop if they do not pass
-        run: |
-          ci_env=$(bash <(curl -s https://codecov.io/env))
-          docker exec $ci_env mvp_python-api_1 pytest tests/test_algo.py --cov=. --cov-report=xml:/tests/coverage.xml --verbose
-          docker exec $ci_env mvp_react-app_1 npm test
-          docker exec $ci_env mvp_express_1 npm test
-        continue-on-error: false
+//       - name: Run tests and stop if they do not pass
+//         run: |
+//           ci_env=$(bash <(curl -s https://codecov.io/env))
+//           docker exec $ci_env mvp_python-api_1 pytest tests/test_algo.py --cov=. --cov-report=xml:/tests/coverage.xml --verbose
+//           docker exec $ci_env mvp_react-app_1 npm test
+//           docker exec $ci_env mvp_express_1 npm test
+//         continue-on-error: false
 
-      - name: Copy coverage reports
-        run: |
-          docker cp mvp_python-api_1:/tests/coverage.xml ./coverage-python-api.xml
-          docker cp mvp_react-app_1:/client/coverage/coverage-final.json ./coverage-react.json
-          docker cp mvp_express_1:/express/coverage/coverage-final.json ./coverage-express.json
+//       - name: Copy coverage reports
+//         run: |
+//           docker cp mvp_python-api_1:/tests/coverage.xml ./coverage-python-api.xml
+//           docker cp mvp_react-app_1:/client/coverage/coverage-final.json ./coverage-react.json
+//           docker cp mvp_express_1:/express/coverage/coverage-final.json ./coverage-express.json
 
-      - name: Stop and remove Docker containers
-        run: docker-compose down
+//       - name: Stop and remove Docker containers
+//         run: docker-compose down
 
-      - name: Upload Python API coverage report to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage-python-api.xml
-          flags: python-api
-          name: codecov-python-api
+//       - name: Upload Python API coverage report to Codecov
+//         uses: codecov/codecov-action@v4.0.1
+//         with:
+//           token: ${{ secrets.CODECOV_TOKEN }}
+//           file: ./coverage-python-api.xml
+//           flags: python-api
+//           name: codecov-python-api
 
-      - name: Upload React application coverage report to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage-react.json
-          flags: react-app
-          name: codecov-react-app
+//       - name: Upload React application coverage report to Codecov
+//         uses: codecov/codecov-action@v4.0.1
+//         with:
+//           token: ${{ secrets.CODECOV_TOKEN }}
+//           file: ./coverage-react.json
+//           flags: react-app
+//           name: codecov-react-app
 
-      - name: Upload Express coverage report to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage-express.json
-          flags: express
-          name: codecov-express
+//       - name: Upload Express coverage report to Codecov
+//         uses: codecov/codecov-action@v4.0.1
+//         with:
+//           token: ${{ secrets.CODECOV_TOKEN }}
+//           file: ./coverage-express.json
+//           flags: express
+//           name: codecov-express
 
-      - name: Push Docker images
-        run: |
-          docker images
-          IMAGES=("mvp_db" "mvp_python-api" "mvp_react-app" "mvp_express")
-          for IMAGE in "${IMAGES[@]}"; do
-            # Controllo se l'immagine è stata modificata confrontando l'hash SHA locale con quello remoto
-            LOCAL_SHA=$(docker inspect --format='{{index .RepoDigests 0}}' $IMAGE)
-            REMOTE_SHA=$(docker run --rm docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }} sha256sum /)
+//       - name: Push Docker images
+//         run: |
+//           docker images
+//           IMAGES=("mvp_db" "mvp_python-api" "mvp_react-app" "mvp_express")
+//           for IMAGE in "${IMAGES[@]}"; do
+//             # Controllo se l'immagine è stata modificata confrontando l'hash SHA locale con quello remoto
+//             LOCAL_SHA=$(docker inspect --format='{{index .RepoDigests 0}}' $IMAGE)
+//             REMOTE_SHA=$(docker run --rm docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }} sha256sum /)
             
-            if [ "$LOCAL_SHA" != "$REMOTE_SHA" ]; then
-              # L'immagine è stata modificata, la etichetto e la pusho
-              docker tag $IMAGE docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }}
-              docker push docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }}
+//             if [ "$LOCAL_SHA" != "$REMOTE_SHA" ]; then
+//               # L'immagine è stata modificata, la etichetto e la pusho
+//               docker tag $IMAGE docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }}
+//               docker push docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:${{ steps.versioning.outputs.updated_version }}
               
-              docker tag $IMAGE docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:latest
-              docker push docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:latest
-            else
-              echo "L'immagine $IMAGE non è stata modificata. Salto il push."
-            fi
-          done
+//               docker tag $IMAGE docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:latest
+//               docker push docker.pkg.github.com/farmacodeunipd/mvp/$IMAGE:latest
+//             else
+//               echo "L'immagine $IMAGE non è stata modificata. Salto il push."
+//             fi
+//           done
           
-      - name: Check if release already exists
-        id: check_release
-        run: |
-          VERSION="${{ steps.versioning.outputs.updated_version }}"
-          echo "Checking release for version ${VERSION}"
-          response=$(curl -s -o /dev/null -I -w "%{http_code}" https://api.github.com/repos/farmacodeunipd/mvp/releases/tags/${VERSION})
-          echo "Response code: $response"
-          if [[ $response -eq 200 ]]; then
-            echo "Release already exists for version ${VERSION}"
-            echo "::set-output name=release_exists::true"
-          else
-            echo "Release does not exist for version ${VERSION}"
-            echo "::set-output name=release_exists::false"
-          fi
+//       - name: Check if release already exists
+//         id: check_release
+//         run: |
+//           VERSION="${{ steps.versioning.outputs.updated_version }}"
+//           echo "Checking release for version ${VERSION}"
+//           response=$(curl -s -o /dev/null -I -w "%{http_code}" https://api.github.com/repos/farmacodeunipd/mvp/releases/tags/${VERSION})
+//           echo "Response code: $response"
+//           if [[ $response -eq 200 ]]; then
+//             echo "Release already exists for version ${VERSION}"
+//             echo "::set-output name=release_exists::true"
+//           else
+//             echo "Release does not exist for version ${VERSION}"
+//             echo "::set-output name=release_exists::false"
+//           fi
 
-      - name: Get Commit Messages Since Last Release
-        id: commit_messages
-        run: |
-          LAST_RELEASE_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
-          COMMIT_MESSAGES=$(git log --pretty=format:"- %s" $LAST_RELEASE_TAG..HEAD --no-merges)
-          echo "::set-output name=commit_messages::$COMMIT_MESSAGES"
+//       - name: Get Commit Messages Since Last Release
+//         id: commit_messages
+//         run: |
+//           LAST_RELEASE_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+//           COMMIT_MESSAGES=$(git log --pretty=format:"- %s" $LAST_RELEASE_TAG..HEAD --no-merges)
+//           echo "::set-output name=commit_messages::$COMMIT_MESSAGES"
 
-      - name: Create GitHub Release
-        if: steps.check_release.outputs.release_exists != 'true'
-        uses: actions/create-release@v1
-        with:
-          tag_name: ${{ steps.versioning.outputs.updated_version }}
-          release_name: Release ${{ steps.versioning.outputs.updated_version }}
-          body: |
-            Release ${{ steps.versioning.outputs.updated_version }}
+//       - name: Create GitHub Release
+//         if: steps.check_release.outputs.release_exists != 'true'
+//         uses: actions/create-release@v1
+//         with:
+//           tag_name: ${{ steps.versioning.outputs.updated_version }}
+//           release_name: Release ${{ steps.versioning.outputs.updated_version }}
+//           body: |
+//             Release ${{ steps.versioning.outputs.updated_version }}
 
-            Changes since last release (commit messages):
-            ${{ steps.commit_messages.outputs.commit_messages }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+//             Changes since last release (commit messages):
+//             ${{ steps.commit_messages.outputs.commit_messages }}
+//         env:
+//           GITHUB_TOKEN: ${{ secrets.PAT }}
 
-```
-- Trigger:\ 
-    Il workflow viene attivato ad ogni pull request aperta verso il ramo principale, main.
+// ```
+// - Trigger:\ 
+//     Il workflow viene attivato ad ogni pull request aperta verso il ramo principale, main.
 
-- Steps:
-    - Imposta l'utente Git: Configura l'utente Git globale utilizzando il nome utente e l'email forniti;
-    - Checkout del repository: Esegue il checkout del codice del repository per eseguire le azioni successive;
-    - Imposta Docker Buildx: Configura Docker Buildx, un plugin Docker CLI per estendere le capacità di build;
-    - Recupera i tag: Recupera i tag dal repository;
-    - Ottieni la versione: Determina la versione aggiornata basata sull'ultimo tag e sui commit. Se viene trovata una specifica parola chiave nel messaggio del commit (version-major, version-mid o version-minor), incrementa la parte di versione corrispondente;
-    - Accedi a GitHub Packages: Effettua l'accesso al registro Docker di GitHub Packages per caricare le immagini Docker;
-    - Imposta Docker Compose: Configura Docker Compose per gestire più container Docker;
-    - Esegui i test e interrompi se non passano: Esegue i test per diversi servizi (API Python, app React, Express) all'interno dei container Docker. Il workflow si interrompe se i test non passano;
-    - Copia i report di copertura: Copia i report di copertura generati dai test dai container Docker alla macchina locale;
-    - Carica i report di copertura su Codecov: Carica i report di copertura su Codecov per ciascun servizio (API Python, app React, Express);
-    - Carica le immagini Docker: Etichetta le immagini Docker con la versione aggiornata e le carica nel registro Docker di GitHub Packages;
-    - Interrompi e rimuovi i container Docker: Interrompe e rimuove i container Docker creati da Docker Compose;
-    - Controlla se il rilascio esiste già: Verifica se esiste già un rilascio per la versione aggiornata su GitHub;
-    - Crea la descrizio del rilascio: Reperisce tutti i messaggi di commit avvenuti tra la precedente versione e la creazione di quella corrente, per allegarli come descrizione del rilascio;
-    - Crea il rilascio GitHub: Crea un nuovo rilascio su GitHub se non esiste già per la versione aggiornata.
-- In sintesi:\
-    Questo workflow automatizza il versioning, i test e il processo di rilascio delle immagini Docker, garantendo rilasci consistenti e affidabili per il progetto.
+// - Steps:
+//     - Imposta l'utente Git: Configura l'utente Git globale utilizzando il nome utente e l'email forniti;
+//     - Checkout del repository: Esegue il checkout del codice del repository per eseguire le azioni successive;
+//     - Imposta Docker Buildx: Configura Docker Buildx, un plugin Docker CLI per estendere le capacità di build;
+//     - Recupera i tag: Recupera i tag dal repository;
+//     - Ottieni la versione: Determina la versione aggiornata basata sull'ultimo tag e sui commit. Se viene trovata una specifica parola chiave nel messaggio del commit (version-major, version-mid o version-minor), incrementa la parte di versione corrispondente;
+//     - Accedi a GitHub Packages: Effettua l'accesso al registro Docker di GitHub Packages per caricare le immagini Docker;
+//     - Imposta Docker Compose: Configura Docker Compose per gestire più container Docker;
+//     - Esegui i test e interrompi se non passano: Esegue i test per diversi servizi (API Python, app React, Express) all'interno dei container Docker. Il workflow si interrompe se i test non passano;
+//     - Copia i report di copertura: Copia i report di copertura generati dai test dai container Docker alla macchina locale;
+//     - Carica i report di copertura su Codecov: Carica i report di copertura su Codecov per ciascun servizio (API Python, app React, Express);
+//     - Carica le immagini Docker: Etichetta le immagini Docker con la versione aggiornata e le carica nel registro Docker di GitHub Packages;
+//     - Interrompi e rimuovi i container Docker: Interrompe e rimuove i container Docker creati da Docker Compose;
+//     - Controlla se il rilascio esiste già: Verifica se esiste già un rilascio per la versione aggiornata su GitHub;
+//     - Crea la descrizio del rilascio: Reperisce tutti i messaggi di commit avvenuti tra la precedente versione e la creazione di quella corrente, per allegarli come descrizione del rilascio;
+//     - Crea il rilascio GitHub: Crea un nuovo rilascio su GitHub se non esiste già per la versione aggiornata.
+// - In sintesi:\
+//     Questo workflow automatizza il versioning, i test e il processo di rilascio delle immagini Docker, garantendo rilasci consistenti e affidabili per il progetto.
 
-*coverage-main.yml*
-```
-name: Codecoverage
+// *coverage-main.yml*
+// ```
+// name: Codecoverage
 
-on:
-  push:
-    branches:
-      - main
+// on:
+//   push:
+//     branches:
+//       - main
 
-jobs:
-  codecoverage:
-    runs-on: ubuntu-latest
+// jobs:
+//   codecoverage:
+//     runs-on: ubuntu-latest
 
-    steps:
-      - name: Set Git user
-        run: |
-          git config --global user.name "farmacodeunipd"
-          git config --global user.email "farmacode.swe.unipd@gmail.com"
+//     steps:
+//       - name: Set Git user
+//         run: |
+//           git config --global user.name "farmacodeunipd"
+//           git config --global user.email "farmacode.swe.unipd@gmail.com"
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+//       - name: Checkout repository
+//         uses: actions/checkout@v2
+//         with:
+//           fetch-depth: 0
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+//       - name: Set up Docker Buildx
+//         uses: docker/setup-buildx-action@v1
 
-      - name: Set up Docker Compose
-        run: docker-compose up -d
+//       - name: Set up Docker Compose
+//         run: docker-compose up -d
 
-      - name: Run tests and stop if they do not pass
-        run: |
-          ci_env=$(bash <(curl -s https://codecov.io/env))
-          docker exec $ci_env mvp_python-api_1 pytest tests/test_algo.py --cov=. --cov-report=xml:/tests/coverage.xml --verbose
-          docker exec $ci_env mvp_react-app_1 npm test
-          docker exec $ci_env mvp_express_1 npm test
-        continue-on-error: false
+//       - name: Run tests and stop if they do not pass
+//         run: |
+//           ci_env=$(bash <(curl -s https://codecov.io/env))
+//           docker exec $ci_env mvp_python-api_1 pytest tests/test_algo.py --cov=. --cov-report=xml:/tests/coverage.xml --verbose
+//           docker exec $ci_env mvp_react-app_1 npm test
+//           docker exec $ci_env mvp_express_1 npm test
+//         continue-on-error: false
 
-      - name: Copy coverage reports
-        run: |
-          docker cp mvp_python-api_1:/tests/coverage.xml ./coverage-python-api.xml
-          docker cp mvp_react-app_1:/client/coverage/coverage-final.json ./coverage-react.json
-          docker cp mvp_express_1:/express/coverage/coverage-final.json ./coverage-express.json
+//       - name: Copy coverage reports
+//         run: |
+//           docker cp mvp_python-api_1:/tests/coverage.xml ./coverage-python-api.xml
+//           docker cp mvp_react-app_1:/client/coverage/coverage-final.json ./coverage-react.json
+//           docker cp mvp_express_1:/express/coverage/coverage-final.json ./coverage-express.json
 
-      - name: Stop and remove Docker containers
-        run: docker-compose down
+//       - name: Stop and remove Docker containers
+//         run: docker-compose down
 
-      - name: Upload Python API coverage report to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage-python-api.xml
-          flags: python-api
-          name: codecov-python-api
+//       - name: Upload Python API coverage report to Codecov
+//         uses: codecov/codecov-action@v4.0.1
+//         with:
+//           token: ${{ secrets.CODECOV_TOKEN }}
+//           file: ./coverage-python-api.xml
+//           flags: python-api
+//           name: codecov-python-api
 
-      - name: Upload React application coverage report to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage-react.json
-          flags: react-app
-          name: codecov-react-app
+//       - name: Upload React application coverage report to Codecov
+//         uses: codecov/codecov-action@v4.0.1
+//         with:
+//           token: ${{ secrets.CODECOV_TOKEN }}
+//           file: ./coverage-react.json
+//           flags: react-app
+//           name: codecov-react-app
 
-      - name: Upload Express coverage report to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage-express.json
-          flags: express
-          name: codecov-express
-```
-- Trigger:\ 
-    Il workflow viene attivato ad ogni push sul ramo principale, main.
+//       - name: Upload Express coverage report to Codecov
+//         uses: codecov/codecov-action@v4.0.1
+//         with:
+//           token: ${{ secrets.CODECOV_TOKEN }}
+//           file: ./coverage-express.json
+//           flags: express
+//           name: codecov-express
+// ```
+// - Trigger:\ 
+//     Il workflow viene attivato ad ogni push sul ramo principale, main.
 
-- Steps:\
-    - Set Git user: Configura il nome e l'email dell'utente Git per le operazioni successive;
-    - Checkout repository: Ottiene una copia del repository;
-    - Set up Docker Buildx: Configura Docker Buildx, uno strumento per la compilazione di immagini Docker multi-architettura;
-    - Set up Docker Compose: Avvia i container Docker necessari per l'esecuzione dei test;
-    - Run tests and stop if they do not pass: Esegue i test per ciascun componente dell'applicazione (Python, React, Express) all'interno dei rispettivi container Docker. Se i test non superano, l'esecuzione del workflow si interrompe;
-    - Copy coverage reports: Copia i report di copertura generati all'interno dei container Docker nei file locali del repository;
-    - Stop and remove Docker containers: Interrompe e rimuove i container Docker utilizzati per l'esecuzione dei test;
-    - Upload Python API coverage report to Codecov: Carica il report di copertura del codice per l'API Python su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
-    - Upload React application coverage report to Codecov: Carica il report di copertura del codice per l'applicazione React su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
-    - Upload Express coverage report to Codecov: Carica il report di copertura del codice per l'applicazione Express su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
-- In sintesi:\
-    Includere la generazione di report anche per il branch principale (main) è fondamentale poiché fornisce un valore significativo. Ogni volta che viene aperta una pull request, Codecov potrà analizzare e confrontare le coperture del codice tra il branch in sviluppo e il branch principale. Questo fornisce dati preziosi che aiutano a valutare l'impatto delle modifiche proposte e a garantire che il codice integrato mantenga o migliori la copertura del codice già presente nel branch principale. Questo processo contribuisce a mantenere elevati standard di qualità del software e favorisce una migliore comprensione delle modifiche introdotte.
+// - Steps:\
+//     - Set Git user: Configura il nome e l'email dell'utente Git per le operazioni successive;
+//     - Checkout repository: Ottiene una copia del repository;
+//     - Set up Docker Buildx: Configura Docker Buildx, uno strumento per la compilazione di immagini Docker multi-architettura;
+//     - Set up Docker Compose: Avvia i container Docker necessari per l'esecuzione dei test;
+//     - Run tests and stop if they do not pass: Esegue i test per ciascun componente dell'applicazione (Python, React, Express) all'interno dei rispettivi container Docker. Se i test non superano, l'esecuzione del workflow si interrompe;
+//     - Copy coverage reports: Copia i report di copertura generati all'interno dei container Docker nei file locali del repository;
+//     - Stop and remove Docker containers: Interrompe e rimuove i container Docker utilizzati per l'esecuzione dei test;
+//     - Upload Python API coverage report to Codecov: Carica il report di copertura del codice per l'API Python su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
+//     - Upload React application coverage report to Codecov: Carica il report di copertura del codice per l'applicazione React su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
+//     - Upload Express coverage report to Codecov: Carica il report di copertura del codice per l'applicazione Express su Codecov, utilizzando il token di accesso fornito come variabile segreta nel repository;
+// - In sintesi:\
+//     Includere la generazione di report anche per il branch principale (main) è fondamentale poiché fornisce un valore significativo. Ogni volta che viene aperta una pull request, Codecov potrà analizzare e confrontare le coperture del codice tra il branch in sviluppo e il branch principale. Questo fornisce dati preziosi che aiutano a valutare l'impatto delle modifiche proposte e a garantire che il codice integrato mantenga o migliori la copertura del codice già presente nel branch principale. Questo processo contribuisce a mantenere elevati standard di qualità del software e favorisce una migliore comprensione delle modifiche introdotte.
 
 == Revisioni congiunte con il cliente
 

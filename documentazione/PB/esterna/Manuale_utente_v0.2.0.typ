@@ -37,9 +37,9 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.2.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/10).
 === Riferimenti informativi
 //da verificare in seguito se il link combacia
 - Glossario v2.0.0\
@@ -96,20 +96,46 @@ Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano 
 
 #pagebreak()
 = Istruzioni all'uso
-Il sistema di raccomandazione permette l'interazione con l'utente tramite una semplice ed intuitiva interfaccia web. Nonostante la semplicita' per garantire facilità di utilizzo e manutenzione si è dicesi di dividere interfaccia in più pagine accessibili tramite un menù.
+Il sistema di raccomandazione permette l'interazione con l'utente tramite una semplice ed intuitiva interfaccia web. Nonostante la semplicità per garantire facilità di utilizzo e manutenzione si è dicesi di dividere interfaccia in più pagine accessibili tramite un menù.
 Di seguito ci sarà un'illustrazione delle varie pagine e spiegazione delle funzionalità in esse e, di conseguenza, dell'interfaccia.
 
 == Login
 #figure(
-  image("/imgs/screenshots_mvp/login.png", width: 80%),
+  image("/imgs/screenshots_mvp/login.png", width: 100%),
   caption: [
     Pagina login
   ]
 )
-All'avvio dell'interfaccia la prima pagina che si presenta è quella di Login, ovvero la pagina che permette di riconoscere l'utilizzatore del servizio.
-In particola ogni utente dovrà inserire le proprio credenziali, username e password, per poi accedere con la pressione del bottone "Accedi".
+All'avvio dell'applicazione la prima pagina che si presenta è quella di Login, ovvero la pagina che permette all'utente di autenticarsi e poi successivamente usufruire del servizio.\
+Ogni utente deve essere munito delle proprie credenziali. Inserire le proprie credenziali negli appositi campi:
+<login>
+#grid(
+  columns: (auto, auto, auto),
+  rows: (auto),
 
-La presenza dell'occhio alla fine del box di inseriemento della password garantisce riservatezza nel momento di login.\ Di default la password risulterà censurata, con la pressione dell'occhio si potrà vedere la password in chiaro, una convenzione presente in molti siti con accesso controllato.
+  figure(
+    image("/imgs/screenshots_mvp/login_username.png", width: 99%),
+    caption: [
+      Input username
+    ]
+  ),
+  figure(
+    image("/imgs/screenshots_mvp/login_password.png", width: 99%),
+    caption: [
+      Input password
+    ]
+  ),
+  figure(
+    image("/imgs/screenshots_mvp/login_accedi.png", width: 99%),
+    caption: [
+      Button accedi
+    ]
+  ),
+)
+1) Inserire l'username nell'apposito campo;\
+2) Inserire la password nell'apposito campo. Di default la password sarà censurata dai classici puntini. Se si deridera visualizzare la password inserita seguire le istruzioni al passaggio successivo;\
+2.1) Cliccare il bottone con l'icona a forma di occio per visualizzare in chiaro la password inserita. Cliccare nuovamente per nasconderla.\
+3) Dopo aver inserito le proprie credenziali cliaccare il bottone Accedi e se le credenziali corrispondono l'utente verrà riindirizzato nella pagina di ricerca. In caso di errori seguire eventuali indicazioni a schermo.
 
 === Errore Login
 #figure(
@@ -118,19 +144,57 @@ La presenza dell'occhio alla fine del box di inseriemento della password garanti
     Errore login
   ]
 )
+In caso di errore nel login verrà mostrato un messaggio di errore di colore rosso posizionato al di sotto del logo Ergon.\
+Correggere eventuali errori e riprovare ad effettuare l'accesso come descritto nella #link(<login>)[sezione precedente].
 
-In caso di errore nel login verrà mostrato un messaggio di errore in rosso, in quel caso basta correggere la o le credenziali sbagliate e riprovare l'accesso.
-
+#pagebreak()
 == Ricerca
 #figure(
-  image("/imgs/screenshots_mvp/ricerca.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca.png", width: 100%),
   caption: [
-    Pagine ricerca
+    Pagina ricerca
   ]
 )
+La pagina ricerca è quella più importate, nella quale l'utente avrà la possibilità di effettuare le ricerche e visualizzare i risultati.\
+La pagina è accessibile dal menu superiore presente in tutte le pagine alla voce Ricerca. Inotre una volta effettuato l'accesso, in caso di successo, si verrà reindirizzati proprio su questa schermata.\
+Di seguito verranno elencate le istruzioni per poter effettuare correttamente una ricerca, verranno spiegate le varie feature/personalizzazioni e come gestire eventuali errori.
 
-La prima pagina visualizzata dopo il login e la prima presente nel menù è la pagina di ricerca. \ In questa pagina avviene la ricerca della raccomandazione secondo i criteri richiesti, questi criteri andranno immessi nella barra di ricerca.\
-Di seguito un maggior dettaglio sulla selezione di questi criteri.
+=== Selezione algoritmo
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_algoritmo_1.png", width: 100%),
+  caption: [
+    Selezione algoritmo dropdown
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_algoritmo_2.png", width: 100%),
+  caption: [
+    Selezione algoritmo option
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_algoritmo_3.png", width: 100%),
+  caption: [
+    Selezione algoritmo fine
+  ]
+)
+Descrizione
+
+=== Funzione di training (Amministratore)
+La funzione che permette di effettuare il training dell'algoritmo scelto è disponibile solo per gli utenti con i permessi amministratore. In caso l'utente non dispone dei permessi necessari non visualizzerà il bottone di training.
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  caption: [
+    Bottone di training
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  caption: [
+    Conferma di training
+  ]
+)
+Descrizione
 
 === Selezione topic
 #figure(
@@ -163,6 +227,15 @@ Di seguito maggior dettaglio sull'ultima selezione, la selezione del numero N di
 Come precedentemente anticipato l'ultima selezione riguarda il numero N di elementi da visualizzare nella raccomandazione.\
 In particolare è possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da raccomandare.
 
+=== Training in atto
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  caption: [
+    Selezione N nella ricerca
+  ]
+)
+Descrizione
+
 === Risultato ricerca
 #figure(
   image("/imgs/screenshots_mvp/risultatoRicerca.png", width: 80%),
@@ -173,6 +246,30 @@ In particolare è possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da 
 Infine dopo la pressione del bottone Ricerca verrà visualizzata una tabella con gli elementi raccomandati.\
 Ogni elemento oltre all'ID e descrizione presenza una grado di raccomandazione a stelle, 5 stesse colorate rappresente il massimo grado di raccomandazione, 0 stelle colorate rappresenta il minimo.\
 È possibile scorrere la tabella tramite rotela del mouse o frecce direzionali della tastira nel caso gli elementi non fossero tutti visibili.
+
+=== Inserimento feedback
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  caption: [
+    Inserimento feedback
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  caption: [
+    Conferma feedback
+  ]
+)
+Descrizione
+
+=== Errore di ricerca
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  caption: [
+    Errore di ricerca
+  ]
+)
+Descrizione
 
 == Clienti
 #figure(
