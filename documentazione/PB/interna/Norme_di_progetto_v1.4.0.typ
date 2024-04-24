@@ -26,6 +26,7 @@
 
   ),
   changelog: (
+    "1.4.1", "2024-04-24", p.passarella, "", "aggiornamento sezione 2.2.7 e 1.5.2",
     "1.4.0", "2024-04-04", p.carraro, "", "Aggiunte MVP: git actions e altro",
     "1.3.0", "2024-04-03", p.carraro, "", "Ristrutturazione documento",
     "1.2.0", "2024-02-29", p.favaron, p.bomben, "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
@@ -109,7 +110,16 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
     https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
 
 - P2 - Diagrammi dei casi d'uso\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+    https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf;
+
+- P4 - Diagtrammi delle classi\
+    https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf;
+
+- P5 - Design Pattern Architetturali - Dependency Injection
+    https://www.math.unipd.it/~rcardin/swea/2022/Design%20Pattern%20Architetturali%20-%20Dependency%20Injection.pdf;
+
+- P9 - Design Pattern Comportamentali
+    https://www.math.unipd.it/~rcardin/swea/2021/Design%20Pattern%20Comportamentali_4x4.pdf.
 
 *Slide corso Metodi e Tecnologie per lo Sviluppo Software*\
 Le seguenti dispense sono relative all'anno accademico 2022/2023.
@@ -392,7 +402,8 @@ Segue un elenco delle tecnologie scelte ed adottate per lo sviluppo del PoC:
 - Livello di Presentazione:
     + #glossario("React").
 // vanno elencate le tecnologie scelte
-=== Programmazione e verifica del software - PoC\ /** descrizione processo di coding e test software */
+=== Programmazione e verifica del software - PoC
+/** descrizione processo di coding e test software */
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. La programmazione e relativa verifica, è una fase fondamentale, durante la quale chi ne è incaricato, inizia a plasmare e implementare il prodotto che l'utente finale andrà ad utilizzare.\
 - Linguaggi e ambiente:\
     Per lo sviluppo del prodotto il team userà vari linguaggi di programmazione a seconda di esigenze e vincoli, imposti sia dal capitolato che dal proponente. Se ne riporta qui sotto un elenco per una più facile consultazione:
@@ -421,7 +432,8 @@ In questa sezione sono raccolte tutte le norme e regole che i programmatori in c
 
     + Testabilità: Ogni funzione dovrebbe essere progettata in modo tale da essere facilmente testabile. L'ideale sarebbe seguire un approccio #glossario("TDD") (Test Driven Development), quando e quanto più possibile.
 
-=== Integrazione - Poc\ /** descrizione processo di integrazione di sistema e software */
+=== Integrazione - Poc
+/** descrizione processo di integrazione di sistema e software */
 La sezione dedicata all'integrazione del sistema e del software delinea il processo mediante il quale diverse componenti, moduli o servizi del progetto vengono combinati e testati per formare un sistema funzionante e coeso. L'obiettivo primario di questo processo è garantire che tutte le parti del sistema operino in armonia, soddisfacendo i requisiti funzionali e di prestazione stabiliti. Il team si impegna fin da subito nell'integrare le varie componenti del prodotto, in modo solido e al contempo elastico, in modo che quanto esplorato durante la produzione del PoC possa essere utile una volta inziati i lavori sul prodotto di MVP.
 
 === Progettazione - MVP
@@ -432,22 +444,16 @@ In accordo con il proponente si è deciso di evolvere quella che potremmo defini
 
 *Diagramma delle Classi*\
 Per la progettazione e successiva implementazione della buisness logic del prodotto il gruppo a deciso di utilizzare Python orientato ad oggetti. Questo sia perchè da una parte le librerie utili ed in generale più utilizzate in ambito AI sono sviluppate in questo linguaggio, sia perchè abbiamo pensato che gestire il codice con una struttura a classi, oltre ad esserci più familiare, potesse garantire maggiore ordine, modularità e estensibilità.
+La progettazione dei diagrammi è stata fatta seguendo le linee guida presenti nelle slide (presenti della sezione di riferimenti informativi - slide di ingegneria del software) P4, con P5 e P9 per i pattern dependency injection e Strategy.
 
-*Linee guida interne*\
-// qui da scrivere come realizzare diagrammi delle classi
-- *Attributi e Meotdi*
-// specificare come scrivere attributi e metodi: tipaggio, nomi ... includere foto
+*Tecnologie scelte*\
+Per quanto riguarda le tecnologie scelte per lo sviluppo dell'MVP si rimanda alla sezione dettagliata nel documento ufficiale di ``` Specifica Tecnica``` (Specifica_tecnica_v1.0.0). 
 
-- *Relazioni tra classi*
-// elencare e spiegare le varie relazioni mettendo immagini frecce
-
-- *Pattern presi in esame*
-// elencare e spiegare pattern "esaminati" (solo strategy e dependency injection)
-
-=== Programmazione e verifica del software - MVP\ 
+=== Programmazione e verifica del software - MVP
 In questa sezione sono raccolte tutte le norme e regole che i programmatori in carico sono tenuti ad osservare durante il processo di codifica. Per quanto riguarda i princi fondamentali da seguire si rimanda a quanto già osservato durante la fase di RTB con lo sviluppo del PoC. Per maggiori informazioni riguardanti invece le tecnologie in utilizzo si rimanda al documento ufficiale di ``` Specifica Tecnica``` (Specifica_tecnica_v1.0.0).
 
-=== Integrazione - MVP\ /** descrizione processo di integrazione di sistema e software */
+=== Integrazione - MVP
+/** descrizione processo di integrazione di sistema e software */
 Per maggiori informazioni riguardanti invece le tecnologie in utilizzo si rimanda al documento ufficiale di ``` Specifica Tecnica``` (Specifica_tecnica_v1.0.0).
 
 == Gestione operativa
