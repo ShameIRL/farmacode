@@ -150,20 +150,32 @@ Correggere eventuali errori e riprovare ad effettuare l'accesso come descritto n
 #pagebreak()
 == Ricerca
 #figure(
-  image("/imgs/screenshots_mvp/ricerca.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca.png", width: 100%),
   caption: [
-    Pagine ricerca
+    Pagina ricerca
   ]
 )
-
-La prima pagina visualizzata dopo il login e la prima presente nel menù è la pagina di ricerca. \ In questa pagina avviene la ricerca della raccomandazione secondo i criteri richiesti, questi criteri andranno immessi nella barra di ricerca.\
-Di seguito un maggior dettaglio sulla selezione di questi criteri.
+La pagina ricerca è quella più importate, nella quale l'utente avrà la possibilità di effettuare le ricerche e visualizzare i risultati.\
+La pagina è accessibile dal menu superiore presente in tutte le pagine alla voce Ricerca. Inotre una volta effettuato l'accesso, in caso di successo, si verrà reindirizzati proprio su questa schermata.\
+Di seguito verranno elencate le istruzioni per poter effettuare correttamente una ricerca, verranno spiegate le varie feature/personalizzazioni e come gestire eventuali errori.
 
 === Selezione algoritmo
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_algoritmo_1.png", width: 100%),
   caption: [
-    Selezione topic nella ricerca
+    Selezione algoritmo dropdown
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_algoritmo_2.png", width: 100%),
+  caption: [
+    Selezione algoritmo option
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_algoritmo_3.png", width: 100%),
+  caption: [
+    Selezione algoritmo fine
   ]
 )
 Descrizione
