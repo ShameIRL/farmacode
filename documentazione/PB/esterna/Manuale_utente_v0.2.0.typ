@@ -187,12 +187,42 @@ La seconda pagina presente nel menù è la pagina Clienti. \ In questa pagina è
 #figure(
   image("/imgs/screenshots_mvp/prodotti.png", width: 80%),
   caption: [
-    Pagina elenco prodotti
+    Pagina Prodotti
   ]
 )
-La terza pagina presente nel menù è la pagina Prodotti. Questa pagina è completamente analoga alla precedente pagina Clienti, infatti offre la possibilità di vedere la lista di prodotti presenti, effettuare una ricerca e visualizzare un diverso numero di elementi nella lista.
+La pagina prodotti mostra l'elenco degli articoli presenti nel database.
+Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
+- Codice Articolo;
+- Descrizione Articolo;
+- Linea Commerciale;
+- Settore Commerciale;
+- Famiglia Commerciale;
+- Sotto-famiglia Commerciale.
+Dato l'elevato numero di prodotti presenti nel database, l'elenco completo degli articoli è suddiviso in diverse pagine.
+Tuttavia è possibile decidere tramite l'apposito filtro, il numero di elementi visibili all'interno della tabella.
 
-== Profilo
+=== Filtri
+Data l'elevata mole di dati, per trovare più facilmente un determianto articolo, è possibile applicare dei filtri per i risultati all'interno della tabella.\
+E' possibile applicare un filtro globale, che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche, in maniera da visualizzare ad esempio tutti i prodotti appartenenti ad una specifica Linea Commerciale.
+
+=== Dettagli prodotto
+#figure(
+  image("/imgs/screenshots_mvp/dettaglio_prodotto.png", width: 80%),
+  caption: [
+    Pagina Prodotti
+  ]
+)
+Se l'utente vuole approfondire la visualizzazione di un prodotto, può semplicemente cliccare sulla riga corrsipondente della tabella che contiene il prodotto interessato.\
+Una volta cliccata, si aprirà una finestra di dialogo contenente maggiori informazioni sul prodotto. Le informazioni sono le seguenti:
+- Codice Articolo;
+- Descrizione Articolo;
+- Immagine Articolo;
+- Codice/Descrizione Linea Commerciale;
+- Codice/Descrizione Settore Commerciale;
+- Codice/Descrizione Famiglia Commerciale;
+- Codice/Descrizione Sotto-Famiglia Commerciale.
+
+== Cronologia
 #figure(
   image("/imgs/screenshots_mvp/profilo.png", width: 80%),
   caption: [
@@ -203,25 +233,9 @@ La quarta e ultima pagina presente nel menù è la pagina Profilo.\
 Questa pagina presenta le informazioni dell'utente che sta utilizzando l'interfaccia web e offre la possibilità di andare a modificare i dati email e password.\
 In seguito maggiori dettagli su queste due funzionali.
 
-=== Modifica email
-#figure(
-  image("/imgs/screenshots_mvp/modificaEmail.png", width: 80%),
-  caption: [
-    Modifica email
-  ]
-)
-Tramite la pressione del bottone azzurro con la matina si ha la possibilità di andare a modificare il campo Email dell'utente, successivamente si può salvare l'informazione tramite il bottone verde con la scritta "Salva" oppure annullare l'operazione con il bottone rosso con la croce sopra.
+=== Filtri
 
-=== Modifica password
-#figure(
-  image("/imgs/screenshots_mvp/modificaPassword.png", width: 80%),
-  caption: [
-    Modifica password
-  ]
-)
-La modifica password avviene in maniera analoga alla modifica del campo Email, quindi il bottone azzurro con la matita dà la possibilità di modificare il campo, il bottone verde salvarlo e quello rosso annullare l'operazione.
-
-== Logout
+== Feedback
 #figure(
   image("/imgs/screenshots_mvp/logout.png", width: 80%),
   caption: [
@@ -230,6 +244,24 @@ La modifica password avviene in maniera analoga alla modifica del campo Email, q
 )
 Infine nel menù è presente un'icona di logout, alla sua pressione l'utente verrà disconnesso dall'applicazione e verrà riportato nella pagina iniziale di login.
 
+=== Filtri
+
+=== Eliminazione feedback
+
+
+== Profilo
+
+=== Modifica email
+
+=== Modifica password
+
+=== Messaggio errore modifiche
+
+
+== Logout
+
+
+== Pagina 404
 #pagebreak()
 = Elenco delle immagini
 
