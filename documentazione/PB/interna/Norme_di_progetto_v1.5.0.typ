@@ -1,19 +1,13 @@
 //2.1.1) "Descrizione e scopo" serve??
-//2.1.3) Documentazione fornita: aggiungere nuovi documenti?
-//2.1.4) Strumenti: aggiungere nuovi strumenti usati per PB?
-//2.2.3) Ultima frase: "studi ... raccolti in un relativo documento" sarebbe?
-// utile inserire 2.2.4, progettazione PB o MVP??
 //2.2.4) -> bozza architettura, non mi sembra sensata la prima frase.
+//3.3.4) andrebbe messa descrizione.
+//3.4.1) 3.5.1) 3.6.1) hanno senso??
+
 //  2.4) Manutenzione da rivedere in toto per me. 2.4.3 e 2.4.4 non sviluppate.
-//3.1.7) paragafro struttura dei verbali va rivisto?
-//3.1.8) aggiunta documenti?
 //3.1.9) aggiunta documenti?
 //3.2.3) Repository, qui si parlo di uno, ma noi ne abbiamo molti, che si fa?
 // "aggiungere" 3.2.4) dove si parla di repository codice?
 //3.2.3.2) va li' sotto? Gestione configurazione -> repository -> procedura di redazione/revisione/manutenzione ???
-//3.3.4) andrebbe messa descrizione.
-//3.4.1) 3.5.1) 3.6.1) hanno senso??
-
 
 #import "/template/big_docs.typ": *
 
@@ -26,7 +20,7 @@
 
   ),
   changelog: (
-    "1.4.1", "2024-04-24", p.passarella, "", "aggiornamento sezione 2.2.7 e 1.5.2",
+    "1.5.0", "2024-04-24", p.passarella, "", "aggiornamento sezione 2.2.7, 1.5.2, 3.1.8 e 3.1.9",
     "1.4.0", "2024-04-04", p.carraro, "", "Aggiunte MVP: git actions e altro",
     "1.3.0", "2024-04-03", p.carraro, "", "Ristrutturazione documento",
     "1.2.0", "2024-02-29", p.favaron, p.bomben, "Migliorie a sezioni 4.1.4.3 e aggiunta delle nuove sezioni 3.1.2, 3.1.3, 3.2.3.2",
@@ -373,7 +367,7 @@ Dove:
 L'attività di progettazione segue ed utilizza la fase di analisi dei requisiti per definire ancor più struttura, vincoli e specifiche tecniche del prodotto software in oggetto.\
 La fase di progettazione mira inoltre a facilitare definizione, suddivisione e quindi pianificazione delle attività di codifica del prodotto, beneficiando, se eseguita in modo corretto e vantaggioso, il ciclo di vita del software.\
 La progettazione inizia con la creazione di un #glossario("PoC") (Proof of Concept), un prodotto software solitamente usa e getta, che mira a dimostrare la fattibilità del progetto. Durante questa prima fase, vengono scelte le tecnologie da adottare e viene abbozzata una prima struttura del prodotto, andando a definirne le parti, sempre con l'ausilio dei casi d'uso e relativi requisiti, analizzati nella fase precedente. Vengono infine identificate e concordate con il proponente le funzionalità considerate di maggiore importanza da sviluppare in questa prima bozza del prodotto.\ 
-Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti in un relativo documento allegato alla revisone di #glossario("PB") (Product Baseline).
+Successivamente, durante la fase adibita allo sviluppo di un MVP, verranno svolti studi più approfonditi sull'architettura del software in modo da migliorarne la qualità e manutenibilità generale. Tali studi verranno raccolti nel documento di specifiche tecniche allegato alla revisone di #glossario("PB") (Product Baseline).
 
 === Progettazione - PoC
 *Bozza di Architettura*\
@@ -609,6 +603,8 @@ Vanno rispettate le seguenti sezioni:
             - Piano di Progetto; 
             - Piano di Qualifica; 
             - Glossario; 
+            - Manuale Utente;
+            - Specifiche Tecniche;
             - Verbali esterni, attestanti di quanto discusso.
 
     - Informali: Sono i documenti interni non destinati alla divulgazione con esterni e fini a loro stessi. Perciò non necessitano di versionamento. Spesso sono bozze in preparazione a documenti formali, o note e appunti generici.
@@ -642,15 +638,27 @@ Il documento ``` Piano di Progetto``` va strutturato nel seguento modo:
 Il documento ``` Piano di Qualifica``` va strutturato nel seguente modo:
     - *Qualità del prodotto*: sezione in cui va strutturata la modilità e le metriche di valutazione del prodotto software, in particolare l'architettura, la documentazione e la qualità del software;
     - *Qualità di processo*: sezione in cui va strutturata la modalità e metriche di valutazione del processo, in particolare i processi primari, i processi di supporto e i processi organizzativi;
-    - *Strategia dei test*: sezione in cui vanno spiegati i test di controllo con relativi grafici e tabelle;
-    - *Miglioramenti*: sezione in cui vanno indicati i miglioramenti possibili del prodotto e dei processi;
+    - *Strategia dei test*: sezione in cui vengono spiegati i test di controllo con relativi grafici e tabelle;
+    - *Miglioramenti*: sezione in cui vengono indicati i miglioramenti possibili del prodotto e dei processi;
     - *Controllo delle metriche*: sezione che funge da #glossario("cruscotto") per il controllo delle metriche, in maniera da poter controllare l'avanzamento e la qualità del progetto.
 
 *Norme di Progetto*\
 Il documento ``` Norme di Progetto``` va strutturato nel seguento modo:
-    - *Processi Primari*: sezione in cui vanno descritti i processi primari tra cui fornitura, sviluppo, gestione operativa e manutenzione;
-    - *Processi di supporto*: sezione in cui vanno descritti i processi di supporto tra cui documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
-    - *Processi organizzativi*: sezione in cui vanno descritti i processi organizzativi tra cui gestione dei processi, gestione ruolistica e gestione delle comunicazioni, seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
+    - *Processi Primari*: sezione in cui vengono descritti i processi primari tra cui fornitura, sviluppo, gestione operativa e manutenzione;
+    - *Processi di supporto*: sezione in cui vengono descritti i processi di supporto tra cui documentazione, gestione della configurazione, qualifica, revisione e verifica e risoluzione dei problemi;
+    - *Processi organizzativi*: sezione in cui vengono descritti i processi organizzativi tra cui gestione dei processi, gestione ruolistica e gestione delle comunicazioni, seguite da una descrizone delle infrastrutture, dei processi di miglioramento e da quelli di formazione.
+
+*Manuale Utente*\
+Il documento ``` Manuale Utente``` va strutturato nel seguento modo:
+    - *Requisiti*: sezione in cui vengono descritti i requisiti minimi hardware e softeare per eseguire l'applicazione;
+    - *Installazione*: sezione in cui vengono descritti i passaggi da eseguire per l'installazione dell'applicazione;
+    - *Istruzioni all'uso*: sezione in cui sono presenti delle illustrazioni delle varie pagine dell'applicazione e spiegazione delle funzionalità in esse.
+
+*Specifiche Tecniche*\
+Il documento ``` Specifiche Tecniche``` va strutturato nel seguento modo:
+    - *Tecnologie*: sezione in cui vengono elencate le varie teconologie utilizzate per la codifica e l'analisi del codice;
+    - *Architettura*: sezione esaustiva dell'architettura dell'applicazione e delle sue componeti;
+    - *Stato requisiti funzionali*: tabella e grafici che indicano i requisiti funzionali soddisfatti e non.
 
 *Glossario*\ <glossario>
 Il documento ``` Glossario``` va strutturato nel seguento modo:\
