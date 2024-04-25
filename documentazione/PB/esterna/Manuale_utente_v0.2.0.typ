@@ -8,8 +8,22 @@
     p.cardin,
   ),
   changelog: (
-    "0.3.0", "2024-03-25", p.passarella, "", "Struttura sezione 1.1 e 2",
-    "0.2.0", "2024-03-22", p.carraro, p.passarella, "Struttura sezione 4",
+    "0.12.3", "2024-04-17", p.passarella, p.rosson, "Migliorie sezione 4 Feedback",
+    "0.12.2", "2024-04-16", p.bomben, p.rosson, "Migliorie sezione 4 Cronologia",
+    "0.12.1", "2024-04-12", p.favaron, p.bomben, "Migliorie sezione 4 Ricerca",
+    "0.12.0", "2024-04-08", p.favaron, p.bomben, "Stesura sezione 4 Feedback",
+    "0.11.0", "2024-04-05", p.bomben, p.favaron, "Stesura sezione 4 Cronologia",
+    "0.10.2", "2024-03-28", p.rosson, p.carraro, "Migliorie sezione 4 Profilo",
+    "0.10.1", "2024-03-25", p.pandolfo, p.baggio, "Migliorie sezione 4 Ricerca",
+    "0.10.0", "2024-03-22", p.pandolfo, p.baggio, "Prima stesura sezione 4 Ricerca",
+    "0.9.0", "2024-03-21", p.bomben, p.baggio, "Prima stesura sezione 4 page not found 404",
+    "0.8.0", "2024-03-20", p.pandolfo, p.bomben, "Prima stesura sezione 4 Profilo",
+    "0.7.0", "2024-03-15", p.baggio, p.bomben, "Prima stesura sezione 4 Prodotti",
+    "0.6.0", "2024-03-12", p.rosson, p.favaron, "Prima stesura sezione 4 Clienti",
+    "0.5.0", "2024-03-08", p.passarella, p.carraro, "Prima stesura sezione 4 Logout",
+    "0.4.0", "2024-03-06", p.carraro, p.passarella, "Prima stesura sezione 4 Login",
+    "0.3.0", "2024-03-05", p.carraro, p.passarella, "Struttura sezione 4",
+    "0.2.0", "2024-03-04", p.passarella, p.favaron, "Struttura e stesura sezione 1.1 e 2",
     "0.1.0", "2024-03-02", p.favaron, p.carraro, "Struttura iniziale del documento",
   ),
 )
@@ -128,7 +142,7 @@ Ogni utente deve essere munito delle proprie credenziali. Inserire le proprie cr
   figure(
     image("/imgs/screenshots_mvp/login_accedi.png", width: 99%),
     caption: [
-      Button accedi
+      Buttone accedi
     ]
   ),
 )
@@ -160,6 +174,7 @@ La pagina è accessibile dal menu superiore presente in tutte le pagine alla voc
 Di seguito verranno elencate le istruzioni per poter effettuare correttamente una ricerca, verranno spiegate le varie feature/personalizzazioni e come gestire eventuali errori.
 
 === Selezione algoritmo
+<algo>
 #figure(
   image("/imgs/screenshots_mvp/ricerca_algoritmo_1.png", width: 100%),
   caption: [
@@ -178,44 +193,105 @@ Di seguito verranno elencate le istruzioni per poter effettuare correttamente un
     Selezione algoritmo fine
   ]
 )
-Descrizione
+Il primo step per effettuare correttamente una ricerca è selezionare l'algoritmo desiderato. Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il primo Dropbox identificato con la scritta "Seleziona algoritmo". Verranno dunque mostrati a schermo l'elenco dei possibili alògoritmi tra cui scegliere;\
+2) Selezionare con un click l'algoritmo desiderato.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale ora avrà come scritta l'algoritmo selezionato.
+
 
 === Funzione di training (Amministratore)
-La funzione che permette di effettuare il training dell'algoritmo scelto è disponibile solo per gli utenti con i permessi amministratore. In caso l'utente non dispone dei permessi necessari non visualizzerà il bottone di training.
+La funzione che permette di effettuare il training dell'algoritmo scelto. È disponibile solo per gli utenti con i permessi amministratore. In caso l'utente non dispone dei permessi necessari non visualizzerà il bottone di training.\
+Questo passaggio non è strettamente necessario per effettuare una ricerca, tuttavia se sono stati aggiunti molti ordini al sistema effettuare un training significherebbe andare a prendere in considerazione i nuovi cambiamenti.   
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_training_1.png", width: 100%),
   caption: [
     Bottone di training
   ]
 )
-#figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
-  caption: [
-    Conferma di training
-  ]
+#grid(
+  columns: (auto, auto),
+  rows: (auto),
+
+  figure(
+    image("/imgs/screenshots_mvp/ricerca_training_2.png", width: 99%),
+    caption: [
+      Conferma operazione di training
+    ]
+  ),
+  figure(
+    image("/imgs/screenshots_mvp/ricerca_training_3.png", width: 99%),
+    caption: [
+      Training in corso
+    ]
+  ),
 )
-Descrizione
+Su un utente dispone quindi dei permessi necessari e desidera effettuare un training, come prima cosa, deve andare a selezionare l'algorimo come illustrato nella #link(<algo>)[sezione precedente].\
+Successivamente seguire le seguenti istruzioni:\
+1) Cliccare il bottone Training all'interno del componente filtro di ricerca. Verrà mostrata a schermo una finestra di dialogo;\
+2) Leggere attentamente il messaggio all'interno della finestra di dialogo e cliccare il bottone Conferma per avviare il training dell'algoritmo scelto.\
+Una volta eseguite correttamente questi passaggi la finestra di dialogo mostrerà un'indicazione sullo stato di avanzamento dell'operazione. La durata può variare, chiediamo di atterndere per qualche minuto e di non uscire dalla pagina o ricaricarla in qualunque modo.\
+Al termine dell'operazione la finestra di dialogo scomparirà e l'utente potrà continuare ad utilizzare il sistema.
 
 === Selezione topic
+<topic>
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_topic_1.png", width: 100%),
   caption: [
-    Selezione topic nella ricerca
+    Selezione topic dropdown
   ]
 )
-Il primo criterio per la ricerca è il topic, ovvero la scelta se eseguire la ricerca per clienti o per prodotti. \ Nel primo caso la ricerca fornirà un elenco di N prodotti raccomandati per il cliente scelto, nel secondo caso un elenco di N clienti a cui raccomandare il prodotto scelto.\
-Di seguito maggior dettaglio sulla selezione di cliente o prodotto su cui fare la raccomandazione.
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_topic_2.png", width: 100%),
+  caption: [
+    Selezione topic option
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_topic_3.png", width: 100%),
+  caption: [
+    Selezione topic fine
+  ]
+)
+Il secondo step per effettuare correttamente una ricerca è selezionare il topic desiderato. I topic disponibili sono Clienti e Prodotti:
+- selezionando Clienti la ricerca restituirà i migliori N prodotti per uno specifico cliente selezionato (come illustrato nella #link(<specifica>)[sezione successiva]);
+- selezionando Prodotti la ricarca restituirà i migliori N clienti per uno specifico prodotto selezionato (come illustrato nella #link(<specifica>)[sezione successiva]).
+Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il secondo Dropbox identificato con la scritta "Seleziona topic". Verranno dunque mostrati a schermo l'elenco dei possibili topic tra cui scegliere;\
+2) Selezionare con un click il topic desiderato.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale ora avrà come scritta del topic selezionato, inoltre apparirà all'interno del componente filtro di ricerca un nuovo dropbox con la scritta "Seleziona un cliente", nel caso abbiate scelto Clienti come topic, oppure "Seleziona un prodotto", nel caso abbiate scelto Prodotti come topic.
+
 
 === Selezione specifica
+<specifica>
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneSpecifica.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_specifica_1.png", width: 100%),
   caption: [
-    Selezione specifica nel Topic
+    Selezione specifica dropdown
   ]
 )
-Successiva alla selezione del topic sarà necessario selezionare l'elemento specifico su cui fare la raccomandazione: un cliente nel caso il topic fosse clienti e un prodotto nel caso di prodotti.\
-Una volta selezionata la box di selezione si aprirà una tendina in cui sarà possibile ricercare l'elemento oppure sarà possibile scorrere per trovare l'elmento da selezionare.
-Di seguito maggior dettaglio sull'ultima selezione, la selezione del numero N di elmenti da visualizzare nella raccomandazione.
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_specifica_2.png", width: 100%),
+  caption: [
+    Selezione specifica option
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_specifica_2_variante.png", width: 100%),
+  caption: [
+    Selezione specifica option (variante Clienti)
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_specifica_3.png", width: 100%),
+  caption: [
+    Selezione specifica fine
+  ]
+)
+Il terzo step per effettuare correttamente una ricerca consiste nell'andare a selezionare uno specifico cliente o prodotti in base a quanto fatto nello #link(<topic>)[step precendete].\
+Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il terzo Dropbox identificato con la scritta "Seleziona un prodotto" o "Seleziona un cliente" nella sua variante. Verranno dunque mostrati a schermo l'elenco dei possibili prodotti o clienti, nella variante, tra cui scegliere;\
+2) Selezionare con un click il prodotto desiderato, o cliente nella variante. È inoltre possibile andare a filtrare i risultati andando a cercare dall'apposito input posizionato al di sopra della lista delle opzioni.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale ora avrà come scritta il prodotto selezionato, o il cliente nella sua variante.
 
 === Selezione N
 #figure(

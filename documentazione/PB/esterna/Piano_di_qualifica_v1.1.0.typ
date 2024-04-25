@@ -1,3 +1,11 @@
+/* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO */
+
+/* TO DO: */
+/* Cambiare immagini sezione 6 e relative descrizioni*/
+/* Sezione 4 */
+/* Sezione 5 */
+
+
 #import "/template/big_docs.typ": *
 
 #show: project.with(
@@ -249,7 +257,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
   [100%],
   [MPD5],
   [Copertura  dei requisiti opzionali], 
-  [≥ 50%],
+  [≥ 45%],
   [100%],
 //USABILITA'
   [MPD6],
@@ -278,19 +286,19 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 //COPERTURA TEST
   [MPD11],
   [Branch Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPD12],
   [Statement Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPD13],
   [Function Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPD14],
   [Line Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
 )
 #align(center)[Tabella 4: Metriche qualità del software]
@@ -497,11 +505,11 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   //VERIFICA
   [MPC11],
   [Code Coverage (CC)], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPC12], 
   [Passed Tests (PT)], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   //ACCERTAMENTO DELLA QUALITA
   [MPC13],
@@ -858,11 +866,13 @@ Un intervallo ideale si aggira fra i 40 e 60.
   ),
   align: center,
   [*Documento*], [*Valore IG*],
-  [Analisi dei requisiti], [87],
-  [Glossario], [48],
-  [Piano di Progetto], [69],
-  [Piano di qualifica], [88],
-  [Norme di progetto], [56],
+  [Analisi dei requisiti], [93],
+  [Glossario], [72],
+  [Manuale utente], [79],
+  [Piano di Progetto], [88],
+  [Piano di qualifica], [86],
+  [Specifica tecnica], [86],
+  [Norme di progetto], [77],
 )
 ]
 #align(center)[Tabella 19: Indice di Gulpease dei documenti]
@@ -890,22 +900,17 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],[11],[12],
-  [*EAC*], [12100], [11750], [11535], [11125],[10680],
-[11259],
-[11883],
-[12102],
-[12597],
-[12763],[13059],[13010]
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+  [*EAC*], [12100], [11750], [11535], [11125],[10680], [11259], [11883], [12102], [12597], [12763], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
 )
 ]
-#align(center)[Tabella 20: EAC da sprint 1 a 12]
+#align(center)[Tabella 20: EAC da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -928,28 +933,19 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],[11],[12],
-  [*AC*], [605], [1175], [1615], [2225],[2670],
-[3040],
-[3565],
-[4115],
-[4535],
-[4850],[5485],[6245],
-  [*ETC*], [11495], [10575], [9920], [8900],[8010],
-[8219],
-[8318],
-[7987],
-[8062],
-[7913],[7574],[6765],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+  [*AC*], [605], [1175], [1615], [2225],[2670], [3040], [3565], [4115], [4535], [4850], [5485], [6245], [6965],
+[7755], [8590], [9320], [10090], [10855], [11590], [12230],
+  [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
 )
 ]
-#align(center)[Tabella 21: AC e ETC da sprint 1 a 12]
+#align(center)[Tabella 21: AC e ETC da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -972,7 +968,7 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
@@ -985,15 +981,17 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 [4379],
 [4636],
 [4894],[5409,6],[6182,4],
+[7084], [7856,8], [8758,4], [9660], [10432,8], [11205,6], [12107], [12880],
   [*PV*], [644], [1288], [1932], [2576],[3220],
 [3864],
 [3864],
 [4508],
 [4765],
-[5152],[5538,4],[6182,4]
+[5152],[5538,4],[6182,4],
+[7019,6], [7856,8], [8694], [9660], [10368,4], [11205,6], [12042,8], [12880],
 )
 ]
-#align(center)[Tabella 22: EV e PV da sprint 1 a 12]
+#align(center)[Tabella 22: EV e PV da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1015,18 +1013,18 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],
-  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],[-75,4],[-62,6],
-  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0]
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],[-75,4],[-62,6], [119], [101,8], [168,4], [340], [342,8], [350,6], [517], [650],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0], [64,4], [0], [64,4], [0], [64,4], [0], [64,2], [0],
 )
 ]
-#align(center)[Tabella 23: CV e SV da sprint 1 a 12]
+#align(center)[Tabella 23: CV e SV da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1074,7 +1072,7 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 - Tabella 17: Valutazione organizzativa e personale
 - Tabella 18: Valutazione sui ruoli
 - Tabella 19: Indice di Gulpease dei documenti
-- Tabella 20: EAC da sprint 1 a 12
-- Tabella 21: AC e ETC da sprint 1 a 12
-- Tabella 22: EV e PV da sprint 1 a 12
-- Tabella 23: CV e SV da sprint 1 a 12
+- Tabella 20: EAC da sprint 1 a 20
+- Tabella 21: AC e ETC da sprint 1 a 20
+- Tabella 22: EV e PV da sprint 1 a 20
+- Tabella 23: CV e SV da sprint 1 a 20
