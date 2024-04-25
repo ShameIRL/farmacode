@@ -497,11 +497,11 @@ La nomenclatura delle metriche utilizza l'acronimo MPC, ossia "Minimum Predictiv
   //VERIFICA
   [MPC11],
   [Code Coverage (CC)], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPC12], 
   [Passed Tests (PT)], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   //ACCERTAMENTO DELLA QUALITA
   [MPC13],
