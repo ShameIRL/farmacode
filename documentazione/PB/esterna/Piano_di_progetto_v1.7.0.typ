@@ -8,9 +8,10 @@
     p.cardin,
   ),
   changelog: (
-    "1.9.0", "2024-04-15", p.baggio, "", "Stesura sprint 19",
-    "1.8.1", "2024-04-09", p.favaron, "", "Corretto ore sprint 17, 18",
-    "1.8.0", "2024-04-08", p.favaron, "", "Stesura sprint 18",
+    "1.10.0", "2024-04-15", p.carraro, "", "Stesura sprint 20 e globale PB",
+    "1.9.0", "2024-04-15", p.baggio, p.carraro, "Stesura sprint 19",
+    "1.8.1", "2024-04-09", p.favaron, p.carraro, "Corretto ore sprint 17, 18",
+    "1.8.0", "2024-04-08", p.favaron, p.carraro, "Stesura sprint 18",
     "1.7.0", "2024-04-01", p.carraro, p.favaron, "Stesura sprint 17",
     "1.6.0", "2024-03-22", p.rosson, p.carraro, "Stesura sprint 16",
     "1.5.0", "2024-03-18", p.passarella, p.rosson, "Stesura sprint 15",
@@ -1985,7 +1986,6 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
 - Spiegazione:
 Durante questo sprint il gruppo si e'concentrato molto sul preparare i documenti per la seconda parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io. Come da preventivo una parte del gruppo, una volta svolta la revisione di progetto, ha iniziato i lavori di progettazione.
 
-
 == Globale - RTB
 
 - Premessa:
@@ -2071,8 +2071,6 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 
 - Spiegazione:
 Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024. La decisione di spostare la data di consegna è stata influenzata dall'andamento del progetto e dai ritardi accumulati durante e in seguito al periodo di festività invernali. Durante questo periodo, la produttività del gruppo è diminuita, causando ritardi nell'avanzamento delle attività. Di conseguenza, è stato necessario posticipare la data di consegna per assicurare la qualità e il completamento del lavoro entro i nuovi termini previsti.
-
-
 
 
 == PB - sprint.12
@@ -3283,163 +3281,389 @@ In questo sprint non sono sorte difficoltà importanti.
 Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo verificatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
+== PB - sprint.20
+- Periodo: 2024/04/16 - 2024/04/23
 
+- Issues: \
+  -- Continuazione documenti;\
+  -- Preparazione PB.
 
+- Task:\
+  -- Miglioramenti generali al fine "Analisi dei requisiti";\
+  -- Continuaizone stesura del file "Specifica Tecnica";\
+  -- Revisione quanto prodotto nello sprint.\
+
+- Gantt view:
+
+#align(left,
+figure(
+  image("/imgs/gantt_views/sprint#20.png", height: 230pt, width: auto),
+  caption: [sprint.20]
+  )
+)
+
+=== Pianificazione
+Questo sprint sarà l'ultimo prima della revisione PB, il gruppo si è quindi concentrato nel terminare la documentazione, revisionarla e verificarla.\
+La prima revisione PB con il professore #p.cardin è prevista per l'ultimo giorno dello sprint, martedi' 23 aprile.
+
+=== Rischi attesi
+Durante questo sprint non sono previsti grandi rischi.
+
+=== Preventivo:
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 20*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [3], [], [2], [],
+  [Bomben F.], [], [], [4], [], [1], [],
+  [Carraro A.], [], [], [3], [], [1], [],
+  [Favaron R.], [], [], [1], [1], [1], [],
+  [Pandolfo M.], [2], [], [1], [2], [2], [],
+  [Passarella A.], [], [], [3], [1], [2], [],
+  [Rosson L.], [], [], [3], [], [1], [],
+)
+])
+#align(center)[Tabella 94: preventivo orario sprint.20.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 20*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [2], [0], [18], [4], [10], [0],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [€60,00], [€0,00], [€270,00], [€80,00], [€150,00], [€0,00],
+  [Totale], [], [], [], [], [], [€560,00], 
+  [Bilancio], [], [], [], [], [], [*€735,00*],
+)
+])
+#align(center)[Tabella 95: preventivo costi sprint.20.]
+
+#align(left,
+figure(
+  image("/imgs/PdP/graphs/preventivi/sprint#20.png", height: 20%, width: auto),
+  caption: [preventivi/sprint.20]
+  )
+)
+
+- Spiegazione:
+La prospettiva per questo sprint è quella di concludere la documentazione in vista delle revisioni PB.\
+Abbiamo asseganto più ore a programmatore e verificatore.\
+
+=== Consunitvo:
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 20*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Baggio M.], [], [], [3], [], [2], [],
+  [Bomben F.], [], [], [4], [], [1#red("(+1)")], [],
+  [Carraro A.], [], [#red("(+1)")], [3], [], [1], [],
+  [Favaron R.], [], [], [1], [1], [1], [#red("(+1)")],
+  [Pandolfo M.], [2], [], [1], [2], [2], [],
+  [Passarella A.], [], [], [3], [1], [2#red("(+1)")], [],
+  [Rosson L.], [], [], [3], [], [1], [],
+)
+])
+#align(center)[Tabella 96: consuntivo orario sprint.20.]
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*7,
+  align: center,
+  [*SPRINT 20*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista],
+  [Totale Ore], [2], [1], [18], [4], [12], [1],
+  [Costo Orario], [€30,00], [€25,00], [€15,00], [€20,00], [€15,00], [€25,00],
+  [Costo], [#red("€60,00")], [#red("€25,00")], [€270,00], [€80,00], [#red("€180,00")], [#red("€25,00")],
+  [Totale], [], [], [], [], [], [#red("€640,00")], 
+  [Bilancio], [], [], [], [], [], [#red("€650,00")],
+)
+])
+#align(center)[Tabella 97: consuntivo costi sprint.20.]
+
+#grid(
+  columns: (1fr, auto),
+  rows: (auto),
+  
+  figure(
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#20.png", height: 30%, width: auto),
+  caption: [bilancio/sprint.20],
+  ),
+  
+  table(
+    fill: (col, row) => 
+      if calc.odd(row) { luma(230) } else { white },
+    columns: (auto,),
+    align: center,
+    [*Valore di SPI*],
+    []
+  )
+)
+
+=== Rischi incontrati e mitigazioni
+In questo sprint non sono sorte difficoltà importanti.
+
+=== Retrospettiva
+Lo sprint #20 è costato di più di quanto preventivato vista la sua natura di controllo e verifica.\
+Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
+
+== Globale - PB
+Con lo sprint #20 si conclude la pianificazione del progetto e il gruppo giunge alla revisione PB.\
+Il gruppo ha iniziato il progetto martedì 7 novembre 2023 e ha iniziato ufficialmente con lo sprint #1 martedì 14 novembre 2023, andando a terminare con lo sprint #20 martedì 23 aprile 2024, per un totale di 24 settimane di lavoro, 1 settimana di assestamento e 23 di effettivo lavoro.\
+Siamo consapevoli che il progetto a livello accademico doveva richiedere 20 settimane di lavoro, ma abbiamo incontrato *diverse sfide* che ci hanno portato a prolungare il periodo lavorativo:
+- *Lavoro in gruppo*: ha richiesto nel primo periodo RTB diversi tentativi e diverso tempo per gestire e abiturci alle ripartenze;
+- *Sfide Tecnologiche*: le sfide nell'imparere le nuove tecnologie, in particolare:\
+  -- GitHub Actions e Typst, per migliori automazione nella documentazione;\
+  -- PyTorch, per lo sviluppo degli algoritmi di raccomandazione;\
+  -- React e le relative librerie, per lo sviluppo della web app;\
+  -- Docker, per contenizzare tutto il prodotto;\
+  Oltre alle sfide sui test automatici, vista l'inesperienza del gruppo;
+- *Periodo di Vacanze e Sessione Invernale*: questo periodo attorno ai mesi di dicembre e gennaio ha rallentato di molto la produttività del gruppo, riducendo l'impegno disponibile, il gruppo ha rimediato nelle settimane successive con un'inceremento e un'accelerazione, ma invevitabilmente del tempo non è stato usato con efficienza;
+- *Malattie e impegni personali*: ovviamente durante queste 24 settimane qualche componente del gruppo si è ammalato o ha dovuto dare priorità ad impegni personali, questo non ha creato molto danno perchè erano rischi preventivati, ma riducendo le risorse, anche per una settimana, inevitabilmente abbiamo dovuto prolungare i lavori.
+
+Vediamo ora in tabella il preventivo orario per membro del gruppo secondo i vincoli di progetto e secondo la nostra suddivisione.
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*8,
+  align: center,
+  [*Ore da fare*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista], [Totale],
+  [Baggio M.], [10], [8], [30], [12], [22], [12], [94],
+  [Bomben F.], [10], [8], [30], [12], [22], [12], [94],
+  [Carraro A.], [10], [8], [30], [12], [22], [12], [94],
+  [Favaron R.], [10], [8], [30], [12], [22], [12], [94],
+  [Pandolfo M.], [10], [8], [30], [12], [22], [12], [94],
+  [Passarella A.], [10], [8], [30], [12], [22], [12], [94],
+  [Rosson L.], [10], [8], [30], [12], [22], [12], [94],
+)
+])
+#align(center)[Tabella 98: Totale ore da fare]
+
+In seguito la tabella con le ore fatte da ogni menbro per ogni ruolo e il totale di ore consumate durante questa seconda parte di progetto, il periodo dallo sprint #13 al #20, periodo PB appunto.\
+Come si puo' vedere la maggior parte delle ore è stata impegata nei ruoli di Programmatore e Verificatore, vista la maggior richiesta di sviluppo software durante questo secondo periodo.
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*8,
+  align: center,
+  [*Ore fatte durante PB*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista], [Totale],
+  [Baggio M.], [8], [0], [23], [2], [9], [6], [48],
+  [Bomben F.], [0], [0], [27], [0], [11], [9], [47],
+  [Carraro A.], [3], [1], [25], [0], [6], [8], [43],
+  [Favaron R.], [3], [0], [16], [1], [8], [11], [39],
+  [Pandolfo M.], [2], [0], [27], [2], [9], [4], [44],
+  [Passarella A.], [3], [2], [25], [1], [13], [0], [44],
+  [Rosson L.], [3], [0], [26], [0], [5], [2], [36],
+)
+])
+#align(center)[Tabella 99: ore fatte durante PB]
+
+La seguente tabella mostra il definitivo consumo di ore  per ruolo e il totale consumato per membro del gruppo.\
+Ci riteniamo molto soddisfatti della distribuzione orario e di lavoro fra i membri del gruppo, come si puo' notrare il lavoro è stato molto equo e ha permesso a tutti di imparare in ogni aspetto didattico del progetto.
+
+#align(center, text(0.85em)[
+#table(
+  fill: (col, row) => 
+    if row == 0 and col == 0 { rgb("#c33435") }
+    else if calc.odd(row) { luma(230) } else { white },
+  columns: (auto,)*8,
+  align: center,
+  [*Conclusione*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista], [Totale],
+  [Baggio M.], [9], [11], [30], [15], [22], [6], [93],
+  [Bomben F.], [7], [11], [30], [12], [22], [9], [91],
+  [Carraro A.], [10], [8], [30], [14], [22], [8], [92],
+  [Favaron R.], [10], [8], [30], [12], [22], [11], [93],
+  [Pandolfo M.], [10], [10], [30], [12], [22], [8], [92],
+  [Passarella A.], [9], [6], [30], [12], [22], [12], [91],
+  [Rosson L.], [10], [12], [30], [13], [22], [7], [94],
+)
+])
+#align(center)[Tabella 100: conclusione]
 
 #pagebreak()
 
 = Elenco delle immagini
-- Immagine 1: sprint.1
-- Immagine 2: preventivi/sprint.1
-- Immagine 3: bilancio/sprint.1
-- Immagine 4: sprint.2
-- Immagine 5: preventivi/sprint.2
-- Immagine 6: bilancio/sprint.2
-- Immagine 7: sprint.3
-- Immagine 8: preventivi/sprint.3
-- Immagine 9: bilancio/sprint.3
-- Immagine 10: sprint.4
-- Immagine 11: preventivi/sprint.4
-- Immagine 12: bilancio/sprint.4
-- Immagine 13: sprint.5
-- Immagine 14: preventivi/sprint.5
-- Immagine 15: bilancio/sprint.5
-- Immagine 16: sprint.6
-- Immagine 17: preventivi/sprint.6
-- Immagine 18: bilancio/sprint.6
-- Immagine 19: sprint.7
-- Immagine 20: preventivi/sprint.7
-- Immagine 21: bilancio/sprint.7
-- Immagine 22: sprint.8
-- Immagine 23: preventivi/sprint.8
-- Immagine 24: bilancio/sprint.8
-- Immagine 25: sprint.9
-- Immagine 26: preventivi/sprint.9
-- Immagine 27: bilancio/sprint.9
-- Immagine 28: sprint.10
-- Immagine 29: preventivi/sprint.10
-- Immagine 30: bilancio/sprint.10
-- Immagine 31: sprint.11
-- Immagine 32: preventivi/sprint.11
-- Immagine 33: bilancio/sprint.11
-- Immagine 34: sprint.12
-- Immagine 35: preventivi/sprint.12
-- Immagine 36: bilancio/sprint.12
-- Immagine 37: sprint.13
-- Immagine 38: preventivi/sprint.13
-- Immagine 39: bilancio/sprint.13
-- Immagine 40: sprint.14
-- Immagine 41: preventivi/sprint.14
-- Immagine 42: bilancio/sprint.14
-- Immagine 43: sprint.15
-- Immagine 44: preventivi/sprint.15
-- Immagine 45: bilancio/sprint.15
-- Immagine 46: sprint.16
-- Immagine 47: preventivi/sprint.16
-- Immagine 48: bilancio/sprint.16
-- Immagine 49: sprint.17
-- Immagine 50: preventivi/sprint.17
-- Immagine 51: bilancio/sprint.17
-- Immagine 52: sprint.18
-- Immagine 53: preventivi/sprint.18
-- Immagine 54: bilancio/sprint.18
-- Immagine 55: sprint.19
-- Immagine 56: preventivi/sprint.19
-- Immagine 57: bilancio/sprint.19
+- Immagine 1: sprint.1;
+- Immagine 2: preventivi/sprint.1;
+- Immagine 3: bilancio/sprint.1;
+- Immagine 4: sprint.2;
+- Immagine 5: preventivi/sprint.2;
+- Immagine 6: bilancio/sprint.2;
+- Immagine 7: sprint.3;
+- Immagine 8: preventivi/sprint.3;
+- Immagine 9: bilancio/sprint.3;
+- Immagine 10: sprint.4;
+- Immagine 11: preventivi/sprint.4;
+- Immagine 12: bilancio/sprint.4;
+- Immagine 13: sprint.5;
+- Immagine 14: preventivi/sprint.5;
+- Immagine 15: bilancio/sprint.5;
+- Immagine 16: sprint.6;
+- Immagine 17: preventivi/sprint.6;
+- Immagine 18: bilancio/sprint.6;
+- Immagine 19: sprint.7;
+- Immagine 20: preventivi/sprint.7;
+- Immagine 21: bilancio/sprint.7;
+- Immagine 22: sprint.8;
+- Immagine 23: preventivi/sprint.8;
+- Immagine 24: bilancio/sprint.8;
+- Immagine 25: sprint.9;
+- Immagine 26: preventivi/sprint.9;
+- Immagine 27: bilancio/sprint.9;
+- Immagine 28: sprint.10;
+- Immagine 29: preventivi/sprint.10;
+- Immagine 30: bilancio/sprint.10;
+- Immagine 31: sprint.11;
+- Immagine 32: preventivi/sprint.11;
+- Immagine 33: bilancio/sprint.11;
+- Immagine 34: sprint.12;
+- Immagine 35: preventivi/sprint.12;
+- Immagine 36: bilancio/sprint.12;
+- Immagine 37: sprint.13;
+- Immagine 38: preventivi/sprint.13;
+- Immagine 39: bilancio/sprint.13;
+- Immagine 40: sprint.14;
+- Immagine 41: preventivi/sprint.14;
+- Immagine 42: bilancio/sprint.14;
+- Immagine 43: sprint.15;
+- Immagine 44: preventivi/sprint.15;
+- Immagine 45: bilancio/sprint.15;
+- Immagine 46: sprint.16;
+- Immagine 47: preventivi/sprint.16;
+- Immagine 48: bilancio/sprint.16;
+- Immagine 49: sprint.17;
+- Immagine 50: preventivi/sprint.17;
+- Immagine 51: bilancio/sprint.17;
+- Immagine 52: sprint.18;
+- Immagine 53: preventivi/sprint.18;
+- Immagine 54: bilancio/sprint.18;
+- Immagine 55: sprint.19;
+- Immagine 56: preventivi/sprint.19;
+- Immagine 57: bilancio/sprint.19;
+- Immagine 58: sprint.20;
+- Immagine 59: preventivi/sprint.20;
+- Immagine 60: bilancio/sprint.20.
 
 #pagebreak()
 
 = Elenco tabelle
-- Tabella 1: Scadenze revisioni
-- Tabella 2: RP1 - Mancanza di competenze tecniche specifiche
-- Tabella 3: RP2 - Non conformità agli impegni dichiarati
-- Tabella 4: RP3 - Problemi di comunicazione e collaborazione
-- Tabella 5: RP4 - Malattia o indisponibilità
-- Tabella 6: ROI1 - Comunicativi e organizzativi
-- Tabella 7: ROI2 - Scarsa definizione dei ruoli e delle resposabilità all'interno del team
-- Tabella 8: ROI3 - Risorse limitate o budget insufficiente per sostenere lo sviluppo del progetto
-- Tabella 9: ROE1 - Difficoltà comunicative
-- Tabella 10: ROE2 - Fornitura
-- Tabella 11: RT1 - Incompatibilità tra diverse tecnologie o componenti software
-- Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso
-- Tabella 13: Distribuzione ruolistica
-- Tabella 14: preventivo orario sprint.1
-- Tabella 15: preventivo costo sprint.1
-- Tabella 16: consuntivo orario sprint.1
-- Tabella 17: consuntivo costo sprint.1
-- Tabella 18: preventivo orario sprint.2
-- Tabella 19: preventivo costo sprint.2
-- Tabella 20: consuntivo orario sprint.2
-- Tabella 21: consuntivo costo sprint.2
-- Tabella 22: preventivo orario sprint.3
-- Tabella 23: preventivo costo sprint.3
-- Tabella 24: consuntivo orario sprint.3
-- Tabella 25: consuntivo costo sprint.3
-- Tabella 26: preventivo orario sprint.4
-- Tabella 27: preventivo costo sprint.4
-- Tabella 28: consuntivo orario sprint.4
-- Tabella 29: consuntivo costo sprint.4
-- Tabella 30: preventivo orario sprint.5
-- Tabella 31: preventivo costo sprint.5
-- Tabella 32: consuntivo orario sprint.5
-- Tabella 33: consuntivo costo sprint.5
-- Tabella 34: preventivo orario sprint.6
-- Tabella 35: preventivo costo sprint.6
-- Tabella 36: consuntivo orario sprint.6
-- Tabella 37: consuntivo costo sprint.6
-- Tabella 38: preventivo orario sprint.7
-- Tabella 39: preventivo costo sprint.7
-- Tabella 40: consuntivo orario sprint.7
-- Tabella 41: consuntivo costo sprint.7
-- Tabella 42: preventivo orario sprint.8
-- Tabella 43: preventivo costo sprint.8
-- Tabella 44: consuntivo orario sprint.8
-- Tabella 45: consuntivo costo sprint.8
-- Tabella 46: preventivo orario sprint.9
-- Tabella 47: preventivo costo sprint.9
-- Tabella 48: consuntivo orario sprint.9
-- Tabella 49: consuntivo costo sprint.9
-- Tabella 50: preventivo orario sprint.10
-- Tabella 51: preventivo costo sprint.10
-- Tabella 52: consuntivo orario sprint.10
-- Tabella 53: consuntivo costo sprint.10
-- Tabella 54: preventivo orario sprint.11
-- Tabella 55: preventivo costo sprint.11
-- Tabella 56: consuntivo orario sprint.11
-- Tabella 57: consuntivo costo sprint.11
-- Tabella 58: Preventivo candidatura
-- Tabella 59: Consuntivo effettivo
-- Tabella 60: Nuova distribuzione oraria
-- Tabella 61: Nuovo preventivo
-- Tabella 62: preventivo orario sprint.12
-- Tabella 63: preventivo costo sprint.12
-- Tabella 64: consuntivo orario sprint.12
-- Tabella 65: consuntivo costo sprint.12
-- Tabella 66: preventivo orario sprint.13
-- Tabella 67: preventivo costo sprint.13
-- Tabella 68: consuntivo costo sprint.13
-- Tabella 69: consuntivo costo sprint.13
-- Tabella 70: preventivo orario sprint.14
-- Tabella 71: preventivo costo sprint.14
-- Tabella 72: consuntivo costo sprint.14
-- Tabella 73: consuntivo costo sprint.14
-- Tabella 74: preventivo orario sprint.15
-- Tabella 75: preventivo costo sprint.15
-- Tabella 76: consuntivo costo sprint.15
-- Tabella 77: consuntivo costo sprint.15
-- Tabella 78: preventivo orario sprint.16
-- Tabella 79: preventivo costo sprint.16
-- Tabella 80: consuntivo costo sprint.16
-- Tabella 81: consuntivo costo sprint.16
-- Tabella 82: preventivo orario sprint.17
-- Tabella 83: preventivo costo sprint.17
-- Tabella 84: consuntivo costo sprint.17
-- Tabella 85: consuntivo costo sprint.17
-- Tabella 86: preventivo orario sprint.18
-- Tabella 87: preventivo costo sprint.18
-- Tabella 88: consuntivo costo sprint.18
-- Tabella 89: consuntivo costo sprint.18
-- Tabella 90: preventivo orario sprint.19
-- Tabella 91: preventivo costo sprint.19
-- Tabella 92: consuntivo costo sprint.19
-- Tabella 93: consuntivo costo sprint.19
+- Tabella 1: Scadenze revisioni;
+- Tabella 2: RP1 - Mancanza di competenze tecniche specifiche;
+- Tabella 3: RP2 - Non conformità agli impegni dichiarati;
+- Tabella 4: RP3 - Problemi di comunicazione e collaborazione;
+- Tabella 5: RP4 - Malattia o indisponibilità;
+- Tabella 6: ROI1 - Comunicativi e organizzativi;
+- Tabella 7: ROI2 - Scarsa definizione dei ruoli e delle resposabilità all'interno del team;
+- Tabella 8: ROI3 - Risorse limitate o budget insufficiente per sostenere lo sviluppo del progetto;
+- Tabella 9: ROE1 - Difficoltà comunicative;
+- Tabella 10: ROE2 - Fornitura;
+- Tabella 11: RT1 - Incompatibilità tra diverse tecnologie o componenti software;
+- Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso;
+- Tabella 13: Distribuzione ruolistica;
+- Tabella 14: preventivo orario sprint.1;
+- Tabella 15: preventivo costo sprint.1;
+- Tabella 16: consuntivo orario sprint.1;
+- Tabella 17: consuntivo costo sprint.1;
+- Tabella 18: preventivo orario sprint.2;
+- Tabella 19: preventivo costo sprint.2;
+- Tabella 20: consuntivo orario sprint.2;
+- Tabella 21: consuntivo costo sprint.2;
+- Tabella 22: preventivo orario sprint.3;
+- Tabella 23: preventivo costo sprint.3;
+- Tabella 24: consuntivo orario sprint.3;
+- Tabella 25: consuntivo costo sprint.3;
+- Tabella 26: preventivo orario sprint.4;
+- Tabella 27: preventivo costo sprint.4;
+- Tabella 28: consuntivo orario sprint.4;
+- Tabella 29: consuntivo costo sprint.4;
+- Tabella 30: preventivo orario sprint.5;
+- Tabella 31: preventivo costo sprint.5;
+- Tabella 32: consuntivo orario sprint.5;
+- Tabella 33: consuntivo costo sprint.5;
+- Tabella 34: preventivo orario sprint.6;
+- Tabella 35: preventivo costo sprint.6;
+- Tabella 36: consuntivo orario sprint.6;
+- Tabella 37: consuntivo costo sprint.6;
+- Tabella 38: preventivo orario sprint.7;
+- Tabella 39: preventivo costo sprint.7;
+- Tabella 40: consuntivo orario sprint.7;
+- Tabella 41: consuntivo costo sprint.7;
+- Tabella 42: preventivo orario sprint.8;
+- Tabella 43: preventivo costo sprint.8;
+- Tabella 44: consuntivo orario sprint.8;
+- Tabella 45: consuntivo costo sprint.8;
+- Tabella 46: preventivo orario sprint.9;
+- Tabella 47: preventivo costo sprint.9;
+- Tabella 48: consuntivo orario sprint.9;
+- Tabella 49: consuntivo costo sprint.9;
+- Tabella 50: preventivo orario sprint.10;
+- Tabella 51: preventivo costo sprint.10;
+- Tabella 52: consuntivo orario sprint.10;
+- Tabella 53: consuntivo costo sprint.10;
+- Tabella 54: preventivo orario sprint.11;
+- Tabella 55: preventivo costo sprint.11;
+- Tabella 56: consuntivo orario sprint.11;
+- Tabella 57: consuntivo costo sprint.11;
+- Tabella 58: Preventivo candidatura;
+- Tabella 59: Consuntivo effettivo;
+- Tabella 60: Nuova distribuzione oraria;
+- Tabella 61: Nuovo preventivo;
+- Tabella 62: preventivo orario sprint.12;
+- Tabella 63: preventivo costo sprint.12;
+- Tabella 64: consuntivo orario sprint.12;
+- Tabella 65: consuntivo costo sprint.12;
+- Tabella 66: preventivo orario sprint.13;
+- Tabella 67: preventivo costo sprint.13;
+- Tabella 68: consuntivo costo sprint.13;
+- Tabella 69: consuntivo costo sprint.13;
+- Tabella 70: preventivo orario sprint.14;
+- Tabella 71: preventivo costo sprint.14;
+- Tabella 72: consuntivo costo sprint.14;
+- Tabella 73: consuntivo costo sprint.14;
+- Tabella 74: preventivo orario sprint.15;
+- Tabella 75: preventivo costo sprint.15;
+- Tabella 76: consuntivo costo sprint.15;
+- Tabella 77: consuntivo costo sprint.15;
+- Tabella 78: preventivo orario sprint.16;
+- Tabella 79: preventivo costo sprint.16;
+- Tabella 80: consuntivo costo sprint.16;
+- Tabella 81: consuntivo costo sprint.16;
+- Tabella 82: preventivo orario sprint.17;
+- Tabella 83: preventivo costo sprint.17;
+- Tabella 84: consuntivo costo sprint.17;
+- Tabella 85: consuntivo costo sprint.17;
+- Tabella 86: preventivo orario sprint.18;
+- Tabella 87: preventivo costo sprint.18;
+- Tabella 88: consuntivo costo sprint.18;
+- Tabella 89: consuntivo costo sprint.18;
+- Tabella 90: preventivo orario sprint.19;
+- Tabella 91: preventivo costo sprint.19;
+- Tabella 92: consuntivo costo sprint.19;
+- Tabella 93: consuntivo costo sprint.19;
+- Tabella 94: preventivo orario sprint.20;
+- Tabella 95: preventivo costo sprint.20;
+- Tabella 96: consuntivo costo sprint.20;
+- Tabella 97: consuntivo costo sprint.20;
+- Tabella 98: totale ore da fare;
+- Tabella 98: ore da fare PB;
+- Tabella 100: conclusione.
