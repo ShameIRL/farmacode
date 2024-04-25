@@ -896,7 +896,7 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
@@ -964,7 +964,7 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
@@ -1009,15 +1009,15 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
   [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],[-75,4],[-62,6],
-  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0]
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0],
 )
 ]
 #align(center)[Tabella 23: CV e SV da sprint 1 a 12]
