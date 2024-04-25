@@ -909,7 +909,7 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
   [*EAC*], [12100], [11750], [11535], [11125],[10680], [11259], [11883], [12102], [12597], [12763], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
 )
 ]
-#align(center)[Tabella 20: EAC da sprint 1 a 12]
+#align(center)[Tabella 20: EAC da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -944,7 +944,7 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
   [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
 )
 ]
-#align(center)[Tabella 21: AC e ETC da sprint 1 a 12]
+#align(center)[Tabella 21: AC e ETC da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -990,7 +990,7 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 [7019,6], [7856,8], [8694], [9660], [10368,4], [11205,6], [12042,8], [12880],
 )
 ]
-#align(center)[Tabella 22: EV e PV da sprint 1 a 12]
+#align(center)[Tabella 22: EV e PV da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1023,7 +1023,7 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
   [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0], [64,4], [0], [64,4], [0], [64,4], [0], [64,2], [0],
 )
 ]
-#align(center)[Tabella 23: CV e SV da sprint 1 a 12]
+#align(center)[Tabella 23: CV e SV da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1071,7 +1071,7 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 - Tabella 17: Valutazione organizzativa e personale
 - Tabella 18: Valutazione sui ruoli
 - Tabella 19: Indice di Gulpease dei documenti
-- Tabella 20: EAC da sprint 1 a 12
-- Tabella 21: AC e ETC da sprint 1 a 12
-- Tabella 22: EV e PV da sprint 1 a 12
-- Tabella 23: CV e SV da sprint 1 a 12
+- Tabella 20: EAC da sprint 1 a 20
+- Tabella 21: AC e ETC da sprint 1 a 20
+- Tabella 22: EV e PV da sprint 1 a 20
+- Tabella 23: CV e SV da sprint 1 a 20
