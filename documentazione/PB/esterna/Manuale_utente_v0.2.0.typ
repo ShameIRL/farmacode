@@ -349,21 +349,22 @@ Descrizione
 
 == Clienti
 #figure(
-  image("/imgs/screenshots_mvp/clienti.png", width: 80%),
+  image("/imgs/screenshots_mvp/clienti.png", width: 100%),
   caption: [
     Pagina elenco clienti
   ]
 )
 La seconda pagina presente nel menù è la pagina Clienti. \ In questa pagina è possibile visualizzare un elenco di tutti i clienti, essendo il numero elevato è possibilile effettuare una ricerca rapida tramite, tramite l'apposita finestra in alto a destra.\ Inoltre, a seconda dell'utilizzatore è possibile visualizzare con lunghezza variabile, 25 o 50 o 75 o 100, andando a selezionarla tramite l'apposita finestra in basso a destra. \
 
+#pagebreak()
 == Prodotti
 #figure(
-  image("/imgs/screenshots_mvp/prodotti.png", width: 80%),
+  image("/imgs/screenshots_mvp/prodotti.png", width: 100%),
   caption: [
     Pagina Prodotti
   ]
 )
-La pagina prodotti mostra l'elenco degli articoli presenti nel database.
+La pagina prodotti, sempre accessibile tramite il menù del sito, mostra l'elenco degli articoli presenti nel database.
 Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
 - Codice Articolo;
 - Descrizione Articolo;
@@ -375,12 +376,30 @@ Dato l'elevato numero di prodotti presenti nel database, l'elenco completo degli
 Tuttavia è possibile decidere tramite l'apposito filtro, il numero di elementi visibili all'interno della tabella.
 
 === Filtri
+#figure(
+  image("/imgs/screenshots_mvp/filtri_prodotti.png", width: 100%),
+  caption: [
+    Filtri prodotti
+  ]
+)
+
+#figure(
+  image("/imgs/screenshots_mvp/filtri_a_prodotti.png", width: 100%),
+  caption: [
+    Filtri applicati nella pagina prodotti
+  ]
+)
 Data l'elevata mole di dati, per trovare più facilmente un determianto articolo, è possibile applicare dei filtri per i risultati all'interno della tabella.\
-E' possibile applicare un filtro globale, che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche, in maniera da visualizzare ad esempio tutti i prodotti appartenenti ad una specifica Linea Commerciale.
+E' possibile applicare un filtro globale (elemento 1 figura "Filtri prodotti"), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura "Filtri prodotti"), in maniera da visualizzare ad esempio tutti i prodotti appartenenti ad una specifica Linea Commerciale.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura "Filtri prodotti"), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina prodotti", i passaggi sono i seguenti:\
+1) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+2) Il testo che si vuole cercare nella relativa colonna;\
+3) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
 
 === Dettagli prodotto
 #figure(
-  image("/imgs/screenshots_mvp/dettaglio_prodotto.png", width: 80%),
+  image("/imgs/screenshots_mvp/dettaglio_prodotto.png", width: 100%),
   caption: [
     Pagina Prodotti
   ]
@@ -395,46 +414,166 @@ Una volta cliccata, si aprirà una finestra di dialogo contenente maggiori infor
 - Codice/Descrizione Famiglia Commerciale;
 - Codice/Descrizione Sotto-Famiglia Commerciale.
 
+#pagebreak()
 == Cronologia
 #figure(
-  image("/imgs/screenshots_mvp/profilo.png", width: 80%),
+  image("/imgs/screenshots_mvp/cronologia.png", width: 100%),
   caption: [
-    Pagina profilo
+    Pagina Cronologia
   ]
 )
-La quarta e ultima pagina presente nel menù è la pagina Profilo.\
-Questa pagina presenta le informazioni dell'utente che sta utilizzando l'interfaccia web e offre la possibilità di andare a modificare i dati email e password.\
-In seguito maggiori dettagli su queste due funzionali.
+La pagina Cronologia, mostra l'elenco delle ricerche effettuate tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento.\
+Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
+- Data;
+- Utente;
+- Algoritmo;
+- Topic;
+- Codice cliente/prodotto;
+- Top.
+Dato l'elevato numero di elementi che possono essere presenti a causa del possibile numero di ricerche effettuate, l'elenco completo delle cronologie di ricerca è suddiviso in diverse pagine. Tuttavia è possibile decidere tramite l'apposito filtro, il numero di elementi visibili all'interno della tabella.
+
+=== Filtri
+#figure(
+  image("/imgs/screenshots_mvp/filtri_cronologia.png", width: 100%),
+  caption: [
+    Filtri Cronologia
+  ]
+)
+
+#figure(
+  image("/imgs/screenshots_mvp/filtri_a_cronologia.png", width: 100%),
+  caption: [
+    Filtri applicati nella pagina cronologia
+  ]
+)
+Data la possibile elevata mole di dati, per trovare più facilmente un determinata cronologia di ricerca, è possibile applicare dei filtri per i risulati all'interno della tabella.\
+E' possibile applicare un filtro globale (elemento 1 figura "Filtri Cronologia"), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura "Filtri Cronologia") in maniera da visualizzare ad esempio tutte le ricerche effettuate in una specifica data.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio(elemento 1 figura "Filtri Cronologia"), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina cronologia", i passaggi sono i seguenti:\
+1) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+2) Il testo che si vuole cercare nella relativa colonna;\
+3) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
+
+#pagebreak()
+== Feedback
+#figure(
+  image("/imgs/screenshots_mvp/feedback.png", width: 100%),
+  caption: [
+    Pagina Feedback
+  ]
+)
+La pagina Feedback, mostra l'elenco dei feedback negativi assegnati ad una raccomandazione mostrata tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento.
+Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
+- Data;
+- Utente;
+- ID Cliente;
+- ID Prodotto;
+- Algoritmo.
+L'ultima colonna presenta un bottone per eliminare il feedback assegnato alla raccomandazione della riga corrispondente.\
+Dato l'elevato numero di elementi che possono essere presenti a causa del possibile numero di feedback assegnati, l'elenco completo dei feedback è suddiviso in diverse pagine. Tuttavia è possibile decidere tramite l'apposito filtro, il numero di elementi visibili all'interno della tabella.
 
 === Filtri
 
-== Feedback
 #figure(
-  image("/imgs/screenshots_mvp/logout.png", width: 80%),
+  image("/imgs/screenshots_mvp/filtri_feedback.png", width: 100%),
+  caption: [
+    Filtri Feedback
+  ]
+)
+
+#figure(
+  image("/imgs/screenshots_mvp/filtri_a_feedback.png", width: 100%),
+  caption: [
+    Filtri applicati nella pagina feedback
+  ]
+)
+Data la possibile elevata mole di dati, per trovare più facilmente un determinato feedback assegnato, è possibile applicare dei filtri per i risultati all'interno della tabella.\
+E' possibile applicare un filtro globale (elemento 1 figura "Filtri feedback"), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura "Filtri feedback") in maniera da visualizzare ad esempio tutti i feedback assegnati in una specifica data.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura "Filtri Feedback"), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina feedback", i passaggi sono i seguenti:\
+1) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+2) Il testo che si vuole cercare nella relativa colonna;\
+3) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
+
+=== Eliminazione feedback
+#figure(
+  image("/imgs/screenshots_mvp/eliminazione_feed_1.png", width: 100%),
+  caption: [
+    Eliminazione feedback
+  ]
+)
+
+Come accennato prima, l'ultima colonna della tabella dei feedback assegnati, contiene un bottone che ha la funzione di eliminare un feedback assegnato ad una raccomandazione.\
+I passaggi sono i seguenti, riportati dai numeri nelle immagini soprastanti:\
+1) Cliccare sul bottone della riga corrispondente alla raccomandazione scelta;\
+2) Una volta aperta la finestra di dialogo, cliccare il pulsante conferma, per effettuare il cambiamento.
+
+#pagebreak()
+== Profilo
+#figure(
+  image("/imgs/screenshots_mvp/profilo.png", width: 100%),
+  caption: [
+    Pagina Profilo
+  ]
+)
+
+La pagina Profilo è l'ultima del sito, da questa è possibile visualizzare le informazione dell'utente nella sessione corrente.\
+Le informazione che si possono visualizzare sono:
+- Nome;
+- Cognome;
+- Data di nascita;
+- Username;
+- Email.
+La password non è possibile visualizzarla, ma è possibile modificarla come vedremo più avanti nelle sottosezioni.
+
+
+=== Modifica email
+#figure(
+  image("/imgs/screenshots_mvp/cambio_email.png", width: 100%),
+  caption: [
+    Cambio email
+  ]
+)
+
+Per la modifica della propria email associata al profilo dell'appliacazione, basta seguire i seguenti passaggi riportati anche nelle immagini soprastanti:\
+1) Cliccare sul bottone con l'icona di una penna presente nella riga corrispondente alla voce email;
+2) 
+
+=== Modifica password
+#figure(
+  image("/imgs/screenshots_mvp/cambio_password.png", width: 100%),
+  caption: [
+    Cambio password
+  ]
+)
+Per la modifica della propria email associata al profilo dell'appliacazione, basta seguire i seguenti passaggi riportati anche nelle immagini soprastanti:\
+1) Cliccare sul bottone con l'icona di una penna presente nella riga corrispondente alla voce password;
+
+=== Messaggio errore modifiche
+
+#pagebreak()
+== Logout
+#figure(
+  image("/imgs/screenshots_mvp/logout.png", width: 100%),
   caption: [
     Logout
   ]
 )
-Infine nel menù è presente un'icona di logout, alla sua pressione l'utente verrà disconnesso dall'applicazione e verrà riportato nella pagina iniziale di login.
+Per uscire dall'applicazione o per cambiare account, bisogna prima eseguire il logout per essere successivamente riportati alla pagina di Login (sezione 4.1).\
+Eseguire il logout è facilissimo, basterà cliccare sulla scritta "Logout" presente all'estrema destra del menù che comprende tutte le pagine del sito, riportato nella figura soprastante evidenziato dal rettangolo rosso.\
+Una volta cliccato, non ci sarà nessuna finestra di dialogo che chiede una conferma della vostra scelta, ma verrete direttamente reindirizzati alla pagina di login.
 
-=== Filtri
-
-=== Eliminazione feedback
-
-
-== Profilo
-
-=== Modifica email
-
-=== Modifica password
-
-=== Messaggio errore modifiche
-
-
-== Logout
-
-
+#pagebreak()
 == Pagina 404
+#figure(
+  image("/imgs/screenshots_mvp/404.png", width: 100%),
+  caption: [
+    Pagina 404
+  ]
+)
+La pagina 404 esce in caso siate andati per qualche motivo in una pagina inesistente del sito, oppure abbiate cercato di accedere a funzionalità per cui non avete i permessi.\
+Se dovesse uscire questa pagina, basterà cliccare sul bottone "Torna alla home" evidenziato da un rettangolo rosso nella figura soprastante, che vi reindirizzerà alla pagina di "Ricerca" (sezione 4.2).
+
 #pagebreak()
 = Elenco delle immagini
 
