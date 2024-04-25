@@ -3,6 +3,7 @@
 /* TO DO: */
 /* Cambiare immagini sezione 6 e relative descrizioni*/
 /* Sezione 4 */
+/* Sezione 5 */
 
 
 #import "/template/big_docs.typ": *
