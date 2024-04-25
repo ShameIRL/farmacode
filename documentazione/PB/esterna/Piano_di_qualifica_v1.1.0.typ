@@ -249,7 +249,7 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
   [100%],
   [MPD5],
   [Copertura  dei requisiti opzionali], 
-  [≥ 50%],
+  [≥ 45%],
   [100%],
 //USABILITA'
   [MPD6],
@@ -278,19 +278,19 @@ La qualità del software si mostra attraverso diverse dimensioni quali:
 //COPERTURA TEST
   [MPD11],
   [Branch Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPD12],
   [Statement Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPD13],
   [Function Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
   [MPD14],
   [Line Coverage], 
-  [≥ 90%],
+  [≥ 85%],
   [100%],
 )
 #align(center)[Tabella 4: Metriche qualità del software]
