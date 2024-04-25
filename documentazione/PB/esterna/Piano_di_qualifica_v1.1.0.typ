@@ -862,11 +862,13 @@ Un intervallo ideale si aggira fra i 40 e 60.
   ),
   align: center,
   [*Documento*], [*Valore IG*],
-  [Analisi dei requisiti], [87],
-  [Glossario], [48],
-  [Piano di Progetto], [69],
-  [Piano di qualifica], [88],
-  [Norme di progetto], [56],
+  [Analisi dei requisiti], [93],
+  [Glossario], [72],
+  [Manuale utente], [79],
+  [Piano di Progetto], [88],
+  [Piano di qualifica], [86],
+  [Specifica tecnica], [86],
+  [Norme di progetto], [77],
 )
 ]
 #align(center)[Tabella 19: Indice di Gulpease dei documenti]
