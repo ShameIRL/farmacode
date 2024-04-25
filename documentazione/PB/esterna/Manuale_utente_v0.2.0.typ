@@ -233,6 +233,7 @@ Una volta eseguite correttamente questi passaggi la finestra di dialogo mostrer�
 Al termine dell'operazione la finestra di dialogo scomparirà e l'utente potrà continuare ad utilizzare il sistema.
 
 === Selezione topic
+<topic>
 #figure(
   image("/imgs/screenshots_mvp/ricerca_topic_1.png", width: 100%),
   caption: [
@@ -263,14 +264,34 @@ Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale
 === Selezione specifica
 <specifica>
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneSpecifica.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_specifica_1.png", width: 100%),
   caption: [
-    Selezione specifica nel Topic
+    Selezione specifica dropdown
   ]
 )
-Successiva alla selezione del topic sarà necessario selezionare l'elemento specifico su cui fare la raccomandazione: un cliente nel caso il topic fosse clienti e un prodotto nel caso di prodotti.\
-Una volta selezionata la box di selezione si aprirà una tendina in cui sarà possibile ricercare l'elemento oppure sarà possibile scorrere per trovare l'elmento da selezionare.
-Di seguito maggior dettaglio sull'ultima selezione, la selezione del numero N di elmenti da visualizzare nella raccomandazione.
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_specifica_2.png", width: 100%),
+  caption: [
+    Selezione specifica option
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_specifica_2_variante.png", width: 100%),
+  caption: [
+    Selezione specifica option (variante Clienti)
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_specifica_3.png", width: 100%),
+  caption: [
+    Selezione specifica fine
+  ]
+)
+Il terzo step per effettuare correttamente una ricerca consiste nell'andare a selezionare uno specifico cliente o prodotti in base a quanto fatto nello #link(<topic>)[step precendete].\
+Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il terzo Dropbox identificato con la scritta "Seleziona un prodotto" o "Seleziona un cliente" nella sua variante. Verranno dunque mostrati a schermo l'elenco dei possibili prodotti o clienti, nella variante, tra cui scegliere;\
+2) Selezionare con un click il prodotto desiderato, o cliente nella variante. È inoltre possibile andare a filtrare i risultati andando a cercare dall'apposito input posizionato al di sopra della lista delle opzioni.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale ora avrà come scritta il prodotto selezionato, o il cliente nella sua variante.
 
 === Selezione N
 #figure(
