@@ -128,7 +128,7 @@ Ogni utente deve essere munito delle proprie credenziali. Inserire le proprie cr
   figure(
     image("/imgs/screenshots_mvp/login_accedi.png", width: 99%),
     caption: [
-      Button accedi
+      Buttone accedi
     ]
   ),
 )
@@ -160,6 +160,7 @@ La pagina è accessibile dal menu superiore presente in tutte le pagine alla voc
 Di seguito verranno elencate le istruzioni per poter effettuare correttamente una ricerca, verranno spiegate le varie feature/personalizzazioni e come gestire eventuali errori.
 
 === Selezione algoritmo
+<algo>
 #figure(
   image("/imgs/screenshots_mvp/ricerca_algoritmo_1.png", width: 100%),
   caption: [
@@ -178,23 +179,44 @@ Di seguito verranno elencate le istruzioni per poter effettuare correttamente un
     Selezione algoritmo fine
   ]
 )
-Descrizione
+Il primo step per effettuare correttamente una ricerca è selezionare l'algoritmo desiderato. Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il primo Dropbox identificato con la scritta "Seleziona algoritmo". Verranno dunque mostrati a schermo l'elenco dei possibili alògoritmi tra cui scegliere;\
+2) Selezionare con un click l'algoritmo desiderato.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale ora avrà come scritta l'algoritmo selezionato.
+
 
 === Funzione di training (Amministratore)
-La funzione che permette di effettuare il training dell'algoritmo scelto è disponibile solo per gli utenti con i permessi amministratore. In caso l'utente non dispone dei permessi necessari non visualizzerà il bottone di training.
+La funzione che permette di effettuare il training dell'algoritmo scelto. È disponibile solo per gli utenti con i permessi amministratore. In caso l'utente non dispone dei permessi necessari non visualizzerà il bottone di training.\
+Questo passaggio non è strettamente necessario per effettuare una ricerca, tuttavia se sono stati aggiunti molti ordini al sistema effettuare un training significherebbe andare a prendere in considerazione i nuovi cambiamenti.   
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_training_1.png", width: 100%),
   caption: [
     Bottone di training
   ]
 )
-#figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
-  caption: [
-    Conferma di training
-  ]
+#grid(
+  columns: (auto, auto),
+  rows: (auto),
+
+  figure(
+    image("/imgs/screenshots_mvp/ricerca_training_2.png", width: 99%),
+    caption: [
+      Conferma operazione di training
+    ]
+  ),
+  figure(
+    image("/imgs/screenshots_mvp/ricerca_training_3.png", width: 99%),
+    caption: [
+      Training in corso
+    ]
+  ),
 )
-Descrizione
+Su un utente dispone quindi dei permessi necessari e desidera effettuare un training, come prima cosa, deve andare a selezionare l'algorimo come illustrato nella #link(<algo>)[sezione precedente].\
+Successivamente seguire le seguenti istruzioni:\
+1) Cliccare il bottone Training all'interno del componente filtro di ricerca. Verrà mostrata a schermo una finestra di dialogo;\
+2) Leggere attentamente il messaggio all'interno della finestra di dialogo e cliccare il bottone Conferma per avviare il training dell'algoritmo scelto.\
+Una volta eseguite correttamente questi passaggi la finestra di dialogo mostrerà un'indicazione sullo stato di avanzamento dell'operazione. La durata può variare, chiediamo di atterndere per qualche minuto e di non uscire dalla pagina o ricaricarla in qualunque modo.\
+Al termine dell'operazione la finestra di dialogo scomparirà e l'utente potrà continuare ad utilizzare il sistema.
 
 === Selezione topic
 #figure(
