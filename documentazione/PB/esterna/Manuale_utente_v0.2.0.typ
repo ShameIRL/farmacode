@@ -220,15 +220,34 @@ Al termine dell'operazione la finestra di dialogo scomparirà e l'utente potrà 
 
 === Selezione topic
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneTopic.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_topic_1.png", width: 100%),
   caption: [
-    Selezione topic nella ricerca
+    Selezione topic dropdown
   ]
 )
-Il primo criterio per la ricerca è il topic, ovvero la scelta se eseguire la ricerca per clienti o per prodotti. \ Nel primo caso la ricerca fornirà un elenco di N prodotti raccomandati per il cliente scelto, nel secondo caso un elenco di N clienti a cui raccomandare il prodotto scelto.\
-Di seguito maggior dettaglio sulla selezione di cliente o prodotto su cui fare la raccomandazione.
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_topic_2.png", width: 100%),
+  caption: [
+    Selezione topic option
+  ]
+)
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_topic_3.png", width: 100%),
+  caption: [
+    Selezione topic fine
+  ]
+)
+Il secondo step per effettuare correttamente una ricerca è selezionare il topic desiderato. I topic disponibili sono Clienti e Prodotti:
+- selezionando Clienti la ricerca restituirà i migliori N prodotti per uno specifico cliente selezionato (come illustrato nella #link(<specifica>)[sezione successiva]);
+- selezionando Prodotti la ricarca restituirà i migliori N clienti per uno specifico prodotto selezionato (come illustrato nella #link(<specifica>)[sezione successiva]).
+Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il secondo Dropbox identificato con la scritta "Seleziona topic". Verranno dunque mostrati a schermo l'elenco dei possibili topic tra cui scegliere;\
+2) Selezionare con un click il topic desiderato.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale ora avrà come scritta del topic selezionato, inoltre apparirà all'interno del componente filtro di ricerca un nuovo dropbox con la scritta "Seleziona un cliente", nel caso abbiate scelto Clienti come topic, oppure "Seleziona un prodotto", nel caso abbiate scelto Prodotti come topic.
+
 
 === Selezione specifica
+<specifica>
 #figure(
   image("/imgs/screenshots_mvp/ricerca_selezioneSpecifica.png", width: 80%),
   caption: [
