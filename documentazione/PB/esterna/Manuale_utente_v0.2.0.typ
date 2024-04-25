@@ -422,7 +422,7 @@ Una volta cliccata, si aprirà una finestra di dialogo contenente maggiori infor
     Pagina Cronologia
   ]
 )
-La pagina Cronologia, mostra l'elenco delle ricerche effettuate tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento.\
+La pagina Cronologia, mostra l'elenco delle ricerche effettuate tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento ed è accessibile solo da un utente admin.\
 Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
 - Data;
 - Utente;
@@ -462,7 +462,7 @@ L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Fi
     Pagina Feedback
   ]
 )
-La pagina Feedback, mostra l'elenco dei feedback negativi assegnati ad una raccomandazione mostrata tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento.
+La pagina Feedback, mostra l'elenco dei feedback negativi assegnati ad una raccomandazione mostrata tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento ed è accessibile solo da un utente admin.
 Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
 - Data;
 - Utente;
