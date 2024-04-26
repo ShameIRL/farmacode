@@ -1,9 +1,8 @@
 /* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO */
 
 /* TO DO: */
-/* Cambiare immagini sezione 6 e relative descrizioni*/
 /* Sezione 4 */
-/* Sezione 5 */
+
 
 
 #import "/template/big_docs.typ": *
@@ -943,8 +942,8 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 
 #align(left,
 figure(
-  image("/imgs/PdQ/eac/da1a12.png", height: auto, width: auto),
-  caption: [EAC da sprint 1 a 12]
+  image("/imgs/PdQ/eac/da1a20.png", height: auto, width: auto),
+  caption: [EAC da sprint 1 a 20]
   )
   
 )
@@ -978,8 +977,8 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 
 #align(left,
 figure(
-  image("/imgs/PdQ/ac_etc/da1a12.png", height: auto, width: auto),
-  caption: [AC e ETC da sprint 1 a 12]
+  image("/imgs/PdQ/ac_etc/da1a20.png", height: auto, width: auto),
+  caption: [AC e ETC da sprint 1 a 20]
   )
   
 )
@@ -1003,7 +1002,7 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
   [*EV*], [644], [1288], [1803], [2576],[3220],
 [3477],
 [3864],
@@ -1024,8 +1023,8 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 
 #align(left,
 figure(
-  image("/imgs/PdQ/ev_pv/da1a12.png", height: auto, width: auto),
-  caption: [EV e PV da sprint 1 a 12]
+  image("/imgs/PdQ/ev_pv/da1a20.png", height: auto, width: auto),
+  caption: [EV e PV da sprint 1 a 20]
   )
   
 )
@@ -1057,8 +1056,8 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
 
 #align(left,
 figure(
-  image("/imgs/PdQ/cv_sv/da1a12.png", height: auto, width: auto),
-  caption: [CV e SV da sprint 1 a 12]
+  image("/imgs/PdQ/cv_sv/da1a20.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 20]
   )  
 )
 
@@ -1076,10 +1075,10 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 
 = Elenco delle immagini
 - Immagine 1: IG
-- Immagine 2: EAC da sprint 1 a 12
-- Immagine 3: AC e ETC da sprint 1 a 12
-- Immagine 4: EV e PV da sprint 1 a 12
-- Immagine 5: CV e SV da sprint 1 a 12
+- Immagine 2: EAC da sprint 1 a 20
+- Immagine 3: AC e ETC da sprint 1 a 20
+- Immagine 4: EV e PV da sprint 1 a 20
+- Immagine 5: CV e SV da sprint 1 a 20
 
 = Elenco tabelle
 - Tabella 1: Qualità della documentazione
