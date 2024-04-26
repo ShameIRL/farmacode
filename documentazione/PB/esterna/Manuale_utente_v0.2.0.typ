@@ -201,6 +201,7 @@ Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale
 
 
 === Funzione di training (Amministratore)
+<training>
 La funzione che permette di effettuare il training dell'algoritmo scelto. È disponibile solo per gli utenti con i permessi amministratore. In caso l'utente non dispone dei permessi necessari non visualizzerà il bottone di training.\
 Questo passaggio non è strettamente necessario per effettuare una ricerca, tuttavia se sono stati aggiunti molti ordini al sistema effettuare un training significherebbe andare a prendere in considerazione i nuovi cambiamenti.   
 #figure(
@@ -296,58 +297,79 @@ Se avete eseguito correttamente tutti i passaggi vedrete che il Dropbox iniziale
 
 === Selezione N
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_topn_1.png", width: 100%),
   caption: [
-    Selezione N nella ricerca
+    Selezione N dropdown
   ]
 )
-Come precedentemente anticipato l'ultima selezione riguarda il numero N di elementi da visualizzare nella raccomandazione.\
-In particolare è possibile visualizzare la Top 5 o Top 10 o Top 20 elementi da raccomandare.
-
-=== Training in atto
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_topn_2.png", width: 100%),
   caption: [
-    Selezione N nella ricerca
+    Selezione N option
   ]
 )
-Descrizione
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_topn_3.png", width: 100%),
+  caption: [
+    Selezione N fine
+  ]
+)
+Il quarto step per effettuare correttamente una ricerca è selezionare il numero di migliori risultati desiderato. Recarsi dunque nel componente filtro all'interno della pagina posizionato al di sotto del menu e seguire i seguenti passaggi:\
+1) Cliccare il quarto Dropbox identificato con la scritta "Seleziona N". Verranno dunque mostrati a schermo l'elenco dei possibili Top N tra cui scegliere;\
+2) Selezionare con un click il Top N desiderato.\
+Se avete eseguito correttamente tutti i passaggi vedrete che il bottone "Ricerca" non è più disabilitato. Dunque cliccare il bottone "Ricerca" per avviare la ricerca.
+
+=== Training in corso
+Se dopo aver copilato tutti gli input e dopo aver cliccato il bottone "Ricerca" visualizzare un finestra di dialogo come la seguente
+#figure(
+  image("/imgs/screenshots_mvp/ricerca_training_in_corso.png", width: 100%),
+  caption: [
+    Training in corso
+  ]
+)
+significa che un'altro utente ha avviato il training per l'algoritmo scelto come spiegato nella #link(<training>)[sezione Funzione di training (Amministratore)].\
+Dovrete attendere qualche minuto che il processo di training termini. Eventualmento potrete cambiare l'algoritmo e ripetere la ricerca.
 
 === Risultato ricerca
 #figure(
-  image("/imgs/screenshots_mvp/risultatoRicerca.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_risultati.png", width: 100%),
   caption: [
     Risultato ricerca
   ]
 )
-Infine dopo la pressione del bottone Ricerca verrà visualizzata una tabella con gli elementi raccomandati.\
-Ogni elemento oltre all'ID e descrizione presenza una grado di raccomandazione a stelle, 5 stesse colorate rappresente il massimo grado di raccomandazione, 0 stelle colorate rappresenta il minimo.\
-È possibile scorrere la tabella tramite rotela del mouse o frecce direzionali della tastira nel caso gli elementi non fossero tutti visibili.
+Dopo aver cliccato il bottone "Ricerca", se non ci sono stati problemi, visualizzerete i risultati. Le informazioni sono raggruppate in una tabella e gli elementi saranno ordinati in modo tale da avere i migliori risualtati nelle posizioni più alte. Ogni elemento oltre all'ID e la desrizione presenta un grado di raccomandazione rappresentato con delle stelline; 5 stelle colorate rappresentano il massimo grado di raccomandazione, 0 stelle colorate rappresentano il minimo. Infine è presente un bottone per effettuare un feedback su singolo Cliente o Prodotto raccomandato; la spegazione per l'inserimento di un feedback è descritta nella #link(<insertFeedback>)[sezione successiva].
 
 === Inserimento feedback
+<insertFeedback>
+/*Da spiegare meglio!*/
+Il feedback permette di correggere il tiro dell'algorimo ed in particolare fa si che quel Cliente o Prodotto raccomandato non venga più raccomandatoper quel Cliente o Prodotto selezionato. Questo in quanto il feedback è stato inteso come strumento per elimiare dalle raccomandazioni quelle coppie Cliente Prodotto che non possono esistere. Ad esempio se due pub (Clienti) sono vicini, magari per motivi contrattuali o commerciali una birra (Prodotto) non può essere venduta al secondo pub in quanto è già fornita al pub numero uno.\
+Di seguito verranno illustrati e spiegati i passaggi per inserire un feedback.
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_feedback_1.png", width: 100%),
   caption: [
     Inserimento feedback
   ]
 )
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_feedback_2.png", width: 100%),
   caption: [
     Conferma feedback
   ]
 )
-Descrizione
+1) Cliccare il bottone con l'icona del pollice in giù relativo al risultato desiderato nella tabella. Verrà mostrata a schermo una finestra di dialogo;\
+2) Leggere attentamente il messaggio all'interno della finestra di dialogo e cliccare il bottone Conferma per completare l'operazione di feedback.\
+Una volta eseguite correttamente questi passaggi la finestra di dialogo scomparirà e potrete continuare ad utilizzare l'applicazione.
 
 === Errore di ricerca
 #figure(
-  image("/imgs/screenshots_mvp/ricerca_selezioneN.png", width: 80%),
+  image("/imgs/screenshots_mvp/ricerca_errore.png", width: 80%),
   caption: [
     Errore di ricerca
   ]
 )
-Descrizione
+In caso di errori durante la ricerca verrà visualizzato il componenti qui sopra. Procedere con la modifica dei parametri della ricerca e riprovare.
 
+#pagebreak()
 == Clienti
 #figure(
   image("/imgs/screenshots_mvp/clienti.png", width: 100%),
