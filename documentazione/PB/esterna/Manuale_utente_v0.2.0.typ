@@ -169,6 +169,7 @@ Correggere eventuali errori e riprovare ad effettuare l'accesso come descritto n
     Pagina ricerca
   ]
 )
+<ricerca>
 La pagina ricerca è quella più importate, nella quale l'utente avrà la possibilità di effettuare le ricerche e visualizzare i risultati.\
 La pagina è accessibile dal menu superiore presente in tutte le pagine alla voce Ricerca. Inotre una volta effettuato l'accesso, in caso di successo, si verrà reindirizzati proprio su questa schermata.\
 Di seguito verranno elencate le istruzioni per poter effettuare correttamente una ricerca, verranno spiegate le varie feature/personalizzazioni e come gestire eventuali errori.
@@ -422,7 +423,7 @@ Una volta cliccata, si aprirà una finestra di dialogo contenente maggiori infor
     Pagina Cronologia
   ]
 )
-La pagina Cronologia, mostra l'elenco delle ricerche effettuate tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento ed è accessibile solo da un utente admin.\
+La pagina Cronologia, mostra l'elenco delle ricerche effettuate tramite la pagina #link(<ricerca>)["Ricerca"] presentata nella sezione 4.2 di questo documento ed è accessibile solo da un utente admin.\
 Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
 - Data;
 - Utente;
@@ -462,7 +463,7 @@ L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Fi
     Pagina Feedback
   ]
 )
-La pagina Feedback, mostra l'elenco dei feedback negativi assegnati ad una raccomandazione mostrata tramite la pagina "Ricerca" presentata nella sezione 4.2 di questo documento ed è accessibile solo da un utente admin.
+La pagina Feedback, mostra l'elenco dei feedback negativi assegnati ad una raccomandazione mostrata tramite la pagina #link(<ricerca>)["Ricerca"] presentata nella sezione 4.2 di questo documento ed è accessibile solo da un utente admin.
 Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
 - Data;
 - Utente;
@@ -503,10 +504,18 @@ L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Fi
   ]
 )
 
+#figure(
+  image("/imgs/screenshots_mvp/dialogo_feed.png", width: 80%),
+  caption: [
+    Dialogo eliminazione feedback
+  ]
+)
+
 Come accennato prima, l'ultima colonna della tabella dei feedback assegnati, contiene un bottone che ha la funzione di eliminare un feedback assegnato ad una raccomandazione.\
 I passaggi sono i seguenti, riportati dai numeri nelle immagini soprastanti:\
 1) Cliccare sul bottone della riga corrispondente alla raccomandazione scelta;\
-2) Una volta aperta la finestra di dialogo, cliccare il pulsante conferma, per effettuare il cambiamento.
+2) Una volta aperta la finestra di dialogo, cliccare il pulsante conferma, per effettuare il cambiamento;\
+3) Se invece non si volesse effettuare il cambiamento cliccare sull'icona della croce in alto a desta.
 
 #pagebreak()
 == Profilo
@@ -535,9 +544,19 @@ La password non è possibile visualizzarla, ma è possibile modificarla come ved
   ]
 )
 
+#figure(
+  image("/imgs/screenshots_mvp/c_email_eff.png", width: 100%),
+  caption: [
+    Cambio email
+  ]
+)
+
 Per la modifica della propria email associata al profilo dell'appliacazione, basta seguire i seguenti passaggi riportati anche nelle immagini soprastanti:\
-1) Cliccare sul bottone con l'icona di una penna presente nella riga corrispondente alla voce email;
-2) 
+1) Cliccare sul bottone con l'icona di una penna presente nella riga corrispondente alla voce email;\
+2) Inserire nel campo la nuova email da associare all'account;\
+3) Cliccare sul bottone "Salva" per effettuare il cambiamento;
+4) Clicccare sul bottone rosso con l'icona di una croce per scartare il cambiamento.
+
 
 === Modifica password
 #figure(
@@ -546,10 +565,28 @@ Per la modifica della propria email associata al profilo dell'appliacazione, bas
     Cambio password
   ]
 )
+
+#figure(
+  image("/imgs/screenshots_mvp/c_pass_eff.png", width: 100%),
+  caption: [
+    Cambio email
+  ]
+)
 Per la modifica della propria email associata al profilo dell'appliacazione, basta seguire i seguenti passaggi riportati anche nelle immagini soprastanti:\
-1) Cliccare sul bottone con l'icona di una penna presente nella riga corrispondente alla voce password;
+1) Cliccare sul bottone con l'icona di una penna presente nella riga corrispondente alla voce password;\
+2) Inserire nel campo la nuova password da associare all'account;\
+3) Cliccare sul bottone "Salva" per effettuare il cambiamento;
+4) Clicccare sul bottone rosso con l'icona di una croce per scartare il cambiamento.
 
 === Messaggio errore modifiche
+#figure(
+  image("/imgs/screenshots_mvp/errore_cambio.png", width: 100%),
+  caption: [
+    Errore cambio email/password
+  ]
+)
+Nel caso si cerchi di impostare una nuova email o password senza contenuto nel proprio account, verrà mostrata una scritta di errore.\
+Per evitare questo inconveniente, si è pregati di compilare correttamente tutti i campi necessari atti a effettuare le modifiche.
 
 #pagebreak()
 == Logout
@@ -572,7 +609,7 @@ Una volta cliccato, non ci sarà nessuna finestra di dialogo che chiede una conf
   ]
 )
 La pagina 404 esce in caso siate andati per qualche motivo in una pagina inesistente del sito, oppure abbiate cercato di accedere a funzionalità per cui non avete i permessi.\
-Se dovesse uscire questa pagina, basterà cliccare sul bottone "Torna alla home" evidenziato da un rettangolo rosso nella figura soprastante, che vi reindirizzerà alla pagina di "Ricerca" (sezione 4.2).
+Se dovesse uscire questa pagina, basterà cliccare sul bottone "Torna alla home" evidenziato da un rettangolo rosso nella figura soprastante, che vi reindirizzerà alla pagina di #link(<ricerca>)["Ricerca"] (sezione 4.2).
 
 #pagebreak()
 = Elenco delle immagini
