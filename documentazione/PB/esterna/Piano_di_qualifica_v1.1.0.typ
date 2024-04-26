@@ -1046,10 +1046,10 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 
 = Elenco delle immagini
 - Immagine 1: IG
-- Immagine 2: EAC da sprint 1 a 12
-- Immagine 3: AC e ETC da sprint 1 a 12
-- Immagine 4: EV e PV da sprint 1 a 12
-- Immagine 5: CV e SV da sprint 1 a 12
+- Immagine 2: EAC da sprint 1 a 20
+- Immagine 3: AC e ETC da sprint 1 a 20
+- Immagine 4: EV e PV da sprint 1 a 20
+- Immagine 5: CV e SV da sprint 1 a 20
 
 = Elenco tabelle
 - Tabella 1: Qualità della documentazione
