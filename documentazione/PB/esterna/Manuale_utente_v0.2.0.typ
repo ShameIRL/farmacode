@@ -547,7 +547,7 @@ La password non è possibile visualizzarla, ma è possibile modificarla come ved
 #figure(
   image("/imgs/screenshots_mvp/c_email_eff.png", width: 100%),
   caption: [
-    Cambio email
+    Procedimento cambio email
   ]
 )
 
@@ -569,7 +569,7 @@ Per la modifica della propria email associata al profilo dell'appliacazione, bas
 #figure(
   image("/imgs/screenshots_mvp/c_pass_eff.png", width: 100%),
   caption: [
-    Cambio email
+    Procedimento cambio password
   ]
 )
 Per la modifica della propria email associata al profilo dell'appliacazione, basta seguire i seguenti passaggi riportati anche nelle immagini soprastanti:\
