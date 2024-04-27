@@ -1,10 +1,3 @@
-/* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO */
-
-/* TO DO: */
-/* Cambiare immagini sezione 6 e relative descrizioni*/
-/* Sezione 4 */
-/* Sezione 5 */
-
 
 #import "/template/big_docs.typ": *
 
@@ -16,6 +9,8 @@
     p.cardin,
   ),
   changelog: (
+    "1.3.0", "2024-04-25", p.baggio, p.pandolfo, "Aggiornamento test sezione 4",
+    "1.2.0", "2024-04-23", p.pandolfo, p.baggio, "Aggiornamento sezioni 5 e 6",
     "1.1.0", "2024-02-27", p.carraro, p.passarella, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.favaron, p.pandolfo, "Verifica del documento",
     "0.10.1", "2024-02-09", p.bomben, p.rosson, "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
@@ -575,7 +570,7 @@ Questa sezione del documento è dedicata al testing, parte fondamentale per la c
 
 /* I TEST SONO STATI ELENCATI SEGUENDO QUESTO ORDINE: CLIENT--> EXPRESS --> ALGO */
 === Test di unità
-INTRODUZIONE DA SCRIVERE
+I test di unità hanno il compito di verificare il corretto funzionamento di singole unità del codice indipendenti tra loro, come funzioni, classi e metodi. Questo tipo di test è stato automatizzato e se ne può anche verificare la copertura dalla Repository di progetto.
 
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
@@ -586,25 +581,43 @@ INTRODUZIONE DA SCRIVERE
   ),
   align: center,
   [*Codice Test*], [*Descrizione*], [*Stato test*],
-  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina Clienti], [],
-  [TU], [Si verifica che il componente Filter sia renderizzato correttamente nella pagina di Ricerca], [],
-  [TU], [Si verifica che il pulsante di ricerca sia disabilitato quando non ci sono dati utente o articolo], [],
-  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Login], [],
-  [TU], [Si verifica che il componente Form di login sia renderizzato correttamente nella pagina Login], [],
-  [TU], [Si verifica che la funzione validate() esegua correttamente la validazione dei campi di input nel form di Login], [],
-  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina "PaginaNonTrovata"], [],
-  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Prodotti], [],
-  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Profilo], [],
-  [TU], [Si verifica che i dati utente vengano stampati correttamente nella pagina Profilo], [],
-  [TU], [Si verifica che il componente Results venga renderizzato correttamente per user], [],
-  [TU], [Si verifica che il componente Results venga renderizzato correttamente per item], [],
-  [TU], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina di Ricerca], [],
-  [TU], [Si verifica che la funzione topN_1UserNItem restituisca quanto atteso], [],
+  [TU01], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina Clienti], [Passato],
+  [TU02], [Si verifica che il componente Filter sia renderizzato correttamente nella pagina di Ricerca], [Passato],
+  [TU03], [Si verifica che il pulsante di ricerca sia disabilitato quando non ci sono dati utente o articolo], [Passato],
+  [TU04], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Login], [Passato],
+  [TU05], [Si verifica che il componente Form di login sia renderizzato correttamente nella pagina Login], [Passato],
+  [TU06], [Si verifica che la funzione validate() esegua correttamente la validazione dei campi di input nel form di Login], [Passato],
+  [TU07], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina "PaginaNonTrovata"], [Passato],
+  [TU08], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Prodotti], [Passato],
+  [TU09], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina  Profilo], [Passato],
+  [TU10], [Si verifica che i dati utente vengano stampati correttamente nella pagina Profilo], [Passato],
+  [TU11], [Si verifica che il componente Results venga renderizzato correttamente per user], [Passato],
+  [TU12], [Si verifica che il componente Results venga renderizzato correttamente per item], [Passato],
+  [TU13], [Si verifica che il componente Footer sia renderizzato correttamente nella pagina di Ricerca], [Passato],
+  [TU14], [Si verifica il caricamento del modello SVD.], [Passato],
+  [TU15], [Si verifica il comportamento quando il file del modello SVD non esiste.], [Passato],
+  [TU16], [Si verifica il salvataggio del modello SVD.], [Passato],
+  [TU17], [Si verifica l'addestramento del modello SVD.], [Passato],
+  [TU18], [Si verifica il comportamento quando il file del modello SVD non esiste durante l'addestramento.], [Passato],
+  [TU19], [Si verifica la conversione delle valutazioni da float a int nel modello SVD.], [Passato],
+  [TU20], [Si verifica l'applicazione dei feedback per gli utenti nel modello SVD.], [Passato],
+  [TU21], [Si verifica l'applicazione dei feedback per gli oggetti nel modello SVD.], [Passato],
+  [TU22], [Si verifica la generazione delle prime 5 raccomandazioni per un utente e un oggetto specifici nel modello SVD.], [Passato],
+  [TU23], [Si verifica la generazione delle prime 5 raccomandazioni per un oggetto e un utente specifici nel modello SVD.], [Passato],
+  [TU24], [Si verifica il caricamento del modello NN.], [Passato],
+  [TU25], [Si verifica il comportamento quando il file del modello NN non esiste.], [Passato],
+  [TU26], [Si verifica il salvataggio del modello NN.], [Passato],
+  [TU27], [Si verifica l'addestramento del modello NN.], [Passato],
+  [TU28], [Si verifica la conversione delle valutazioni da float a int nel modello NN.], [Passato],
+  [TU29], [Si verifica l'applicazione dei feedback per gli utenti nel modello NN.], [Passato],
+  [TU30], [Si verifica l'applicazione dei feedback per gli oggetti nel modello NN.], [Passato],
+  [TU31], [Si verifica la generazione delle prime 5 raccomandazioni per un utente e un oggetto specifici nel modello NN.], [Passato],
+  [TU32], [Si verifica la generazione delle prime 5 raccomandazioni per un oggetto e un utente specifici nel modello NN.], [Passato]
 )
 #align(center)[Tabella 11: Test di unità]
 
 == Test di integrazione 
-INTRODUZIONE DA SCRIVERE
+I test di integrazione hanno il compito di verificare il corretto funzionamento delle interazioni tra varie unità del sistema. Questi test sono dunque essenziali a verificare il corretto funzionamento del sistema nella sua interezza. Parte di questi test è stata automatizzata e se ne può anche verificare la copertura dalla Repository di progetto.
 
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
@@ -615,26 +628,36 @@ INTRODUZIONE DA SCRIVERE
   ),
   align: center,
   [*Codice Test*], [*Descrizione*], [*Stato test*],
-  [TI], [Si verifica che il pulsante di ricerca sia abilitato dopo la selezione dei filtri utente o articolo], [],
-  [TI], [Si verifica che il recupero dati per i filtri utente funzioni correttamente], [],
-  [TI], [Si verifica che il recupero dati per i filtri articolo funzioni correttamente], [],
-  [TI], [Si verifica che il login funzioni correttamente quando vengono inseriti dei dati di autenticazione corretti, reindirizzando alla pagina principale], [],
-  [TI], [Si verifica che la chiamata per verificare se il server è in esecuzione funzioni correttamente], [],
-  [TI], [Si verifica che il recupero dati necessari al login funzioni correttamente, restituendo un errore in caso l'utente non esista], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista degli utenti restituisca una lista di utenti], [],
-  [TI], [Si verifica che la chiamata per il recupero dei dati di un singolo utente funzioni correttamente, restituendo un errore se questo non esiste], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista degli articoli restituisca una lista di articoli], [],
-  [TI], [Si verifica che la chiamata per il recupero dei dati di un singolo articolo funzioni correttamente, restituendo un errore se questo non esiste], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista dei prodotti in dettaglio restituisca una lista di prodotti in dettaglio], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista delle linee commerciali restituisca una lista di linee commerciali], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista delle settori commerciali restituisca una lista di settori commerciali], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista delle famiglie commerciali restituisca una lista di famiglie commerciali], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista delle sottofamiglie commerciali restituisca una lista di sottofamiglie commerciali], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista dei clienti restituisca una lista di clienti], [],
-  [TI], [Si verifica che la chiamata per il recupero della lista delle provincie restituisca una lista di provincie], [],
-  [TI], [Si verifica che l'aggiornamento dell'email di un utente funzioni correttamente, restituendo un errore altrimenti], [],
-  [TI], [Si verifica che l'aggiornamento della password di un utente funzioni correttamente, restituendo un errore altrimenti], [],
-  [TI], [Si verifica che l'API risponda correttamente ad una ricerca utente e che la struttura dei dati nella risposta sia conforme alle aspettative], [],
+  [TI01], [Si verifica che il pulsante di ricerca sia abilitato dopo la selezione dei filtri utente o articolo], [Passato],
+  [TI02], [Si verifica che il recupero dati per i filtri utente funzioni correttamente], [Passato],
+  [TI03], [Si verifica che il recupero dati per i filtri articolo funzioni correttamente], [Passato],
+  [TI04], [Si verifica che il login funzioni correttamente quando vengono inseriti dei dati di autenticazione corretti, reindirizzando alla pagina principale], [ND],
+  [TI05], [Si verifica che la chiamata per verificare se il server è in esecuzione funzioni correttamente], [Passato],
+  [TI06], [Si verifica che il recupero dati necessari al login funzioni correttamente, restituendo un errore in caso l'utente non esista], [Passato],
+  [TI07], [Si verifica che la chiamata per il recupero della lista degli utenti restituisca una lista di utenti], [Passato],
+  [TI08], [Si verifica che la chiamata per il recupero dei dati di un singolo utente funzioni correttamente, restituendo un errore se questo non esiste], [Passato],
+  [TI09], [Si verifica che la chiamata per il recupero della lista degli articoli restituisca una lista di articoli], [Passato],
+  [TI10], [Si verifica che la chiamata per il recupero dei dati di un singolo articolo funzioni correttamente, restituendo un errore se questo non esiste], [Passato],
+  [TI11], [Si verifica che la chiamata per il recupero della lista dei prodotti in dettaglio restituisca una lista di prodotti in dettaglio], [Passato],
+  [TI12], [Si verifica che la chiamata per il recupero della lista delle linee commerciali restituisca una lista di linee commerciali], [Passato],
+  [TI13], [Si verifica che la chiamata per il recupero della lista delle settori commerciali restituisca una lista di settori commerciali], [Passato],
+  [TI14], [Si verifica che la chiamata per il recupero della lista delle famiglie commerciali restituisca una lista di famiglie commerciali], [Passato],
+  [TI15], [Si verifica che la chiamata per il recupero della lista delle sottofamiglie commerciali restituisca una lista di sottofamiglie commerciali], [Passato],
+  [TI16], [Si verifica che la chiamata per il recupero della lista dei clienti restituisca una lista di clienti], [Passato],
+  [TI17], [Si verifica che la chiamata per il recupero della lista delle provincie restituisca una lista di provincie], [Passato],
+  [TI18], [Si verifica che l'aggiornamento dell'email di un utente funzioni correttamente, restituendo un errore altrimenti], [Passato],
+  [TI19], [Si verifica che l'aggiornamento della password di un utente funzioni correttamente, restituendo un errore altrimenti], [Passato],
+  [TI20], [Si verifica che l'API risponda correttamente ad una ricerca utente e che la struttura dei dati nella risposta sia conforme alle aspettative], [Passato],
+  [TI21], [Si verifica la risposta dell'API di addestramento per il modello SVD.], [Passato],
+  [TI22], [Si verifica la risposta dell'API di addestramento per il modello NN.], [Passato],
+  [TI23], [Si verifica la gestione di richieste concorrenti di addestramento e ricerca.], [Passato],
+  [TI24], [Si verifica la gestione di richieste di addestramento con un algoritmo errato.], [Passato],
+  [TI25], [Si verifica la risposta dell'API di ricerca per il modello SVD con utente specifico.], [Passato],
+  [TI26], [Si verifica la risposta dell'API di ricerca per il modello SVD con oggetto specifico.], [Passato],
+  [TI27], [Si verifica la risposta dell'API di ricerca per il modello NN con utente specifico.], [Passato],
+  [TI28], [Si verifica la risposta dell'API di ricerca per il modello NN con oggetto specifico.], [Passato],
+  [TI29], [Si verifica la gestione di richieste di ricerca con un oggetto errato.], [Passato],
+  [TI30], [Si verifica la gestione di richieste di ricerca con un algoritmo errato.], [Passato]
 )
 #align(center)[Tabella 12: Test di integrazione]
 
@@ -651,39 +674,41 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
   align: center,
   [*Codice Test*], [*Descrizione*], [*Stato test*],
   [TA01], [Verificare la corretta visualizzazione della pagina principale], [Passato],
+    [TA01.1], [Verificare il corretto funzionamento dell'avviso del modello in training], [Passato],
   [TA02], [Verificare la possibilità di selezionare la ricerca per prodotto], [Passato],
     [TA02.1], [Verificare la possibilità di selezionare un prodotto], [Passato],
   [TA03], [Verificare la possibilità di selezionare la ricerca per cliente], [Passato],
     [TA03.1], [Verificare la possibilità di selezionare la un cliente], [Passato],
-  [TA04], [Verificare la possibilità di eseguire la ricerca per 5 o 10 risultati], [Passato],
+  [TA04], [Verificare la possibilità di eseguire la ricerca per 5, 10 o 20 risultati], [Passato],
   [TA05], [Verificare la corretta visualizzazione dei risultati], [Passato],
     [TA05.1], [Verificare la corretta visualizzazione delle righe dei risultati], [Passato],
   [TA06], [Verificare la performance del tempo di risposta], [Passato],
-  [TA07], [Verificare la corretta visualizzazione della pagina di Login], [ND],
-  [TA08], [Verificare la corretta visualizzazione della normativa cookies], [ND],
-  [TA09], [Verificare la corretta visualizzazione dell'alert di manutenzione], [ND],
-  [TA10], [Verificare la corretta visualizzazione dell'alert errore di login], [ND],
-  [TA11], [Verificare la corretta visualizzazione del Menù delle funzionalità], [ND],
-    [TA11.1], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin/User], [ND],
-    [TA11.2], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin], [ND],
-  [TA12], [Verificare la corretta visualizzazione della sezione Profilo Utente], [ND],
-    [TA12.1], [Verificare la corretta visualizzazione dei dati dell'utente], [ND],
-    [TA12.2], [Verificare la corretta modifica dei dati dell'utente], [ND],
-  [TA13], [Verificare la possibilità di eseguire il Logout], [ND],
-  [TA14], [Verificare la possibilità di inserire un Feedback], [ND],
-  [TA15], [Verificare la possibilità di visualizzare il catalogo prodotti], [ND],
-    [TA15.1], [Verificare la corretta visualizzazione della lista di prodotti], [ND],
-    [TA15.2], [Verificare la corretta visualizzazione del dettaglio prodotto], [ND],
-  [TA16], [Verificare la possibilità di visualizzare la lista clienti], [ND],
-    [TA16.1], [Verificare la corretta visualizzazione della lista di clienti], [ND],
-    [TA16.2], [Verificare la corretta visualizzazione del dettaglio cliente], [ND],
-  [TA17], [Verificare la possibilità di visualizzare le statistiche mensili], [NDo],
-    [TA17.1], [Verificare la corretta visualizzazione dei risultati], [ND],
-  [TA18], [Verificare la possibilità di visualizzare la cronologia di ricerche], [ND],
-    [TA18.1], [Verificare la corretta visualizzazione dei risultati], [ND],
-  [TA19], [Verificare la possibilità di visualizzare la cronologia dei feedback], [ND],
-    [TA19.1], [Verificare la corretta visualizzazione dei risultati], [ND],
-  [TA20], [Verificare la corretta visualizzazione di "Errore di ricerca"], [ND],
+  [TA07], [Verificare la corretta visualizzazione della pagina di Login], [Passato],
+  [TA08], [Verificare la corretta visualizzazione dell'alert errore di login], [Passato],
+  [TA09], [Verificare la corretta visualizzazione del Menù delle funzionalità], [Passato],
+    [TA09.1], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin/User], [Passato],
+    [TA09.2], [Verificare la corretta visualizzazione e funzione delle funzionalità Admin], [Passato],
+  [TA10], [Verificare la corretta visualizzazione della sezione Profilo Utente], [Passato],
+    [TA10.1], [Verificare la corretta visualizzazione dei dati dell'utente], [Passato],
+    [TA10.2], [Verificare la corretta modifica dei dati dell'utente], [Passato],
+  [TA11], [Verificare la possibilità di eseguire il Logout], [Passato],
+  [TA12], [Verificare la possibilità di inserire un Feedback], [Passato],
+  [TA13], [Verificare la possibilità di visualizzare il catalogo prodotti], [Passato],
+    [TA13.1], [Verificare il corretto funzionamento della ricerca per filtri], [Passato],
+    [TA13.2], [Verificare la corretta visualizzazione della lista di prodotti], [Passato],
+    [TA13.3], [Verificare la corretta visualizzazione del dettaglio prodotto], [Passato],
+  [TA14], [Verificare la possibilità di visualizzare la lista clienti], [Passato],
+    [TA14.1], [Verificare il corretto funzionamento della ricerca per filtri], [Passato],
+    [TA14.2], [Verificare la corretta visualizzazione della lista di clienti], [Passato],
+    [TA14.3], [Verificare la corretta visualizzazione del dettaglio cliente], [Passato],
+  [TA15], [Verificare la possibilità di visualizzare la cronologia di ricerche], [Passato],
+    [TA15.1], [Verificare il corretto funzionamento della ricerca per filtri], [Passato],
+    [TA15.2], [Verificare la corretta visualizzazione dei risultati], [Passato],
+  [TA16], [Verificare la possibilità di visualizzare la cronologia dei feedback], [Passato],
+    [TA16.1], [Verificare il corretto funzionamento della ricerca per filtri], [Passato],
+    [TA16.2], [Verificare la corretta visualizzazione dei risultati], [Passato],
+    [TA16.3], [Verificare il corretto funzionamento dell'eliminiazione feedback], [Passato],
+  [TA17], [Verificare la corretta visualizzazione di "Errore di ricerca"], [Passato],
 )
 #align(center)[Tabella 13: Test di accettazione]
 
@@ -698,39 +723,38 @@ I test di accettazione sono stati eseguiti da parte dei componenti di Farmacode 
   ),
   align: center,
   [*Codice Test*], [*Codice caso d'uso*],
-  [TA01], [UC8],
-  [TA02], [UC8.1.1.1],
-    [TA02.1], [UC8.1.1.2],
-  [TA03], [UC8.1.1.1],
-    [TA03.1], [UC8.1.1.2],
-  [TA04], [UC8.1.1.3],
-  [TA05], [UC8.1.2, UC8.2],
-    [TA05.1], [UC8.2.1 e generalizzazioni],
-  [TA07], [UC1, UC1.1, UC1.2],
-  [TA08], [UC4, UC4.1, UC4.2],
-  [TA09], [UC2],
-  [TA10], [UC3],
+  [TA01], [UC6],
+    [TA01.1], [UC15],
+  [TA02], [UC6.1.4],
+    [TA02.1], [UC6.1.6],
+  [TA03], [UC6.1.4],
+    [TA03.1], [UC6.1.5],
+  [TA04], [UC6.1.7,UC6.1.8, UC6.1.9, UC6.1.10],
+  [TA05], [UC6.3, UC14],
+    [TA05.1], [UC6.3.1],
+  [TA07], [UC1],
+  [TA08], [UC2],
+  [TA10], [UC4],
+    [TA10.1], [UC4.1],
+    [TA10.2], [UC4.2],
   [TA11], [UC5],
-    [TA11.1], [UC5.1, UC5.1.1, UC5.1.2, UC5.1.3, UC5.1.4],
-    [TA11.2], [UC5.2, UC5.2.1, UC5.2.2],
-  [TA12], [UC6],
-    [TA12.1], [UC6.1 UC6.1.1],
-    [TA12.2], [UC6.2 UC6.2.1 UC6.2.2],
-  [TA13], [UC7],
-  [TA14], [UC9 UC9.1 UC9.2],
-  [TA15], [UC10 e generalizzazioni],
-    [TA15.1], [UC10.2],
-    [TA15.2], [UC11 e generalizzazioni],
-  [TA16], [UC12 e generalizzazioni],
-    [TA16.1], [UC12.2],
-    [TA16.2], [UC12.2.1],
-  [TA17], [UC13],
-    [TA17.1], [UC13.1, UC13.2],
-  [TA18], [UC14, UC14.1],
-    [TA18.1], [UC14.2 UC14.2.1],
-  [TA19], [UC15, UC15.1],
-    [TA19.1], [UC15.2, UC15.2.1],
-  [TA20], [UC16],
+  [TA12], [UC7],
+  [TA13], [UC8],
+    [TA13.1], [UC8.1],
+    [TA13.2], [UC8.2],
+    [TA13.3], [UC8.2.1, UC9],
+  [TA14], [UC10],
+    [TA14.1], [UC10.1],
+    [TA14.2], [UC10.2],
+    [TA14.3], [UC10.2.1],
+  [TA15], [UC11],
+    [TA15.1], [UC11.1],
+    [TA15.2], [UC11.2, UC11.2.1],
+  [TA16], [UC12],
+    [TA15.1], [UC12.1],
+    [TA16.2], [UC12.2, UC12.2.1],
+    [TA16.3], [UC13],
+  [TA17], [UC14],
 )
 ]
 #align(center)[Tabella 14: Tracciamento test di accettazione]
@@ -748,23 +772,23 @@ Di seguito una tabella con il codice del test, la descrizione, il risultato e il
   ),
   align: left,
   [*Codice\ Test*], [*Descrizione*], [*Risultato Test*], [*Codice\ Requisito*],
-  [TS01], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [ND], [ROF 1],
+  [TS01], [Verificare la corretta visualizzazione della pagina di login e il suo corretto funzionamento.], [Passato], [ROF 1],
   [TS02], [Verificare la corretta visualizzazione di eventuale dell'alert di manutenzione.], [ND], [RDF 2],
   [TS03], [Verificare la corretta visualizzazione  della normativa cookie.], [ND], [RDF 3],
-  [TS04], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [ND], [RDF 4],
+  [TS04], [Verificare la corretta visualizzazione dell'eventuale dell'errore di login.], [Passato], [RDF 4],
   [TS05], [Verificare la corretta visualizzazione della pagina principale], [Passato], [ROF 5,\ ROF 14],
   [TS06], [Verificare la corretta visualizzazione e funzione della funzionalità di ricerca per la raccomandazione.], [Passato], [ROF 6,\ ROF 14,\ ROF 15,\ ROF 16,\ ROF 17],
-  [TS07], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [ND], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
-  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [ND], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
+  [TS07], [Verificare la corretta visualizzazione e funzione per la vista "Catalogo prodotti", in particolare, la possibilità di cliccare su un prodotto e visualizzare i suoi dettagli.], [Passato], [ROF 7,\ ROF 19,\ RDF 20,\ RDF 21],
+  [TS08], [Verificare la corretta visualizzazione e funzione per la vista "Lista clienti", in particolare, la possibilità di cliccare su un cliente e visualizzare i suoi dettagli.], [Passato], [ROF 8,\ ROF 22,\ RDF 23,\ RDF 24],
   [TS09], [Verificare la corretta visualizzazione e funzione per la vista "Statistiche mensili".], [ND], [RDF 9,\ RDF 25],
   [TS10], [Verificare che l'admin riesca correttamente a visualizzare e utilizzare le sue funzionalità esclusive del menù.], [ND], [RDF 10],
-  [TS10.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 26,\ RDF 27,\ RDF 28],
-  [TS10.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [ND], [RDF 29,\ RDF 30,\ RDF 31],
-  [TS11], [Verificare la corretta visualizzazione della pagine dei dati personali.], [ND], [ROF 11],
-  [TS11.1], [Verificare che l'utente possa cambiare la sua email e password.], [ND], [ROF 12],
-  [TS12], [Verificare la possibilità di eseguire il Logout.], [ND], [ROF 13],
-  [TS13], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [ND], [ROF 18],
-  [TS14], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [ND], [RDF 32],
+  [TS10.1], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia ricerche", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Passato], [RDF 26,\ RDF 27,\ RDF 28],
+  [TS10.2], [Verificare la corretta visualizzazione e funzione per la vista "Cronologia feedback", in particoolare, la possibilità di cliccare e visualizzare i suoi dettagli.], [Passato], [RDF 29,\ RDF 30,\ RDF 31],
+  [TS11], [Verificare la corretta visualizzazione della pagine dei dati personali.], [Passato], [ROF 11],
+  [TS11.1], [Verificare che l'utente possa cambiare la sua email e password.], [Passato], [ROF 12],
+  [TS12], [Verificare la possibilità di eseguire il Logout.], [Passato], [ROF 13],
+  [TS13], [Verificare la possibilità di lasciare un feedback per il risultato della ricerca.], [Passato], [ROF 18],
+  [TS14], [Verificare la corretta visualizzazione dell'eventuale, errore di ricerca], [Passato], [RDF 32],
   
 )
 #align(center)[Tabella 15: Test e tracciamento di sistema]
@@ -914,8 +938,8 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 
 #align(left,
 figure(
-  image("/imgs/PdQ/eac/da1a12.png", height: auto, width: auto),
-  caption: [EAC da sprint 1 a 12]
+  image("/imgs/PdQ/eac/da1a20.png", height: auto, width: auto),
+  caption: [EAC da sprint 1 a 20]
   )
   
 )
@@ -949,8 +973,8 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 
 #align(left,
 figure(
-  image("/imgs/PdQ/ac_etc/da1a12.png", height: auto, width: auto),
-  caption: [AC e ETC da sprint 1 a 12]
+  image("/imgs/PdQ/ac_etc/da1a20.png", height: auto, width: auto),
+  caption: [AC e ETC da sprint 1 a 20]
   )
   
 )
@@ -974,7 +998,7 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
   [*EV*], [644], [1288], [1803], [2576],[3220],
 [3477],
 [3864],
@@ -995,8 +1019,8 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 
 #align(left,
 figure(
-  image("/imgs/PdQ/ev_pv/da1a12.png", height: auto, width: auto),
-  caption: [EV e PV da sprint 1 a 12]
+  image("/imgs/PdQ/ev_pv/da1a20.png", height: auto, width: auto),
+  caption: [EV e PV da sprint 1 a 20]
   )
   
 )
@@ -1028,8 +1052,8 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
 
 #align(left,
 figure(
-  image("/imgs/PdQ/cv_sv/da1a12.png", height: auto, width: auto),
-  caption: [CV e SV da sprint 1 a 12]
+  image("/imgs/PdQ/cv_sv/da1a20.png", height: auto, width: auto),
+  caption: [CV e SV da sprint 1 a 20]
   )  
 )
 
@@ -1047,10 +1071,10 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 
 = Elenco delle immagini
 - Immagine 1: IG
-- Immagine 2: EAC da sprint 1 a 12
-- Immagine 3: AC e ETC da sprint 1 a 12
-- Immagine 4: EV e PV da sprint 1 a 12
-- Immagine 5: CV e SV da sprint 1 a 12
+- Immagine 2: EAC da sprint 1 a 20
+- Immagine 3: AC e ETC da sprint 1 a 20
+- Immagine 4: EV e PV da sprint 1 a 20
+- Immagine 5: CV e SV da sprint 1 a 20
 
 = Elenco tabelle
 - Tabella 1: Qualità della documentazione
