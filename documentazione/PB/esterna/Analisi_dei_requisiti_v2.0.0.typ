@@ -579,7 +579,7 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-  - User Case:
+  - Use Case:
     + UC6.1.2 SVD;
     + UC6.1.3 NN;
 
@@ -610,7 +610,7 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
     + se l'utente non sceglie una nuova opzione prende a conoscenza la decisione e smette di mostrare le opzioni possibili.  
   *Generalizzazioni:*
   - Attori: 1. Admin --> User.
-  - User Case:
+  - Use Case:
     + UC6.1.5 Ricerca "prodotti per cliente";
     + UC6.1.6 Ricerca "clienti per prodotto".
 
@@ -642,7 +642,7 @@ L' "Utente non autenticato" vuole rappresentare un qualsiasi utente, "User" o "A
   *Generalizzazioni:*
   - Attori:
     + Admin --> User.
-  - User Case:
+  - Use Case:
     + UC6.1.8 Top 5;
     + UC6.1.9 Top 10.
     + UC6.1.10 Top 20.
