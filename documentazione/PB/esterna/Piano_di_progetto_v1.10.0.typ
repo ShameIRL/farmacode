@@ -101,6 +101,8 @@ La pianificazione descritta, in seguito, all'interno questo documento si basa su
 )
 #align(center)[Tabella 1: Scadenze revisioni.]
 
+#pagebreak()
+
 = Analisi dei rischi
 
 Questa sezione del documento si concentra sull'analisi delle potenziali difficoltà che potrebbero emergere durante il corso del progetto, con l'obiettivo di identificare, analizzare e prevenire eventuali ostacoli o rallentamenti che potrebbero comprometterne il progresso complessivo. Per affrontare queste possibili problematiche, si è scelto di esaminare attentamente ciascun rischio, fornendo dettagli quali la *descrizione del rischio*, il *grado di rischio* associato, la *pericolosità*, le *precauzioni* da adottare e un *Piano di contingenza*. Il grado di rischio definisce la possibilità di occorrenza dello stesso e varia da una scala crescente da 1 a 5, mentre la pericolosità varia tra "Alta", "Media" e "Bassa".
@@ -130,6 +132,8 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Piano di contingenza*], [Comunicazioni interne ed esterne rapide in caso di dubbi per chiarimenti e delucidazioni. Eventuali #glossario("workshop") da parte dei membri del gruppo più esperti su specifiche tecnologie.],)
 )
 #align(center)[Tabella 2: RP1 - Mancanza di competenze tecniche specifiche.]
+
+#pagebreak()
 
 #table(
   columns: (1fr),
@@ -165,6 +169,8 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 4: RP3 - Problemi di comunicazione e collaborazione.]
 
+#pagebreak()
+
 #table(
   columns: (1fr),
   inset: 10pt,
@@ -181,6 +187,8 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
   [*Piano di contingenza*], [Conseguente adeguamento e ridistribuzione dei compiti],)
 )
 #align(center)[Tabella 5: RP4 - Malattia o indisponibilità.]
+
+#pagebreak()
 
 == Rischi organizzativi interni ed esterni <rorganizzativi>
 
@@ -220,6 +228,8 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 7: ROI2 - Scarsa definizione dei ruoli e delle responsabilità all'interno del team.]
 
+#pagebreak()
+
 #table(
   columns: (1fr),
   inset: 10pt,
@@ -237,7 +247,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 8: ROI3 - Risorse limitate o budget insufficiente per sostenere lo sviluppo del progetto.]
 
-
+#pagebreak()
 === Esterni
 
 #table(
@@ -275,6 +285,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 10: ROE2 - Fornitura.]
 
+#pagebreak()
 == Rischi tecnologici/software <rtecnologici>
 
 #table(
@@ -311,7 +322,7 @@ Le informazioni vengono presentante in forma tabellare, in modo da facilitarne i
 )
 #align(center)[Tabella 12: RT2 - Aggiornamenti o modifiche agli strumenti e tecnologie in uso.]
 
-
+#pagebreak()
 = Modello di lavoro
 
 == Metodo e motivazioni
@@ -340,6 +351,7 @@ La loro durata è variabile, e tutte le componenti sono tenute a presenziarvi. C
 - *"Daily Call"* //nome da concordare, lol
 Sono incontri di durata mediamente minore, che avvengono giornalmente quando e se ne sorge la necessità. Possono essere richiesti da qualsiasi membro del gruppo, e la partecipazione è richiesta solamente ai sottoinsiemi coinvolti. Solitamente non prevedono la stesura di relativo verbale, ma ciò dipende dagli argomenti discussi e dalla presenza o meno di decisioni importanti.
 
+#pagebreak()
 == Suddivisione delle attività 
 Questa sezione comprende tutte le pratiche adottate dal team per fare fronte alla gestione delle scadenze e necessità organizzative. Concendrandosi sull'aspetto quantitativo e temporale della pianificazione, andando a descrivere in che modo sono state suddivise le attività di progetto.
 
@@ -379,6 +391,7 @@ La suddivisione ruolistica si attiene a quanto riportato nelle norme di progetto
 
 Si noti che i ruoli possono svolgere anche mansioni al di fuori della loro responsabilità in caso di necessità.  // da mettere?
 
+#pagebreak()
 = Periodi
 
 - Premessa:
@@ -405,7 +418,7 @@ Questo sprint, in quanto il primo e vero approccio al progetto da parte del grup
 - Gantt view:
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#1.png", width: auto, height: auto),
+  image("/imgs/gantt_views/sprint#1.png", width: 94%, height: auto),
   caption: [sprint.1]
   )
   
@@ -439,7 +452,6 @@ Questo primo sprint rientra a far parte di un primo periodo di "assestamento". N
 )
 ])
 #align(center)[Tabella 14: preventivo orario sprint.1.]
-
 
 #align(center, text(0.85em)[
 #table(
@@ -530,6 +542,7 @@ In questo primo sprint la distribuzione oraria è stata pianificata per un perio
 - Spiegazione:
 Come si può notare il consuntivo di questo sprint denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. Ciò tuttavia non esclude una possibile pianificazione ottimistica, per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica". 
 
+#pagebreak()
 == RTB - sprint.2
 - Periodo: 2023/11/24-2023/12/04 (1 settimana e 3 giorni)
 - Issues:\
@@ -615,6 +628,7 @@ figure(
   )
   
 )
+#pagebreak()
 - Spiegazione:
 
 Come si può notare, il preventivo di questo sprint indica un cambio di priorità verso la realizzazione di codice per il PoC. Come già fatto notare la pianificazione di questo sprint è stata realizzata con l'idea di prefissarne la durata ad una settimana. Tuttavia si confida in un aumento generale della produttività ora che il team ha avuto modo di allinearsi.
@@ -660,7 +674,7 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
   columns: (1fr, auto),
   rows: (auto),
   figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 30%, width: auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#2.png", height: 27%, width: auto),
   caption :[bilancio/sprint.2],
   ),
   table(
@@ -676,6 +690,7 @@ Come si può notare, il preventivo di questo sprint indica un cambio di priorit�
 - Spiegazione:
 Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate. 
 
+#pagebreak()
 == RTB - sprint.3
 - Periodo: 2023/12/04-2023/12/11 (1 settimana)
 - Issues:\
@@ -705,7 +720,7 @@ figure(
   )
   
 )
-
+#pagebreak()
 - Retrospettiva:
 Durante questo terzo sprint, il team ha deciso di focalizzare più risorse verso lo sviluppo del PoC senza però tralasciare la documentazione di progetto. In particolare si sono fatti grandi progessi lato implementazione del prodotto. Progressi che sono stati condivisi con il proponente riscontrando approvazione generale. Per quanto riguarda la documentazione, sono state apportate migliorie generali ponendo più attenzione verso le "Norme di progetto".
 
@@ -759,7 +774,7 @@ figure(
 
 - Spiegazione:
 La pianificazione per questo sprint segue la strategia adottata anche per il precedente, dando più peso alla continuazione dei lavori per l'implementazione del PoC che alla documentazione.
-
+#pagebreak()
 === Consuntivo:
 #align(center, text(0.85em)[
 #table(
@@ -817,6 +832,7 @@ La pianificazione per questo sprint segue la strategia adottata anche per il pre
 - Spiegazione:
 Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. Per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica".
 
+#pagebreak()
 == RTB - sprint.4
 - Periodo: 2023/12/11-2023/12/18 (1 settimana)
 - Issues:\
@@ -845,6 +861,7 @@ figure(
   
 )
 
+#pagebreak()
 - Retrospettiva:
 Durante il quarto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto" e dell' "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". Durante questa settimana di lavoro abbiamo partecipato ad un meeting con il Professor Cardin in data 2023/12/15 relativo all'analisi dei requisiti e questo incontro ha permesso di apprendere delle mancanze riguardanti al documento relativo, ed inoltre si è avviato il processo di miglioria ed integrazione dei concetti mancanti. \
 È continuato lo sviluppo del POC, nello specifico si sono create le API che permettono la comunicazione dell'interfaccia grafica con l'algoritmo di raccomandazione realizzati nella sprint precendente. Sono state realizzate anche le API per la comunicazione con il database. Il tutto ha portato alla composizione di una prima versione stabile.
@@ -960,6 +977,7 @@ Il preventivo per questo sprint ridistribuisce il focus del team in modo più eq
 - Spiegazione:
 Il consuntivo di questo sprint denota una leggera variazione nei costi, con una spesa leggermente superiore rispetto al preventivo. Tuttavia, è incoraggiante notare che il valore di SPI sia ritornato ad 1. Questo indica che, nonostante la variazione nei costi, il nostro progresso è allineato con la pianificazione temporale prevista. 
 
+#pagebreak()
 == RTB - sprint.5
 - Periodo: 2023/12/18-2023/12/27 (1 settimana e 5 giorni)
 - Issues:\
@@ -989,6 +1007,7 @@ figure(
   
 )
 
+#pagebreak()
 - Retrospettiva:
 
 Durante il quinto sprint di progetto, il team si è diviso, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto. In particolare, il gruppo ha continuato la stesura delle "Norme di Progetto", del "Piano di Progetto", del "Piano di Qualifica" e della "Analisi dei Requisiti", integrando tutti i termini interessanti nel "Glossario". \ 
@@ -1103,6 +1122,7 @@ Questo sprint si pianifica essere fra gli ultimi del periodo di RTB. Le risorse 
 - Spiegazione:
 Anche per questo sprint vale quanto detto per lo sprint.1: il consuntivo denota un risparmio di fondi che insieme al valore registrato di SPI (Schedule Performance Index) suggeriscono che quanto svolto rientri nelle attese della pianificazione iniziale, che il lavoro è stato svolto generalmente in modo efficiente e che ci sono risorse finanziarie risparmiate.
 
+#pagebreak()
 == RTB - sprint.6
 - Periodo: 2023/12/28-2024/01/07 (1 settimana e 3 giorni)
 
@@ -1133,6 +1153,7 @@ figure(
   
 )
 
+#pagebreak()
 - Retrospettiva:
 Questo sprint di progetto è sicuramente etichettabile come il più "roccambolesco" fino ad ora.
 Durante questo periodo i componenti più disponibili si sono divisi, come di consueto, focalizzando la maggior parte delle risorse all'avanzamento e alla miglioria della documentazione di progetto.
@@ -1249,6 +1270,7 @@ Data la presenza delle festività invernali, sono state preventivate meno ore ri
 - Spiegazione:
 Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. Per avere un miglior cruscotto sotto questo punto di vista si rimanda al documento "Piano di Qualifica".
 
+#pagebreak()
 == RTB - sprint.7
 - Periodo: 2024/01/08 - 2024/01/15
 
@@ -1274,7 +1296,7 @@ Rispetto a quanto accaduto per il periodo precedente la pianificazione di questo
 
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#7.png", height: auto, width: auto),
+  image("/imgs/gantt_views/sprint#7.png", height: 45%, width: auto),
   caption: [sprint.7]
   )
   
@@ -1332,7 +1354,7 @@ figure(
   )
   
 )
-
+#pagebreak()
 - Spiegazione:
 A seguito dello slittamento dell'apertura della finestra di candidatura per la prima revisione e del calo di produttività registrato nello scorso sprint, si stimano ancora molte ore utili al completamento e miglioria della documentazione di progetto.
 
@@ -1420,7 +1442,7 @@ figure(
   )
   
 )
-
+#pagebreak()
 - Retrospettiva:
 
 Questo sprint fa parte di una serie di sprint poco produttivi, a causa degli impegni universitari di studio condivisi tra tutti i componenti.
@@ -1533,6 +1555,7 @@ Questo sprint si pianifica essere uno degli ultimi utili al periodo di RTB. Sono
 - Spiegazione:
 Nonostante il risparmio di fondi, è importante notare che l'indice di performance della pianificazione (SPI) è inferiore a 1. Questo indica che, anche se siamo riusciti a gestire i costi in modo efficiente, il nostro progresso è attualmente dietro rispetto a quanto inizialmente pianificato. I valori registrati rientrano comunque nei limiti imposti dal team (per una visione più completa si rimanda al documento "Piano di Qualifica").
 
+#pagebreak()
 == RTB - sprint.9
 - Periodo: 2024/01/26 - 2024/02/02
 
@@ -1561,7 +1584,7 @@ figure(
   )
   
 )
-
+#pagebreak()
 - Retrospettiva:
 Questo sprint rientra nelle aspettative di quanto preventivato e pianificato. In generale il team si è concentrato sul aggiornare i documenti ed a miglioranre in parte struttura e contenuto. Inoltre si sono impiegate risorse per la loro revisione e verifica.
 
@@ -1615,7 +1638,7 @@ figure(
 
 - Spiegazione:
 La pianificazione per questo sprint segue la filosfia adottata per il precedente periodo. Sono state quindi preventivate ore utili alla verifica e miglioramento dei documenti, e alla preparazione del materiale necessario alla prima parte della revisione.
-
+#pagebreak()
 === Consuntivo:
 #align(center, text(0.85em)[
 #table(
@@ -1686,7 +1709,7 @@ La pianificazione per questo sprint segue la filosfia adottata per il precedente
 
 - Spiegazione:
 L'aumento dei costi e l'indice di SPI registrato indicano un ritardo su quanto preventivato e uso di più risorse monetarie rispetto a quanto previsto. Nello specifico dopo aver sostenuto la prima parte di revisone con il #p.cardin si è concordato di utilizzare alcune risorse per rivedere le criticità e problematiche sorte dopo e durante il colloquio.
-
+#pagebreak()
 == RTB - sprint.10
 - Periodo: 2024/02/03 - 2024/02/12
 
@@ -1772,7 +1795,7 @@ figure(
 - Spiegazione:
 Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento della documentazione in vista della seconda parte della revisione di RTB. Come già menzionato il gruppo ritiene questo periodo l'ultimo utile alla revisione. 
 
-
+#pagebreak()
 === Consuntivo:
 #align(center, text(0.85em)[
 #table(
@@ -1844,6 +1867,7 @@ Il preventivo per questo sprint prevede ore utili alla revisione e aggiornamento
 - Spiegazione:
 Il consuntivo di questo sprint rientra nella aspettative, tuttavia il valore di SPI registrato indica un ritardo, che riteniamo sia dovuto all'accumularsi delle situazioni createsi nei precedenti sprint, ed ad una pianificazione troppo ottimistica. Gli sforzi previsti si sono rivelati non essere sufficienti per portare l'avanzamento del progetto al stato che ci eravamo prefissati. Prevediamo infatti ancora alcune giornate di lavoro prima della candidatuara della seconda parte della revisione di RTB, ciò per rispettare il livello di qualità con il quale il team intende presentarsi.
 
+#pagebreak()
 == RTB - sprint.11
 - Periodo: 2024/02/13 - 2024/02/18 
 
@@ -1873,7 +1897,7 @@ figure(
   )
   
 )
-
+#pagebreak()
 - Retrospettiva:
 Durante lo sprint il gruppo si è concentrato nel revisionare e verificare dei documenti in preparazione alla presentazione per la seconda parte di RTB con il professore Vardanega. Inoltre il gruppo ha completato la pagina vetrina su GitHub.io e il glossario.
 Svolta la seconda parte di RTB il gruppo ha parallelamente iniziato ad apportare le migliorie suggerite alla documentazione e ad ideare e studiare il design del prodotto finale.
@@ -1986,6 +2010,7 @@ Il preventivo per questo sprint prevede ore utili alla conclusione della documen
 - Spiegazione:
 Durante questo sprint il gruppo si e'concentrato molto sul preparare i documenti per la seconda parte di RTB, inoltre e' stato richiesto al gruppo del tempo aggiuntivo per la preparazione della lettera di candidatura, della presentazione e della pagina vetrina GitHub.io. Come da preventivo una parte del gruppo, una volta svolta la revisione di progetto, ha iniziato i lavori di progettazione.
 
+#pagebreak()
 == Globale - RTB
 
 - Premessa:
@@ -2034,6 +2059,7 @@ La distribuzione ruolistica utilizzata nella pianificazione degli sprint si adeg
 - Spiegazione:
 Come evidente dall'andamento delle attività, le ore inizialmente pianificate per svolgere l'analisi dei requisiti e per il ruolo di Amministratore si sono rivelate insufficienti. Di fronte a questa constatazione, il gruppo ha preso la decisione di rivedere le stime effettuate in fase di candidatura, mantenendo tuttavia l'impegno a non aumentare i costi complessivi del progetto, conformemente alle disposizioni normative stabilite. Riteniamo questo adattamento necessario per garantire una pianificazione più accurata e per affrontare le esigenze effettive delle attività future, senza impattare negativamente sul bilancio complessivo del progetto. Segue la nuova ridistribuzione oraria:
 
+#pagebreak()
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
@@ -2072,7 +2098,7 @@ Come evidente dall'andamento delle attività, le ore inizialmente pianificate pe
 - Spiegazione:
 Si ricorda che il costo totale preventivato in fase di candidatura era pari a €12880,00. Si noti che inoltre a quanto spiegato appena sopra, è stato deciso dopo una consultazione interna, di incrementare le ore relative all'attività di verifica in previsione delle attività a venire. Inoltre il gruppo ha deciso di posticipare la data di ultima consegna, fissata in fase di candidatura al giorno 25/03. La nuova data vede come giorno limite il 15 Aprile 2024. La decisione di spostare la data di consegna è stata influenzata dall'andamento del progetto e dai ritardi accumulati durante e in seguito al periodo di festività invernali. Durante questo periodo, la produttività del gruppo è diminuita, causando ritardi nell'avanzamento delle attività. Di conseguenza, è stato necessario posticipare la data di consegna per assicurare la qualità e il completamento del lavoro entro i nuovi termini previsti.
 
-
+#pagebreak()
 == PB - sprint.12
 - Periodo: 2024/02/19 - 2024/02/27 
 
@@ -2232,7 +2258,7 @@ Lo sprint\#12 è stato una ripresa generale da parte del gruppo per l'avanzament
 La conclusione dei periodi più duri e difficili dettati dagli esami universitari e dalle revisioni con i committenti ha riportato gli avanzamenti del prodotto in linea a quanto preventivato per questo sprint.\
 Lo sprint\#12 è costato esattamente quanto preventivato, anche se non con le stesse ore preventivate, in particolare sono risultate essere necessarie 3 ore in meno tra verificatore e amministratore, ma due ore in più per il ruolo di analista.\
 Il team è riuscito sempre a comunicare e riunirsi per i vari incontri, oltretutto, l'andamento positivo e maggiormente produttivo fa ben sperare per i successivi sprint in maniera da recuperare il ritardo creatosi precedentemente.  
-
+#pagebreak()
 == PB - sprint.13
 - Periodo: 2024/02/27 - 2024/03/05 
 
@@ -2319,7 +2345,7 @@ figure(
 - Spiegazione:
 La prospettiva per questo sprint è quella di continuare a sistemare la documentazione in base ai feedback ricevuti, è stato quindi abbastanza facile, quantificare il lavoro da svolegere, proprio grazie alla concretezza delle attività da fare.\
 Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori vista la natura delle task assegnate.
-
+#pagebreak()
 === Consunitvo:
 
 #align(center, text(0.85em)[
@@ -2362,7 +2388,7 @@ Abbiamo asseganto quindi molto spazio agli analisti progettisti e verificatori v
   columns: (1fr, auto),
   rows: (auto),
   figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#13.png", height: 30%, width: auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#13.png", height: 27%, width: auto),
   caption: [bilancio/sprint.13],
   ),
   table(
@@ -2403,7 +2429,7 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 - Gantt view:
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#14.png", height: 230pt, width: auto),
+  image("/imgs/gantt_views/sprint#14.png", height: 32%, width: auto),
   caption: [sprint.14]
   )
 )
@@ -2469,7 +2495,7 @@ figure(
 - Spiegazione:
 La prospettiva per questo sprint è quella di ultimare l'Analisi dei requisiti e iniziare la stesura dei nuovi documenti.\
 Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
-
+#pagebreak()
 === Consunitvo:
 
 #align(center, text(0.85em)[
@@ -2556,7 +2582,7 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#15.png", height: 230pt, width: auto),
+  image("/imgs/gantt_views/sprint#15.png", height: 36%, width: auto),
   caption: [sprint.15]
   )
 )
@@ -2620,7 +2646,7 @@ figure(
 - Spiegazione:
 La prospettiva per questo sprint è quella di impostre il Wide&Deep, continuare con l'implementaIone dei test e continuare la stesura dei nuovi documenti.\
 Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
-
+#pagebreak()
 === Consunitvo:
 
 #align(center, text(0.85em)[
@@ -2719,7 +2745,7 @@ In questo sprint si è deciso di continuare la stesura dei nuovi documenti.\
 I documenti interessati sono: manuale utente e specifica tecnica.\
 Abbiamo pianificato, inoltre, di continuare l'implementazione dei test e l'integrazione del Wide&Deep.\
 Infine abbiamo deciso di fare un test di deploy del nostro prodotto sulla VM fornitaci dall'azienda.
-
+#pagebreak()
 === Rischi attesi
 Durante questo sprint pensiamo che i rischi più probabili in cui potremmo incorrere siano:\
 - #link(<rtecnologici>)[RT1 - Incompatibilità tra diverse tecnologie o componenti software].
@@ -2772,7 +2798,7 @@ figure(
 - Spiegazione:
 La prospettiva per questo sprint è quella di integrare in modo definitivo il Wide&Deep, continuare con l'implementaIone dei test e continuare la stesura dei nuovi documenti.\
 Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
-
+#pagebreak()
 === Consunitvo:
 
 #align(center, text(0.85em)[
@@ -2816,7 +2842,7 @@ Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la na
   rows: (auto),
   
   figure(
-  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#16.png", height: 30%, width: auto),
+  image("/imgs/PdP/graphs/consuntivi/bilanci/sprint#16.png", height: 23%, width: auto),
   caption: [bilancio/sprint.16],
   ),
   
@@ -2871,7 +2897,7 @@ Con l'avvicinarsi della data di revisione il gruppo sta iniziando a preparare la
 
 === Rischi attesi
 Durante questo sprint non sono previsti grandi rischi.
-
+#pagebreak()
 === Preventivo:
 #align(center, text(0.85em)[
 #table(
@@ -2919,7 +2945,7 @@ figure(
 - Spiegazione:
 La prospettiva per questo sprint è quella di continaure l'integrazione dei test automatici e migliorare la risposta di database e algoritmo.\
 Abbiamo asseganto quindi molto spazio ai progettisti e programmatori vista la natura delle task assegnate.
-
+#pagebreak()
 === Consunitvo:
 
 #align(center, text(0.85em)[
@@ -3061,7 +3087,7 @@ Durante questo sprint non sono previsti grandi rischi.
 
 #align(left,
 figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#18.png", height: 20%, width: auto),
+  image("/imgs/PdP/graphs/preventivi/sprint#18.png", height: 18%, width: auto),
   caption: [preventivi/sprint.18]
   )
 )
@@ -3134,7 +3160,7 @@ In questo sprint è sorta una difficoltà inattesa: il container docker che gest
 Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo programmatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
-
+#pagebreak()
 == PB - sprint.19
 - Periodo: 2024/04/09 - 2024/04/15
 
@@ -3168,7 +3194,7 @@ Con l'avvicinarsi della data di revisione il gruppo sta iniziando a preparare la
 
 === Rischi attesi
 Durante questo sprint non sono previsti grandi rischi.
-
+#pagebreak()
 === Preventivo:
 #align(center, text(0.85em)[
 #table(
@@ -3208,7 +3234,7 @@ Durante questo sprint non sono previsti grandi rischi.
 
 #align(left,
 figure(
-  image("/imgs/PdP/graphs/preventivi/sprint#19.png", height: 20%, width: auto),
+  image("/imgs/PdP/graphs/preventivi/sprint#19.png", height: 18%, width: auto),
   caption: [preventivi/sprint.19]
   )
 )
@@ -3281,6 +3307,7 @@ In questo sprint non sono sorte difficoltà importanti.
 Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo verificatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
+#pagebreak()
 == PB - sprint.20
 - Periodo: 2024/04/16 - 2024/04/23
 
@@ -3297,7 +3324,7 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 
 #align(left,
 figure(
-  image("/imgs/gantt_views/sprint#20.png", height: 230pt, width: auto),
+  image("/imgs/gantt_views/sprint#20.png", height: 30%, width: auto),
   caption: [sprint.20]
   )
 )
@@ -3421,6 +3448,7 @@ In questo sprint non sono sorte difficoltà importanti.
 Lo sprint #20 è costato di più di quanto preventivato vista la sua natura di controllo e verifica.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
+#pagebreak()
 == Globale - PB
 Con lo sprint #20 si conclude la pianificazione del progetto e il gruppo giunge alla revisione PB.\
 Il gruppo ha iniziato il progetto martedì 7 novembre 2023 e ha iniziato ufficialmente con lo sprint #1 martedì 14 novembre 2023, andando a terminare con lo sprint #20 martedì 23 aprile 2024, per un totale di 24 settimane di lavoro, 1 settimana di assestamento e 23 di effettivo lavoro.\
@@ -3459,6 +3487,7 @@ Vediamo ora in tabella il preventivo orario per membro del gruppo secondo i vinc
 In seguito la tabella con le ore fatte da ogni menbro per ogni ruolo e il totale di ore consumate durante questa seconda parte di progetto, il periodo dallo sprint #13 al #20, periodo PB appunto.\
 Come si puo' vedere la maggior parte delle ore è stata impegata nei ruoli di Programmatore e Verificatore, vista la maggior richiesta di sviluppo software durante questo secondo periodo.
 
+#pagebreak()
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
