@@ -8,6 +8,7 @@
     p.cardin,
   ),
   changelog: (
+    "1.0.0", "2024-04-20", p.rosson, p.favaron, "Revisione e verifica del documento",
     "0.12.3", "2024-04-17", p.passarella, p.rosson, "Migliorie sezione 4 Feedback",
     "0.12.2", "2024-04-16", p.bomben, p.rosson, "Migliorie sezione 4 Cronologia",
     "0.12.1", "2024-04-12", p.favaron, p.bomben, "Migliorie sezione 4 Ricerca",
@@ -83,7 +84,7 @@ In mancanza di specifiche hardware fornite da capitolato o progetto, i seguenti 
   [Memoria],[8GB DDR3],
   [Connessione internet],[Stabile e capace di supportare le esigenze di traffico dell'applicazione],
 )
-#align(center)[Tabella 2: Requisiti hardware]
+#align(center)[Tabella 1: Requisiti hardware]
 
 == Requisiti software
 Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano i browser sui quali è stata testata l'app e le loro versioni.
@@ -99,14 +100,18 @@ Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano 
   [#glossario("Opera")],[108.0],
   [#glossario("Safari")],[17.4],
 )
-#align(center)[Tabella 3: Requisiti software]
+#align(center)[Tabella 2: Requisiti software]
 
 #pagebreak()
 = Installazione
 
 == Descrizione
+Prima di passare alla spiegazione per utilizzare il prodotto in maniera dettagliata per ogni funzionalità, in questa sezione si vuole dare una breve spiegazione su come installare le tecnologie necessarie per usufruire della webapp in locale.
+Vorremmo ricordare che il prodotto è stato sviluppato e pensato per essere consegnato all'azienda e eseguito nei loro server.\
+Per l'installazione è necessario scaricare #link("https://docs.docker.com/get-docker/")[Docker], una piattaforma software pensata per eseguire processi isolati e gestire propriamente le dipendenze tramite container.\ Nel caso si volesse approfondire le funzionalità e le potenzialità del software è possibile visualizzarne la documentazione al seguente link: https://docs.docker.com/.
 
 == Avvio container Docker
+Una volta installato correttamente Docker basterà avviarla e tramite terminale spostarsi nella cartella del prodotto.
 
 #pagebreak()
 = Istruzioni all'uso
@@ -142,7 +147,7 @@ Ogni utente deve essere munito delle proprie credenziali. Inserire le proprie cr
   figure(
     image("/imgs/screenshots_mvp/login_accedi.png", width: 99%),
     caption: [
-      Buttone accedi
+      Bottone accedi
     ]
   ),
 )
@@ -374,10 +379,44 @@ In caso di errori durante la ricerca verrà visualizzato il componenti qui sopra
 #figure(
   image("/imgs/screenshots_mvp/clienti.png", width: 100%),
   caption: [
-    Pagina elenco clienti
+    Pagina clienti
   ]
 )
-La seconda pagina presente nel menù è la pagina Clienti. \ In questa pagina è possibile visualizzare un elenco di tutti i clienti, essendo il numero elevato è possibilile effettuare una ricerca rapida tramite, tramite l'apposita finestra in alto a destra.\ Inoltre, a seconda dell'utilizzatore è possibile visualizzare con lunghezza variabile, 25 o 50 o 75 o 100, andando a selezionarla tramite l'apposita finestra in basso a destra. \
+La pagina clienti, sempre accessibile tramite il menù del sito, mostra l'elenco dei clienti presenti nel database.
+Le informazioni sono riportate all'interno di una tabella che viene suddivisa nelle seguenti colonne:
+- Codice Cliente;
+- Ragione Sociale;
+- Provincia.
+Dato l'elevato numero di clienti presenti nel database, l'elenco completo degli acquirenti è suddiviso in diverse pagine.
+Tuttavia è possibile decidere tramite l'apposito filtro, il numero di elementi visibili all'interno della tabella.
+
+=== Filtri
+
+#figure(
+  image("/imgs/screenshots_mvp/filtri_clienti.png", width: 100%),
+  caption: [
+    Filtri clienti
+  ]
+)
+
+#figure(
+  image("/imgs/screenshots_mvp/filtri_a_clienti.png", width: 100%),
+  caption: [
+    Filtri applicati nella pagina clienti
+  ]
+)
+
+Data l'elevata mole di dati, per trovare più facilmente un determianto cliente, è possibile applicare dei filtri per i risultati all'interno della tabella.\
+E' possibile applicare un filtro globale (elemento 1 figura 29), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura 29), in maniera da visualizzare ad esempio tutti i prodotti appartenenti ad una specifica Provincia.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura 29), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina clienti", i passaggi sono i seguenti:\
+1) Scegliere il filtro corrispondente alla colonna che siu vuole filtrare;\
+2) Selezionare l'opzione desiderata.\
+Per altri filtri che non siano per "Provincia" i passaggi da seguire sono i seguenti:\
+1) Scegliere il filtro corrispondente alla colonna che siu vuole filtrare;\
+2) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+3) Il testo che si vuole cercare nella relativa colonna;\
+4) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
 
 #pagebreak()
 == Prodotti
@@ -413,18 +452,19 @@ Tuttavia è possibile decidere tramite l'apposito filtro, il numero di elementi 
   ]
 )
 Data l'elevata mole di dati, per trovare più facilmente un determianto articolo, è possibile applicare dei filtri per i risultati all'interno della tabella.\
-E' possibile applicare un filtro globale (elemento 1 figura "Filtri prodotti"), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura "Filtri prodotti"), in maniera da visualizzare ad esempio tutti i prodotti appartenenti ad una specifica Linea Commerciale.\
-L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura "Filtri prodotti"), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+E' possibile applicare un filtro globale (elemento 1 figura 32), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura 32), in maniera da visualizzare ad esempio tutti i prodotti appartenenti ad una specifica Linea Commerciale.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura 32), esso andrà a cercare tutte le corrispondenze nelle tabella.\
 L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina prodotti", i passaggi sono i seguenti:\
-1) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
-2) Il testo che si vuole cercare nella relativa colonna;\
-3) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
+1) Scegliere il filtro corrispondente alla colonna che siu vuole filtrare;\
+2) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+3) Il testo che si vuole cercare nella relativa colonna;\
+4) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
 
 === Dettagli prodotto
 #figure(
   image("/imgs/screenshots_mvp/dettaglio_prodotto.png", width: 100%),
   caption: [
-    Pagina Prodotti
+    Dettagli prodotto
   ]
 )
 Se l'utente vuole approfondire la visualizzazione di un prodotto, può semplicemente cliccare sulla riga corrsipondente della tabella che contiene il prodotto interessato.\
@@ -470,12 +510,13 @@ Dato l'elevato numero di elementi che possono essere presenti a causa del possib
   ]
 )
 Data la possibile elevata mole di dati, per trovare più facilmente un determinata cronologia di ricerca, è possibile applicare dei filtri per i risulati all'interno della tabella.\
-E' possibile applicare un filtro globale (elemento 1 figura "Filtri Cronologia"), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura "Filtri Cronologia") in maniera da visualizzare ad esempio tutte le ricerche effettuate in una specifica data.\
-L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio(elemento 1 figura "Filtri Cronologia"), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+E' possibile applicare un filtro globale (elemento 1 figura 36), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura 36) in maniera da visualizzare ad esempio tutte le ricerche effettuate in una specifica data.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio(elemento 1 figura 36), esso andrà a cercare tutte le corrispondenze nelle tabella.\
 L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina cronologia", i passaggi sono i seguenti:\
-1) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
-2) Il testo che si vuole cercare nella relativa colonna;\
-3) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
+1) Scegliere il filtro corrispondente alla colonna che siu vuole filtrare;\
+2) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+3) Il testo che si vuole cercare nella relativa colonna;\
+4) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
 
 #pagebreak()
 == Feedback
@@ -511,12 +552,13 @@ Dato l'elevato numero di elementi che possono essere presenti a causa del possib
   ]
 )
 Data la possibile elevata mole di dati, per trovare più facilmente un determinato feedback assegnato, è possibile applicare dei filtri per i risultati all'interno della tabella.\
-E' possibile applicare un filtro globale (elemento 1 figura "Filtri feedback"), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura "Filtri feedback") in maniera da visualizzare ad esempio tutti i feedback assegnati in una specifica data.\
-L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura "Filtri Feedback"), esso andrà a cercare tutte le corrispondenze nelle tabella.\
+E' possibile applicare un filtro globale (elemento 1 figura 39), che effettua una corrispondenza su tutte le colonne della tabella, oppure utilizzare dei filtri sulle colonne specifiche (elemento 2 figura 39) in maniera da visualizzare ad esempio tutti i feedback assegnati in una specifica data.\
+L'applicazione di un filtro globale prevede l'inserimento di testo nell'apposito spazio (elemento 1 figura 39), esso andrà a cercare tutte le corrispondenze nelle tabella.\
 L'applicazione di un filtro specifico viene mostrata ad esempio nella figura "Filtri applicati nella pagina feedback", i passaggi sono i seguenti:\
-1) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
-2) Il testo che si vuole cercare nella relativa colonna;\
-3) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
+1) Scegliere il filtro corrispondente alla colonna che siu vuole filtrare;\
+2) Scegliere il tipo di filtro che si vuole applicare, ad esempio se la colonna deve contenere quella porzione di testo o deve essere uguale a quella porzione di testo;\
+3) Il testo che si vuole cercare nella relativa colonna;\
+4) Cancellare la ricerca dei filtri tramite il bottone "Clear" o applicare la ricerca tramite il bottone "Apply".
 
 === Eliminazione feedback
 #figure(
@@ -637,19 +679,58 @@ Se dovesse uscire questa pagina, basterà cliccare sul bottone "Torna alla home"
 = Elenco delle immagini
 
 - Immagine 1: Pagina login;
-- Immagine 2: Errore login;
-- Immagine 3: Pagina riceca;
-- Immagine 4: Selezione Topic nella ricerca;
-- Immagine 5: Selezione specifica nel Topic;
-- Immagine 6: Selezione N nella ricerca;
-- Immagine 7: Risultato ricerca;
-- Immagine 8: Pagina elenco clienti;
-- Immagine 9: Pagina elenco prodotti;
-- Immagine 10: Pagina profilo;
-- Immagine 11: Modifica email;
-- Immagine 13: Modifica password;
-- Immagine 14: Logout.
+- Immagine 2: Input username;
+- Immagine 3: Input password;
+- Immagine 4: Bottone accedi;
+- Immagine 5: Errore login;
+- Immagine 6: Pagina ricerca;
+- Immagine 7: Selezione algoritmo dropdown;
+- Immagine 8: Selezione algoritmo option;
+- Immagine 9: Selezione algoritmo fine;
+- Immagine 10: Bottone training;
+- Immagine 11: Conferma operazione di training;
+- Immagine 12: Training in corso;
+- Immagine 13: Selezione topic dropdown; 
+- Immagine 14: Selezione topic option;
+- Immagine 15: Selezione topic fine;
+- Immagine 16: Selezione specifica dropdown;
+- Immagine 17: Selezione specifica option;
+- Immagine 18: Selezione specifica option (variante Clienti);
+- Immagine 19: Selezione specifica fine;
+- Immagine 20: Selezione N dropdown;
+- Immagine 21: Selezione N option;
+- Immagine 22: Selezione N fine;
+- Immagine 23: Training in corso;
+- Immagine 24: Risultato ricerca;
+- Immagine 25: Inserimento feedback;
+- Immagine 26: Conferma feedback;
+- Immagine 27: Errore ricerca;
+- Immagine 28: Pagina clienti; 
+- Immagine 29: Filtri clienti;
+- Immagine 30: Filtri applicati nella pagina clienti;
+- Immagine 31: Pagina prodotti;
+- Immagine 32: Filtri prodotti
+- Immagine 33: Filtri applicati nella pagina prodotti;
+- Immagine 34: Dettagli prodotto; 
+- Immagine 35: Pagina cronologia;
+- Immagine 36: Filtri Cronologia;
+- Immagine 37: Filtri applicati nella pagina cronologia;
+- Immagine 38: Pagina feedback;
+- Immagine 39: Filtri feedback;
+- Immagine 40: Filtri applicati nella pagina feedback;
+- Immagine 41: Eliminazione feedback;
+- Immagine 42: Dialogo eliminazione feedback;
+- Immagine 43: Pagina profilo;
+- Immagine 44: Cambio email;
+- Immagine 45: Procedimento cambio email;
+- Immagine 46: Cambio password;
+- Immagine 47: Procedimento cambio password;
+- Immagine 48: Errore cambio email/password;
+- Immagine 49: Logout;
+- Immagine 50: Pagina 404.
 
 #pagebreak()
 = Elenco delle tabelle
+- Tabella 1: Requisiti hardware;
+- Tabella 2: Requisiti software:
 
