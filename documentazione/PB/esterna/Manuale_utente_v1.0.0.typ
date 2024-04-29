@@ -107,11 +107,25 @@ Essendo il prodotto una WebApp necessita di un browser, di seguito si riportano 
 
 == Descrizione
 Prima di passare alla spiegazione per utilizzare il prodotto in maniera dettagliata per ogni funzionalità, in questa sezione si vuole dare una breve spiegazione su come installare le tecnologie necessarie per usufruire della webapp in locale.
-Vorremmo ricordare che il prodotto è stato sviluppato e pensato per essere consegnato all'azienda e eseguito nei loro server.\
+Vorremmo ricordare che il prodotto è stato sviluppato e pensato per essere consegnato all'azienda e eseguito nei loro server, l'esecuzione in locale ha il solo scopo di provare e vedere lo stato e le funzionalità del prodotto.\
+In questa sezione si andranno ad elencare le tecnologie necessarie per il funzionamento del progetto in locale e l'avvio di quest'ultimo.
+
+== Installazione tecnologie
 Per l'installazione è necessario scaricare #link("https://docs.docker.com/get-docker/")[Docker], una piattaforma software pensata per eseguire processi isolati e gestire propriamente le dipendenze tramite container.\ Nel caso si volesse approfondire le funzionalità e le potenzialità del software è possibile visualizzarne la documentazione al seguente link: https://docs.docker.com/.
+Per eseguire il prodotto è necessario clonare la repository di github tramite il comando ``` git clone ```.
+I passaggi sono i segenti:
++ Aprire il terminale;
++ Spostarsi all'interno della cartella in cui si vuole scaricare il prodotto;
++ Copiare questa linea di codice ``` git clone https://github.com/farmacodeunipd/mvp.git``` e premere invio.
+
+
 
 == Avvio container Docker
-Una volta installato correttamente Docker basterà avviarla e tramite terminale spostarsi nella cartella del prodotto.
+Una volta installato correttamente Docker e scaricata la repository del prodotto all'interno della nostra macchina, basterà semplicemnte seguire i passaggi elencati qui sotto:
++ Aprire un terminale;
++ Spostari sulla cartella principale del prodotto;
++ Eseguire il comando ``` docker-compose up``` (L'applicazione di Docker deve essere già accesa ed eseguita).
+Una volta conclusa la creazione di tutti i container e le immagini prese dai Dockerfile, è possibile utilizzare il prodotto tramite browser all'indirizzo ``` localhost:3000```.
 
 #pagebreak()
 = Istruzioni all'uso
