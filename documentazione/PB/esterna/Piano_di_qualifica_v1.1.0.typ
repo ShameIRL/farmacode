@@ -924,14 +924,16 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
-  [*EAC*], [12100], [11750], [11535], [11125],[10680], [11259], [11883], [12102], [12597], [12763], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],
+  [*EAC*], [12100], [11750], [11535], [11125],[10680], [11259], [11883], [12102], [12597], [12763],
+   [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+  [*EAC*], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
 )
 ]
 #align(center)[Tabella 20: EAC da sprint 1 a 20]
@@ -957,19 +959,34 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
-  [*AC*], [605], [1175], [1615], [2225],[2670], [3040], [3565], [4115], [4535], [4850], [5485], [6245], [6965],
-[7755], [8590], [9320], [10090], [10855], [11590], [12230],
-  [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],
+  [*AC*], [605], [1175], [1615], [2225],[2670], [3040], [3565], [4115], [4535], [4850],
+  [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913],
 )
 ]
-#align(center)[Tabella 21: AC e ETC da sprint 1 a 20]
+#align(center)[Tabella 21: AC e ETC da sprint 1 a 10]
+
+#align(center)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+[*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+[*AC*],[5485], [6245], [6965], [7755], [8590], [9320], [10090], [10855], [11590], [12230],
+[*ETC*], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
+)
+]
+#align(center)[Tabella 22: AC e ETC da sprint 11 a 20]
 
 #align(left,
 figure(
@@ -992,30 +1009,34 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
-  [*EV*], [644], [1288], [1803], [2576],[3220],
-[3477],
-[3864],
-[4379],
-[4636],
-[4894],[5409,6],[6182,4],
-[7084], [7856,8], [8758,4], [9660], [10432,8], [11205,6], [12107], [12880],
-  [*PV*], [644], [1288], [1932], [2576],[3220],
-[3864],
-[3864],
-[4508],
-[4765],
-[5152],[5538,4],[6182,4],
-[7019,6], [7856,8], [8694], [9660], [10368,4], [11205,6], [12042,8], [12880],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
+  [*EV*], [644], [1288], [1803], [2576],[3220],[3477],[3864],[4379],[4636],[4894],
+  [*PV*], [644], [1288], [1932], [2576],[3220],[3864],[3864],[4508],[4765],[5152],
 )
 ]
-#align(center)[Tabella 22: EV e PV da sprint 1 a 20]
+#align(center)[Tabella 23: EV e PV da sprint 1 a 10]
+
+#align(center)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+  [*EV*],[5409,6],[6182,4], [7084], [7856,8], [8758,4], [9660], [10432,8], [11205,6], [12107], [12880],
+  [*PV*],[5538,4],[6182,4], [7019,6], [7856,8], [8694], [9660], [10368,4], [11205,6], [12042,8], [12880],
+)
+]
+#align(center)[Tabella 24: EV e PV da sprint 11 a 20]
 
 #align(left,
 figure(
@@ -1037,18 +1058,34 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
   ),
   align: center,
-  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
-  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],[-75,4],[-62,6], [119], [101,8], [168,4], [340], [342,8], [350,6], [517], [650],
-  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],[-128,8],[0], [64,4], [0], [64,4], [0], [64,4], [0], [64,2], [0],
+  [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
+  [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],
+  [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],
 )
 ]
-#align(center)[Tabella 23: CV e SV da sprint 1 a 20]
+#align(center)[Tabella 25: CV e SV da sprint 1 a 10]
+
+#align(center)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
+  [*CV*],[-75,4],[-62,6], [119], [101,8], [168,4], [340], [342,8], [350,6], [517], [650],
+  [*SV*],[-128,8],[0], [64,4], [0], [64,4], [0], [64,4], [0], [64,2], [0],
+)
+]
+#align(center)[Tabella 26: CV e SV da sprint 11 a 20]
 
 #align(left,
 figure(
@@ -1097,6 +1134,9 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 - Tabella 18: Valutazione sui ruoli
 - Tabella 19: Indice di Gulpease dei documenti
 - Tabella 20: EAC da sprint 1 a 20
-- Tabella 21: AC e ETC da sprint 1 a 20
-- Tabella 22: EV e PV da sprint 1 a 20
-- Tabella 23: CV e SV da sprint 1 a 20
+- Tabella 21: AC e ETC da sprint 1 a 10
+- Tabella 22: AC e ETC da sprint 11 a 20
+- Tabella 23: EV e PV da sprint 1 a 10
+- Tabella 24: EV e PV da sprint 11 a 20
+- Tabella 25: CV e SV da sprint 1 a 10
+- Tabella 26: CV e SV da sprint 11 a 20
