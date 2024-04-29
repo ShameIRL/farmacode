@@ -924,7 +924,7 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
 #align(center)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,  auto, auto, auto, auto, auto, auto, auto, auto),
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
   inset: (
     x: 8pt,
     y: 10pt,
