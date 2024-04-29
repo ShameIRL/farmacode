@@ -932,8 +932,8 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
   align: center,
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],
   [*EAC*], [12100], [11750], [11535], [11125],[10680], [11259], [11883], [12102], [12597], [12763],
-   [], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
-  [], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
+   [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+  [*EAC*], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
 )
 ]
 #align(center)[Tabella 20: EAC da sprint 1 a 20]
@@ -968,12 +968,25 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],
   [*AC*], [605], [1175], [1615], [2225],[2670], [3040], [3565], [4115], [4535], [4850],
   [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913],
+)
+]
+#align(center)[Tabella 21: AC e ETC da sprint 1 a 10]
+
+#align(center)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
 [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
 [*AC*],[5485], [6245], [6965], [7755], [8590], [9320], [10090], [10855], [11590], [12230],
 [*ETC*], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
 )
 ]
-#align(center)[Tabella 21: AC e ETC da sprint 1 a 20]
+#align(center)[Tabella 22: AC e ETC da sprint 11 a 20]
 
 #align(left,
 figure(
