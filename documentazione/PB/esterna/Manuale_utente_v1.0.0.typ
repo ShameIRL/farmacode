@@ -361,7 +361,7 @@ Dopo aver cliccato il bottone "Ricerca", se non ci sono stati problemi, visualiz
 === Inserimento feedback
 <insertFeedback>
 /*Da spiegare meglio!*/
-Il feedback permette di correggere il tiro dell'algorimo ed in particolare fa si che quel Cliente o Prodotto raccomandato non venga più raccomandatoper quel Cliente o Prodotto selezionato. Questo in quanto il feedback è stato inteso come strumento per elimiare dalle raccomandazioni quelle coppie Cliente Prodotto che non possono esistere. Ad esempio se due pub (Clienti) sono vicini, magari per motivi contrattuali o commerciali una birra (Prodotto) non può essere venduta al secondo pub in quanto è già fornita al pub numero uno.\
+Il feedback permette di correggere il tiro dell'algorimo ed in particolare fa si che quel Cliente o Prodotto raccomandato non venga più raccomandato per quel Cliente o Prodotto selezionato. Questo in quanto il feedback è stato inteso come strumento per elimiare dalle raccomandazioni quelle coppie Cliente Prodotto che non possono esistere. Ad esempio se due pub (Clienti) sono vicini, magari per motivi contrattuali o commerciali una birra (Prodotto) non può essere venduta ad entrambi.\
 Di seguito verranno illustrati e spiegati i passaggi per inserire un feedback.
 #figure(
   image("/imgs/screenshots_mvp/ricerca_feedback_1.png", width: 100%),
