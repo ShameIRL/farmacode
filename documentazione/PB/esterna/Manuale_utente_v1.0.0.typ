@@ -56,7 +56,6 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - Regolamento progetto ditattico\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/10).
 === Riferimenti informativi
-//da verificare in seguito se il link combacia
 - Glossario v2.0.0\
 https://farmacodeunipd.github.io/documentazione/PB/esterna/Glossario_v2.0.0.pdf.
 

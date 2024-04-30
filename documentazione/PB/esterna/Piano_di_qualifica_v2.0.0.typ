@@ -62,9 +62,9 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.1.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/12);.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/12).
 
 === Riferimenti informativi
 - T7 - Qualità del software (slide del corso di Ingegneria del Software)\
@@ -78,11 +78,11 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 - T11 - Verifica e validazione: analisti dinamica (slide del corso di Ingegneria del Software)\
   https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (data di ultimo accesso: 2023/03/10);
 - ISO/IEC 9126\
-  https://en.wikipedia.org/wiki/ISO/IEC_9126 (data di ultimo accesso: 2023/03/22);;
+  https://en.wikipedia.org/wiki/ISO/IEC_9126 (data di ultimo accesso: 2023/03/22);
 - ISO/IEC 12207:1995\
-  https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf (data di ultimo accesso: 2023/03/04);;
+  https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf (data di ultimo accesso: 2023/03/04);
 - ISO/IEC 90003\
-  https://cdn.standards.iteh.ai/samples/35867/36860aa4caba4c84b26051db576456d3/ISO-IEC-90003-2004.pdf (data di ultimo accesso: 2023/03/04);
+  https://cdn.standards.iteh.ai/samples/35867/36860aa4caba4c84b26051db576456d3/ISO-IEC-90003-2004.pdf (data di ultimo accesso: 2023/03/04).
 
 #pagebreak()
 

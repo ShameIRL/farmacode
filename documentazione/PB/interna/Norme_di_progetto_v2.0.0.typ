@@ -1,4 +1,3 @@
-
 #import "/template/big_docs.typ": *
 
 #show: project.with(
@@ -67,65 +66,65 @@ Questo documento è stato creato seguendo un approccio incrementale, il che impl
 
 === Riferimenti normativi
 - #glossario("Capitolato") C2 - Sistema di raccomandazione\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/12).
 
 === Riferimenti informativi
 *Documentazione delle principali tecnologie utilizzate*
 - Documentazione GitHub\
-    https://docs.github.com/en;
+    https://docs.github.com/en (data di ultimo accesso: 2023/03/20);
 
 - Documentazione Typst\
-    https://typst.app/docs/;
+    https://typst.app/docs/ (data di ultimo accesso: 2023/03/23);
 
 *Slide corso di ingegneria del software*
 - T2 - Processi di ciclo di vita\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf (data di ultimo accesso: 2023/02/28);
 
 - T6 - Progettazione software\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf (data di ultimo accesso: 2023/02/28);
 
 - T7 - Qualità del software\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf (data di ultimo accesso: 2023/02/27);
 
 - T9 - Verifica e validazione: introduzione\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf (data di ultimo accesso: 2023/03/04);
 
 - T10 - Verifica e validazione: analisi statica\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf (data di ultimo accesso: 2023/03/04);
 
 - T11 - Verifica e validazione: analisi dinamica\
-    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
+    https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (data di ultimo accesso: 2023/03/04);
 
 - P2 - Diagrammi dei casi d'uso\
-    https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf;
+    https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf (data di ultimo accesso: 2023/02/22);
 
 - P4 - Diagtrammi delle classi\
-    https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf;
+    https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf (data di ultimo accesso: 2023/02/22);
 
 - P5 - Design Pattern Architetturali - Dependency Injection
-    https://www.math.unipd.it/~rcardin/swea/2022/Design%20Pattern%20Architetturali%20-%20Dependency%20Injection.pdf;
+    https://www.math.unipd.it/~rcardin/swea/2022/Design%20Pattern%20Architetturali%20-%20Dependency%20Injection.pdf (data di ultimo accesso: 2023/02/22);
 
 - P9 - Design Pattern Comportamentali
-    https://www.math.unipd.it/~rcardin/swea/2021/Design%20Pattern%20Comportamentali_4x4.pdf.
+    https://www.math.unipd.it/~rcardin/swea/2021/Design%20Pattern%20Comportamentali_4x4.pdf (data di ultimo accesso: 2023/02/22).
 
 *Slide corso Metodi e Tecnologie per lo Sviluppo Software*\
 Le seguenti dispense sono relative all'anno accademico 2022/2023.
 - 2 - Issue Tracking System\
-    https://stem.elearning.unipd.it/pluginfile.php/478029/mod_resource/content/0/2-IssueTrackingSystem_22_23_libre.pdf;
+    https://stem.elearning.unipd.it/pluginfile.php/478029/mod_resource/content/0/2-IssueTrackingSystem_22_23_libre.pdf (data di ultimo accesso: 2023/03/15);
 
 - 3 - GitHub Issue Tracker\
-    https://stem.elearning.unipd.it/pluginfile.php/482498/mod_resource/content/0/3-GitHubIssueTracker.pdf;
+    https://stem.elearning.unipd.it/pluginfile.php/482498/mod_resource/content/0/3-GitHubIssueTracker.pdf (data di ultimo accesso: 2023/03/15);
 
 - lab1 - GitHub Issue Tracker\
-    https://stem.elearning.unipd.it/pluginfile.php/482500/mod_resource/content/1/GitHubIssueTracker.pdf;
+    https://stem.elearning.unipd.it/pluginfile.php/482500/mod_resource/content/1/GitHubIssueTracker.pdf (data di ultimo accesso: 2023/03/15);
 
 - 4 - Git\
-    https://stem.elearning.unipd.it/pluginfile.php/490005/mod_resource/content/0/4-GIT.pdf;
+    https://stem.elearning.unipd.it/pluginfile.php/490005/mod_resource/content/0/4-GIT.pdf (data di ultimo accesso: 2023/03/20);
 
 - lab2 - GitHub vcs\
-    https://stem.elearning.unipd.it/pluginfile.php/494455/mod_resource/content/0/lab2-github_vcs.pdf.
+    https://stem.elearning.unipd.it/pluginfile.php/494455/mod_resource/content/0/lab2-github_vcs.pdf (data di ultimo accesso: 2023/03/20).
 
 #pagebreak()
 
