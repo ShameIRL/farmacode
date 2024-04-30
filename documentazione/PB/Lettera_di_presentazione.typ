@@ -66,7 +66,8 @@ Inoltre per quanto riguarda il MVP è stato predisposto un repository apposito c
 \
 
 Il gruppo di lavoro Farmacode è riuscito a rispettare i costi preventivati di 12530€. Il costo totale ammonta a *12230€*.\
-Anche per quanto riguarda le ore di lavoro personali preventivate a *94*, non sono state sforate. Di seguito viene riportata la tabella rioassuntiva delle ore di lavoro impegate da ogni memvor del team:
+Tuttavia è stato registrato un ritardo rispetto a quanto ri-preventivato alla fine del periodo di RTB, la data di ultima consegna era infatti prevista per la data 15/04/2024.
+Anche per quanto riguarda le ore di lavoro personali preventivate a *94*, non sono state sforate. Di seguito viene riportata la tabella riassuntiva delle ore di lavoro impegate da ogni membro del team:
 #align(center, text(0.85em)[
 #table(
   fill: (col, row) => 
