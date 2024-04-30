@@ -8,7 +8,8 @@
     p.cardin,
   ),
   changelog: (
-    "1.10.0", "2024-04-15", p.carraro, p.rosson, "Stesura sprint 20 e globale PB",
+    "2.0.0", "2024-04-24", p.favaron, p.carraro, "Revisione e verifica del documento",
+    "1.10.0", "2024-04-23", p.carraro, p.rosson, "Stesura sprint 20 e globale PB",
     "1.9.0", "2024-04-15", p.baggio, p.carraro, "Stesura sprint 19",
     "1.8.1", "2024-04-09", p.favaron, p.carraro, "Corretto ore sprint 17, 18",
     "1.8.0", "2024-04-08", p.favaron, p.carraro, "Stesura sprint 18",
@@ -80,14 +81,14 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.1.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/10).
 === Riferimenti informativi
 - T3 - Ciclo di vita del software (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T3.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T3.pdf (data di ultimo accesso: 2024/03/01);
 - T4 - Gestione di progetto (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T4.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T4.pdf (data di ultimo accesso: 2024/03/01).
 
 == Scadenze
 La pianificazione descritta, in seguito, all'interno questo documento si basa su delle scadenze che il gruppo Farmacode si impegna a rispettare per lo sviluppo del progetto. Queste possono essere riassunte in una tabella:
@@ -3149,7 +3150,7 @@ Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle tas
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    []
+    [1]
   )
 )
 
@@ -3296,7 +3297,7 @@ Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle tas
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    []
+    [1]
   )
 )
 
@@ -3304,7 +3305,7 @@ Abbiamo asseganto quindi molto spazio ai programmatori vista la natura delle tas
 In questo sprint non sono sorte difficoltà importanti.
 
 === Retrospettiva
-Lo sprint #18 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo verificatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
+Lo sprint #19 è costato di più di quanto preventivato ed in particolare la differenza maggiore rispetto alle ore preventivate è stata nel ruolo verificatore. L'attività è risultata lunga e sono state necesarie 5 ore totali in più spalmate su vari membri del gruppo.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 #pagebreak()
@@ -3331,7 +3332,7 @@ figure(
 
 === Pianificazione
 Questo sprint sarà l'ultimo prima della revisione PB, il gruppo si è quindi concentrato nel terminare la documentazione, revisionarla e verificarla.\
-La prima revisione PB con il professore #p.cardin è prevista per l'ultimo giorno dello sprint, martedi' 23 aprile.
+La prima revisione PB con il professore #p.cardin è prevista per l'ultimo giorno dello sprint, martedì 23 aprile.
 
 === Rischi attesi
 Durante questo sprint non sono previsti grandi rischi.
@@ -3382,7 +3383,7 @@ figure(
 
 - Spiegazione:
 La prospettiva per questo sprint è quella di concludere la documentazione in vista delle revisioni PB.\
-Abbiamo asseganto più ore a programmatore e verificatore.\
+Abbiamo asseganto più ore a programmatore e verificatore a scopo di aggiungere ulteriori test e coprire il più codice possibile.\
 
 === Consunitvo:
 
@@ -3437,7 +3438,7 @@ Abbiamo asseganto più ore a programmatore e verificatore.\
     columns: (auto,),
     align: center,
     [*Valore di SPI*],
-    []
+    [1]
   )
 )
 
@@ -3445,7 +3446,7 @@ Abbiamo asseganto più ore a programmatore e verificatore.\
 In questo sprint non sono sorte difficoltà importanti.
 
 === Retrospettiva
-Lo sprint #20 è costato di più di quanto preventivato vista la sua natura di controllo e verifica.\
+Lo sprint #20 è costato di più di quanto preventivato vista la sua natura di controllo e verifica. In particolare sono state addoperate ore in più per i ruoli analista e progettista per andare ad ultimare i documenti Analisi dei requisiti e Specifica tecnica.\
 Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, mantenendo un buon andamento produttivo durante tutto lo sprint. 
 
 #pagebreak()
