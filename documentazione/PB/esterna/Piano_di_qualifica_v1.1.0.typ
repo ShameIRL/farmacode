@@ -932,7 +932,19 @@ Questo è dovuto al fatto che, grazie alle frequenti revisioni e all'utilizzo di
   align: center,
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9], [10],
   [*EAC*], [12100], [11750], [11535], [11125],[10680], [11259], [11883], [12102], [12597], [12763],
-   [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+
+)
+]
+#align(center)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
   [*EAC*], [13059], [13010], [12860], [12714], [12631], [12428], [12457], [12477], [12330], [12230],
 )
 ]
@@ -956,8 +968,7 @@ Il massimo valore registato corrisponde a 13059, mentre il minimo storico equiva
 #pagebreak()
 
 === AC e ETC - Actual Cost e Estimate to Complete
-
-#align(center)[
+#align(left)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -968,14 +979,22 @@ Il massimo valore registato corrisponde a 13059, mentre il minimo storico equiva
   align: center,
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],
   [*AC*], [605], [1175], [1615], [2225],[2670], [3040], [3565], [4115], [4535], [4850],
-  [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913],
+  [*ETC*], [11495], [10575], [9920], [8900 ],[8010], [8219], [8318], [7987], [8062], [7913],
+)]
+
+#align(left)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
   [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
-[*AC*],[5485], [6245], [6965], [7755], [8590], [9320], [10090], [10855], [11590], [12230],
-[*ETC*], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
-)
-
-]
-
+  [*AC*],[5485], [6245], [6965], [7755], [8590], [9320], [10090], [10855], [11590], [12230],
+  [*ETC*], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
+)]
 #align(center)[Tabella 21: AC e ETC da sprint 1 a 20]
 
 #align(left,
@@ -988,16 +1007,15 @@ figure(
 
 - Spiegazione:
 Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete), ovvero quanto si stima andrà ancora a costare il progetto, in corrispondenza dell'AC (Actual Cost), ovvero quanto effettivamente è stato speso fino a quel determinato momento. Fino allo sprint 5 la situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati, ovvero non supera il BAC.\
-Successivament l'ETC è cresciuto, sicuramente a causa di festività invernali, l'avvicinarsi dei vari impegni accademici, a cui ogni componente del gruppo è soggetto, e delle revisioni per l'RTB.
-Gli sforzi impiegati nel ultimo periodo sembrano non aver migliorato troppo la situazione. Contiamo che gli sprint successivi invertano la tendenza orami creata da un po'. \
+Successivamente l'ETC è cresciuto, sicuramente a causa di festività invernali, l'avvicinarsi dei vari impegni accademici, a cui ogni componente del gruppo è soggetto, e delle revisioni per l'RTB.
+Gli sforzi impiegati nel ultimo periodo di RTB sembrano non aver migliorato troppo la situazione. Contiamo che gli sprint successivi invertano la tendenza orami creata da un po'. \
 La prospettiva è che finite le revisioni si cerchi di recuperare con incremento costante durante la milestone PB. \
 A partire dal periodo di PB è possibile notare un andamento più costante ed una tendenza generalmente positiva merito del maggiore impegno di tutti i membri del gruppo, dovuto anche ad una maggiore disponibilità di risorse in ambito temporale.
 
 #pagebreak()
 
 === EV e PV - Earned Value e Planned Value 
-
-#align(center)[
+#align(left)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -1009,6 +1027,18 @@ A partire dal periodo di PB è possibile notare un andamento più costante ed un
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
   [*EV*], [644], [1288], [1803], [2576],[3220],[3477],[3864],[4379],[4636],[4894],
   [*PV*], [644], [1288], [1932], [2576],[3220],[3864],[3864],[4508],[4765],[5152],
+
+)
+]
+#align(left)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
     [*sprint*],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
   [*EV*],[5409,6],[6182,4], [7084], [7856,8], [8758,4], [9660], [10432,8], [11205,6], [12107], [12880],
   [*PV*],[5538,4],[6182,4], [7019,6], [7856,8], [8694], [9660], [10368,4], [11205,6], [12042,8], [12880],
@@ -1035,7 +1065,7 @@ A partire dallo spint 12 che sancisce l'inizio del periodo di PB è possbile not
 #pagebreak()
 
 === CV e SV - Cost Variance e Schedule Variance
-#align(center)[
+#align(left)[
 #table(
       fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -1047,7 +1077,18 @@ A partire dallo spint 12 che sancisce l'inizio del periodo di PB è possbile not
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
   [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],
   [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],
-    [*sprint*],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
+)
+]
+#align(left)[
+#table(
+      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
+  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+  inset: (
+    x: 8pt,
+    y: 10pt,
+  ),
+  align: center,
+  [*sprint*],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
   [*CV*],[-75,4],[-62,6], [119], [101,8], [168,4], [340], [342,8], [350,6], [517], [650],
   [*SV*],[-128,8],[0], [64,4], [0], [64,4], [0], [64,4], [0], [64,2], [0],
 )
@@ -1075,34 +1116,34 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 #pagebreak()
 
 = Elenco delle immagini
-- Immagine 1: IG
-- Immagine 2: EAC da sprint 1 a 20
-- Immagine 3: AC e ETC da sprint 1 a 20
-- Immagine 4: EV e PV da sprint 1 a 20
-- Immagine 5: CV e SV da sprint 1 a 20
+- Immagine 1: IG;
+- Immagine 2: EAC da sprint 1 a 20;
+- Immagine 3: AC e ETC da sprint 1 a 20;
+- Immagine 4: EV e PV da sprint 1 a 20;
+- Immagine 5: CV e SV da sprint 1 a 20;
 
 = Elenco tabelle
-- Tabella 1: Qualità della documentazione
-- Tabella 2: Metriche qualità della documentazione
-- Tabella 3: Qualità del software
-- Tabella 4: Metriche qualità del software
-- Tabella 5: Processi primari
-- Tabella 6: Processi di supporto
-- Tabella 7: Processi organizzativi
-- Tabella 8: Metriche processi primari
-- Tabella 9: Metriche processi di supporto
-- Tabella 10: Metriche processi organizzativi
-- Tabella 11: Test di unità
-- Tabella 12: Test di integrazione
-- Tabella 13: Test di accettazione
-- Tabella 14: Tracciamento test di accettazione
-- Tabella 15: Test e tracciamento di sistema
-- Tabella 16: Valutazione tecnologica
-- Tabella 17: Valutazione organizzativa e personale
-- Tabella 18: Valutazione sui ruoli
-- Tabella 19: Indice di Gulpease dei documenti
-- Tabella 20: EAC da sprint 1 a 20
-- Tabella 21: AC e ETC da sprint 1 a 20
-- Tabella 22: EV e PV da sprint 1 a 20
-- Tabella 23: CV e SV da sprint 1 a 20
+- Tabella 1: Qualità della documentazione;
+- Tabella 2: Metriche qualità della documentazione;
+- Tabella 3: Qualità del software;
+- Tabella 4: Metriche qualità del software;
+- Tabella 5: Processi primari;
+- Tabella 6: Processi di supporto;
+- Tabella 7: Processi organizzativi;
+- Tabella 8: Metriche processi primari;
+- Tabella 9: Metriche processi di supporto;
+- Tabella 10: Metriche processi organizzativi;
+- Tabella 11: Test di unità;
+- Tabella 12: Test di integrazione;
+- Tabella 13: Test di accettazione;
+- Tabella 14: Tracciamento test di accettazione;
+- Tabella 15: Test e tracciamento di sistema;
+- Tabella 16: Valutazione tecnologica;
+- Tabella 17: Valutazione organizzativa e personale;
+- Tabella 18: Valutazione sui ruoli;
+- Tabella 19: Indice di Gulpease dei documenti;
+- Tabella 20: EAC da sprint 1 a 20;
+- Tabella 21: AC e ETC da sprint 1 a 20;
+- Tabella 22: EV e PV da sprint 1 a 20;
+- Tabella 23: CV e SV da sprint 1 a 20;
 
