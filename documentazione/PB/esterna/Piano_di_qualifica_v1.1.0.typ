@@ -9,8 +9,10 @@
     p.cardin,
   ),
   changelog: (
-    "1.3.0", "2024-04-25", p.baggio, p.pandolfo, "Aggiornamento test sezione 4",
-    "1.2.0", "2024-04-23", p.pandolfo, p.baggio, "Aggiornamento sezioni 5 e 6",
+    "2.0.0", "2024-04-22", p.carraro, p.rosson, "Verifica e revisione del documento",
+    "1.4.0", "2024-03-30", p.favaron, p.pandolfo, "Aggiornamento test e piccole migliorie",
+    "1.3.0", "2024-03-27", p.baggio, p.pandolfo, "Aggiornamento test sezione 4",
+    "1.2.0", "2024-03-13", p.pandolfo, p.baggio, "Aggiornamento sezioni 5 e 6",
     "1.1.0", "2024-02-27", p.carraro, p.passarella, "Ristrutturazione documento",
     "1.0.0", "2024-02-13", p.favaron, p.pandolfo, "Verifica del documento",
     "0.10.1", "2024-02-09", p.bomben, p.rosson, "Aggiunta sezione CV e SV, sistemato elenchi tabelle/immagini",
@@ -60,27 +62,27 @@ Questo documento è stato realizzato utilizzando un approccio incrementale, con 
 === Riferimenti normativi
 - Norme di Progetto v.1.0.0;
 - Capitolato C2: Sistemi di raccomandazione\ 
-  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C2.pdf (data di ultimo accesso: 2023/12/12);;
 - Regolamento progetto ditattico\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf.
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf (data di ultimo accesso: 2023/12/12);.
 
 === Riferimenti informativi
 - T7 - Qualità del software (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf (data di ultimo accesso: 2023/02/27);
 - T8 - Qualità di processo (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf (data di ultimo accesso: 2023/02/27);
 - T9 - Verifica e validazione: introduzione (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf (data di ultimo accesso: 2023/03/04);
 - T10 - Verifica e validazione: analisti statica (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf (data di ultimo accesso: 2023/03/10);
 - T11 - Verifica e validazione: analisti dinamica (slide del corso di Ingegneria del Software)\
-  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf (data di ultimo accesso: 2023/03/10);
 - ISO/IEC 9126\
-  https://en.wikipedia.org/wiki/ISO/IEC_9126;
+  https://en.wikipedia.org/wiki/ISO/IEC_9126 (data di ultimo accesso: 2023/03/22);;
 - ISO/IEC 12207:1995\
-  https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf;
+  https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf (data di ultimo accesso: 2023/03/04);;
 - ISO/IEC 90003\
-  https://cdn.standards.iteh.ai/samples/35867/36860aa4caba4c84b26051db576456d3/ISO-IEC-90003-2004.pdf;
+  https://cdn.standards.iteh.ai/samples/35867/36860aa4caba4c84b26051db576456d3/ISO-IEC-90003-2004.pdf (data di ultimo accesso: 2023/03/04);
 
 #pagebreak()
 
