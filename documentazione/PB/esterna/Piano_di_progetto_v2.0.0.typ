@@ -3485,7 +3485,7 @@ Vediamo ora in tabella il preventivo orario per membro del gruppo secondo i vinc
 ])
 #align(center)[Tabella 98: Totale ore da fare]
 
-In seguito la tabella con le ore fatte da ogni menbro per ogni ruolo e il totale di ore consumate durante questa seconda parte di progetto, il periodo dallo sprint #13 al #20, periodo PB appunto.\
+In seguito la tabella con le ore fatte da ogni menbro per ogni ruolo e il totale di ore consumate durante questa seconda parte di progetto, il periodo dallo sprint #12 al #20, periodo PB appunto.\
 Come si puo' vedere la maggior parte delle ore è stata impegata nei ruoli di Programmatore e Verificatore, vista la maggior richiesta di sviluppo software durante questo secondo periodo.
 
 #pagebreak()
@@ -3532,7 +3532,7 @@ Ci riteniamo soddisfatti della distribuzione oraria e del lavoro fra i membri de
 
 *Considerazioni finali*
 
-La data di consegna del progetto è slittata da quella ri-preventivata dopo le revisioni di RTB (15/04/2024), al *30/04/2024*. Il costo totale del progetto ammonta a *12230€* inferiore al budget previsto (12530€). Il gruppo si ritiene, nostante il ritardo registrato, complessivamente soddisfatto. Siamo consapevoli di avere potuto conlcudere entro i tempi previdisti ma abbiamo scelto di portare maggiore qualità a quanto prodotto, sia per quanto riguarda il software sia per quanot riguarda la documentazione.
+La data di consegna del progetto è slittata da quella ri-preventivata dopo le revisioni di RTB (15/04/2024), al *30/04/2024*. Il costo totale del progetto ammonta a *12230€* inferiore al budget previsto (12530€). Il gruppo si ritiene, nostante il ritardo registrato, complessivamente soddisfatto. Siamo consapevoli di aver potuto conlcudere entro i tempi previdisti ma abbiamo scelto di portare maggiore qualità a quanto prodotto, sia per quanto riguarda il software sia per quanto riguarda la documentazione.
 
 #pagebreak()
 
