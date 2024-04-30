@@ -98,7 +98,7 @@ Anche per quanto riguarda le ore di lavoro personali preventivate a *94*, non so
 ])
 #align(center)[Tabella 1: Ore produttive gruppo]
 
-Il gruppo Farmacode rinuncia alla possibilità di proseguire con la Customer Acceptance diversamente da quanto preventivato, concluendendo il progetto una volta svolta la revisione Product Baseline.
+Il gruppo Farmacode rinuncia alla possibilità di proseguire con la Customer Acceptance diversamente da quanto preventivato, concluendendo il progetto una volta svolta la revisione Product Baseline. Per maggiori dettagli si rimanda alla documentazione ufficiale (in particolare ai documenti Piano_di_progetto_v2.0.0 e Piano_di_qualifica_v2.0.0)
 
 #v(2cm)
 

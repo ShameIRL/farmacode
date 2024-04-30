@@ -10,6 +10,7 @@
 
   ),
   changelog: (
+    "2.0.0", "2024-04-23", p.bomben, p.rosson, " Verifica e revisione del documento",
     "1.8.0", "2024-04-10", p.bomben, p.rosson, " Correzione e aggiornamento sezione metriche",
     "1.7.0", "2024-03-30", p.favaron, p.passarella, "Aggiornamento sezioni relative alla manutenzione",
     "1.6.0", "2024-03-20", p.rosson, p.passarella, "Sviluppo sezioni repository codice, procedure e codecovereage",
@@ -56,7 +57,8 @@ L'utente amministratore ha la possibilità di creare ulteriori account per event
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
-La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu").
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento v2.0.0.
+
 
 == Miglioramenti e maturità del documento
 Questo documento è stato creato seguendo un approccio incrementale, il che implica la sua natura adattabile e suscettibile di modifiche nel tempo. Queste modifiche saranno apportate in risposta alle esigenze concordate tra i membri del gruppo e il proponente. Pertanto, questa versione del documento non deve essere considerata come una versione definitiva o completa, ma piuttosto come un punto di partenza che sarà ulteriormente sviluppato e aggiornato per meglio rispondere alle mutevoli esigenze del progetto.
