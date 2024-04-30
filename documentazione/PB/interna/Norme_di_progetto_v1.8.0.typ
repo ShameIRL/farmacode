@@ -1,13 +1,3 @@
-//2.1.1) "Descrizione e scopo" serve??
-//2.2.4) -> bozza architettura, non mi sembra sensata la prima frase.
-//3.3.4) andrebbe messa descrizione.
-//3.4.1) 3.5.1) 3.6.1) hanno senso??
-
-//  2.4) Manutenzione da rivedere in toto per me. 2.4.3 e 2.4.4 non sviluppate.
-//3.1.9) aggiunta documenti?
-//3.2.3) Repository, qui si parlo di uno, ma noi ne abbiamo molti, che si fa?
-// "aggiungere" 3.2.4) dove si parla di repository codice?
-//3.2.3.2) va li' sotto? Gestione configurazione -> repository -> procedura di redazione/revisione/manutenzione ???
 
 #import "/template/big_docs.typ": *
 
@@ -677,7 +667,7 @@ Il documento ``` Specifiche Tecniche``` va strutturato nel seguento modo:
 
 *Glossario*\ <glossario>
 Il documento ``` Glossario``` va strutturato nel seguento modo:\
-Le sezioni suddividono il documento in ordine alfabetico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
+  - Le sezioni suddividono il documento in ordine alfabetico, le sottosezioni avranno come titolo la parola e come descrizione la definizione del termine stesso.
 
 
 == Gestione della configurazione
