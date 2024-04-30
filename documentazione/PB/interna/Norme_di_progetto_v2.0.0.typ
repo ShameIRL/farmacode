@@ -10,6 +10,7 @@
 
   ),
   changelog: (
+    "2.0.0", "2024-04-23", p.bomben, p.rosson, " Verifica e revisione del documento",
     "1.8.0", "2024-04-10", p.bomben, p.rosson, " Correzione e aggiornamento sezione metriche",
     "1.7.0", "2024-03-30", p.favaron, p.passarella, "Aggiornamento sezioni relative alla manutenzione",
     "1.6.0", "2024-03-20", p.rosson, p.passarella, "Sviluppo sezioni repository codice, procedure e codecovereage",
