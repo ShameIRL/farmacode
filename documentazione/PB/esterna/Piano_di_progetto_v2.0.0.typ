@@ -3473,7 +3473,7 @@ Vediamo ora in tabella il preventivo orario per membro del gruppo secondo i vinc
     else if calc.odd(row) { luma(230) } else { white },
   columns: (auto,)*8,
   align: center,
-  [*Ore da fare*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista], [Totale],
+  [*Totale ore da fare*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista], [Totale],
   [Baggio M.], [10], [8], [30], [12], [22], [12], [94],
   [Bomben F.], [10], [8], [30], [12], [22], [12], [94],
   [Carraro A.], [10], [8], [30], [12], [22], [12], [94],
@@ -3519,16 +3519,18 @@ Ci riteniamo soddisfatti della distribuzione oraria e del lavoro fra i membri de
   columns: (auto,)*8,
   align: center,
   [*Conclusione*], [Responsabile], [Analista], [Programmatore], [Amministratore], [Verificatore], [Progettista], [Totale],
-  [Baggio M.], [9], [11], [30], [15], [22], [6], [93],
-  [Bomben F.], [7], [11], [30], [12], [22], [9], [91],
-  [Carraro A.], [10], [8], [30], [14], [22], [8], [92],
+  [Baggio M.], [9], [#red(11)], [30], [#red(15)], [22], [6], [93],
+  [Bomben F.], [7], [#red(11)], [30], [12], [22], [9], [91],
+  [Carraro A.], [10], [8], [30], [#red(14)], [22], [8], [92],
   [Favaron R.], [10], [8], [30], [12], [22], [11], [93],
-  [Pandolfo M.], [10], [10], [30], [12], [22], [8], [92],
+  [Pandolfo M.], [10], [#red(10)], [30], [12], [22], [8], [92],
   [Passarella A.], [9], [6], [30], [12], [22], [12], [91],
-  [Rosson L.], [10], [12], [30], [13], [22], [7], [94],
+  [Rosson L.], [10], [#red(12)], [30], [#red(13)], [22], [7], [94],
 )
 ])
 #align(center)[Tabella 100: conclusione]
+Come si può notare alcuni membri hanno ecceduto il vincolo orario per alcuni ruoli, questa scelta è stata presa del gruppo per gestire al meglio alcune fasi del progetto.\
+Sono state fatte delle scelte che hanno bilanciato questi eccessi, così da spartire equamente il lavoro. 
 
 *Considerazioni finali*
 
