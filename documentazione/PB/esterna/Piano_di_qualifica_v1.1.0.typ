@@ -990,7 +990,8 @@ figure(
 Il grafico illustra come nel tempo è variato l'ETC (Estimate to Complete), ovvero quanto si stima andrà ancora a costare il progetto, in corrispondenza dell'AC (Actual Cost), ovvero quanto effettivamente è stato speso fino a quel determinato momento. Fino allo sprint 5 la situazione si può definire stabile in quanto la loro somma rientra nei valori preventivati, ovvero non supera il BAC.\
 Successivament l'ETC è cresciuto, sicuramente a causa di festività invernali, l'avvicinarsi dei vari impegni accademici, a cui ogni componente del gruppo è soggetto, e delle revisioni per l'RTB.
 Gli sforzi impiegati nel ultimo periodo sembrano non aver migliorato troppo la situazione. Contiamo che gli sprint successivi invertano la tendenza orami creata da un po'. \
-La prospettiva è che finite le revisioni si cerchi di recuperare con incremento costante durante la milestone PB. 
+La prospettiva è che finite le revisioni si cerchi di recuperare con incremento costante durante la milestone PB. \
+A partire dal periodo di PB è possibile notare un andamento più costante ed una tendenza generalmente positiva merito del maggiore impegno di tutti i membri del gruppo, dovuto anche ad una maggiore disponibilità di risorse in ambito temporale.
 
 #pagebreak()
 
@@ -1028,7 +1029,8 @@ figure(
 Il sovrapporsi dei valori registrati delle metriche di EV(valore guadagnato) e PV(valore pianificato) nel grafico suggerisce che i lavori stanno procedendo in linea con quanto pianificato.\
 Il superamento del PV(valore pianificato) al EV(valore guadagnato) nel grafico suggerisce che il lavoro effettivamente completato è inferiore a quanto pianificato per lo stesso periodo di tempo.\
 È importante esaminare attentamente questa discrepanza e identificare le cause sottostanti. Potrebbe essere necessario rivedere la pianificazione, valutare le risorse disponibili e adottare misure correttive per riportare il progetto sulla buona strada.\
-I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicuramente porteranno via molto tempo alla realizzazione e lavoro del progetto.
+I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicuramente porteranno via molto tempo alla realizzazione e lavoro del progetto.\
+A partire dallo spint 12 che sancisce l'inizio del periodo di PB è possbile notare un andamento positivo e costante.
 
 #pagebreak()
 
@@ -1067,7 +1069,8 @@ Il valore del lavoro effettivamente completato è inferiore a quanto pianificato
 Sebbene quindi il progetto stia risparmiando denaro rispetto al budget (CV positivo), potrebbe esserci stata una sottoperformance nella realizzazione delle attività pianificate (SV negativo). \
 Inizialmente i valori di CV e SV registarti mostrano un uso minore di risorse monetarie rispetto a quanto preventivato e un avanzamento corretto del progetto secondo la pianificazione.\
 A partire dallo sprint 6 i valori di CV e SV indica una situazione ben diversa da quella registrata in precedenza: il valore negativo di SV indica un ritardo rispetto a quanto preventivato. Questo rallentamento di produttività viene dettato dalla pausa natalizia e dalla sessione di esami.\
-A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista.
+A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si impegnerà a migliorare sotto questo punto di vista. \ Come è possibile notare durante il periodo a partire dalla sprint 12 non sono stati registrati particolari ritardi rispetto alle previsioni immediatamente precedenti. Nonostante infatti il progetto abbia sforato la data di consegna prevista dopo la revisione di RTB, il ritardo registrato era stato previsto ed in un qualche modo, voluto. Il gruppo ha deciso infatti di prendersi più tempo per potare maggiore qualità a quanto prodotto.
+
 
 #pagebreak()
 
