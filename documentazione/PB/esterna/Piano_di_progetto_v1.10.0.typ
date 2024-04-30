@@ -8,7 +8,7 @@
     p.cardin,
   ),
   changelog: (
-    "1.10.0", "2024-04-15", p.carraro, "", "Stesura sprint 20 e globale PB",
+    "1.10.0", "2024-04-15", p.carraro, p.rosson, "Stesura sprint 20 e globale PB",
     "1.9.0", "2024-04-15", p.baggio, p.carraro, "Stesura sprint 19",
     "1.8.1", "2024-04-09", p.favaron, p.carraro, "Corretto ore sprint 17, 18",
     "1.8.0", "2024-04-08", p.favaron, p.carraro, "Stesura sprint 18",
@@ -70,7 +70,7 @@ L'utente amministratore ha la possibilità di creare ulteriori account per event
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
-La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu").
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento v2.0.0.
 
 == Maturità e miglioramenti
 Questo documento è stato realizzato utilizzando un approccio incrementale, con lo scopo di semplificare i cambiamenti nel tempo in base alle reciproche esigenze decise da entrambi le parti, ovvero membri del gruppo di progetto e azienda proponente. Pertanto questo documento non può essere considerato esaustivo e completo.
@@ -96,8 +96,8 @@ La pianificazione descritta, in seguito, all'interno questo documento si basa su
     fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
   [*Revisione*],[*Data*],
   [Prima revisione: Requirements and Technology Baseline [RTB]],[2024-01-20],
-  [Seconda revisione: Product Baseline [PB]],[2024-04-15],
-  [Terza Revisione: Customer Acceptance [CA]],[2024-04-25],
+  [Seconda revisione: Product Baseline [PB]],[2024-04-30],
+  [Terza Revisione: Customer Acceptance [CA]],[ND],
 )
 #align(center)[Tabella 1: Scadenze revisioni.]
 
@@ -3451,11 +3451,11 @@ Il team è riuscito sempre a comunicare ed incontrarsi quando necessario, manten
 #pagebreak()
 == Globale - PB
 Con lo sprint #20 si conclude la pianificazione del progetto e il gruppo giunge alla revisione PB.\
-Il gruppo ha iniziato il progetto martedì 7 novembre 2023 e ha iniziato ufficialmente con lo sprint #1 martedì 14 novembre 2023, andando a terminare con lo sprint #20 martedì 23 aprile 2024, per un totale di 24 settimane di lavoro, 1 settimana di assestamento e 23 di effettivo lavoro.\
+Il gruppo ha iniziato il progetto martedì 7 novembre 2023 e ha iniziato ufficialmente con lo sprint #1 martedì 14 novembre 2023, andando a terminare con lo sprint #20 martedì 23 aprile 2024, per un totale di 24 settimane di lavoro, 1 settimana di "assestamento" e 23 di effettivo lavoro.\
 Siamo consapevoli che il progetto a livello accademico doveva richiedere 20 settimane di lavoro, ma abbiamo incontrato *diverse sfide* che ci hanno portato a prolungare il periodo lavorativo:
 - *Lavoro in gruppo*: ha richiesto nel primo periodo RTB diversi tentativi e diverso tempo per gestire e abiturci alle ripartenze;
 - *Sfide Tecnologiche*: le sfide nell'imparere le nuove tecnologie, in particolare:\
-  -- GitHub Actions e Typst, per migliori automazione nella documentazione;\
+  -- GitHub Actions e Typst, per migliori automazioni nella documentazione;\
   -- PyTorch, per lo sviluppo degli algoritmi di raccomandazione;\
   -- React e le relative librerie, per lo sviluppo della web app;\
   -- Docker, per contenizzare tutto il prodotto;\
@@ -3508,7 +3508,7 @@ Come si puo' vedere la maggior parte delle ore è stata impegata nei ruoli di Pr
 #align(center)[Tabella 99: ore fatte durante PB]
 
 La seguente tabella mostra il definitivo consumo di ore  per ruolo e il totale consumato per membro del gruppo.\
-Ci riteniamo molto soddisfatti della distribuzione orario e di lavoro fra i membri del gruppo, come si puo' notrare il lavoro è stato molto equo e ha permesso a tutti di imparare in ogni aspetto didattico del progetto.
+Ci riteniamo soddisfatti della distribuzione oraria e del lavoro fra i membri del gruppo, come si puo' notare il lavoro è stato infatti gestito in modo molto equo e ha permesso a tutti di imparare in ogni aspetto didattico del progetto.
 
 #align(center, text(0.85em)[
 #table(

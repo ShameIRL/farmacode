@@ -50,7 +50,7 @@ L'utente amministratore ha la possibilità di creare ulteriori account per event
 
 == Glossario
 Al fine di evitare eventuali equivoci o incomprensioni riguardo la terminologia utilizzata all'interno di questo documento, si è deciso  di adottare un Glossario, con file apposito, in cui vengono riportate tutte le definizioni rigogliose delle parole ambigue utilizzate in ambito di questo progetto. Nel documento appena descritto verranno riportati tutti i termini definiti nel loro ambiente di utilizzo con annessa descrizione del loro significato.\
-La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu").
+La presenza di un termine all'interno del Glossario è evidenziata dal #glossario("colore blu"). Versione di riferimento v2.0.0.
 
 == Maturità e miglioramenti
 Questo documento è stato realizzato utilizzando un approccio incrementale, con lo scopo di semplificare i cambiamenti nel tempo in base alle reciproche esigenze decise da entrambi le parti, ovvero membri del gruppo di progetto e azienda proponente. Pertanto questo documento non può essere considerato esaustivo e completo.
@@ -950,7 +950,8 @@ figure(
 Il grafico mostra l'andamento del EAC durante il corso del progetto. Analizzarne le variazioni permette di valutare la situazione attuale del progetto così da individuare la necessità di attuare misure preventive.
 L'iniziale tendenza a diminuire suggerisce un uso delle risorse efficace, tuttavia ciò non scongiura la possibilità di aver attuato una pianificazione troppo ottimistica che porti quindi a ritardi.\
 Il grafico mostra come dopo lo sprint 5 in cui la produttività è stata compromessa a causa di indisponibilità e festività invernali, l'andamento dell'earned value ha subito un inversione. In particolare, l'EAC, che in precedenza stava diminuendo, ha ora iniziato a salire. Questo suggerisce che l'impatto delle indisponibilità sul lavoro effettivo sta influenzando le previsioni di costo del progetto. \
-La situazione rimane stabile con il valore campionato inferiore al valore di BAC preventivato.
+Negli sprint successivi è possibile notare una situazione stabile con il valore campionato praticamente sempre inferiore al valore di BAC preventivato.
+Il massimo valore registato corrisponde a 13059, mentre il minimo storico equivale a 10680. E' inoltre interessante notare come durante il periodo di PB, che ricordiamo partire ufficialmente dallo sprint 12, l'andamento dei valori registrati si sia stabilizzato.
 
 #pagebreak()
 
@@ -968,25 +969,14 @@ La situazione rimane stabile con il valore campionato inferiore al valore di BAC
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8], [9], [10],
   [*AC*], [605], [1175], [1615], [2225],[2670], [3040], [3565], [4115], [4535], [4850],
   [*ETC*], [11495], [10575], [9920], [8900],[8010], [8219], [8318], [7987], [8062], [7913],
-)
-]
-#align(center)[Tabella 21: AC e ETC da sprint 1 a 10]
-
-#align(center)[
-#table(
-      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
-  inset: (
-    x: 8pt,
-    y: 10pt,
-  ),
-  align: center,
-[*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+  [*sprint*], [11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
 [*AC*],[5485], [6245], [6965], [7755], [8590], [9320], [10090], [10855], [11590], [12230],
 [*ETC*], [7574], [6765], [5895], [4959], [4041], [3108], [2367], [1622], [740], [0],
 )
+
 ]
-#align(center)[Tabella 22: AC e ETC da sprint 11 a 20]
+
+#align(center)[Tabella 21: AC e ETC da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1018,25 +1008,13 @@ La prospettiva è che finite le revisioni si cerchi di recuperare con incremento
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
   [*EV*], [644], [1288], [1803], [2576],[3220],[3477],[3864],[4379],[4636],[4894],
   [*PV*], [644], [1288], [1932], [2576],[3220],[3864],[3864],[4508],[4765],[5152],
-)
-]
-#align(center)[Tabella 23: EV e PV da sprint 1 a 10]
-
-#align(center)[
-#table(
-      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
-  inset: (
-    x: 8pt,
-    y: 10pt,
-  ),
-  align: center,
-  [*sprint*],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
+    [*sprint*],[11],[12], [13], [14], [15], [16], [17], [18], [19], [20],
   [*EV*],[5409,6],[6182,4], [7084], [7856,8], [8758,4], [9660], [10432,8], [11205,6], [12107], [12880],
   [*PV*],[5538,4],[6182,4], [7019,6], [7856,8], [8694], [9660], [10368,4], [11205,6], [12042,8], [12880],
 )
 ]
-#align(center)[Tabella 24: EV e PV da sprint 11 a 20]
+
+#align(center)[Tabella 22: EV e PV da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1067,25 +1045,12 @@ I rischi maggiori valutati dal gruppo sono per gli impegni accademici che sicura
   [*sprint*], [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],
   [*CV*], [39], [113], [188,2],[351],[550],[437],[299],[264],[101,8],[44,4],
   [*SV*], [0], [0], [-128,8],[0],[0],[-386],[0],[-128,8],[-128,8],[-257,6],
-)
-]
-#align(center)[Tabella 25: CV e SV da sprint 1 a 10]
-
-#align(center)[
-#table(
-      fill: (_, row) => if calc.odd(row) { luma(230) } else { white },
-  columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
-  inset: (
-    x: 8pt,
-    y: 10pt,
-  ),
-  align: center,
-  [*sprint*],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
+    [*sprint*],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],
   [*CV*],[-75,4],[-62,6], [119], [101,8], [168,4], [340], [342,8], [350,6], [517], [650],
   [*SV*],[-128,8],[0], [64,4], [0], [64,4], [0], [64,4], [0], [64,2], [0],
 )
 ]
-#align(center)[Tabella 26: CV e SV da sprint 11 a 20]
+#align(center)[Tabella 23: CV e SV da sprint 1 a 20]
 
 #align(left,
 figure(
@@ -1134,9 +1099,7 @@ A partire dallo sprint 11 i valori rientrano nei limiti imposti dal team, che si
 - Tabella 18: Valutazione sui ruoli
 - Tabella 19: Indice di Gulpease dei documenti
 - Tabella 20: EAC da sprint 1 a 20
-- Tabella 21: AC e ETC da sprint 1 a 10
-- Tabella 22: AC e ETC da sprint 11 a 20
-- Tabella 23: EV e PV da sprint 1 a 10
-- Tabella 24: EV e PV da sprint 11 a 20
-- Tabella 25: CV e SV da sprint 1 a 10
-- Tabella 26: CV e SV da sprint 11 a 20
+- Tabella 21: AC e ETC da sprint 1 a 20
+- Tabella 22: EV e PV da sprint 1 a 20
+- Tabella 23: CV e SV da sprint 1 a 20
+
