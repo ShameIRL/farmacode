@@ -3530,6 +3530,10 @@ Ci riteniamo soddisfatti della distribuzione oraria e del lavoro fra i membri de
 ])
 #align(center)[Tabella 100: conclusione]
 
+*Considerazioni finali*
+
+La data di consegna del progetto è slittata da quella ri-preventivata dopo le revisioni di RTB (15/04/2024), al *30/04/2024*. Il costo totale del progetto ammonta a *12230€* inferiore al budget previsto (12530€). Il gruppo si ritiene, nostante il ritardo registrato, complessivamente soddisfatto. Siamo consapevoli di avere potuto conlcudere entro i tempi previdisti ma abbiamo scelto di portare maggiore qualità a quanto prodotto, sia per quanto riguarda il software sia per quanot riguarda la documentazione.
+
 #pagebreak()
 
 = Elenco delle immagini
