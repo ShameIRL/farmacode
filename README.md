@@ -35,14 +35,15 @@ Contatti: farmacode.swe.unipd@gmail.com
     │   │
     │   ├── interna/
     │   │   ├── norme_di_progetto
-    │   │   └── verbali(interni)/ ...
-    │   └── esterna/
-    │       ├── analisi_dei_requisiti
-    │       ├── glossario
-    │       ├── piano_di_progetto
-    │       ├── piano_di_qualifica
-    |       ├── specifica_tecnica
-    |       ├── manuale_utente
-    │       └── verbali(esterni)/ ...
+    │   │   verbali(interni)/ ...
+    │   ├──  esterna/
+    │   │   ├── analisi_dei_requisiti
+    │   │   ├── glossario
+    │   │   ├── piano_di_progetto
+    │   │   ├── piano_di_qualifica
+    |   │   ├── specifica_tecnica
+    |   │   ├── manuale_utente
+    │   │   └── verbali(esterni)/ ...
+    │   └── lettera_di_presentazione
     └── candidatura_capitolato/ ...
 ```
